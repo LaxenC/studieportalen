@@ -4,74 +4,43 @@ kapitel: atom
 
 # Atomens uppbyggnad
 
-En atom består av en atomkärna med protoner och neutroner. Runt kärnan finns elektroner i elektronskal.
+En atom är den minsta byggstenen i ett grundämne. Den består av en kärna med protoner och neutroner, omgiven av elektroner.
 
 ## Atomens delar {#delar}
 
-### Tre sorters partiklar
+Atomen består av 3st partiklar
+- protoner som är positivt(+) laddade
+- neutroner som är oladdade, dom är neutrala
+- elektroner som är negativt (-) laddade
 
-| Partikel | Laddning | Var finns den? |
-|---|---|---|
-| [[partikel p]] **Proton** p⁺ | +1 | I atomkärnan |
-| [[partikel n]] **Neutron** n | 0 | I atomkärnan |
-| [[partikel e]] **Elektron** e⁻ | −1 | I elektronskal runt kärnan |
+Atomen är uppdelad i 2 olika delar: atomkärna och elektronskal. Kärnan är i mitten och elektronskalen ligger utanför atomkärnan. 
+ - Atomkärnan: protoner och neutroner
+ - Elektronskal: elektroner
 
-Protoner och neutroner kallas tillsammans för **nukleoner**.
+[[atom p=6 n=5 e=6]]
+Bild: En kolatom har 6 protoner, 5 neutroner och 6 elektroner.
+
+Protoner och neutroner kallas tillsammans för **nukleoner**. Kärna på engelska heter nukleus, det är därfirån namnet nukleoner kommer.
 
 > **Begrepp**
-> **nukleon** – samlingsnamn för protoner och neutroner
 > **atomkärna** – mitten av atomen, där protonerna och neutronerna finns
+> **elektronskal** - skal utanför atomkärnan där elektronerna finns
+> **nukleon** – samlingsnamn för protoner och neutroner
+> **proton** - positivt (+) laddad partikel
+> **neutron** - oladdad partikel
+> **elektron** - negativt (-) laddad partikel
 
-- Kärnan är positivt laddad eftersom protonerna har laddning och neutronerna är oladdade.
-- Atomen är neutral när antalet protoner och elektroner är lika.
-
-### Exempel: kolatom
-
-::: rad
-[[nota 12 6 C]]
-[[atom p=6 n=6 e=6]]
-Bild: En kolatom har 6 protoner, 6 neutroner och 6 elektroner.
-
-> **Atomkärnan** {.gul}
-> 6 protoner + 6 neutroner = 12 nukleoner. Det är masstalet.
-
-> **Inre skal (K-skalet)** {.bla}
-> 2 elektroner. Fullt – fler får inte plats.
-
-> **Yttre skal (L-skalet)** {.gron}
-> 4 elektroner. Här får det plats upp till 8.
-:::
-
-> **Viktigt att komma ihåg**
-> - Protoner och neutroner finns i atomkärnan. Elektroner finns i skal runt kärnan.
-> - Antalet **protoner** bestämmer vilket grundämne atomen är.
-> - Antalet **neutroner** kan variera – då får man olika isotoper.
-> - Antalet **elektroner** bestämmer atomens laddning.
-
-## Atomen är mest tomrum {#tomrum}
-
-::: åk 7-8
 Atomkärnan är mycket liten jämfört med hela atomen. Resten av atomen är nästan bara tomrum.
-:::
+Om elektronskalen var taket på Globen skulle kärnan i mitten vara stor som ett **blåbär**.
+Protoner och neutroner är ungefär **2000 gånger tyngre** än en elektron. Nästan hela atomens massa finns alltså i kärnan
 
-::: åk 9
-Atomkärnan är ungefär 100 000 gånger mindre än hela atomen, men nästan all massa finns i kärnan. Resten av atomen är nästan bara tomrum.
-:::
-
-::: rad
-> **Tung kärna** {.rod}
-> En proton eller neutron är ungefär **2000 gånger tyngre** än en elektron. Nästan hela atomens massa finns alltså i kärnan.
-
-> **Mest tomrum** {.lila}
-> Om elektronskalen var taket på Globen skulle kärnan i mitten vara stor som ett **blåbär**.
-:::
-
-> **Exempel:** Mellan kärnan och elektronerna finns ingenting – inte ens luft. Luft består ju själv av atomer.
 
 > **Viktigt att komma ihåg**
-> - Atomen består nästan bara av tomrum.
+> - Protoner (+) och neutroner finns i atomkärnan. Elektroner (-) finns i skal runt kärnan.
+> - Atomen består nästan bara av tomrum, om atomen var stor som Globen skulle kärnan vara stor som ett blåbär.
 > - Nästan all massa finns i den lilla kärnan.
-> - Om atomen var stor som Globen skulle kärnan vara stor som ett blåbär.
+
+
 
 ## Atommodeller {#modeller}
 
@@ -90,12 +59,20 @@ Ingen har kunnat se en atom med blotta ögat. Forskarna har i stället gjort exp
 
 > **Viktigt att komma ihåg**
 > - En atommodell är en förenklad bild av atomen.
-> - Modellen har ändrats när nya experiment har gjorts.
-> - Ordning: Dalton → Thomson → Rutherford → Bohr → Schrödinger.
+> - Modellen har ändrats när nya upptäckter har gjorts.
 
 ## Elektronskal {#skal}
+Elektronerna finns i skal runt atomkärnan. Kärnan är positivt laddad och elektronerna är negativt laddade, därför dras de till varandra (attraheras). Det kan liknas vid två magneter som dras mot varandra: om man drar magneterna isär måste man använda kraft. På samma sätt krävs det energi för att flytta en elektron längre bort från atomkärnan. Därför har elektroner längre ut högre energi.
 
-Elektronerna finns i skal runt kärnan. Skalen fylls inifrån och ut. Ju längre ut ett skal är, desto högre energi har elektronerna där.
+Elektronerna har samma negativa laddning och stöter därför bort varandra (repellerar). De fördelar sig i olika elektronskal runt kärnan. Skalen längre ut kan rymma fler elektroner eftersom de har fler möjliga energinivåer och orbitaler. Det innersta skalet rymmer högst 2 elektroner och det andra skalet högst 8.
+
+Elektronskalen har namn de heter: K, L, M osv i alfabetet. Anledningen att man inte började med bokstaven A när man döpte skalen var för man inte var säker på om man hittat det innersta skalet
+
+Elektroner i det yttersta skalet kallas för **valenselektroner**
+> **Begrepp**
+> **valenselektroner** – elektroner i det yttersta skalet
+[[atom p=6 n=5 e=6 skalnamn valens]]
+Bild: De fyra elektronerna i det yttersta skalet är valenselektroner.
 
 | Skal | K | L |
 |---|---|---|
@@ -113,7 +90,9 @@ Elektronerna finns i skal runt kärnan. Skalen fylls inifrån och ut. Ju längre
 
 > **Viktigt att komma ihåg**
 > - Skalen fylls inifrån och ut.
+> - Skalen heter: K, L, M osv
 > - K-skalet rymmer 2 elektroner, L-skalet 8.
+> - Elektroner i ytterska skalet heter **valenselektroner**
 > - (åk 9) Det yttersta skalet har aldrig mer än 8 elektroner.
 
 ## Kvarkar {#kvarkar åk=9}
