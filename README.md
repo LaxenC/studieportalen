@@ -10,6 +10,7 @@ Läs, plugga och öva i fysik, kemi, biologi och matematik.
 
 Allt innehåll ligger i ämnenas mappar, t.ex. `fysik/atom-och-karnfysik/`.
 
+- **Guide för lärare (PDF):** [Guide för lärare.pdf](Guide%20f%C3%B6r%20l%C3%A4rare.pdf) – samma innehåll som [HOWTO.md](HOWTO.md)
 - Hur allt hänger ihop: [STRUKTUR.md](STRUKTUR.md)
 - Mallar att kopiera: [mallar.md](mallar.md)
 
