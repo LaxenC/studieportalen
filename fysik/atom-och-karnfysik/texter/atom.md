@@ -62,15 +62,12 @@ Ingen har kunnat se en atom med blotta ögat. Forskarna har i stället gjort exp
 > - Modellen har ändrats när nya upptäckter har gjorts.
 
 ## Elektronskal {#skal}
-Elektronerna finns i skal runt atomkärnan. Kärnan är positivt laddad och elektronerna är negativt laddade, därför dras de till varandra (attraheras). Det kan liknas vid två magneter som dras mot varandra: om man drar magneterna isär måste man använda kraft. På samma sätt krävs det energi för att flytta en elektron längre bort från atomkärnan. Därför har elektroner längre ut högre energi.
-
-Elektronerna har samma negativa laddning och stöter därför bort varandra (repellerar). De fördelar sig i olika elektronskal runt kärnan. Skalen längre ut kan rymma fler elektroner eftersom de har fler möjliga energinivåer och orbitaler. Det innersta skalet rymmer högst 2 elektroner och det andra skalet högst 8.
-
-Elektronskalen har namn de heter: K, L, M osv i alfabetet. Anledningen att man inte började med bokstaven A när man döpte skalen var för man inte var säker på om man hittat det innersta skalet
-
+Elektronerna finns i skal runt atomkärnan. Elektronerna har samma negativa laddning och stöter därför bort varandra (repellerar). De fördelar sig i olika elektronskal runt kärnan. Lite förnklar kan man säta att skalen längre ut kan rymma fler elektroner eftersom de har mer plats. Det innersta skalet rymmer högst 2 elektroner och det andra skalet högst 8.
+Elektronskalen har namn de heter: K, L, M osv i alfabetet. Anledningen att man inte började med bokstaven A när man döpte skalen var för man inte var säker på om man hittat det innersta skalet.
 Elektroner i det yttersta skalet kallas för **valenselektroner**
 > **Begrepp**
 > **valenselektroner** – elektroner i det yttersta skalet
+
 [[atom p=6 n=5 e=6 skalnamn valens]]
 Bild: De fyra elektronerna i det yttersta skalet är valenselektroner.
 
@@ -88,11 +85,15 @@ Bild: De fyra elektronerna i det yttersta skalet är valenselektroner.
 >
 > Det yttersta skalet rymmer alltså aldrig mer än 8 elektroner (K-skalet högst 2). Först när ett nytt skal har börjat fyllas utanför kan ett inre skal få fler.
 
+Kärnan är positivt laddad och elektronerna är negativt laddade, därför dras de till varandra (attraheras). Det kan liknas vid två magneter som dras mot varandra, om man drar magneterna isär måste man använda kraft. På samma sätt krävs det energi för att flytta en elektron längre bort från atomkärnan. Därför har **elektroner längre ut högre energi**. 
+
+
 > **Viktigt att komma ihåg**
 > - Skalen fylls inifrån och ut.
 > - Skalen heter: K, L, M osv
 > - K-skalet rymmer 2 elektroner, L-skalet 8.
 > - Elektroner i ytterska skalet heter **valenselektroner**
+> - Elektroner längre ut har högre energi
 > - (åk 9) Det yttersta skalet har aldrig mer än 8 elektroner.
 
 ## Kvarkar {#kvarkar åk=9}
