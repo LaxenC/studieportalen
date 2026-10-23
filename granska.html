@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="sv">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Granska uppgifter</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@500;700;800;900&family=Noto+Serif:wght@700&display=swap">
+<link rel="stylesheet" href="motor/ova.css">
+<link rel="stylesheet" href="motor/portal.css">
+<style>
+.gr-filter{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+.gr-filter select{font:inherit;font-weight:700;padding:8px 12px;border-radius:10px;border:1px solid var(--line);background:var(--panel);color:var(--ink)}
+.gr-knappar{display:flex;gap:6px}
+.gr-knappar .ghostbtn{padding:5px 14px;font-size:.9rem}
+.ovmeta code{font-size:.8rem;background:var(--bg);padding:0 4px;border-radius:4px}
+#provaDlg .dlg-body{display:grid;gap:12px}
+</style>
+</head>
+<body>
+<main class="wrap">
+  <header class="ovhead"><div><p class="eyebrow">För läraren</p><h1>Granska uppgifter</h1>
+    <p>Alla uppgifter, sorterade per kapitel och nivå. Bilden visar första varianten. Tryck <b>Prova</b> för att göra uppgiften. Nivåer som ändras per årskurs står under rubriken.</p></div>
+    <span class="gr-filter"><select id="filter" aria-label="Visa kapitel"></select><a class="ghostbtn" href="struktur.html">Översikt</a><a class="ghostbtn" href="./">Till portalen</a></span></header>
+  <div id="fel"></div>
+  <div id="ovBody"><p class="laddar">Laddar …</p></div>
+</main>
+<dialog id="provaDlg" aria-labelledby="prTitle">
+  <div class="dlg-head"><span class="ic" aria-hidden="true">✎</span><div><h2 id="prTitle"></h2><p id="prLead"></p></div>
+    <button type="button" class="x" id="prX" aria-label="Stäng">×</button></div>
+  <div class="dlg-body" id="prBody"></div>
+  <div class="dlg-foot"><button type="button" class="sec" id="prStang">Stäng</button><button type="button" class="sec" id="prNy">Nästa variant</button><button type="button" class="pri" id="prRatta">Rätta</button></div>
+</dialog>
+<script src="motor/typer.js"></script>
+<script src="motor/ritningar-bas.js"></script>
+<script src="motor/ritningar.js"></script>
+<script src="motor/md.js"></script>
+<script src="motor/data.js"></script>
+<script src="konfig/amnen.js"></script>
+<script src="konfig/elevnivaer.js"></script>
+<script src="motor/granska.js"></script>
+<script>startaGranska();</script>
+</body>
+</html>

@@ -1,0 +1,313 @@
+<!doctype html>
+<html lang="sv">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<style>
+:root{color-scheme:light;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;font:14px/1.45 system-ui,-apple-system,"Segoe UI",sans-serif}
+img{max-width:100%}
+[hidden]{display:none!important}
+</style>
+</head>
+<body>
+<title>Kol-14-metoden</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@500;700;800;900&family=Noto+Serif:wght@700&display=swap">
+<style>
+/* Samma formspråk som övningssidan. Layout: en kolumn – genomgång, diagram, tre steg med fynd. */
+:root{
+  --bg:#eef3fb; --panel:#ffffff; --ink:#152238; --muted:#4f5d75; --line:#d5deeb;
+  --accent:#2563eb; --accent-ink:#ffffff; --accent-soft:#dbe7ff;
+  --green-bg:#e8f7ec; --green-bd:#a9dfb8; --green:#2f9e57;
+  --blue-bg:#e6f1fc; --blue-bd:#a8cdf1; --blue:#2b78c9;
+  --yellow-bg:#fff6dd; --yellow-bd:#f2d78a; --yellow:#b7850c;
+  --red-bg:#fdeaec; --red-bd:#f2b3b9; --red:#d63c45;
+  --purple-bg:#f0ebfd; --purple-bd:#c9b8f5; --purple:#6d48d6;
+  --c14:#e07a1f; --n14:#2b78c9;
+  --font:"Nunito",system-ui,sans-serif; --serif:"Noto Serif",Georgia,serif;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#0f1626; --panel:#18223a; --ink:#e8edf7; --muted:#a6b1c6; --line:#2c3a58;
+  --accent:#5b8cff; --accent-ink:#0f1626; --accent-soft:#233a6b;
+  --green-bg:#16301f; --green-bd:#2f6b44; --green:#5fd38a;
+  --blue-bg:#152a44; --blue-bd:#2f5d8f; --blue:#6fb0f2;
+  --yellow-bg:#33290f; --yellow-bd:#6f5a1c; --yellow:#f0c44a;
+  --red-bg:#3a1a20; --red-bd:#7a3540; --red:#ff7a82;
+  --purple-bg:#251d45; --purple-bd:#4f3e94; --purple:#a88cff;
+  --c14:#ff9f4a; --n14:#6fb0f2; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0f1626; --panel:#18223a; --ink:#e8edf7; --muted:#a6b1c6; --line:#2c3a58;
+  --accent:#5b8cff; --accent-ink:#0f1626; --accent-soft:#233a6b;
+  --green-bg:#16301f; --green-bd:#2f6b44; --green:#5fd38a;
+  --blue-bg:#152a44; --blue-bd:#2f5d8f; --blue:#6fb0f2;
+  --yellow-bg:#33290f; --yellow-bd:#6f5a1c; --yellow:#f0c44a;
+  --red-bg:#3a1a20; --red-bd:#7a3540; --red:#ff7a82;
+  --purple-bg:#251d45; --purple-bd:#4f3e94; --purple:#a88cff;
+  --c14:#ff9f4a; --n14:#6fb0f2; color-scheme:dark}
+body{background:var(--bg);color:var(--ink);font-family:var(--font);font-size:16px;line-height:1.5}
+.wrap{max-width:980px;margin:0 auto;padding-block:28px 48px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));display:grid;gap:18px}
+header h1{margin:0;font-weight:900;font-size:clamp(1.8rem,4.5vw,2.5rem);line-height:1.1;text-wrap:balance}
+header p{margin:6px 0 0;color:var(--muted);font-size:1.08rem;max-width:65ch}
+.eyebrow{margin:0 0 4px;font-weight:800;text-transform:uppercase;letter-spacing:.08em;font-size:.78rem;color:var(--muted)}
+.panel{background:var(--panel);border-radius:16px;padding:18px;display:grid;gap:14px;min-width:0}
+h2{margin:0;font-weight:900;font-size:1.4rem;display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+h3{margin:0;font-weight:900;font-size:1.1rem}
+p{margin:0}
+.lead{max-width:70ch}
+.chip{font-size:.8rem;font-weight:800;padding:3px 10px;border-radius:999px;background:var(--bg);color:var(--muted)}
+.chip.l1{background:var(--green-bg);color:var(--green)} .chip.l2{background:var(--blue-bg);color:var(--blue)} .chip.l3{background:var(--yellow-bg);color:var(--yellow)}
+
+/* genomgång */
+.steps{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;counter-reset:s}
+.step{border-radius:14px;padding:12px;background:var(--bg);display:grid;gap:6px;align-content:start}
+.step svg{width:100%;max-width:150px;height:auto;justify-self:center}
+.step h3{font-size:1rem}
+.step p{font-size:.92rem}
+.key{display:grid;grid-template-columns:auto 1fr;gap:12px;align-items:center;padding:12px 14px;border-radius:14px;background:var(--yellow-bg);border:2px solid var(--yellow-bd)}
+.key .big{font-weight:900;font-size:1.8rem;color:var(--yellow);font-variant-numeric:tabular-nums;white-space:nowrap}
+.formula{display:flex;flex-wrap:wrap;gap:8px;align-items:center;font-weight:800}
+.formula span{padding:6px 10px;border-radius:10px;background:var(--bg)}
+
+/* diagram */
+.chartwrap{overflow-x:auto}
+#chart{display:block;width:100%;min-width:560px;height:auto}
+.ctrl{display:grid;grid-template-columns:auto minmax(0,1fr);gap:12px;align-items:center}
+.ctrl input{width:100%;accent-color:var(--c14)}
+.readout{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+.ro{border-radius:12px;background:var(--bg);padding:10px 12px}
+.ro b{display:block;font-size:1.5rem;font-weight:900;font-variant-numeric:tabular-nums}
+.ro span{font-size:.85rem;color:var(--muted);font-weight:700}
+.dots{display:grid;grid-template-columns:repeat(20,1fr);gap:3px;max-width:420px}
+.dots i{aspect-ratio:1;border-radius:50%;background:var(--c14);transition:background .25s}
+.dots i.n{background:var(--n14);opacity:.35}
+.legend{display:flex;gap:16px;flex-wrap:wrap;font-size:.9rem;color:var(--muted);font-weight:700}
+.legend i{display:inline-block;width:12px;height:12px;border-radius:50%;margin-right:6px;vertical-align:-1px}
+
+/* fynd */
+.finds{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:12px}
+.find{border-radius:14px;border:2px solid var(--line);background:var(--panel);padding:14px;display:grid;gap:10px;align-content:start}
+.find .top{display:flex;gap:12px;align-items:center}
+.find .ico{flex:none;width:52px;height:52px;border-radius:12px;background:var(--bg);display:grid;place-items:center;font-size:1.6rem}
+.find h4{margin:0;font-weight:900;font-size:1.02rem;line-height:1.25}
+.meas{font-weight:800}
+.meas b{color:var(--c14);font-size:1.15rem}
+.field{display:grid;gap:4px}
+.field label{font-weight:800;font-size:.9rem}
+.inrow{display:flex;gap:6px;align-items:center}
+.inrow input{font:inherit;width:100%;max-width:160px;padding:8px 10px;border-radius:10px;border:2px solid var(--line);background:var(--bg);color:var(--ink);font-variant-numeric:tabular-nums}
+.inrow input:focus{outline:none;border-color:var(--accent)}
+.inrow span{color:var(--muted);font-weight:700}
+.inrow input.ok{border-color:var(--green);background:var(--green-bg)}
+.inrow input.no{border-color:var(--red);background:var(--red-bg)}
+.btn{font:inherit;font-weight:900;padding:10px 20px;border-radius:999px;border:0;background:var(--accent);color:var(--accent-ink);cursor:pointer;justify-self:start}
+.btn.sec{background:var(--panel);color:var(--accent);border:2px solid var(--accent)}
+.fb{border-radius:10px;padding:10px 12px;font-size:.92rem;display:grid;gap:4px}
+.fb.ok{background:var(--green-bg);border:1px solid var(--green-bd)}
+.fb.no{background:var(--red-bg);border:1px solid var(--red-bd)}
+.fb b.v{font-weight:900}
+.fb summary{cursor:pointer;font-weight:800;color:var(--red)}
+.fb details p{margin-top:6px}
+.fb.ok b.v{color:var(--green)} .fb.no b.v{color:var(--red)}
+.score{font-weight:900;color:var(--muted)}
+.reflect{border-radius:14px;padding:14px;background:var(--purple-bg);border:2px solid var(--purple-bd);display:grid;gap:10px}
+.reflect h3{color:var(--purple)}
+.reflect textarea{font:inherit;width:100%;min-height:80px;padding:10px;border-radius:10px;border:2px solid var(--purple-bd);background:var(--panel);color:var(--ink);resize:vertical}
+.reflect details summary{cursor:pointer;font-weight:800;color:var(--purple)}
+.reflect details p{margin-top:8px}
+button:focus-visible,input:focus-visible,textarea:focus-visible,summary:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+@media (max-width:820px){.steps{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:480px){.steps{grid-template-columns:1fr}.readout{grid-template-columns:1fr 1fr}.key{grid-template-columns:1fr}}
+@media (prefers-reduced-motion:reduce){.dots i{transition:none}}
+</style>
+
+<div class="wrap">
+  <header>
+    <p class="eyebrow">Fysik · Åk 9 · Radioaktivt sönderfall</p>
+    <h1>Kol-14-metoden</h1>
+    <p>Hur gammalt är ett fynd? Genom att mäta hur mycket kol-14 som finns kvar kan man räkna ut hur länge sedan något levde.</p>
+  </header>
+
+  <section class="panel" aria-labelledby="h-hur">
+    <h2 id="h-hur">Så fungerar metoden</h2>
+    <div class="steps">
+      <div class="step">
+        <svg viewBox="0 0 150 90" aria-hidden="true"><circle cx="40" cy="30" r="16" fill="var(--yellow)"/><g stroke="var(--yellow)" stroke-width="3" stroke-linecap="round"><path d="M40 4v6M40 50v6M14 30h6M60 30h6M22 12l4 4M54 44l4 4M22 48l4-4M54 16l4-4"/></g>
+          <circle cx="110" cy="40" r="9" fill="var(--c14)"/><text x="110" y="62" text-anchor="middle" font-size="11" font-weight="800" fill="var(--ink)">C-14</text><path d="M62 40 q10 -10 20 0 t18 0" fill="none" stroke="var(--muted)" stroke-width="2" stroke-dasharray="3 3"/></svg>
+        <h3>1. Bildas i luften</h3><p>Kol-14 bildas hela tiden högt upp i atmosfären, när strålning från rymden träffar kväve.</p></div>
+      <div class="step">
+        <svg viewBox="0 0 150 90" aria-hidden="true"><rect x="66" y="40" width="10" height="40" rx="3" fill="#8a5a2b"/><circle cx="71" cy="34" r="24" fill="var(--green)"/><circle cx="58" cy="28" r="4" fill="var(--c14)"/><circle cx="82" cy="40" r="4" fill="var(--c14)"/><circle cx="74" cy="22" r="4" fill="var(--c14)"/></svg>
+        <h3>2. Tas upp av allt levande</h3><p>Växter tar upp kol från luften, och djur äter växterna. Så länge något lever har det samma andel kol-14 som luften.</p></div>
+      <div class="step">
+        <svg viewBox="0 0 150 90" aria-hidden="true"><path d="M30 70 h90" stroke="var(--muted)" stroke-width="3" stroke-linecap="round"/><rect x="40" y="48" width="70" height="16" rx="8" fill="#b9a27c"/><path d="M60 20 l30 0 M75 8 v24" stroke="var(--red)" stroke-width="4" stroke-linecap="round" transform="rotate(45 75 20)"/></svg>
+        <h3>3. Upptaget stoppar vid döden</h3><p>När organismen dör tar den inte upp något nytt kol. Kol-14 som finns kvar sönderfaller sakta.</p></div>
+      <div class="step">
+        <svg viewBox="0 0 150 90" aria-hidden="true"><circle cx="35" cy="45" r="14" fill="var(--c14)"/><text x="35" y="49" text-anchor="middle" font-size="10" font-weight="900" fill="#fff">C-14</text>
+          <path d="M55 45 h30 M78 38 l8 7 -8 7" fill="none" stroke="var(--ink)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+          <circle cx="110" cy="45" r="14" fill="var(--n14)"/><text x="110" y="49" text-anchor="middle" font-size="10" font-weight="900" fill="#fff">N-14</text>
+          <circle cx="130" cy="20" r="5" fill="var(--blue)"/><text x="130" y="23.5" text-anchor="middle" font-size="9" font-weight="900" fill="#fff">−</text><text x="70" y="78" text-anchor="middle" font-size="11" font-weight="800" fill="var(--muted)">betasönderfall</text></svg>
+        <h3>4. Mät vad som finns kvar</h3><p>Kol-14 blir kväve-14 genom betasönderfall. Ju mindre kol-14 som är kvar, desto längre sedan dog organismen.</p></div>
+    </div>
+    <div class="key"><span class="big">5 730 år</span><p><b>Halveringstiden för kol-14.</b> Efter 5 730 år finns hälften av kol-14-atomerna kvar. Efter ytterligare 5 730 år finns hälften av den hälften kvar, och så vidare.</p></div>
+    <div class="formula" aria-label="Formel"><span>Ålder</span>=<span>antal halveringstider</span>×<span>5 730 år</span></div>
+  </section>
+
+  <section class="panel" aria-labelledby="h-diag">
+    <h2 id="h-diag">Halveringsdiagram</h2>
+    <p class="lead">Dra i reglaget och se hur andelen kol-14 minskar med tiden. Använd diagrammet i steg 2.</p>
+    <div class="chartwrap"><svg id="chart" viewBox="0 0 760 360" role="img" aria-label="Diagram över hur andelen kol-14 minskar med tiden, med halveringstiden 5730 år"></svg></div>
+    <div class="ctrl"><label for="tid"><b>Tid sedan döden</b></label><input type="range" id="tid" min="0" max="40000" step="10" value="0"></div>
+    <div class="readout">
+      <div class="ro"><b id="roT">0 år</b><span>tid som gått</span></div>
+      <div class="ro"><b id="roP">100 %</b><span>kol-14 kvar</span></div>
+      <div class="ro"><b id="roH">0</b><span>halveringstider</span></div>
+    </div>
+    <div class="dots" id="dots" aria-hidden="true"></div>
+    <div class="legend"><span><i style="background:var(--c14)"></i>Kol-14 kvar</span><span><i style="background:var(--n14);opacity:.35"></i>Har blivit kväve-14</span></div>
+  </section>
+
+  <section class="panel" aria-labelledby="h-s1">
+    <h2 id="h-s1"><span class="chip l1">Steg 1</span>Hela halveringstider</h2>
+    <p class="lead">Ett labb har mätt hur mycket kol-14 som finns kvar i några fynd, jämfört med en levande organism. Räkna ut hur många halveringstider som har gått, och hur gammalt fyndet är.</p>
+    <div class="finds" id="f1"></div>
+    <p class="score" id="s1"></p>
+  </section>
+
+  <section class="panel" aria-labelledby="h-s2">
+    <h2 id="h-s2"><span class="chip l2">Steg 2</span>Läs av i diagrammet</h2>
+    <p class="lead">Här är det inte hela halveringstider. Använd reglaget i diagrammet för att hitta åldern. Svaret räknas som rätt om det ligger nära.</p>
+    <div class="finds" id="f2"></div>
+    <p class="score" id="s2"></p>
+  </section>
+
+  <section class="panel" aria-labelledby="h-s3">
+    <h2 id="h-s3"><span class="chip l3">Steg 3</span>Tänk baklänges</h2>
+    <p class="lead">Nu vet du åldern. Hur mycket kol-14 finns kvar?</p>
+    <div class="finds" id="f3"></div>
+    <p class="score" id="s3"></p>
+    <div class="reflect">
+      <h3>Fundera och diskutera</h3>
+      <p>En elev vill åldersbestämma ett dinosaurieben som är 66 miljoner år gammalt med kol-14-metoden. Varför fungerar inte det?</p>
+      <label for="refl" class="eyebrow" style="margin:0">Ditt svar</label>
+      <textarea id="refl" placeholder="Skriv ditt svar här …"></textarea>
+      <details><summary>Visa ett förslag på svar</summary>
+        <p>Efter ungefär 50 000 år, knappt 9 halveringstider, finns så lite kol-14 kvar att det inte går att mäta. Dessutom är fossila dinosaurieben förstenade, så det ursprungliga kolet finns oftast inte kvar. För riktigt gamla saker använder man andra radioaktiva ämnen med mycket längre halveringstid, till exempel kalium-40 eller uran.</p></details>
+    </div>
+  </section>
+</div>
+
+<script>
+const T = 5730;
+const $ = id => document.getElementById(id);
+const fmt = n => Math.round(n).toLocaleString("sv-SE");
+const kvar = t => 100 * Math.pow(0.5, t / T);
+const alder = p => T * Math.log2(100 / p);
+
+/* ---------- Diagram ---------- */
+const W = 760, H = 360, L = 64, R = 20, TOP = 20, B = 52, XMAX = 40000;
+const X = t => L + (t / XMAX) * (W - L - R), Y = p => TOP + (1 - p / 100) * (H - TOP - B);
+function drawChart() {
+  let g = "";
+  for (let p = 0; p <= 100; p += 10) g += `<line x1="${L}" x2="${W - R}" y1="${Y(p)}" y2="${Y(p)}" stroke="var(--line)" stroke-width="1"/><text x="${L - 8}" y="${Y(p) + 4}" text-anchor="end" font-size="12" fill="var(--muted)">${p} %</text>`;
+  for (let t = 0; t <= XMAX; t += 5000) g += `<text x="${X(t)}" y="${H - B + 20}" text-anchor="middle" font-size="12" fill="var(--muted)">${fmt(t)}</text>`;
+  for (let k = 1; k <= 6; k++) { const t = k * T; g += `<line x1="${X(t)}" x2="${X(t)}" y1="${Y(100)}" y2="${Y(0)}" stroke="var(--yellow)" stroke-width="1.5" stroke-dasharray="4 4"/><text x="${X(t)}" y="${TOP + 12}" text-anchor="middle" font-size="11" font-weight="800" fill="var(--yellow)">${k}</text>`; }
+  g += `<text x="${X(XMAX / 2)}" y="${H - 8}" text-anchor="middle" font-size="13" font-weight="800" fill="var(--ink)">Tid sedan döden (år) · gula linjer = antal halveringstider</text>`;
+  g += `<text transform="translate(16 ${(TOP + H - B) / 2}) rotate(-90)" text-anchor="middle" font-size="13" font-weight="800" fill="var(--ink)">Kol-14 kvar</text>`;
+  g += `<line x1="${L}" x2="${W - R}" y1="${Y(0)}" y2="${Y(0)}" stroke="var(--ink)" stroke-width="1.5"/><line x1="${L}" x2="${L}" y1="${Y(0)}" y2="${Y(100)}" stroke="var(--ink)" stroke-width="1.5"/>`;
+  let d = ""; for (let t = 0; t <= XMAX; t += 200) d += (t ? "L" : "M") + X(t).toFixed(1) + " " + Y(kvar(t)).toFixed(1);
+  g += `<path d="${d}" fill="none" stroke="var(--c14)" stroke-width="3.5"/>`;
+  g += `<g id="mark"><line id="mV" stroke="var(--accent)" stroke-width="1.5" stroke-dasharray="3 3"/><line id="mH" stroke="var(--accent)" stroke-width="1.5" stroke-dasharray="3 3"/><circle id="mC" r="7" fill="var(--accent)" stroke="var(--panel)" stroke-width="2"/></g>`;
+  $("chart").innerHTML = g;
+}
+function update() {
+  const t = +$("tid").value, p = kvar(t);
+  $("roT").textContent = fmt(t) + " år";
+  $("roP").textContent = (p > 99.95 ? "100" : p.toFixed(1)).replace(".", ",") + " %";
+  $("roH").textContent = (t / T).toFixed(1).replace(".", ",");
+  const x = X(t), y = Y(p);
+  const s = (id, a) => Object.entries(a).forEach(([k, v]) => $(id).setAttribute(k, v));
+  s("mV", { x1: x, x2: x, y1: y, y2: Y(0) }); s("mH", { x1: L, x2: x, y1: y, y2: y }); s("mC", { cx: x, cy: y });
+  const n = Math.round(p);
+  $("dots").querySelectorAll("i").forEach((d, i) => d.classList.toggle("n", i >= n));
+}
+$("dots").innerHTML = Array.from({ length: 100 }, () => "<i></i>").join("");
+drawChart(); update();
+$("tid").addEventListener("input", update);
+
+/* ---------- Fynd ---------- */
+const STEG1 = [
+  { ico: "🌾", namn: "Brända sädeskorn från en av de första bondgårdarna", p: 50 },
+  { ico: "🔥", namn: "Träkol från en eldstad i en grotta", p: 25 },
+  { ico: "🦣", namn: "Ben från en mammut", p: 12.5 },
+  { ico: "🌲", namn: "Trä från en trädstam som legat i en mosse", p: 6.25 },
+  { ico: "🦴", namn: "En bit av en mammutbete", p: 3.125 }
+];
+const STEG2 = [
+  { ico: "⛵", namn: "Trä från en vikingabåt", p: 88 },
+  { ico: "🧵", namn: "Linnetyg från en grav i Egypten", p: 66 },
+  { ico: "🏹", namn: "Ett benredskap från en stenåldersboplats", p: 40 },
+  { ico: "🦌", namn: "Ett renhorn från slutet av istiden", p: 30 }
+];
+const STEG3 = [
+  { ico: "🪵", namn: "En träskål som är 5 730 år gammal", t: 5730 },
+  { ico: "🐚", namn: "Ett snäckskal som är 17 190 år gammalt", t: 17190 },
+  { ico: "🌿", namn: "En växtrest som är 11 460 år gammal", t: 11460 },
+  { ico: "🦴", namn: "Ett ben som är 22 920 år gammalt", t: 22920 }
+];
+const pTxt = p => String(p).replace(".", ",") + " %";
+const tal = v => parseFloat(String(v).replace(/\s/g, "").replace(",", "."));
+
+function kort(f, i, steg) {
+  const id = `s${steg}-${i}`;
+  let falt = "";
+  if (steg === 1) falt = `<div class="field"><label for="${id}-h">Antal halveringstider</label><div class="inrow"><input id="${id}-h" inputmode="decimal" autocomplete="off"></div></div>
+    <div class="field"><label for="${id}-a">Ålder</label><div class="inrow"><input id="${id}-a" inputmode="numeric" autocomplete="off"><span>år</span></div></div>`;
+  if (steg === 2) falt = `<div class="field"><label for="${id}-a">Ålder (ungefär)</label><div class="inrow"><input id="${id}-a" inputmode="numeric" autocomplete="off"><span>år</span></div></div>`;
+  if (steg === 3) falt = `<div class="field"><label for="${id}-p">Kol-14 kvar</label><div class="inrow"><input id="${id}-p" inputmode="decimal" autocomplete="off"><span>%</span></div></div>`;
+  return `<article class="find" data-steg="${steg}" data-i="${i}"><div class="top"><span class="ico" aria-hidden="true">${f.ico}</span><h4>${f.namn}</h4></div>
+    ${steg < 3 ? `<p class="meas">Kol-14 kvar: <b>${pTxt(f.p)}</b></p>` : ""}${falt}
+    <button type="button" class="btn" data-check="${id}">Kontrollera</button><div class="fb" id="${id}-fb" hidden aria-live="polite"></div></article>`;
+}
+$("f1").innerHTML = STEG1.map((f, i) => kort(f, i, 1)).join("");
+$("f2").innerHTML = STEG2.map((f, i) => kort(f, i, 2)).join("");
+$("f3").innerHTML = STEG3.map((f, i) => kort(f, i, 3)).join("");
+
+const klara = { 1: new Set(), 2: new Set(), 3: new Set() };
+function poang() { [[1, STEG1], [2, STEG2], [3, STEG3]].forEach(([s, a]) => $("s" + s).textContent = `${klara[s].size} av ${a.length} rätt`); }
+function mark(el, ok) { el.classList.toggle("ok", ok); el.classList.toggle("no", !ok); }
+
+document.addEventListener("click", e => {
+  const b = e.target.closest("[data-check]"); if (!b) return;
+  const id = b.dataset.check, [s, i] = id.slice(1).split("-").map(Number), fb = $(id + "-fb");
+  let ok = false, txt = "";
+  if (s === 1) {
+    const f = STEG1[i], h = Math.log2(100 / f.p), a = h * T;
+    const hEl = $(id + "-h"), aEl = $(id + "-a"), hv = tal(hEl.value), av = tal(aEl.value);
+    const okH = Math.abs(hv - h) < 0.01, okA = Math.abs(av - a) <= 10;
+    mark(hEl, okH); mark(aEl, okA); ok = okH && okA;
+    const kedja = [100]; for (let k = 0; k < h; k++) kedja.push(kedja[k] / 2);
+    txt = `${kedja.map(pTxt).join(" → ")}: det är <b>${h}</b> halveringstider.<br>${h} × 5 730 år = <b>${fmt(a)} år</b>.`;
+  }
+  if (s === 2) {
+    const f = STEG2[i], a = alder(f.p), el = $(id + "-a"), v = tal(el.value);
+    ok = Math.abs(v - a) <= Math.max(300, a * 0.1); mark(el, ok);
+    txt = `${pTxt(f.p)} kol-14 kvar motsvarar ungefär <b>${fmt(Math.round(a / 100) * 100)} år</b>. Svar mellan ungefär ${fmt(Math.round((a - Math.max(300, a * .1)) / 50) * 50)} och ${fmt(Math.round((a + Math.max(300, a * .1)) / 50) * 50)} år räknas som rätt.`;
+  }
+  if (s === 3) {
+    const f = STEG3[i], h = f.t / T, p = kvar(f.t), el = $(id + "-p"), v = tal(el.value);
+    ok = Math.abs(v - p) < 0.05; mark(el, ok);
+    txt = `${fmt(f.t)} år ÷ 5 730 år = <b>${h}</b> halveringstider. 100 % halveras ${h} ${h === 1 ? "gång" : "gånger"}: <b>${pTxt(p)}</b> kol-14 kvar.`;
+  }
+  if (ok) klara[s].add(i); else klara[s].delete(i);
+  fb.hidden = false; fb.className = "fb " + (ok ? "ok" : "no");
+  fb.innerHTML = ok ? `<b class="v">Rätt!</b><span>${txt}</span>`
+    : `<b class="v">Inte riktigt – försök igen.</b><details><summary>Visa lösningen</summary><p>${txt}</p></details>`;
+  poang();
+});
+document.addEventListener("keydown", e => { if (e.key === "Enter" && e.target.matches(".find input")) e.target.closest(".find").querySelector("[data-check]").click(); });
+poang();
+</script>
+
+</body>
+</html>

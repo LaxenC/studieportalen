@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="sv">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Studieportalen</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@500;700;800;900&family=Noto+Serif:wght@700&display=swap">
+<link rel="stylesheet" href="motor/ova.css">
+<link rel="stylesheet" href="motor/portal.css">
+</head>
+<body>
+<header id="topp" class="topp"></header>
+<main id="vy" class="wrap"><p class="laddar">Laddar …</p></main>
+
+<dialog id="infoDlg" aria-labelledby="dlgTitle">
+  <div class="dlg-head"><span class="ic" aria-hidden="true">i</span><div><h2 id="dlgTitle"></h2><p id="dlgLead"></p></div>
+    <button type="button" class="x" id="dlgClose" aria-label="Stäng">×</button></div>
+  <div class="dlg-body" id="dlgBody"></div>
+  <div class="dlg-foot"><button type="button" class="sec" id="dlgClose2">Stäng</button><a class="sec" id="dlgRead" href="#">Läs hela texten</a><button type="button" class="pri" id="dlgPractice">Öva på det här kapitlet</button></div>
+</dialog>
+
+<script src="motor/typer.js"></script>
+<script src="motor/ritningar-bas.js"></script>
+<script src="motor/ritningar.js"></script>
+<script src="motor/md.js"></script>
+<script src="motor/data.js"></script>
+<script src="konfig/amnen.js"></script>
+<script src="konfig/elevnivaer.js"></script>
+<script src="motor/ova.js"></script>
+<script src="motor/portal.js"></script>
+<script>startaPortal();</script>
+</body>
+</html>

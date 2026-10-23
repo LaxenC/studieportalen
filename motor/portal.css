@@ -1,0 +1,186 @@
+/* Utseende för portalen: sidhuvud, startsida, ämnen, Läs och Aktiviteter. */
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-padding-top:120px}
+body{margin:0;min-height:100vh}
+img{max-width:100%;height:auto}
+[hidden]{display:none!important}
+a{color:var(--accent)}
+.wrap{max-width:1080px}
+.laddar{color:var(--muted);text-align:center;padding:40px 0}
+
+/* sidhuvud */
+.topp{position:sticky;top:0;z-index:20;background:var(--panel);border-bottom:1px solid var(--line)}
+.topp-in{max-width:1080px;margin:0 auto;padding:8px max(16px,env(safe-area-inset-left,0px));display:flex;align-items:center;gap:10px 16px;flex-wrap:wrap}
+.logo{font-weight:900;font-size:1.1rem;color:var(--ink);text-decoration:none;white-space:nowrap}
+.smulor{display:flex;align-items:center;gap:6px;flex-wrap:wrap;font-size:.9rem;color:var(--muted);flex:1;min-width:0}
+.smulor a{color:var(--muted);text-decoration:none;font-weight:700}
+.smulor a:hover{color:var(--accent);text-decoration:underline}
+.smulor span:not(.sep){color:var(--ink);font-weight:800}
+.smulor .sep{opacity:.6}
+.akval{display:flex;align-items:center;gap:4px;margin-left:auto}
+.akval .aklbl{font-size:.85rem;font-weight:800;color:var(--muted);margin-right:2px}
+.akval button{font:inherit;font-weight:800;font-size:.85rem;padding:5px 10px;border-radius:999px;border:1px solid var(--line);background:var(--bg);color:var(--ink);cursor:pointer}
+.akval button[aria-checked="true"]{background:var(--accent);color:var(--accent-ink);border-color:var(--accent)}
+.akval.stor{margin:0;gap:8px;flex-wrap:wrap}
+.akval.stor button{font-size:1.05rem;padding:10px 20px}
+
+/* startsida och listor */
+.hero h1{margin:0;font-weight:900;font-size:clamp(1.8rem,4.5vw,2.4rem);line-height:1.1}
+.hero p{margin:6px 0 0;color:var(--muted);font-size:1.05rem}
+.akpanel h2{font-size:1.15rem}
+.amnen{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px}
+a.card{text-decoration:none}
+.amnekort{align-items:center;text-align:center}
+.amnekort .art{height:110px}
+.amnekort h3{font-size:1.35rem}
+.amnekort p{flex:0}
+.card .chip{align-self:center}
+.card .soon{align-self:center}
+a.card:hover{box-shadow:0 0 0 3px var(--fg)}
+.omradeslista{display:grid;gap:14px}
+.omradekort{flex-direction:row;align-items:center;gap:16px}
+.omradekort .art{width:120px;height:96px;flex:none}
+.omradekort h3{text-align:left;font-size:1.3rem}
+.omradekort .chip{align-self:flex-start;margin-top:6px;display:inline-block}
+.tomt p{margin:0}
+
+/* arbetsområde */
+.treval{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px}
+.valkort{align-items:center;text-align:center;padding:20px 14px}
+.valkort .ic{font-size:2.4rem;line-height:1}
+.valkort h3{font-size:1.5rem;color:var(--fg)}
+.valkort p{flex:0}
+.kaplista{list-style:none;margin:0;padding:0;display:grid;gap:0;counter-reset:k}
+.kaplista li{display:flex;gap:12px;align-items:center;justify-content:space-between;padding:12px 0;border-top:1px solid var(--line);counter-increment:k}
+.kaplista li>div{display:grid;gap:2px;min-width:0}
+.kaplista li>div b::before{content:counter(k) ". ";color:var(--muted)}
+.kaplista li span{color:var(--muted);font-size:.92rem}
+.kapknapp{display:flex;gap:6px;flex:none}
+.ghostbtn{font:inherit;font-weight:800;padding:8px 14px;border-radius:999px;border:1px solid var(--line);background:var(--panel);color:var(--ink);cursor:pointer;text-decoration:none;display:inline-block}
+.ghostbtn:hover{border-color:var(--accent);color:var(--accent)}
+
+/* flikar Läs / Öva / Aktiviteter */
+.flikar{display:flex;gap:8px;flex-wrap:wrap}
+.flik{display:inline-flex;align-items:center;gap:8px;padding:10px 20px;border-radius:999px;font-weight:900;text-decoration:none;color:var(--ink);background:var(--panel);border:1px solid var(--line)}
+.flik.on{background:var(--accent);color:var(--accent-ink);border-color:var(--accent)}
+
+/* Öva */
+.ova-start,#quizView,#resultView{display:grid;gap:18px}
+.kapgrid{grid-template-columns:repeat(auto-fit,minmax(190px,1fr))!important}
+.avfilter{margin:0;display:flex;gap:10px;align-items:center;flex-wrap:wrap;background:var(--yellow-bg);border:1px solid var(--yellow-bd);border-radius:10px;padding:8px 12px}
+.avfilter .ghostbtn{padding:4px 12px;font-size:.88rem}
+
+/* Läs – översikt */
+.fortsatt{display:block;background:var(--panel);border:2px solid var(--accent);border-radius:14px;padding:12px 16px;text-decoration:none;color:var(--ink)}
+.laskort{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px}
+.laskap h3{text-align:left;color:var(--fg)}
+.laskap p{flex:0}
+.kapnr{margin:0;font-size:.8rem;font-weight:900;text-transform:uppercase;letter-spacing:.06em;color:var(--muted)}
+.avlista{margin:0;padding-left:1.1em;font-size:.9rem;color:var(--ink);display:grid;gap:2px}
+.ordlista summary{display:flex;align-items:center;gap:10px;cursor:pointer;list-style:none}
+.ordlista summary::-webkit-details-marker{display:none}
+.ordlista summary::before{content:"▸";font-weight:900;color:var(--muted)}
+.ordlista[open] summary::before{content:"▾"}
+.ordlista dl{margin:6px 0 0;display:grid;gap:0}
+.ordlista dl>div{display:grid;grid-template-columns:minmax(120px,220px) 1fr;gap:4px 16px;padding:8px 0;border-top:1px solid var(--line)}
+.ordlista dt{font-weight:900}
+.ordlista dt a{color:var(--ink)}
+.ordlista dd{margin:0;color:var(--muted)}
+
+/* Läs – kapiteltext */
+.kapitel{background:var(--panel);border-radius:18px;padding:0 0 18px;display:grid;gap:0;font-size:1.05rem;line-height:1.6}
+.avmeny{position:sticky;top:var(--toppH,54px);z-index:10;display:flex;gap:6px;overflow-x:auto;padding:10px 20px;background:var(--panel);border-bottom:1px solid var(--line);border-radius:18px 18px 0 0;scrollbar-width:thin}
+.avmeny a{flex:none;padding:5px 12px;border-radius:999px;border:1px solid var(--line);font-weight:800;font-size:.88rem;color:var(--muted);text-decoration:none;white-space:nowrap}
+.avmeny a.on{background:var(--accent-soft);color:var(--accent);border-color:var(--accent)}
+.kaphuvud,.avsnitt,.kapslut{padding:18px clamp(16px,4vw,40px) 0;display:grid;gap:14px;min-width:0}
+.kaphuvud h1{margin:0;font-weight:900;font-size:clamp(1.7rem,4vw,2.2rem);line-height:1.15}
+.ingress{margin:0;font-size:1.18rem;font-weight:700;color:var(--muted)}
+.avsnitt{border-top:1px solid var(--line);margin-top:18px;padding-top:24px}
+.avsnitt>h2{margin:0;font-size:1.55rem;line-height:1.2}
+.lastext h3{margin:6px 0 0;font-size:1.18rem;font-weight:900;color:var(--blue)}
+.lastext h4{margin:4px 0 0;font-size:1.05rem;font-weight:900}
+.lastext p{margin:0;max-width:72ch}
+.lastext ul,.lastext ol{margin:0;padding-left:1.3em;display:grid;gap:4px;max-width:72ch}
+.lastext code{font-family:inherit;font-weight:800;background:var(--bg);padding:1px 6px;border-radius:6px}
+.lastext .rules{font-size:.98rem;line-height:1.45}
+.lastext .rules td{vertical-align:middle}
+.lastext .rules td .pic{width:26px;height:26px;vertical-align:middle;margin-right:4px}
+.lastext .rules td svg{vertical-align:middle}
+
+/* rutor */
+.exempel{border-left:6px solid var(--orange);background:var(--orange-bg);border-radius:12px;padding:12px 16px;display:grid;gap:6px}
+.exempel .et{font-weight:900;color:var(--orange)}
+.viktigt{border-radius:14px;background:var(--green-bg);border:2px solid var(--green-bd);padding:14px 16px;display:grid;gap:8px}
+.viktigt .vt{font-weight:900;font-size:1.1rem}
+.callout{display:grid;gap:6px}
+.callout h4{margin:0}
+.fordjup{border:2px dashed var(--purple-bd);border-radius:12px;padding:10px 14px;background:var(--purple-bg)}
+.fordjup summary{cursor:pointer;font-weight:900;color:var(--purple)}
+.fd-inne{display:grid;gap:10px;margin-top:10px}
+blockquote{margin:0;border-left:4px solid var(--line);padding-left:14px;color:var(--muted)}
+
+/* begrepp: i marginalen bredvid stycket ovanför (dator), under stycket (mobil) */
+.med-begrepp{display:grid;grid-template-columns:minmax(0,1fr) 230px;gap:14px 24px;align-items:start}
+.mb-text{display:grid;gap:14px;min-width:0}
+.mb-sida{display:grid;gap:10px}
+.begrepp{border:1px solid var(--line);background:var(--bg);border-radius:12px;padding:10px 12px;font-size:.92rem;line-height:1.4}
+.begrepp .bt{font-weight:900;font-size:.78rem;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin-bottom:4px}
+.begrepp dl{margin:0;display:grid;gap:6px}
+.begrepp dt{font-weight:900}
+.begrepp dd{margin:0;color:var(--muted)}
+@media (max-width:760px){.med-begrepp{grid-template-columns:1fr}}
+
+/* bilder och rader */
+.figur{margin:0;display:grid;gap:6px;justify-items:center}
+.figbilder{display:flex;gap:16px;align-items:center;justify-content:center;flex-wrap:wrap}
+.figbilder>svg,.figbilder .ritning svg{width:min(280px,100%);height:auto}
+.figbilder img{border-radius:12px}
+.figur figcaption{font-size:.9rem;color:var(--muted);text-align:center;max-width:60ch}
+.figur.fig-hoger{justify-items:end}
+.figur.fig-liten .figbilder>*{max-width:180px}
+.ritning{display:grid;place-items:center}
+.rad{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px;align-items:start}
+.rad-cell{min-width:0;display:grid;gap:10px}
+.rad .figur .figbilder>svg,.rad .figur .ritning svg{width:min(240px,100%)}
+.rad .mini svg{max-width:150px}
+.eq{display:inline-flex}
+.saknas{background:var(--red-bg);border:1px dashed var(--proton);padding:0 6px;border-radius:6px;font-size:.85rem}
+
+/* årskursmärkning när "Alla" är valt */
+.aktag{display:inline-block;font-size:.72rem;font-weight:900;letter-spacing:.04em;background:var(--purple-bg);color:var(--purple);border:1px solid var(--purple-bd);border-radius:999px;padding:1px 8px;margin-right:6px;vertical-align:2px;line-height:1.5}
+.ak-block.ak-extra{border-left:3px solid var(--purple-bd);padding-left:12px}
+.ak-block{display:grid;gap:14px}
+.ak-block>.aktag,.avsnitt>.aktag{justify-self:start}
+section.avsnitt.ak-extra>.aktag{justify-self:start}
+
+/* öva-knappar i texten */
+.ovahar{margin:4px 0 0}
+.ovahar .start,.kapslut .start{text-decoration:none;font-size:1rem;padding:11px 22px}
+.ovahar .start span{font-weight:700;opacity:.85}
+.kapslut{border-top:1px solid var(--line);margin-top:22px;padding-top:22px;justify-items:center}
+.kapnav{display:flex;justify-content:space-between;gap:10px;width:100%;flex-wrap:wrap}
+
+/* Plugga-dialogen */
+.plugga-av{display:grid;gap:10px}
+.lasmer summary{cursor:pointer;font-weight:800;color:var(--accent)}
+.lasmer .lastext{display:grid;gap:12px;margin-top:10px;font-size:1rem;line-height:1.55}
+.dlg-foot a.sec{font:inherit;font-weight:900;padding:12px 22px;border-radius:999px;border:1px solid var(--line);background:var(--bg);color:var(--ink);text-decoration:none}
+
+/* aktiviteter */
+.aktram{width:100%;min-height:70vh;border:0;border-radius:16px;background:var(--panel)}
+
+@media (max-width:640px){
+  .topp-in{gap:6px 10px}
+  .smulor{order:3;flex-basis:100%}
+  .omradekort{flex-direction:column;text-align:center}
+  .omradekort h3{text-align:center}
+  .omradekort .chip{align-self:center}
+  .kaplista li{flex-direction:column;align-items:flex-start}
+  .ordlista dl>div{grid-template-columns:1fr}
+  .row2{grid-template-columns:1fr!important}
+  .levels{grid-template-columns:repeat(2,1fr)!important}
+}
+@media (max-width:640px){.flik{padding:8px 14px;font-size:.95rem}.flikar{gap:6px}}
+/* rutor fungerar även utanför lästexten (t.ex. i Plugga) */
+.viktigt p,.exempel p,.callout p,.begrepp p,.fordjup p{margin:0}
+.viktigt ul,.viktigt ol,.exempel ul,.callout ul,.callout ol,.fordjup ul{margin:0;padding-left:1.3em;display:grid;gap:4px}
