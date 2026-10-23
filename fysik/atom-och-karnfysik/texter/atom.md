@@ -62,7 +62,7 @@ Ingen har kunnat se en atom med blotta ögat. Forskarna har i stället gjort exp
 > - Modellen har ändrats när nya upptäckter har gjorts.
 
 ## Elektronskal {#skal}
-Elektronerna finns i skal runt atomkärnan. Elektronerna har samma negativa laddning och stöter därför bort varandra (repellerar). De fördelar sig i olika elektronskal runt kärnan. Lite förnklar kan man säta att skalen längre ut kan rymma fler elektroner eftersom de har mer plats. Det innersta skalet rymmer högst 2 elektroner och det andra skalet högst 8.
+Elektronerna finns i skal runt atomkärnan, fördelar sig i olika elektronskal runt kärnan. Elektronerna har samma negativa laddning och stöter därför bort varandra (repellerar), därför får det inte plats med hur många elektroner som helst i ett skal. Lite förnklar kan man säta att skalen längre ut kan rymma fler elektroner eftersom de har mer plats. Det innersta skalet rymmer högst 2 elektroner och det andra skalet högst 8.
 Elektronskalen har namn de heter: K, L, M osv i alfabetet. Anledningen att man inte började med bokstaven A när man döpte skalen var för man inte var säker på om man hittat det innersta skalet.
 Elektroner i det yttersta skalet kallas för **valenselektroner**
 > **Begrepp**
