@@ -14,7 +14,8 @@ function atom(p,n,e,opt={}){
   const kinds=[];let pi=0,ni=0;for(let i=0;i<N;i++){(pi/p<=ni/(n||1)&&pi<p)||ni>=n?(kinds.push("p"),pi++):(kinds.push("n"),ni++)}
   const maxR=pts.reduce((m,[x,y])=>Math.max(m,Math.hypot(x,y)),0);
   const ring=Math.max(22,maxR+r+5), s1=ring+30, s2=ring+64, size=opt.tight?Math.ceil((e>2?s2:s1)+16):Math.max(132,Math.ceil(s2+14)), c=size;
-  let g=`<svg viewBox="0 0 ${2*size} ${2*size}" aria-hidden="true">`;
+  const vTxt=opt.valens?(opt.valens===true?"Valenselektroner":String(opt.valens)):"", extra=vTxt?Math.max(130,vTxt.length*9+30):0;
+  let g=`<svg viewBox="0 0 ${2*size+extra} ${2*size}" aria-hidden="true"${opt.label?` role="img" aria-label="${opt.label}"`:""}>`;
   g+=`<circle cx="${c}" cy="${c}" r="${s1}" fill="none" stroke="var(--shell)" stroke-width="5"/>`;
   const KK=opt.shells?opt.shells[0]:Math.min(e,2), LL=opt.shells?opt.shells[1]:Math.max(e-2,0);
   if(LL>0||opt.alwaysL) g+=`<circle cx="${c}" cy="${c}" r="${s2}" fill="none" stroke="var(--shell)" stroke-width="5"/>`;
@@ -24,9 +25,26 @@ function atom(p,n,e,opt={}){
     g+=`<circle cx="${c+x}" cy="${c+y}" r="${r}" fill="url(#g${k==="p"?"P":"N"})"/>`;
     if(k==="p") g+=`<text x="${c+x}" y="${c+y+4.5}" text-anchor="middle" font-size="13" font-weight="900" fill="#fff">+</text>`;
   });
-  const shells=[[KK,s1,0],[LL,s2,-90]];
-  shells.forEach(([k,R,off])=>{for(let i=0;i<k;i++){const t=(off+i*360/k)*Math.PI/180,x=c+R*Math.cos(t),y=c+R*Math.sin(t);
-    g+=`<circle cx="${x}" cy="${y}" r="11" fill="url(#gE)"/><text x="${x}" y="${y+5}" text-anchor="middle" font-size="16" font-weight="900" fill="#fff">−</text>`}});
+  const shells=[[KK,s1,0],[LL,s2,-90]], el=[];
+  shells.forEach(([k,R,off],si)=>{for(let i=0;i<k;i++){const t=(off+i*360/k)*Math.PI/180;el.push({x:c+R*Math.cos(t),y:c+R*Math.sin(t),si})}});
+  const yttre=LL>0?1:0, val=el.filter(q=>q.si===yttre);
+  // valenselektroner: gul ring bakom
+  if(vTxt) val.forEach(q=>{g+=`<circle cx="${q.x}" cy="${q.y}" r="17" fill="var(--yellow-bg)" stroke="var(--yellow)" stroke-width="3"/>`});
+  el.forEach(({x,y})=>{g+=`<circle cx="${x}" cy="${y}" r="11" fill="url(#gE)"/><text x="${x}" y="${y+5}" text-anchor="middle" font-size="16" font-weight="900" fill="#fff">−</text>`});
+  // skalens namn
+  if(opt.skalnamn) [[s1,"K-skal",KK>0||true],[s2,"L-skal",LL>0||opt.alwaysL]].forEach(([R,t,syns])=>{ if(!syns) return;
+    const a=135*Math.PI/180,x=c+R*Math.cos(a),y=c+R*Math.sin(a),w=t.length*8+14;
+    g+=`<rect x="${x-w/2}" y="${y-11}" width="${w}" height="22" rx="11" fill="var(--panel)" stroke="var(--shell)" stroke-width="2"/><text x="${x}" y="${y+5}" text-anchor="middle" font-size="13" font-weight="900" fill="var(--ink)">${t}</text>`});
+  // etikett med pilar till valenselektronerna
+  if(vTxt&&val.length){
+    const lx=2*size+extra-8, ly=Math.max(22,c-(yttre?s2:s1)-4);
+    g+=`<defs><marker id="vpil" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="var(--yellow)"/></marker></defs>`;
+    let mal=val.filter(q=>q.x>=c-1&&q.y<=c+1); if(!mal.length) mal=[val.reduce((a,b)=>(b.x-b.y>a.x-a.y?b:a))];
+    const sx=lx-vTxt.length*9-6, sy=ly+12;
+    mal.forEach(q=>{const dx=q.x-sx,dy=q.y-sy,d=Math.hypot(dx,dy),k=(d-20)/d;
+      g+=`<line x1="${sx}" y1="${sy}" x2="${sx+dx*k}" y2="${sy+dy*k}" stroke="var(--yellow)" stroke-width="3" stroke-linecap="round" marker-end="url(#vpil)"/>`});
+    g+=`<text x="${lx}" y="${ly}" text-anchor="end" font-size="16" font-weight="900" fill="var(--ink)">${vTxt}</text>`;
+  }
   return g+"</svg>";
 }
 function counts(p,n,e,showCharge){

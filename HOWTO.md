@@ -464,6 +464,7 @@ Lägg till `{.liten}` efter bilden för en mindre bild. Krymp stora foton till h
 | Skriv | Visar |
 |---|---|
 | `[[atom p=6 n=6 e=6]]` | atom med protoner, neutroner och elektroner |
+| `[[atom p=6 n=5 e=6 skalnamn valens]]` | … med skalens namn (K-skal, L-skal) och pil till valenselektronerna. `valens="Yttre elektroner"` ger egen text |
 | `[[nota 13 6 C]]` | atomnotation. `[[nota 12 6 C +]]` med laddning. Lägg till `stor` och/eller `farg` |
 | `[[partikel p]]` | en proton (`p`), neutron (`n`) eller elektron (`e`) |
 | `[[partiklar n → p + e]]` | rad med partiklar och tecken |

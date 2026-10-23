@@ -129,6 +129,7 @@ Ett avsnitt bara för åk 9.
 | Skriv | Visar |
 |---|---|
 | `[[atom p=6 n=6 e=6]]` | atom med partiklar och skal |
+| `[[atom p=6 n=5 e=6 skalnamn valens]]` | … med skalens namn och pil till valenselektronerna |
 | `[[nota 13 6 C]]` | atomnotation. `[[nota 12 6 C +]]` med laddning. Lägg till `stor` och `farg` |
 | `[[partikel p]]` | proton (p), neutron (n) eller elektron (e) |
 | `[[partiklar n → p + e]]` | rad med partiklar och tecken |

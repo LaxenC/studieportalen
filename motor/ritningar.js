@@ -2,6 +2,8 @@
    RITNINGAR – bilder som kan användas i texter med [[namn ...]]
    ---------------------------------------------------------------------
    [[atom p=6 n=6 e=6]]            atom med protoner, neutroner, elektroner
+   [[atom p=6 n=5 e=6 skalnamn valens]]  ... med skalens namn och pil till valenselektronerna
+                                   (valens="Yttre elektroner" ger egen text)
    [[nota 13 6 C]]                 atomnotation (masstal, atomnummer, beteckning)
    [[nota 12 6 C +]]               ... med laddning.  Lägg till "stor" och/eller "farg"
    [[partikel p]]                  en partikel: p, n eller e
@@ -32,7 +34,8 @@ const AMNESBILD = {
 const KVARKNAMN = { u: "up", d: "down", c: "charm", s: "strange", t: "top", b: "bottom" };
 
 const RITNINGAR = {
-  atom: (p, a) => `<div class="ritning">${atom(+a.p || 0, +a.n || 0, +a.e || 0)}</div>`,
+  atom: (p, a) => `<div class="ritning${a.valens || p.includes("valens") ? " bred" : ""}">${atom(+a.p || 0, +a.n || 0, +a.e || 0, {
+    skalnamn: p.includes("skalnamn"), valens: a.valens ? esc(a.valens) : p.includes("valens") }) }</div>`,
   nota: (p, a) => {
     const flaggor = p.filter(x => x === "stor" || x === "farg"), v = p.filter(x => !flaggor.includes(x));
     const A = a.A ?? v[0], Z = a.Z ?? v[1], X = a.X ?? v[2], ch = a.ch ?? (v[3] || "");
