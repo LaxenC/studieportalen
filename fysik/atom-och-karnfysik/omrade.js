@@ -21,7 +21,7 @@
 Portal.omrade({
   id: "atom-och-karnfysik",
   namn: "Atom- och kärnfysik",
-  text: "Atomens uppbyggnad, atomnotation, isotoper och joner, strålning.",
+  text: "Atomens uppbyggnad, atomnotation, isotoper och joner, strålning, radioaktivitet och kärnenergi.",
   bild: "[[kort-atom]]",
   arskurs: [7, 8, 9],
   kapitel: [
@@ -39,10 +39,15 @@ Portal.omrade({
       arskurs: [7,8,9] },
     { id: "radioaktivitet", namn: "Radioaktivitet – sönderfall", farg: "purple", bild: "[[kort-stralning]]",
       text: "Instabila kärnor, radioaktivt sönderfall, mäta strålning, halveringstid och kol-14-metoden.",
+      arskurs: [7, 8, 9] },
+    { id: "karnenergi", namn: "Kärnenergi", farg: "red", bild: "[[kort-atom]]",
+      text: "Fission, kedjereaktion, kärnkraftverk, fusion och E = mc².",
       arskurs: [7, 8, 9] }
   ],
   aktiviteter: [
     { id: "kol14", namn: "Kol-14-metoden", fil: "aktiviteter/kol14.html", arskurs: [9],
-      text: "Hur gammalt är ett fynd? Använd halveringstiden för kol-14." }
+      text: "Hur gammalt är ett fynd? Använd halveringstiden för kol-14." },
+    { id: "sonderfallskedja", namn: "Sönderfallskedjan för uran-235", fil: "aktiviteter/sonderfallskedja.html", arskurs: [8, 9],
+      text: "Bygg kedjan från uran-235 till stabilt bly med hjälp av en isotoptabell och periodiska systemet." }
   ]
 });

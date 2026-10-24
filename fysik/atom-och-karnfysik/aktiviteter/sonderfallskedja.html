@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="sv">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Sönderfallskedjan för uran-235</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@500;700;800;900&family=Noto+Serif:wght@700&display=swap">
+<style>
+*,*::before,*::after{box-sizing:border-box}
+[hidden]{display:none!important}
+:root{
+  --bg:#eef3fb; --panel:#ffffff; --ink:#152238; --muted:#4f5d75; --line:#d5deeb;
+  --accent:#2563eb; --accent-ink:#ffffff; --accent-soft:#dbe7ff;
+  --green-bg:#e8f7ec; --green-bd:#a9dfb8; --green:#2f9e57;
+  --blue-bg:#e6f1fc; --blue-bd:#a8cdf1; --blue:#2b78c9;
+  --yellow-bg:#fff6dd; --yellow-bd:#f2d78a; --yellow:#b7850c;
+  --red-bg:#fdeaec; --red-bd:#f2b3b9; --red:#d63c45;
+  --purple-bg:#f0ebfd; --purple-bd:#c9b8f5; --purple:#6d48d6;
+  --c14:#e07a1f; --n14:#2b78c9;
+  --font:"Nunito",system-ui,sans-serif; --serif:"Noto Serif",Georgia,serif;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#0f1626; --panel:#18223a; --ink:#e8edf7; --muted:#a6b1c6; --line:#2c3a58;
+  --accent:#5b8cff; --accent-ink:#0f1626; --accent-soft:#233a6b;
+  --green-bg:#16301f; --green-bd:#2f6b44; --green:#5fd38a;
+  --blue-bg:#152a44; --blue-bd:#2f5d8f; --blue:#6fb0f2;
+  --yellow-bg:#33290f; --yellow-bd:#6f5a1c; --yellow:#f0c44a;
+  --red-bg:#3a1a20; --red-bd:#7a3540; --red:#ff7a82;
+  --purple-bg:#251d45; --purple-bd:#4f3e94; --purple:#a88cff;
+  --c14:#ff9f4a; --n14:#6fb0f2; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0f1626; --panel:#18223a; --ink:#e8edf7; --muted:#a6b1c6; --line:#2c3a58;
+  --accent:#5b8cff; --accent-ink:#0f1626; --accent-soft:#233a6b;
+  --green-bg:#16301f; --green-bd:#2f6b44; --green:#5fd38a;
+  --blue-bg:#152a44; --blue-bd:#2f5d8f; --blue:#6fb0f2;
+  --yellow-bg:#33290f; --yellow-bd:#6f5a1c; --yellow:#f0c44a;
+  --red-bg:#3a1a20; --red-bd:#7a3540; --red:#ff7a82;
+  --purple-bg:#251d45; --purple-bd:#4f3e94; --purple:#a88cff;
+  --c14:#ff9f4a; --n14:#6fb0f2; color-scheme:dark}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--font);font-size:16px;line-height:1.5}
+.wrap{max-width:980px;margin:0 auto;padding:28px 16px 48px;display:grid;gap:18px}
+header h1{margin:0;font-weight:900;font-size:clamp(1.8rem,4.5vw,2.5rem);line-height:1.1}
+header p{margin:6px 0 0;color:var(--muted);font-size:1.08rem;max-width:68ch}
+.eyebrow{margin:0 0 4px;font-weight:800;text-transform:uppercase;letter-spacing:.08em;font-size:.78rem;color:var(--muted)}
+.panel{background:var(--panel);border-radius:16px;padding:18px;display:grid;gap:14px;min-width:0}
+h2{margin:0;font-weight:900;font-size:1.35rem}
+h3{margin:0;font-weight:900;font-size:1.05rem}
+p{margin:0}
+a{color:var(--accent)}
+.regler{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:12px}
+.regel{border-radius:14px;padding:12px 14px;display:grid;gap:4px}
+.regel.a{background:var(--purple-bg);border:2px solid var(--purple-bd)}
+.regel.b{background:var(--blue-bg);border:2px solid var(--blue-bd)}
+.regel b.t{font-size:1.1rem}
+.regel .ex{font-family:var(--serif);font-weight:700}
+.ps{display:grid;grid-template-columns:repeat(auto-fill,minmax(82px,1fr));gap:6px}
+.ps div{border-radius:10px;background:var(--bg);padding:6px 8px;display:grid;line-height:1.15}
+.ps small{color:var(--muted);font-weight:800;font-size:.75rem}
+.ps b{font-family:var(--serif);font-size:1.35rem}
+.ps span{font-size:.78rem;color:var(--muted);font-weight:700}
+.tabwrap{overflow-x:auto}
+table{border-collapse:collapse;width:100%;font-size:.95rem}
+th,td{padding:7px 10px;text-align:left;border-bottom:1px solid var(--line);white-space:nowrap}
+th{background:var(--bg);font-weight:900}
+td.num{font-variant-numeric:tabular-nums}
+.typ{font-weight:900;border-radius:999px;padding:1px 10px;font-size:.85rem}
+.typ.alfa{background:var(--purple-bg);color:var(--purple)}
+.typ.beta{background:var(--blue-bg);color:var(--blue)}
+.typ.stabil{background:var(--green-bg);color:var(--green)}
+tr.anv td{opacity:.45}
+.lage{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+.lage button{font:inherit;font-weight:800;padding:6px 14px;border-radius:999px;border:2px solid var(--line);background:var(--panel);color:var(--ink);cursor:pointer}
+.lage button[aria-pressed="true"]{border-color:var(--accent);background:var(--accent-soft)}
+.kedja{list-style:none;margin:0;padding:0;display:grid;gap:0}
+.kedja li{display:grid;grid-template-columns:44px 1fr;gap:12px;align-items:start}
+.kedja .prick{width:34px;height:34px;border-radius:50%;justify-self:center;margin-top:4px;box-shadow:inset 0 -4px 0 rgba(0,0,0,.15)}
+.kedja .pil{grid-column:1;justify-self:center;width:3px;height:22px;background:var(--line);position:relative}
+.kedja .info{display:flex;flex-wrap:wrap;gap:4px 12px;align-items:baseline;padding:6px 0}
+.kedja .namn{font-weight:900;font-size:1.08rem}
+.not{font-family:var(--serif);font-weight:700;display:inline-grid;grid-template-columns:auto auto;align-items:center;line-height:1}
+.not .s{display:grid;font-size:.62em;text-align:right;margin-right:1px}
+.not .X{font-size:1.25em}
+.steg{border-radius:14px;border:2px dashed var(--accent);padding:14px;display:grid;gap:10px;background:var(--bg)}
+.rad{display:flex;flex-wrap:wrap;gap:10px;align-items:end}
+.falt{display:grid;gap:3px}
+.falt label{font-weight:800;font-size:.85rem}
+.falt input,.falt select{font:inherit;padding:8px 10px;border-radius:10px;border:2px solid var(--line);background:var(--panel);color:var(--ink);width:110px}
+.falt select{width:auto;min-width:180px}
+.falt .ok{border-color:var(--green);background:var(--green-bg)}
+.falt .no{border-color:var(--red);background:var(--red-bg)}
+.btn{font:inherit;font-weight:900;padding:10px 20px;border-radius:999px;border:0;background:var(--accent);color:var(--accent-ink);cursor:pointer}
+.btn.sec{background:var(--panel);color:var(--accent);border:2px solid var(--accent)}
+.fb{border-radius:10px;padding:10px 12px;font-size:.95rem}
+.fb.ok{background:var(--green-bg);border:1px solid var(--green-bd)}
+.fb.no{background:var(--red-bg);border:1px solid var(--red-bd)}
+.klar{border-radius:14px;padding:14px;background:var(--green-bg);border:2px solid var(--green-bd);display:grid;gap:8px}
+.fragor{border-radius:14px;padding:14px;background:var(--purple-bg);border:2px solid var(--purple-bd);display:grid;gap:10px}
+.fragor h3{color:var(--purple)}
+.fragor ol{margin:0;padding-left:1.3em;display:grid;gap:8px}
+.fragor details summary{cursor:pointer;font-weight:800;color:var(--purple)}
+.fragor details{margin-top:4px}
+button:focus-visible,input:focus-visible,select:focus-visible,summary:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <p class="eyebrow">Fysik · Radioaktivitet · Sönderfall</p>
+    <h1>Sönderfallskedjan – från uran-235 till stabilt</h1>
+    <p>Uran-235 är radioaktivt. När det sönderfaller blir det ett nytt ämne – som också är radioaktivt. Kedjan fortsätter tills kärnan blir stabil. Bygg kedjan steg för steg med hjälp av tabellen och periodiska systemet.</p>
+  </header>
+
+  <section class="panel" aria-labelledby="h-regler">
+    <h2 id="h-regler">Så ändras kärnan</h2>
+    <div class="regler">
+      <div class="regel a"><b class="t">α – alfasönderfall</b><p>Kärnan skickar ut en alfapartikel: 2 protoner + 2 neutroner.</p><p><b>Atomnummer − 2</b> · <b>Masstal − 4</b></p></div>
+      <div class="regel b"><b class="t">β – betasönderfall</b><p>En neutron blir en proton och en elektron skickas ut.</p><p><b>Atomnummer + 1</b> · <b>Masstal samma</b></p></div>
+    </div>
+  </section>
+
+  <section class="panel" aria-labelledby="h-ps">
+    <h2 id="h-ps">Periodiska systemet (atomnummer 80–92)</h2>
+    <p>Atomnumret – antalet protoner – bestämmer vilket ämne det är.</p>
+    <div class="ps" id="ps"></div>
+  </section>
+
+  <section class="panel" aria-labelledby="h-tab">
+    <h2 id="h-tab">Isotoptabell</h2>
+    <p>Tabellen visar hur olika isotoper sönderfaller och hur lång halveringstiden är. Alla isotoper finns inte med i kedjan för uran-235!</p>
+    <div class="tabwrap"><table><thead><tr><th>Isotop</th><th>Atomnummer</th><th>Masstal</th><th>Sönderfall</th><th>Halveringstid</th></tr></thead><tbody id="tab"></tbody></table></div>
+    <p style="font-size:.9rem;color:var(--muted)">Vill du se alla isotoper som finns? Titta i <a href="https://www.nndc.bnl.gov/nudat3/" target="_blank" rel="noopener">NuDat 3</a> (avancerad, på engelska).</p>
+  </section>
+
+  <section class="panel" aria-labelledby="h-kedja">
+    <h2 id="h-kedja">Bygg sönderfallskedjan</h2>
+    <div class="lage" role="group" aria-label="Svårighet"><span style="font-weight:800">Svårighet:</span>
+      <button type="button" data-lage="valj" aria-pressed="true">Välj nästa isotop</button>
+      <button type="button" data-lage="rakna" aria-pressed="false">Räkna själv</button>
+      <button type="button" class="btn sec" id="omstart" style="padding:6px 14px">Börja om</button></div>
+    <ol class="kedja" id="kedja"></ol>
+    <div class="steg" id="steg"></div>
+    <div class="klar" id="klar" hidden></div>
+    <div class="fragor" id="fragor" hidden>
+      <h3>Fundera och svara</h3>
+      <ol>
+        <li>Hur många alfasönderfall och hur många betasönderfall finns i kedjan?
+          <details><summary>Visa svar</summary>7 alfasönderfall och 4 betasönderfall. Kontroll: masstalet minskar med 7 · 4 = 28 (235 − 28 = 207) och atomnumret blir 92 − 7 · 2 + 4 = 82 (bly).</details></li>
+        <li>Vilken isotop i kedjan har längst halveringstid? Vilken har kortast?
+          <details><summary>Visa svar</summary>Längst: uran-235 (cirka 704 miljoner år). Kortast: polonium-215 (under 2 millisekunder).</details></li>
+        <li>Uran-235 bildades för miljarder år sedan. Varför finns det fortfarande uran-235 på jorden?
+          <details><summary>Visa svar</summary>Halveringstiden är så lång (cirka 704 miljoner år) att allt inte har hunnit sönderfalla.</details></li>
+        <li>Radon-219 är en gas. Varför är det farligt att andas in radon, fast halveringstiden är kort?
+          <details><summary>Visa svar</summary>Radon sönderfaller inne i lungorna och sänder ut joniserande strålning (alfa) direkt mot cellerna. Döttrarna – polonium och bly – är också radioaktiva.</details></li>
+      </ol>
+    </div>
+  </section>
+</div>
+<script>
+const AMNE = { 80: ["Hg", "kvicksilver"], 81: ["Tl", "tallium"], 82: ["Pb", "bly"], 83: ["Bi", "vismut"], 84: ["Po", "polonium"], 85: ["At", "astat"],
+  86: ["Rn", "radon"], 87: ["Fr", "francium"], 88: ["Ra", "radium"], 89: ["Ac", "aktinium"], 90: ["Th", "torium"], 91: ["Pa", "protaktinium"], 92: ["U", "uran"] };
+// [atomnummer, masstal, sönderfall, halveringstid]  – källa: NuDat 3 (NNDC), avrundat
+const ISOTOPER = [
+  [92, 235, "alfa", "704 miljoner år"], [90, 231, "beta", "25,5 timmar"], [91, 231, "alfa", "32 800 år"], [89, 227, "beta", "21,8 år"],
+  [90, 227, "alfa", "18,7 dygn"], [88, 223, "alfa", "11,4 dygn"], [86, 219, "alfa", "4,0 sekunder"], [84, 215, "alfa", "1,8 millisekunder"],
+  [82, 211, "beta", "36,1 minuter"], [83, 211, "alfa", "2,1 minuter"], [81, 207, "beta", "4,8 minuter"], [82, 207, "stabil", "–"],
+  // finns inte i kedjan
+  [92, 238, "alfa", "4,5 miljarder år"], [90, 234, "beta", "24,1 dygn"], [88, 226, "alfa", "1 600 år"], [86, 222, "alfa", "3,8 dygn"],
+  [84, 210, "alfa", "138 dygn"], [82, 206, "stabil", "–"], [87, 223, "beta", "22 minuter"], [83, 210, "beta", "5,0 dygn"]
+];
+const KEDJA = ["92-235", "90-231", "91-231", "89-227", "90-227", "88-223", "86-219", "84-215", "82-211", "83-211", "81-207", "82-207"];
+const FARG = ["#e5484d", "#f06a2b", "#f59f00", "#e8b100", "#c9c400", "#7ec850", "#3fbf8f", "#2fb3c9", "#3b8de0", "#5b6ef0", "#8a5cf0", "#7a7f8c"];
+const iso = k => ISOTOPER.find(x => x[0] + "-" + x[1] === k);
+const namn = ([Z, A]) => `${AMNE[Z][1][0].toUpperCase() + AMNE[Z][1].slice(1)}-${A}`;
+const not = ([Z, A]) => `<span class="not"><span class="s"><span>${A}</span><span>${Z}</span></span><span class="X">${AMNE[Z][0]}</span></span>`;
+const typText = t => t === "alfa" ? "α-sönderfall" : t === "beta" ? "β-sönderfall" : "stabil";
+const $ = id => document.getElementById(id);
+let steg = 1, lage = "valj", forsok = 0;
+
+$("ps").innerHTML = Object.entries(AMNE).map(([Z, [X, n]]) => `<div><small>${Z}</small><b>${X}</b><span>${n}</span></div>`).join("");
+const sorterad = [...ISOTOPER].sort((a, b) => AMNE[a[0]][1].localeCompare(AMNE[b[0]][1], "sv") || a[1] - b[1]);
+function tabell() {
+  const anv = new Set(KEDJA.slice(0, steg));
+  $("tab").innerHTML = sorterad.map(x => `<tr class="${anv.has(x[0] + "-" + x[1]) ? "anv" : ""}"><td><b>${namn(x)}</b> ${not(x)}</td><td class="num">${x[0]}</td><td class="num">${x[1]}</td>
+    <td><span class="typ ${x[2]}">${typText(x[2])}</span></td><td class="num">${x[3]}</td></tr>`).join("");
+}
+function kedja() {
+  $("kedja").innerHTML = KEDJA.slice(0, steg).map((k, i) => { const x = iso(k);
+    return `${i ? `<li aria-hidden="true"><span class="pil"></span><span style="font-size:.85rem;color:var(--muted);font-weight:800;padding:0">${typText(iso(KEDJA[i - 1])[2])}</span></li>` : ""}
+      <li><span class="prick" style="background:${FARG[i]}"></span><div class="info"><span class="namn">${namn(x)}</span>${not(x)}
+      <span class="typ ${x[2]}">${typText(x[2])}</span><span style="color:var(--muted);font-weight:700">${x[2] === "stabil" ? "" : "halveringstid " + x[3]}</span></div></li>`; }).join("");
+}
+function stegRuta() {
+  const klar = steg >= KEDJA.length;
+  $("klar").hidden = !klar; $("fragor").hidden = !klar; $("steg").hidden = klar;
+  if (klar) { $("klar").innerHTML = `<h3>Kedjan är klar! 🎉</h3><p>Bly-207 är stabilt och sönderfaller inte mer. Uran-235 har gått igenom ${KEDJA.length - 1} sönderfall för att bli stabilt.</p>`; return; }
+  const nu = iso(KEDJA[steg - 1]);
+  const fraga = `<p><b>${namn(nu)}</b> genomgår ett <b>${typText(nu[2])}</b>. Vad blir det för isotop?</p>`;
+  if (lage === "valj") {
+    $("steg").innerHTML = `${fraga}<div class="rad"><div class="falt"><label for="val">Nästa isotop</label><select id="val"><option value="">Välj ur tabellen …</option>
+      ${sorterad.map(x => `<option value="${x[0]}-${x[1]}">${namn(x)}</option>`).join("")}</select></div><button type="button" class="btn" id="kolla">Kontrollera</button></div><div id="fb"></div>`;
+  } else {
+    $("steg").innerHTML = `${fraga}<div class="rad"><div class="falt"><label for="z">Nytt atomnummer</label><input id="z" inputmode="numeric" autocomplete="off"></div>
+      <div class="falt"><label for="a">Nytt masstal</label><input id="a" inputmode="numeric" autocomplete="off"></div>
+      <div class="falt"><label for="x">Ämne</label><select id="x"><option value="">Välj …</option>${Object.entries(AMNE).map(([Z, [X, n]]) => `<option value="${Z}">${X} – ${n}</option>`).join("")}</select></div>
+      <button type="button" class="btn" id="kolla">Kontrollera</button></div><div id="fb"></div>`;
+  }
+  forsok = 0;
+}
+function kontrollera() {
+  const nu = iso(KEDJA[steg - 1]), ratt = iso(KEDJA[steg]);
+  const dZ = nu[2] === "alfa" ? -2 : 1, dA = nu[2] === "alfa" ? -4 : 0;
+  const ledtrad = `Vid ${typText(nu[2])} blir atomnumret ${nu[0]} ${dZ < 0 ? "− 2" : "+ 1"} och masstalet ${nu[1]}${dA ? " − 4" : " (samma)"}.`;
+  let ok;
+  if (lage === "valj") { const v = $("val").value; ok = v === KEDJA[steg]; $("val").className = ok ? "ok" : "no"; }
+  else {
+    const z = +$("z").value, a = +$("a").value, x = +$("x").value;
+    $("z").className = z === ratt[0] ? "ok" : "no"; $("a").className = a === ratt[1] ? "ok" : "no"; $("x").className = x === ratt[0] ? "ok" : "no";
+    ok = z === ratt[0] && a === ratt[1] && x === ratt[0];
+  }
+  if (ok) { steg++; tabell(); kedja(); stegRuta(); const s = $("steg"); if (!s.hidden) s.querySelector("select,input").focus(); return; }
+  forsok++;
+  $("fb").className = "fb no";
+  $("fb").innerHTML = forsok === 1 ? `Inte riktigt. Titta på reglerna för ${typText(nu[2])} högst upp.` : forsok === 2 ? ledtrad : `${ledtrad} Det blir <b>${namn(ratt)}</b>.`;
+}
+document.addEventListener("click", e => {
+  const b = e.target.closest("button"); if (!b) return;
+  if (b.id === "kolla") kontrollera();
+  else if (b.id === "omstart") { steg = 1; tabell(); kedja(); stegRuta(); }
+  else if (b.dataset.lage) { lage = b.dataset.lage; document.querySelectorAll("[data-lage]").forEach(x => x.setAttribute("aria-pressed", x === b)); stegRuta(); }
+});
+document.addEventListener("keydown", e => { if (e.key === "Enter" && e.target.closest("#steg")) kontrollera(); });
+tabell(); kedja(); stegRuta();
+</script>
+</body>
+</html>
