@@ -27,7 +27,7 @@ const PARTIKEL = "alfastrålning|alfa|alfa strålning/betastrålning|beta|beta s
 Portal.uppgifter([
     // [a|b] = samma svar skrivet på olika sätt. EM och PARTIKEL (överst i den här filen) är listor med godkända namn.
 
-    { id: "str-begrepp", kapitel: "stralning", avsnitt: ["vad"], titel: "Strålning – fyll i begrepp",
+    { id: "str-begrepp", kapitel: "stralning", titel: "Strålning – fyll i begrepp",
       typ: "lucktext", nivaer: [0, 1], rullista: [0],
       ordlista: ["energi", "vågor", "partiklar", "fotoner", "ljus"],
       varianter: [
@@ -35,7 +35,7 @@ Portal.uppgifter([
         { text: "Strålning överför energi i form av [vågor|våg] eller partiklar." }
       ] },
 
-    { id: "str-kategorier", kapitel: "stralning", avsnitt: ["vad"], titel: "Kategorier av strålning – fyll i begrepp",
+    { id: "str-kategorier", kapitel: "stralning", titel: "Kategorier av strålning – fyll i begrepp",
       typ: "lucktext", nivaer: [0, 1], rullista: [0],
       ordlista: ["elektromagnetisk", "partikel", "radioaktiv", "synlig"],
       varianter: [
@@ -44,7 +44,7 @@ Portal.uppgifter([
         { text: "Det finns två kategorier av strålning: [*elektromagnetisk|elektromagnetiska|elektromagnetisk strålning/partikel|partikelstrålning]- och [*elektromagnetisk|elektromagnetiska|elektromagnetisk strålning/partikel|partikelstrålning]strålning.", facit: "Det finns två kategorier av strålning: <b>elektromagnetisk strålning</b> och <b>partikelstrålning</b>." }
       ] },
 
-    { id: "str-overfor", kapitel: "stralning", avsnitt: ["vad"], titel: "Vad överför energin? – fyll i begrepp",
+    { id: "str-overfor", kapitel: "stralning", titel: "Vad överför energin? – fyll i begrepp",
       typ: "lucktext", nivaer: [0, 1], rullista: [0],
       ordlista: ["fotoner", "delar av atomkärnan", "elektromagnetisk strålning", "partikelstrålning", "elektroner i skalen"],
       varianter: [
@@ -52,7 +52,7 @@ Portal.uppgifter([
         { text: "Vid [elektromagnetisk strålning|elektromagnetisk] är det fotoner som överför energin. Vid [partikelstrålning|partikel strålning] är det delar av atomkärnan som överför energin." }
       ] },
 
-    { id: "str-bestar", kapitel: "stralning", avsnitt: ["vad"], titel: "Vad består strålningen av? – fyll i begrepp",
+    { id: "str-bestar", kapitel: "stralning" titel: "Vad består strålningen av? – fyll i begrepp",
       typ: "lucktext", nivaer: [0, 1], rullista: [0],
       ordlista: ["betapartiklar", "alfapartiklar", "fotoner", "elektroner", "heliumkärnor", "elektromagnetiska vågor"],
       varianter: [
@@ -61,7 +61,7 @@ Portal.uppgifter([
         { text: "Betastrålning består av [betapartiklar|betapartikel] som är elektroner med hög energi. Alfastrålning består av [alfapartiklar|alfapartikel] som är heliumkärnor med hög energi. Gammastrålning består av [fotoner|foton], alltså elektromagnetiska vågor i partikelform, med hög energi." }
       ] },
 
-    { id: "str-para-overfor", kapitel: "stralning", avsnitt: ["vad"], titel: "Vad överför energin? – para ihop",
+    { id: "str-para-overfor", kapitel: "stralning", titel: "Vad överför energin? – para ihop",
       typ: "para", nivaer: [1], grupp: "str-overfor-para",
       varianter: [
         { rubrik: "Välj vad som överför energin och vad det är, för varje sorts strålning.",
@@ -71,7 +71,7 @@ Portal.uppgifter([
                 ["Gammastrålning", "Foton", "Elektromagnetisk våg i partikelform med hög energi"]] }
       ] },
 
-    { id: "str-dra-bild", kapitel: "stralning", avsnitt: ["vad"], titel: "Vad överför energin? – begrepp och bild",
+    { id: "str-dra-bild", kapitel: "stralning", titel: "Vad överför energin? – begrepp och bild",
       typ: "dratabell", nivaer: [1], grupp: "str-overfor-para",
       // rader: [strålning, begrepp, bild]. "bild:alfa", "bild:elektron" och "bild:foton" ritas av sidan.
       varianter: [
@@ -80,7 +80,7 @@ Portal.uppgifter([
           rader: [["Alfastrålning", "Alfapartikel", "bild:alfa"], ["Betastrålning", "Betapartikel", "bild:elektron"], ["Gammastrålning", "Foton", "bild:foton"]] }
       ] },
 
-    { id: "str-typer", kapitel: "stralning", avsnitt: ["vad"], titel: "Typer av strålning – fyll i begrepp",
+    { id: "str-typer", kapitel: "stralning", titel: "Typer av strålning – fyll i begrepp",
       typ: "lucktext", nivaer: [0, 1], rullista: [0],
       ordlista: ["synligt ljus", "UV-strålning", "röntgenstrålning", "gammastrålning", "alfastrålning", "betastrålning", "elektromagnetisk", "partikelstrålning"],
       varianter: [
