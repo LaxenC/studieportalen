@@ -248,7 +248,7 @@ function pluggaHtml(o, kapId, avIds) {
     <details class="lasmer"><summary>Läs hela avsnittet</summary><div class="lastext">${a.html}</div></details></section>`).join("");
 }
 function oppnaPlugga(kapId, avIds, iOvning) {
-  const o = OVA.o || AKTUELLT.o, k = kapitelAv(o, kapId), t = o.texter[kapId];
+  const o = AKTUELLT.o || OVA.o, k = kapitelAv(o, kapId), t = o.texter[kapId];
   $("dlgTitle").textContent = k ? k.namn : "";
   $("dlgLead").textContent = t ? (t.ingress || "").replace(/<[^>]+>/g, "") : "";
   $("dlgBody").innerHTML = pluggaHtml(o, kapId, avIds);

@@ -90,8 +90,10 @@ function visaLasIndex(o) {
   vy().innerHTML = `${flikar(o, "las")}
     ${sk ? `<a class="fortsatt" href="${lank(o.amne, o.id, "las", senast.k, senast.a)}">Fortsätt läsa: <b>${esc(kapitelAv(o, senast.k).namn)}${senast.a && avsnittAv(o, senast.k, senast.a) ? " – " + esc(avsnittAv(o, senast.k, senast.a).rubrik) : ""}</b> →</a>` : ""}
     ${kap.length ? `<div class="laskort">${kap.map((k, i) => { const t = o.texter[k.id]; const av = t.avsnitt.filter(x => passar(x.ak, ak));
-      return `<a class="card c-${k.farg || "blue"} laskap" href="${lank(o.amne, o.id, "las", k.id)}"><span class="kapnr">Kapitel ${i + 1}</span><h3>${esc(t.titel || k.namn)}</h3><p>${t.ingress ? t.ingress.replace(/<[^>]+>/g, "") : esc(k.text || "")}</p>
-        <ul class="avlista">${av.map(x => `<li>${esc(x.rubrik)}</li>`).join("")}</ul></a>`; }).join("")}</div>` : tom("Det finns inga texter här än.")}
+      const harViktigt = av.some(x => x.viktigt.length);
+      return `<div class="cell"><a class="card c-${k.farg || "blue"} laskap" href="${lank(o.amne, o.id, "las", k.id)}"><span class="kapnr">Kapitel ${i + 1}</span><h3>${esc(t.titel || k.namn)}</h3><p>${t.ingress ? t.ingress.replace(/<[^>]+>/g, "") : esc(k.text || "")}</p>
+        <ul class="avlista">${av.map(x => `<li>${esc(x.rubrik)}</li>`).join("")}</ul></a>
+        ${harViktigt ? `<button type="button" class="info" data-plugga="${k.id}" aria-label="Viktigt att komma ihåg: ${esc(k.namn)}" title="Viktigt att komma ihåg">i</button>` : ""}</div>`; }).join("")}</div>` : tom("Det finns inga texter här än.")}
     ${begrepp.length ? `<details class="panel ordlista"><summary><h2>Ordlista</h2><span class="chip">${begrepp.length} begrepp</span></summary>
       <dl>${begrepp.map(b => `<div><dt><a href="${lank(o.amne, o.id, "las", b.k, b.av)}">${MD.inline(b.term)}</a></dt><dd>${MD.inline(b.def)}</dd></div>`).join("")}</dl></details>` : ""}`;
 }
@@ -203,8 +205,9 @@ document.addEventListener("click", e => {
     if (OV.aktiv && !confirmAk()) return;
     AKTUELLT.nyckel = ""; route();
   }
+  else if (b.dataset.plugga) oppnaPlugga(b.dataset.plugga, null, false);
   else if (b.id === "dlgClose" || b.id === "dlgClose2") document.getElementById("infoDlg").close();
-  else if (b.id === "dlgPractice") { const o = OVA.o || AKTUELLT.o; document.getElementById("infoDlg").close(); location.hash = `${lank(o.amne, o.id, "ova")}?kapitel=${b.dataset.kap}`; }
+  else if (b.id === "dlgPractice") { const o = AKTUELLT.o || OVA.o; document.getElementById("infoDlg").close(); location.hash = `${lank(o.amne, o.id, "ova")}?kapitel=${b.dataset.kap}`; }
 });
 function confirmAk() { OV.aktiv = false; return true; }
 
