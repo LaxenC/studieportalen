@@ -100,7 +100,7 @@ Portal.uppgifter([
           rader: [["1807", "modell:dalton|Dalton"], ["1897", "modell:thomson|Thomson"], ["1911", "modell:rutherford|Rutherford"], ["1913", "modell:bohr|Bohr"], ["1926", "modell:schrodinger|Schrödinger"]] }
       ] },
 
-    { id: "atom-tomrum-text", kapitel: "atom", avsnitt: ["tomrum"], titel: "Atomen är mest tomrum – fyll i begrepp",
+    { id: "atom-tomrum-text", kapitel: "atom", avsnitt: ["delar"], titel: "Atomen är mest tomrum – fyll i begrepp",
       typ: "lucktext", nivaer: [0, 1], rullista: [0],
       ordlista: ["tomrum", "luft", "vatten", "blåbär", "fotboll", "massa", "kärnan", "elektronerna", "elektroner"],
       varianter: [
@@ -108,7 +108,7 @@ Portal.uppgifter([
         { text: "Nästan hela atomens [massa|vikt] finns i [kärnan|atomkärnan], eftersom protoner och neutroner är ungefär 2000 gånger tyngre än [elektroner|elektronerna|elektron]." }
       ] },
 
-    { id: "atom-tomrum-mc", kapitel: "atom", avsnitt: ["tomrum"], titel: "Atomen är mest tomrum – välj rätt",
+    { id: "atom-tomrum-mc", kapitel: "atom", avsnitt: ["delar"], titel: "Atomen är mest tomrum – välj rätt",
       typ: "flerval", nivaer: [1],
       varianter: [
         { fraga: "Om en atom var lika stor som Globen – hur stor skulle kärnan i mitten vara?",
@@ -123,7 +123,7 @@ Portal.uppgifter([
                  { t: "I tomrummet mellan kärnan och elektronerna", s: "fel", f: "tomrum har ingen massa." } ] }
       ] },
 
-    { id: "atom-tomrum-sf", kapitel: "atom", avsnitt: ["tomrum"], titel: "Atomen är mest tomrum – sant eller falskt",
+    { id: "atom-tomrum-sf", kapitel: "atom", avsnitt: ["delar"], titel: "Atomen är mest tomrum – sant eller falskt",
       typ: "santfalskt", nivaer: [1],
       varianter: [
         { pst: [["Atomen består mest av tomrum.", true], ["Nästan hela atomens massa finns i kärnan.", true],
