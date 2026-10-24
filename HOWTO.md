@@ -500,6 +500,20 @@ Kärnan är ungefär 100 000 gånger mindre än atomen.
 
 Skrivsätt för årskurser: `åk 9`, `åk 7-8`, `åk 7,9`.
 
+**Fördjupning för en årskurs, vanlig text för de andra:**
+
+```markdown
+::: fördjupning åk 7 Atommodellerna genom historien
+| År | Modell | ... |
+...
+:::
+```
+
+- Åk 7 ser innehållet i en hopfälld ruta: *Fördjupning: Atommodellerna genom historien*.
+- Åk 8 och 9 ser det som vanlig text.
+- Med "Alla" valt syns texten med en liten etikett: *fördjupning för åk 7*.
+- Rubriken efter årskursen är valfri.
+
 ---
 
 ## 21. Länka direkt
@@ -578,6 +592,6 @@ Citattecken: använd raka `"` i `.js`-filerna, inte typografiska `”`.
 |---|---|
 | `#` · `##  {#id åk=9 dold}` · `###` | rubriker |
 | `> **Begrepp**` · `> **Exempel:**` · `> **Viktigt att komma ihåg**` · `> **Rubrik** {.färg}` · `> **Fördjupning…**` | rutor |
-| `::: rad` · `::: åk 7-8` | block |
+| `::: rad` · `::: åk 7-8` · `::: fördjupning åk 7` | block |
 | `![text](bilder/fil.png)` · `Bild:` · `[[ritning]]` | bilder |
 | `- (åk 9)` · `H~2~O` · `10^3^` · `**fet**` · `*kursiv*` | i texten |

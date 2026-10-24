@@ -199,3 +199,6 @@ section.avsnitt.ak-extra>.aktag{justify-self:start}
 .utm-ic{font-size:1.6rem;line-height:1}
 .utm-t{font-weight:900;color:var(--purple);font-size:.95rem}
 @media (max-width:640px){.levels{grid-template-columns:repeat(3,1fr)!important}}
+
+.fd-ak{display:grid;gap:10px}
+.fd-ak>.fdtag{justify-self:start}

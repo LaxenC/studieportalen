@@ -105,7 +105,10 @@ const MD = (() => {
         if (j >= rader.length) VARN.push(`"::: ${m[1].trim()}" saknar en avslutande rad med bara :::`);
         const arg = m[1].trim(), inre = block(rader.slice(i + 1, j), ctx);
         const ak = arg.match(AK_RE);
-        if (ak) ut.push({ html: `<div class="ak-block" data-ak="${parseAk(ak[1])}">${sattIhop(inre)}</div>` });
+        // ::: fördjupning åk 7 [Rubrik] – fördjupning för åk 7, vanlig text för övriga
+        const fd = arg.match(/^(?:fördjupning|fordjupning|extra)\s+(?:åk|ak)\s*=?\s*([\d,–-]+(?:\s*,\s*\d+)*)\s*(.*)$/i);
+        if (fd) ut.push({ html: `<div class="fd-ak" data-fdak="${parseAk(fd[1])}" data-titel="${esc(fd[2].trim() || "Fördjupning")}">${sattIhop(inre)}</div>` });
+        else if (ak) ut.push({ html: `<div class="ak-block" data-ak="${parseAk(ak[1])}">${sattIhop(inre)}</div>` });
         else if (arg === "rad") ut.push({ html: `<div class="rad">${inre.map(b => `<div class="rad-cell">${b.html}</div>`).join("")}</div>` });
         else ut.push({ html: `<div class="${esc(arg)}">${sattIhop(inre)}</div>` });
         i = j + 1; continue;
@@ -216,6 +219,12 @@ const MD = (() => {
 
   // Visa/dölj delar som bara gäller vissa årskurser
   function filtreraAk(root, ak) {
+    root.querySelectorAll(".fd-ak[data-fdak]").forEach(el => {
+      const lista = el.dataset.fdak.split(",").map(Number), titel = el.dataset.titel;
+      el.removeAttribute("data-fdak");
+      if (ak === "alla") el.insertAdjacentHTML("afterbegin", `<span class="aktag fdtag">fördjupning för åk ${akText(lista)}</span>`);
+      else if (lista.includes(+ak)) el.innerHTML = `<details class="fordjup"><summary>${esc(/^fördjupning/i.test(titel) ? titel : "Fördjupning: " + titel)}</summary><div class="fd-inne">${el.innerHTML}</div></details>`;
+    });
     root.querySelectorAll("[data-ak]").forEach(el => {
       const lista = el.dataset.ak.split(",").map(Number);
       if (ak === "alla") {

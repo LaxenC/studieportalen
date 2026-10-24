@@ -49,6 +49,7 @@ Ingen har kunnat se en atom med blotta ögat. Forskarna har i stället gjort exp
 > **Begrepp**
 > **modell** – en förenklad bild som förklarar hur något fungerar
 
+::: fördjupning åk 7 Atommodellerna genom historien
 | År | Modell | Bild | Varför? |
 |---|---|---|---|
 | 1807 | **Dalton** – massiv kula | [[del dalton]] | Ämnen reagerar alltid i bestämda proportioner. Därför måste materia bestå av små odelbara partiklar – atomer. |
@@ -56,6 +57,7 @@ Ingen har kunnat se en atom med blotta ögat. Forskarna har i stället gjort exp
 | 1911 | **Rutherford** – liten kärna, elektroner runt | [[del rutherford]] | De flesta alfapartiklar åkte rakt igenom en tunn guldfolie, men några studsade tillbaka. Atomen har alltså en liten, positiv kärna och är mest tomrum. |
 | 1913 | **Bohr** – elektroner i skal | [[del bohr]] | Atomer sänder bara ut ljus med vissa bestämda färger. Elektronerna måste alltså finnas i bestämda energinivåer – skal. |
 | 1926 | **Schrödinger** – elektronmoln | [[del schrodinger]] | Elektroner beter sig både som partiklar och som vågor. Man kan bara säga var en elektron troligen finns – ett elektronmoln. |
+:::
 
 > **Viktigt att komma ihåg**
 > - En atommodell är en förenklad bild av atomen.
