@@ -55,7 +55,7 @@ Den används inom sjukvården för att ta bilder av kroppens inre. På röntgenb
 > - Hög frekvens (hur tätt vågorna är) innebär hög energi.
 > - **Synligt ljus** bildas när elektroner hoppar från ett yttre skal till ett inre och frigör energi 
 > - **Röntgenstrålning** används för att ta bild på skelett, strålningen stoppas av skelett men går igenom mjukdelar
->  - (åk8,åk9)**Gamma** strålning med mycket högre energi, bildas ofta i samband med partikelstrålning
+>  - (åk8,9)**Gamma** strålning med mycket högre energi, bildas ofta i samband med partikelstrålning
 
 ## Partikelstrålning {#partikel}
 
@@ -111,12 +111,12 @@ Kärnan får en proton mer och en neutron mindre. Atomnumret ökar med 1, så de
 :::
 
 > **Viktigt att komma ihåg**
-> - (åk8,åk9)Vid partikelstrålning så är det partiklar från atomkärnan som strålar ut, så atomkärnan ser annorlunda ut efter strålningen
+> - (åk8,9)Vid partikelstrålning så är det partiklar från atomkärnan som strålar ut, så atomkärnan ser annorlunda ut efter strålningen
 > - Alfastrålning och Betastrålning är typer av partikelstrålnin
-> - (åk8,åk9)**Alfapartikel** är partikelstrålning och det är en alfapartikel strålar ut
-> - (åk8,åk9)**Alftapartikel** är en heliumkärna med mycket energi.
-> - (åk8,åk9)**Betastrålning** är partikelstrålning och det är en betaapartikel strålar ut
-> - (åk8,åk9)**Betapartikel** är en elektron med mycket energi
+> - (åk8,9)**Alfapartikel** är partikelstrålning och det är en alfapartikel strålar ut
+> - (åk8,9)**Alftapartikel** är en heliumkärna med mycket energi.
+> - (åk8,9)**Betastrålning** är partikelstrålning och det är en betaapartikel strålar ut
+> - (åk8,9)**Betapartikel** är en elektron med mycket energi
 
 ## Joniserande strålning {#jonis åk=(8,9)}
 
