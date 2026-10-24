@@ -34,7 +34,7 @@ Atomkärnan är mycket liten jämfört med hela atomen. Resten av atomen är nä
 Om elektronskalen var taket på Globen skulle kärnan i mitten vara stor som ett **blåbär**.
 Protoner och neutroner är ungefär **2000 gånger tyngre** än en elektron. Nästan hela atomens massa finns alltså i kärnan
 
->**Fördjupning: Den starka kärnkraften
+>**Fördjupning: Den starka kärnkraften**
 >Den starka kärnkraften är en av naturens fyra grundläggande krafter. Den verkar >mellan partiklar i atomkärnan och håller ihop protoner och neutroner. Kraften >är mycket stark på korta avstånd och gör att atomkärnan kan hålla ihop, trots >att protonerna stöter bort varandra eftersom de har samma elektriska laddning.
 
 > **Viktigt att komma ihåg**
