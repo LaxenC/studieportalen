@@ -53,7 +53,7 @@ En jon är en atom som har fått ett annat antal **elektroner** än protoner och
 > **jon** – atom med laddning, eftersom antalet elektroner och protoner inte är lika
 
 
-### Sammanfattning 
+## Sammanfattning 
 
 | Om antalet … ändras | blir det | Vad händer i notationen? |
 |---|---|---|
