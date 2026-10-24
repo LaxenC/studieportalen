@@ -1,0 +1,4 @@
+Här lägger du bilder till texterna i Atom- och kärnfysik.
+
+Ladda upp: Add file → Upload files.
+I texten: ![Beskrivning](bilder/filnamn.png)
