@@ -88,7 +88,9 @@ Bild: De fyra elektronerna i det yttersta skalet är valenselektroner.
 >
 > Det yttersta skalet rymmer alltså aldrig mer än 8 elektroner (K-skalet högst 2). Först när ett nytt skal har börjat fyllas utanför kan ett inre skal få fler.
 
+::: fördjupning åk 7 Atommodellerna genom historien
 Kärnan är positivt laddad och elektronerna är negativt laddade, därför dras de till varandra (attraheras). Det kan liknas vid två magneter som dras mot varandra, om man drar magneterna isär måste man använda kraft. På samma sätt krävs det energi för att flytta en elektron längre bort från atomkärnan. Därför har **elektroner längre ut högre energi**. 
+:::
 
 
 > **Viktigt att komma ihåg**
@@ -96,7 +98,7 @@ Kärnan är positivt laddad och elektronerna är negativt laddade, därför dras
 > - Elektronskalen heter: K, L, M osv
 > - K-skalet rymmer 2 elektroner, L-skalet 8.
 > - Elektroner i ytterska skalet heter **valenselektroner**
-> - Elektroner längre ut har högre energi
+> - (åk8,9) Elektroner längre ut har högre energi
 > - (åk 9) Det yttersta skalet har aldrig mer än 8 elektroner.
 
 ## Kvarkar {#kvarkar åk=9}
