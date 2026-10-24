@@ -17,6 +17,7 @@ Notationen består av:
 Bild: Kemisk beteckning= C, Atomnummer=6 och Masstal=14
 
 Antal protoner är det som bestämmer vilket grundämne det är, vilket innebär att alla ämnen har olika atomnummer. 
+:::
 
 > **Begrepp**
 > **masstal** – antalet protoner + neutroner

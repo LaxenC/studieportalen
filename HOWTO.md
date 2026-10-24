@@ -397,6 +397,7 @@ Vanlig text. **Fet**, *kursiv*, H~2~O, 10^3^.
 
 - `#` = kapitlets rubrik (en gång, överst).
 - `##` = nytt avsnitt. Blir en knapp i menyn. `{#sura}` är avsnittets id – ändras aldrig.
+- Ett kapitel behöver inte ha avsnitt. Utan `##` blir hela texten ett avsnitt, och knappen **i** visar dess *Viktigt att komma ihåg*.
 - `###` = underrubrik.
 - Tom rad = nytt stycke.
 - Tabell: `| Lösning | pH |`, sedan `|---|---|`, sedan en rad per rad i tabellen.
@@ -522,6 +523,7 @@ Kopiera adressen från webbläsaren, eller bygg den själv:
 | Texten visas inte | Filen heter inte exakt som kapitlets `id`, t.ex. `Stralning.md` i stället för `stralning.md` |
 | Uppgiften syns inte under *Öva på det här* | `avsnitt: [...]` stämmer inte med `{#id}` i texten. `struktur.html` varnar |
 | En ruta blir vanlig text | En rad i rutan saknar `>` först |
+| Allt efter en bild eller ruta hamnar bredvid varandra i spalter | `::: rad` saknar en avslutande rad med bara `:::`. `struktur.html` varnar |
 | Bilden syns inte | Fel filnamn eller sökväg. Stora och små bokstäver räknas: `Bild.PNG` ≠ `bild.png` |
 | Arbetsområdet syns inte | Mappnamnet saknas i `omraden` i `konfig/amnen.js`, eller `arskurs` passar inte elevens val |
 | Ändringen syns inte | Vänta en minut och ladda om sidan |

@@ -4,6 +4,7 @@
    Rörs inte för att lägga till innehåll.
    ===================================================================== */
 const MD = (() => {
+  let VARN = [];
   const AK_RE = /^(?:åk|ak)\s*=?\s*([\d,\s–-]+)$/i;
   const parseAk = s => {
     const out = new Set();
@@ -100,6 +101,7 @@ const MD = (() => {
       if ((m = l.match(/^:::\s*(.*)$/)) && m[1].trim()) {
         let djup = 1, j = i + 1;
         for (; j < rader.length; j++) { if (/^:::\s*\S/.test(rader[j])) djup++; else if (/^:::\s*$/.test(rader[j]) && !--djup) break; }
+        if (j >= rader.length) VARN.push(`"::: ${m[1].trim()}" saknar en avslutande rad med bara :::`);
         const arg = m[1].trim(), inre = block(rader.slice(i + 1, j), ctx);
         const ak = arg.match(AK_RE);
         if (ak) ut.push({ html: `<div class="ak-block" data-ak="${parseAk(ak[1])}">${sattIhop(inre)}</div>` });
@@ -171,7 +173,8 @@ const MD = (() => {
   function parse(txt) {
     const [meta, kropp] = frontmatter(txt.replace(/\r\n?/g, "\n"));
     const rader = kropp.split("\n");
-    const res = { meta, titel: "", ingress: "", intro: "", avsnitt: [], begrepp: [] };
+    VARN = [];
+    const res = { meta, titel: "", ingress: "", intro: "", introViktigt: [], avsnitt: [], begrepp: [], varningar: VARN };
     let akt = { rader: [] }; const delar = [akt];
     let iBlock = 0;
     rader.forEach(l => {
@@ -198,7 +201,7 @@ const MD = (() => {
     const intro = block(delar[0].rader, ctx0);
     const fp = intro.findIndex(b => b.typ === "p");
     if (fp === 0) { res.ingress = intro[0].html.replace(/^<p>|<\/p>$/g, ""); intro.shift(); }
-    res.intro = sattIhop(intro);
+    res.intro = sattIhop(intro); res.introViktigt = ctx0.viktigt;
     delar.slice(1).forEach(d => {
       if (d.dold) return;
       const ctx = { viktigt: [], begrepp: [] };

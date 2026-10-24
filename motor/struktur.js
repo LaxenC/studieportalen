@@ -29,6 +29,8 @@ function bygg() {
           text ${ok(t)} · <a href="granska.html?kapitel=${o.id}/${k.id}">${upp.length} uppgifter</a> ${nivaChips(o, upp, ak)}${k.dold ? " <b>dold</b>" : ""}<ul>`);
         if (!t) varna(`${esc(o.namn)} › ${esc(k.namn)}: saknar text (texter/${k.id}.md)`);
         else {
+          (t.varningar || []).forEach(v => varna(`${esc(k.namn)}: ${esc(v)}`, L("las", k.id)));
+          if (!t.avsnitt.length) rader.push(`<li class="st-av st-dim">Inga avsnitt (##) – hela texten är ett avsnitt · viktigt ${ok(t.introViktigt.length)}</li>`);
           t.avsnitt.filter(av => passar(av.ak, ak)).forEach(av => {
             const n = aktivaUppgifter(o, ak, k.id, av.id).length;
             rader.push(`<li class="st-av"><a href="${L("las", k.id, av.id)}">${esc(av.rubrik)}</a> <span class="st-dim">#${av.id}</span>${av.ak ? ` <span class="st-ak">åk ${MD.akText(av.ak)}</span>` : ""}

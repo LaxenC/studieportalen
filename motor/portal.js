@@ -90,7 +90,7 @@ function visaLasIndex(o) {
   vy().innerHTML = `${flikar(o, "las")}
     ${sk ? `<a class="fortsatt" href="${lank(o.amne, o.id, "las", senast.k, senast.a)}">Fortsätt läsa: <b>${esc(kapitelAv(o, senast.k).namn)}${senast.a && avsnittAv(o, senast.k, senast.a) ? " – " + esc(avsnittAv(o, senast.k, senast.a).rubrik) : ""}</b> →</a>` : ""}
     ${kap.length ? `<div class="laskort">${kap.map((k, i) => { const t = o.texter[k.id]; const av = t.avsnitt.filter(x => passar(x.ak, ak));
-      const harViktigt = av.some(x => x.viktigt.length);
+      const harViktigt = av.some(x => x.viktigt.length) || (t.introViktigt || []).length > 0;
       return `<div class="cell"><a class="card c-${k.farg || "blue"} laskap" href="${lank(o.amne, o.id, "las", k.id)}"><span class="kapnr">Kapitel ${i + 1}</span><h3>${esc(t.titel || k.namn)}</h3><p>${t.ingress ? t.ingress.replace(/<[^>]+>/g, "") : esc(k.text || "")}</p>
         <ul class="avlista">${av.map(x => `<li>${esc(x.rubrik)}</li>`).join("")}</ul></a>
         ${harViktigt ? `<button type="button" class="info" data-plugga="${k.id}" aria-label="Viktigt att komma ihåg: ${esc(k.namn)}" title="Viktigt att komma ihåg">i</button>` : ""}</div>`; }).join("")}</div>` : tom("Det finns inga texter här än.")}
@@ -110,8 +110,8 @@ function visaKapitel(o, kapId, avId) {
   const nKap = aktivaUppgifter(o, ak, kapId).length;
   vy().innerHTML = `${flikar(o, "las")}
     <article class="lastext kapitel">
-      <nav class="avmeny" aria-label="Avsnitt">${avs.map(x => `<a href="${lank(o.amne, o.id, "las", kapId, x.id)}" data-av="${x.id}">${esc(x.rubrik)}</a>`).join("")}</nav>
-      <header class="kaphuvud"><p class="kapnr">Kapitel ${i + 1} av ${kaps.length}</p><h1>${esc(t.titel || k.namn)}</h1>${t.ingress ? `<p class="ingress">${t.ingress}</p>` : ""}${t.intro}</header>
+      <nav class="avmeny" aria-label="Avsnitt"${avs.length ? "" : " hidden"}>${avs.map(x => `<a href="${lank(o.amne, o.id, "las", kapId, x.id)}" data-av="${x.id}">${esc(x.rubrik)}</a>`).join("")}</nav>
+      <header class="kaphuvud"><p class="kapnr">Kapitel ${i + 1} av ${kaps.length}</p><h1>${esc(t.titel || k.namn)}</h1>${t.ingress ? `<p class="ingress">${t.ingress}</p>` : ""}</header>${t.intro ? `<div class="kaphuvud kapintro">${t.intro}</div>` : ""}
       ${avs.map(x => { const n = aktivaUppgifter(o, ak, kapId, x.id).length;
         return `<section class="avsnitt" id="av-${x.id}" data-av="${x.id}" ${x.ak ? `data-ak="${x.ak}"` : ""}><h2>${esc(x.rubrik)}</h2>${x.html}
           ${n ? `<p class="ovahar"><a class="start" href="${ovaLank(x.id)}">Öva på det här <span>(${n} ${n === 1 ? "uppgift" : "uppgifter"})</span> →</a></p>` : ""}</section>`; }).join("")}
