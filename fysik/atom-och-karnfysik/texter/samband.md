@@ -5,8 +5,8 @@ kapitel: samband
 # isotop, ämne, jon
 
 Vad händer med atomen när antalet protoner, neutroner eller elektroner ändras? <br>
-Ämne - bestäms av antal protoner i atomkänar
-Jon - är en laddad atom och bestäms av antal elektroner
+Ämne - bestäms av antal protoner i atomkänar <br>
+Jon - är en laddad atom och bestäms av antal elektroner <br>
 Isotop - är en variant av ett ämne och bestäms av antalet neutroner i atomkärnan
 
 ## Ämne {#amne åk8,åk9}
