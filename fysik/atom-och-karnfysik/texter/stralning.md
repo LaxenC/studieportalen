@@ -8,8 +8,8 @@ Strålning överför energi – antingen som vågor eller som partiklar.
 
 ### Typer av strålning 
 Stårlning delas in i olika typer av strålning beroende på vad som strålar ut.
-**Elektromagnetisk strålning:** fotoner (elektromagnetiska vågor i partikelform) överför energin.
- **Partikelstrålning:** delar av atomkärnan överför energin.
+- **Elektromagnetisk strålning:** fotoner (elektromagnetiska vågor i partikelform) överför energin.
+- **Partikelstrålning:** delar av atomkärnan överför energin.
 
 > **Begrepp**
 > **elektromagnetisk strålning** – strålning där fotoner överför energin
