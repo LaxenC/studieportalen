@@ -72,11 +72,16 @@ Kärnan förlorar 2 protoner och 2 neutroner. Atomnumret minskar med 2 och masst
 >**Exempel:**
 >:::rad
 > [[nota 235 92 U]]
-> Uran-235 som har 92 protoner (atomnummer =92) och 143 neutroner (masstal,235 - atomnummer,92 = 143) 
+> Uran-235 som har 92 protoner (atomnummer =92) och 143 neutroner (235 - 92 = 143) 
 >:::
+>När den skickar ut alfastrålning får den 2 prontoner och 2 neutroner mindre.Så ändras antalet partiklar i kärnan.<br>
+>Protoner: 92-2 = 90 <br>
+>Neutroner 143-2 = 141 <br>
+>Atomnummer (antal protoner) = 233 och Masstal (antal protoner + neutroner) = 90+141=231 <br>
+> Så efter strålning har vi [[nota 231 90 Th]]
 
 > **Begrepp**
-> **alfapartikel** – heliumkärna som skickas ut från en atomkärna
+> **alfapartikel** – heliumkärna (2 protoner + 2 neutroner) med energi som skickas ut från en atomkärna
 
 ### Betastrålning (β)
 
