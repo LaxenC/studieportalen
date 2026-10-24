@@ -101,7 +101,7 @@ Portal.uppgifter([
       ] },
 
     { id: "atom-tomrum-text", kapitel: "atom", avsnitt: ["delar"], titel: "Atomen är mest tomrum – fyll i begrepp",
-      typ: "lucktext", { 7: [1], 8: [0-1], 9: [1]}, rullista: [0],
+      typ: "lucktext", nivaerPerArskurs:{ 7: [1], 8: [0-1], 9:[1]}, rullista: [0],
       ordlista: ["tomrum", "luft", "vatten", "blåbär", "fotboll", "massa", "kärnan", "elektronerna", "elektroner"],
       varianter: [
         { text: "Atomen består nästan bara av [tomrum]. Om atomen var lika stor som Globen skulle kärnan vara stor som ett [blåbär]." },
