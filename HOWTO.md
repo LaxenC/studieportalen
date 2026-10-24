@@ -473,6 +473,7 @@ Lägg till `{.liten}` efter bilden för en mindre bild. Krymp stora foton till h
 | `[[kvark u]]` | kvark: `u` `d` `c` `s` `t` `b` |
 | `[[spektrum]]` | elektromagnetiska spektrumet |
 | `[[spektrum vagor]]` | … med en våg som blir tätare mot gammastrålningen |
+| `[[elektronhopp]]` | elektron hoppar till ett inre skal och skickar ut ljus. `[[elektronhopp upp]]` = ljus tas upp och elektronen hoppar ut. `farg=gul` `orange` `rod` `gron` `bla` `lila` = ljusets färg |
 | `[[atomkort titel="Väte" A=1 Z=1 X=H p=1 n=0 e=1 text="..." farg=gron]]` | kort med notation, atom och antal partiklar |
 
 Flera ritningar på rader direkt efter varandra blir en bild. Tom rad emellan gör dem till egna bilder.

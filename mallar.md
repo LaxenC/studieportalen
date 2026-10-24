@@ -137,6 +137,7 @@ Ett avsnitt bara för åk 9.
 | `[[kvark u]]` | kvark: u d c s t b |
 | `[[spektrum]]` | elektromagnetiska spektrumet |
 | `[[spektrum vagor]]` | … med en våg som blir tätare mot gammastrålningen |
+| `[[elektronhopp]]` | elektron hoppar till ett inre skal och skickar ut ljus. `[[elektronhopp upp]]` = ljus tas upp och elektronen hoppar ut. `farg=gul` `orange` `rod` `gron` `bla` `lila` = ljusets färg |
 | `[[atomkort titel="Väte" A=1 Z=1 X=H p=1 n=0 e=1 text="..." farg=gron]]` | kort med notation, atom och antal |
 
 ---

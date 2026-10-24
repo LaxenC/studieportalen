@@ -185,6 +185,10 @@ section.avsnitt.ak-extra>.aktag{justify-self:start}
 .viktigt p,.exempel p,.callout p,.begrepp p,.fordjup p{margin:0}
 .viktigt ul,.viktigt ol,.exempel ul,.callout ul,.callout ol,.fordjup ul{margin:0;padding-left:1.3em;display:grid;gap:4px}
 
-.figbilder .ritning.bred svg,.rad .figur .ritning.bred svg{width:min(400px,100%)}
+.ritning.bred{width:min(400px,100%)}
+.figbilder .ritning.bred svg,.rad .figur .ritning.bred svg{width:100%}
 .laskort .cell>.laskap{padding-top:14px}
 .laskort .cell>.laskap h3{padding-right:30px}
+.ritning.hopp{width:min(560px,100%)}
+.figbilder .ritning.hopp svg,.rad .figur .ritning.hopp svg{width:100%}
+.figbilder{width:100%}
