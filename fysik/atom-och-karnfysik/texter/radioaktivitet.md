@@ -46,6 +46,7 @@ Bild: En instabil kärna sönderfaller och sänder ut strålning. Kvar blir en s
 > **Tänk på** {.red}
 > Det är *kärnan* som är radioaktiv. Strålningen kallas **joniserande strålning** – inte "radioaktiv strålning".
 
+::: åk 8-9
 Sönderfallet får namn efter strålningen som skickas ut: **alfasönderfall**, **betasönderfall** och **gammasönderfall**. Vid alfa- och betasönderfall ändras antalet protoner, så det blir ett annat ämne.
 
 > **Exempel:** alfasönderfall
@@ -55,13 +56,14 @@ Sönderfallet får namn efter strålningen som skickas ut: **alfasönderfall**, 
 > [[partiklar +]]
 > [[partiklar p p n n]]
 > Bild: Uran-238 skickar ut en alfapartikel (2 protoner + 2 neutroner) och blir torium-234.
+:::
 
 > **Viktigt att komma ihåg**
 > - En instabil kärna = en **radioaktiv kärna**.
 > - När kärnan delar upp sig kallas det **radioaktivt sönderfall**.
 > - Strålningen som skickas ut är **joniserande strålning**.
 
-## Mäta strålning {#mata}
+## Mäta strålning {#mata åk=8-9}
 
 Strålning syns inte, hörs inte och känns inte. Därför behövs mätinstrument.
 
@@ -83,7 +85,7 @@ Strålning syns inte, hörs inte och känns inte. Därför behövs mätinstrumen
 > - **GM-mätare** mäter aktivitet i **becquerel (Bq)**.
 > - 1 Bq = ett sönderfall per sekund.
 
-## Halveringstid {#halvering}
+## Halveringstid {#halvering åk=8-9}
 
 Man kan inte veta *när* en enskild radioaktiv kärna sönderfaller – det är slumpen. Men om man har väldigt många kärnor vet man hur lång tid det tar tills hälften av dem har sönderfallit. Den tiden kallas **halveringstid**.
 
@@ -123,7 +125,7 @@ Olika ämnen har mycket olika halveringstid:
 > - Efter varje halveringstid halveras det som är kvar: 100 % → 50 % → 25 % → 12,5 %.
 > - Man kan inte veta när en enskild kärna sönderfaller.
 
-## Kol-14-metoden {#kol14}
+## Kol-14-metoden {#kol14 åk=8-9}
 
 Kol-14 är en radioaktiv isotop av kol med 6 protoner och 8 neutroner. [note, 14,8,C] Den har halveringstiden 5 730 år. Med hjälp av kol-14 kan man ta reda på hur gammalt något är som en gång har levt, till exempel trä, ben eller tyg.
 

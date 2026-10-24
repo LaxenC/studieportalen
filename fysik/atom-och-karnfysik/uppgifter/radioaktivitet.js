@@ -71,9 +71,9 @@ Portal.uppgifter([
       varianter: [
         { pst: [["De flesta atomkärnor är stabila.", true], ["En instabil kärna vill bli stabil.", true],
                 ["Strålningen från en sönderfallande kärna kallas radioaktiv strålning.", false], ["En kärna med för mycket energi sänder ut gammastrålning.", true],
-                ["Efter ett alfasönderfall är det samma ämne som innan.", false]] },
+                ["Alla atomkärnor sönderfaller.", false]] },
         { pst: [["En radioaktiv kärna är instabil.", true], ["Vid ett sönderfall delar kärnan upp sig.", true],
-                ["En stabil kärna sänder ut strålning hela tiden.", false], ["Vid alfa- och betasönderfall ändras antalet protoner.", true],
+                ["En stabil kärna sänder ut strålning hela tiden.", false], ["En kärna sänder ut strålning när den sönderfaller.", true],
                 ["Elektronerna i skalen är radioaktiva.", false]] }
       ] },
 
@@ -190,7 +190,7 @@ Portal.uppgifter([
 
     /* ---------- Hela kapitlet ---------- */
 
-    { id: "rad-sf-blandat", kapitel: "radioaktivitet", titel: "Radioaktivitet – sant eller falskt",
+    { id: "rad-sf-blandat", kapitel: "radioaktivitet", titel: "Radioaktivitet – sant eller falskt", arskurs: [8, 9],
       typ: "santfalskt", nivaerPerArskurs: { 7: [3], 8: [2], 9: [1, 2] },
       varianter: [
         { pst: [["En dosimeter mäter stråldos i sievert.", true], ["Aktivitet är antalet sönderfall per sekund.", true],
