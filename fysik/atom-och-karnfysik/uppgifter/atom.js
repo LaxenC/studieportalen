@@ -60,7 +60,7 @@ Portal.uppgifter([
       ] },
 
     { id: "atom-para", kapitel: "atom", avsnitt: ["delar"], titel: "Atomens delar – para ihop",
-      typ: "para", nivaer: [1],
+      typ: "para",  nivaerPerArskurs: { 7: [1], 8: [0,1], 9: [0]},
       varianter: [
         { rubrik: "Para ihop partikeln med dess laddning.",
           par: [["Proton", "Positiv laddning (+1)"], ["Neutron", "Ingen laddning (0)"], ["Elektron", "Negativ laddning (−1)"]] },
@@ -73,7 +73,7 @@ Portal.uppgifter([
       ] },
 
     { id: "atom-para-bild", kapitel: "atom", avsnitt: ["delar"], titel: "Atomens delar – bild och namn",
-      typ: "para", nivaer: [0],
+      typ: "para",  nivaerPerArskurs: { 7: [1], 8: [0,1], 9: [0]},
       varianter: [
         { rubrik: "Para ihop bilden med rätt namn.",
           par: [["bild:proton", "Proton"], ["bild:neutron", "Neutron"], ["bild:elektron", "Elektron"],
@@ -81,7 +81,7 @@ Portal.uppgifter([
       ] },
 
     { id: "atom-modeller", kapitel: "atom", avsnitt: ["modeller"], titel: "Atommodeller – para ihop",
-      typ: "dratabell", nivaer: [1],
+      typ: "dratabell",  nivaerPerArskurs: { 7: [3], 8: [2-3], 9: [2]},
       varianter: [
         { rubrik: "Dra rätt bild och rätt beskrivning till varje atommodell.",
           rubriker: ["Atommodell", "Bild", "Beskrivning"],
@@ -93,7 +93,7 @@ Portal.uppgifter([
       ] },
 
     { id: "atom-modeller-tid", kapitel: "atom", avsnitt: ["modeller"], titel: "Atommodeller – tidslinje",
-      typ: "dratabell", nivaer: [1], tidslinje: true,
+      typ: "dratabell",  nivaerPerArskurs: { 7: [3], 8: [2-3], 9: [2]}, tidslinje: true,
       varianter: [
         { rubrik: "Dra atommodellerna till rätt år på tidslinjen.", tidslinje: true,
           rubriker: ["År", "Atommodell"],
@@ -101,7 +101,7 @@ Portal.uppgifter([
       ] },
 
     { id: "atom-tomrum-text", kapitel: "atom", avsnitt: ["delar"], titel: "Atomen är mest tomrum – fyll i begrepp",
-      typ: "lucktext", nivaer: [0, 1], rullista: [0],
+      typ: "lucktext", { 7: [1], 8: [0-1], 9: [1]}, rullista: [0],
       ordlista: ["tomrum", "luft", "vatten", "blåbär", "fotboll", "massa", "kärnan", "elektronerna", "elektroner"],
       varianter: [
         { text: "Atomen består nästan bara av [tomrum]. Om atomen var lika stor som Globen skulle kärnan vara stor som ett [blåbär]." },
@@ -109,7 +109,7 @@ Portal.uppgifter([
       ] },
 
     { id: "atom-tomrum-mc", kapitel: "atom", avsnitt: ["delar"], titel: "Atomen är mest tomrum – välj rätt",
-      typ: "flerval", nivaer: [1],
+      typ: "flerval", { 7: [1], 8: [0-1], 9: [1]},
       varianter: [
         { fraga: "Om en atom var lika stor som Globen – hur stor skulle kärnan i mitten vara?",
           alt: [ { t: "Ett blåbär", s: "ratt", f: "kärnan är pytteliten jämfört med hela atomen. Resten är nästan bara tomrum." },
@@ -124,7 +124,7 @@ Portal.uppgifter([
       ] },
 
     { id: "atom-tomrum-sf", kapitel: "atom", avsnitt: ["delar"], titel: "Atomen är mest tomrum – sant eller falskt",
-      typ: "santfalskt", nivaer: [1],
+      typ: "santfalskt", { 7: [1], 8: [0-1], 9: [1]},
       varianter: [
         { pst: [["Atomen består mest av tomrum.", true], ["Nästan hela atomens massa finns i kärnan.", true],
                 ["Atomkärnan är ungefär lika stor som hela atomen.", false], ["Elektronerna fyller upp hela atomen.", false],
@@ -135,7 +135,7 @@ Portal.uppgifter([
       ] },
 
     { id: "atom-skal-max", kapitel: "atom", avsnitt: ["skal"], titel: "Elektronskal – namn och max antal",
-      typ: "skal", nivaer: [2], treFragor: true,   // frågar även max om det INTE är yttersta skalet
+      typ: "skal", { 7: [3], 8: [2-3], 9: [2]}, treFragor: true,   // frågar även max om det INTE är yttersta skalet
       varianter: [{ skal: 1 }, { skal: 2 }, { skal: 3 }, { skal: 4 }, { skal: 5 }, { skal: 6 }] },
 
     { id: "atom-kvarktabell", kapitel: "atom", avsnitt: ["kvarkar"], titel: "Kvarkar – generationer",
