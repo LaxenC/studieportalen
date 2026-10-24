@@ -33,7 +33,7 @@ Portal.omrade({
       arskurs: [7, 8, 9], maxPerOvning: 2 },
     { id: "samband", namn: "Samband – isotop, ämne, jon", farg: "yellow", bild: "[[kort-samband]]",
       text: "Jämföra isotoper, ämnen och joner.",
-      arskurs: [8,9] },
+      arskurs: [7,8,9] },
     { id: "stralning", namn: "Strålning", farg: "orange", bild: "[[kort-stralning]]",
       text: "Elektromagnetisk strålning, partikelstrålning och joniserande strålning.",
       arskurs: [7,8,9] }
