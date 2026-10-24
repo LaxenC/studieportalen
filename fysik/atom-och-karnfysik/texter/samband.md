@@ -20,7 +20,7 @@ Om en atom har ett annat antal **protoner** blir det ett annat grundämne. Varje
 
 ## Isotop {#isotop}
 
-Isotoper är atomer av samma grundämne med samma antal protoner men olika antal **neutroner**. De har samma kemiska beteckning men olika masstal.
+Isotoper är atomer av samma grundämne med samma antal protoner men olika antal **neutroner**. De har samma kemiska beteckning men olika masstal. Olika istoper är samma ämne men de har ändå olika egenskaper på grund av att antalet neutroner skiljer sig, de kan till exempel ha olika kokpunkt.
 
 ::: rad
 [[atomkort titel="Väte-1" under="(protium)" A=1 Z=1 X=H p=1 n=0 e=1 farg=gron]]
