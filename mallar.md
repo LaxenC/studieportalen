@@ -136,6 +136,7 @@ Ett avsnitt bara för åk 9.
 | `[[del dalton]]` | liten bild: proton neutron elektron karna skal alfa foton dalton thomson rutherford bohr schrodinger |
 | `[[kvark u]]` | kvark: u d c s t b |
 | `[[spektrum]]` | elektromagnetiska spektrumet |
+| `[[spektrum vagor]]` | … med en våg som blir tätare mot gammastrålningen |
 | `[[atomkort titel="Väte" A=1 Z=1 X=H p=1 n=0 e=1 text="..." farg=gron]]` | kort med notation, atom och antal |
 
 ---

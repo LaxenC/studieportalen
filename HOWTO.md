@@ -472,6 +472,7 @@ Lägg till `{.liten}` efter bilden för en mindre bild. Krymp stora foton till h
 | `[[del bohr]]` | liten bild: `proton` `neutron` `elektron` `karna` `skal` `alfa` `foton` `dalton` `thomson` `rutherford` `bohr` `schrodinger` |
 | `[[kvark u]]` | kvark: `u` `d` `c` `s` `t` `b` |
 | `[[spektrum]]` | elektromagnetiska spektrumet |
+| `[[spektrum vagor]]` | … med en våg som blir tätare mot gammastrålningen |
 | `[[atomkort titel="Väte" A=1 Z=1 X=H p=1 n=0 e=1 text="..." farg=gron]]` | kort med notation, atom och antal partiklar |
 
 Flera ritningar på rader direkt efter varandra blir en bild. Tom rad emellan gör dem till egna bilder.

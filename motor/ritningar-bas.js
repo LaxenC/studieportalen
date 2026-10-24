@@ -56,21 +56,27 @@ function part(k){const t=k==="p"?"+":k==="e"?"−":"";
 function mini(cls,title,alt,A,Z,X,ch,p,n,e,why,foot){
   return `<div class="mini ${cls}"><h4>${title}</h4>${alt?`<p class="alt">${alt}</p>`:""}${nota(A,Z,X,ch,"mid")}${atom(p,n,e)}${counts(p,n,e,true)}${why?`<p class="why">${why}</p>`:""}${foot?`<p class="foot">${foot}</p>`:""}</div>`;
 }
-function spektrum(){
+function spektrum(opt={}){
   const band=[["Radiovågor","#e05a5f","längst"],["Mikrovågor","#f19a4b",""],["Infrarött (IR)","#e67e22",""],["Synligt ljus","rainbow","400–700 nm"],["Ultraviolett (UV)","#7a5ae0",""],["Röntgen","#3d8bd9",""],["Gamma","#2a9d8f","kortast"]];
-  const W=700,bw=94,gap=7,x0=(W-(bw*7+gap*6))/2;
-  let g=`<svg class="spek" viewBox="0 0 ${W} 210" role="img" aria-label="Det elektromagnetiska spektrumet från radiovågor till gammastrålning">
+  const W=700,bw=94,gap=7,x0=(W-(bw*7+gap*6))/2, D=opt.vagor?80:0;
+  // våg: våglängden krymper från vänster till höger
+  let vag="";
+  if(opt.vagor){const x1=W-x0,L0=170,L1=5,A=22,yc=92;let ph=Math.PI/2,pts=[];
+    for(let x=x0;x<=x1;x+=.5){const t=(x-x0)/(x1-x0),lam=L0*Math.pow(L1/L0,t);ph+=2*Math.PI*.5/lam;pts.push(`${x.toFixed(1)},${(yc-A*Math.sin(ph)).toFixed(1)}`)}
+    vag=`<polyline points="${pts.join(" ")}" fill="none" stroke="url(#vaggrad)" stroke-width="2.6" stroke-linejoin="round"/>`;}
+  let g=`<svg class="spek" viewBox="0 0 ${W} ${210+D}" role="img" aria-label="Det elektromagnetiska spektrumet från radiovågor till gammastrålning">
     <defs><linearGradient id="rainbow" x1="0" x2="1"><stop offset="0" stop-color="#e53935"/><stop offset=".2" stop-color="#fb8c00"/><stop offset=".4" stop-color="#fdd835"/><stop offset=".6" stop-color="#43a047"/><stop offset=".8" stop-color="#1e88e5"/><stop offset="1" stop-color="#8e24aa"/></linearGradient>
+    <linearGradient id="vaggrad" x1="0" x2="1"><stop offset="0" stop-color="#e05a5f"/><stop offset=".25" stop-color="#e67e22"/><stop offset=".45" stop-color="#43a047"/><stop offset=".62" stop-color="#7a5ae0"/><stop offset=".8" stop-color="#3d8bd9"/><stop offset="1" stop-color="#2a9d8f"/></linearGradient>
     <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="var(--ink)"/></marker></defs>
     <text x="${W/2}" y="18" text-anchor="middle" font-weight="900" font-size="15" fill="var(--ink)">Frekvens och energi</text>
     <line x1="${x0}" y1="32" x2="${W-x0}" y2="32" stroke="var(--ink)" stroke-width="2.5" marker-end="url(#arr)"/>
-    <text x="${x0}" y="50" font-size="12" fill="var(--muted)">lägre</text><text x="${W-x0}" y="50" text-anchor="end" font-size="12" fill="var(--muted)">högre</text>`;
+    <text x="${x0}" y="50" font-size="12" fill="var(--muted)">lägre</text><text x="${W-x0}" y="50" text-anchor="end" font-size="12" fill="var(--muted)">högre</text>${vag}`;
   band.forEach(([n,c,w],i)=>{const x=x0+i*(bw+gap);
-    g+=`<rect x="${x}" y="60" width="${bw}" height="70" rx="10" fill="${c==="rainbow"?"url(#rainbow)":c}"/>`;
-    const parts=n.split(" ");g+=`<text x="${x+bw/2}" y="${parts.length>1?92:100}" text-anchor="middle" font-weight="900" font-size="13" fill="#fff" stroke="rgba(0,0,0,.25)" stroke-width="2.5" paint-order="stroke">${parts.map((t,j)=>`<tspan x="${x+bw/2}" dy="${j?16:0}">${t}</tspan>`).join("")}</text>`;
-    if(w) g+=`<text x="${x+bw/2}" y="148" text-anchor="middle" font-size="12" fill="var(--muted)">${w}</text>`;});
-  g+=`<line x1="${W-x0}" y1="165" x2="${x0}" y2="165" stroke="var(--ink)" stroke-width="2.5" marker-end="url(#arr)"/>
-    <text x="${x0}" y="184" font-size="12" fill="var(--muted)">längre</text><text x="${W-x0}" y="184" text-anchor="end" font-size="12" fill="var(--muted)">kortare</text>
-    <text x="${W/2}" y="203" text-anchor="middle" font-weight="900" font-size="15" fill="var(--ink)">Våglängd</text></svg>`;
+    g+=`<rect x="${x}" y="${60+D}" width="${bw}" height="70" rx="10" fill="${c==="rainbow"?"url(#rainbow)":c}"/>`;
+    const parts=n.split(" ");g+=`<text x="${x+bw/2}" y="${(parts.length>1?92:100)+D}" text-anchor="middle" font-weight="900" font-size="13" fill="#fff" stroke="rgba(0,0,0,.25)" stroke-width="2.5" paint-order="stroke">${parts.map((t,j)=>`<tspan x="${x+bw/2}" dy="${j?16:0}">${t}</tspan>`).join("")}</text>`;
+    if(w) g+=`<text x="${x+bw/2}" y="${148+D}" text-anchor="middle" font-size="12" fill="var(--muted)">${w}</text>`;});
+  g+=`<line x1="${W-x0}" y1="${165+D}" x2="${x0}" y2="${165+D}" stroke="var(--ink)" stroke-width="2.5" marker-end="url(#arr)"/>
+    <text x="${x0}" y="${184+D}" font-size="12" fill="var(--muted)">längre</text><text x="${W-x0}" y="${184+D}" text-anchor="end" font-size="12" fill="var(--muted)">kortare</text>
+    <text x="${W/2}" y="${203+D}" text-anchor="middle" font-weight="900" font-size="15" fill="var(--ink)">Våglängd</text></svg>`;
   return `<div class="tablewrap spekwrap">${g}</div>`;
 }

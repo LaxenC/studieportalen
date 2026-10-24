@@ -25,7 +25,7 @@ Energin överförs av **fotoner**. En foton är **en elektromagnetisk våg i par
 
 Alla sorter i spektrumet nedan är samma sorts strålning, men med olika våglängd.
 
-[[spektrum]]
+[[spektrum vagor]]
 Bild: Det elektromagnetiska spektrumet.
 
 Från radiovågor till gammastrålning blir våglängden kortare och frekvensen högre. Tänk att skapa "vågor" med ett hopprep, när behöver du ta i mest för att skapa vågorna. Är det för att skapa vågor som ser ut som radiovågor eller gammastrålning? Det är gammastrålning, så det betyder att ju längre åt häger i spektrumet man kommer desto högre energi har strålningen.

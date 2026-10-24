@@ -12,6 +12,7 @@
                                    foton dalton thomson rutherford bohr schrodinger
    [[kvark u]]                     kvark: u d c s t b
    [[spektrum]]                    elektromagnetiska spektrumet
+   [[spektrum vagor]]              ... med en våg som blir tätare åt höger
    [[atomkort titel="Väte" A=1 Z=1 X=H p=1 n=0 e=1 text="..." farg=gron]]
    [[kort-atom]] [[kort-notation]] [[kort-samband]] [[kort-stralning]]
    [[amne-fysik]] [[amne-kemi]] [[amne-biologi]] [[amne-matematik]]
@@ -45,7 +46,7 @@ const RITNINGAR = {
   partiklar: p => `<span class="eq">${p.map(x => "pne".includes(x) && x.length === 1 ? part(x) : `<span>${esc(x)}</span>`).join("")}</span>`,
   del: (p, a) => delBild(p[0], +a.storlek || 56),
   kvark: p => `<span class="q q-${p[0]}"><b>${esc(p[0])}</b>${KVARKNAMN[p[0]] || ""}</span>`,
-  spektrum: () => spektrum(),
+  spektrum: p => spektrum({ vagor: p.includes("vagor") }),
   atomkort: (p, a) => mini(FARGKLASS[a.farg] || "c-blue", esc(a.titel || ""), a.under ? esc(a.under) : "", a.A, a.Z, a.X, a.ch || "",
     +a.p || 0, +a.n || 0, +a.e || 0, a.why ? MD.inline(a.why) : "", a.text ? MD.inline(a.text) : "")
 };
