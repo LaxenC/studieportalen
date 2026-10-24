@@ -40,11 +40,7 @@ function visa() {
       let tasks = alla.filter(t => !t.dold && TYPER[t.typ]);
       if (ak !== "alla") tasks = tasks.filter(t => passar(uppgiftArskurs(o, t), ak));
       const dolda = alla.filter(t => t.dold || !TYPER[t.typ]);
-      // sortera: avsnittens ordning i texten, sedan lägsta nivå
-      const ordning = ((o.texter[k.id] || {}).avsnitt || []).map(a => a.id);
-      const pos = t => { const i = ordning.indexOf((t.avsnitt || [])[0]); return i < 0 ? 999 : i; };
-      const lag = t => Math.min(...nivaerFor(o, t, ak).map(x => x.niva));
-      tasks.sort((x, y) => pos(x) - pos(y) || lag(x) - lag(y));
+      // samma ordning som i uppgiftsfilen
       const per = [0, 1, 2, 3].map(L => tasks.filter(t => nivaerFor(o, t, ak).some(x => x.niva === L)).length);
       out.push(`<section class="panel gr-kap"><div class="gr-rubrik"><h2>${esc(k.namn)}</h2><span class="gr-dim">${esc(o.namn)}</span>
         <span class="gr-sum">${tasks.length} uppgifter · nivå 0: ${per[0]} · nivå 1: ${per[1]} · nivå 2: ${per[2]}${per[3] ? ` · utmaning: ${per[3]}` : ""}</span></div>`);
