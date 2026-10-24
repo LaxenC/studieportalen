@@ -28,7 +28,7 @@ Portal.uppgifter([
     // [a|b] = samma svar skrivet på olika sätt. EM och PARTIKEL (överst i den här filen) är listor med godkända namn.
 
     { id: "str-begrepp", kapitel: "stralning", titel: "Strålning – fyll i begrepp",
-      typ: "lucktext", nivaer: [0, 1], rullista: [0],
+      typ: "lucktext", nivaerPerArskurs: {7:2, 8:[1,2], 9:[1]}, rullista: [0],
       ordlista: ["energi", "vågor", "partiklar", "fotoner", "ljus"],
       varianter: [
         { text: "Strålning överför [energi] i form av vågor eller partiklar." },
@@ -36,7 +36,7 @@ Portal.uppgifter([
       ] },
 
     { id: "str-kategorier", kapitel: "stralning", titel: "Kategorier av strålning – fyll i begrepp",
-      typ: "lucktext", nivaer: [0, 1], rullista: [0],
+      typ: "lucktext", nivaerPerArskurs: {7:2, 8:[1,2], 9:[1]}, rullista: [0],
       ordlista: ["elektromagnetisk", "partikel", "radioaktiv", "synlig"],
       varianter: [
         { text: "Det finns två kategorier av strålning: partikel- och [elektromagnetisk|elektromagnetiska|elektromagnetisk strålning]strålning.", facit: "Det finns två kategorier av strålning: <b>elektromagnetisk strålning</b> och <b>partikelstrålning</b>." },
@@ -45,7 +45,7 @@ Portal.uppgifter([
       ] },
 
     { id: "str-overfor", kapitel: "stralning", titel: "Vad överför energin? – fyll i begrepp",
-      typ: "lucktext", nivaer: [0, 1], rullista: [0],
+      typ: "lucktext", nivaerPerArskurs: {7:3, 8:[1,2], 9:[1]}, rullista: [0],
       ordlista: ["fotoner", "delar av atomkärnan", "elektromagnetisk strålning", "partikelstrålning", "elektroner i skalen"],
       varianter: [
         { text: "Vid elektromagnetisk strålning är det [fotoner|foton] som överför energin. Vid partikelstrålning är det [delar av atomkärnan|partiklar|delar av kärnan] som överför energin." },
@@ -53,7 +53,7 @@ Portal.uppgifter([
       ] },
 
     { id: "str-bestar", kapitel: "stralning", titel: "Vad består strålningen av? – fyll i begrepp",
-      typ: "lucktext", nivaer: [0, 1], rullista: [0],
+      typ: "lucktext", nivaerPerArskurs: {7:3, 8:[1,2], 9:[1]}, rullista: [0],
       ordlista: ["betapartiklar", "alfapartiklar", "fotoner", "elektroner", "heliumkärnor", "elektromagnetiska vågor"],
       varianter: [
         { text: "Betastrålning består av [betapartiklar|betapartikel] som är [elektroner|elektron] med hög energi. Alfastrålning består av [alfapartiklar|alfapartikel] som är [heliumkärnor|heliumkärna] med hög energi. Gammastrålning består av [fotoner|foton], alltså [elektromagnetiska vågor|elektromagnetisk våg] i partikelform, med hög energi." },
@@ -62,7 +62,7 @@ Portal.uppgifter([
       ] },
 
     { id: "str-para-overfor", kapitel: "stralning", titel: "Vad överför energin? – para ihop",
-      typ: "para", nivaer: [1], grupp: "str-overfor-para",
+      typ: "para", nivaerPerArskurs: {7:3, 8:[1,2], 9:[1]}, grupp: "str-overfor-para",
       varianter: [
         { rubrik: "Välj vad som överför energin och vad det är, för varje sorts strålning.",
           rubriker: ["Strålning", "Överför energin", "Vad det är"],
@@ -72,7 +72,7 @@ Portal.uppgifter([
       ] },
 
     { id: "str-dra-bild", kapitel: "stralning", titel: "Vad överför energin? – begrepp och bild",
-      typ: "dratabell", nivaer: [1], grupp: "str-overfor-para",
+      typ: "dratabell", nivaerPerArskurs: {7:3, 8:[1,2], 9:[1]}, grupp: "str-overfor-para",
       // rader: [strålning, begrepp, bild]. "bild:alfa", "bild:elektron" och "bild:foton" ritas av sidan.
       varianter: [
         { rubrik: "Dra rätt begrepp och rätt bild till varje sorts strålning.",
@@ -81,7 +81,7 @@ Portal.uppgifter([
       ] },
 
     { id: "str-typer", kapitel: "stralning", titel: "Typer av strålning – fyll i begrepp",
-      typ: "lucktext", nivaer: [0, 1], rullista: [0],
+      typ: "lucktext", nivaer: nivaerPerArskurs: {7:2, 8:[1,2], 9:[1]}, rullista: [0],
       ordlista: ["synligt ljus", "UV-strålning", "röntgenstrålning", "gammastrålning", "alfastrålning", "betastrålning", "elektromagnetisk", "partikelstrålning"],
       varianter: [
         { text: `[*${EM}], [*${EM}], [*${EM}] och [*${EM}] är exempel på elektromagnetisk strålning. [*${PARTIKEL}] och [*${PARTIKEL}] är exempel på partikelstrålning.`,
@@ -90,7 +90,7 @@ Portal.uppgifter([
       ] },
 
     { id: "str-em", kapitel: "stralning", avsnitt: ["em"], titel: "Elektromagnetisk strålning – fyll i begrepp",
-      typ: "lucktext", nivaer: [0, 1], rullista: [0],
+      typ: "lucktext", nivaerPerArskurs: {7:2, 8:[1,2], 9:[1]}, rullista: [0],
       ordlista: ["radiovågor", "mikrovågor", "infrarött", "synligt ljus", "UV-strålning", "röntgenstrålning", "gammastrålning", "alfastrålning", "betastrålning"],
       varianter: [
         { text: `Synligt ljus, [*${EM}], [*${EM}] och [*${EM}] är exempel på elektromagnetisk strålning.`, inte: ["synligt ljus"],
@@ -104,7 +104,7 @@ Portal.uppgifter([
       ] },
 
     { id: "str-em-bast", kapitel: "stralning", avsnitt: ["em"], titel: "Elektromagnetisk strålning – bästa beskrivningen",
-      typ: "flerval", nivaer: [1],
+      typ: "flerval", nivaerPerArskurs: {7:3, 8:[1,2], 9:[1]},
       varianter: [
         { fraga: "Vilken är den bästa beskrivningen av elektromagnetisk strålning?",
           alt: [ { t: "Strålning som består av energirika vågor, som i partikelform kallas fotoner", s: "ratt", f: "fotoner är elektromagnetiska vågor i partikelform." },
@@ -114,7 +114,7 @@ Portal.uppgifter([
       ] },
 
     { id: "str-partikel", kapitel: "stralning", avsnitt: ["partikel"], titel: "Partikelstrålning – fyll i begrepp",
-      typ: "lucktext", nivaer: [0, 1], rullista: [0],
+      typ: "lucktext", nivaerPerArskurs: {7:3, 8:[1,2], 9:[1]}, rullista: [0],
       ordlista: ["alfastrålning", "betastrålning", "gammastrålning", "röntgenstrålning"],
       varianter: [
         { text: "Alfastrålning och [betastrålning|beta|beta strålning] är exempel på partikelstrålning." },
@@ -122,7 +122,7 @@ Portal.uppgifter([
       ] },
 
     { id: "str-partikel-bast", kapitel: "stralning", avsnitt: ["partikel"], titel: "Partikelstrålning – bästa beskrivningen",
-      typ: "flerval", nivaer: [1],
+      typ: "flerval", nivaerPerArskurs: {7:2, 8:[1,2], 9:[1]},
       varianter: [
         { fraga: "Vilken är den bästa beskrivningen av partikelstrålning?",
           alt: [ { t: "Strålning som består av energirika vågor, som i partikelform kallas fotoner", s: "fel", f: "det beskriver elektromagnetisk strålning." },
@@ -132,7 +132,7 @@ Portal.uppgifter([
       ] },
 
     { id: "str-beta-vad", kapitel: "stralning", avsnitt: ["partikel"], titel: "Betastrålning – vad strålar ut?",
-      typ: "flerval", nivaer: [1],
+      typ: "flerval", nivaerPerArskurs: {7:2, 8:[1,2], 9:[1]},
       varianter: [
         { fraga: "Vad beskriver bäst det som strålar ut vid betastrålning?",
           alt: [ { t: "En proton från kärnan", s: "fel", f: "protonen stannar kvar i kärnan." },
@@ -142,14 +142,14 @@ Portal.uppgifter([
       ] },
 
     { id: "str-beta-text", kapitel: "stralning", avsnitt: ["partikel"], titel: "Betastrålning – fyll i begrepp",
-      typ: "lucktext", nivaer: [1, 2], rullista: [1],
+      typ: "lucktext", nivaerPerArskurs: {7:3, 8:[1,2], 9:[1]}, rullista: [1],
       ordlista: ["neutron", "proton", "elektron", "elektronen", "foton", "heliumkärna"],
       varianter: [
         { text: "Vid betastrålning är det en [neutron] i atomkärnan som omvandlas till en [*proton] och en [*elektron]. Det är [elektronen|elektron|en elektron] som strålar ut." }
       ] },
 
     { id: "str-jon-text", kapitel: "stralning", avsnitt: ["jonis"], titel: "Joniserande strålning – fyll i begrepp",
-      typ: "lucktext", nivaer: [0, 1], rullista: [0],
+      typ: "lucktext", nivaerPerArskurs: {7:3, 8:[1,2], 9:[1]}, rullista: [0],
       ordlista: ["energi", "elektroner", "protoner", "jon", "isotop", "gammastrålning", "röntgenstrålning", "synligt ljus", "radiovågor"],
       varianter: [
         { text: "Joniserande strålning har tillräckligt hög [energi] för att slå loss [elektroner|elektron] från atomer." },
@@ -159,7 +159,7 @@ Portal.uppgifter([
       ] },
 
     { id: "str-jon-sortera", kapitel: "stralning", avsnitt: ["jonis"], titel: "Joniserande eller inte? – sortera",
-      typ: "sortera", nivaer: [1],
+      typ: "sortera", nivaerPerArskurs: {7:3, 8:[1,2], 9:[1]},
       varianter: [
         { grupper: ["Joniserande", "Inte joniserande"],
           saker: [["Alfastrålning", 0], ["Gammastrålning", 0], ["Röntgenstrålning", 0], ["Synligt ljus", 1], ["Radiovågor", 1], ["Mikrovågor", 1]] },
@@ -168,7 +168,7 @@ Portal.uppgifter([
       ] },
 
     { id: "str-jon-bast", kapitel: "stralning", avsnitt: ["jonis"], titel: "Joniserande strålning – bästa beskrivningen",
-      typ: "flerval", nivaer: [1],
+      typ: "flerval", nivaerPerArskurs: {7:3, 8:[1,2], 9:[1]},
       varianter: [
         { fraga: "Vilken är den bästa beskrivningen av joniserande strålning?",
           alt: [ { t: "Strålning med tillräckligt hög energi för att slå loss elektroner från atomer", s: "ratt", f: "då bildas joner – därav namnet." },
@@ -178,7 +178,7 @@ Portal.uppgifter([
       ] },
 
     { id: "str-jon-atom", kapitel: "stralning", avsnitt: ["jonis"], titel: "Joniserande strålning – vad händer med atomen?",
-      typ: "flerval", nivaer: [2],
+      typ: "flerval", nivaerPerArskurs: {7:3, 8:[3], 9:[2]},
       varianter: [
         { fraga: "Joniserande strålning träffar en neutral atom och slår loss en elektron. Vad blir atomen då?",
           alt: [ { t: "En positiv jon", s: "ratt", f: "atomen har nu fler protoner än elektroner, och får därför positiv laddning." },
@@ -188,20 +188,20 @@ Portal.uppgifter([
       ] },
 
     { id: "str-jon-text2", kapitel: "stralning", avsnitt: ["jonis"], titel: "Joniserande strålning – vad händer med atomen? (fyll i)",
-      typ: "lucktext", nivaer: [2],
+      typ: "lucktext", nivaerPerArskurs: {7:3, 8:[3], 9:[2]},
       varianter: [
         { text: "När joniserande strålning slår loss en [elektron] från en neutral atom får atomen fler [protoner|proton] än elektroner. Då blir atomen en [positiv|positivt laddad] jon." }
       ] },
 
     { id: "str-sortera", kapitel: "stralning", titel: "Typer av strålning – sortera begrepp",
-      typ: "sortera", nivaer: [1],
+      typ: "sortera", nivaerPerArskurs: {7:3, 8:[1,2], 9:[1]},
       varianter: [
         { grupper: ["Elektromagnetisk", "Partikelstrålning"],
           saker: [["Synligt ljus", 0], ["UV-strålning", 0], ["Röntgenstrålning", 0], ["Gammastrålning", 0], ["Radiovågor", 0], ["Alfastrålning", 1], ["Betastrålning", 1]] }
       ] },
 
     { id: "str-sf", kapitel: "stralning", titel: "Strålning – sant eller falskt",
-      typ: "santfalskt", nivaer: [1],
+      typ: "santfalskt", nivaerPerArskurs: {7:3, 8:[1,2], 9:[1]},
       varianter: [
         { pst: [["Synligt ljus är elektromagnetisk strålning.", true], ["Alfastrålning är elektromagnetisk strålning.", false],
                 ["Betastrålning är partikelstrålning.", true], ["Fotoner överför energi vid elektromagnetisk strålning.", true],
@@ -224,7 +224,7 @@ Portal.uppgifter([
       ] },
 
     { id: "str-udda", kapitel: "stralning", titel: "Strålning – vilket begrepp passar inte in?",
-      typ: "udda", nivaer: [1],
+      typ: "udda", nivaerPerArskurs: {7:3, 8:[1,2], 9:[1]},
       // Varje variant har tre frågor: ord = fyra begrepp, svar = det som inte passar in, f = förklaring
       varianter: [
         { fragor: [
@@ -246,7 +246,7 @@ Portal.uppgifter([
       ] },
 
     { id: "str-para", kapitel: "stralning", titel: "Strålning – para ihop begrepp",
-      typ: "dra", nivaer: [1],
+      typ: "dra", nivaerPerArskurs: {7:3, 8:[1,2], 9:[1]},
       varianter: [
         { rubrik: "Dra varje begrepp till rätt beskrivning. Varje begrepp passar bara på ett ställe.",
           par: [["Elektromagnetisk strålning", "Strålning som består av fotoner"], ["Partikelstrålning", "Strålning som består av delar av atomkärnan"],
