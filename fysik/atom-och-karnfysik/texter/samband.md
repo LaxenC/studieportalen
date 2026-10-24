@@ -6,7 +6,7 @@ kapitel: samband
 
 Vad händer med atomen när antalet protoner, neutroner eller elektroner ändras? 
 
-### Ämne {#amne}
+## Ämne {#amne}
 
 Om en atom har ett annat antal **protoner** blir det ett annat grundämne. Varje grundämne har ett eget antal protoner (atomnummer).
 
@@ -18,7 +18,7 @@ Om en atom har ett annat antal **protoner** blir det ett annat grundämne. Varje
 [[atomkort titel="Litium" under="(atomnummer 3)" A=7 Z=3 X=Li p=3 n=4 e=3 text="3 protoner ger grundämnet **litium (Li)**." farg=rod]]
 :::
 
-### Isotop {#isotop}
+## Isotop {#isotop}
 
 Isotoper är atomer av samma grundämne med samma antal protoner men olika antal **neutroner**. De har samma kemiska beteckning men olika masstal.
 
