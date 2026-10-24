@@ -56,6 +56,7 @@ Den används inom sjukvården för att ta bilder av kroppens inre. På röntgenb
 > - **Synligt ljus** bildas när elektroner hoppar från ett yttre skal till ett inre och frigör energi 
 > - **Röntgenstrålning** används för att ta bild på skelett, strålningen stoppas av skelett men går igenom mjukdelar
 >  - **Gamma** strålning med mycket högre energi, bildas ofta i samband med partikelstrålning
+
 ## Partikelstrålning {#partikel}
 
 Energin överförs av **partiklar** som sänds ut från atomkärnan.
@@ -68,6 +69,11 @@ Atomkärnan skickar ut en **heliumkärna**: 2 protoner och 2 neutroner.
 
 Kärnan förlorar 2 protoner och 2 neutroner. Atomnumret minskar med 2 och masstalet med 4, så det blir ett annat ämne.
 
+> **Exempel
+> :::rad
+Uran-235 som har 92 protoner (atomnummer =92) och 143 neutroner (masstal,235 - atomnummer,92 = 143)  [[nota 235 92 U]]
+:::
+> 
 > **Begrepp**
 > **alfapartikel** – heliumkärna som skickas ut från en atomkärna
 
