@@ -22,7 +22,7 @@
 Portal.uppgifter([
     // Varianter: X = kemisk beteckning, A = masstal, Z = atomnummer, ch = laddning ("+", "2+", "3-" …)
 
-    { id: "not-bygg", kapitel: "notation", avsnitt: ["rakna"], titel: "Bygg atomen",
+    { id: "not-bygg", kapitel: "notation", titel: "Bygg atomen",
       typ: "reglage", nivaer: [1],
       varianter: [
         { namn: "väte", X: "H", A: 1, Z: 1 },     { namn: "helium", X: "He", A: 4, Z: 2 },
@@ -31,7 +31,7 @@ Portal.uppgifter([
         { namn: "kväve", X: "N", A: 14, Z: 7 },   { namn: "syre", X: "O", A: 16, Z: 8 }
       ] },
 
-    { id: "not-skriv-1", kapitel: "notation", avsnitt: ["rakna"], titel: "Bygg atom – skriva atomnotation",
+    { id: "not-skriv-1", kapitel: "notation", titel: "Bygg atom – skriva atomnotation",
       typ: "skrivnotation", nivaer: [1], visaReglage: true,   // reglagen visar antalet partiklar
       varianter: [
         { namn: "väte", X: "H", A: 2, Z: 1 },     { namn: "helium", X: "He", A: 3, Z: 2 },
@@ -40,7 +40,7 @@ Portal.uppgifter([
         { namn: "kväve", X: "N", A: 15, Z: 7 },   { namn: "syre", X: "O", A: 18, Z: 8 }
       ] },
 
-    { id: "not-skriv-2", kapitel: "notation", avsnitt: ["rakna"], titel: "Räkna partiklarna – skriva atomnotation",
+    { id: "not-skriv-2", kapitel: "notation", titel: "Räkna partiklarna – skriva atomnotation",
       typ: "skrivnotation", nivaer: [2], visaReglage: false,  // bara bilden – eleven räknar själv
       varianter: [
         { namn: "väte", X: "H", A: 3, Z: 1 },     { namn: "helium", X: "He", A: 6, Z: 2 },
