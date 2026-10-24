@@ -192,3 +192,4 @@ section.avsnitt.ak-extra>.aktag{justify-self:start}
 .ritning.hopp{width:min(560px,100%)}
 .figbilder .ritning.hopp svg,.rad .figur .ritning.hopp svg{width:100%}
 .figbilder{width:100%}
+.figbilder img[src$=".svg"]{background:#fff;border-radius:12px;padding:6px}

@@ -35,12 +35,16 @@ Från radiovågor till gammastrålning blir våglängden kortare och frekvensen 
 
 **Synligt ljus**
 Synligt ljus skapas när elektroner hoppar mellan olika elektronskal i en atom. När en elektron tar upp energi, till exempel från värme eller elektricitet, kan den hoppa till ett skal längre ut som har högre energinivå. När elektronen sedan faller tillbaka till ett skal med lägre energinivå frigörs energi i form av en foton. 
-![elektronhopp](bilder/elektronhopp)
+![elektronhopp](bilder/elektronhopp.svg)
 Bild: Synligt ljus skapas när energi frigörs när en elektron hoppar från ett yttreskal till ett längre in.
 
 Vilken färg ljuset får beror på hur stor mycket energi som frisläpps,  mycket energi innebär högre frekvens vilket ger blått ljus, medan en mindre energi ger rött ljus.
 
  **Röntgenstrålning**
+
+![Röntgenstrålning går igenom handen men stoppas av skelettet](bilder/rontgen.svg)
+Bild: Röntgenstrålning går lätt igenom huden men stoppas av skelettet. Därför syns benen vita på röntgenbilden.
+
  **Gammastrålning (γ)**
  Fotoner med mycket hög energi som sänds ut från atomkärnan, ofta i samband med alfa- eller betasönderfall.
 
