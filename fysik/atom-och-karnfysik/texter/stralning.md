@@ -41,21 +41,24 @@ Bild: Synligt ljus skapas när energi frigörs när en elektron hoppar från ett
 Vilken färg ljuset får beror på hur stor mycket energi som frisläpps,  mycket energi innebär högre frekvens vilket ger blått ljus, medan en mindre energi ger rött ljus.
 
  **Röntgenstrålning**
+Röntgenstrålning är en energirik elektromagnetisk strålning som kan ta sig igenom mjukdelar, som muskler, men tas upp (absorberas) mer av skelettet.
+![elektronhopp](bilder/rontgen.svg)
+Bild: Röntgen bild på en hand
 
-![Röntgenstrålning går igenom handen men stoppas av skelettet](bilder/rontgen.svg)
-Bild: Röntgenstrålning går lätt igenom huden men stoppas av skelettet. Därför syns benen vita på röntgenbilden.
+Den används inom sjukvården för att ta bilder av kroppens inre. På röntgenbilden syns skelettet vitt eftersom det stoppar fler röntgenstrålar, medan mjukdelar syns mörkare.
 
  **Gammastrålning (γ)**
- Fotoner med mycket hög energi som sänds ut från atomkärnan, ofta i samband med alfa- eller betasönderfall.
+ Fotoner med mycket hög energi som sänds ut från atomkärnan, ofta i samband med partikelstrålning.
+ Används inom sjukvården vid cancerbehandling.
 
 
 > **Viktigt att komma ihåg**
 > - **Elektromagnetisk strålning:** fotoner (elektromagnetiska vågor i partikelform) överför energin.
 > - En **foton** är en elektromagnetisk våg i partikelform.
 > - Hög frekvens (hur tätt vågorna är) innebär hög energi.
-> - **Röntgenstrålning** är
+> - **Synligt ljus** bildas när elektroner hoppar från ett yttre skal till ett inre och frigör energi 
+> - **Röntgenstrålning** används för att ta bild på skelett, strålningen stoppas av skelett men går igenom mjukdelar
 >  - **Gamma** strålning med mycket högre energi, bildas ofta i samband med partikelstrålning
-
 ## Partikelstrålning {#partikel}
 
 Energin överförs av **partiklar** som sänds ut från atomkärnan.
