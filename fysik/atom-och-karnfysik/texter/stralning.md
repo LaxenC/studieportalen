@@ -6,37 +6,29 @@ kapitel: stralning
 
 Strålning överför energi – antingen som vågor eller som partiklar.
 
-## Vad är strålning? {#vad}
-
-::: rad
-> **Vad är strålning?** {.rod}
-> Strålning överför energi i form av vågor eller partiklar.
-
-> **Två typer** {.lila}
-> **Elektromagnetisk strålning:** fotoner (elektromagnetiska vågor i partikelform) överför energin.
->
-> **Partikelstrålning:** delar av atomkärnan överför energin.
-:::
+### Typer av strålning 
+Stårlning delas in i olika typer av strålning beroende på vad som strålar ut.
+**Elektromagnetisk strålning:** fotoner (elektromagnetiska vågor i partikelform) överför energin.
+ **Partikelstrålning:** delar av atomkärnan överför energin.
 
 > **Begrepp**
 > **elektromagnetisk strålning** – strålning där fotoner överför energin
 > **partikelstrålning** – strålning där delar av atomkärnan överför energin
 
-> **Viktigt att komma ihåg**
-> - Strålning överför energi.
-> - Elektromagnetisk strålning = fotoner. Partikelstrålning = delar av atomkärnan.
 
 ## Elektromagnetisk strålning {#em}
 
-Energin överförs av **fotoner**. Alla sorter i spektrumet nedan är samma sorts strålning, men med olika våglängd.
+Energin överförs av **fotoner**. En foton är **en elektromagnetisk våg i partikelform**. Elektromagnetisk strålning kan alltså beskrivas både som vågor och som partiklar – fotoner. Man kan tänka på en foton som ett litet energipaket. Fotoner har ingen massa och ingen laddning.
 
-> **Vad är en foton?** {.lila}
-> En foton är **en elektromagnetisk våg i partikelform**. Elektromagnetisk strålning kan alltså beskrivas både som vågor och som partiklar – fotoner. Man kan tänka på en foton som ett litet energipaket. Fotoner har ingen massa och ingen laddning.
+> **Begrepp**
+> **foton** – en elektromagnetisk våg i partikelform. Man kan tänka på en foton som ett litet energipaket.
+
+Alla sorter i spektrumet nedan är samma sorts strålning, men med olika våglängd.
 
 [[spektrum]]
 Bild: Det elektromagnetiska spektrumet.
 
-Från radiovågor till gammastrålning blir våglängden kortare och frekvensen högre. Fotonernas energi ökar också.
+Från radiovågor till gammastrålning blir våglängden kortare och frekvensen högre. Tänk att skapa "vågor" med ett hopprep, när behöver du ta i mest för att skapa vågorna. Är det för att skapa vågor som ser ut som radiovågor eller gammastrålning? Det är gammastrålning, så det betyder att ju längre åt häger i spektrumet man kommer desto högre energi har strålningen.
 
 > **Gammastrålning (γ)** {.gul}
 > Fotoner med mycket hög energi som sänds ut från atomkärnan, ofta i samband med alfa- eller betasönderfall.
