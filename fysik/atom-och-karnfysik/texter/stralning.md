@@ -61,7 +61,7 @@ Den används inom sjukvården för att ta bilder av kroppens inre. På röntgenb
 
 Energin överförs av **partiklar** som sänds ut från atomkärnan det finns 2 olika typer at partikelstrålning; alfastrålning och betastrålning.
 
-:::Fördjupsning åk7 Alfastrålning och Betastrålning
+:::Fördjupning åk7 Alfastrålning och Betastrålning
 ### Alfastrålning (α) 
 
 Atomkärnan skickar ut en **alfapartikel*, som är en heliumkärna (2 protoner + 2 neutroner) med mycket energi.
