@@ -45,11 +45,11 @@ Portal.uppgifter([
       ] },
 
     { id: "str-overfor", kapitel: "stralning", titel: "Vad överför energin? – fyll i begrepp",
-      typ: "lucktext", nivaerPerArskurs: {7:3, 8:[1,2], 9:[1]}, rullista: [0],
+      typ: "lucktext", nivaerPerArskurs: {7:2, 8:[1,2], 9:[1]}, rullista: [0],
       ordlista: ["fotoner", "delar av atomkärnan", "elektromagnetisk strålning", "partikelstrålning", "elektroner i skalen"],
       varianter: [
-        { text: "Vid elektromagnetisk strålning är det [fotoner|foton] som överför energin. Vid partikelstrålning är det [delar av atomkärnan|partiklar|delar av kärnan] som överför energin." },
-        { text: "Vid [elektromagnetisk strålning|elektromagnetisk] är det fotoner som överför energin. Vid [partikelstrålning|partikel strålning] är det delar av atomkärnan som överför energin." }
+        { text: "Vid elektromagnetisk strålning är det [fotoner|foton|elektromagnetiska vågor] som överför energin. Vid partikelstrålning är det [delar av atomkärnan|partiklar|delar av kärnan] som överför energin." },
+        { text: "Vid [elektromagnetisk strålning|elektromagnetisk] är det fotoner som överför energin. Vid [partikelstrålning|partikel strålning] är detpartiklar (delar av atomkärnan) som överför energin." }
       ] },
 
     { id: "str-bestar", kapitel: "stralning", titel: "Vad består strålningen av? – fyll i begrepp",
@@ -114,7 +114,7 @@ Portal.uppgifter([
       ] },
 
     { id: "str-partikel", kapitel: "stralning", avsnitt: ["partikel"], titel: "Partikelstrålning – fyll i begrepp",
-      typ: "lucktext", nivaerPerArskurs: {7:3, 8:[1,2], 9:[1]}, rullista: [0],
+      typ: "lucktext", nivaerPerArskurs: {7:2, 8:[1,2], 9:[1]}, rullista: [0],
       ordlista: ["alfastrålning", "betastrålning", "gammastrålning", "röntgenstrålning"],
       varianter: [
         { text: "Alfastrålning och [betastrålning|beta|beta strålning] är exempel på partikelstrålning." },
@@ -122,7 +122,7 @@ Portal.uppgifter([
       ] },
 
     { id: "str-partikel-bast", kapitel: "stralning", avsnitt: ["partikel"], titel: "Partikelstrålning – bästa beskrivningen",
-      typ: "flerval", nivaerPerArskurs: {7:2, 8:[1,2], 9:[1]},
+      typ: "flerval", nivaerPerArskurs: {7:3, 8:[1,2], 9:[1]},
       varianter: [
         { fraga: "Vilken är den bästa beskrivningen av partikelstrålning?",
           alt: [ { t: "Strålning som består av energirika vågor, som i partikelform kallas fotoner", s: "fel", f: "det beskriver elektromagnetisk strålning." },
@@ -132,7 +132,7 @@ Portal.uppgifter([
       ] },
 
     { id: "str-beta-vad", kapitel: "stralning", avsnitt: ["partikel"], titel: "Betastrålning – vad strålar ut?",
-      typ: "flerval", nivaerPerArskurs: {7:2, 8:[1,2], 9:[1]},
+      typ: "flerval", nivaerPerArskurs: {7:3, 8:[1,2], 9:[1]},
       varianter: [
         { fraga: "Vad beskriver bäst det som strålar ut vid betastrålning?",
           alt: [ { t: "En proton från kärnan", s: "fel", f: "protonen stannar kvar i kärnan." },
@@ -194,7 +194,7 @@ Portal.uppgifter([
       ] },
 
     { id: "str-sortera", kapitel: "stralning", titel: "Typer av strålning – sortera begrepp",
-      typ: "sortera", nivaerPerArskurs: {7:3, 8:[1,2], 9:[1]},
+      typ: "sortera", nivaerPerArskurs: {7:2, 8:[1,2], 9:[1]},
       varianter: [
         { grupper: ["Elektromagnetisk", "Partikelstrålning"],
           saker: [["Synligt ljus", 0], ["UV-strålning", 0], ["Röntgenstrålning", 0], ["Gammastrålning", 0], ["Radiovågor", 0], ["Alfastrålning", 1], ["Betastrålning", 1]] }
