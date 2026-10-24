@@ -61,7 +61,7 @@ async function laddaInnehall(o) {
       Portal._omrade = null;
       try {
         const r = await fetch(sokvag(o, `texter/${k.id}.md`), { cache: "no-cache" });
-        if (r.ok) o.texter[k.id] = MD.parse(await r.text());
+        if (r.ok) o.texter[k.id] = MD.parse(await r.text(), sokvag(o, ""));
       } catch (e) { /* ingen text */ }
     }
     o.laddat = true; return o;

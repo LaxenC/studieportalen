@@ -23,6 +23,9 @@ Energin överförs av **fotoner**. En foton är **en elektromagnetisk våg i par
 > **Begrepp**
 > **foton** – en elektromagnetisk våg i partikelform. Man kan tänka på en foton som ett litet energipaket.
 
+![En elektron hoppar till ett skal närmare kärnan och skickar ut ljus](bilder/elektronhopp.svg)
+Bild: När en elektron hoppar till ett skal närmare kärnan skickas energin ut som ljus – en foton.
+
 Alla sorter i spektrumet nedan är samma sorts strålning, men med olika våglängd.
 
 [[spektrum vagor]]

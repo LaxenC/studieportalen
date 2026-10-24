@@ -4,7 +4,8 @@
    Rörs inte för att lägga till innehåll.
    ===================================================================== */
 const MD = (() => {
-  let VARN = [];
+  let VARN = [], BAS = "";
+  const src = u => /^([a-z]+:|\/|#)/i.test(u) ? u : BAS + u;
   const AK_RE = /^(?:åk|ak)\s*=?\s*([\d,\s–-]+)$/i;
   const parseAk = s => {
     const out = new Set();
@@ -24,7 +25,7 @@ const MD = (() => {
     s = s.replace(/\[\[([^\]]+)\]\]/g, (m, k) => hall(ritning(k.trim())));
     s = s.replace(/`([^`]+)`/g, (m, k) => hall(`<code>${esc(k)}</code>`));
     s = s.replace(/<(?=[a-zA-Z\/!])/g, "\u0001").replace(/</g, "&lt;").replace(/\u0001/g, "<");
-    s = s.replace(/!\[([^\]]*)\]\(([^)\s]+)\)/g, (m, alt, src) => hall(`<img src="${esc(src)}" alt="${esc(alt)}">`));
+    s = s.replace(/!\[([^\]]*)\]\(([^)\s]+)\)/g, (m, alt, u0) => hall(`<img src="${esc(src(u0))}" alt="${esc(alt)}">`));
     s = s.replace(/\[([^\]]+)\]\(([^)\s]+)\)/g, (m, t, u) => hall(`<a href="${esc(u)}"${/^https?:/.test(u) ? ' target="_blank" rel="noopener"' : ""}>${t}</a>`));
     s = s.replace(/\*\*(.+?)\*\*/g, "<b>$1</b>");
     s = s.replace(/(^|[^*\w])\*([^*\s](?:[^*]*[^*\s])?)\*(?![*\w])/g, "$1<i>$2</i>");
@@ -59,7 +60,7 @@ const MD = (() => {
       const kl = (l.match(/\{\.([\w-]+)\}\s*$/) || [])[1];
       l = l.replace(/\{[^}]*\}\s*$/, "").trim();
       const img = l.match(/^!\[([^\]]*)\]\(([^)]+)\)$/);
-      if (img) return { html: `<img src="${esc(img[2])}" alt="${esc(img[1])}" loading="lazy">`, kl };
+      if (img) return { html: `<img src="${esc(src(img[2]))}" alt="${esc(img[1])}" loading="lazy">`, kl };
       return { html: ritning(l.slice(2, -2).trim()), kl };
     });
     const kl = delar.map(d => d.kl).filter(Boolean).map(k => "fig-" + k).join(" ");
@@ -170,7 +171,8 @@ const MD = (() => {
   }
 
   // Hela kapiteltexten -> { meta, titel, ingress, intro, avsnitt[] }
-  function parse(txt) {
+  function parse(txt, bas) {
+    BAS = bas || "";
     const [meta, kropp] = frontmatter(txt.replace(/\r\n?/g, "\n"));
     const rader = kropp.split("\n");
     VARN = [];
