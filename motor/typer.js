@@ -105,10 +105,10 @@ TYPER.markera = {
       const P = {
         masstal:             { mal: [xs - 14 - 23 * String(v.A).length, 64],  etikett: [26, 64] },
         atomnummer:          { mal: [xs - 14 - 23 * String(v.Z).length, 162], etikett: [26, 162] },
-        "kemisk beteckning": { mal: [xs + bred - 6, 150],                     etikett: [300, 200] },
+        "kemisk beteckning": { mal: [xs + 34, 174],                           etikett: [xs + 34, 222] },
         laddning:            { mal: [xs + bred + 12, 52],                     etikett: [300, 30] }
       };
-      let g = `<svg class="labelatom" viewBox="0 0 330 220" role="img" aria-label="Atomnotation med numrerade delar">
+      let g = `<svg class="labelatom" viewBox="0 0 330 240" role="img" aria-label="Atomnotation med numrerade delar">
         <text x="${xs - 10}" y="78" text-anchor="end" font-size="40" font-weight="800" fill="var(--ink)">${v.A}</text>
         <text x="${xs - 10}" y="176" text-anchor="end" font-size="40" font-weight="800" fill="var(--ink)">${v.Z}</text>
         <text x="${xs}" y="168" font-size="110" font-weight="800" fill="var(--ink)" font-family="Noto Serif, serif">${v.X}</text>

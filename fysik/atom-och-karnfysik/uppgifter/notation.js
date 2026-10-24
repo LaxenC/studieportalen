@@ -23,7 +23,7 @@ Portal.uppgifter([
     // Varianter: X = kemisk beteckning, A = masstal, Z = atomnummer, ch = laddning ("+", "2+", "3-" …)
 
     { id: "not-delar-bild", kapitel: "notation", titel: "Atomnotationens delar – bild",
-      typ: "markera", bild: "notation", nivaerPerArskurs: { 7: [1], 8: [0,1], 9: [0] }, rullista: [0],
+      typ: "markera", bild: "notation", nivaerPerArskurs: { 7: [1], 8: [0,1], 9: [0] }, rullista: [0], grupp: "not-delar",
       delar: ["masstal", "atomnummer", "kemisk beteckning"],
       svar: {
         masstal: ["masstal", "masstalet"],
@@ -32,6 +32,17 @@ Portal.uppgifter([
       },
       varianter: [ { X: "C", A: 14, Z: 6 }, { X: "O", A: 16, Z: 8 }, { X: "He", A: 4, Z: 2 }, { X: "N", A: 14, Z: 7 } ] },
                    // numreringen blandas varje gång
+
+    { id: "not-delar-skriv", kapitel: "notation", titel: "Atomnotationens delar – skriv namnen",
+      typ: "markera", bild: "notation", nivaerPerArskurs: { 7: [2], 8: [1], 9: [1] }, grupp: "not-delar",
+      delar: ["masstal", "atomnummer", "kemisk beteckning"],
+      svar: {
+        masstal: ["masstal", "masstalet"],
+        atomnummer: ["atomnummer", "atomnumret", "atomnummret"],
+        "kemisk beteckning": ["kemisk beteckning", "kemiska beteckningen", "beteckning", "kemisk symbol", "symbol"]
+      },
+      varianter: [ { X: "Li", A: 7, Z: 3 }, { X: "Na", A: 23, Z: 11 }, { X: "Al", A: 27, Z: 13 }, { X: "B", A: 11, Z: 5 } ] },
+                   // ingen rullista – eleven skriver alltid själv
 
     { id: "not-para", kapitel: "notation", titel: "Atomnotation – para ihop begrepp",
       typ: "para", nivaerPerArskurs: { 7: [1], 8: [0,1], 9: [0] },
