@@ -65,6 +65,6 @@ En jon är en atom som har fått ett annat antal **elektroner** än protoner och
 > - Protoner → ämne. Neutroner → isotop. Elektroner → jon.
 > - Antalet protoner bestämmer vilket ämne det är. 
 > - Isotoper har samma antal protoner men olika antal neutroner.
-> - En jon har ett annat antal elektroner än protoner.En atom men laddning
+> - En jon är en atom men laddning, har ett annat antal elektroner än protoner.
 
 
