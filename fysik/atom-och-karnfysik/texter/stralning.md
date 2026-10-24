@@ -8,8 +8,8 @@ Strålning överför energi – antingen som vågor eller som partiklar.
 
 ### Typer av strålning 
 Stårlning delas in i olika typer av strålning beroende på vad som strålar ut.
-- **Elektromagnetisk strålning:** fotoner (elektromagnetiska vågor i partikelform) överför energin.
-- **Partikelstrålning:** delar av atomkärnan överför energin.
+- vid **elektromagnetisk strålning:** då är det elektromagnetiskavågor (fotoner) som strålar ut.
+- vid **partikelstrålning:** är det partiklar (delar av atomkärnan) som strålar ut.
 
 > **Begrepp**
 > **elektromagnetisk strålning** – strålning där fotoner överför energin
@@ -44,10 +44,10 @@ Bild: Röntgen bild på en hand
 
 Den används inom sjukvården för att ta bilder av kroppens inre. På röntgenbilden syns skelettet vitt eftersom det stoppar fler röntgenstrålar, medan mjukdelar syns mörkare.
 
-### Gammastrålning (γ)
+:::Fördjupning åk7 Gammastrålning (γ)
  Fotoner med mycket hög energi som sänds ut från atomkärnan, ofta i samband med partikelstrålning.
  Används inom sjukvården vid cancerbehandling.
-
+:::
 
 > **Viktigt att komma ihåg**
 > - **Elektromagnetisk strålning:** fotoner (elektromagnetiska vågor i partikelform) överför energin.
@@ -55,13 +55,14 @@ Den används inom sjukvården för att ta bilder av kroppens inre. På röntgenb
 > - Hög frekvens (hur tätt vågorna är) innebär hög energi.
 > - **Synligt ljus** bildas när elektroner hoppar från ett yttre skal till ett inre och frigör energi 
 > - **Röntgenstrålning** används för att ta bild på skelett, strålningen stoppas av skelett men går igenom mjukdelar
->  - **Gamma** strålning med mycket högre energi, bildas ofta i samband med partikelstrålning
+>  - (åk8,åk9)**Gamma** strålning med mycket högre energi, bildas ofta i samband med partikelstrålning
 
 ## Partikelstrålning {#partikel}
 
-Energin överförs av **partiklar** som sänds ut från atomkärnan.
+Energin överförs av **partiklar** som sänds ut från atomkärnan det finns 2 olika typer at partikelstrålning; alfastrålning och betastrålning.
 
-### Alfastrålning (α)
+:::Fördjupsning åk7 Alfastrålning och Betastrålning
+### Alfastrålning (α) 
 
 Atomkärnan skickar ut en **alfapartikel*, som är en heliumkärna (2 protoner + 2 neutroner) med mycket energi.
 
@@ -107,15 +108,17 @@ Kärnan får en proton mer och en neutron mindre. Atomnumret ökar med 1, så de
 >Atomnummer (antal protoner) = 7 och Masstal (antal protoner + neutroner) = 7+7=14 <br>
 > Så efter strålning har vi ett nytt ämne men samma masstal <br>
 >[[nota 14 7 N]]
+:::
 
 > **Viktigt att komma ihåg**
-> - Vid partikelstrålning så är det partiklar från atomkärnan som strålar ut, så atomkärnan ser annorlunda ut efter strålningen
-> - **Alfapartikel** är partikelstrålning och det är en alfapartikel strålar ut
-> - **Alftapartikel** är en heliumkärna med mycket energi.
-> - **Betastrålning** är partikelstrålning och det är en betaapartikel strålar ut
-> - **Betapartikel** är en elektron med mycket energi
+> - (åk8,åk9)Vid partikelstrålning så är det partiklar från atomkärnan som strålar ut, så atomkärnan ser annorlunda ut efter strålningen
+> - Alfastrålning och Betastrålning är typer av partikelstrålnin
+> - (åk8,åk9)**Alfapartikel** är partikelstrålning och det är en alfapartikel strålar ut
+> - (åk8,åk9)**Alftapartikel** är en heliumkärna med mycket energi.
+> - (åk8,åk9)**Betastrålning** är partikelstrålning och det är en betaapartikel strålar ut
+> - (åk8,åk9)**Betapartikel** är en elektron med mycket energi
 
-## Joniserande strålning {#jonis}
+## Joniserande strålning {#jonis åk=(8,9)}
 
 Joniserande strålning är en egenskap hos strålning, inte en egen typ av strålning. Det betyder att strålningen har tillräckligt mycket energi för att slå loss elektroner från atomer och bilda joner. Den kan skada celler och DNA, men används också inom sjukvården, till exempel vid röntgen och cancerbehandling.
 Joniserande stårlning
