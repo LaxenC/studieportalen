@@ -23,7 +23,7 @@ Portal.uppgifter([
     // Varianter: X = kemisk beteckning, A = masstal, Z = atomnummer, ch = laddning ("+", "2+", "3-" …)
 
     { id: "not-bygg", kapitel: "notation", titel: "Bygg atomen",
-      typ: "reglage", nivaer: [1],
+      typ: "reglage", nivaerPerArskurs: {7:[3],8:[1,2],9:[1]},
       varianter: [
         { namn: "väte", X: "H", A: 1, Z: 1 },     { namn: "helium", X: "He", A: 4, Z: 2 },
         { namn: "litium", X: "Li", A: 7, Z: 3 },  { namn: "beryllium", X: "Be", A: 9, Z: 4 },
@@ -32,7 +32,7 @@ Portal.uppgifter([
       ] },
 
     { id: "not-skriv-1", kapitel: "notation", titel: "Bygg atom – skriva atomnotation",
-      typ: "skrivnotation", nivaer: [1], visaReglage: true,   // reglagen visar antalet partiklar
+      typ: "skrivnotation", nivaerPerArskurs: {7:[3],8:[1,2],9:[1]}, visaReglage: true,   // reglagen visar antalet partiklar
       varianter: [
         { namn: "väte", X: "H", A: 2, Z: 1 },     { namn: "helium", X: "He", A: 3, Z: 2 },
         { namn: "litium", X: "Li", A: 6, Z: 3 },  { namn: "beryllium", X: "Be", A: 10, Z: 4 },
@@ -41,7 +41,7 @@ Portal.uppgifter([
       ] },
 
     { id: "not-skriv-2", kapitel: "notation", titel: "Räkna partiklarna – skriva atomnotation",
-      typ: "skrivnotation", nivaer: [2], visaReglage: false,  // bara bilden – eleven räknar själv
+      typ: "skrivnotation", nivaerPerArskurs: {7:[3],8:[1,2],9:[1]}, visaReglage: false,  // bara bilden – eleven räknar själv
       varianter: [
         { namn: "väte", X: "H", A: 3, Z: 1 },     { namn: "helium", X: "He", A: 6, Z: 2 },
         { namn: "litium", X: "Li", A: 8, Z: 3 },  { namn: "bor", X: "B", A: 11, Z: 5 },
@@ -50,7 +50,7 @@ Portal.uppgifter([
       ] },
 
     { id: "not-jon", kapitel: "notation", titel: "Bygg jonen",
-      typ: "reglage", nivaer: [2],
+      typ: "reglage", nivaerPerArskurs: {7:[3],8:[2,3],9:[2]},
       varianter: [
         { X: "H", A: 1, Z: 1, ch: "+" },   { X: "H", A: 1, Z: 1, ch: "-" },
         { X: "Li", A: 7, Z: 3, ch: "+" },  { X: "Be", A: 9, Z: 4, ch: "2+" },
