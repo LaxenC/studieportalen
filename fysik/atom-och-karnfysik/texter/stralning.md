@@ -69,10 +69,10 @@ Atomkärnan skickar ut en **heliumkärna**: 2 protoner och 2 neutroner.
 
 Kärnan förlorar 2 protoner och 2 neutroner. Atomnumret minskar med 2 och masstalet med 4, så det blir ett annat ämne.
 
-> **Exempel
+> **Exempel:**
 > :::rad
-Uran-235 som har 92 protoner (atomnummer =92) och 143 neutroner (masstal,235 - atomnummer,92 = 143)  [[nota 235 92 U]]
-:::
+> Uran-235 som har 92 protoner (atomnummer =92) och 143 neutroner (masstal,235 - atomnummer,92 = 143)  [[nota 235 92 U]]
+>:::
 > 
 > **Begrepp**
 > **alfapartikel** – heliumkärna som skickas ut från en atomkärna
