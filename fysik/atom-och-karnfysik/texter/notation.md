@@ -15,13 +15,13 @@ Notationen består av:
 ::: rad
 [[nota 14 6 C stor farg]]
 Bild: Kemisk beteckning= C, Atomnummer=6 och Masstal=14
-
-Antal protoner är det som bestämmer vilket grundämne det är, vilket innebär att alla ämnen har olika atomnummer. 
-:::
-
 > **Begrepp**
 > **masstal** – antalet protoner + neutroner
 > **atomnummer** – antalet protoner
+:::
+
+Antal protoner är det som bestämmer vilket grundämne det är, vilket innebär att alla ämnen har olika atomnummer. 
+
 
 Antal elektroner syns inte i notationen. När atomen är oladdad är antalet elektroner lika med antalet protoner. <br>
 Om antalet protoner, som är positivt laddade, är lika många som antalet elektroner, som är negativt laddade, så tar laddningnar ut varandra och för atomen oladdad. 
@@ -48,7 +48,7 @@ Om antalet protoner, som är positivt laddade, är lika många som antalet elekt
 
 > **Viktigt att komma ihåg**
 > [[nota 14 6 C stor farg]]
-Bild: Kemisk beteckning= C, Atomnummer=6 och Masstal=14
+> Bild: Kemisk beteckning= C, Atomnummer=6 och Masstal=14
 > - Masstalet står överst: protoner + neutroner.
 > - Atomnumret står nederst: antalet protoner.
 > - I en neutral atom är de lika många elektroner som protoner
