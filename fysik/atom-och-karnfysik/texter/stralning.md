@@ -23,9 +23,6 @@ Energin överförs av **fotoner**. En foton är **en elektromagnetisk våg i par
 > **Begrepp**
 > **foton** – en elektromagnetisk våg i partikelform. Man kan tänka på en foton som ett litet energipaket.
 
-![En elektron hoppar till ett skal närmare kärnan och skickar ut ljus](bilder/elektronhopp.svg)
-Bild: När en elektron hoppar till ett skal närmare kärnan skickas energin ut som ljus – en foton.
-
 Alla sorter i spektrumet nedan är samma sorts strålning, men med olika våglängd.
 
 [[spektrum vagor]]
@@ -33,21 +30,21 @@ Bild: Det elektromagnetiska spektrumet.
 
 Från radiovågor till gammastrålning blir våglängden kortare och frekvensen högre. Tänk att skapa "vågor" med ett hopprep, när behöver du ta i mest för att skapa vågorna. Är det för att skapa vågor som ser ut som radiovågor eller gammastrålning? Det är gammastrålning, så det betyder att ju längre åt höger i spektrumet man kommer desto högre energi har strålningen.
 
-**Synligt ljus**
+### Synligt ljus
 Synligt ljus skapas när elektroner hoppar mellan olika elektronskal i en atom. När en elektron tar upp energi, till exempel från värme eller elektricitet, kan den hoppa till ett skal längre ut som har högre energinivå. När elektronen sedan faller tillbaka till ett skal med lägre energinivå frigörs energi i form av en foton. 
 ![elektronhopp](bilder/elektronhopp.svg)
 Bild: Synligt ljus skapas när energi frigörs när en elektron hoppar från ett yttreskal till ett längre in.
 
 Vilken färg ljuset får beror på hur stor mycket energi som frisläpps,  mycket energi innebär högre frekvens vilket ger blått ljus, medan en mindre energi ger rött ljus.
 
- **Röntgenstrålning**
+ ### Röntgenstrålning
 Röntgenstrålning är en energirik elektromagnetisk strålning som kan ta sig igenom mjukdelar, som muskler, men tas upp (absorberas) mer av skelettet.
 ![elektronhopp](bilder/rontgen.svg)
 Bild: Röntgen bild på en hand
 
 Den används inom sjukvården för att ta bilder av kroppens inre. På röntgenbilden syns skelettet vitt eftersom det stoppar fler röntgenstrålar, medan mjukdelar syns mörkare.
 
- **Gammastrålning (γ)**
+ ### Gammastrålning (γ)
  Fotoner med mycket hög energi som sänds ut från atomkärnan, ofta i samband med partikelstrålning.
  Används inom sjukvården vid cancerbehandling.
 
