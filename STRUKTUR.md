@@ -106,10 +106,11 @@ Avsnitten definieras i textfilen (rubriker med `##`), inte här.
 
 ## 6. Nivåer
 
-**Uppgiftsnivå** – hur svår en uppgift är: 0, 1 eller 2.
+**Uppgiftsnivå** – hur svår en uppgift är: 0 (förkunskap), 1 (godkänt), 2 (över godkänt) eller 3 (utmaning utanför kunskapskraven).
 
 **Elevnivå** – antal stjärnor eleven väljer: 1–4. Varje stjärna drar uppgifter från
 uppgiftsnivåerna enligt en fördelning i procent. *Bara kör* = 2 stjärnor.
+Dessutom finns **Utmaning** (raketen, rad `5` i `elevnivaer.js`) som drar från nivå 3. Nivå 3 kommer aldrig med i stjärnorna 1–4.
 
 `konfig/elevnivaer.js`:
 ```js

@@ -6,7 +6,7 @@
 let AKTIV_AK = "alla"; const AK = () => AKTIV_AK;
 const $ = id => document.getElementById(id);
 const ok = b => b ? '<span class="st-ok">✔</span>' : '<span class="st-nej">✗</span>';
-const nivaChips = (o, lista, ak) => [0, 1, 2].map(L => { const n = lista.filter(t => nivaerFor(o, t, ak).some(x => x.niva === L)).length; return `<span class="st-niv ${n ? "" : "tom"}" title="Nivå ${L}">${L}:${n}</span>`; }).join("");
+const nivaChips = (o, lista, ak) => [0, 1, 2, 3].map(L => { const n = lista.filter(t => nivaerFor(o, t, ak).some(x => x.niva === L)).length; return `<span class="st-niv ${n ? "" : "tom"}" title="${L === 3 ? "Utmaning" : "Nivå " + L}">${L === 3 ? "U" : L}:${n}</span>`; }).join("");
 
 function bygg() {
   const ak = AK(), varn = [], rader = [];

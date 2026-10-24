@@ -74,7 +74,7 @@ function ovaHtml() {
 </div>`;
 }
 
-const LEVELCLS = { 1: "c-green", 2: "c-blue", 3: "c-yellow", 4: "c-orange" };
+const LEVELCLS = { 1: "c-green", 2: "c-blue", 3: "c-yellow", 4: "c-orange", 5: "c-purple" };
 const kapMedUppg = o => synligaKapitel(o, AK()).filter(k => aktivaUppgifter(o, AK(), k.id).length);
 
 function renderOmraden() {
@@ -101,8 +101,10 @@ function renderOva() {
   const av = OVA.avsnitt && OVA.kapitel !== "mix" && avsnittAv(o, OVA.kapitel, OVA.avsnitt);
   $("avFilter").innerHTML = av ? `<p class="avfilter">Bara avsnittet <b>${esc(av.rubrik)}</b> <button type="button" class="ghostbtn" id="avBort">Visa hela kapitlet</button></p>` : "";
   $("levels").innerHTML = [1, 2, 3, 4].map(n => `<button type="button" class="card level ${LEVELCLS[n]}" role="radio" data-level="${n}" aria-checked="${OVA.level === n}" aria-label="${n} ${n === 1 ? "stjärna" : "stjärnor"}">
-    <span class="stars">${[1, 2, 3, 4].map(i => star(i <= n)).join("")}</span><span class="radio"></span></button>`).join("");
-  $("nivaNote").textContent = ak === "alla" ? "" : `Nivåerna är anpassade för åk ${ak}.`;
+    <span class="stars">${[1, 2, 3, 4].map(i => star(i <= n)).join("")}</span><span class="radio"></span></button>`).join("")
+    + `<button type="button" class="card level utmaning c-purple" role="radio" data-level="5" aria-checked="${OVA.level === 5}" aria-label="Utmaning – utanför kunskapskraven">
+    <span class="utm-ic" aria-hidden="true">🚀</span><span class="utm-t">Utmaning</span><span class="radio"></span></button>`;
+  $("nivaNote").textContent = OVA.level === 5 ? "Utmaning: uppgifter utanför kunskapskraven – för dig som vill lite mer." : ak === "alla" ? "" : `Nivåerna är anpassade för åk ${ak}.`;
   $("counts").innerHTML = COUNTS.map(c => `<button type="button" role="radio" data-count="${c}" aria-checked="${OVA.count === c}" ${c === "loop" ? 'class="inf" title="Uppgifterna fortsätter tills du väljer att avsluta"' : ""}>${c === "loop" ? "Löpande" : c}</button>`).join("");
   const loop = OVA.count === "loop"; if (loop) OVA.feedback = "each";
   document.querySelectorAll("[data-fb]").forEach(b => { b.setAttribute("aria-checked", b.dataset.fb === OVA.feedback); b.setAttribute("aria-disabled", loop && b.dataset.fb === "end"); });
@@ -183,7 +185,7 @@ function visaFraga() {
   $("qBar").style.width = OV.loop ? "100%" : `${(OV.idx / OV.list.length) * 100}%`;
   $("qBar").parentElement.hidden = OV.loop;
   $("qArea").textContent = (kapitelAv(OVA.o, q.omrade) || {}).namn || q.omrade;
-  $("qLevel").textContent = `Nivå ${q.niva}`; $("qLevel").dataset.n = q.niva;
+  $("qLevel").textContent = q.niva >= 3 ? "Utmaning" : `Nivå ${q.niva}`; $("qLevel").dataset.n = q.niva;
   $("qTitle").textContent = q.task.titel;
   $("qInstr").innerHTML = typeof T.instr === "function" ? T.instr(q) : "";
   const body = $("qBody"); body.innerHTML = T.html(q);
@@ -224,7 +226,7 @@ function visaResultat() {
   $("rScore").textContent = res.length ? `${ok} av ${res.length}` : "0";
   $("rText").textContent = !res.length ? "Du avslutade innan du hann rätta någon uppgift." : ok === res.length ? "Alla rätt – snyggt jobbat!" : ok / res.length >= .7 ? "Bra jobbat! Titta på det du missade nedan." : "Titta på rätt svar nedan och öva gärna igen.";
   if (OV.slut && res.length) $("rText").textContent += " Du har gjort alla uppgifter som finns för dina val.";
-  $("rList").innerHTML = res.map((r, i) => `<details class="ritem ${r.ok ? "ok" : "no"}" ${r.ok ? "" : "open"}><summary><span class="mark">${r.ok ? "✓" : "✗"}</span><span>${i + 1}. ${esc(r.q.task.titel)}</span><span class="lv">Nivå ${r.q.niva}</span></summary><div class="facit">${r.facit}</div></details>`).join("");
+  $("rList").innerHTML = res.map((r, i) => `<details class="ritem ${r.ok ? "ok" : "no"}" ${r.ok ? "" : "open"}><summary><span class="mark">${r.ok ? "✓" : "✗"}</span><span>${i + 1}. ${esc(r.q.task.titel)}</span><span class="lv">${r.q.niva >= 3 ? "Utmaning" : "Nivå " + r.q.niva}</span></summary><div class="facit">${r.facit}</div></details>`).join("");
   sparaResultat(res.length, ok);
 }
 function sparaResultat(n, ok) {
@@ -290,7 +292,7 @@ function visaOva(o, p, el) {
   OVA.o = o;
   if (p.kapitel && kapitelAv(o, p.kapitel)) { OVA.kapitel = p.kapitel; OVA.avsnitt = p.avsnitt || null; }
   else if (OVA.kapitel !== "mix" && !kapitelAv(o, OVA.kapitel)) { OVA.kapitel = "mix"; OVA.avsnitt = null; }
-  if (p.stjarnor) OVA.level = Math.max(1, Math.min(4, +p.stjarnor));
+  if (p.stjarnor) OVA.level = Math.max(1, Math.min(5, +p.stjarnor));
   el.innerHTML = ovaHtml();
   renderOmraden(); renderOva();
   if (p.kor !== undefined) { OVA.count = "loop"; OVA.feedback = "each"; if (!p.stjarnor) OVA.level = 2; renderOva(); if (!$("start").disabled) startQuiz(); }

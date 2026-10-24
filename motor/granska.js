@@ -10,7 +10,7 @@ let qCounter = 0;
 // Nivåchips 0 1 2 – fyllda för de nivåer uppgiften har (för vald årskurs)
 function nivaChips(o, t, ak) {
   const n = nivaerFor(o, t, ak).map(x => x.niva);
-  return `<span class="gr-niv">${[0, 1, 2].map(L => `<span class="${n.includes(L) ? "pa" : ""}" data-n="${L}">${L}</span>`).join("")}</span>`;
+  return `<span class="gr-niv">${[0, 1, 2, 3].map(L => `<span class="${n.includes(L) ? "pa" : ""}" data-n="${L}">${L}</span>`).join("")}</span>`;
 }
 function rad(o, t, ak) {
   const avs = (t.avsnitt || []).map(a => { const x = avsnittAv(o, t.kapitel, a); return x ? esc(x.rubrik) : `<span class="gr-fel">#${esc(a)} saknas</span>`; }).join(", ");
@@ -45,9 +45,9 @@ function visa() {
       const pos = t => { const i = ordning.indexOf((t.avsnitt || [])[0]); return i < 0 ? 999 : i; };
       const lag = t => Math.min(...nivaerFor(o, t, ak).map(x => x.niva));
       tasks.sort((x, y) => pos(x) - pos(y) || lag(x) - lag(y));
-      const per = [0, 1, 2].map(L => tasks.filter(t => nivaerFor(o, t, ak).some(x => x.niva === L)).length);
+      const per = [0, 1, 2, 3].map(L => tasks.filter(t => nivaerFor(o, t, ak).some(x => x.niva === L)).length);
       out.push(`<section class="panel gr-kap"><div class="gr-rubrik"><h2>${esc(k.namn)}</h2><span class="gr-dim">${esc(o.namn)}</span>
-        <span class="gr-sum">${tasks.length} uppgifter · nivå 0: ${per[0]} · nivå 1: ${per[1]} · nivå 2: ${per[2]}</span></div>`);
+        <span class="gr-sum">${tasks.length} uppgifter · nivå 0: ${per[0]} · nivå 1: ${per[1]} · nivå 2: ${per[2]}${per[3] ? ` · utmaning: ${per[3]}` : ""}</span></div>`);
       if (!tasks.length) out.push(`<p class="gr-dim">Inga uppgifter${ak === "alla" ? "" : " för åk " + ak}.</p>`);
       else out.push(`<div class="tablewrap"><table class="rules gr-tab"><thead><tr><th>Uppgift</th><th>Typ</th><th>Avsnitt</th><th>Nivå</th><th>Var.</th><th></th></tr></thead>
         <tbody>${tasks.map(t => rad(o, t, ak)).join("")}</tbody></table></div>`);

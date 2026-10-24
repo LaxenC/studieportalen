@@ -166,7 +166,7 @@ Gemensamt för alla typer:
 | `avsnitt` | (valfritt) lista med avsnitt, t.ex. `["sura"]` |
 | `titel` | rubriken eleven ser |
 | `typ` | se nedan |
-| `nivaer` | `[0]`, `[1]`, `[2]` eller flera, t.ex. `[0, 1]` |
+| `nivaer` | `[0]`, `[1]`, `[2]` eller flera, t.ex. `[0, 1]`. `[3]` = utmaning utanför kunskapskraven |
 | `nivaerPerArskurs` | (valfritt) t.ex. `{ 7: [2] }` – gäller före kapitlets nivaForskjutning |
 | `arskurs` | (valfritt) t.ex. `[9]` – annars samma som avsnittet/kapitlet |
 | `rullista` | (valfritt) nivåer där eleven väljer i rullista, t.ex. `[0]` |

@@ -215,6 +215,7 @@ dialog::backdrop{background:rgba(10,16,30,.55)}
 .lvchip[data-n="0"]{background:var(--green-bg);color:var(--green)}
 .lvchip[data-n="1"]{background:var(--blue-bg);color:var(--blue)}
 .lvchip[data-n="2"]{background:var(--orange-bg);color:var(--orange)}
+.lvchip[data-n="3"]{background:var(--purple-bg);color:var(--purple)}
 .qcard h2{font-size:1.5rem}
 .instr{margin:0;font-size:1.05rem;max-width:70ch}
 .qbody{display:grid;gap:12px;min-width:0}

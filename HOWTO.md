@@ -231,6 +231,7 @@ Knappen **Aktiviteter** syns bara när det finns minst en aktivitet för elevens
 **Fil:** `konfig/elevnivaer.js`
 
 Varje stjärna (1–4) drar uppgifter från nivå 0, 1 och 2 enligt procent. Summan ska bli 100.
+Rad `5` är **Utmaning** (raketen) – den drar från nivå 3, uppgifter utanför kunskapskraven.
 
 ```js
 Portal.elevnivaer({
@@ -238,7 +239,8 @@ Portal.elevnivaer({
     1: { 0: 50, 1: 50 },          // 1 stjärna: hälften nivå 0, hälften nivå 1
     2: { 0: 15, 1: 70, 2: 15 },
     3: { 1: 75, 2: 25 },
-    4: { 1: 30, 2: 70 }
+    4: { 1: 30, 2: 70 },
+    5: { 2: 30, 3: 70 }           // Utmaning
   },
   7: {                            // egen fördelning för åk 7 (valfritt)
     1: { 0: 70, 1: 30 },
@@ -264,7 +266,7 @@ Glöm inte kommatecknet efter `}` när du lägger till en årskurs.
 
 - `1` = en nivå svårare, `-1` = en nivå lättare.
 - Exemplet: en uppgift på nivå 0 räknas som nivå 1 för åk 7 och 8.
-- Nivån blir aldrig lägre än 0 eller högre än 2.
+- Nivån blir aldrig lägre än 0 eller högre än 2. Nivå 3 (utmaning) flyttas aldrig.
 
 ---
 

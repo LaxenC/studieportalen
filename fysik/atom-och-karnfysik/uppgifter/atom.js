@@ -139,10 +139,10 @@ Portal.uppgifter([
       varianter: [{ skal: 1 }, { skal: 2 }, { skal: 3 }, { skal: 4 }, { skal: 5 }, { skal: 6 }] },
 
     { id: "atom-kvarktabell", kapitel: "atom", avsnitt: ["kvarkar"], titel: "Kvarkar – generationer",
-      typ: "kvarktabell", nivaer: [2],
+      typ: "kvarktabell", nivaer: [3],
       varianter: [{}] },
 
     { id: "atom-kvark", kapitel: "atom", avsnitt: ["kvarkar"], titel: "Bygg med kvarkar",
-      typ: "kvark", nivaer: [2],
+      typ: "kvark", nivaer: [3],
       varianter: [{ visaLaddning: true }, { visaLaddning: false }] }
 ]);

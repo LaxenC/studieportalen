@@ -8,7 +8,7 @@ const Portal = {
   inst: { titel: "Studieportalen", text: "" },
   amnenLista: [],
   omraden: {},          // id -> arbetsområde (med .amne, .kapitel, .texter, .uppgifter)
-  nivaer: { standard: { 1: { 0: 50, 1: 50 }, 2: { 0: 15, 1: 70, 2: 15 }, 3: { 1: 75, 2: 25 }, 4: { 1: 30, 2: 70 } } },
+  nivaer: { standard: { 1: { 0: 50, 1: 50 }, 2: { 0: 15, 1: 70, 2: 15 }, 3: { 1: 75, 2: 25 }, 4: { 1: 30, 2: 70 }, 5: { 2: 30, 3: 70 } } },
   _amne: null, _omrade: null, _fel: [],
 
   /* --- anropas från konfig- och innehållsfilerna --- */
@@ -99,7 +99,7 @@ function nivaerFor(o, t, ak) {
   if (ak !== "alla" && t.nivaerPerArskurs && t.nivaerPerArskurs[ak]) return t.nivaerPerArskurs[ak].map(n => ({ niva: n, orig: n }));
   const k = kapitelAv(o, t.kapitel) || {};
   const d = ak === "alla" ? 0 : ((k.nivaForskjutning || {})[ak] || 0);
-  const ut = []; (t.nivaer || []).forEach(n => { const v = Math.max(0, Math.min(2, n + d)); if (!ut.some(x => x.niva === v)) ut.push({ niva: v, orig: n }); });
+  const ut = []; (t.nivaer || []).forEach(n => { const v = n >= 3 ? n : Math.max(0, Math.min(2, n + d)); if (!ut.some(x => x.niva === v)) ut.push({ niva: v, orig: n }); });
   return ut;
 }
 
