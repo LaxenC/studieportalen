@@ -21,19 +21,18 @@ Processen kallas **fission**, som betyder *klyvning* på latin.
 Bild: En neutron träffar en urankärna. Kärnan klyvs i två nya kärnor, energi frigörs och 2–3 nya neutroner skickas ut.
 
 > **Begrepp**
-> **fission** – när en tung atomkärna klyvs i två lättare kärnor och energi frigörs
+> **fission** –  en tung atomkärna klyvs i två lättare kärnor och energi frigörs
 
 > **Viktigt att komma ihåg**
 > - Vid **fission** klyvs en tung kärna, till exempel uran, i två lättare kärnor.
-> - Fissionen startar när en **neutron** träffar kärnan.
-> - Det frigörs **mycket energi** och 2–3 nya **neutroner**.
+> - Det frigörs mycket energi
 
 ## Kedjereaktion {#kedja}
 
-När en urankärna klyvs skickas det ut 2–3 nya neutroner. De kan i sin tur träffa nya urankärnor, som också klyvs och skickar ut nya neutroner. Antalet klyvningar fördubblas hela tiden. Det kallas en **kedjereaktion**.
+När en urankärna klyvs skickas det ut även 2–3 nya neutroner. De kan i sin tur träffa nya urankärnor, som också klyvs och skickar ut nya neutroner. Antalet klyvningar fördubblas hela tiden. Det kallas en **kedjereaktion**.
 
 ![kedjereaktion](bilder/kedjereaktion.svg)
-Bild: En kedjereaktion – varje klyvning ger neutroner som klyver nya kärnor: 1 → 2 → 4 → 8 …
+Bild: En kedjereaktion – varje klyvning ger neutroner som klyver nya kärnor
 
 > **Begrepp**
 > **kedjereaktion** – när neutroner från en klyvning orsakar nya klyvningar, om och om igen
@@ -46,7 +45,10 @@ En kedjereaktion kan vara:
 
 I en atombomb får kedjereaktionen fortsätta okontrollerat. På en bråkdel av en sekund frigörs otroligt mycket energi som en enorm explosion, värme och strålning. Atombomber har använts i krig två gånger – mot de japanska städerna **Hiroshima** och **Nagasaki** 1945. Hundratusentals människor dog.
 
+Efter bomben så finns det kvar radioaktiva isotoper som spridas över stora områden genom radioaktivt nedfall och orsaka allvarliga strålskador. Hur långt nedfallet sprids beror bland annat på väder och vind. Strålningen från nedfallet minskar snabbt med tiden eftersom de radioaktiva ämnena sönderfaller, de flesta har en kort halveringstid. Efter ungefär två dygn kan strålningsnivån ha sjunkit till omkring en hundradel av den ursprungliga nivån.
+
 > **Viktigt att komma ihåg**
+>- Vid fision frigörs 2-3 nya neutrnoer som i sin tur tärffar nya kärnor som klycs
 > - Vid en **kedjereaktion** orsakar neutronerna från en klyvning nya klyvningar.
 > - **Okontrollerad** kedjereaktion → atombomb.
 > - **Kontrollerad** kedjereaktion → kärnkraftverk.
