@@ -105,6 +105,13 @@ Solen är en enorm fusionsreaktor. I solens kärna är det cirka 15 miljoner gra
 > **Begrepp**
 > **fusion** – när två lätta atomkärnor slås ihop till en tyngre kärna och energi frigörs
 
+### Fusionsreaktorer
+Eftersom det frigörs energi vid fusion på samma sätt som vid fision så borde man väl kunna ha fusionsreaktorer? <br>
+Vid fusion slås lätta atomkärnor ihop, och reaktionen stannar av om förhållandena inte längre är de rätta. Det innebär att en okontrollerad kedjereaktion inte kan fortsätta på samma sätt som vid fission.
+Fusion ger också mindre långlivat radioaktivt avfall, men reaktorn kan fortfarande bli radioaktiv och förbrukat bränsle kräver försiktig hantering. 
+Därför anses en fusionsreaktor ha vissa säkerhetsfördelar jämfört med vanliga kärnreaktorer som bygger på fission (kärnklyvning). <br>
+Problemet är att det är väldigt svårt att få fusion att producera mer energi än vad anläggningen förbrukar.
+
 > **Fördjupning: Vätebomben**
 > En **vätebomb** (fusionsbomb) är en ännu kraftigare kärnvapenbomb än atombomben. Den behöver så hög temperatur för att starta fusionen att en atombomb (fission) används som "tändning". Värmen från fissionen får vätekärnor att slå ihop sig – samma process som i solen, men okontrollerad. En vätebomb kan vara hundratals gånger kraftigare än bomberna över Hiroshima och Nagasaki. Vätebomber har provsprängts, men aldrig använts i krig.
 
@@ -112,6 +119,7 @@ Solen är en enorm fusionsreaktor. I solens kärna är det cirka 15 miljoner gra
 > - Vid **fusion** slås lätta kärnor ihop till en tyngre.
 > - Fusion kräver **extremt hög temperatur**.
 > - **Solen** får sin energi från fusion av väte till helium.
+> - Fusionsreaktorer säkrare, men svårt att bygga en som skapar mer energi än vad det förbrukar
 
 ## Massa blir energi – E = mc² {#emc2}
 
