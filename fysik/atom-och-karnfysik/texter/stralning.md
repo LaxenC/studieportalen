@@ -28,18 +28,26 @@ Alla sorter i spektrumet nedan är samma sorts strålning, men med olika våglä
 [[spektrum vagor]]
 Bild: Det elektromagnetiska spektrumet.
 
-Från radiovågor till gammastrålning blir våglängden kortare och frekvensen högre. Tänk att skapa "vågor" med ett hopprep, när behöver du ta i mest för att skapa vågorna. Är det för att skapa vågor som ser ut som radiovågor eller gammastrålning? Det är gammastrålning, så det betyder att ju längre åt häger i spektrumet man kommer desto högre energi har strålningen.
+Från radiovågor till gammastrålning blir våglängden kortare och frekvensen högre. Tänk att skapa "vågor" med ett hopprep, när behöver du ta i mest för att skapa vågorna. Är det för att skapa vågor som ser ut som radiovågor eller gammastrålning? Det är gammastrålning, så det betyder att ju längre åt höger i spektrumet man kommer desto högre energi har strålningen.
 
-> **Gammastrålning (γ)** {.gul}
-> Fotoner med mycket hög energi som sänds ut från atomkärnan, ofta i samband med alfa- eller betasönderfall.
+**Synligt ljus**
+Synligt ljus skapas när elektroner hoppar mellan olika elektronskal i en atom. När en elektron tar upp energi, till exempel från värme eller elektricitet, kan den hoppa till ett skal längre ut som har högre energinivå. När elektronen sedan faller tillbaka till ett skal med lägre energinivå frigörs energi i form av en foton. 
+![elektronhopp](bilder/elektronhopp)
+Bild: Synligt ljus skapas när energi frigörs när en elektron hoppar från ett yttreskal till ett längre in.
 
-> **Begrepp**
-> **foton** – en elektromagnetisk våg i partikelform, ett litet energipaket
+Vilken färg ljuset får beror på hur stor mycket energi som frisläpps,  mycket energi innebär högre frekvens vilket ger blått ljus, medan en mindre energi ger rött ljus.
+
+ **Röntgenstrålning**
+ **Gammastrålning (γ)**
+ Fotoner med mycket hög energi som sänds ut från atomkärnan, ofta i samband med alfa- eller betasönderfall.
+
 
 > **Viktigt att komma ihåg**
-> - **Gamma** är elektromagnetisk strålning – fotoner, precis som ljus men med mycket högre energi.
+> - **Elektromagnetisk strålning:** fotoner (elektromagnetiska vågor i partikelform) överför energin.
 > - En **foton** är en elektromagnetisk våg i partikelform.
-> - Kortare våglängd betyder högre frekvens och högre energi.
+> - Hög frekvens (hur tätt vågorna är) innebär hög energi.
+> - **Röntgenstrålning** är
+>  - **Gamma** strålning med mycket högre energi, bildas ofta i samband med partikelstrålning
 
 ## Partikelstrålning {#partikel}
 
