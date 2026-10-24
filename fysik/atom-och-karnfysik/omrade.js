@@ -42,7 +42,7 @@ Portal.omrade({
       arskurs: [7, 8, 9] },
     { id: "karnenergi", namn: "Kärnenergi", farg: "red", bild: "[[kort-atom]]",
       text: "Fission, kedjereaktion, kärnkraftverk, fusion och E = mc².",
-      arskurs: [7, 8, 9] }
+      arskurs: [8, 9] }
   ],
   aktiviteter: [
     { id: "kol14", namn: "Kol-14-metoden", fil: "aktiviteter/kol14.html", arskurs: [9],
