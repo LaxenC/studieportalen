@@ -4,7 +4,7 @@ kapitel: radioaktivitet
 
 # Radioaktivitet – sönderfall
 
-Vissa atomkärnor är instabila. De sönderfaller och sänder då ut strålning tills de blivit stabila.
+Vissa atomkärnor är instabila. De sönderfaller och sänder ut strålning tills de blivit stabila.
 
 ## Instabila atomkärnor {#instabil}
 
@@ -30,7 +30,7 @@ En atomkärna kan vara instabil av två skäl:
 
 ## Radioaktivt sönderfall {#sonderfall}
 
-När en instabil atomkärna gör sig av med partiklar eller energi säger man att kärnan **sönderfaller**. Kärnan delar upp sig, och då skapas strålning. Efter ett eller flera sönderfall har kärnan blivit stabil.
+När en instabil atomkärna gör sig av med partiklar eller energi säger man att kärnan **sönderfaller**. Kärnan delar upp sig, och då skapas strålning. Efter ett eller flera sönderfall har kärnan blivit stabil. När sönderfallet sker spontant, det vill säga utan påverkan, så kallas det för radioaktivt sönderfall.
 
 ![sönderfall](bilder/sonderfall.svg)
 Bild: En instabil kärna sönderfaller och sänder ut strålning. Kvar blir en stabil kärna.
@@ -40,8 +40,8 @@ Bild: En instabil kärna sönderfaller och sänder ut strålning. Kvar blir en s
 - Strålningen som skickas ut vid sönderfallet är **joniserande strålning**.
 
 > **Begrepp**
-> **radioaktiv kärna** – en instabil atomkärna som kan sönderfalla
-> **radioaktivt sönderfall** – när en instabil kärna delar upp sig och sänder ut strålning
+> **radioaktiv kärna** – en instabil atomkärna som vill sönderfalla
+> **radioaktivt sönderfall** – när en instabil kärna sönderfaller spontant
 
 > **Tänk på** {.red}
 > Det är *kärnan* som är radioaktiv. Strålningen kallas **joniserande strålning** – inte "radioaktiv strålning".
@@ -93,7 +93,7 @@ Man kan inte veta *när* en enskild radioaktiv kärna sönderfaller – det är 
 ![halveringstid](bilder/halveringstid.svg)
 Bild: Ett ämne med halveringstiden 30 år. Efter varje halveringstid är hälften av det som var kvar borta.
 
-Efter en halveringstid är hälften kvar. Efter två halveringstider är *hälften av hälften* kvar – alltså en fjärdedel, inte noll.
+Efter en halveringstid är hälften kvar. Efter två halveringstider är *hälften av hälften* kvar – alltså en fjärdedel, inte noll. Hlaveringen är alltid från föregående steg inte vad som fanns från start.
 
 | Tid | Antal halveringstider | Kvar | Har sönderfallit |
 |---|---|---|---|
@@ -104,10 +104,10 @@ Efter en halveringstid är hälften kvar. Efter två halveringstider är *hälft
 | 120 år | 4 | 6,25 % | 93,75 % |
 
 > **Exempel:**
-> Cesium-137 har halveringstiden 30 år. Vi börjar med 800 radioaktiva kärnor.<br>
-> Efter 30 år: 800 / 2 = **400** kvar<br>
-> Efter 60 år: 400 / 2 = **200** kvar<br>
-> Efter 90 år: 200 / 2 = **100** kvar
+> Kol-15 har halveringstiden 5 730 år. Vi börjar med 800 radioaktiva kärnor.<br>
+> Efter 1 halveringstid: 1*5730 = 5 730 år: 800 / 2 = **400** kvar<br>
+> Efter 2 halveringstider: 2*5730 = 11 460 år: 400 / 2 = **200** kvar<br>
+> Efter 3 halveringstider: 3*5730 = 17 190 år: 200 / 2 = **100** kvar
 
 Olika ämnen har mycket olika halveringstid:
 
@@ -125,14 +125,14 @@ Olika ämnen har mycket olika halveringstid:
 
 ## Kol-14-metoden {#kol14}
 
-Kol-14 är en radioaktiv isotop av kol med 6 protoner och 8 neutroner. Den har halveringstiden 5 730 år. Med hjälp av kol-14 kan man ta reda på hur gammalt något är som en gång har levt, till exempel trä, ben eller tyg.
+Kol-14 är en radioaktiv isotop av kol med 6 protoner och 8 neutroner. [note, 14,8,C] Den har halveringstiden 5 730 år. Med hjälp av kol-14 kan man ta reda på hur gammalt något är som en gång har levt, till exempel trä, ben eller tyg.
 
 ![kol-14-metoden](bilder/kol14.svg)
 Bild: Kol-14 bildas i luften och tas upp av allt som lever. När organismen dör minskar mängden kol-14.
 
 1. Kosmisk strålning från rymden träffar atmosfären. Då frigörs neutroner.
 2. En neutron träffar en kväveatom (kväve-14), som då blir kol-14.
-3. Kol-14 blir en del av koldioxiden i luften. Växter tar upp koldioxid och djur äter växterna. Allt som lever har därför samma andel kol-14 som luften.
+3. Kol-14 blir en del av koldioxiden i luften. Växter tar upp koldioxid och djur äter växterna. Allt som lever har därför samma andel kol-14 hela tiden.
 4. När organismen dör tas inget nytt kol upp. Kol-14 sönderfaller och blir färre och färre. Efter 5 730 år är hälften kvar.
 5. Genom att mäta hur mycket kol-14 som är kvar kan forskarna räkna ut hur länge sedan organismen dog.
 
@@ -144,6 +144,6 @@ Metoden fungerar för fynd som är upp till cirka 50 000 år gamla. Efter det f
 > **kol-14-metoden** – ett sätt att ta reda på åldern på något som har levt genom att mäta hur mycket kol-14 som är kvar
 
 > **Viktigt att komma ihåg**
-> - Allt som lever har samma andel kol-14 som luften.
-> - När organismen dör minskar kol-14 – hälften är kvar efter 5 730 år.
+> - Allt som lever har samma andel kol-14 över tid.
+> - När organismen dör minskar kol-14, eftersom den slutar ta upp ny klo-14
 > - Mängden kol-14 som är kvar visar hur gammalt fyndet är.
