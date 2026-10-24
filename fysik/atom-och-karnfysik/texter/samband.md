@@ -2,11 +2,11 @@
 kapitel: samband
 ---
 
-# Samband – isotop, ämne, jon
+# isotop, ämne, jon
 
 Vad händer med atomen när antalet protoner, neutroner eller elektroner ändras?
 
-## Ämne {#amne}
+### Ämne 
 
 Om en atom har ett annat antal **protoner** blir det ett annat grundämne. Varje grundämne har ett eget antal protoner (atomnummer).
 
@@ -18,11 +18,7 @@ Om en atom har ett annat antal **protoner** blir det ett annat grundämne. Varje
 [[atomkort titel="Litium" under="(atomnummer 3)" A=7 Z=3 X=Li p=3 n=4 e=3 text="3 protoner ger grundämnet **litium (Li)**." farg=rod]]
 :::
 
-> **Viktigt att komma ihåg**
-> - Antalet protoner bestämmer vilket ämne det är.
-> - Ändras antalet protoner blir det ett annat ämne, med ny beteckning och nytt atomnummer.
-
-## Isotop {#isotop}
+### Isotop
 
 Isotoper är atomer av samma grundämne med samma antal protoner men olika antal **neutroner**. De har samma kemiska beteckning men olika masstal.
 
@@ -37,9 +33,6 @@ Isotoper är atomer av samma grundämne med samma antal protoner men olika antal
 > **Begrepp**
 > **isotop** – atomer av samma ämne med olika antal neutroner
 
-> **Viktigt att komma ihåg**
-> - Isotoper har samma antal protoner men olika antal neutroner.
-> - Isotoper har samma beteckning men olika masstal.
 
 ## Jon {#jon}
 
@@ -56,11 +49,8 @@ En jon är en atom som har fått ett annat antal **elektroner** än protoner och
 > **Begrepp**
 > **jon** – atom med laddning, eftersom antalet elektroner och protoner inte är lika
 
-> **Viktigt att komma ihåg**
-> - En jon har ett annat antal elektroner än protoner.
-> - Laddningen skrivs uppe till höger, t.ex. C⁺ eller C⁻.
 
-## Sammanfattning {#sammanfattning}
+### Sammanfattning 
 
 | Om antalet … ändras | blir det | Vad händer i notationen? |
 |---|---|---|
@@ -70,3 +60,8 @@ En jon är en atom som har fått ett annat antal **elektroner** än protoner och
 
 > **Viktigt att komma ihåg**
 > - Protoner → ämne. Neutroner → isotop. Elektroner → jon.
+> - Antalet protoner bestämmer vilket ämne det är. 
+> - Isotoper har samma antal protoner men olika antal neutroner.
+> - En jon har ett annat antal elektroner än protoner.En atom men laddning
+
+
