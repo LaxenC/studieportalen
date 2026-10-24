@@ -80,11 +80,6 @@ async function startaStruktur() {
 }
 
 /* ---------- Senast ändrad (hämtas från GitHub) ---------- */
-function githubRepo() {
-  if (Portal.inst.github) return Portal.inst.github;
-  const m = location.hostname.match(/^([\w-]+)\.github\.io$/i), seg = location.pathname.split("/").filter(Boolean)[0];
-  return m && seg && !seg.endsWith(".html") ? `${m[1]}/${seg}` : null;
-}
 const TIDCACHE = {};
 async function ghHamta(url) {
   const nyckel = "gh:" + url;

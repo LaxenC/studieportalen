@@ -120,3 +120,10 @@ function mixFor(stjarnor, ak) {
 }
 
 function amneAv(id) { return Portal.amnenLista.find(a => a.id === id); }
+
+// Repots namn på GitHub, t.ex. "LaxenC/studieportalen" (räknas ut från adressen)
+function githubRepo() {
+  if (Portal.inst.github) return Portal.inst.github;
+  const m = location.hostname.match(/^([\w-]+)\.github\.io$/i), seg = location.pathname.split("/").filter(Boolean)[0];
+  return m && seg && !seg.endsWith(".html") ? `${m[1]}/${seg}` : null;
+}

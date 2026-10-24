@@ -21,13 +21,13 @@ function rad(o, t, ak) {
   if (t.grupp) ovrigt.push("grupp: " + esc(t.grupp));
   if (t.arskurs) ovrigt.push("åk " + MD.akText(t.arskurs));
   return `<tr id="u-${t.id}">
-    <td class="gr-namn"><b>${esc(t.titel)}</b><small>${esc(t.id)}${ovrigt.length ? " · " + ovrigt.join(" · ") : ""}</small></td>
+    <td class="gr-namn"><b>${esc(t.titel)}</b><small>${esc(t.id)}${RADER[t.id] ? ` · rad ${RADER[t.id].fran}` : ""}${ovrigt.length ? " · " + ovrigt.join(" · ") : ""}</small></td>
     <td>${TYPNAMN[t.typ] || t.typ}</td>
     <td>${avs || '<span class="gr-dim">hela kapitlet</span>'}</td>
     <td>${nivaChips(o, t, ak)}</td>
     <td class="gr-tal">${t.varianter.length}</td>
     <td class="gr-knapp"><button type="button" class="ghostbtn" data-prova="${o.id}|${t.id}|${L}">Prova</button>
-      <button type="button" class="ghostbtn" data-svar="${t.id}" aria-expanded="false">Svar</button></td></tr>
+      <button type="button" class="ghostbtn" data-svar="${t.id}" aria-expanded="false">Svar</button>${andraLank(o, t)}</td></tr>
     <tr class="gr-svar" id="s-${t.id}" hidden><td colspan="6"><ol>${t.varianter.map(v => `<li>${variantText(t, v)}</li>`).join("")}</ol></td></tr>`;
 }
 
@@ -91,6 +91,7 @@ document.addEventListener("click", e => {
 async function startaGranska() {
   laggTillSvgDefs();
   await laddaAllt();
+  await hittaRader();
   const opt = ['<option value="">Alla kapitel</option>'];
   Object.values(Portal.omraden).forEach(o => { opt.push(`<option value="${o.id}">${esc(o.namn)} – alla</option>`); o.kapitel.forEach(k => opt.push(`<option value="${o.id}/${k.id}">   ${esc(k.namn)}</option>`)); });
   $("filter").innerHTML = opt.join("");
@@ -100,4 +101,27 @@ async function startaGranska() {
   $("akval").innerHTML = ["alla", ...ARSKURSER].map(v => `<button type="button" role="radio" data-ak="${v}" aria-checked="${v === "alla"}">${v === "alla" ? "Alla" : "Åk " + v}</button>`).join("");
   $("fel").innerHTML = Portal._fel.map(f => `<p class="err">${esc(f)}</p>`).join("");
   visa();
+}
+
+/* ---------- Ändra på GitHub ---------- */
+const RADER = {};   // uppgifts-id -> { fil, fran, till }
+async function hittaRader() {
+  for (const o of Object.values(Portal.omraden)) for (const k of o.kapitel) {
+    const fil = sokvag(o, `uppgifter/${k.id}.js`);
+    try {
+      const r = await fetch(fil + "?v=" + Date.now()); if (!r.ok) continue;
+      const rader = (await r.text()).split("\n"), starter = [];
+      rader.forEach((l, i) => { const m = l.match(/^\s*\{\s*id:\s*"([^"]+)"/); if (m) starter.push([m[1], i + 1]); });
+      starter.forEach(([id, fran], j) => {
+        let till = j + 1 < starter.length ? starter[j + 1][1] - 1 : rader.length;
+        while (till > fran && !rader[till - 1].trim()) till--;
+        RADER[id] = { fil, fran, till };
+      });
+    } catch (e) { }
+  }
+}
+function andraLank(o, t) {
+  const repo = githubRepo(), r = RADER[t.id];
+  if (!repo || !r) return "";
+  return `<a class="ghostbtn gr-andra" href="https://github.com/${repo}/edit/main/${r.fil}#L${r.fran}-L${r.till}" target="_blank" rel="noopener" title="Öppnar filen i GitHub. Uppgiften börjar på rad ${r.fran}. Sök på ${esc(t.id)} med Ctrl+F.">Ändra</a>`;
 }

@@ -6,8 +6,8 @@
 <meta name="robots" content="noindex">
 <title>Granska uppgifter</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@500;700;800;900&family=Noto+Serif:wght@700&display=swap">
-<link rel="stylesheet" href="motor/ova.css?v=2026-10-24m">
-<link rel="stylesheet" href="motor/portal.css?v=2026-10-24m">
+<link rel="stylesheet" href="motor/ova.css?v=2026-10-24n">
+<link rel="stylesheet" href="motor/portal.css?v=2026-10-24n">
 <style>
 .gr-filter{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
 .gr-filter select{font:inherit;font-weight:700;padding:8px 12px;border-radius:10px;border:1px solid var(--line);background:var(--panel);color:var(--ink)}
@@ -30,6 +30,7 @@
 .gr-tal{text-align:center;font-weight:800}
 .gr-knapp{white-space:nowrap;text-align:right}
 .gr-knapp .ghostbtn{padding:5px 12px;font-size:.88rem}
+.gr-andra{border-color:var(--accent);color:var(--accent)}
 .gr-niv{display:inline-flex;gap:3px}
 .gr-niv span{width:24px;height:24px;border-radius:6px;display:grid;place-items:center;font-size:.8rem;font-weight:900;background:var(--bg);color:var(--line)}
 .gr-niv span.pa[data-n="0"]{background:var(--green-bg);color:var(--green)}
@@ -45,7 +46,7 @@
 <body>
 <main class="wrap">
   <header class="ovhead"><div><p class="eyebrow">För läraren</p><h1>Granska uppgifter</h1>
-    <p>Alla uppgifter per kapitel. <b>Prova</b> öppnar uppgiften, <b>Svar</b> visar alla varianter med rätt svar.</p></div>
+    <p>Alla uppgifter per kapitel. <b>Prova</b> öppnar uppgiften, <b>Svar</b> visar alla varianter med rätt svar, <b>Ändra</b> öppnar filen i GitHub – uppgiften börjar på raden som står under namnet.</p></div>
     <span class="gr-filter"><a class="ghostbtn" href="struktur.html">Översikt</a><a class="ghostbtn" href="./">Till portalen</a></span></header>
   <div class="gr-val"><select id="filter" aria-label="Visa kapitel"></select><div class="akval" id="akval" role="radiogroup" aria-label="Nivåer för årskurs"></div></div>
   <div id="fel"></div>
@@ -57,14 +58,14 @@
   <div class="dlg-body" id="prBody"></div>
   <div class="dlg-foot"><button type="button" class="sec" id="prStang">Stäng</button><button type="button" class="sec" id="prNy">Nästa variant</button><button type="button" class="pri" id="prRatta">Rätta</button></div>
 </dialog>
-<script src="motor/typer.js?v=2026-10-24m"></script>
-<script src="motor/ritningar-bas.js?v=2026-10-24m"></script>
-<script src="motor/ritningar.js?v=2026-10-24m"></script>
-<script src="motor/md.js?v=2026-10-24m"></script>
-<script src="motor/data.js?v=2026-10-24m"></script>
-<script src="konfig/amnen.js?v=2026-10-24m"></script>
-<script src="konfig/elevnivaer.js?v=2026-10-24m"></script>
-<script src="motor/granska.js?v=2026-10-24m"></script>
+<script src="motor/typer.js?v=2026-10-24n"></script>
+<script src="motor/ritningar-bas.js?v=2026-10-24n"></script>
+<script src="motor/ritningar.js?v=2026-10-24n"></script>
+<script src="motor/md.js?v=2026-10-24n"></script>
+<script src="motor/data.js?v=2026-10-24n"></script>
+<script src="konfig/amnen.js?v=2026-10-24n"></script>
+<script src="konfig/elevnivaer.js?v=2026-10-24n"></script>
+<script src="motor/granska.js?v=2026-10-24n"></script>
 <script>startaGranska();</script>
 </body>
 </html>
