@@ -12,6 +12,9 @@ I slutet av 1930-talet sköt den tyske kemisten **Otto Hahn** neutroner mot uran
 
 Förklaringen kom 8år senare från fysikerna **Lise Meitner** och **Otto Frisch**: urankärnan hade **delats i två delar**. Därför blev kärnorna lättare. Samtidigt frigjordes **mycket energi** som var lagrad i atomkärnan.
 
+>**Fördjupning: Kärnenergi**
+>När en tung atomkärna, exempelvis uran-235, klyvs delas den i två mindre >atomkärnor. Den starka kärnkraften påverkar hur partiklarna hålls samman i >atomkärnan. Efter klyvningen hamnar partiklarna i ett nytt tillstånd där den >totala energin är lägre. Överskottsenergin frigörs i form av rörelseenergi och >strålning.
+
 Processen kallas **fission**, som betyder *klyvning* på latin.
 
 ![fission](bilder/fission.svg)
