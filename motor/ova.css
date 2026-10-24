@@ -474,3 +474,7 @@ a.ghostbtn{text-decoration:none;white-space:nowrap}
 @media (max-width:620px){.areas{grid-template-columns:1fr 1fr}.areas:not(.many) .cell:nth-child(3){grid-column:1/-1}}
 @media (max-width:440px){.levels{grid-template-columns:1fr 1fr}.counts{grid-template-columns:repeat(3,1fr)}}
 @media (prefers-reduced-motion:no-preference){.card,.counts button,.opt{transition:box-shadow .15s,background .15s}}
+
+.mcbild{display:flex;justify-content:center;margin:0 0 12px}
+.mcbild .ritning{width:min(240px,100%)}
+.mcbild svg{width:100%;height:auto;display:block}

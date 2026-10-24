@@ -530,11 +530,12 @@ TYPER.isotoptabell = {
 };
 
 
-/* FLERVAL – välj det bästa alternativet. Varje alternativ: t = text, s = "ratt" | "delvis" | "fel", f = förklaring */
+/* FLERVAL – välj det bästa alternativet. Varje alternativ: t = text, s = "ratt" | "delvis" | "fel", f = förklaring.
+   Valfritt: bild: "[[atom p=6 n=6 e=6]]" på uppgiften eller på en variant visas ovanför alternativen. */
 TYPER.flerval = {
   instr: q => esc(q.v.fraga),
   setup(q) { q.alt = shuffle(q.v.alt); q.val = null; },
-  html(q) { return `<div class="mc" role="radiogroup">${q.alt.map((a, i) => `<button type="button" class="mcopt" role="radio" aria-checked="false" data-mc="${i}"><span class="mcl">${"ABCD"[i]}</span><span>${esc(a.t)}</span></button>`).join("")}</div>`; },
+  html(q) { const bild = q.v.bild || q.task.bild; return `${bild ? `<div class="mcbild">${MD.inline(bild)}</div>` : ""}<div class="mc" role="radiogroup">${q.alt.map((a, i) => `<button type="button" class="mcopt" role="radio" aria-checked="false" data-mc="${i}"><span class="mcl">${"ABCD"[i]}</span><span>${esc(a.t)}</span></button>`).join("")}</div>`; },
   mount(root, q) { root.addEventListener("click", e => { const b = e.target.closest("[data-mc]"); if (!b || q.locked) return; q.val = +b.dataset.mc; root.querySelectorAll("[data-mc]").forEach(x => x.setAttribute("aria-checked", x === b)); }); },
   grade(root, q) {
     q.locked = true; const a = q.val == null ? null : q.alt[q.val], r = q.alt.find(x => x.s === "ratt");

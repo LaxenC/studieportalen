@@ -100,6 +100,27 @@ Portal.uppgifter([
           rader: [["1807", "modell:dalton|Dalton"], ["1897", "modell:thomson|Thomson"], ["1911", "modell:rutherford|Rutherford"], ["1913", "modell:bohr|Bohr"], ["1926", "modell:schrodinger|Schrödinger"]] }
       ] },
 
+    { id: "atom-modell-bild", kapitel: "atom", avsnitt: ["modeller"], titel: "En atommodell är en förenklad bild",
+      typ: "flerval", nivaerPerArskurs: { 7: [1], 8: [0], 9: [0] },
+      bild: "[[atom p=6 n=6 e=6]]",
+      varianter: [
+        { fraga: "Bilden visar en modell av en kolatom. Vad stämmer om bilden?",
+          alt: [ { t: "Den är en förenklad bild av hur en atom är uppbyggd", s: "ratt", f: "en modell visar det viktigaste, men inte exakt hur verkligheten ser ut." },
+                 { t: "Den visar exakt hur en atom ser ut", s: "fel", f: "ingen har kunnat se en atom så här. Bilden är en modell – en förenkling." },
+                 { t: "Den är ett foto taget i ett mikroskop", s: "fel", f: "det är en ritad modell, inte ett foto." },
+                 { t: "Elektronerna är i verkligheten lika stora som protonerna", s: "fel", f: "elektroner är mycket mindre än protoner. Storlekarna i bilden stämmer inte." } ] },
+        { fraga: "Varför använder man modeller när man beskriver atomen?",
+          alt: [ { t: "För att atomen är för liten för att se – modellen hjälper oss att förstå", s: "ratt", f: "en modell är en förenklad bild som förklarar hur något fungerar." },
+                 { t: "För att modellen visar exakt hur atomen ser ut", s: "fel", f: "en modell är alltid en förenkling av verkligheten." },
+                 { t: "För att alla atomer ser likadana ut", s: "fel", f: "atomer skiljer sig åt, t.ex. i antal protoner." },
+                 { t: "För att forskarna inte vet något om atomen", s: "fel", f: "forskarna vet mycket från experiment – modellen sammanfattar det." } ] },
+        { fraga: "På vilket sätt skiljer sig bilden från en riktig atom?",
+          alt: [ { t: "Kärnan är ritad mycket större än den är jämfört med hela atomen", s: "ratt", f: "i verkligheten är kärnan pytteliten – atomen består nästan bara av tomrum." },
+                 { t: "I en riktig atom finns inga neutroner i kärnan", s: "fel", f: "jo, kärnan består av protoner och neutroner – det stämmer i bilden." },
+                 { t: "I en riktig atom finns elektronerna inne i kärnan", s: "fel", f: "nej, elektronerna finns i skal runt kärnan – precis som i bilden." },
+                 { t: "En riktig atom har fler elektroner än protoner", s: "fel", f: "nej, en atom har lika många elektroner som protoner." } ] }
+      ] },
+
     { id: "atom-tomrum-text", kapitel: "atom", avsnitt: ["delar"], titel: "Atomen är mest tomrum – fyll i begrepp",
       typ: "lucktext", nivaerPerArskurs:{ 7: [1], 8: [0,1], 9:[1]}, rullista: [0],
       ordlista: ["tomrum", "luft", "vatten", "blåbär", "fotboll", "massa", "kärnan", "elektronerna", "elektroner"],
@@ -137,6 +158,61 @@ Portal.uppgifter([
     { id: "atom-skal-max", kapitel: "atom", avsnitt: ["skal"], titel: "Elektronskal – namn och max antal",
       typ: "skal", nivaerPerArskurs:{ 7: [3], 8: [2,3], 9: [2]}, treFragor: true,   // frågar även max om det INTE är yttersta skalet
       varianter: [{ skal: 1 }, { skal: 2 }, { skal: 3 }, { skal: 4 }, { skal: 5 }, { skal: 6 }] },
+
+    { id: "skal-varfor", kapitel: "atom", avsnitt: ["skal"], titel: "Varför finns det flera elektronskal?",
+      typ: "flerval", nivaerPerArskurs: { 7: [3], 8: [2], 9: [1] },
+      varianter: [
+        { fraga: "Varför ligger inte alla elektroner i samma skal?",
+          alt: [ { t: "Elektronerna har samma laddning och stöter bort varandra", s: "ratt", f: "lika laddningar stöter bort varandra, så det får bara plats ett visst antal elektroner i varje skal." },
+                 { t: "Elektronerna har olika laddning", s: "fel", f: "alla elektroner har samma laddning – negativ (−1)." },
+                 { t: "Elektronerna är olika stora", s: "fel", f: "alla elektroner är lika stora. Det är laddningen som gör att de stöter bort varandra." },
+                 { t: "Kärnan stöter bort elektronerna", s: "fel", f: "kärnan är positiv och drar till sig de negativa elektronerna." } ] },
+        { fraga: "Vad händer när ett elektronskal är fullt?",
+          alt: [ { t: "Nästa elektron hamnar i ett skal längre ut", s: "ratt", f: "elektronerna stöter bort varandra, så när det är fullt får nästa elektron ta plats i nästa skal." },
+                 { t: "Nästa elektron hamnar i kärnan", s: "fel", f: "elektroner finns i skal runt kärnan, aldrig i kärnan." },
+                 { t: "Atomen kan inte få fler elektroner", s: "fel", f: "elektronen hamnar i nästa skal längre ut." },
+                 { t: "Elektronerna trycks ihop så att fler får plats", s: "fel", f: "elektronerna har samma laddning och stöter bort varandra – de kan inte tryckas ihop." } ] }
+      ] },
+
+    { id: "skal-energi", kapitel: "atom", avsnitt: ["skal"], titel: "Elektronskal och energinivåer",
+      typ: "flerval", nivaerPerArskurs: { 7: [3], 8: [2], 9: [1] },
+      varianter: [
+        { fraga: "Vilka elektroner har högst energi?",
+          alt: [ { t: "Elektronerna i skalen längst ut", s: "ratt", f: "ju längre ut från kärnan, desto högre energinivå har elektronen." },
+                 { t: "Elektronerna i K-skalet närmast kärnan", s: "fel", f: "K-skalet har lägst energi. Energin ökar ju längre ut skalet ligger." },
+                 { t: "Alla elektroner har lika mycket energi", s: "fel", f: "elektronerna har olika energi beroende på vilket skal de är i." },
+                 { t: "Elektronerna i kärnan", s: "fel", f: "det finns inga elektroner i kärnan – de finns i skal runt den." } ] },
+        { fraga: "Vad menas med att elektronskalen är energinivåer?",
+          alt: [ { t: "Varje skal har en egen energi – längre ut betyder högre energi", s: "ratt", f: "elektronerna i K-skalet har lägst energi och elektronerna i det yttersta skalet har högst." },
+                 { t: "Skalen innehåller energi i stället för elektroner", s: "fel", f: "skalen innehåller elektroner. Det är elektronerna som har olika energi." },
+                 { t: "Skalen närmast kärnan har högst energi", s: "fel", f: "det är tvärtom – energin ökar ju längre ut skalet ligger." },
+                 { t: "Alla skal har samma energi", s: "fel", f: "varje skal har sin egen energinivå." } ] },
+        { fraga: "Elektroner i vilket skal har högst energi?",
+          alt: [ { t: "N-skalet", s: "ratt", f: "N-skalet ligger längst ut av de här fyra, och ju längre ut desto högre energi." },
+                 { t: "K-skalet", s: "fel", f: "K-skalet ligger närmast kärnan och har lägst energi." },
+                 { t: "L-skalet", s: "fel", f: "L-skalet ligger näst närmast kärnan. Skal längre ut har högre energi." },
+                 { t: "M-skalet", s: "fel", f: "M-skalet har högre energi än K och L, men N-skalet ligger ännu längre ut." } ] }
+      ] },
+
+    { id: "skal-valens", kapitel: "atom", avsnitt: ["skal"], titel: "Valenselektroner",
+      typ: "flerval", nivaerPerArskurs: { 7: [2], 8: [1,2], 9: [1] },
+      varianter: [
+        { fraga: "Vad är valenselektroner?",
+          alt: [ { t: "Elektronerna i det yttersta skalet", s: "ratt", f: "valenselektronerna finns i atomens yttersta skal." },
+                 { t: "Elektronerna i K-skalet", s: "fel", f: "K-skalet är det innersta skalet. Valenselektronerna finns längst ut." },
+                 { t: "Alla elektroner i atomen", s: "fel", f: "bara elektronerna i det yttersta skalet kallas valenselektroner." },
+                 { t: "Elektronerna som finns i kärnan", s: "fel", f: "det finns inga elektroner i kärnan." } ] },
+        { fraga: "En kolatom har 6 elektroner: 2 i K-skalet och 4 i L-skalet. Hur många valenselektroner har kol?",
+          alt: [ { t: "4", s: "ratt", f: "L-skalet är kolets yttersta skal, och där finns 4 elektroner." },
+                 { t: "2", s: "fel", f: "de 2 elektronerna finns i K-skalet, som är det innersta skalet." },
+                 { t: "6", s: "fel", f: "6 är alla elektroner. Valenselektronerna är bara de i yttersta skalet." },
+                 { t: "8", s: "fel", f: "8 är det största antalet som får plats i L-skalet, men kol har bara 4 där." } ] },
+        { fraga: "En natriumatom har 11 elektroner: 2 i K-skalet, 8 i L-skalet och 1 i M-skalet. Hur många valenselektroner har natrium?",
+          alt: [ { t: "1", s: "ratt", f: "M-skalet är natriums yttersta skal, och där finns 1 elektron." },
+                 { t: "8", s: "fel", f: "L-skalet är inte det yttersta skalet hos natrium – det är M-skalet." },
+                 { t: "11", s: "fel", f: "11 är alla elektroner. Valenselektronerna är bara de i yttersta skalet." },
+                 { t: "2", s: "fel", f: "de 2 elektronerna finns i K-skalet, som är det innersta skalet." } ] }
+      ] },
 
     { id: "atom-kvarktabell", kapitel: "atom", avsnitt: ["kvarkar"], titel: "Kvarkar – generationer",
       typ: "kvarktabell", nivaer: [3],
