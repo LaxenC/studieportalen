@@ -62,20 +62,22 @@ Bild: Ett kärnkraftverk. Värmen från kärnbränslet gör vattnet till ånga s
 
 | Del | Uppgift | Om delen saknas |
 |---|---|---|
-| **Kärnbränsle** | Uran som klyvs. Fissionen ger värme. | Ingen fission – ingen värme och ingen el. |
-| **Styrstavar** | Fångar upp neutroner så att kedjereaktionen hålls jämn. Skjuts in helt för att stoppa reaktorn. | Kedjereaktionen kan inte kontrolleras – reaktorn kan bli för varm. |
-| **Vatten** | Kyler bränslet och värms till ånga. Bromsar också neutronerna så att de klyver uran lättare. | Bränslet blir överhettat och det bildas ingen ånga. |
-| **Turbin och generator** | Ångan snurrar turbinen. Generatorn gör om rörelsen till el. | Värmen kan inte göras om till el. |
-| **Kondensor (värmeväxlare)** | Kyler ångan med kallt vatten från havet så att den blir vatten igen och kan användas på nytt. | Ångan blir inte till vatten igen och kretsloppet stannar. |
+| **Kärnbränsle** | Uran-235 som klyvs. Fissionen ger energi som värmer vattnet. | Ingen fission – ingen energi och vattnet värms inte upp. |
+| **Styrstavar** | Fångar upp neutroner så att kedjereaktionen hålls jämn. Skjuts in helt för att stoppa reaktorn. | Kedjereaktionen kan inte kontrolleras – energi som släpps blir okontrollerad och reaktorn kan överhetta. |
+| **Vatten** | Har flera uppgifter: Kyler bränslet, bromsar neutronerna så att de klyver uran lättare och det värms till ånga. . | Bildas ingen ånga som driver turbinen |
+| **Turbin och generator** | Ångan snurrar turbinen. Generatorn gör om rörelsen till el. | Ångan görs inte om till rörelse och då kan inte generatorn göra el. |
+| **Kondensor (värmeväxlare)** | Kyler ångan med kallt vatten från havet så att den blir vatten igen och kan användas på nytt. | Ångan blir inte till vatten igen och reaktorn kommer få slut på vatten. |
 
 Energin omvandlas i flera steg: **kärnenergi → värme → rörelseenergi → elenergi**.
 
 > **Begrepp**
+>**reaktor**:den del av ett kärnkraftverk där kärnklyvning sker och energi frigörs som värme.
 > **styrstavar** – stavar som fångar upp neutroner och styr kedjereaktionen
-> **kärnbränsle** – det ämne som klyvs i reaktorn, oftast uran
+> **kärnbränsle** – det ämne som klyvs i reaktorn, oftast uran-235
 
 > **Viktigt att komma ihåg**
 > - I ett kärnkraftverk är kedjereaktionen **kontrollerad**.
+>- Kärnkraftverk: kärnbrälse klyvs och frigör energi -> vatten blir till ånga --> ångan får turbinen att snurra (rörelse energi) --> generatorn gör rörelse energin till el --> Värmeväxlare kyler ångan så att det blir vatten som leds till reaktorn igen
 > - **Styrstavarna** fångar neutroner och styr reaktionen.
 > - Värmen gör vatten till ånga → ångan snurrar **turbinen** → **generatorn** gör el.
 
