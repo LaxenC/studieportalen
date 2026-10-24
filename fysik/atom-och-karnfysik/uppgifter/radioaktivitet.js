@@ -22,7 +22,7 @@ Portal.uppgifter([
     /* ---------- Radioaktivitet upptäcks ---------- */
 
     { id: "rad-historia-tid", kapitel: "radioaktivitet", avsnitt: ["historia"], titel: "Radioaktivitet upptäcks – tidslinje",
-      typ: "dratabell", nivaerPerArskurs: { 7: [1,2] 8: [1], 9: [1] },
+      typ: "dratabell", nivaerPerArskurs: { 7: [1,2], 8: [1], 9: [1] },
       varianter: [
         { rubrik: "Dra rätt händelse till rätt år på tidslinjen.", tidslinje: true,
           rubriker: ["År", "Händelse"],
