@@ -36,7 +36,7 @@ const MD = (() => {
   /* ---------- block ---------- */
   const isFig = l => /^\s*(\[\[[^\]]+\]\]|!\[[^\]]*\]\([^)]+\))(\s*\{[^}]*\})?\s*$/.test(l);
   const isList = l => /^\s*([-*]|\d+\.)\s+/.test(l);
-  const startar = l => /^(#{1,6}\s|>|\||:::|<)/.test(l) || isList(l) || isFig(l);
+  const startar = l => /^\s{0,3}(#{1,6}\s|>|\||:::|<)/.test(l) || isList(l) || isFig(l);
 
   function lista(rader) {
     const ord = /^\s*\d+\./.test(rader[0]);
@@ -110,12 +110,12 @@ const MD = (() => {
         else ut.push({ html: `<div class="${esc(arg)}">${sattIhop(inre)}</div>` });
         i = j + 1; continue;
       }
-      if ((m = l.match(/^(#{1,6})\s+(.*)$/))) {
+      if ((m = l.match(/^\s{0,3}(#{1,6})\s+(.*)$/))) {
         const n = Math.max(3, m[1].length); // # och ## hanteras utanför
         ut.push({ html: `<h${n}>${inline(m[2].replace(/\s*\{[^}]*\}\s*$/, ""))}</h${n}>` }); i++; continue;
       }
-      if (/^>/.test(l)) {
-        const r = []; while (i < rader.length && /^>/.test(rader[i])) r.push(rader[i++].replace(/^>\s?/, ""));
+      if (/^\s{0,3}>/.test(l)) {
+        const r = []; while (i < rader.length && /^\s{0,3}>/.test(rader[i])) r.push(rader[i++].replace(/^\s{0,3}>\s?/, ""));
         ut.push(ruta(r, ctx)); continue;
       }
       if (/^\s*\|/.test(l)) {
@@ -181,7 +181,7 @@ const MD = (() => {
     let iBlock = 0;
     rader.forEach(l => {
       if (/^:::\s*\S/.test(l)) iBlock++; else if (/^:::\s*$/.test(l)) iBlock = Math.max(0, iBlock - 1);
-      const h = !iBlock && l.match(/^##\s+(.*)$/);
+      const h = !iBlock && l.match(/^\s{0,3}##\s+(.*)$/);
       if (h) {
         let rub = h[1], id = "", ak = null, dold = false;
         const attr = rub.match(/\{([^}]*)\}\s*$/);
@@ -195,7 +195,7 @@ const MD = (() => {
         }
         akt = { rubrik: rub, id: id || slug(rub), ak, dold, rader: [] }; delar.push(akt); return;
       }
-      const h1 = !iBlock && delar.length === 1 && l.match(/^#\s+(.*)$/);
+      const h1 = !iBlock && delar.length === 1 && l.match(/^\s{0,3}#\s+(.*)$/);
       if (h1) { res.titel = h1[1].trim(); return; }
       akt.rader.push(l);
     });
