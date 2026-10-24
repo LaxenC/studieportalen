@@ -26,7 +26,8 @@ function bygg() {
         const t = o.texter[k.id], upp = aktivaUppgifter(o, ak, k.id);
         const skift = k.nivaForskjutning ? " · nivå " + Object.entries(k.nivaForskjutning).map(([x, d]) => `åk ${x}: ${d > 0 ? "+" : ""}${d}`).join(", ") : "";
         rader.push(`<li class="st-kap${k.dold ? " st-dold" : ""}"><a href="${L("las", k.id)}">${esc(k.namn)}</a> <span class="st-dim">#${k.id}</span> <span class="st-ak">åk ${MD.akText(kak)}${skift}</span>
-          text ${ok(t)} · <a href="granska.html?kapitel=${o.id}/${k.id}">${upp.length} uppgifter</a> ${nivaChips(o, upp, ak)}${k.dold ? " <b>dold</b>" : ""}<ul>`);
+          text ${ok(t)} · <a href="granska.html?kapitel=${o.id}/${k.id}">${upp.length} uppgifter</a> ${nivaChips(o, upp, ak)}${k.dold ? " <b>dold</b>" : ""}
+          <span class="st-tid" data-fil="${sokvag(o, `texter/${k.id}.md`)}" data-namn="text"></span><span class="st-tid" data-fil="${sokvag(o, `uppgifter/${k.id}.js`)}" data-namn="uppgifter"></span><ul>`);
         if (!t) varna(`${esc(o.namn)} › ${esc(k.namn)}: saknar text (texter/${k.id}.md)`);
         else {
           (t.varningar || []).forEach(v => varna(`${esc(k.namn)}: ${esc(v)}`, L("las", k.id)));
@@ -34,10 +35,10 @@ function bygg() {
           t.avsnitt.filter(av => passar(av.ak, ak)).forEach(av => {
             const n = aktivaUppgifter(o, ak, k.id, av.id).length;
             rader.push(`<li class="st-av"><a href="${L("las", k.id, av.id)}">${esc(av.rubrik)}</a> <span class="st-dim">#${av.id}</span>${av.ak ? ` <span class="st-ak">åk ${MD.akText(av.ak)}</span>` : ""}
-              · viktigt ${ok(av.viktigt.length)} · ${n ? `${n} uppgifter` : '<span class="st-nej">inga uppgifter</span>'}</li>`);
+              · viktigt ${av.viktigt.length ? ok(1) : '<span class="st-dim">–</span>'} · ${n ? `${n} uppgifter` : '<span class="st-nej">inga uppgifter</span>'}</li>`);
             if (!n) varna(`${esc(k.namn)} › ${esc(av.rubrik)}: inga uppgifter`, L("las", k.id, av.id));
-            if (!av.viktigt.length) varna(`${esc(k.namn)} › ${esc(av.rubrik)}: saknar ruta "Viktigt att komma ihåg"`, L("las", k.id, av.id));
           });
+          if (!t.introViktigt.length && !t.avsnitt.some(av => av.viktigt.length)) varna(`${esc(k.namn)}: saknar ruta "Viktigt att komma ihåg"`, L("las", k.id));
           const utan = upp.filter(x => !(x.avsnitt || []).length).length;
           if (utan) rader.push(`<li class="st-av st-dim">${utan} uppgifter kopplade till hela kapitlet</li>`);
         }
@@ -62,6 +63,7 @@ function bygg() {
     rader.push(`</ul></li>`);
   }
   $("trad").innerHTML = `<ul class="st-trad">${rader.join("")}</ul>`;
+  visaTider();
   $("varn").innerHTML = varn.length ? `<h2>⚠ ${varn.length} att titta på</h2><ul>${varn.join("")}</ul>` : `<h2>✔ Inga varningar</h2>`;
 }
 
@@ -75,4 +77,47 @@ async function startaStruktur() {
     $("akval").querySelectorAll("button").forEach(x => x.setAttribute("aria-checked", x === b)); bygg();
   });
   bygg();
+}
+
+/* ---------- Senast ändrad (hämtas från GitHub) ---------- */
+function githubRepo() {
+  if (Portal.inst.github) return Portal.inst.github;
+  const m = location.hostname.match(/^([\w-]+)\.github\.io$/i), seg = location.pathname.split("/").filter(Boolean)[0];
+  return m && seg && !seg.endsWith(".html") ? `${m[1]}/${seg}` : null;
+}
+const TIDCACHE = {};
+async function ghHamta(url) {
+  const nyckel = "gh:" + url;
+  try { const c = JSON.parse(sessionStorage.getItem(nyckel) || "null"); if (c && Date.now() - c.t < 5 * 60e3) return c.d; } catch (e) { }
+  const r = await fetch("https://api.github.com/repos/" + url, { headers: { Accept: "application/vnd.github+json" } });
+  if (!r.ok) throw new Error(r.status);
+  const d = await r.json();
+  try { sessionStorage.setItem(nyckel, JSON.stringify({ t: Date.now(), d })); } catch (e) { }
+  return d;
+}
+function tidText(iso) {
+  const d = new Date(iso), nu = new Date(), dag = 864e5;
+  const klock = d.toLocaleTimeString("sv-SE", { hour: "2-digit", minute: "2-digit" });
+  const iDag = new Date(nu.getFullYear(), nu.getMonth(), nu.getDate());
+  if (d >= iDag) return "idag " + klock;
+  if (d >= iDag - dag) return "igår " + klock;
+  return d.toLocaleDateString("sv-SE", { day: "numeric", month: "short", year: d.getFullYear() === nu.getFullYear() ? undefined : "numeric" }) + " " + klock;
+}
+const kortNamn = c => (c.author && c.author.login) || (c.commit.author && c.commit.author.name) || "";
+async function visaTider() {
+  const repo = githubRepo(), info = $("senast");
+  if (!repo) { info.innerHTML = '<p class="st-dim">Senast ändrad visas när sidan ligger på GitHub Pages.</p>'; return; }
+  try {
+    const lista = await ghHamta(`${repo}/commits?per_page=8`);
+    info.innerHTML = `<h2>Senaste ändringar</h2><ul class="st-logg">${lista.map(c => `<li><span class="st-dim">${tidText(c.commit.author.date)}</span> <b>${esc(kortNamn(c))}</b> – ${esc(c.commit.message.split("\n")[0])}</li>`).join("")}</ul>
+      <p class="st-dim"><a href="https://github.com/${repo}/commits/main" target="_blank" rel="noopener">Alla ändringar på GitHub →</a></p>`;
+  } catch (e) { info.innerHTML = '<p class="st-dim">Kunde inte hämta senaste ändringar från GitHub just nu.</p>'; return; }
+  for (const el of document.querySelectorAll(".st-tid")) {
+    const fil = el.dataset.fil;
+    if (!(fil in TIDCACHE)) {
+      try { const d = await ghHamta(`${repo}/commits?per_page=1&path=${encodeURIComponent(fil)}`); TIDCACHE[fil] = d[0] || null; } catch (e) { TIDCACHE[fil] = undefined; }
+    }
+    const c = TIDCACHE[fil];
+    if (c) el.innerHTML = ` · ${el.dataset.namn} ändrad <span title="${esc(c.commit.message.split("\n")[0])}">${tidText(c.commit.author.date)}</span>${kortNamn(c) ? " av " + esc(kortNamn(c)) : ""}`;
+  }
 }

@@ -6,8 +6,8 @@
 <meta name="robots" content="noindex">
 <title>Granska uppgifter</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@500;700;800;900&family=Noto+Serif:wght@700&display=swap">
-<link rel="stylesheet" href="motor/ova.css?v=2026-10-24j">
-<link rel="stylesheet" href="motor/portal.css?v=2026-10-24j">
+<link rel="stylesheet" href="motor/ova.css?v=2026-10-24k">
+<link rel="stylesheet" href="motor/portal.css?v=2026-10-24k">
 <style>
 .gr-filter{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
 .gr-filter select{font:inherit;font-weight:700;padding:8px 12px;border-radius:10px;border:1px solid var(--line);background:var(--panel);color:var(--ink)}
@@ -15,13 +15,38 @@
 .gr-knappar .ghostbtn{padding:5px 14px;font-size:.9rem}
 .ovmeta code{font-size:.8rem;background:var(--bg);padding:0 4px;border-radius:4px}
 #provaDlg .dlg-body{display:grid;gap:12px}
+.gr-val{display:flex;gap:12px;align-items:center;flex-wrap:wrap}
+.gr-val select{font:inherit;font-weight:700;padding:8px 12px;border-radius:10px;border:1px solid var(--line);background:var(--panel);color:var(--ink)}
+.gr-val .akval{margin:0}
+.gr-kap{gap:10px}
+.gr-rubrik{display:flex;gap:6px 14px;align-items:baseline;flex-wrap:wrap}
+.gr-rubrik h2{font-size:1.35rem}
+.gr-sum{margin-left:auto;font-size:.9rem;font-weight:800;color:var(--muted)}
+.gr-dim{color:var(--muted);font-size:.9rem}
+.gr-fel{color:var(--proton);font-weight:800}
+.gr-tab td{vertical-align:middle}
+.gr-namn b{display:block}
+.gr-namn small{color:var(--muted);font-size:.8rem}
+.gr-tal{text-align:center;font-weight:800}
+.gr-knapp{white-space:nowrap;text-align:right}
+.gr-knapp .ghostbtn{padding:5px 12px;font-size:.88rem}
+.gr-niv{display:inline-flex;gap:3px}
+.gr-niv span{width:24px;height:24px;border-radius:6px;display:grid;place-items:center;font-size:.8rem;font-weight:900;background:var(--bg);color:var(--line)}
+.gr-niv span.pa[data-n="0"]{background:var(--green-bg);color:var(--green)}
+.gr-niv span.pa[data-n="1"]{background:var(--blue-bg);color:var(--blue)}
+.gr-niv span.pa[data-n="2"]{background:var(--orange-bg);color:var(--orange)}
+.gr-svar td{background:var(--bg);font-size:.92rem}
+.gr-svar ol{margin:0;padding-left:1.4em;display:grid;gap:6px}
+@media (max-width:760px){.gr-tab th:nth-child(2),.gr-tab td:nth-child(2),.gr-tab th:nth-child(5),.gr-tab td:nth-child(5){display:none}}
+
 </style>
 </head>
 <body>
 <main class="wrap">
   <header class="ovhead"><div><p class="eyebrow">För läraren</p><h1>Granska uppgifter</h1>
-    <p>Alla uppgifter, sorterade per kapitel och nivå. Bilden visar första varianten. Tryck <b>Prova</b> för att göra uppgiften. Nivåer som ändras per årskurs står under rubriken.</p></div>
-    <span class="gr-filter"><select id="filter" aria-label="Visa kapitel"></select><a class="ghostbtn" href="struktur.html">Översikt</a><a class="ghostbtn" href="./">Till portalen</a></span></header>
+    <p>Alla uppgifter per kapitel. <b>Prova</b> öppnar uppgiften, <b>Svar</b> visar alla varianter med rätt svar.</p></div>
+    <span class="gr-filter"><a class="ghostbtn" href="struktur.html">Översikt</a><a class="ghostbtn" href="./">Till portalen</a></span></header>
+  <div class="gr-val"><select id="filter" aria-label="Visa kapitel"></select><div class="akval" id="akval" role="radiogroup" aria-label="Nivåer för årskurs"></div></div>
   <div id="fel"></div>
   <div id="ovBody"><p class="laddar">Laddar …</p></div>
 </main>
@@ -31,14 +56,14 @@
   <div class="dlg-body" id="prBody"></div>
   <div class="dlg-foot"><button type="button" class="sec" id="prStang">Stäng</button><button type="button" class="sec" id="prNy">Nästa variant</button><button type="button" class="pri" id="prRatta">Rätta</button></div>
 </dialog>
-<script src="motor/typer.js?v=2026-10-24j"></script>
-<script src="motor/ritningar-bas.js?v=2026-10-24j"></script>
-<script src="motor/ritningar.js?v=2026-10-24j"></script>
-<script src="motor/md.js?v=2026-10-24j"></script>
-<script src="motor/data.js?v=2026-10-24j"></script>
-<script src="konfig/amnen.js?v=2026-10-24j"></script>
-<script src="konfig/elevnivaer.js?v=2026-10-24j"></script>
-<script src="motor/granska.js?v=2026-10-24j"></script>
+<script src="motor/typer.js?v=2026-10-24k"></script>
+<script src="motor/ritningar-bas.js?v=2026-10-24k"></script>
+<script src="motor/ritningar.js?v=2026-10-24k"></script>
+<script src="motor/md.js?v=2026-10-24k"></script>
+<script src="motor/data.js?v=2026-10-24k"></script>
+<script src="konfig/amnen.js?v=2026-10-24k"></script>
+<script src="konfig/elevnivaer.js?v=2026-10-24k"></script>
+<script src="motor/granska.js?v=2026-10-24k"></script>
 <script>startaGranska();</script>
 </body>
 </html>

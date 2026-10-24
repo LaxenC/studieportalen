@@ -6,50 +6,56 @@
 let AKTIV_AK = "alla"; const AK = () => AKTIV_AK;
 const $ = id => document.getElementById(id);
 let qCounter = 0;
-const PREV = [];
 
-function nivaBeskrivning(o, t) {
-  const k = kapitelAv(o, t.kapitel) || {}, delar = [`nivå ${t.nivaer.join(" och ")}`];
-  ARSKURSER.forEach(ak => {
-    if (!passar(uppgiftArskurs(o, t), ak)) return;
-    const n = nivaerFor(o, t, ak).map(x => x.niva);
-    if (n.join() !== t.nivaer.join()) delar.push(`åk ${ak}: ${n.join(" och ")}`);
-  });
-  const ak = uppgiftArskurs(o, t);
-  return delar.join(" · ") + ` · åk ${MD.akText(ak)}` + (t.avsnitt ? ` · avsnitt: ${t.avsnitt.map(a => (avsnittAv(o, t.kapitel, a) || { rubrik: "⚠ " + a }).rubrik).join(", ")}` : "");
+// Nivåchips 0 1 2 – fyllda för de nivåer uppgiften har (för vald årskurs)
+function nivaChips(o, t, ak) {
+  const n = nivaerFor(o, t, ak).map(x => x.niva);
+  return `<span class="gr-niv">${[0, 1, 2].map(L => `<span class="${n.includes(L) ? "pa" : ""}" data-n="${L}">${L}</span>`).join("")}</span>`;
 }
-
-function kort(o, t, L) {
-  const T = TYPER[t.typ];
-  const q = { uid: "ov" + (++qCounter), task: t, v: t.varianter[0], niva: L, omrade: t.kapitel, rull: (t.rullista || []).includes(L), preview: true };
-  T.setup && T.setup(q); PREV.push([q.uid, q]);
-  return `<article class="ovcard" id="u-${t.id}"><div class="ovtop"><h4>${esc(t.titel)}</h4><span class="chip">${t.varianter.length} ${t.varianter.length === 1 ? "variant" : "varianter"}</span></div>
-    <p class="ovmeta">${TYPNAMN[t.typ] || t.typ} · <code>${esc(t.id)}</code><br>${nivaBeskrivning(o, t)}${q.rull ? " · rullista" : ""}</p>
-    <div class="ovprev" data-ov="${q.uid}" aria-hidden="true"><p class="instr">${T.instr ? (typeof T.instr === "function" ? T.instr(q) : T.instr) : ""}</p><div class="qbody">${T.html(q)}</div></div>
-    <div class="gr-knappar"><button type="button" class="ghostbtn" data-prova="${o.id}|${t.id}|${L}">Prova</button></div>
-    <details class="ovvar"><summary>Visa varianter och svar</summary><ol>${t.varianter.map(v => `<li>${variantText(t, v)}</li>`).join("")}</ol></details></article>`;
+function rad(o, t, ak) {
+  const avs = (t.avsnitt || []).map(a => { const x = avsnittAv(o, t.kapitel, a); return x ? esc(x.rubrik) : `<span class="gr-fel">#${esc(a)} saknas</span>`; }).join(", ");
+  const n = nivaerFor(o, t, ak)[0], L = n ? n.niva : t.nivaer[0];
+  const ovrigt = [];
+  if (t.rullista) ovrigt.push("rullista på nivå " + t.rullista.join(", "));
+  if (t.nivaerPerArskurs) ovrigt.push("egen nivå för åk " + Object.keys(t.nivaerPerArskurs).join(", "));
+  if (t.grupp) ovrigt.push("grupp: " + esc(t.grupp));
+  if (t.arskurs) ovrigt.push("åk " + MD.akText(t.arskurs));
+  return `<tr id="u-${t.id}">
+    <td class="gr-namn"><b>${esc(t.titel)}</b><small>${esc(t.id)}${ovrigt.length ? " · " + ovrigt.join(" · ") : ""}</small></td>
+    <td>${TYPNAMN[t.typ] || t.typ}</td>
+    <td>${avs || '<span class="gr-dim">hela kapitlet</span>'}</td>
+    <td>${nivaChips(o, t, ak)}</td>
+    <td class="gr-tal">${t.varianter.length}</td>
+    <td class="gr-knapp"><button type="button" class="ghostbtn" data-prova="${o.id}|${t.id}|${L}">Prova</button>
+      <button type="button" class="ghostbtn" data-svar="${t.id}" aria-expanded="false">Svar</button></td></tr>
+    <tr class="gr-svar" id="s-${t.id}" hidden><td colspan="6"><ol>${t.varianter.map(v => `<li>${variantText(t, v)}</li>`).join("")}</ol></td></tr>`;
 }
 
 function visa() {
-  const filt = $("filter").value, body = $("ovBody"), out = [];
+  const filt = $("filter").value, ak = AK(), body = $("ovBody"), out = [];
   for (const o of Object.values(Portal.omraden)) {
     for (const k of o.kapitel) {
       if (filt && filt !== o.id + "/" + k.id && filt !== o.id) continue;
-      const tasks = o.uppgifter.filter(t => t.kapitel === k.id && !t.dold && TYPER[t.typ]);
-      const dolda = o.uppgifter.filter(t => t.kapitel === k.id && (t.dold || !TYPER[t.typ]));
-      const unika = tasks.reduce((a, t) => a + t.varianter.length, 0);
-      out.push(`<section class="ovarea"><h2>${esc(o.namn)} › ${esc(k.namn)} <span class="chip">${tasks.length} uppgifter · ${unika} varianter</span></h2>`);
-      if (dolda.length) out.push(`<p class="ovnote">Dolda eller okänd typ: ${dolda.map(t => `<code>${esc(t.id)}</code>${TYPER[t.typ] ? "" : ` (okänd typ "${esc(t.typ)}")`}`).join(", ")}</p>`);
-      if (!tasks.length) { out.push(`<p class="ovnote">Inga uppgifter inlagda än.</p></section>`); continue; }
-      for (const L of [0, 1, 2]) {
-        const lt = tasks.filter(t => t.nivaer.includes(L)); if (!lt.length) continue;
-        out.push(`<h3 class="ovlevel"><span class="chip lvchip" data-n="${L}">Nivå ${L}</span>${lt.length} uppgifter</h3><div class="ovgrid">${lt.map(t => kort(o, t, L)).join("")}</div>`);
-      }
+      const alla = o.uppgifter.filter(t => t.kapitel === k.id);
+      let tasks = alla.filter(t => !t.dold && TYPER[t.typ]);
+      if (ak !== "alla") tasks = tasks.filter(t => passar(uppgiftArskurs(o, t), ak));
+      const dolda = alla.filter(t => t.dold || !TYPER[t.typ]);
+      // sortera: avsnittens ordning i texten, sedan lägsta nivå
+      const ordning = ((o.texter[k.id] || {}).avsnitt || []).map(a => a.id);
+      const pos = t => { const i = ordning.indexOf((t.avsnitt || [])[0]); return i < 0 ? 999 : i; };
+      const lag = t => Math.min(...nivaerFor(o, t, ak).map(x => x.niva));
+      tasks.sort((x, y) => pos(x) - pos(y) || lag(x) - lag(y));
+      const per = [0, 1, 2].map(L => tasks.filter(t => nivaerFor(o, t, ak).some(x => x.niva === L)).length);
+      out.push(`<section class="panel gr-kap"><div class="gr-rubrik"><h2>${esc(k.namn)}</h2><span class="gr-dim">${esc(o.namn)}</span>
+        <span class="gr-sum">${tasks.length} uppgifter · nivå 0: ${per[0]} · nivå 1: ${per[1]} · nivå 2: ${per[2]}</span></div>`);
+      if (!tasks.length) out.push(`<p class="gr-dim">Inga uppgifter${ak === "alla" ? "" : " för åk " + ak}.</p>`);
+      else out.push(`<div class="tablewrap"><table class="rules gr-tab"><thead><tr><th>Uppgift</th><th>Typ</th><th>Avsnitt</th><th>Nivå</th><th>Var.</th><th></th></tr></thead>
+        <tbody>${tasks.map(t => rad(o, t, ak)).join("")}</tbody></table></div>`);
+      if (dolda.length) out.push(`<p class="gr-dim">Dolda eller okänd typ: ${dolda.map(t => `${esc(t.id)}${TYPER[t.typ] ? "" : ` (okänd typ "${esc(t.typ)}")`}`).join(", ")}</p>`);
       out.push(`</section>`);
     }
   }
   body.innerHTML = out.join("") || "<p>Inga uppgifter.</p>";
-  PREV.splice(0).forEach(([uid, q]) => { const el = body.querySelector(`[data-ov="${uid}"] .qbody`); const T = TYPER[q.task.typ]; try { if (T.mount && el) { q.locked = true; T.mount(el, q); } } catch (e) { } el && el.querySelectorAll("input,select,button").forEach(x => { x.tabIndex = -1; }); });
   if (location.hash.startsWith("#u-")) { const el = document.getElementById(location.hash.slice(1)); el && el.scrollIntoView(); }
 }
 
@@ -69,6 +75,8 @@ function prova(oid, tid, L, vi) {
 }
 document.addEventListener("click", e => {
   const b = e.target.closest("button"); if (!b) return;
+  if (b.dataset.svar) { const r = $("s-" + b.dataset.svar); r.hidden = !r.hidden; b.setAttribute("aria-expanded", !r.hidden); return; }
+  if (b.dataset.ak) { AKTIV_AK = b.dataset.ak === "alla" ? "alla" : +b.dataset.ak; document.querySelectorAll("#akval button").forEach(x => x.setAttribute("aria-checked", x === b)); visa(); return; }
   if (b.dataset.prova) { const [o, t, L] = b.dataset.prova.split("|"); prova(o, t, L); }
   else if (b.id === "prRatta") {
     const { q } = PROVA, r = TYPER[q.task.typ].grade($("prQ"), q), fb = $("prFb");
@@ -89,6 +97,7 @@ async function startaGranska() {
   try { $("filter").value = localStorage.getItem("granskaFilter") || ""; } catch (e) { }
   const pk = new URLSearchParams(location.search).get("kapitel"); if (pk) $("filter").value = pk;
   $("filter").addEventListener("change", () => { try { localStorage.setItem("granskaFilter", $("filter").value); } catch (e) { } visa(); });
+  $("akval").innerHTML = ["alla", ...ARSKURSER].map(v => `<button type="button" role="radio" data-ak="${v}" aria-checked="${v === "alla"}">${v === "alla" ? "Alla" : "Åk " + v}</button>`).join("");
   $("fel").innerHTML = Portal._fel.map(f => `<p class="err">${esc(f)}</p>`).join("");
   visa();
 }

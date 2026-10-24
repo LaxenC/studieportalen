@@ -6,8 +6,8 @@
 <meta name="robots" content="noindex">
 <title>Portalens struktur</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@500;700;800;900&family=Noto+Serif:wght@700&display=swap">
-<link rel="stylesheet" href="motor/ova.css?v=2026-10-24j">
-<link rel="stylesheet" href="motor/portal.css?v=2026-10-24j">
+<link rel="stylesheet" href="motor/ova.css?v=2026-10-24k">
+<link rel="stylesheet" href="motor/portal.css?v=2026-10-24k">
 <style>
 .st-trad,.st-trad ul{list-style:none;margin:0;padding-left:0}
 .st-trad ul{padding-left:22px;border-left:2px solid var(--line);margin:4px 0 4px 6px}
@@ -22,8 +22,10 @@
 .st-ok{color:var(--green);font-weight:900}
 .st-nej{color:var(--proton);font-weight:900}
 .st-dold{opacity:.55}
-#varn ul{margin:6px 0 0;padding-left:1.2em;display:grid;gap:4px}
-#varn h2{font-size:1.15rem}
+.st-tid{font-size:.85rem;color:var(--muted)}
+.st-logg{list-style:none;padding-left:0!important}
+#senast ul,#varn ul{margin:6px 0 0;padding-left:1.2em;display:grid;gap:4px}
+#senast h2,#varn h2{font-size:1.15rem}
 #varn a{color:var(--ink)}
 @media print{.topp,.gr-filter,#akval{display:none}body{background:#fff}.panel{padding:0}}
 </style>
@@ -34,17 +36,18 @@
     <p>Byggs automatiskt från alla filer. Siffrorna <span class="st-niv">0:5</span> visar antal uppgifter per nivå för vald årskurs.</p></div>
     <span class="gr-filter" style="display:flex;gap:8px;flex-wrap:wrap"><button type="button" class="ghostbtn" onclick="print()">Skriv ut</button><a class="ghostbtn" href="granska.html">Granska uppgifter</a><a class="ghostbtn" href="./">Till portalen</a></span></header>
   <div class="akval stor" id="akval" role="radiogroup" aria-label="Visa för årskurs"></div>
+  <section class="panel" id="senast"><p class="st-dim">Hämtar senaste ändringar …</p></section>
   <section class="panel" id="varn"><p class="laddar">Laddar …</p></section>
   <section class="panel" id="trad"></section>
 </main>
-<script src="motor/typer.js?v=2026-10-24j"></script>
-<script src="motor/ritningar-bas.js?v=2026-10-24j"></script>
-<script src="motor/ritningar.js?v=2026-10-24j"></script>
-<script src="motor/md.js?v=2026-10-24j"></script>
-<script src="motor/data.js?v=2026-10-24j"></script>
-<script src="konfig/amnen.js?v=2026-10-24j"></script>
-<script src="konfig/elevnivaer.js?v=2026-10-24j"></script>
-<script src="motor/struktur.js?v=2026-10-24j"></script>
+<script src="motor/typer.js?v=2026-10-24k"></script>
+<script src="motor/ritningar-bas.js?v=2026-10-24k"></script>
+<script src="motor/ritningar.js?v=2026-10-24k"></script>
+<script src="motor/md.js?v=2026-10-24k"></script>
+<script src="motor/data.js?v=2026-10-24k"></script>
+<script src="konfig/amnen.js?v=2026-10-24k"></script>
+<script src="konfig/elevnivaer.js?v=2026-10-24k"></script>
+<script src="motor/struktur.js?v=2026-10-24k"></script>
 <script>startaStruktur();</script>
 </body>
 </html>

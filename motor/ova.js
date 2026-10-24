@@ -242,7 +242,8 @@ function pluggaHtml(o, kapId, avIds) {
   const t = o.texter[kapId]; if (!t) return "<p>Det finns ingen text till det här kapitlet än.</p>";
   const ak = AK();
   let av = t.avsnitt.filter(a => passar(a.ak, ak));
-  if (avIds && avIds.length) { const v = av.filter(a => avIds.includes(a.id)); if (v.length) av = v; }
+  // Har uppgiftens avsnitt ingen egen Viktigt-ruta visas kapitlets rutor
+  if (avIds && avIds.length) { const v = av.filter(a => avIds.includes(a.id)); if (v.length && v.some(a => a.viktigt.length)) av = v; }
   const intro = t.introViktigt && t.introViktigt.length && !(avIds && avIds.length && av.some(a => avIds.includes(a.id)))
     ? `<section class="plugga-av">${t.introViktigt.join("")}<details class="lasmer"><summary>Läs texten</summary><div class="lastext">${t.ingress ? `<p>${t.ingress}</p>` : ""}${t.intro}</div></details></section>` : "";
   return intro + av.filter(a => !(avIds && avIds.length) || avIds.includes(a.id) || !intro).map(a => `<section class="plugga-av"><h3 class="sub-h">${esc(a.rubrik)}</h3>
