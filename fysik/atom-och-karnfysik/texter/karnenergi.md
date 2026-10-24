@@ -10,7 +10,7 @@ I atomkärnan finns enorma mängder energi lagrad. Energin kan frigöras när tu
 
 I slutet av 1930-talet sköt den tyske kemisten **Otto Hahn** neutroner mot uran. Han trodde att urankärnan skulle ta upp neutronen och bli tyngre. Men det blev tvärtom – det bildades *lättare* ämnen.
 
-Förklaringen kom från fysikerna **Lise Meitner** och **Otto Frisch**: urankärnan hade **delats i två delar**. Därför blev kärnorna lättare. Samtidigt frigjordes **mycket energi** som var lagrad i atomkärnan.
+Förklaringen kom 8år senare från fysikerna **Lise Meitner** och **Otto Frisch**: urankärnan hade **delats i två delar**. Därför blev kärnorna lättare. Samtidigt frigjordes **mycket energi** som var lagrad i atomkärnan.
 
 Processen kallas **fission**, som betyder *klyvning* på latin.
 
