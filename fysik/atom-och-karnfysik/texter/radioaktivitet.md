@@ -6,7 +6,7 @@ kapitel: radioaktivitet
 
 Vissa atomkärnor är instabila. De sönderfaller och sänder ut strålning tills de blivit stabila.
 
-## Radioaktivitet upptäcks {#historia åk=8-9}
+## Radioaktivitet upptäcks {#historia}
 
 Radioaktivitet upptäcktes för drygt hundra år sedan – nästan av en slump.
 
