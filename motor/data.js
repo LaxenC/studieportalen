@@ -95,11 +95,17 @@ function uppgiftArskurs(o, t) {
 }
 
 // Uppgiftens nivåer för en årskurs -> [{ niva, orig }]
+// Uppgiftens grundnivåer: nivaer, eller (om den saknas) alla nivåer i nivaerPerArskurs
+function grundNivaer(t) {
+  if (Array.isArray(t.nivaer) && t.nivaer.length) return t.nivaer;
+  const u = new Set(); Object.values(t.nivaerPerArskurs || {}).forEach(l => (l || []).forEach(n => u.add(n)));
+  return [...u].sort();
+}
 function nivaerFor(o, t, ak) {
   if (ak !== "alla" && t.nivaerPerArskurs && t.nivaerPerArskurs[ak]) return t.nivaerPerArskurs[ak].map(n => ({ niva: n, orig: n }));
   const k = kapitelAv(o, t.kapitel) || {};
   const d = ak === "alla" ? 0 : ((k.nivaForskjutning || {})[ak] || 0);
-  const ut = []; (t.nivaer || []).forEach(n => { const v = n >= 3 ? n : Math.max(0, Math.min(2, n + d)); if (!ut.some(x => x.niva === v)) ut.push({ niva: v, orig: n }); });
+  const ut = []; grundNivaer(t).forEach(n => { const v = n >= 3 ? n : Math.max(0, Math.min(2, n + d)); if (!ut.some(x => x.niva === v)) ut.push({ niva: v, orig: n }); });
   return ut;
 }
 

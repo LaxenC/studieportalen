@@ -14,7 +14,7 @@ function nivaChips(o, t, ak) {
 }
 function rad(o, t, ak) {
   const avs = (t.avsnitt || []).map(a => { const x = avsnittAv(o, t.kapitel, a); return x ? esc(x.rubrik) : `<span class="gr-fel">#${esc(a)} saknas</span>`; }).join(", ");
-  const n = nivaerFor(o, t, ak)[0], L = n ? n.niva : t.nivaer[0];
+  const n = nivaerFor(o, t, ak)[0], L = n ? n.niva : (grundNivaer(t)[0] || 0);
   const ovrigt = [];
   if (t.rullista) ovrigt.push("rullista på nivå " + t.rullista.join(", "));
   if (t.nivaerPerArskurs) ovrigt.push("egen nivå för åk " + Object.keys(t.nivaerPerArskurs).join(", "));

@@ -57,6 +57,7 @@ function bygg() {
         if (!TYPER[u.typ]) varna(`Uppgift <code>${esc(u.id)}</code>: okänd typ "${esc(u.typ)}"`);
         if (!kapitelAv(o, u.kapitel)) varna(`Uppgift <code>${esc(u.id)}</code>: kapitlet "${esc(u.kapitel)}" finns inte`);
         else (u.avsnitt || []).forEach(av => { if (o.texter[u.kapitel] && !avsnittAv(o, u.kapitel, av)) varna(`Uppgift <code>${esc(u.id)}</code>: avsnittet "#${esc(av)}" finns inte i ${esc(u.kapitel)}.md`, `granska.html?kapitel=${o.id}/${u.kapitel}#u-${u.id}`); });
+        if (!grundNivaer(u).length) varna(`Uppgift <code>${esc(u.id)}</code>: har ingen nivå (nivaer eller nivaerPerArskurs)`);
         if (!(u.varianter || []).length) varna(`Uppgift <code>${esc(u.id)}</code>: har inga varianter`);
       });
     }
