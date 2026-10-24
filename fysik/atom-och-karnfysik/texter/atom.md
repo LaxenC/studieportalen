@@ -62,7 +62,8 @@ Ingen har kunnat se en atom med blotta ögat. Forskarna har i stället gjort exp
 > - Modellen har ändrats när nya upptäckter har gjorts.
 
 ## Elektronskal {#skal}
-Elektronerna finns i skal runt atomkärnan, fördelar sig i olika elektronskal runt kärnan. Elektronerna har samma negativa laddning och stöter därför bort varandra (repellerar), därför får det inte plats med hur många elektroner som helst i ett skal. Lite förnklar kan man säta att skalen längre ut kan rymma fler elektroner eftersom de har mer plats. Det innersta skalet rymmer högst 2 elektroner och det andra skalet högst 8.
+Elektronerna finns i skal runt atomkärnan, fördelar sig i olika elektronskal runt kärnan. Elektronerna har samma negativa laddning och stöter därför bort varandra (repellerar), därför får det inte plats med hur många elektroner som helst i ett skal. Lite förenklat kan man säga att skalen längre ut kan rymma fler elektroner eftersom de har mer plats. Det innersta skalet rymmer högst 2 elektroner och det andra skalet högst 8.
+
 Elektronskalen har namn de heter: K, L, M osv i alfabetet. Anledningen att man inte började med bokstaven A när man döpte skalen var för man inte var säker på om man hittat det innersta skalet.
 Elektroner i det yttersta skalet kallas för **valenselektroner**
 > **Begrepp**
@@ -89,8 +90,8 @@ Kärnan är positivt laddad och elektronerna är negativt laddade, därför dras
 
 
 > **Viktigt att komma ihåg**
-> - Skalen fylls inifrån och ut.
-> - Skalen heter: K, L, M osv
+> - Elektronskalen fylls inifrån och ut.
+> - Elektronskalen heter: K, L, M osv
 > - K-skalet rymmer 2 elektroner, L-skalet 8.
 > - Elektroner i ytterska skalet heter **valenselektroner**
 > - Elektroner längre ut har högre energi
@@ -98,22 +99,21 @@ Kärnan är positivt laddad och elektronerna är negativt laddade, därför dras
 
 ## Kvarkar {#kvarkar åk=9}
 
-Protoner och neutroner är i sin tur uppbyggda av ännu mindre partiklar som kallas **kvarkar**. Det finns sex olika kvarkar.
+Protoner och neutroner är uppbyggda av ännu mindre partiklar som kallas **kvarkar**. 
 
-Kvarkarna delas in i tre **generationer**. Varje generation har en kvark med laddning +2/3 och en med laddning −1/3.
+Kvarkarna delas in i tre **generationer**, ju högre generation desto tyngre är kvarkarna. Varje generation har en kvark med laddning +2/3 och en med laddning −1/3.Det finns sex olika kvarkar: upp (u), down(d), charm(c), strange(s), topp(t) och bottom(b).
 
 | Laddning | 1:a generationen | 2:a generationen | 3:e generationen |
 |---|---|---|---|
 | **+2/3** | [[kvark u]] | [[kvark c]] | [[kvark t]] |
 | **−1/3** | [[kvark d]] | [[kvark s]] | [[kvark b]] |
 
-Ju högre generation, desto **tyngre** är kvarkarna. De tunga kvarkarna är också **instabila** och sönderfaller snabbt till lättare kvarkar. Därför är allt vanligt material byggt av första generationen, up och down.
+De tunga kvarkarna är också **instabila** och sönderfaller snabbt till lättare kvarkar. Därför är allt vanligt material byggt av första generationen, up och down.
 
 > **Exempel:** Proton = två up och en down → **uud**. Laddning: +2/3 + 2/3 − 1/3 = **+1**.
 >
 > Neutron = en up och två down → **udd**. Laddning: +2/3 − 1/3 − 1/3 = **0**.
 
 > **Viktigt att komma ihåg**
-> - Protoner och neutroner består av tre kvarkar var.
-> - Proton = uud, neutron = udd.
+> - Det finns ännu mindre partiklar som heter **kvarkar**
 > - Vanligt material är byggt av up- och down-kvarkar.
