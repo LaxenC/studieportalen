@@ -22,7 +22,7 @@
 Portal.uppgifter([
 
     { id: "atom-bild", kapitel: "atom", avsnitt: ["delar"], titel: "Atomens delar – bild",
-      typ: "markera", nivaer: [0, 1], rullista: [0],
+      typ: "markera", nivaerPerArskurs: { 7: [1], 8: [0,1], 9: [0]}, rullista: [0],
       delar: ["proton", "neutron", "elektron", "atomkärna", "elektronskal"],
       svar: {
         proton: ["proton", "protoner", "protonen"],
@@ -34,14 +34,14 @@ Portal.uppgifter([
       varianter: [{}] },   // numreringen i bilden blandas varje gång
 
     { id: "atom-bygg", kapitel: "atom", avsnitt: ["delar"], titel: "Atomens delar – skapa bild",
-      typ: "bygg", nivaer: [1],
+      typ: "bygg", nivaerPerArskurs: { 7: [1], 8: [0,1], 9: [0]},
       varianter: [
         { namn: "väte",      p: 1, n: 0, e: 1 },
         { namn: "helium",    p: 2, n: 2, e: 2 }
       ] },
 
     { id: "atom-text", kapitel: "atom", avsnitt: ["delar"], titel: "Atomens delar – text",
-      typ: "lucktext", nivaer: [0, 1], rullista: [0],
+      typ: "lucktext", nivaerPerArskurs: { 7: [1], 8: [0,1], 9: [0]}, rullista: [0],
       ordlista: ["protoner", "neutroner", "elektroner", "proton", "neutron", "elektron",
                  "atomkärnan", "kärna", "skal", "positiv", "negativ", "ingen"],
       varianter: [
