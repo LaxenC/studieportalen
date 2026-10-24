@@ -22,6 +22,28 @@
 Portal.uppgifter([
     // Varianter: X = kemisk beteckning, A = masstal, Z = atomnummer, ch = laddning ("+", "2+", "3-" …)
 
+    { id: "not-delar-bild", kapitel: "notation", titel: "Atomnotationens delar – bild",
+      typ: "markera", bild: "notation", nivaerPerArskurs: { 7: [1], 8: [0,1], 9: [0] }, rullista: [0],
+      delar: ["masstal", "atomnummer", "kemisk beteckning"],
+      svar: {
+        masstal: ["masstal", "masstalet"],
+        atomnummer: ["atomnummer", "atomnumret", "atomnummret"],
+        "kemisk beteckning": ["kemisk beteckning", "kemiska beteckningen", "beteckning", "kemisk symbol", "symbol"]
+      },
+      varianter: [ { X: "C", A: 14, Z: 6 }, { X: "O", A: 16, Z: 8 }, { X: "He", A: 4, Z: 2 }, { X: "N", A: 14, Z: 7 } ] },
+                   // numreringen blandas varje gång
+
+    { id: "not-para", kapitel: "notation", titel: "Atomnotation – para ihop begrepp",
+      typ: "para", nivaerPerArskurs: { 7: [1], 8: [0,1], 9: [0] },
+      varianter: [
+        { rubrik: "Para ihop begreppet med rätt förklaring.",
+          par: [["Masstal", "Antalet protoner + neutroner"], ["Atomnummer", "Antalet protoner"], ["Kemisk beteckning", "En eller två bokstäver som visar grundämnet"]] },
+        { rubrik: "Para ihop begreppet med var det står i atomnotationen.",
+          par: [["Masstal", "Uppe till vänster"], ["Atomnummer", "Nere till vänster"], ["Kemisk beteckning", "Den stora bokstaven i mitten"]] },
+        { rubrik: "Para ihop begreppet med vad det bestämmer.",
+          par: [["Atomnummer", "Vilket grundämne det är"], ["Masstal", "Hur många partiklar som finns i kärnan"], ["Masstal − atomnummer", "Antalet neutroner"]] }
+      ] },
+
     { id: "not-bygg", kapitel: "notation", titel: "Bygg atomen",
       typ: "reglage", nivaerPerArskurs: {7:[3],8:[1,2],9:[1]},
       varianter: [

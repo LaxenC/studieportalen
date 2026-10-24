@@ -87,7 +87,7 @@ TYPER.lucktext = {
   }
 };
 
-/* MARKERA – numrerad bild av en atom */
+/* MARKERA – numrerad bild av en atom, eller av atomnotation (bild: "notation") */
 TYPER.markera = {
   instr: q => q.rull ? "Välj rätt namn för varje nummer i bilden." : "Skriv rätt namn för varje nummer i bilden.",
   // Var i bilden varje del pekas ut, och var numret står
@@ -98,8 +98,32 @@ TYPER.markera = {
     neutron:      { mal: [167, 167], etikett: [264, 264] },
     elektron:     { mal: [45, 150],  etikett: [24, 206] }
   },
-  setup(q) { q.ordning = shuffle(q.task.delar); },
+  // bild: "notation" – atomnotation med numrerade delar (varianter: { X, A, Z })
+  notation: {
+    svg(q) {
+      const v = q.v, xs = 150, bred = 66 * v.X.length;            // xs = där bokstaven börjar
+      const P = {
+        masstal:             { mal: [xs - 14 - 23 * String(v.A).length, 64],  etikett: [26, 64] },
+        atomnummer:          { mal: [xs - 14 - 23 * String(v.Z).length, 162], etikett: [26, 162] },
+        "kemisk beteckning": { mal: [xs + bred - 6, 150],                     etikett: [300, 200] },
+        laddning:            { mal: [xs + bred + 12, 52],                     etikett: [300, 30] }
+      };
+      let g = `<svg class="labelatom" viewBox="0 0 330 220" role="img" aria-label="Atomnotation med numrerade delar">
+        <text x="${xs - 10}" y="78" text-anchor="end" font-size="40" font-weight="800" fill="var(--ink)">${v.A}</text>
+        <text x="${xs - 10}" y="176" text-anchor="end" font-size="40" font-weight="800" fill="var(--ink)">${v.Z}</text>
+        <text x="${xs}" y="168" font-size="110" font-weight="800" fill="var(--ink)" font-family="Noto Serif, serif">${v.X}</text>
+        ${v.ch ? `<text x="${xs + bred + 4}" y="66" font-size="36" font-weight="800" fill="var(--ink)">${String(v.ch).replace("-", "−")}</text>` : ""}`;
+      q.ordning.forEach((k, i) => {
+        const { mal: [mx, my], etikett: [ex, ey] } = P[k];
+        g += `<line x1="${ex}" y1="${ey}" x2="${mx}" y2="${my}" stroke="var(--accent)" stroke-width="2"/><circle cx="${mx}" cy="${my}" r="3.5" fill="var(--accent)"/>
+              <circle cx="${ex}" cy="${ey}" r="15" fill="var(--accent)"/><text x="${ex}" y="${ey + 6}" text-anchor="middle" font-size="17" font-weight="900" fill="var(--accent-ink)">${i + 1}</text>`;
+      });
+      return g + "</svg>";
+    }
+  },
+  setup(q) { q.ordning = shuffle(q.task.delar.filter(k => k !== "laddning" || q.v.ch)); },
   svg(q) {
+    if (q.task.bild === "notation") return this.notation.svg(q);
     const P = this.punkter;
     let g = `<svg class="labelatom" viewBox="0 0 300 300" role="img" aria-label="Atom med numrerade delar">
       <circle cx="150" cy="150" r="105" fill="none" stroke="var(--shell)" stroke-width="6"/>
