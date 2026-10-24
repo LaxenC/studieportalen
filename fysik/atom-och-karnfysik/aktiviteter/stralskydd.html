@@ -57,7 +57,7 @@ canvas{display:block;width:100%;height:auto}
 .kalla{background:var(--panel);border:3px solid #e07a1f}.kalla .rub{background:#e07a1f}.kalla b{color:#e07a1f}
 .dos{background:var(--panel);border:3px solid var(--green)}.dos .rub{background:var(--green)}.dos b{color:var(--green)}
 .tid{background:var(--panel);border:3px solid var(--line)}.tid .rub{background:var(--muted)}
-.styr{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:14px;align-items:end}
+.styr{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px;align-items:end}
 .styr label{font-weight:800;display:block;margin-bottom:4px}
 .styr input[type=range]{width:100%;accent-color:var(--accent)}
 .val{display:flex;gap:6px;flex-wrap:wrap}
@@ -67,6 +67,19 @@ canvas{display:block;width:100%;height:auto}
 .btn:disabled{opacity:.5;cursor:default}
 .btn.sec{background:var(--panel);color:var(--accent);border:2px solid var(--accent)}
 .tabwrap{overflow-x:auto}
+.tva{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);gap:18px;align-items:start}
+.vanster,.hoger{display:grid;gap:12px;min-width:0}
+.hoger{border-radius:14px;padding:14px;background:var(--yellow-bg);border:2px solid var(--yellow-bd)}
+.hoger table{background:var(--panel);border-radius:10px}
+.hoger td,.hoger th{white-space:normal;vertical-align:middle;padding:6px 8px}
+.hoger td small{display:block;color:var(--muted);font-weight:700;font-size:.8rem}
+.hoger input{font:inherit;width:72px;padding:6px 8px;border-radius:8px;border:2px solid var(--line);background:var(--panel);color:var(--ink);font-variant-numeric:tabular-nums}
+.hoger input.ok{border-color:var(--green);background:var(--green-bg)}
+.hoger input.no{border-color:var(--red);background:var(--red-bg)}
+.fb{border-radius:10px;padding:10px 12px;font-size:.92rem}
+.fb.ok{background:var(--green-bg);border:1px solid var(--green-bd)}
+.fb.no{background:var(--red-bg);border:1px solid var(--red-bd)}
+@media (max-width:860px){.tva{grid-template-columns:1fr}}
 table{border-collapse:collapse;width:100%;font-size:.95rem}
 th,td{padding:7px 10px;text-align:left;border-bottom:1px solid var(--line);white-space:nowrap}
 th{background:var(--bg);font-weight:900}
@@ -99,16 +112,24 @@ button:focus-visible,input:focus-visible,summary:focus-visible{outline:3px solid
       <div class="kort tid"><span class="rub">Tid</span><b id="tidv">0,0 s</b><span id="tidinfo">tryck på Mät</span></div>
       <div class="kort dos"><span class="rub">Dosimeter</span><b id="dosv">0,00 mSv</b><span>stråldos som personen fått</span></div>
     </div>
-    <div class="scen"><canvas id="c" width="900" height="300" aria-label="Strålkälla, eventuell blyvägg och en person med dosimeter"></canvas></div>
-    <div class="styr">
-      <div><label for="avst">Avstånd till källan: <span id="avstv">1 m</span></label><input type="range" id="avst" min="1" max="4" step="0.5" value="1"></div>
-      <div><label>Blyvägg</label><div class="val" id="bly"><button type="button" data-bly="0" aria-pressed="true">Ingen</button><button type="button" data-bly="1" aria-pressed="false">Blyvägg emellan</button></div></div>
-      <div><label>Mättid</label><div class="val" id="tider"><button type="button" data-t="4" aria-pressed="true">4 s</button><button type="button" data-t="8" aria-pressed="false">8 s</button></div></div>
-      <div style="display:flex;gap:8px;flex-wrap:wrap"><button type="button" class="btn" id="mat">▶ Mät</button><button type="button" class="btn sec" id="rensa">Rensa tabellen</button></div>
+    <div class="tva">
+      <div class="vanster">
+        <div class="scen"><canvas id="c" width="800" height="300" aria-label="Strålkälla, eventuell blyvägg och en person med dosimeter"></canvas></div>
+        <div class="styr">
+          <div><label for="avst">Avstånd till källan: <span id="avstv">1 m</span></label><input type="range" id="avst" min="1" max="4" step="0.5" value="1"></div>
+          <div><label>Blyvägg</label><div class="val" id="bly"><button type="button" data-bly="0" aria-pressed="true">Ingen</button><button type="button" data-bly="1" aria-pressed="false">Blyvägg emellan</button></div></div>
+          <div><label>Mättid</label><div class="val" id="tider"><button type="button" data-t="4" aria-pressed="true">4 s</button><button type="button" data-t="8" aria-pressed="false">8 s</button></div></div>
+          <div><button type="button" class="btn" id="mat">▶ Mät</button></div>
+        </div>
+      </div>
+      <div class="hoger">
+        <h3>Fyll i tabellen</h3>
+        <p style="font-size:.92rem;color:var(--muted)">Ställ in mätningen, tryck på <b>Mät</b> och skriv av vad strålkällan och dosimetern visar.</p>
+        <div class="tabwrap"><table><thead><tr><th>Mätning</th><th>Aktivitet (Bq)</th><th>Stråldos (mSv)</th></tr></thead><tbody id="tab"></tbody></table></div>
+        <div style="display:flex;gap:8px;flex-wrap:wrap"><button type="button" class="btn" id="ratta">Rätta tabellen</button><button type="button" class="btn sec" id="rensa">Töm</button></div>
+        <div id="fb"></div>
+      </div>
     </div>
-    <div class="uppdrag"><b>Gör så här – mät och jämför:</b>
-      <ol><li>Mät <b>nära</b> källan (1 m, ingen blyvägg, 4 s).</li><li>Mät <b>långt bort</b> (2 m, ingen blyvägg, 4 s).</li><li>Mät <b>bakom bly</b> (1 m, blyvägg, 4 s).</li><li>Mät <b>längre tid</b> (1 m, ingen blyvägg, 8 s).</li></ol></div>
-    <div class="tabwrap"><table><thead><tr><th>Mätning</th><th>Avstånd</th><th>Blyvägg</th><th>Tid</th><th>Aktivitet</th><th>Stråldos</th></tr></thead><tbody id="tab"><tr><td colspan="6" style="color:var(--muted)">Inga mätningar än.</td></tr></tbody></table></div>
   </section>
 
   <section class="panel" aria-labelledby="h-fr">
@@ -193,11 +214,31 @@ function visa() {
   $("tidinfo").textContent = kor ? "mäter …" : t ? "klar" : "tryck på Mät";
   $("mat").disabled = kor; document.querySelectorAll("#avst,#bly button,#tider button").forEach(x => x.disabled = kor);
 }
-const rader = [];
-function spara() {
-  rader.push([avst, bly, matTid, dos]);
-  $("tab").innerHTML = rader.map((r, i) => `<tr><td>${i + 1}</td><td>${tal(r[0], r[0] % 1 ? 1 : 0)} m</td><td>${r[1] ? "ja" : "nej"}</td><td>${r[2]} s</td><td class="num">60 Bq</td><td class="num">${tal(r[3], 2)} mSv</td></tr>`).join("");
+// Mätningarna eleven ska göra: [namn, beskrivning, avstånd, bly, tid]
+const MATNINGAR = [["Nära", "1 m · ingen bly · 4 s", 1, false, 4], ["Långt bort", "2 m · ingen bly · 4 s", 2, false, 4],
+                   ["Bakom bly", "1 m · blyvägg · 4 s", 1, true, 4], ["Längre tid", "1 m · ingen bly · 8 s", 1, false, 8]];
+const facitDos = ([, , a, b, tt]) => +(DOS_1M_4S / 4 / (a * a) * (b ? BLY : 1) * tt).toFixed(2);
+function byggTabell() {
+  $("tab").innerHTML = MATNINGAR.map((m, i) => `<tr><td><b>${m[0]}</b><small>${m[1]}</small></td>
+    <td><input id="a${i}" inputmode="decimal" autocomplete="off" aria-label="Aktivitet ${m[0]}"></td>
+    <td><input id="d${i}" inputmode="decimal" autocomplete="off" aria-label="Stråldos ${m[0]}"></td></tr>`).join("");
+  $("fb").innerHTML = ""; $("fb").className = "";
 }
+const lasTal = v => parseFloat(String(v).replace(",", ".").replace(/[^\d.\-]/g, ""));
+function ratta() {
+  let ratt = 0, tomma = 0;
+  MATNINGAR.forEach((m, i) => {
+    const a = $("a" + i), d = $("d" + i);
+    [[a, 60, 0.5], [d, facitDos(m), 0.015]].forEach(([el, f, tol]) => {
+      if (!el.value.trim()) { el.className = ""; tomma++; return; }
+      const ok = Math.abs(lasTal(el.value) - f) <= tol; el.className = ok ? "ok" : "no"; if (ok) ratt++;
+    });
+  });
+  const fb = $("fb");
+  if (ratt === 8) { fb.className = "fb ok"; fb.innerHTML = "<b>Allt rätt!</b> Jämför nu: vad hände med aktiviteten? Vad hände med stråldosen? Svara på frågorna nedanför."; }
+  else { fb.className = "fb no"; fb.innerHTML = `${ratt} av 8 rätt.${tomma ? ` ${tomma} rutor är tomma.` : ""} Gör om mätningen för de röda rutorna och läs av igen.`; }
+}
+function spara() { }
 $("avst").addEventListener("input", e => { avst = +e.target.value; $("avstv").textContent = tal(avst, avst % 1 ? 1 : 0) + " m"; nollstall(); });
 function nollstall() { t = 0; dos = 0; visa(); }
 document.addEventListener("click", e => {
@@ -205,9 +246,10 @@ document.addEventListener("click", e => {
   if (b.dataset.bly) { bly = b.dataset.bly === "1"; document.querySelectorAll("[data-bly]").forEach(x => x.setAttribute("aria-pressed", x === b)); nollstall(); }
   else if (b.dataset.t) { matTid = +b.dataset.t; document.querySelectorAll("[data-t]").forEach(x => x.setAttribute("aria-pressed", x === b)); nollstall(); }
   else if (b.id === "mat") { t = 0; dos = 0; kor = true; visa(); }
-  else if (b.id === "rensa") { rader.length = 0; $("tab").innerHTML = '<tr><td colspan="6" style="color:var(--muted)">Inga mätningar än.</td></tr>'; }
+  else if (b.id === "rensa") byggTabell();
+  else if (b.id === "ratta") ratta();
 });
-visa(); requestAnimationFrame(steg);
+byggTabell(); visa(); requestAnimationFrame(steg);
 </script>
 </body>
 </html>
