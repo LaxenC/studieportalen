@@ -111,7 +111,7 @@ function visaKapitel(o, kapId, avId) {
   vy().innerHTML = `${flikar(o, "las")}
     <article class="lastext kapitel">
       <nav class="avmeny" aria-label="Avsnitt"${avs.length ? "" : " hidden"}>${avs.map(x => `<a href="${lank(o.amne, o.id, "las", kapId, x.id)}" data-av="${x.id}">${esc(x.rubrik)}</a>`).join("")}</nav>
-      <header class="kaphuvud"><p class="kapnr">Kapitel ${i + 1} av ${kaps.length}</p><h1>${esc(t.titel || k.namn)}</h1>${t.ingress ? `<p class="ingress">${t.ingress}</p>` : ""}</header>${t.intro ? `<div class="kaphuvud kapintro">${t.intro}</div>` : ""}
+      <header class="kaphuvud"><p class="kapnr">Kapitel ${i + 1} av ${kaps.length}</p><h1>${esc(t.titel || k.namn)}</h1>${t.ingress ? `<p class="ingress">${t.ingress}</p>` : ""}<button type="button" class="ghostbtn presknapp" data-presentera="${kapId}" title="Visa kapitlet som bildspel">▶ Presentera</button></header>${t.intro ? `<div class="kaphuvud kapintro">${t.intro}</div>` : ""}
       ${avs.map(x => { const n = aktivaUppgifter(o, ak, kapId, x.id).length;
         return `<section class="avsnitt" id="av-${x.id}" data-av="${x.id}" ${x.ak ? `data-ak="${x.ak}"` : ""}><h2>${esc(x.rubrik)}</h2>${x.html}
           ${n ? `<p class="ovahar"><a class="start" href="${ovaLank(x.id)}">Öva på det här <span>(${n} ${n === 1 ? "uppgift" : "uppgifter"})</span> →</a></p>` : ""}</section>`; }).join("")}
@@ -187,7 +187,7 @@ async function route() {
   if (!o.laddat) { vy().innerHTML = '<p class="laddar">Laddar …</p>'; await laddaInnehall(o); }
   AKTUELLT.o = o; AKTUELLT.nyckel = d[2] === "las" && d[3] ? `las:${d[0]}/${d[1]}/${d[3]}:${AK()}` : nyckel;
   if (!d[2]) return visaOmrade(o);
-  if (d[2] === "las") return d[3] ? visaKapitel(o, d[3], d[4]) : visaLasIndex(o);
+  if (d[2] === "las") { if (!d[3]) return visaLasIndex(o); visaKapitel(o, d[3], d[4]); if ("presentera" in p) oppnaPresentation(o, d[3]); return; }
   if (d[2] === "ova") {
     topp([[a.namn, lank(a.id)], [o.namn, lank(a.id, o.id)], ["Öva"]]); document.title = `Öva – ${o.namn}`;
     vy().innerHTML = `${flikar(o, "ova")}<div id="ovaYta"></div>`;
@@ -205,6 +205,7 @@ document.addEventListener("click", e => {
     if (OV.aktiv && !confirmAk()) return;
     AKTUELLT.nyckel = ""; route();
   }
+  else if (b.dataset.presentera) oppnaPresentation(AKTUELLT.o, b.dataset.presentera);
   else if (b.dataset.plugga) oppnaPlugga(b.dataset.plugga, null, false);
   else if (b.id === "dlgClose" || b.id === "dlgClose2") document.getElementById("infoDlg").close();
   else if (b.id === "dlgPractice") { const o = AKTUELLT.o || OVA.o; document.getElementById("infoDlg").close(); location.hash = `${lank(o.amne, o.id, "ova")}?kapitel=${b.dataset.kap}`; }
