@@ -38,7 +38,7 @@
   --purple-bg:#251d45; --purple-bd:#4f3e94; --purple:#a88cff;
   --c14:#ff9f4a; --n14:#6fb0f2; color-scheme:dark}
 body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--font);font-size:16px;line-height:1.5}
-.wrap{max-width:980px;margin:0 auto;padding:28px 16px 48px;display:grid;gap:18px}
+.wrap{max-width:1200px;margin:0 auto;padding:28px 16px 48px;display:grid;gap:18px}
 header h1{margin:0;font-weight:900;font-size:clamp(1.8rem,4.5vw,2.5rem);line-height:1.1}
 header p{margin:6px 0 0;color:var(--muted);font-size:1.08rem;max-width:68ch}
 .eyebrow{margin:0 0 4px;font-weight:800;text-transform:uppercase;letter-spacing:.08em;font-size:.78rem;color:var(--muted)}
@@ -99,6 +99,17 @@ tr.anv td{opacity:.45}
 .fragor ol{margin:0;padding-left:1.3em;display:grid;gap:8px}
 .fragor details summary{cursor:pointer;font-weight:800;color:var(--purple)}
 .fragor details{margin-top:4px}
+.tva{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:18px;align-items:start}
+.bygg,.ref{display:grid;gap:18px;min-width:0}
+.ref table{font-size:.85rem}
+.ref th,.ref td{padding:5px 7px}
+.ref td.tid{white-space:normal;min-width:80px}
+.ref th{white-space:normal}
+.ref td .not{font-size:.85em}
+.ref .typ{font-size:.75rem;padding:1px 7px}
+.ref .ps{grid-template-columns:repeat(auto-fill,minmax(68px,1fr))}
+.ref .ps b{font-size:1.15rem}
+@media (max-width:860px){.tva{grid-template-columns:1fr}}
 button:focus-visible,input:focus-visible,select:focus-visible,summary:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
 </style>
 </head>
@@ -118,19 +129,8 @@ button:focus-visible,input:focus-visible,select:focus-visible,summary:focus-visi
     </div>
   </section>
 
-  <section class="panel" aria-labelledby="h-ps">
-    <h2 id="h-ps">Periodiska systemet (atomnummer 80–92)</h2>
-    <p>Atomnumret – antalet protoner – bestämmer vilket ämne det är.</p>
-    <div class="ps" id="ps"></div>
-  </section>
-
-  <section class="panel" aria-labelledby="h-tab">
-    <h2 id="h-tab">Isotoptabell</h2>
-    <p>Tabellen visar hur olika isotoper sönderfaller och hur lång halveringstiden är. Alla isotoper finns inte med i kedjan för uran-235!</p>
-    <div class="tabwrap"><table><thead><tr><th>Isotop</th><th>Atomnummer</th><th>Masstal</th><th>Sönderfall</th><th>Halveringstid</th></tr></thead><tbody id="tab"></tbody></table></div>
-    <p style="font-size:.9rem;color:var(--muted)">Vill du se alla isotoper som finns? Titta i <a href="https://www.nndc.bnl.gov/nudat3/" target="_blank" rel="noopener">NuDat 3</a> (avancerad, på engelska).</p>
-  </section>
-
+  <div class="tva">
+    <div class="bygg">
   <section class="panel" aria-labelledby="h-kedja">
     <h2 id="h-kedja">Bygg sönderfallskedjan</h2>
     <div class="lage" role="group" aria-label="Svårighet"><span style="font-weight:800">Svårighet:</span>
@@ -154,6 +154,23 @@ button:focus-visible,input:focus-visible,select:focus-visible,summary:focus-visi
       </ol>
     </div>
   </section>
+    </div>
+    <div class="ref">
+  <section class="panel" aria-labelledby="h-ps">
+    <h2 id="h-ps">Periodiska systemet (80–92)</h2>
+    <p>Atomnumret – antalet protoner – bestämmer vilket ämne det är.</p>
+    <div class="ps" id="ps"></div>
+  </section>
+
+  <section class="panel" aria-labelledby="h-tab">
+    <h2 id="h-tab">Isotoptabell</h2>
+    <p>Tabellen visar hur olika isotoper sönderfaller och hur lång halveringstiden är. Alla isotoper finns inte med i kedjan för uran-235!</p>
+    <div class="tabwrap"><table><thead><tr><th>Isotop</th><th>Atom&shy;nr</th><th>Mass&shy;tal</th><th>Typ</th><th>Halverings&shy;tid</th></tr></thead><tbody id="tab"></tbody></table></div>
+    <p style="font-size:.9rem;color:var(--muted)">Vill du se alla isotoper som finns? Titta i <a href="https://www.nndc.bnl.gov/nudat3/" target="_blank" rel="noopener">NuDat 3</a> (avancerad, på engelska).</p>
+  </section>
+
+    </div>
+  </div>
 </div>
 <script>
 const AMNE = { 80: ["Hg", "kvicksilver"], 81: ["Tl", "tallium"], 82: ["Pb", "bly"], 83: ["Bi", "vismut"], 84: ["Po", "polonium"], 85: ["At", "astat"],
@@ -181,7 +198,7 @@ const sorterad = [...ISOTOPER].sort((a, b) => AMNE[a[0]][1].localeCompare(AMNE[b
 function tabell() {
   const anv = new Set(KEDJA.slice(0, steg));
   $("tab").innerHTML = sorterad.map(x => `<tr class="${anv.has(x[0] + "-" + x[1]) ? "anv" : ""}"><td><b>${namn(x)}</b> ${not(x)}</td><td class="num">${x[0]}</td><td class="num">${x[1]}</td>
-    <td><span class="typ ${x[2]}">${typText(x[2])}</span></td><td class="num">${x[3]}</td></tr>`).join("");
+    <td><span class="typ ${x[2]}">${x[2] === "alfa" ? "α" : x[2] === "beta" ? "β" : "stabil"}</span></td><td class="num tid">${x[3]}</td></tr>`).join("");
 }
 function kedja() {
   $("kedja").innerHTML = KEDJA.slice(0, steg).map((k, i) => { const x = iso(k);
