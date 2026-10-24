@@ -121,8 +121,9 @@ Joniserande strålning är en egenskap hos strålning, inte en egen typ av strå
 Joniserande stårlning
 - Alfastrålning
 - Betastrålning
-- Gammastrålnin
 - Röntgenstrålning
+- Gammastrålnin
+  
 
 > **Begrepp**
 > **joniserande strålning** – strålning som kan slå loss elektroner från atomer
@@ -136,3 +137,7 @@ Joniserande stårlning
 > **Viktigt att komma ihåg**
 > - Joniserande strålning kan slå loss elektroner och bilda joner.
 > - Alfa, beta, gamma och röntgen är joniserande.
+> - Alfastrålning stoppas av papper
+> - Betastrålning av aluminiumfolie
+> - Röntgenstrålning av tunnare bly
+> - Gammastrålning av tjock blyvägg
