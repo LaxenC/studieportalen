@@ -19,6 +19,31 @@
    ===================================================================== */
 Portal.uppgifter([
 
+    /* ---------- Radioaktivitet upptäcks ---------- */
+
+    { id: "rad-historia-tid", kapitel: "radioaktivitet", avsnitt: ["historia"], titel: "Radioaktivitet upptäcks – tidslinje",
+      typ: "dratabell", nivaerPerArskurs: { 8: [1], 9: [0, 1] },
+      varianter: [
+        { rubrik: "Dra rätt händelse till rätt år på tidslinjen.", tidslinje: true,
+          rubriker: ["År", "Händelse"],
+          rader: [["1896", "Becquerel upptäcker strålning från uran"], ["1898", "Makarna Curie ger strålningen namnet radioaktivitet"], ["1903", "Nobelpris till Becquerel och makarna Curie"]] }
+      ] },
+
+    { id: "rad-historia-flerval", kapitel: "radioaktivitet", avsnitt: ["historia"], titel: "Radioaktivitetens historia – välj rätt",
+      typ: "flerval", nivaerPerArskurs: { 8: [1, 2], 9: [1] },
+      varianter: [
+        { fraga: "Vem gav strålningen namnet radioaktivitet?",
+          alt: [ { t: "Marie och Pierre Curie", s: "ratt", f: "de upptäckte polonium och radium 1898 och gav strålningen ett namn." },
+                 { t: "Henri Becquerel", s: "fel", f: "Becquerel upptäckte strålningen 1896, men kunde inte förklara den." },
+                 { t: "Albert Einstein", s: "fel", f: "Einstein är känd för E = mc², inte för att ha namngett radioaktiviteten." },
+                 { t: "Otto Hahn", s: "fel", f: "Otto Hahn är känd för fissionen, flera decennier senare." } ] },
+        { fraga: "Varför användes radioaktiva ämnen i tandkräm och dricksvatten i början av 1900-talet?",
+          alt: [ { t: "Man visste inte att strålningen var farlig", s: "ratt", f: "radium lyste och ansågs nyttigt. Först senare förstod man att strålningen skadar celler." },
+                 { t: "Det var förbjudet att använda annat", s: "fel", f: "det fanns inga sådana regler – man trodde att strålningen var hälsosam." },
+                 { t: "Strålningen gör tänderna starkare", s: "fel", f: "joniserande strålning skadar celler. Den gör inte tänderna starkare." },
+                 { t: "Det var för att döda bakterier i vattnet", s: "fel", f: "man trodde att strålningen gav energi och hälsa – inte att den skulle rena vattnet." } ] }
+      ] },
+
     /* ---------- Instabila atomkärnor ---------- */
 
     { id: "rad-instabil-tabell", kapitel: "radioaktivitet", avsnitt: ["instabil"], titel: "Instabil atomkärna – vad händer?",
@@ -111,6 +136,44 @@ Portal.uppgifter([
                  { t: "En GM-mätare", s: "fel", f: "GM-mätaren mäter aktivitet – sönderfall per sekund – inte hur mycket strålning en person får." },
                  { t: "En termometer", s: "fel", f: "en termometer mäter temperatur." },
                  { t: "Ingenting – strålning känns", s: "fel", f: "strålning syns, hörs och känns inte. Därför behövs mätinstrument." } ] }
+      ] },
+
+    { id: "rad-skydd-flerval", kapitel: "radioaktivitet", avsnitt: ["mata"], titel: "Aktivitet och stråldos – vad händer?",
+      typ: "flerval", nivaerPerArskurs: { 8: [1, 2], 9: [1] },
+      varianter: [
+        { fraga: "En strålkälla har aktiviteten 60 Bq. En person går längre bort från källan. Vad händer med aktiviteten?",
+          alt: [ { t: "Den är densamma – 60 Bq", s: "ratt", f: "aktiviteten är hur många sönderfall som sker i källan per sekund. Den ändras inte av var personen står." },
+                 { t: "Den minskar", s: "fel", f: "det är stråldosen som minskar. Källan sönderfaller lika mycket oavsett var personen står." },
+                 { t: "Den ökar", s: "fel", f: "aktiviteten beror bara på källan, inte på personen." },
+                 { t: "Den blir noll", s: "fel", f: "källan fortsätter sönderfalla – 60 sönderfall per sekund." } ] },
+        { fraga: "En person går längre bort från en strålkälla. Vad händer med stråldosen personen får?",
+          alt: [ { t: "Den minskar", s: "ratt", f: "strålningen sprids ut åt alla håll, så färre partiklar träffar personen." },
+                 { t: "Den är densamma", s: "fel", f: "det är aktiviteten som är densamma. Stråldosen beror på avståndet." },
+                 { t: "Den ökar", s: "fel", f: "längre bort träffar färre partiklar personen – dosen minskar." },
+                 { t: "Den blir noll direkt", s: "fel", f: "dosen minskar, men blir inte noll bara för att man tar ett steg bakåt." } ] },
+        { fraga: "En person står 1 m från en strålkälla i 4 sekunder och får 0,33 mSv. Hur stor blir dosen om personen står kvar i 8 sekunder?",
+          alt: [ { t: "0,66 mSv", s: "ratt", f: "dubbelt så lång tid ger dubbelt så stor dos." },
+                 { t: "0,33 mSv", s: "fel", f: "ju längre tid, desto fler partiklar hinner träffa personen." },
+                 { t: "0,17 mSv", s: "fel", f: "dosen blir större, inte mindre, när tiden ökar." },
+                 { t: "1,32 mSv", s: "fel", f: "dubbla tiden ger dubbla dosen – inte fyra gånger så mycket." } ] }
+      ] },
+
+    { id: "rad-skydd-sortera", kapitel: "radioaktivitet", avsnitt: ["mata"], titel: "Vad ändras när man går längre bort? – sortera",
+      typ: "sortera", nivaerPerArskurs: { 8: [2], 9: [1, 2] },
+      varianter: [
+        { grupper: ["Ändras när personen går längre bort", "Ändras inte"],
+          saker: [["Stråldosen", 0], ["Vad dosimetern visar", 0], ["Antal partiklar som träffar personen", 0],
+                  ["Aktiviteten", 1], ["Antal sönderfall per sekund i källan", 1], ["Halveringstiden", 1]] }
+      ] },
+
+    { id: "rad-skydd-text", kapitel: "radioaktivitet", avsnitt: ["mata"], titel: "Skydda sig mot strålning – fyll i",
+      typ: "lucktext", nivaerPerArskurs: { 8: [1], 9: [0, 1] }, rullista: [0, 1],
+      ordlista: ["avstånd", "tid", "skärmning", "aktiviteten", "stråldosen", "bly", "papper"],
+      varianter: [
+        { text: "Man kan skydda sig mot strålning med [*avstånd/tid/skärmning], [*avstånd/tid/skärmning] och [*avstånd/tid/skärmning].",
+          facit: "Man kan skydda sig mot strålning med <b>avstånd</b>, <b>tid</b> och <b>skärmning</b>." },
+        { text: "När man går längre bort från en strålkälla minskar [stråldosen|dosen], men [aktiviteten] är densamma." },
+        { text: "En vägg av [bly] stoppar det mesta av strålningen. Det kallas skärmning." }
       ] },
 
     /* ---------- Halveringstid ---------- */

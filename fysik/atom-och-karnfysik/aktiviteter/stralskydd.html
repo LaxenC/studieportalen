@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="sv">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Skydda dig mot strålning</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@500;700;800;900&family=Noto+Serif:wght@700&display=swap">
+<style>
+*,*::before,*::after{box-sizing:border-box}
+[hidden]{display:none!important}
+:root{
+  --bg:#eef3fb; --panel:#ffffff; --ink:#152238; --muted:#4f5d75; --line:#d5deeb;
+  --accent:#2563eb; --accent-ink:#ffffff; --accent-soft:#dbe7ff;
+  --green-bg:#e8f7ec; --green-bd:#a9dfb8; --green:#2f9e57;
+  --blue-bg:#e6f1fc; --blue-bd:#a8cdf1; --blue:#2b78c9;
+  --yellow-bg:#fff6dd; --yellow-bd:#f2d78a; --yellow:#b7850c;
+  --red-bg:#fdeaec; --red-bd:#f2b3b9; --red:#d63c45;
+  --purple-bg:#f0ebfd; --purple-bd:#c9b8f5; --purple:#6d48d6;
+  --c14:#e07a1f; --n14:#2b78c9;
+  --font:"Nunito",system-ui,sans-serif; --serif:"Noto Serif",Georgia,serif;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#0f1626; --panel:#18223a; --ink:#e8edf7; --muted:#a6b1c6; --line:#2c3a58;
+  --accent:#5b8cff; --accent-ink:#0f1626; --accent-soft:#233a6b;
+  --green-bg:#16301f; --green-bd:#2f6b44; --green:#5fd38a;
+  --blue-bg:#152a44; --blue-bd:#2f5d8f; --blue:#6fb0f2;
+  --yellow-bg:#33290f; --yellow-bd:#6f5a1c; --yellow:#f0c44a;
+  --red-bg:#3a1a20; --red-bd:#7a3540; --red:#ff7a82;
+  --purple-bg:#251d45; --purple-bd:#4f3e94; --purple:#a88cff;
+  --c14:#ff9f4a; --n14:#6fb0f2; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0f1626; --panel:#18223a; --ink:#e8edf7; --muted:#a6b1c6; --line:#2c3a58;
+  --accent:#5b8cff; --accent-ink:#0f1626; --accent-soft:#233a6b;
+  --green-bg:#16301f; --green-bd:#2f6b44; --green:#5fd38a;
+  --blue-bg:#152a44; --blue-bd:#2f5d8f; --blue:#6fb0f2;
+  --yellow-bg:#33290f; --yellow-bd:#6f5a1c; --yellow:#f0c44a;
+  --red-bg:#3a1a20; --red-bd:#7a3540; --red:#ff7a82;
+  --purple-bg:#251d45; --purple-bd:#4f3e94; --purple:#a88cff;
+  --c14:#ff9f4a; --n14:#6fb0f2; color-scheme:dark}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--font);font-size:16px;line-height:1.5}
+.wrap{max-width:980px;margin:0 auto;padding:28px 16px 48px;display:grid;gap:18px}
+header h1{margin:0;font-weight:900;font-size:clamp(1.8rem,4.5vw,2.5rem);line-height:1.1}
+header p{margin:6px 0 0;color:var(--muted);font-size:1.08rem;max-width:68ch}
+.eyebrow{margin:0 0 4px;font-weight:800;text-transform:uppercase;letter-spacing:.08em;font-size:.78rem;color:var(--muted)}
+.panel{background:var(--panel);border-radius:16px;padding:18px;display:grid;gap:14px;min-width:0}
+h2{margin:0;font-weight:900;font-size:1.35rem}
+h3{margin:0;font-weight:900;font-size:1.05rem}
+p{margin:0}
+a{color:var(--accent)}
+.scen{position:relative;border-radius:14px;overflow:hidden;background:var(--bg)}
+canvas{display:block;width:100%;height:auto}
+.instr{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:12px}
+.kort{border-radius:14px;padding:12px 14px;display:grid;gap:2px;text-align:center}
+.kort .rub{font-weight:900;text-transform:uppercase;letter-spacing:.06em;font-size:.8rem;color:#fff;border-radius:8px;padding:2px 8px;justify-self:center}
+.kort b{font-size:1.9rem;font-weight:900;font-variant-numeric:tabular-nums}
+.kort span{font-size:.88rem;color:var(--muted);font-weight:700}
+.kalla{background:var(--panel);border:3px solid #e07a1f}.kalla .rub{background:#e07a1f}.kalla b{color:#e07a1f}
+.dos{background:var(--panel);border:3px solid var(--green)}.dos .rub{background:var(--green)}.dos b{color:var(--green)}
+.tid{background:var(--panel);border:3px solid var(--line)}.tid .rub{background:var(--muted)}
+.styr{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:14px;align-items:end}
+.styr label{font-weight:800;display:block;margin-bottom:4px}
+.styr input[type=range]{width:100%;accent-color:var(--accent)}
+.val{display:flex;gap:6px;flex-wrap:wrap}
+.val button{font:inherit;font-weight:800;padding:6px 14px;border-radius:999px;border:2px solid var(--line);background:var(--panel);color:var(--ink);cursor:pointer}
+.val button[aria-pressed="true"]{border-color:var(--accent);background:var(--accent-soft)}
+.btn{font:inherit;font-weight:900;padding:10px 20px;border-radius:999px;border:0;background:var(--accent);color:var(--accent-ink);cursor:pointer}
+.btn:disabled{opacity:.5;cursor:default}
+.btn.sec{background:var(--panel);color:var(--accent);border:2px solid var(--accent)}
+.tabwrap{overflow-x:auto}
+table{border-collapse:collapse;width:100%;font-size:.95rem}
+th,td{padding:7px 10px;text-align:left;border-bottom:1px solid var(--line);white-space:nowrap}
+th{background:var(--bg);font-weight:900}
+td.num{font-variant-numeric:tabular-nums;font-weight:800}
+.uppdrag{border-radius:14px;padding:12px 14px;background:var(--yellow-bg);border:2px solid var(--yellow-bd)}
+.uppdrag ol{margin:6px 0 0;padding-left:1.3em;display:grid;gap:4px}
+.fragor{border-radius:14px;padding:14px;background:var(--purple-bg);border:2px solid var(--purple-bd);display:grid;gap:10px}
+.fragor h3{color:var(--purple)}
+.fragor ol{margin:0;padding-left:1.3em;display:grid;gap:10px}
+.fragor details summary{cursor:pointer;font-weight:800;color:var(--purple)}
+.fragor details{margin-top:4px}
+.tre{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:10px}
+.tre div{border-radius:12px;background:var(--panel);padding:10px 12px;display:grid;gap:2px}
+.tre b{font-size:1.05rem}
+button:focus-visible,input:focus-visible,summary:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <p class="eyebrow">Fysik · Radioaktivitet · Mäta strålning</p>
+    <h1>Skydda dig mot strålning</h1>
+    <p>En strålkälla har aktiviteten 60 Bq – 60 sönderfall per sekund. En person med dosimeter står i närheten. Vad händer med <b>aktiviteten</b> och med <b>stråldosen</b> när personen går längre bort, ställer sig bakom bly eller stannar längre?</p>
+  </header>
+
+  <section class="panel" aria-labelledby="h-sim">
+    <h2 id="h-sim">Undersök</h2>
+    <div class="instr">
+      <div class="kort kalla"><span class="rub">Strålkälla</span><b id="akt">60 Bq</b><span>60 sönderfall per sekund</span></div>
+      <div class="kort tid"><span class="rub">Tid</span><b id="tidv">0,0 s</b><span id="tidinfo">tryck på Mät</span></div>
+      <div class="kort dos"><span class="rub">Dosimeter</span><b id="dosv">0,00 mSv</b><span>stråldos som personen fått</span></div>
+    </div>
+    <div class="scen"><canvas id="c" width="900" height="300" aria-label="Strålkälla, eventuell blyvägg och en person med dosimeter"></canvas></div>
+    <div class="styr">
+      <div><label for="avst">Avstånd till källan: <span id="avstv">1 m</span></label><input type="range" id="avst" min="1" max="4" step="0.5" value="1"></div>
+      <div><label>Blyvägg</label><div class="val" id="bly"><button type="button" data-bly="0" aria-pressed="true">Ingen</button><button type="button" data-bly="1" aria-pressed="false">Blyvägg emellan</button></div></div>
+      <div><label>Mättid</label><div class="val" id="tider"><button type="button" data-t="4" aria-pressed="true">4 s</button><button type="button" data-t="8" aria-pressed="false">8 s</button></div></div>
+      <div style="display:flex;gap:8px;flex-wrap:wrap"><button type="button" class="btn" id="mat">▶ Mät</button><button type="button" class="btn sec" id="rensa">Rensa tabellen</button></div>
+    </div>
+    <div class="uppdrag"><b>Gör så här – mät och jämför:</b>
+      <ol><li>Mät <b>nära</b> källan (1 m, ingen blyvägg, 4 s).</li><li>Mät <b>långt bort</b> (2 m, ingen blyvägg, 4 s).</li><li>Mät <b>bakom bly</b> (1 m, blyvägg, 4 s).</li><li>Mät <b>längre tid</b> (1 m, ingen blyvägg, 8 s).</li></ol></div>
+    <div class="tabwrap"><table><thead><tr><th>Mätning</th><th>Avstånd</th><th>Blyvägg</th><th>Tid</th><th>Aktivitet</th><th>Stråldos</th></tr></thead><tbody id="tab"><tr><td colspan="6" style="color:var(--muted)">Inga mätningar än.</td></tr></tbody></table></div>
+  </section>
+
+  <section class="panel" aria-labelledby="h-fr">
+    <div class="fragor">
+      <h3 id="h-fr">Fundera och svara</h3>
+      <ol>
+        <li>Vad händer med <b>aktiviteten</b> när personen går längre bort? Varför?
+          <details><summary>Visa svar</summary>Ingenting – den är 60 Bq hela tiden. Aktiviteten är hur många sönderfall som sker i <i>källan</i> per sekund. Den ändras inte av var personen står.</details></li>
+        <li>Vad händer med <b>stråldosen</b> när personen går längre bort? Varför?
+          <details><summary>Visa svar</summary>Den minskar. Strålningen sprids ut åt alla håll, så ju längre bort man står desto färre partiklar träffar en. Dubbla avståndet ger ungefär en fjärdedel av dosen.</details></li>
+        <li>Vad händer med stråldosen bakom blyväggen? Varför?
+          <details><summary>Visa svar</summary>Den blir mycket mindre. Bly är tungt och tätt och stoppar (absorberar) det mesta av strålningen innan den når personen.</details></li>
+        <li>Vad händer med stråldosen om personen står kvar dubbelt så länge?
+          <details><summary>Visa svar</summary>Den blir dubbelt så stor. Ju längre tid, desto fler partiklar hinner träffa personen.</details></li>
+        <li>Vilka tre sätt finns det att skydda sig mot strålning?
+          <details><summary>Visa svar</summary>
+            <div class="tre"><div><b>Avstånd</b>Stå så långt bort som möjligt.</div><div><b>Tid</b>Var nära källan så kort tid som möjligt.</div><div><b>Skärmning</b>Ha något som stoppar strålningen emellan, till exempel bly.</div></div></details></li>
+      </ol>
+    </div>
+  </section>
+</div>
+<script>
+const $ = id => document.getElementById(id);
+const c = $("c"), g = c.getContext("2d");
+const KX = 130, GROUND = 250, VAGG_X = 200;
+const DOS_1M_4S = 0.33, BLY = 0.12;
+let avst = 1, bly = false, matTid = 4, kor = false, t = 0, dos = 0, mat = 0, partiklar = [];
+const css = n => getComputedStyle(document.documentElement).getPropertyValue(n).trim();
+const personX = () => KX + 110 + (avst - 1) * 170;
+const dosPerS = () => DOS_1M_4S / 4 / (avst * avst) * (bly ? BLY : 1);
+const tal = (x, d) => x.toFixed(d).replace(".", ",");
+
+function rita() {
+  const W = c.width, H = c.height;
+  g.clearRect(0, 0, W, H);
+  g.fillStyle = css("--line"); g.fillRect(0, GROUND, W, H - GROUND);
+  // meterskala
+  g.fillStyle = css("--muted"); g.font = "700 14px Nunito, sans-serif"; g.textAlign = "center";
+  for (let m = 1; m <= 4; m++) { const x = KX + 110 + (m - 1) * 170; g.fillRect(x - 1, GROUND, 2, 10); g.fillText(m + " m", x, GROUND + 28); }
+  // källa
+  g.strokeStyle = "#475569"; g.lineWidth = 4; g.beginPath(); g.moveTo(KX - 18, GROUND); g.lineTo(KX - 6, 190); g.moveTo(KX + 18, GROUND); g.lineTo(KX + 6, 190); g.stroke();
+  g.fillStyle = "#3f4756"; g.beginPath(); g.roundRect(KX - 30, 130, 60, 60, 8); g.fill();
+  g.fillStyle = "#ffd43b"; g.beginPath(); g.arc(KX, 160, 22, 0, 7); g.fill();
+  g.fillStyle = "#1e1e1e";
+  for (let i = 0; i < 3; i++) { const a = -Math.PI / 2 + i * 2 * Math.PI / 3; g.beginPath(); g.moveTo(KX, 160); g.arc(KX, 160, 19, a - .5, a + .5); g.fill(); }
+  g.fillStyle = "#ffd43b"; g.beginPath(); g.arc(KX, 160, 6, 0, 7); g.fill(); g.fillStyle = "#1e1e1e"; g.beginPath(); g.arc(KX, 160, 4, 0, 7); g.fill();
+  // blyvägg
+  if (bly) { g.fillStyle = "#5b6470"; g.fillRect(VAGG_X - 9, 70, 18, GROUND - 70); g.fillStyle = css("--ink"); g.fillText("bly", VAGG_X, 62); }
+  // partiklar
+  g.fillStyle = "#e8590c";
+  partiklar.forEach(p => { g.beginPath(); g.arc(p.x, p.y, 3, 0, 7); g.fill(); });
+  // person
+  const px = personX();
+  g.fillStyle = "#1e293b"; g.fillRect(px - 13, 185, 10, 65); g.fillRect(px + 3, 185, 10, 65);
+  g.fillStyle = "#6b7a90"; g.beginPath(); g.roundRect(px - 24, 120, 48, 72, 12); g.fill();
+  g.fillStyle = "#f1d3b0"; g.beginPath(); g.arc(px, 100, 17, 0, 7); g.fill();
+  g.fillStyle = "#5b3a24"; g.beginPath(); g.arc(px, 96, 17, Math.PI, 0); g.fill();
+  g.fillStyle = "#fff"; g.strokeStyle = css("--green"); g.lineWidth = 3; g.beginPath(); g.roundRect(px - 9, 135, 18, 16, 3); g.fill(); g.stroke();
+}
+let senast = 0;
+function steg(ts) {
+  const dt = Math.min(0.05, (ts - (senast || ts)) / 1000); senast = ts;
+  // skicka ut partiklar: 60 sönderfall/s (visas som ~ 60/s)
+  if (Math.random() < 60 * dt) { const a = Math.random() * 2 * Math.PI; partiklar.push({ x: KX, y: 160, vx: Math.cos(a) * 260, vy: Math.sin(a) * 260 }); }
+  const px = personX();
+  partiklar.forEach(p => {
+    const nx = p.x + p.vx * dt;
+    if (bly && p.x < VAGG_X - 9 && nx >= VAGG_X - 9 && p.y > 70 && p.y < GROUND && Math.random() > BLY) p.dod = true;
+    p.x = nx; p.y += p.vy * dt;
+    if (p.x > px - 24 && p.x < px + 24 && p.y > 85 && p.y < GROUND) p.dod = true;
+  });
+  partiklar = partiklar.filter(p => !p.dod && p.x > -10 && p.x < c.width + 10 && p.y > -10 && p.y < GROUND);
+  if (kor) {
+    t = Math.min(matTid, t + dt); dos = dosPerS() * t;
+    if (t >= matTid) { kor = false; spara(); }
+    visa();
+  }
+  rita(); requestAnimationFrame(steg);
+}
+function visa() {
+  $("tidv").textContent = tal(t, 1) + " s"; $("dosv").textContent = tal(dos, 2) + " mSv";
+  $("tidinfo").textContent = kor ? "mäter …" : t ? "klar" : "tryck på Mät";
+  $("mat").disabled = kor; document.querySelectorAll("#avst,#bly button,#tider button").forEach(x => x.disabled = kor);
+}
+const rader = [];
+function spara() {
+  rader.push([avst, bly, matTid, dos]);
+  $("tab").innerHTML = rader.map((r, i) => `<tr><td>${i + 1}</td><td>${tal(r[0], r[0] % 1 ? 1 : 0)} m</td><td>${r[1] ? "ja" : "nej"}</td><td>${r[2]} s</td><td class="num">60 Bq</td><td class="num">${tal(r[3], 2)} mSv</td></tr>`).join("");
+}
+$("avst").addEventListener("input", e => { avst = +e.target.value; $("avstv").textContent = tal(avst, avst % 1 ? 1 : 0) + " m"; nollstall(); });
+function nollstall() { t = 0; dos = 0; visa(); }
+document.addEventListener("click", e => {
+  const b = e.target.closest("button"); if (!b || b.disabled) return;
+  if (b.dataset.bly) { bly = b.dataset.bly === "1"; document.querySelectorAll("[data-bly]").forEach(x => x.setAttribute("aria-pressed", x === b)); nollstall(); }
+  else if (b.dataset.t) { matTid = +b.dataset.t; document.querySelectorAll("[data-t]").forEach(x => x.setAttribute("aria-pressed", x === b)); nollstall(); }
+  else if (b.id === "mat") { t = 0; dos = 0; kor = true; visa(); }
+  else if (b.id === "rensa") { rader.length = 0; $("tab").innerHTML = '<tr><td colspan="6" style="color:var(--muted)">Inga mätningar än.</td></tr>'; }
+});
+visa(); requestAnimationFrame(steg);
+</script>
+</body>
+</html>

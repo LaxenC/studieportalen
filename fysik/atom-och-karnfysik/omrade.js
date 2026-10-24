@@ -48,6 +48,8 @@ Portal.omrade({
     { id: "kol14", namn: "Kol-14-metoden", fil: "aktiviteter/kol14.html", arskurs: [9],
       text: "Hur gammalt är ett fynd? Använd halveringstiden för kol-14." },
     { id: "sonderfallskedja", namn: "Sönderfallskedjan för uran-235", fil: "aktiviteter/sonderfallskedja.html", arskurs: [8, 9],
-      text: "Bygg kedjan från uran-235 till stabilt bly med hjälp av en isotoptabell och periodiska systemet." }
+      text: "Bygg kedjan från uran-235 till stabilt bly med hjälp av en isotoptabell och periodiska systemet." },
+    { id: "stralskydd", namn: "Skydda dig mot strålning", fil: "aktiviteter/stralskydd.html", arskurs: [8, 9],
+      text: "Vad händer med aktiviteten och stråldosen när man går längre bort, ställer sig bakom bly eller stannar längre?" }
   ]
 });

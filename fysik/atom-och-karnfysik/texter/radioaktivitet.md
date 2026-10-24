@@ -6,6 +6,37 @@ kapitel: radioaktivitet
 
 Vissa atomkärnor är instabila. De sönderfaller och sänder ut strålning tills de blivit stabila.
 
+## Radioaktivitet upptäcks {#historia åk=8-9}
+
+Radioaktivitet upptäcktes för drygt hundra år sedan – nästan av en slump.
+
+| År | Vem | Vad hände? |
+|---|---|---|
+| 1896 | **Henri Becquerel** | Upptäckte att uransalt sänder ut osynlig strålning som svärtar en fotografisk plåt – även i mörker. Han kunde inte förklara varför. |
+| 1898 | **Marie och Pierre Curie** | Upptäckte de radioaktiva ämnena polonium och radium. De gav strålningen en förklaring och ett namn: **radioaktivitet**. |
+| 1903 | Becquerel och makarna Curie | Fick **Nobelpriset i fysik** tillsammans för upptäckten av radioaktiviteten. |
+
+Marie Curie fick ett andra Nobelpris, i kemi, 1911. Hon var den första som fick två Nobelpris.
+
+[Se filmen: Världens historia på tre minuter – Marie Curie (SVT Play)](https://www.svtplay.se/video/jawvwbr/varldens-historia-pa-tre-minuter/17-marie-curie?video=visa)
+
+### Radioaktivitet används
+
+I början visste man inte hur farlig strålningen var. Radium lyste i mörkret och ansågs nyttigt. Därför användes radioaktiva ämnen i vardagen:
+
+| Användning | Ungefär när |
+|---|---|
+| Vatten och luft "berikades" med radon och radium – det skulle vara hälsosamt | 1910–1935 |
+| Självlysande urtavlor målades med radiumfärg | 1917–1926 |
+| Radioaktiv tandkräm som skulle ge friska tänder | 1920–1945 |
+
+Många blev sjuka. Kvinnorna som målade urtavlorna slickade på penslarna för att få dem spetsiga – och fick i sig radium. Marie Curie dog 1934, troligen av en sjukdom orsakad av all strålning hon utsatts för. I dag vet vi att joniserande strålning kan skada celler och DNA, och att man måste skydda sig.
+
+> **Viktigt att komma ihåg**
+> - **1896** upptäckte Henri Becquerel strålningen från uran.
+> - **1898** gav Marie och Pierre Curie den namnet **radioaktivitet**.
+> - I början visste man inte att strålningen var farlig – den användes till exempel i tandkräm och självlysande urtavlor.
+
 ## Instabila atomkärnor {#instabil}
 
 De flesta atomkärnor är **stabila** – de ändras inte. Men en del atomkärnor är **instabila**. En instabil atomkärna vill bli stabil och gör sig därför av med det den har för mycket av.
@@ -80,10 +111,22 @@ Strålning syns inte, hörs inte och känns inte. Därför behövs mätinstrumen
 | Dosimeter | stråldos – hur mycket strålning vi utsätts för | sievert (Sv), millisievert (mSv) |
 | GM-mätare | aktivitet – antal sönderfall per sekund | becquerel (Bq) |
 
+### Skydda sig mot strålning
+
+**Aktiviteten** är en egenskap hos strålkällan – hur många sönderfall som sker i den varje sekund. Den ändras inte av var du står. Men **stråldosen** du får beror på dig. Det finns tre sätt att få en lägre stråldos:
+
+- **Avstånd** – stå långt bort. Strålningen sprids ut åt alla håll, så färre partiklar träffar dig. Dubbla avståndet ger ungefär en fjärdedel av dosen.
+- **Tid** – var nära källan så kort tid som möjligt. Dubbelt så lång tid ger dubbelt så stor dos.
+- **Skärmning** – ha något emellan som stoppar strålningen, till exempel bly eller betong.
+
+[Prova själv: Skydda dig mot strålning](#/fysik/atom-och-karnfysik/aktiviteter/stralskydd)
+
 > **Viktigt att komma ihåg**
 > - **Dosimeter** mäter stråldos i **sievert (Sv)**.
 > - **GM-mätare** mäter aktivitet i **becquerel (Bq)**.
 > - 1 Bq = ett sönderfall per sekund.
+> - Aktiviteten ändras inte när du flyttar dig – men stråldosen gör det.
+> - Skydda dig med **avstånd**, **tid** och **skärmning**.
 
 ## Halveringstid {#halvering åk=8-9}
 
