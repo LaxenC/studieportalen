@@ -55,7 +55,7 @@ En jon är en atom som har fått ett annat antal **elektroner** än protoner och
 
 ## Sammanfattning 
 
-| Om antalet … ändras | blir det | Vad händer i notationen? |
+| Om antalet … ändras | blir det | Vad händer i notationen? (åk9,åk8) |
 |---|---|---|
 | **protoner** | ett annat ämne | Ny beteckning och nytt atomnummer |
 | **neutroner** | en annan isotop av samma ämne | Nytt masstal, samma beteckning |
