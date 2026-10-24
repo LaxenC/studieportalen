@@ -20,6 +20,7 @@ Bild: Kemisk beteckning= C, Atomnummer=6 och Masstal=14
 > **atomnummer** – antalet protoner
 :::
 
+:::Fördjupning åk7 Antal partiklar
 Antal protoner är det som bestämmer vilket grundämne det är, vilket innebär att alla ämnen har olika atomnummer. 
 
 
@@ -29,6 +30,7 @@ Om antalet protoner, som är positivt laddade, är lika många som antalet elekt
 >**Exempel**
 > Ovan atom har atomnummer=6, så då vet vi att det finns 6st protoner =+6.
 > För att det ska bli oladdad behövs det till 6st elektroner= -6 --> +6-6=0 
+:::
 
 > **Fördjupning: Elektroner i atomnotation**
 > Genom att lägga till laddningen på atomen i atomnotationen så kan man även få information om antalet elektroner. Det läggs till högst upp till höger.
@@ -39,18 +41,18 @@ Om antalet protoner, som är positivt laddade, är lika många som antalet elekt
 > Laddning= -2, innebär att det finns 2st fler elektroner än protoner och vi vet att det finns 8st protoner eftersom atomnummer=8, därmed finns det 10st elektroner. Antal elektroner kan räknas ut genom atomnummer-laddning (8--2 = 8+2 = 10)
 
 
- **Så räknar du ut partiklarna** 
+ :::Fördjupning åk7 Så räknar du ut partiklarna** 
  1. Antal protoner = atomnummer 
  2. Antal neutroner = masstal − atomnummer 
  3. Antal elektroner = atomnummer (om atomen är neutral) 
 
 > **Exempel:** Syre-16 skrivs med masstal 16 och atomnummer 8. Den har 8 protoner, 16 − 8 = 8 neutroner och 8 elektroner.
-
+:::
 > **Viktigt att komma ihåg**
 > [[nota 14 6 C stor farg]]
 > Bild: Kemisk beteckning= C, Atomnummer=6 och Masstal=14
 > - Masstalet står överst: protoner + neutroner.
 > - Atomnumret står nederst: antalet protoner.
-> - I en neutral atom är de lika många elektroner som protoner
-> - Fördjupning: Antalet elektroner kan räknas ut genom laddningen på atomen
+> - (åk8,åk9)I en neutral atom är de lika många elektroner som protoner
+> - (åk8,åk9) Fördjupning: Antalet elektroner kan räknas ut genom laddningen på atomen
 
