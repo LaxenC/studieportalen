@@ -36,7 +36,10 @@ Portal.omrade({
       arskurs: [7,8,9] },
     { id: "stralning", namn: "Strålning", farg: "orange", bild: "[[kort-stralning]]",
       text: "Elektromagnetisk strålning, partikelstrålning och joniserande strålning.",
-      arskurs: [7,8,9] }
+      arskurs: [7,8,9] },
+    { id: "radioaktivitet", namn: "Radioaktivitet – sönderfall", farg: "purple", bild: "[[kort-stralning]]",
+      text: "Instabila kärnor, radioaktivt sönderfall, mäta strålning, halveringstid och kol-14-metoden.",
+      arskurs: [7, 8, 9] }
   ],
   aktiviteter: [
     { id: "kol14", namn: "Kol-14-metoden", fil: "aktiviteter/kol14.html", arskurs: [9],
