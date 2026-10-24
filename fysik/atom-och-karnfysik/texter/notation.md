@@ -47,8 +47,7 @@ Om antalet protoner, som är positivt laddade, är lika många som antalet elekt
 > **Exempel:** Syre-16 skrivs med masstal 16 och atomnummer 8. Den har 8 protoner, 16 − 8 = 8 neutroner och 8 elektroner.
 
 > **Viktigt att komma ihåg**
-> ::: rad
-[[nota 14 6 C stor farg]]
+> [[nota 14 6 C stor farg]]
 Bild: Kemisk beteckning= C, Atomnummer=6 och Masstal=14
 > - Masstalet står överst: protoner + neutroner.
 > - Atomnumret står nederst: antalet protoner.
