@@ -23,7 +23,7 @@ Portal.uppgifter([
     // Varianter: X = kemisk beteckning, A = masstal, Z = atomnummer, ch = laddning ("+", "2+", "3-" …)
 
     { id: "not-delar-bild", kapitel: "notation", titel: "Atomnotationens delar – bild",
-      typ: "markera", bild: "notation", nivaerPerArskurs: { 7: [1], 8: [0,1], 9: [0] }, rullista: [0], grupp: "not-delar",
+      typ: "markera", bild: "notation", nivaerPerArskurs: { 7: [2], 8: [1], 9: [1] }, rullista: [0], grupp: "not-delar",
       delar: ["masstal", "atomnummer", "kemisk beteckning"],
       svar: {
         masstal: ["masstal", "masstalet"],
@@ -45,7 +45,7 @@ Portal.uppgifter([
                    // ingen rullista – eleven skriver alltid själv
 
     { id: "not-para", kapitel: "notation", titel: "Atomnotation – para ihop begrepp",
-      typ: "para", nivaerPerArskurs: { 7: [1], 8: [0,1], 9: [0] },
+      typ: "para", nivaerPerArskurs: { 7: [2], 8: [1], 9: [1] },
       varianter: [
         { rubrik: "Para ihop begreppet med rätt förklaring.",
           par: [["Masstal", "Antalet protoner + neutroner"], ["Atomnummer", "Antalet protoner"], ["Kemisk beteckning", "En eller två bokstäver som visar grundämnet"]] },
