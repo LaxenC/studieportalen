@@ -5,7 +5,7 @@
    ===================================================================== */
 const MD = (() => {
   let VARN = [], BAS = "";
-  const src = u => /^([a-z]+:|\/|#)/i.test(u) ? u : BAS + u;
+  const src = u => /^([a-z]+:|\/\/|#)/i.test(u) ? u : BAS + u.replace(/^\/+/, "");
   const AK_RE = /^(?:åk|ak)\s*=?\s*([\d,\s–-]+)$/i;
   const parseAk = s => {
     const out = new Set();
