@@ -36,7 +36,7 @@ const MD = (() => {
   /* ---------- block ---------- */
   const isFig = l => /^\s*(\[\[[^\]]+\]\]|!\[[^\]]*\]\([^)]+\))(\s*\{[^}]*\})?\s*$/.test(l);
   const isList = l => /^\s*([-*]|\d+\.)\s+/.test(l);
-  const startar = l => /^\s{0,3}(#{1,6}\s|>|\||:::|<|---\s*$)/.test(l) || isList(l) || isFig(l);
+  const startar = l => /^\s{0,3}(#{1,6}\s|>|\||:::|<)/.test(l) || isList(l) || isFig(l);
 
   function lista(rader) {
     const ord = /^\s*\d+\./.test(rader[0]);
@@ -113,7 +113,6 @@ const MD = (() => {
         else ut.push({ html: `<div class="${esc(arg)}">${sattIhop(inre)}</div>` });
         i = j + 1; continue;
       }
-      if (/^\s{0,3}---\s*$/.test(l)) { ut.push({ html: '<hr class="ny-bild">' }); i++; continue; }   // ny bild i presentationen
       if ((m = l.match(/^\s{0,3}(#{1,6})\s+(.*)$/))) {
         const n = Math.max(3, m[1].length); // # och ## hanteras utanför
         ut.push({ html: `<h${n}>${inline(m[2].replace(/\s*\{[^}]*\}\s*$/, ""))}</h${n}>` }); i++; continue;

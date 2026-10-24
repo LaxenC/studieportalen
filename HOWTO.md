@@ -68,7 +68,6 @@ Textfilerna (`.md`) är ännu enklare – där skriver du vanlig text, med någr
 
 **Övrigt**
 
-20b. [Presentera ett kapitel](#20b-presentera-ett-kapitel)
 21. [Länka direkt till ett kapitel eller en övning](#21-länka-direkt)
 22. [Vanliga fel](#22-vanliga-fel)
 23. [Snabböversikt: alla inställningar](#23-snabböversikt-alla-inställningar)
@@ -514,37 +513,6 @@ Skrivsätt för årskurser: `åk 9`, `åk 7-8`, `åk 7,9`.
 - Åk 8 och 9 ser det som vanlig text.
 - Med "Alla" valt syns texten med en liten etikett: *fördjupning för åk 7*.
 - Rubriken efter årskursen är valfri.
-
----
-
-## 20b. Presentera ett kapitel
-
-Knappen **▶ Presentera** överst i varje kapitel visar kapitlet som bildspel för den valda årskursen. Bilderna byggs automatiskt från texten:
-
-| I texten | Blir |
-|---|---|
-| `#` rubrik och ingress | titelbild |
-| `##` avsnitt och `###` rubrik | ny bild |
-| Begrepp-ruta | begreppsbild – förklaringen visas vid klick |
-| Exempel, tabell, Viktigt, Fördjupning | egna bilder |
-| en flervalsuppgift i avsnittet | "Fråga till klassen" – svaret visas vid klick |
-
-Styr själv:
-
-```markdown
----                          ← ny bild här
-
-::: bara-presentation
-Diskutera i par: var finns det strålning i vardagen?
-:::
-
-::: bara-text
-Det här syns bara i Läs, inte i presentationen.
-:::
-```
-
-Bläddra med piltangenterna, mellanslag eller klick. **F** = helskärm, **Esc** = stäng.
-Länk direkt till presentationen: lägg till `?presentera` efter kapitlets adress.
 
 ---
 
