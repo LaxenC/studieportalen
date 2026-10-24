@@ -9,7 +9,7 @@ Vad händer med atomen när antalet protoner, neutroner eller elektroner ändras
 Jon - är en laddad atom och bestäms av antal elektroner <br>
 Isotop - är en variant av ett ämne och bestäms av antalet neutroner i atomkärnan
 
-## Ämne {#amne åk8,åk9}
+## Ämne {#amne åk=8,9}
 
 Om en atom har ett annat antal **protoner** blir det ett annat grundämne. Varje grundämne har ett eget antal protoner (atomnummer).
 
@@ -21,7 +21,7 @@ Om en atom har ett annat antal **protoner** blir det ett annat grundämne. Varje
 [[atomkort titel="Litium" under="(atomnummer 3)" A=7 Z=3 X=Li p=3 n=4 e=3 text="3 protoner ger grundämnet **litium (Li)**." farg=rod]]
 :::
 
-## Isotop {#isotop  åk8,åk9}
+## Isotop {#isotop åk=8,9}
 
 Isotoper är atomer av samma grundämne med samma antal protoner men olika antal **neutroner**. De har samma kemiska beteckning men olika masstal. Olika istoper är samma ämne men de har ändå olika egenskaper på grund av att antalet neutroner skiljer sig, de kan till exempel ha olika kokpunkt.
 
@@ -37,7 +37,7 @@ Isotoper är atomer av samma grundämne med samma antal protoner men olika antal
 > **isotop** – atomer av samma ämne med olika antal neutroner
 
 
-## Jon {#jon åk8,åk9}
+## Jon {#jon åk=8,9}
 
 En jon är en atom som har fått ett annat antal **elektroner** än protoner och därför har en laddning.
 
