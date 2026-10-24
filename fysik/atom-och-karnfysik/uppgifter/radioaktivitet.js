@@ -22,7 +22,7 @@ Portal.uppgifter([
     /* ---------- Instabila atomkärnor ---------- */
 
     { id: "rad-instabil-tabell", kapitel: "radioaktivitet", avsnitt: ["instabil"], titel: "Instabil atomkärna – vad händer?",
-      typ: "para", nivaerPerArskurs: { 7: [2], 8: [1], 9: [0, 1] },
+      typ: "para", nivaerPerArskurs: { 7: [2], 8: [1], 9: [1] },
       varianter: [
         { rubrik: "Fyll i vad den instabila kärnan vill göra sig av med och vad den sänder ut.",
           rubriker: ["Instabil kärna", "Vill göra sig av med", "Sänder ut"],
@@ -42,7 +42,7 @@ Portal.uppgifter([
     /* ---------- Radioaktivt sönderfall ---------- */
 
     { id: "rad-begrepp-para", kapitel: "radioaktivitet", avsnitt: ["sonderfall"], titel: "Radioaktivitet – para ihop begrepp",
-      typ: "para", nivaerPerArskurs: { 7: [2], 8: [1], 9: [0, 1] },
+      typ: "para", nivaerPerArskurs: { 7: [2], 8: [1], 9: [1] },
       varianter: [
         { rubrik: "Para ihop begreppet med rätt förklaring.",
           par: [["Radioaktiv kärna", "En instabil kärna som kan sönderfalla"], ["Radioaktivt sönderfall", "När kärnan delar upp sig och sänder ut strålning"],
@@ -80,7 +80,7 @@ Portal.uppgifter([
     /* ---------- Mäta strålning ---------- */
 
     { id: "rad-mata-para", kapitel: "radioaktivitet", avsnitt: ["mata"], titel: "Mäta strålning – para ihop",
-      typ: "para", nivaerPerArskurs: { 7: [2], 8: [1], 9: [0, 1] },
+      typ: "para", nivaerPerArskurs: { 7: [3], 8: [1], 9: [1] },
       varianter: [
         { rubrik: "Para ihop mätaren med vad den mäter och vilken enhet den använder.",
           rubriker: ["Mätare", "Mäter", "Enhet"],
@@ -91,7 +91,7 @@ Portal.uppgifter([
       ] },
 
     { id: "rad-mata-sortera", kapitel: "radioaktivitet", avsnitt: ["mata"], titel: "Dosimeter eller GM-mätare? – sortera",
-      typ: "sortera", nivaerPerArskurs: { 7: [3], 8: [2], 9: [1] },
+      typ: "sortera", nivaerPerArskurs: { 7: [3], 8: [1,2], 9: [1] },
       varianter: [
         { grupper: ["Dosimeter", "GM-mätare"],
           saker: [["Mäter stråldos", 0], ["Mäts i sievert", 0], ["Bärs av personal på kärnkraftverk", 0],
@@ -99,7 +99,7 @@ Portal.uppgifter([
       ] },
 
     { id: "rad-mata-bq", kapitel: "radioaktivitet", avsnitt: ["mata"], titel: "Aktivitet – vad visar mätaren?",
-      typ: "flerval", nivaerPerArskurs: { 7: [3], 8: [2], 9: [1, 2] },
+      typ: "flerval", nivaerPerArskurs: { 7: [3], 8: [1,2], 9: [1] },
       varianter: [
         { fraga: "En GM-mätare klickar 50 gånger på en sekund. Vad är aktiviteten?",
           alt: [ { t: "50 Bq", s: "ratt", f: "aktivitet mäts i becquerel, och 1 Bq = ett sönderfall per sekund." },
@@ -116,7 +116,7 @@ Portal.uppgifter([
     /* ---------- Halveringstid ---------- */
 
     { id: "rad-halv-text", kapitel: "radioaktivitet", avsnitt: ["halvering"], titel: "Halveringstid – fyll i",
-      typ: "lucktext", nivaerPerArskurs: { 7: [2], 8: [1], 9: [0, 1] }, rullista: [0, 1],
+      typ: "lucktext", nivaerPerArskurs: { 7: [2], 8: [1], 9: [1] }, rullista: [0, 1],
       ordlista: ["hälften", "allt", "en fjärdedel", "halveringstid", "aktivitet", "slumpen"],
       varianter: [
         { text: "Tiden det tar tills [hälften|halva] av de radioaktiva kärnorna har sönderfallit kallas [halveringstid|halveringstiden]." },
@@ -169,7 +169,7 @@ Portal.uppgifter([
       ] },
 
     { id: "rad-kol14-flerval", kapitel: "radioaktivitet", avsnitt: ["kol14"], titel: "Kol-14-metoden – välj rätt",
-      typ: "flerval", nivaerPerArskurs: { 7: [3], 8: [2], 9: [1, 2] },
+      typ: "flerval", nivaerPerArskurs: { 7: [3], 8: [1,2], 9: [1] },
       varianter: [
         { fraga: "Varför minskar mängden kol-14 i ett träd efter att det har dött?",
           alt: [ { t: "Trädet tar inte upp nytt kol, och kol-14 sönderfaller", s: "ratt", f: "när trädet lever ersätts kol-14 hela tiden. När det dör sönderfaller kol-14 utan att nytt kommer till." },
