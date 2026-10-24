@@ -46,7 +46,7 @@ function elektronhopp(upp, farg) {
     : `<circle cx="${x}" cy="${y}" r="11" fill="url(#gE)"/><text x="${x}" y="${y + 5}" text-anchor="middle" font-size="16" font-weight="900" fill="#fff">−</text>`;
   const vag = (x1, y, x2) => { const n = 6, dx = (x2 - x1) / (n * 2); let d = `M${x1} ${y}`;
     for (let i = 0; i < n * 2; i++) d += ` q${dx / 2} ${i % 2 ? 10 : -10} ${dx} 0`; return d + ` l${x2 > x1 ? 12 : -12} 0`; };
-  let g = `<svg viewBox="0 0 600 360" role="img" aria-label="${upp ? "En foton tas upp och elektronen hoppar till ett skal längre ut" : "Elektronen hoppar till ett skal närmare kärnan och skickar ut ljus"}">
+  let g = `<svg viewBox="0 0 600 330" role="img" aria-label="${upp ? "En foton tas upp och elektronen hoppar till ett skal längre ut" : "Elektronen hoppar till ett skal närmare kärnan och skickar ut ljus"}">
     <defs><marker id="hoppil" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0L10 5L0 10z" fill="var(--ink)"/></marker>
     <marker id="${id}" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0L10 5L0 10z" fill="${fc}"/></marker></defs>`;
   R.forEach((r, i) => { g += `<circle cx="${cx}" cy="${cy}" r="${r}" fill="none" stroke="var(--shell)" stroke-width="5"/>`;
@@ -64,9 +64,7 @@ function elektronhopp(upp, farg) {
   g += upp ? `<path d="${vag(575, wy, sx + 30)}" fill="none" stroke="${fc}" stroke-width="3.5" stroke-linecap="round" marker-end="url(#${id})"/>`
            : `<path d="${vag(ex + 22, wy, 560)}" fill="none" stroke="${fc}" stroke-width="3.5" stroke-linecap="round" marker-end="url(#${id})"/>`;
   g += `<text x="455" y="${wy - 26}" text-anchor="middle" font-size="19" font-weight="900" fill="${fc}">${upp ? "Ljus tas upp" : "Ljus skickas ut"}</text>
-    <text x="455" y="${wy + 36}" text-anchor="middle" font-size="14" fill="var(--muted)">(en foton)</text>
-    <text x="455" y="290" text-anchor="middle" font-size="15" font-weight="800" fill="var(--ink)">${upp ? "Elektronen får energi och" : "Elektronen hoppar till ett skal"}</text>
-    <text x="455" y="310" text-anchor="middle" font-size="15" font-weight="800" fill="var(--ink)">${upp ? "hoppar till ett skal längre ut" : "närmare kärnan och avger energi"}</text></svg>`;
+    <text x="455" y="${wy + 36}" text-anchor="middle" font-size="14" fill="var(--muted)">(en foton)</text></svg>`;
   return `<div class="ritning hopp">${g}</div>`;
 }
 
