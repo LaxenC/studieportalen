@@ -30,7 +30,7 @@ Portal.uppgifter([
       ] },
 
     { id: "rad-historia-flerval", kapitel: "radioaktivitet", avsnitt: ["historia"], titel: "Radioaktivitetens historia – välj rätt",
-      typ: "flerval", nivaerPerArskurs: { 7:[1,2] 8: [1], 9: [1] },
+      typ: "flerval", nivaerPerArskurs: { 7:[1,2], 8: [1], 9: [1] },
       varianter: [
         { fraga: "Vem gav strålningen namnet radioaktivitet?",
           alt: [ { t: "Marie och Pierre Curie", s: "ratt", f: "de upptäckte polonium och radium 1898 och gav strålningen ett namn." },
