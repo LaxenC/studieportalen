@@ -37,14 +37,14 @@ Bild: Synligt ljus skapas när energi frigörs när en elektron hoppar från ett
 
 Vilken färg ljuset får beror på hur stor mycket energi som frisläpps,  mycket energi innebär högre frekvens vilket ger blått ljus, medan en mindre energi ger rött ljus.
 
- ### Röntgenstrålning
+### Röntgenstrålning
 Röntgenstrålning är en energirik elektromagnetisk strålning som kan ta sig igenom mjukdelar, som muskler, men tas upp (absorberas) mer av skelettet.
 ![elektronhopp](bilder/rontgen.svg)
 Bild: Röntgen bild på en hand
 
 Den används inom sjukvården för att ta bilder av kroppens inre. På röntgenbilden syns skelettet vitt eftersom det stoppar fler röntgenstrålar, medan mjukdelar syns mörkare.
 
- ### Gammastrålning (γ)
+### Gammastrålning (γ)
  Fotoner med mycket hög energi som sänds ut från atomkärnan, ofta i samband med partikelstrålning.
  Används inom sjukvården vid cancerbehandling.
 
@@ -69,8 +69,8 @@ Atomkärnan skickar ut en **heliumkärna**: 2 protoner och 2 neutroner.
 
 Kärnan förlorar 2 protoner och 2 neutroner. Atomnumret minskar med 2 och masstalet med 4, så det blir ett annat ämne.
 
-> **Exempel:**
-> :::rad
+>**Exempel:**
+>:::rad
 > Uran-235 som har 92 protoner (atomnummer =92) och 143 neutroner (masstal,235 - atomnummer,92 = 143)  [[nota 235 92 U]]
 >:::
 > 
