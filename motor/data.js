@@ -43,7 +43,7 @@ async function laddaOmraden() {
     a.omradeObj = [];
     for (const id of a.omraden || []) {
       Portal._amne = a.id; Portal._senaste = null;
-      await laddaSkript(`${a.id}/${id}/omrade.js`);
+      await laddaSkript(`${a.id}/${id}/omrade.js?v=` + Date.now().toString(36).slice(0, -3));
       const o = Portal.omraden[id];
       if (o) a.omradeObj.push(o); else Portal._fel.push(`Arbetsområdet ${a.id}/${id} saknar omrade.js`);
     }
