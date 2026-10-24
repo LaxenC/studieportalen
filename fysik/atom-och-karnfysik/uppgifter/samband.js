@@ -57,7 +57,6 @@ Portal.uppgifter([
        { id: "sam-begrepp-para", kapitel: "samband", titel: "Isotop, ämne, jon – para begrepp",
       typ: "para", nivaerPerArskurs : {7:[2], 8:[1], 9:[1]},
       varianter: [
-       varianter: [
         { rubrik: "Para ihop atomnotationen med rätt namn.",
           par: [["ämne", "bestäms av antal protoner"], ["isotop", "bestäms av antalet neutroner"], ["isotop", "bestäms av antalet elektroner"]] }
       ] },
