@@ -81,7 +81,7 @@ Portal.uppgifter([
       ] },
 
     { id: "str-typer", kapitel: "stralning", titel: "Typer av strålning – fyll i begrepp",
-      typ: "lucktext", nivaer: nivaerPerArskurs: {7:2, 8:[1,2], 9:[1]}, rullista: [0],
+      typ: "lucktext", nivaerPerArskurs: {7:2, 8:[1,2], 9:[1]}, rullista: [0],
       ordlista: ["synligt ljus", "UV-strålning", "röntgenstrålning", "gammastrålning", "alfastrålning", "betastrålning", "elektromagnetisk", "partikelstrålning"],
       varianter: [
         { text: `[*${EM}], [*${EM}], [*${EM}] och [*${EM}] är exempel på elektromagnetisk strålning. [*${PARTIKEL}] och [*${PARTIKEL}] är exempel på partikelstrålning.`,
