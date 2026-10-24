@@ -52,7 +52,7 @@ Portal.uppgifter([
         { text: "Vid [elektromagnetisk strålning|elektromagnetisk] är det fotoner som överför energin. Vid [partikelstrålning|partikel strålning] är det delar av atomkärnan som överför energin." }
       ] },
 
-    { id: "str-bestar", kapitel: "stralning" titel: "Vad består strålningen av? – fyll i begrepp",
+    { id: "str-bestar", kapitel: "stralning", titel: "Vad består strålningen av? – fyll i begrepp",
       typ: "lucktext", nivaer: [0, 1], rullista: [0],
       ordlista: ["betapartiklar", "alfapartiklar", "fotoner", "elektroner", "heliumkärnor", "elektromagnetiska vågor"],
       varianter: [

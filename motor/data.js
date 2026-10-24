@@ -30,7 +30,11 @@ const Portal = {
 function laddaSkript(src) {
   return new Promise(res => {
     const s = document.createElement("script"); s.src = src;
-    s.onload = () => res(true);
+    const fil = src.split("?")[0];
+    // Skrivfel i filen (t.ex. glömt kommatecken) fångas här
+    const fel = e => { if (e.filename && e.filename.split("?")[0].endsWith(fil)) Portal._fel.push(`Skrivfel i ${fil} rad ${e.lineno}: ${e.message.replace(/^Uncaught /, "")}`); };
+    window.addEventListener("error", fel);
+    s.onload = () => { window.removeEventListener("error", fel); res(true); };
     s.onerror = () => { Portal._fel.push("Kunde inte läsa " + src); res(false); };
     document.head.appendChild(s);
   });
