@@ -29,7 +29,7 @@ Portal.uppgifter([
                { namn: "kväve", X: "N", A: 14, Z: 7 },  { namn: "syre", X: "O", A: 16, Z: 8 } ],
       varianter: [ { mal: "isotop" }, { mal: "jon+" }, { mal: "jon-" }, { mal: "amne" } ] },
 
-    { id: "sam-vate", kapitel: "samband", avsnitt: ["isotop"], titel: "Vätets isotoper",
+    { id: "sam-vate", kapitel: "samband", titel: "Vätets isotoper",
       typ: "isotoptabell", nivaer: [1],
       varianter: [
         { isotoper: [ { namn: "Protium", sub: "Väte-1", Z: 1, A: 1 },
@@ -37,7 +37,7 @@ Portal.uppgifter([
                       { namn: "Tritium", sub: "Väte-3", Z: 1, A: 3 } ] }
       ] },
 
-    { id: "sam-vate-namn", kapitel: "samband", avsnitt: ["isotop"], titel: "Vätets isotoper – namn",
+    { id: "sam-vate-namn", kapitel: "samband", titel: "Vätets isotoper – namn",
       typ: "para", nivaer: [1],
       // vänsterled kan vara text, "bild:…", "not:masstal,atomnummer,beteckning" eller "atom:p,n,e"
       varianter: [
