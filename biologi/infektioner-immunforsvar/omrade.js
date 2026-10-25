@@ -15,7 +15,7 @@ Portal.omrade({
   id: "infektioner-immunforsvar",
   namn: "Infektioner och immunförsvar",
   text: "Bakterier och virus, infektioner och smittspridning, kroppens försvar, vaccin och antibiotika.",
-  bild: '<img src="biologi/infektioner-immunforsvar/bilder/kort.svg" alt="" style="width:120px;height:auto">',
+  bild: '<img src="biologi/infektioner-immunforsvar/bilder/kort.svg?v=2" alt="" style="width:120px;height:auto">',
   arskurs: [7, 8, 9],
   kapitel: [
     { id: "mikrober", namn: "Bakterier och virus", farg: "green",

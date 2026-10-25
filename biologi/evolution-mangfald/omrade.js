@@ -9,7 +9,7 @@ Portal.omrade({
   id: "evolution-mangfald",
   namn: "Evolution och livets mångfald",
   text: "Livets uppkomst och utveckling, evolutionen och livets mångfald – från de minsta mikroorganismerna.",
-  bild: '<img src="biologi/evolution-mangfald/bilder/kort.svg" alt="" style="width:120px;height:auto">',
+  bild: '<img src="biologi/evolution-mangfald/bilder/kort.svg?v=2" alt="" style="width:120px;height:auto">',
   arskurs: [7, 8, 9],
   kapitel: [
     { id: "mikroorganismer", namn: "Mikroorganismer", farg: "green",
