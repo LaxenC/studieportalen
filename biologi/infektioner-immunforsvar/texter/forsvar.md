@@ -128,8 +128,8 @@ Om det medfödda försvaret inte räcker startar det **förvärvade** (specifika
 
 Varje patogen har egna kännetecken på sin yta – **antigener**. Det är med hjälp av antigenerna som det förvärvade försvaret känner igen just den patogenen. Förenklat sker det i fyra steg:
 
-![immunsvaret](bilder/immunsvar.svg)
-Bild: Immunsvaret i tre steg.
+![immunsvaret](bilder/immunsvar.svg?v=3)
+Bild: Immunsvaret i fyra steg.
 
 1. **Ätarceller** känner igen patogenen på ett allmänt sätt och äter upp den. Sedan visar de upp antigenerna på sin yta – som ett "efterlysningsfoto".
 2. **T-hjälparceller** känner igen antigenerna och talar om för resten av försvaret vad det ska hålla utkik efter.
@@ -145,17 +145,17 @@ Allt det här tar några dagar. Därför hinner man ofta bli sjuk första gånge
 > **minnesceller** – celler som kommer ihåg en patogen så att försvaret går snabbare nästa gång
 
 ::: fördjupning åk 7 Immunsvaret steg för steg
-Det finns många fler celler och steg i immunsvaret, och det är mycket komplicerat. Här är de viktigaste stegen, förenklat:
-1. **Igenkänning** – ätarceller (makrofager och dendritiska celler) äter upp patogenen och visar upp bitar av den – **antigener** – på sin yta.
-2. **T-hjälparceller** känner igen antigenerna och skickar ut signalämnen som sätter igång resten av försvaret.
-3. **B-celler** aktiveras och blir till celler som tillverkar **antikroppar**.
-4. **Antikropparna** fastnar på patogenerna. De hindrar dem från att ta sig in i celler och märker ut dem så att ätarcellerna kan förstöra dem.
-5. **T-mördarceller** känner igen antigenerna på kroppens egna celler som blivit infekterade (till exempel av virus) och förstör dem. Varje T-cell känner bara igen ett enda antigen. T-mördarcellerna dödar genom att spruta in ett gift i cellen – på samma sätt dödar de även cancerceller.
-6. **Minnesceller** (minnes-B-celler och minnes-T-celler) bildas.
-7. När patogenerna är borta lugnar andra T-celler ner försvaret så att det inte blir för kraftigt.
-8. **Immunminne** – minnescellerna stannar kvar i kroppen.
+De fyra stegen ovan är förenklade. Det här händer också:
+- **Ätarcellerna** som visar upp antigener heter makrofager och dendritiska celler.
+- **T-hjälparcellerna** skickar ut signalämnen som sätter igång både B-cellerna och T-mördarcellerna.
+- **Antikropparna** hindrar också patogenerna från att ta sig in i kroppens celler.
+- **T-mördarceller** tar hand om patogener som redan har tagit sig in i en kroppscell, till exempel virus. Den infekterade cellen visar upp virusets antigener på sin yta. T-mördarcellerna känner igen dem och förstör cellen genom att spruta in ett gift. Varje T-cell känner bara igen ett enda antigen. På samma sätt dödar de även cancerceller.
+- **Bromsande T-celler** lugnar ner försvaret när patogenerna är borta, så att det inte blir för kraftigt.
+- **Minnescellerna** är av två slag: minnes-B-celler och minnes-T-celler.
 
-![immunsvaret i åtta steg](bilder/immunsvar-8steg.svg?v=2)
+Så här ser hela immunsvaret ut:
+
+![immunsvaret i åtta steg](bilder/immunsvar-8steg.svg?v=3)
 Bild: Immunsvaret steg för steg, förenklat.
 :::
 
