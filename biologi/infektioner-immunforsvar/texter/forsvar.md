@@ -4,78 +4,91 @@ kapitel: forsvar
 
 # Kroppens försvar
 
-Din kropp är i ständig kamp mot mikrober. Den har flera försvar – från huden längst ut till celler som kommer ihåg mikroberna i många år.
+Din kropp är i ständig kamp mot patogener. Den har flera försvar – från huden längst ut till celler som kommer ihåg patogenerna i många år.
 
 ## Översikt – kroppens försvar {#oversikt}
 
-Kroppens försvar mot pantogener kan delas in i två delar:
+Kroppens försvar mot patogener kan delas in i två delar:
 
-1. **Yttre försvar** – huden och slemhinnorna stänger ute mikroberna, så att de inte kommer in i kroppen.
-2. **Inre försvar** – om mikroberna ändå tar sig in tar våra inre delar över .
+1. **Yttre försvar** – huden och slemhinnorna stänger ute patogenerna, så att de inte kommer in i kroppen.
+2. **Inre försvar** – om patogenerna ändå tar sig in tar våra inre delar över.
 
-Kroppens fösvar som även kallas **immunförsvaret** delas i sin tur in i två delar:
-- Det **medfödda** (ospecifika) finns från födseln och reagerar snabbt på många olika mikrober.
-- Det **förvärvade** (specifika) lär sig känna igen specifika mikrober och bildar minnesceller som hjälper kroppen att bekämpa dem snabbare nästa gång.
+Kroppens försvar som även kallas **immunförsvaret** delas i sin tur in i två delar:
+- Det **medfödda** (ospecifika) finns från födseln och reagerar snabbt på många olika patogener.
+- Det **förvärvade** (specifika) lär sig känna igen specifika patogener och bildar minnesceller som hjälper kroppen att bekämpa dem snabbare nästa gång.
 
-![kroppens försvar](bilder/forsvar-oversikt.svg)
+Immunförsvaret arbetar hela tiden, inte bara när vi är sjuka. Det hjälper till att laga skador, städar undan döda celler och känner igen celler som har förändrats, till exempel cancerceller.
+
+![kroppens försvar](bilder/forsvar-oversikt.svg?v=2)
 Bild: Kroppens försvar delas in i ett yttre och ett inre försvar. Det inre försvaret – immunförsvaret – är medfött eller förvärvat.
 
 > **Begrepp**
-> **immunförsvaret** - kroppens försvar mot pantogener
-> **yttre försvar** – huden och slemhinnorna, som stänger ute mikroberna
-> **inre försvar** – immunförsvaret, som bekämpar mikrober som har tagit sig in i kroppen
-> **medfött försvar** – (ospecifikt) försvar  som finns från födseln och reagerar snabbt på många olika mikrober.
-> **förvärvat försvar** – (specifikt) försvar som lär sig känna igen en viss mikrob och kommer ihåg den
+> **immunförsvaret** - kroppens försvar mot patogener
+> **yttre försvar** – huden och slemhinnorna, som stänger ute patogenerna
+> **inre försvar** – immunförsvaret, som bekämpar patogener som har tagit sig in i kroppen
+> **medfött försvar** – (ospecifikt) försvar  som finns från födseln och reagerar snabbt på många olika patogener.
+> **förvärvat försvar** – (specifikt) försvar som lär sig känna igen en viss patogen och kommer ihåg den
+
 > **💬 Förklara så här** {.green}
 > *Varför kallas en del av immunförsvaret förvärvat?*<br>
-> Det *förvärvade försvaret* finns inte färdigt när vi föds. Kroppen lär sig känna igen varje mikrob först när den har träffat på den, och sparar det i *minnesceller*. **Därför** säger man att försvaret är förvärvat – det byggs upp under livet.
+> Det *förvärvade försvaret* finns inte färdigt när vi föds. Kroppen lär sig känna igen varje patogen först när den har träffat på den, och sparar det i *minnesceller*. **Därför** säger man att försvaret är förvärvat – det byggs upp under livet.
 
 > **Viktigt att komma ihåg**
 > - **immunförsvaret**: kroppens försvar
-> - **Yttre försvar**: huden och slemhinnorna stänger ute mikroberna.
+> - **Yttre försvar**: huden och slemhinnorna stänger ute patogenerna.
 > - **Inre försvar** = immunförsvaret. Det är **medfött** (ospecifikt) eller **förvärvat** (specifikt).
-> - Det medfödda försvaret reagerar likadant mot alla mikrober. Det förvärvade känner igen en viss mikrob.
+> - Det medfödda försvaret reagerar likadant mot alla patogener. Det förvärvade känner igen en viss patogen.
 
 ## Yttre försvar – hud och slemhinnor {#hud}
 
-Kroppens första försvar är det **yttre försvaret** – att stänga mikroberna ute.
+Kroppens första försvar är det **yttre försvaret** – att stänga patogenerna ute.
 
-- **Huden** är en tät mur som mikrober har svårt att ta sig igenom. Nyttiga bakterier på huden konkurrerar dessutom med de skadliga.
-- **Slemhinnor** finns i näsan, munnen, luftvägarna och tarmen. Slemmet fångar upp mikrober, och små hår i luftvägarna för ut slemmet.
+- **Huden** är en tät mur som patogener har svårt att ta sig igenom. Nyttiga bakterier på huden konkurrerar dessutom med de skadliga.
+- **Slemhinnor** finns i näsan, munnen, luftvägarna och tarmen. Slemmet fångar upp patogener, och små hår i luftvägarna – **flimmerhår** – för ut slemmet.
 - **Tårar och saliv** innehåller ämnen som bryter ner bakterier.
-- **Magsaften** är så sur att de flesta mikrober i maten dör. Magsaft är något som skapas i magsäcken det vill säga är inuti kroppen, men det räknas som ett ytrrefösvar eftersom den förhindrar att pantogenerna tar sig vidare in i kroppen.
+- **Magsaften** är så sur att de flesta patogener i maten dör. Magsaft är något som skapas i magsäcken det vill säga är inuti kroppen, men det räknas som ett yttre försvar eftersom den förhindrar att patogenerna tar sig vidare in i kroppen.
 
-Om huden går sönder, eller pantogenerna på något annat sätt tar sig in, blir det en **infektion**.
+Om huden går sönder, eller patogenerna på något annat sätt tar sig in, blir det en **infektion**.
 
 > **💬 Förklara så här** {.green}
 > *Varför kan ett sår bli infekterat?*<br>
-> *Huden* är en tät mur som stänger ute mikroberna. När huden går sönder får mikroberna en öppning in i kroppen. **Därför** kan de ta sig in, föröka sig och orsaka en *infektion*.
+> *Huden* är en tät mur som stänger ute patogenerna. När huden går sönder får patogenerna en öppning in i kroppen. **Därför** kan de ta sig in, föröka sig och orsaka en *infektion*.
 
 > **Viktigt att komma ihåg**
 > - Kroppens första försvar – det **yttre försvaret** – är **huden** och **slemhinnorna**.
-> - De stänger ute mikroberna innan de kommer in i kroppen.
+> - De stänger ute patogenerna innan de kommer in i kroppen.
 
 ## Medfött försvar – inflammation och ätarceller {#inflammation}
 
-När pantogenerna har tagit sig in startar kroppen direkt ett försvar som alltid ser likadant ut, oavsett vilken pantogen det är. Det kallas det **medfödda immunförsvaret** – eller det ospecifika försvaret. Det är en del av kroppens inre försvar.
+När patogenerna har tagit sig in startar kroppen direkt ett försvar som alltid ser likadant ut, oavsett vilken patogen det är. Det kallas det **medfödda immunförsvaret** – eller det ospecifika försvaret. Det är en del av kroppens inre försvar.
 
-Området blir **inflammerat** – rött, svullet, varmt och ömt. Det beror på att mer blod strömmar dit, med vita blodkroppar som ska bekämpa mikroberna.
+Området blir **inflammerat** – rött, svullet, varmt och ömt. Det beror på att mer blod strömmar dit, med vita blodkroppar som ska bekämpa patogenerna.
 
-**Vita blodkroppar** är kroppens försvarsceller. En sorts vita blodkroppar är **ätarceller**. De äter upp pantogener och döda celler. Gult var i ett sår är ett tecken på att ätarcellerna har arbetat. <br>
+Inflammation startar inte bara vid en infektion. Även en skada, som en sticka i fingret eller en överansträngd muskel, ger inflammation. Då kommer de vita blodkropparna för att städa undan och laga skadan.
+
+Vid en kraftig inflammation kan man få **feber**. Ämnen från den inflammerade vävnaden påverkar hjärnans temperaturcentrum, som då höjer kroppens temperatur.
+
+**Vita blodkroppar** är kroppens försvarsceller. En sorts vita blodkroppar är **ätarceller** – de kallas också makrofager eller storätande celler. De äter upp patogener och döda celler. Ätarcellerna känner igen många olika sorters patogener, men de bildar inget minne. Gult var i ett sår är ett tecken på att ätarcellerna har arbetat. <br>
 Varet som bildas i ett sår består av döda vita blodkroppar, döda patogener och rester av skadade celler och vävnad. Den gula färgen kommer bland annat från de döda cellerna.
 
 > **Begrepp**
 > **vita blodkroppar** – kroppens försvarsceller
-> **ätarceller** – en typ av vita blodkroppar som äter upp mikrober och döda celler
+> **feber** – när kroppens temperatur höjs, till exempel vid en kraftig inflammation
+> **ätarceller** – (makrofager) en typ av vita blodkroppar som äter upp patogener och döda celler
 
 > **💬 Förklara så här** {.green}
 > *Varför blir det rött och varmt runt ett sår?*<br>
-> Kroppen skickar mer blod till området för att få dit *vita blodkroppar* som ska bekämpa mikroberna. **Därför** blir området rött, varmt och svullet – en *inflammation*.
+> Kroppen skickar mer blod till området för att få dit *vita blodkroppar* som ska bekämpa patogenerna. **Därför** blir området rött, varmt och svullet – en *inflammation*.
+
+> **💬 Förklara så här** {.green}
+> *Varför kan man få feber när man är sjuk?*<br>
+> När kroppen bekämpar patogener uppstår en *inflammation*. Vid en kraftig inflammation når ämnen från vävnaden hjärnans temperaturcentrum. **Därför** höjs kroppens temperatur och man får *feber*.
 
 > **Viktigt att komma ihåg**
-> - Det **medfödda immunförsvaret** reagerar likadant mot alla mikrober.
-> - **Inflammation**: rött, svullet, varmt och ömt.
-> - **Ätarceller** en viss typ av vitablodkroppar som äter upp mikroberna.
+> - Det **medfödda immunförsvaret** reagerar likadant mot alla patogener.
+> - **Inflammation**: rött, svullet, varmt och ömt. Den kan komma både av infektioner och av skador.
+> - Vid en kraftig inflammation kan man få **feber**.
+> - **Ätarceller** en viss typ av vita blodkroppar som äter upp patogenerna.
 
 ## Lymfsystemet {#lymfsystemet}
 
@@ -97,13 +110,13 @@ Bild: Lymfsystemet i kroppen och en förstorad lymfknuta. I lymfknutan undersök
 Flera organ hör till immunförsvaret och lymfsystemet:
 - **Benmärgen** – här tillverkas de vita blodkropparna.
 - **Brässen** – här "tränas" T-cellerna.
-- **Mjälten** – filtrerar blodet och tar bort gamla blodkroppar och mikrober.
-- **Tonsillerna** (halsmandlarna) – fångar mikrober som kommer in genom munnen.
+- **Mjälten** – filtrerar blodet och tar bort gamla blodkroppar och patogener.
+- **Tonsillerna** (halsmandlarna) – fångar patogener som kommer in genom munnen.
 :::
 
 > **💬 Förklara så här** {.green}
 > *Varför kan lymfknutorna på halsen bli svullna när man är sjuk?*<br>
-> I *lymfknutorna* samlas *vita blodkroppar* som bekämpar mikroberna. När man är sjuk arbetar försvaret där och många vita blodkroppar samlas. **Därför** blir lymfknutorna svullna.
+> I *lymfknutorna* samlas *vita blodkroppar* som bekämpar patogenerna. När man är sjuk arbetar försvaret där och många vita blodkroppar samlas. **Därför** blir lymfknutorna svullna.
 
 > **Viktigt att komma ihåg**
 > - **Lymfsystemet** transporterar **lymfa** och vita blodkroppar.
@@ -137,7 +150,7 @@ Det finns många fler celler och steg i immunsvaret, och det är mycket komplice
 2. **T-hjälparceller** känner igen antigenerna och skickar ut signalämnen som sätter igång resten av försvaret.
 3. **B-celler** aktiveras och blir till celler som tillverkar **antikroppar**.
 4. **Antikropparna** fastnar på patogenerna. De hindrar dem från att ta sig in i celler och märker ut dem så att ätarcellerna kan förstöra dem.
-5. **T-mördarceller** känner igen antigenerna på kroppens egna celler som blivit infekterade (till exempel av virus) och förstör dem.
+5. **T-mördarceller** känner igen antigenerna på kroppens egna celler som blivit infekterade (till exempel av virus) och förstör dem. Varje T-cell känner bara igen ett enda antigen. T-mördarcellerna dödar genom att spruta in ett gift i cellen – på samma sätt dödar de även cancerceller.
 6. **Minnesceller** (minnes-B-celler och minnes-T-celler) bildas.
 7. När patogenerna är borta lugnar andra T-celler ner försvaret så att det inte blir för kraftigt.
 8. **Immunminne** – minnescellerna stannar kvar i kroppen.
@@ -160,6 +173,12 @@ Bild: Immunsvaret steg för steg, förenklat.
 Minnescellerna stannar kvar i kroppen efter att du har blivit frisk. Om samma patogen kommer tillbaka känner de igen den direkt. Då kan försvaret tillverka antikroppar mycket snabbare – ofta så snabbt att du inte ens märker att du blivit smittad. Du har blivit **immun**.
 
 Mot vissa sjukdomar, till exempel vattkoppor, blir man immun hela livet. Mot förkylning och influensa fungerar det sämre, eftersom de virusen hela tiden förändrar sig så att minnescellerna inte känner igen dem.
+
+::: fördjupning åk 7 Skydd från mamman – och ett immunförsvar som tränas
+Redan i magen får barnet **antikroppar** från mamman, och efter födseln får det fler genom bröstmjölken. De skyddar barnet de första månaderna. Men barnets eget förvärvade försvar måste byggas upp genom att det träffar på virus och bakterier – och genom vaccin.
+
+Därför är små barn ofta sjuka. Under de första åren har ett barn i genomsnitt 6–8 infektioner per år. Efter fem års ålder är det bara 2–3 per år, eftersom immunförsvaret har hunnit bygga upp många minnesceller.
+:::
 
 > **Begrepp**
 > **immun** – att kroppen har minnesceller mot en sjukdom och inte blir sjuk av den igen

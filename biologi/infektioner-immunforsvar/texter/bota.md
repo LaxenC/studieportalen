@@ -10,9 +10,9 @@ Med vaccin kan vi förebygga sjukdomar innan de bryter ut, och med antibiotika k
 
 Ett **vaccin** är ett preparat som tränar immunförsvaret att bekämpa en sjukdom – **utan att du blir sjuk**. Så här fungerar det:
 
-1. **Ofarliga delar** – vaccinet innehåller försvagade eller döda mikrober, eller bara delar av dem. De kan inte göra dig sjuk.
+1. **Ofarliga delar** – vaccinet innehåller försvagade eller döda patogener, eller bara delar av dem. De kan inte göra dig sjuk.
 2. **Immunsvar** – immunförsvaret känner igen dem som främmande och tillverkar antikroppar.
-3. **Minnesceller** – efteråt finns minnesceller kvar som kommer ihåg mikroben.
+3. **Minnesceller** – efteråt finns minnesceller kvar som kommer ihåg patogenen.
 4. **Skydd** – om du senare smittas av den riktiga sjukdomen känner minnescellerna igen den direkt, och försvaret slår till innan du hinner bli allvarligt sjuk.
 
 Enkelt uttryckt får kroppen **träna** på att bekämpa sjukdomen, så att den är beredd om den riktiga smittan kommer.
@@ -28,7 +28,7 @@ På 1790-talet märkte den engelske läkaren **Edward Jenner** att mjölkerskor 
 
 > **💬 Förklara så här** {.green}
 > *Hur skyddar ett vaccin mot en sjukdom?*<br>
-> Ett *vaccin* innehåller ofarliga delar av en mikrob. Immunförsvaret tillverkar *antikroppar* och bildar *minnesceller*. **Därför** känner kroppen igen den riktiga mikroben direkt om man smittas senare, och man blir oftast inte sjuk.
+> Ett *vaccin* innehåller ofarliga delar av en patogen. Immunförsvaret tillverkar *antikroppar* och bildar *minnesceller*. **Därför** känner kroppen igen den riktiga patogenen direkt om man smittas senare, och man blir oftast inte sjuk.
 
 > **Viktigt att komma ihåg**
 > - Ett **vaccin** tränar immunförsvaret utan att man blir sjuk.
@@ -91,3 +91,20 @@ För att minska resistensen ska antibiotika bara användas när det verkligen be
 > - Antibiotika är en nyckel som passar i ett lås i bakteriens cell, till exempel cellväggen eller fabrikerna. Virus saknar låset.
 > - Bakterier kan bli **resistenta** om antibiotika används för mycket.
 > - Använd antibiotika bara när det behövs.
+
+## Så stärker du ditt immunförsvar {#starka}
+
+Du kan inte "träna upp" immunförsvaret på ett gym, men du kan ge det bra förutsättningar att arbeta:
+
+- **Vaccin** – ger skydd mot vissa sjukdomar, till exempel mässling, polio och stelkramp.
+- **Varierad mat** – immunförsvarets celler behöver bland annat vitaminer och mineraler för att fungera.
+- **Rörelse och träning** – blodet cirkulerar bättre, och fysisk aktivitet minskar inflammation i kroppen. Rörelse kan också minska stress och göra att man sover bättre.
+- **Sömn och vila** – när du sover får kroppen tid att återhämta sig.
+- **God hygien** – att tvätta händerna minskar risken att patogener kommer in i kroppen alls.
+
+> **💬 Förklara så här** {.green}
+> *Hur kan träning hjälpa immunförsvaret?*<br>
+> När man rör sig cirkulerar blodet bättre, så att de *vita blodkropparna* lättare kommer dit de behövs. Träning minskar också inflammation och stress och gör att man sover bättre. **Därför** får immunförsvaret bättre förutsättningar att arbeta.
+
+> **Viktigt att komma ihåg**
+> - Vaccin, varierad mat, rörelse, sömn och god hygien hjälper immunförsvaret.

@@ -5,7 +5,7 @@
      id : unikt namn · kapitel : kapitlets id · avsnitt : avsnitt i texten
      nivaer : nivå [0]–[3] · nivaerPerArskurs : annan nivå per årskurs
      rullista : nivåer där eleven väljer i en rullista
-   Avsnitt: vaccin, antibiotika
+   Avsnitt: vaccin, antibiotika, starka
    ===================================================================== */
 Portal.uppgifter([
 
@@ -14,7 +14,7 @@ Portal.uppgifter([
       ordlista: ["immunförsvaret", "minnesceller", "antikroppar", "ofarliga", "farliga", "sjuk", "immun"],
       varianter: [
         { text: "Ett vaccin tränar [immunförsvaret] att bekämpa en sjukdom utan att man blir [sjuk]." },
-        { text: "Vaccinet innehåller [ofarliga] delar av mikroben. Kroppen tillverkar [antikroppar] och bildar [minnesceller]." },
+        { text: "Vaccinet innehåller [ofarliga] delar av patogenen. Kroppen tillverkar [antikroppar] och bildar [minnesceller]." },
         { text: "Efter vaccinationen har man blivit [immun] mot sjukdomen." }
       ] },
 
@@ -37,7 +37,7 @@ Portal.uppgifter([
       typ: "para", nivaer: [1, 2],
       varianter: [
         { rubrik: "Para ihop steget med vad som händer.",
-          par: [["Steg 1", "Ofarliga delar av mikroben sprutas in"], ["Steg 2", "Immunförsvaret tillverkar antikroppar"],
+          par: [["Steg 1", "Ofarliga delar av patogenen sprutas in"], ["Steg 2", "Immunförsvaret tillverkar antikroppar"],
                 ["Steg 3", "Minnesceller bildas"], ["Steg 4", "Den riktiga smittan känns igen direkt"]] }
       ] },
 
@@ -77,5 +77,12 @@ Portal.uppgifter([
         { pst: [["Antibiotika fungerar mot virus.", false], ["Ett vaccin kan skydda mot sjukdomar orsakade av både virus och bakterier.", true],
                 ["Man ska sluta ta antibiotika så fort man mår bättre.", false], ["Om många är vaccinerade skyddas även de som inte kan vaccinera sig.", true],
                 ["Antibiotika dödar även kroppens nyttiga bakterier.", true]] }
+      ] },
+    { id: "bot-starka", kapitel: "bota", avsnitt: ["starka"], titel: "Stärk immunförsvaret – sortera",
+      typ: "sortera", nivaer: [0, 1],
+      varianter: [
+        { grupper: ["Hjälper immunförsvaret", "Hjälper inte"],
+          saker: [["Sova ordentligt", 0], ["Äta varierad mat", 0], ["Röra på sig", 0], ["Vaccinera sig", 0], ["Tvätta händerna", 0],
+                  ["Sova för lite", 1], ["Ta antibiotika mot förkylning", 1], ["Sitta still hela dagarna", 1]] }
       ] }
 ]);

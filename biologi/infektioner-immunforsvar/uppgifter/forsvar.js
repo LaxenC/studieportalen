@@ -13,20 +13,20 @@ Portal.uppgifter([
       typ: "sortera", nivaer: [1, 2],
       varianter: [
         { grupper: ["Yttre försvar", "Medfött försvar", "Förvärvat försvar"],
-          saker: [["Huden", 0], ["Slemhinnor", 0], ["Sur magsaft", 0], ["Inflammation", 1], ["Ätarceller", 1], ["Reagerar likadant mot alla mikrober", 1],
-                  ["Antikroppar", 2], ["Minnesceller", 2], ["Känner igen en viss mikrob", 2]] }
+          saker: [["Huden", 0], ["Slemhinnor", 0], ["Sur magsaft", 0], ["Inflammation", 1], ["Ätarceller", 1], ["Reagerar likadant mot alla patogener", 1],
+                  ["Antikroppar", 2], ["Minnesceller", 2], ["Känner igen en viss patogen", 2]] }
       ] },
 
     { id: "for-oversikt-flerval", kapitel: "forsvar", avsnitt: ["oversikt"], titel: "Kroppens försvar – välj rätt",
       typ: "flerval", nivaer: [0, 1],
       varianter: [
         { fraga: "Vad är kroppens inre försvar?",
-          alt: [ { t: "Immunförsvaret", s: "ratt", f: "det inre försvaret bekämpar mikrober som har tagit sig in i kroppen." },
+          alt: [ { t: "Immunförsvaret", s: "ratt", f: "det inre försvaret bekämpar patogener som har tagit sig in i kroppen." },
                  { t: "Huden", s: "fel", f: "huden är en del av det yttre försvaret." },
                  { t: "Slemhinnorna", s: "fel", f: "slemhinnorna är en del av det yttre försvaret." },
                  { t: "Vaccin", s: "fel", f: "vaccin tränar immunförsvaret, men det är inte kroppens eget försvar." } ] },
         { fraga: "Vad är skillnaden mellan det medfödda och det förvärvade försvaret?",
-          alt: [ { t: "Det medfödda reagerar likadant mot alla mikrober – det förvärvade känner igen en viss mikrob", s: "ratt", f: "därför kallas de också ospecifikt och specifikt." },
+          alt: [ { t: "Det medfödda reagerar likadant mot alla patogener – det förvärvade känner igen en viss patogen", s: "ratt", f: "därför kallas de också ospecifikt och specifikt." },
                  { t: "Det medfödda finns i huden – det förvärvade i blodet", s: "fel", f: "båda är en del av det inre försvaret." },
                  { t: "Det förvärvade är snabbast", s: "fel", f: "det förvärvade tar några dagar första gången – det medfödda reagerar direkt." },
                  { t: "Det finns ingen skillnad", s: "fel", f: "det medfödda är ospecifikt, det förvärvade är specifikt." } ] }
@@ -36,20 +36,20 @@ Portal.uppgifter([
       typ: "para", nivaer: [0, 1, 2],
       varianter: [
         { rubrik: "Para ihop försvaret med vad det gör.",
-          par: [["Huden och slemhinnorna", "Stänger ute mikroberna"], ["Ätarceller", "Äter upp mikrober och döda celler"],
-                ["Antikroppar", "Fastnar på mikroberna och märker ut dem"], ["Minnesceller", "Kommer ihåg mikroben till nästa gång"]] }
+          par: [["Huden och slemhinnorna", "Stänger ute patogenerna"], ["Ätarceller", "Äter upp patogener och döda celler"],
+                ["Antikroppar", "Fastnar på patogenerna och märker ut dem"], ["Minnesceller", "Kommer ihåg patogenen till nästa gång"]] }
       ] },
 
     { id: "for-hud-flerval", kapitel: "forsvar", avsnitt: ["hud", "inflammation"], titel: "Första försvaret – välj rätt",
       typ: "flerval", nivaer: [0, 1],
       varianter: [
-        { fraga: "Vilket är kroppens första försvar mot mikrober?",
-          alt: [ { t: "Huden och slemhinnorna", s: "ratt", f: "de stänger ute mikroberna innan de kommer in i kroppen." },
-                 { t: "Antikropparna", s: "fel", f: "antikroppar bildas först när mikroberna redan har tagit sig in." },
+        { fraga: "Vilket är kroppens första försvar mot patogener?",
+          alt: [ { t: "Huden och slemhinnorna", s: "ratt", f: "de stänger ute patogenerna innan de kommer in i kroppen." },
+                 { t: "Antikropparna", s: "fel", f: "antikroppar bildas först när patogenerna redan har tagit sig in." },
                  { t: "Minnescellerna", s: "fel", f: "minnesceller bildas efter ett immunsvar." },
                  { t: "Vaccin", s: "fel", f: "vaccin är något vi tar – inte kroppens eget första försvar." } ] },
         { fraga: "Ett sår blir rött, svullet, varmt och ömt. Vad kallas det?",
-          alt: [ { t: "Inflammation", s: "ratt", f: "mer blod strömmar till med vita blodkroppar som bekämpar mikroberna." },
+          alt: [ { t: "Inflammation", s: "ratt", f: "mer blod strömmar till med vita blodkroppar som bekämpar patogenerna." },
                  { t: "Allergi", s: "fel", f: "allergi är när immunförsvaret överreagerar mot något ofarligt." },
                  { t: "Vaccination", s: "fel", f: "vaccination tränar immunförsvaret." },
                  { t: "Resistens", s: "fel", f: "resistens är när bakterier tål antibiotika." } ] }
@@ -68,7 +68,7 @@ Portal.uppgifter([
       typ: "para", nivaerPerArskurs: { 7: [3], 8: [2], 9: [1, 2] },
       varianter: [
         { rubrik: "Para ihop organet med vad det gör.",
-          par: [["Benmärgen", "Tillverkar vita blodkroppar"], ["Mjälten", "Filtrerar blodet"], ["Tonsillerna", "Fångar mikrober som kommer in genom munnen"],
+          par: [["Benmärgen", "Tillverkar vita blodkroppar"], ["Mjälten", "Filtrerar blodet"], ["Tonsillerna", "Fångar patogener som kommer in genom munnen"],
                 ["Brässen", "Här tränas T-cellerna"]] }
       ] },
 
@@ -76,7 +76,7 @@ Portal.uppgifter([
       typ: "lucktext", nivaer: [1], rullista: [1],
       ordlista: ["ätarceller", "antikroppar", "minnesceller", "röda blodkroppar", "antibiotika"],
       varianter: [
-        { text: "Först äter [ätarceller|ätarcellerna] upp mikroberna. Sedan tillverkas [antikroppar] som märker ut dem. Till sist bildas [minnesceller] som kommer ihåg mikroben." }
+        { text: "Först äter [ätarceller|ätarcellerna] upp patogenerna. Sedan tillverkas [antikroppar] som märker ut dem. Till sist bildas [minnesceller] som kommer ihåg patogenen." }
       ] },
 
     { id: "for-immunsvar-flerval", kapitel: "forsvar", avsnitt: ["immunsvar", "minne"], titel: "Immunsvar och immunminne – välj rätt",
@@ -87,11 +87,11 @@ Portal.uppgifter([
                  { t: "Viruset finns inte kvar i världen", s: "fel", f: "vattkoppor finns fortfarande – men kroppen känner igen viruset." },
                  { t: "Huden har blivit tjockare", s: "fel", f: "det är immunminnet – minnescellerna – som skyddar." },
                  { t: "Antibiotika skyddar en", s: "fel", f: "vattkoppor är ett virus, och antibiotika fungerar inte mot virus." } ] },
-        { fraga: "Varför hinner man ofta bli sjuk första gången man smittas av en ny mikrob?",
+        { fraga: "Varför hinner man ofta bli sjuk första gången man smittas av en ny patogen?",
           alt: [ { t: "Det tar några dagar för kroppen att tillverka rätt antikroppar", s: "ratt", f: "andra gången går det mycket snabbare tack vare minnescellerna." },
                  { t: "Kroppen har inga vita blodkroppar från början", s: "fel", f: "vita blodkroppar finns hela tiden – men rätt antikroppar måste tillverkas." },
-                 { t: "Huden släpper alltid in mikrober första gången", s: "fel", f: "huden fungerar lika bra varje gång." },
-                 { t: "Minnescellerna är trötta", s: "fel", f: "första gången finns det inga minnesceller mot just den mikroben." } ] },
+                 { t: "Huden släpper alltid in patogener första gången", s: "fel", f: "huden fungerar lika bra varje gång." },
+                 { t: "Minnescellerna är trötta", s: "fel", f: "första gången finns det inga minnesceller mot just den patogenen." } ] },
         { fraga: "Varför kan man bli förkyld varje år?",
           alt: [ { t: "Förkylningsvirus förändrar sig, så minnescellerna känner inte igen dem", s: "ratt", f: "och det finns dessutom hundratals olika förkylningsvirus." },
                  { t: "Man blir aldrig immun mot något", s: "fel", f: "mot många sjukdomar blir man immun – men förkylningsvirus förändras." },
@@ -103,14 +103,28 @@ Portal.uppgifter([
       typ: "para", nivaerPerArskurs: { 7: [3], 8: [2], 9: [1, 2] },
       varianter: [
         { rubrik: "Para ihop cellen med vad den gör.",
-          par: [["Makrofager (ätarceller)", "Äter mikroben och visar upp antigener"], ["T-hjälparceller", "Skickar signaler som startar försvaret"],
-                ["B-celler", "Blir celler som tillverkar antikroppar"], ["T-mördarceller", "Förstör kroppens infekterade celler"], ["Minnesceller", "Kommer ihåg mikroben"]] }
+          par: [["Makrofager (ätarceller)", "Äter patogenen och visar upp antigener"], ["T-hjälparceller", "Skickar signaler som startar försvaret"],
+                ["B-celler", "Blir celler som tillverkar antikroppar"], ["T-mördarceller", "Förstör kroppens infekterade celler"], ["Minnesceller", "Kommer ihåg patogenen"]] }
       ] },
 
     { id: "for-sf", kapitel: "forsvar", titel: "Kroppens försvar – sant eller falskt",
       typ: "santfalskt", nivaer: [1, 2],
       varianter: [
         { pst: [["Huden är kroppens första försvar.", true], ["Ätarceller tillverkar antikroppar.", false], ["Minnesceller gör att man kan bli immun.", true],
-                ["Lymfknutorna kan svullna när man är sjuk.", true], ["Det förvärvade (specifika) immunförsvaret reagerar likadant mot alla mikrober.", false]] }
+                ["Lymfknutorna kan svullna när man är sjuk.", true], ["Det förvärvade (specifika) immunförsvaret reagerar likadant mot alla patogener.", false]] }
+      ] },
+    { id: "for-feber", kapitel: "forsvar", avsnitt: ["inflammation"], titel: "Inflammation och feber – välj rätt",
+      typ: "flerval", nivaer: [1, 2],
+      varianter: [
+        { fraga: "Varför kan man få feber när man är sjuk?",
+          alt: [ { t: "Ämnen från en kraftig inflammation påverkar hjärnans temperaturcentrum", s: "ratt", f: "då höjer hjärnan kroppens temperatur." },
+                 { t: "Patogenerna värmer upp kroppen", s: "fel", f: "det är kroppen själv som höjer temperaturen – styrt av hjärnan." },
+                 { t: "Antikropparna blir varma när de arbetar", s: "fel", f: "febern styrs av hjärnans temperaturcentrum." },
+                 { t: "Huden släpper inte ut värmen", s: "fel", f: "febern styrs av hjärnans temperaturcentrum." } ] },
+        { fraga: "Du får en sticka i fingret. Det blir rött och svullet. Vad stämmer?",
+          alt: [ { t: "Det är en inflammation – den kan komma även av en skada", s: "ratt", f: "inflammation startar både vid infektioner och vid skador." },
+                 { t: "Det är omöjligt – inflammation kommer bara av patogener", s: "fel", f: "även skador ger inflammation." },
+                 { t: "Det är minnesceller som arbetar", s: "fel", f: "inflammationen hör till det medfödda försvaret." },
+                 { t: "Det är en allergi", s: "fel", f: "rodnad och svullnad vid en skada är en inflammation." } ] }
       ] }
 ]);
