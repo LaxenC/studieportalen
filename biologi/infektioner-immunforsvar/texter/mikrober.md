@@ -33,8 +33,8 @@ Mikrober är inte bra eller dåliga. Precis som vi försöker de överleva. Ibla
 
 **Bakterier** är mycket små, **encelliga** organismer som finns nästan överallt. De har en enkel uppbyggnad och **saknar cellkärna** – arvsmassan ligger fritt i cellen. Bakterier hör till de första organismerna på jorden och fanns redan för över 3 000 miljoner år sedan.
 
-![bakteriecell](bilder/bakteriecell.svg)
-Bild: En bakteriecell. Arvsmassan ligger fritt i cellen.
+![bakteriecell](bilder/bakteriecell.svg?v=2)
+Bild: En bakterie är en cell utan cellkärna – arvsmassan ligger fritt i cellen. Jämför med en cell som har cellkärna.
 
 Bakterier förökar sig genom att **dela sig**. Vid rätt temperatur och med mycket näring kan det gå mycket snabbt. Om det blir för kallt, varmt eller torrt kan vissa bakterier bilda **sporer** – ett skal som skyddar dem länge.
 

@@ -101,8 +101,8 @@ Mikrober är inte bra eller dåliga. Precis som vi försöker de överleva. Ibla
 
 **Bakterier** var bland de första organismerna på jorden – de fanns redan för över 3 000 miljoner år sedan. De är **encelliga** och **saknar cellkärna**.
 
-![bakteriecell](bilder/bakteriecell.svg)
-Bild: En bakteriecell. Arvsmassan ligger fritt i cellen.
+![bakteriecell](bilder/bakteriecell.svg?v=2)
+Bild: En bakterie är en cell utan cellkärna – arvsmassan ligger fritt i cellen. Jämför med en cell som har cellkärna.
 
 Bakterier finns nästan överallt: i marken, i vatten, i luften och i och på din kropp. De förökar sig genom att **dela sig**. Bakterier delas in efter formen: runda **kocker**, stavformade **baciller** och spiralformade **spiriller**.
 
