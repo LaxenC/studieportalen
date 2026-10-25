@@ -39,7 +39,31 @@ På 1790-talet märkte den engelske läkaren **Edward Jenner** att mjölkerskor 
 
 **Antibiotika** är läkemedel som bekämpar infektioner orsakade av **bakterier**. De dödar bakterierna eller hindrar dem från att växa och föröka sig. Penicillin är en sorts antibiotika.
 
-**Antibiotika fungerar inte mot virus.** Därför hjälper det inte mot förkylning eller influensa. Antibiotika dödar dessutom kroppens nyttiga bakterier, till exempel i tarmen.
+### Antibiotika är en nyckel till bakteriens maskiner
+
+Antibiotika fungerar som en **nyckel** som passar i ett visst **lås** hos bakterien. Låset är en del av bakteriens cell:
+
+- **Penicillin** stoppar bakterien från att bygga sin **cellvägg** – det skyddande skalet runt cellen. Då går bakterien sönder och dör.
+- Andra antibiotika stoppar bakteriens **fabriker**, så att cellen inte kan bygga nya delar.
+- Andra antibiotika stoppar bakterien från att kopiera sitt DNA, så att den inte kan föröka sig.
+
+Låset finns alltså bara i bakteriens cell.
+
+### Viruset är bara ett recept – ingen fabrik
+
+Ett virus är inte en cell. Det består bara av **arvsmassa** (DNA eller RNA) i ett hölje av protein. Virus har ingen cellvägg, inga egna fabriker och ingen egen **ämnesomsättning**. Det kan alltså varken äta, tillverka energi eller bygga något själv. Ett virus är som ett recept utan kök.
+
+För att föröka sig måste viruset ta sig in i en levande cell och låna cellens fabriker. Det är kroppens egen cell som bygger de nya virusen – viruset gör ingenting själv.
+
+### Därför biter inte antibiotika på virus
+
+- Virus har ingen cellvägg – penicillin hittar inget att attackera.
+- Virus har inga egna fabriker – antibiotika som stoppar fabrikerna hittar inget att stoppa.
+- Virus har ingen egen ämnesomsättning – det finns ingen fabrik som kan stängas av.
+
+Antibiotika behöver alltså ett lås som viruset inte har. Nyckeln passar inte – inte för att nyckeln är trasig, utan för att låset saknas. **Därför hjälper antibiotika inte mot förkylning eller influensa.** Antibiotika dödar dessutom kroppens nyttiga bakterier, till exempel i tarmen.
+
+### Resistens
 
 Bakterier förändras hela tiden, precis som allt levande. Om bakterier ofta utsätts för antibiotika kommer några av dem till slut att överleva läkemedlet. De förökar sig, och snart finns det många bakterier som antibiotikan inte biter på. Bakterierna har blivit **resistenta**. Vissa bakterier är resistenta mot flera sorters antibiotika – de kallas **multiresistenta**.
 
@@ -48,10 +72,15 @@ För att minska resistensen ska antibiotika bara användas när det verkligen be
 > **Begrepp**
 > **antibiotika** – läkemedel som dödar bakterier eller hindrar dem från att växa
 > **resistent** – när bakterier har förändrats så att antibiotika inte längre biter på dem
+> **cellvägg** – ett skyddande skal runt bakteriens cell
 
 ::: fördjupning åk 7 Penicillinet upptäcks
 År 1928 upptäckte **Alexander Fleming** av en slump att en mögelsvamp hade dödat bakterierna i en av hans odlingsskålar. Ämnet från mögelsvampen fick namnet **penicillin** – det första antibiotikumet. Det har sedan dess räddat miljontals liv.
 :::
+
+> **💬 Förklara så här** {.green}
+> *Varför biter antibiotika bara på bakterier?*<br>
+> *Antibiotika* fungerar som en nyckel som passar i ett lås i bakteriens cell, till exempel *cellväggen* eller cellens fabriker. Ett *virus* är ingen cell – det har ingen cellvägg, inga egna fabriker och ingen *ämnesomsättning*. **Därför** finns det inget lås för antibiotikan att passa i, och den hjälper inte mot virus.
 
 > **💬 Förklara så här** {.green}
 > *Varför ska man bara använda antibiotika när det verkligen behövs?*<br>
@@ -59,5 +88,6 @@ För att minska resistensen ska antibiotika bara användas när det verkligen be
 
 > **Viktigt att komma ihåg**
 > - **Antibiotika** bekämpar **bakterier** – inte virus.
+> - Antibiotika är en nyckel som passar i ett lås i bakteriens cell, till exempel cellväggen eller fabrikerna. Virus saknar låset.
 > - Bakterier kan bli **resistenta** om antibiotika används för mycket.
 > - Använd antibiotika bara när det behövs.
