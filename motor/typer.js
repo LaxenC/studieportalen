@@ -164,7 +164,8 @@ TYPER.para = {
     return sm ? esc(x) : `<b>${esc(x)}</b>`;
   },
   // par: [vänster, höger] eller [vänster, kolumn 2, kolumn 3] – då väljer eleven två saker per rad
-  setup(q) { q.rader = shuffle(q.v.par); q.kol = q.v.par[0].length - 1; q.val = [0, 1].slice(0, q.kol).map(c => shuffle([...new Set(q.v.par.map(p => p[c + 1]))])); },
+  // iOrdning: true – vänsterraderna står kvar i den ordning de skrivs (t.ex. Steg 1, 2, 3)
+  setup(q) { q.rader = (q.task.iOrdning || q.v.iOrdning) ? [...q.v.par] : shuffle(q.v.par); q.kol = q.v.par[0].length - 1; q.val = [0, 1].slice(0, q.kol).map(c => shuffle([...new Set(q.v.par.map(p => p[c + 1]))])); },
   html(q) {
     const head = q.v.rubriker ? `<div class="pair phead"><div>${esc(q.v.rubriker[0])}</div>${q.v.rubriker.slice(1).map(h => `<span class="arrow"></span><div>${esc(h)}</div>`).join("")}</div>` : "";
     return `<div class="pairs${q.kol > 1 ? " three" : ""}">${head}${q.rader.map(([l], i) => `<div class="pair"><div class="pl">${this.vansterHtml(l)}</div>${q.val.map((vals, c) => `<span class="arrow" aria-hidden="true">→</span>

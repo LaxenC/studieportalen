@@ -244,7 +244,7 @@ Portal.uppgifter([
       ] },
 
     { id: "mik-virus-ordning", kapitel: "mikroorganismer", avsnitt: ["virus"], titel: "Så förökar sig ett virus – para ihop",
-      typ: "para", nivaer: [1, 2],
+      typ: "para", nivaer: [1, 2], iOrdning: true,
       varianter: [
         { rubrik: "Para ihop steget med vad som händer.",
           par: [["Steg 1", "Viruset fäster på cellen"], ["Steg 2", "Virusets arvsmassa tar sig in i cellen"],

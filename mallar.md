@@ -304,6 +304,7 @@ Eleven drar begrepp till rätt beskrivning. `par: [[begrepp, beskrivning], ...]`
 ### Para ihop – `para`
 
 Två kolumner som ska paras ihop. `"bild:proton"` visar en bild i stället för text (proton, neutron, elektron, karna, skal, alfa, foton …).
+Raderna blandas varje gång. Skriv `iOrdning: true` om vänsterkolumnen ska stå kvar i den ordning du skrivit den, till exempel *Steg 1, Steg 2, Steg 3*.
 
 ```js
 { id: "atom-para-bild", kapitel: "atom", avsnitt: ["delar"], titel: "Atomens delar – bild och namn",
