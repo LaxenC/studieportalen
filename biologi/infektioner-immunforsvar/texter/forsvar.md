@@ -153,10 +153,10 @@ De fyra stegen ovan är förenklade. Det här händer också:
 - **Bromsande T-celler** lugnar ner försvaret när patogenerna är borta, så att det inte blir för kraftigt.
 - **Minnescellerna** är av två slag: minnes-B-celler och minnes-T-celler.
 
-Så här ser hela immunsvaret ut:
+Efter T-hjälparcellerna delar sig försvaret i två grenar. B-cellerna och antikropparna tar hand om patogener i blodet och kroppsvätskorna. T-mördarcellerna tar hand om patogener som redan har tagit sig in i kroppens celler. Båda grenarna lämnar minnesceller efter sig.
 
-![immunsvaret i åtta steg](bilder/immunsvar-8steg.svg?v=3)
-Bild: Immunsvaret steg för steg, förenklat.
+![immunsvaret i två grenar](bilder/immunsvar-8steg.svg?v=4)
+Bild: Hela immunsvaret, förenklat. Efter T-hjälparcellerna delar sig försvaret i två grenar.
 :::
 
 > **💬 Förklara så här** {.green}
