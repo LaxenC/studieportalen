@@ -142,8 +142,8 @@ Därför räknas virus oftast **inte** som levande. De har arvsmassa och och kan
 > **ämnesomsättning** – när cellen tar upp näring och gör om den till energi och nya delar
 
 > **💬 Förklara så här** {.green}
-> *Vad skiljer ett virus från en bakterie?*<br>
-> En bakterie är en *cell* som förökar sig själv genom att dela sig. Ett *virus* är ingen cell utan *arvsmassa* i ett hölje av protein, och det kan bara föröka sig inne i en *värdcell*. **Därför** räknas bakterier som levande, men virus oftast inte.
+> *Varför säger man att virus är på gränsen till liv?*<br>
+> Ett *virus* har *arvsmassa*, precis som levande organismer. Men det är ingen *cell*, har ingen *ämnesomsättning* och inga egna fabriker. Det kan bara föröka sig genom att använda en *värdcells* fabriker. **Därför** säger man att virus är på gränsen till liv.
 
 > **Viktigt att komma ihåg**
 > - Virus består inte av celler och kan inte föröka sig utan en värdcell.
