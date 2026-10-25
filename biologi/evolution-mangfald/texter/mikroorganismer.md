@@ -20,7 +20,7 @@ I många celler finns en **cellkärna**. Där ligger cellens **arvsmassa** (DNA)
 Celler hos djur, växter och svampar har cellkärna. Bakterier har **ingen cellkärna** – deras arvsmassa ligger fritt i cellen.
 
 Att cellen kan leva själv betyder att den klarar tre saker på egen hand:
-- **Ta upp näring** – cellen tar in ämnen från omgivningen, till exempel socker och syre, och får energi ur dem.
+- **Ta upp näring (ämnesomsättning )** – cellen tar in ämnen från omgivningen, till exempel socker och syre, och får energi ur dem.
 - **Växa** – cellen använder näringen och energin för att bygga nya delar och bli större.
 - **Föröka sig** – när cellen har vuxit kan den dela sig i två nya celler genom att cellens fabriker använder arvsmassan (receptet).
 
