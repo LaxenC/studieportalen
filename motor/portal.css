@@ -203,3 +203,4 @@ section.avsnitt.ak-extra>.aktag{justify-self:start}
 .fd-ak{display:grid;gap:10px}
 .fd-ak>.fdtag{justify-self:start}
 .utm-t.fk-t{color:var(--green)}
+.lastext .rules td img{width:80px;max-width:none;height:auto;display:block}

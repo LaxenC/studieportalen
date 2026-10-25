@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 240" font-family="Inter,Arial,sans-serif" font-size="15" text-anchor="middle">
+<rect width="600" height="240" fill="#fff"/>
+<g transform="translate(100 95)"><rect x="-55" y="-28" width="110" height="56" rx="28" fill="#fbe0de" stroke="#c4524b" stroke-width="3"/>
+<path d="M-30 0 C-20 -16 -10 14 2 -2 C12 -14 20 10 30 -2" fill="none" stroke="#6b2a26" stroke-width="2.5"/></g>
+<text x="100" y="170" font-weight="700" fill="#1d2a3a">Encellig</text><text x="100" y="190" fill="#4a5568">utan cellkärna</text><text x="100" y="210" fill="#4a5568">(bakterie)</text>
+<g transform="translate(300 95)"><path d="M-50 -10 C-56 -40 -10 -50 10 -40 C40 -52 62 -20 52 0 C64 24 30 50 6 40 C-20 54 -60 34 -50 10Z" fill="#ece4fb" stroke="#7b5cc4" stroke-width="3"/>
+<circle cx="0" cy="0" r="17" fill="#a98be0" stroke="#5f40a8" stroke-width="2.5"/><path d="M-8 -2 C-4 -9 0 6 5 -2" fill="none" stroke="#3d2378" stroke-width="2"/></g>
+<line x1="300" y1="30" x2="300" y2="78" stroke="#5f40a8" stroke-width="1.5"/><text x="300" y="24" fill="#5f40a8" font-weight="700">cellkärna</text>
+<text x="300" y="170" font-weight="700" fill="#1d2a3a">Encellig</text><text x="300" y="190" fill="#4a5568">med cellkärna</text><text x="300" y="210" fill="#4a5568">(protozo)</text>
+<g transform="translate(500 95)" fill="#dff1e3" stroke="#2f8a4e" stroke-width="2.5"><rect x="-56" y="-48" width="28" height="32" rx="5"/><rect x="-28" y="-48" width="28" height="32" rx="5"/><rect x="0" y="-48" width="28" height="32" rx="5"/><rect x="28" y="-48" width="28" height="32" rx="5"/><rect x="-56" y="-16" width="28" height="32" rx="5"/><rect x="-28" y="-16" width="28" height="32" rx="5"/><rect x="0" y="-16" width="28" height="32" rx="5"/><rect x="28" y="-16" width="28" height="32" rx="5"/><rect x="-56" y="16" width="28" height="32" rx="5"/><rect x="-28" y="16" width="28" height="32" rx="5"/><rect x="0" y="16" width="28" height="32" rx="5"/><rect x="28" y="16" width="28" height="32" rx="5"/></g><g transform="translate(500 95)" fill="#7bbf6a"><circle cx="-42" cy="-32" r="5"/><circle cx="-14" cy="-32" r="5"/><circle cx="14" cy="-32" r="5"/><circle cx="42" cy="-32" r="5"/><circle cx="-42" cy="0" r="5"/><circle cx="-14" cy="0" r="5"/><circle cx="14" cy="0" r="5"/><circle cx="42" cy="0" r="5"/><circle cx="-42" cy="32" r="5"/><circle cx="-14" cy="32" r="5"/><circle cx="14" cy="32" r="5"/><circle cx="42" cy="32" r="5"/></g>
+<text x="500" y="170" font-weight="700" fill="#1d2a3a">Flercellig</text><text x="500" y="190" fill="#4a5568">många celler</text><text x="500" y="210" fill="#4a5568">med cellkärna</text>
+</svg>

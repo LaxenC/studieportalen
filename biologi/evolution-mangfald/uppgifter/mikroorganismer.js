@@ -5,9 +5,44 @@
      id : unikt namn · kapitel : kapitlets id · avsnitt : avsnitt i texten
      nivaer : nivå [0]–[3] · nivaerPerArskurs : annan nivå per årskurs
      rullista : nivåer där eleven väljer i en rullista
-   Avsnitt: vad, bakterier, virus, svampar, protister, mikrobiom, symbios
+   Avsnitt: cell, vad, bakterier, virus, svampar, mikrobiom, symbios
    ===================================================================== */
 Portal.uppgifter([
+
+    { id: "cell-begrepp-para", kapitel: "mikroorganismer", avsnitt: ["cell"], titel: "Celler – para ihop begrepp",
+      typ: "para", nivaer: [0, 1],
+      varianter: [
+        { rubrik: "Para ihop begreppet med rätt förklaring.",
+          par: [["Cell", "Den minsta delen som kan leva själv"], ["Encellig", "Består av en enda cell"],
+                ["Flercellig", "Består av många celler"], ["Cellkärna", "Del i cellen där arvsmassan finns"]] }
+      ] },
+
+    { id: "cell-flerval", kapitel: "mikroorganismer", avsnitt: ["cell"], titel: "Celler – välj rätt",
+      typ: "flerval", nivaer: [0, 1],
+      varianter: [
+        { fraga: "Vad betyder det att en organism är encellig?",
+          alt: [ { t: "Den består av en enda cell", s: "ratt", f: "en = en cell, till exempel en bakterie." },
+                 { t: "Den består av många celler", s: "fel", f: "det kallas flercellig." },
+                 { t: "Den har en cellkärna", s: "fel", f: "cellkärnan är en del i cellen – det säger inget om antalet celler." },
+                 { t: "Den består inte av celler", s: "fel", f: "det gäller virus." } ] },
+        { fraga: "Vilken av dessa är flercellig?",
+          alt: [ { t: "En skogssvamp", s: "ratt", f: "skogssvampar består av många celler." },
+                 { t: "En bakterie", s: "fel", f: "bakterier är encelliga." },
+                 { t: "En amöba", s: "fel", f: "amöbor är encelliga protozoer." },
+                 { t: "En jästsvamp", s: "fel", f: "jäst är en encellig svamp." } ] },
+        { fraga: "Vad finns i cellkärnan?",
+          alt: [ { t: "Arvsmassan (DNA)", s: "ratt", f: "cellkärnan innehåller cellens arvsmassa – dess ritning." },
+                 { t: "Syre", s: "fel", f: "cellkärnan innehåller arvsmassan." },
+                 { t: "Mat till cellen", s: "fel", f: "cellkärnan innehåller arvsmassan." },
+                 { t: "Virus", s: "fel", f: "cellkärnan innehåller cellens egen arvsmassa." } ] }
+      ] },
+
+    { id: "cell-sortera", kapitel: "mikroorganismer", avsnitt: ["cell"], titel: "Encellig eller flercellig? – sortera",
+      typ: "sortera", nivaer: [1, 2],
+      varianter: [
+        { grupper: ["Encellig", "Flercellig"],
+          saker: [["Bakterie", 0], ["Amöba", 0], ["Jästsvamp", 0], ["Människa", 1], ["Skogssvamp", 1], ["Träd", 1]] }
+      ] },
 
     { id: "mio-grupper-para", kapitel: "mikroorganismer", avsnitt: ["vad"], titel: "Mikroorganismernas grupper – para ihop",
       typ: "para", nivaer: [0, 1],
@@ -17,7 +52,7 @@ Portal.uppgifter([
                 ["Alger", "Gör fotosyntes och lever oftast i vatten"], ["Arkéer", "Liknar bakterier och lever ofta i extrema miljöer"]] }
       ] },
 
-    { id: "mik-protozoer-text", kapitel: "mikroorganismer", avsnitt: ["protister"], titel: "Protozoer, alger och arkéer – fyll i",
+    { id: "mik-protozoer-text", kapitel: "mikroorganismer", avsnitt: ["vad"], titel: "Protozoer, alger och arkéer – fyll i",
       typ: "lucktext", nivaer: [1], rullista: [1],
       ordlista: ["cellkärna", "fotosyntes", "malaria", "förkylning", "parasit", "värden", "extrema miljöer", "skogen"],
       varianter: [
@@ -26,7 +61,7 @@ Portal.uppgifter([
         { text: "Alger gör [fotosyntes]. Arkéer lever ofta i [extrema miljöer|extrem miljö]." }
       ] },
 
-    { id: "mik-eukaryot", kapitel: "mikroorganismer", avsnitt: ["protister"], titel: "Eukaryoter – välj rätt",
+    { id: "mik-eukaryot", kapitel: "mikroorganismer", avsnitt: ["cell", "vad"], titel: "Eukaryoter – välj rätt",
       typ: "flerval", nivaerPerArskurs: { 7: [3], 8: [2], 9: [1, 2] },
       varianter: [
         { fraga: "Vad betyder det att protozoer är eukaryota?",
@@ -60,18 +95,18 @@ Portal.uppgifter([
                 ["Hudbakterier som lever på oss utan att påverka oss", "Kommensalism"]] }
       ] },
 
-    { id: "mio-sortera-karna", kapitel: "mikroorganismer", avsnitt: ["bakterier", "protister"], titel: "Med eller utan cellkärna? – sortera",
+    { id: "mio-sortera-karna", kapitel: "mikroorganismer", avsnitt: ["cell", "vad"], titel: "Med eller utan cellkärna? – sortera",
       typ: "sortera", nivaer: [1, 2],
       varianter: [
         { grupper: ["Utan cellkärna", "Med cellkärna", "Inga celler"],
           saker: [["Bakterier", 0], ["Arkéer", 0], ["Protozoer", 1], ["Alger", 1], ["Svampar", 1], ["Virus", 2]] }
       ] },
 
-    { id: "mio-flerval", kapitel: "mikroorganismer", avsnitt: ["bakterier", "virus"], titel: "Mikroorganismer – välj rätt",
+    { id: "mio-flerval", kapitel: "mikroorganismer", avsnitt: ["vad", "bakterier"], titel: "Mikroorganismer – välj rätt",
       typ: "flerval", nivaer: [0, 1],
       varianter: [
         { fraga: "Vilka organismer var de första på jorden?",
-          alt: [ { t: "Bakterier och arkéer", s: "ratt", f: "de fanns redan för över 3 000 miljoner år sedan." },
+          alt: [ { t: "Bakterier", s: "ratt", f: "bakterier fanns redan för över 3 000 miljoner år sedan." },
                  { t: "Svampar", s: "fel", f: "svampar har celler med cellkärna och kom senare." },
                  { t: "Alger", s: "fel", f: "alger har cellkärna och kom senare än bakterierna." },
                  { t: "Virus", s: "fel", f: "virus behöver värdceller – de kan inte ha funnits före cellerna." } ] },
@@ -87,6 +122,21 @@ Portal.uppgifter([
       varianter: [
         { pst: [["Bakterier och arkéer saknar cellkärna.", true], ["Alger gör fotosyntes.", true], ["Arkéer orsakar många sjukdomar.", false],
                 ["Virus består av celler.", false], ["Vid mutualism gynnas båda arterna.", true]] }
+      ] },
+
+    { id: "mio-virus", kapitel: "mikroorganismer", avsnitt: ["virus"], titel: "Virus – välj rätt",
+      typ: "flerval", nivaer: [0, 1],
+      varianter: [
+        { fraga: "Vad består ett virus av?",
+          alt: [ { t: "Arvsmassa i ett hölje av protein", s: "ratt", f: "virus har ingen cell – bara arvsmassa i ett proteinhölje." },
+                 { t: "En cell med cellkärna", s: "fel", f: "virus består inte av celler alls." },
+                 { t: "En cell utan cellkärna", s: "fel", f: "det är en bakterie – virus har ingen cell." },
+                 { t: "Många celler", s: "fel", f: "virus består inte av celler." } ] },
+        { fraga: "Hur förökar sig ett virus?",
+          alt: [ { t: "Det tar sig in i en värdcell som får tillverka nya virus", s: "ratt", f: "virus kan bara föröka sig inne i en annan cell." },
+                 { t: "Det delar sig, precis som en bakterie", s: "fel", f: "virus kan inte dela sig själva – de behöver en värdcell." },
+                 { t: "Det bildar sporer", s: "fel", f: "virus behöver en värdcell för att föröka sig." },
+                 { t: "Det gör fotosyntes", s: "fel", f: "virus har ingen ämnesomsättning alls." } ] }
       ] },
 
     { id: "mio-svampar", kapitel: "mikroorganismer", avsnitt: ["svampar"], titel: "Svampar – välj rätt",

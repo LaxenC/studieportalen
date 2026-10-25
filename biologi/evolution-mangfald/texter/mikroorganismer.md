@@ -6,6 +6,42 @@ kapitel: mikroorganismer
 
 Livet på jorden är otroligt varierat – från blåvalar till organismer som bara består av en enda cell. De allra minsta kallas mikroorganismer, och de var de första organismerna på jorden.
 
+## Celler – livets byggstenar {#cell}
+
+Allt levande är uppbyggt av **celler**. En cell är den minsta delen som kan leva själv – den tar upp näring, växer och kan föröka sig. De flesta celler är så små att man bara kan se dem i mikroskop.
+
+- En organism som består av **en enda cell** kallas **encellig**. Exempel är bakterier och amöbor.
+- En organism som består av **många celler** kallas **flercellig**. Människor, djur, växter och skogssvampar är flercelliga – du själv består av tusentals miljarder celler.
+
+I många celler finns en **cellkärna**. Där ligger cellens **arvsmassa** (DNA) – cellens "ritning". Celler hos djur, växter och svampar har cellkärna. Bakterier har **ingen cellkärna** – deras arvsmassa ligger fritt i cellen.
+
+![celltyper](bilder/celltyper.svg)
+Bild: Encellig utan cellkärna, encellig med cellkärna och flercellig.
+
+> **Begrepp**
+> **cell** – den minsta delen av en levande organism som kan leva själv
+> **encellig** – består av en enda cell
+> **flercellig** – består av många celler
+> **cellkärna** – en del i cellen där arvsmassan finns
+
+> **💬 Förklara så här** {.green}
+> *Varför räknas en bakterie som levande trots att den bara är en cell?*<br>
+> En bakterie är en hel *cell*. Den tar upp näring, växer och förökar sig själv genom att dela sig. **Därför** är den en levande *encellig* organism.
+
+::: fördjupning åk 7 Livets tre domäner
+Alla organismer delas in i tre stora grupper – **domäner** – efter hur deras celler är byggda:
+- **Bakterier** – celler utan cellkärna
+- **Arkéer** – celler utan cellkärna, men med annorlunda arvsmassa och cellvägg
+- **Eukaryoter** – celler **med cellkärna** och andra delar (organeller). Hit hör djur, växter, svampar, protozoer och alger.
+
+Organismer med cellkärna kallas alltså **eukaryota** – precis som våra egna celler.
+:::
+
+> **Viktigt att komma ihåg**
+> - Allt levande består av **celler**.
+> - **Encellig** = en enda cell. **Flercellig** = många celler.
+> - I **cellkärnan** finns arvsmassan. Bakterier saknar cellkärna.
+
 ## Vad är mikroorganismer? {#vad}
 
 **Mikrober** – förkortning av *mikroorganismer* – är små levande organismer som är för små för att ses med blotta ögat. På 1600-talet uppfanns mikroskopet, och då kunde man för första gången se dem. Det gav forskarna en ny förståelse för sjukdomar, smitta och hur saker bryts ner.
@@ -21,24 +57,25 @@ Mikrober är inte bra eller dåliga. Precis som vi försöker de överleva. Ibla
 > **patogen** – en organism som orsakar sjukdom hos sin värd
 
 ### Det finns 6 grupper av mikrober
-||Grupp|Cell + cellkärna|Beskrivning|
-|![bakterier](bilder/bakterier.svg)|Bakterier |En cell - ingen cellkärna | |
-|![virus](bilder/virus.svg)| Virus | ingen cell | |
-|![svampar](bilder/svampar.svg)|Svampar | Flera cellar ||
-|![protozoer](bilder/protozoer.svg)| Protozoer|En cell - med cellkärnar ||
-|![alger](bilder/alger.svg)| Alger|En cell - med cellkärnar |Gör fotosyntes|
-|![arkeer](bilder/arkeer.svg)| Arkèer|En cell - med cellkärnar |Lever i extrema miljöner|
 
+| | Grupp | Celler och cellkärna | Kännetecken |
+|---|---|---|---|
+| ![bakterier](bilder/bakterier.svg) | **Bakterier** | En cell – ingen cellkärna | Finns nästan överallt. Viktiga nedbrytare. Några orsakar sjukdom. |
+| ![virus](bilder/virus.svg) | **Virus** | Ingen cell | Arvsmassa i ett hölje av protein. Kan bara föröka sig inne i en värdcell. |
+| ![svampar](bilder/svampar.svg) | **Svampar** | En eller många celler – med cellkärna | Varken växter eller djur. Nedbrytare, till exempel mögel och jäst. |
+| ![protozoer](bilder/protozoer.svg) | **Protozoer** | En cell – med cellkärna | Liknar små djur – de rör sig och äter. Vissa är parasiter, till exempel den som orsakar malaria. |
+| ![alger](bilder/alger.svg) | **Alger** | En eller många celler – med cellkärna | Gör fotosyntes och bildar syre. Lever oftast i vatten. |
+| ![arkéer](bilder/arkeer.svg) | **Arkéer** | En cell – ingen cellkärna | Liknar bakterier. Lever ofta i extrema miljöer, till exempel heta källor. |
 
 > **Viktigt att komma ihåg**
 > - **Mikrober** är levande organismer som är för små för att synas utan mikroskop.
 > - De flesta mikrober är ofarliga eller nyttiga.
 > - Mikrober som orsakar sjukdom kallas **patogener**.
-> - Det finns 6 grupper av mikrober: Bakterier, Virus, Svampar, Protozoer, Alger och Arkèer
+> - Det finns 6 grupper av mikrober: bakterier, virus, svampar, protozoer, alger och arkéer.
 
-## Bakterier och arkéer {#bakterier}
+## Bakterier {#bakterier}
 
-**Bakterier** och **arkéer** var de första organismerna på jorden – de fanns redan för över 3 000 miljoner år sedan. Båda är **encelliga** och **saknar cellkärna**.
+**Bakterier** var bland de första organismerna på jorden – de fanns redan för över 3 000 miljoner år sedan. De är **encelliga** och **saknar cellkärna**.
 
 ![bakteriecell](bilder/bakteriecell.svg)
 Bild: En bakteriecell. Arvsmassan ligger fritt i cellen.
@@ -50,16 +87,13 @@ Bild: De tre formerna av bakterier.
 
 Bakterier är viktiga **nedbrytare** i naturen. Vissa bakterier gör fotosyntes – de kallas cyanobakterier eller blågröna alger och kan orsaka algblomning.
 
-**Arkéer** liknar bakterier men är en egen grupp. Många lever i **extrema miljöer**: i heta källor, mycket salt vatten, sura sjöar eller vid varma källor djupt nere på havsbotten. De är livets "hårdingar" – kanske skulle de kunna leva på andra planeter. Det finns inga kända arkéer som orsakar sjukdom.
-
 > **Begrepp**
 > **bakterier** – mycket små encelliga organismer utan cellkärna som finns nästan överallt
-> **arkéer** – encelliga organismer som liknar bakterier men är en egen grupp, ofta i extrema miljöer
 
 > **Viktigt att komma ihåg**
-> - Bakterier och arkéer är **encelliga** och **saknar cellkärna**.
-> - De var de första organismerna på jorden.
-> - Arkéer lever ofta i **extrema miljöer**.
+> - Bakterier är **encelliga** och **saknar cellkärna**.
+> - De förökar sig genom att **dela sig**.
+> - Bakterier är viktiga **nedbrytare** i naturen.
 
 ## Virus – på gränsen till liv {#virus}
 
@@ -90,30 +124,6 @@ Många svampar består av långa, tunna trådar som kallas **hyfer**. Det vi kal
 > - Svampar är varken växter eller djur.
 > - De kan vara encelliga (jäst) eller flercelliga (mögel, skogssvamp).
 > - Svampar är viktiga **nedbrytare** i naturen.
-
-## Protozoer och alger {#protister}
-
-**Protozoer** och **alger** är organismer som – till skillnad från bakterier – **har en cellkärna**. Förr räknades de till samma grupp, **protister**: encelliga eller enkla organismer med cellkärna som varken är djur, växter eller svampar. I dag sorterar forskarna om dem med hjälp av DNA.
-
-- **Protozoer** (urdjur) är encelliga och liknar djur – de rör sig och äter. De finns ofta i vatten. Exempel är amöbor och toffeldjur. Vissa är **parasiter**, till exempel den som orsakar malaria.
-- **Alger** gör **fotosyntes**, precis som växter, och lever oftast i vatten. De kan vara encelliga eller flercelliga – upp till 60 meter långa. Alger bildar mycket av jordens syre och är mat för andra organismer i vattnet. Vid en **algblomning** kan de bilda gifter.
-
-> **Begrepp**
-> **protozoer** – encelliga organismer med cellkärna, ofta i vatten
-> **alger** – organismer som gör fotosyntes och oftast lever i vatten
-
-::: fördjupning åk 7 Livets tre domäner
-Alla organismer delas in i tre stora grupper – **domäner** – efter hur deras celler är byggda:
-- **Bakterier** – celler utan cellkärna
-- **Arkéer** – celler utan cellkärna, men med annorlunda arvsmassa och cellvägg
-- **Eukaryoter** – celler **med cellkärna** och andra delar (organeller). Hit hör djur, växter, svampar, protozoer och alger.
-
-Protozoer och alger är alltså **eukaryota** – de har en cellkärna, precis som våra egna celler.
-:::
-
-> **Viktigt att komma ihåg**
-> - Protozoer och alger **har cellkärna**.
-> - Protozoer liknar djur. Alger gör **fotosyntes** och bildar syre.
 
 ## Mikrobiomet {#mikrobiom}
 
