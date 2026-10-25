@@ -10,15 +10,15 @@
 Portal.uppgifter([
 
     { id: "cell-begrepp-para", kapitel: "mikroorganismer", avsnitt: ["cell"], titel: "Celler – para ihop begrepp",
-      typ: "para", nivaer: [0, 1],
+      typ: "para", nivaer: [1],
       varianter: [
         { rubrik: "Para ihop begreppet med rätt förklaring.",
           par: [["Cell", "Den minsta delen som kan leva själv"], ["Encellig", "Består av en enda cell"],
-                ["Flercellig", "Består av många celler"], ["Cellkärna", "Del i cellen där arvsmassan finns"]] }
+                ["Flercellig", "Består av många celler"], ["Cellkärna", "Del i cellen där arvsmassan finns."]] }
       ] },
 
     { id: "cell-flerval", kapitel: "mikroorganismer", avsnitt: ["cell"], titel: "Celler – välj rätt",
-      typ: "flerval", nivaer: [0, 1],
+      typ: "flerval", nivaer: [1],
       varianter: [
         { fraga: "Ordet mikroorganism består av mikro + organism. Vad betyder det?",
           alt: [ { t: "En mycket liten levande varelse", s: "ratt", f: "mikro = mycket liten, organism = något som lever." },
@@ -55,7 +55,7 @@ Portal.uppgifter([
       ] },
 
     { id: "mio-grupper-para", kapitel: "mikroorganismer", avsnitt: ["vad"], titel: "Mikroorganismernas grupper – para ihop",
-      typ: "para", nivaer: [0, 1],
+      typ: "para", nivaer: [1],
       varianter: [
         { rubrik: "Para ihop mikroben med rätt beskrivning.",
           par: [["Svampar", "Varken växter eller djur – till exempel jäst och mögel"], ["Protozoer", "Encelliga organismer med cellkärna"],
@@ -87,7 +87,7 @@ Portal.uppgifter([
       ] },
 
     { id: "smi-mikrobiom-text", kapitel: "mikroorganismer", avsnitt: ["mikrobiom", "symbios"], titel: "Mikrobiom och symbios – fyll i",
-      typ: "lucktext", nivaer: [0, 1], rullista: [0],
+      typ: "lucktext", nivaer: [1], rullista: [0],
       ordlista: ["mikrobiomet", "immunförsvaret", "symbios", "pandemi", "matsmältningen", "andningen"],
       varianter: [
         { text: "Alla mikrober som lever i och på kroppen kallas tillsammans [mikrobiomet|mikrobiom]." },
@@ -96,7 +96,7 @@ Portal.uppgifter([
       ] },
 
     { id: "smi-symbios-para", kapitel: "mikroorganismer", avsnitt: ["symbios"], titel: "Typer av symbios – para ihop",
-      typ: "para", nivaerPerArskurs: { 7: [2], 8: [1, 2], 9: [1] },
+      typ: "para", nivaerPerArskurs: { 7: [1], 8: [1], 9: [1] },
       varianter: [
         { rubrik: "Para ihop typen av symbios med vad som händer.",
           par: [["Mutualism", "Båda arterna gynnas"], ["Kommensalism", "Den ena gynnas, den andra påverkas inte"], ["Parasitism", "Den ena gynnas, den andra skadas"]] },
@@ -106,14 +106,14 @@ Portal.uppgifter([
       ] },
 
     { id: "mio-sortera-karna", kapitel: "mikroorganismer", avsnitt: ["cell", "vad"], titel: "Med eller utan cellkärna? – sortera",
-      typ: "sortera", nivaer: [1, 2],
+      typ: "sortera", nivaer: [1],
       varianter: [
         { grupper: ["Utan cellkärna", "Med cellkärna", "Inga celler"],
           saker: [["Bakterier", 0], ["Arkéer", 0], ["Protozoer", 1], ["Alger", 1], ["Svampar", 1], ["Virus", 2]] }
       ] },
 
     { id: "mio-flerval", kapitel: "mikroorganismer", avsnitt: ["vad", "bakterier"], titel: "Mikroorganismer – välj rätt",
-      typ: "flerval", nivaer: [0, 1],
+      typ: "flerval", nivaer: [1],
       varianter: [
         { fraga: "Vilka organismer var de första på jorden?",
           alt: [ { t: "Bakterier", s: "ratt", f: "bakterier fanns redan för över 3 000 miljoner år sedan." },
@@ -135,7 +135,7 @@ Portal.uppgifter([
       ] },
 
     { id: "mio-virus", kapitel: "mikroorganismer", avsnitt: ["virus"], titel: "Virus – välj rätt",
-      typ: "flerval", nivaer: [0, 1],
+      typ: "flerval", nivaer: [1],
       varianter: [
         { fraga: "Vad består ett virus av?",
           alt: [ { t: "Arvsmassa i ett hölje av protein", s: "ratt", f: "virus har ingen cell – bara arvsmassa i ett proteinhölje." },
@@ -150,7 +150,7 @@ Portal.uppgifter([
       ] },
 
     { id: "mio-svampar", kapitel: "mikroorganismer", avsnitt: ["svampar"], titel: "Svampar – välj rätt",
-      typ: "flerval", nivaer: [0, 1],
+      typ: "flerval", nivaer: [1],
       varianter: [
         { fraga: "Vilken viktig uppgift har svampar i naturen?",
           alt: [ { t: "De bryter ner döda växter och djur", s: "ratt", f: "svampar är nedbrytare – näringen kan sedan användas igen." },
