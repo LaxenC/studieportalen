@@ -6,28 +6,10 @@ kapitel: mikrober
 
 De flesta infektioner orsakas av bakterier och virus. För att förstå hur vi blir sjuka – och hur vi kan skydda oss – behöver vi veta hur de fungerar.
 
-## Vad är mikrober? {#vad}
-
-**Mikrober** – förkortning av *mikroorganismer* – är små levande organismer som är för små för att ses med blotta ögat. På 1600-talet uppfanns mikroskopet, och då kunde man för första gången se dem. Det gav forskarna en ny förståelse för sjukdomar, smitta och hur saker bryts ner.
-
-Mikrober är inte bra eller dåliga. Precis som vi försöker de överleva. Ibland innebär deras överlevnad att de måste angripa oss – på samma sätt som en tiger som jagar ett rådjur inte är "ond", den försöker bara överleva.
-
-- De flesta mikrober är **neutrala** – de påverkar oss inte.
-- Många är **nyttiga** – de hjälper oss, till exempel i tarmen.
-- Några är **skadliga** – de orsakar sjukdom. De kallas **patogener**.
+Vad mikrober är och hur de är uppbyggda kan du läsa om i kapitlet [Mikroorganismer](#/biologi/evolution-mangfald/las/mikroorganismer) under *Evolution och livets mångfald*. De flesta mikrober är ofarliga eller nyttiga, men några orsakar sjukdom – de kallas **patogener**.
 
 > **Begrepp**
-> **mikrober** – små levande organismer som är för små för att ses med blotta ögat
-> **patogen** – en organism som orsakar sjukdom hos sin värd
-
-> **💬 Förklara så här** {.green}
-> *Varför upptäckte man mikroberna först på 1600-talet?*<br>
-> *Mikrober* är för små för att ses med blotta ögat. Först när *mikroskopet* uppfanns på 1600-talet kunde man förstora dem så mycket att de syntes. **Därför** upptäckte man dem först då.
-
-> **Viktigt att komma ihåg**
-> - **Mikrober** är levande organismer som är för små för att synas utan mikroskop.
-> - De flesta mikrober är ofarliga eller nyttiga.
-> - Mikrober som orsakar sjukdom kallas **patogener**.
+> **patogen** – en mikrob eller annan organism som orsakar sjukdom hos sin värd
 
 ## Bakterier {#bakterier}
 

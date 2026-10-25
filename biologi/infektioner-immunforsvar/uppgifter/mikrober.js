@@ -5,32 +5,9 @@
      id : unikt namn · kapitel : kapitlets id · avsnitt : avsnitt i texten
      nivaer : nivå [0]–[3] · nivaerPerArskurs : annan nivå per årskurs
      rullista : nivåer där eleven väljer i en rullista
-   Avsnitt: vad, bakterier, virus, svampar
+   Avsnitt: bakterier, virus, svampar
    ===================================================================== */
 Portal.uppgifter([
-
-    { id: "mik-begrepp-para", kapitel: "mikrober", avsnitt: ["vad"], titel: "Mikrober – para ihop begrepp",
-      typ: "para", nivaer: [0, 1],
-      varianter: [
-        { rubrik: "Para ihop begreppet med rätt förklaring.",
-          par: [["Mikrober", "Levande organismer som är för små för att synas utan mikroskop"], ["Patogen", "En organism som orsakar sjukdom"],
-                ["Bakterier", "Encelliga organismer utan cellkärna"], ["Virus", "Arvsmassa i ett proteinhölje som behöver en värdcell"]] }
-      ] },
-
-    { id: "mik-vad-flerval", kapitel: "mikrober", avsnitt: ["vad"], titel: "Vad är mikrober? – välj rätt",
-      typ: "flerval", nivaer: [0, 1],
-      varianter: [
-        { fraga: "Vad kallas en mikrob som orsakar sjukdom?",
-          alt: [ { t: "Patogen", s: "ratt", f: "en patogen är en organism som orsakar sjukdom hos sin värd." },
-                 { t: "Parasit", s: "delvis", f: "en parasit skadar sin värd, men ordet för alla sjukdomsframkallande mikrober är patogen." },
-                 { t: "Antibiotika", s: "fel", f: "antibiotika är ett läkemedel mot bakterier." },
-                 { t: "Mikrobiom", s: "fel", f: "mikrobiomet är alla mikrober i och på kroppen." } ] },
-        { fraga: "Vilket påstående om mikrober stämmer?",
-          alt: [ { t: "De flesta mikrober är ofarliga eller nyttiga", s: "ratt", f: "bara en liten del av alla mikrober orsakar sjukdom." },
-                 { t: "Alla mikrober orsakar sjukdom", s: "fel", f: "de flesta är neutrala eller nyttiga." },
-                 { t: "Mikrober går att se med blotta ögat", s: "fel", f: "mikrober är för små – man behöver mikroskop." },
-                 { t: "Mikrober finns bara på smutsiga ställen", s: "fel", f: "mikrober finns nästan överallt – även i och på din kropp." } ] }
-      ] },
 
     { id: "mik-sortera-typ", kapitel: "mikrober", avsnitt: ["bakterier", "virus", "svampar"], titel: "Bakterie, virus eller svamp? – sortera",
       typ: "sortera", nivaer: [1],
