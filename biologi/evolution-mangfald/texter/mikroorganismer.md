@@ -87,7 +87,7 @@ Mikrober är inte bra eller dåliga. Precis som vi försöker de överleva. Ibla
 |---|---|---|---|---|---|
 | ![bakterier](bilder/bakterier.svg) | **Bakterier** | En cell | Ligger fritt i cellen | ✅ Ja | Finns nästan överallt. Viktiga nedbrytare. Några orsakar sjukdom. |
 | ![virus](bilder/virus.svg) | **Virus** | Ingen cell | Inuti ett skal av protein | ❌ Nej | Kan bara föröka sig inne i en värdcell – använder cellens fabriker. |
-| ![svampar](bilder/svampar.svg) | **Svampar** | En eller många | I en cellkärna | ✅ Ja | Varken växter eller djur. Nedbrytare, till exempel mögel och jäst. |
+| ![svampar](bilder/svampar.svg?v=2) | **Svampar** (små, t.ex. jäst och mögel) | En eller många | I en cellkärna | ✅ Ja | Varken växter eller djur. Viktiga nedbrytare. Stora svampar, som kantareller, räknas inte som mikrober. |
 | ![protozoer](bilder/protozoer.svg) | **Protozoer** | En cell | I en cellkärna | ✅ Ja | Liknar små djur – sättet de rör sig och äter liknar djurs sätt. Vissa är parasiter, till exempel den som orsakar malaria. |
 | ![alger](bilder/alger.svg) | **Alger** | En eller många | I en cellkärna | ✅ Ja | Gör fotosyntes och bildar syre. Lever oftast i vatten. |
 | ![arkéer](bilder/arkeer.svg) | **Arkéer** | En cell | Ligger fritt i cellen | ✅ Ja | Liknar bakterier. Lever ofta i extrema miljöer, till exempel heta källor. |
@@ -153,6 +153,8 @@ Därför räknas virus oftast **inte** som levande. De har arvsmassa och och kan
 
 **Svampar** är en egen grupp av organismer – de är varken växter eller djur. Hit hör stora skogssvampar, men också **mögel** och **jästsvampar**. Svampar kan vara **encelliga** (som jäst) eller **flercelliga** (som mögel och skogssvamp).
 
+Det är bara de **små svamparna**, som jäst och mögel, som räknas till mikroorganismerna. De syns bara i mikroskop. Stora svampar, som kantareller och flugsvampar, syns med blotta ögat och är alltså inga mikrober.
+
 Svampar är viktiga **nedbrytare** i naturen – de bryter ner döda växter och djur så att näringen kan användas igen. Vi använder jäst när vi bakar bröd. Vissa svampar lever tillsammans med växter och hjälper dem att ta upp näring.
 
 Svampar kan också orsaka sjukdomar, både hos växter och människor. Hos människor är svampinfektioner oftast inte så allvarliga, till exempel fotsvamp, svamp på naglarna och i munnen.
@@ -165,8 +167,8 @@ Många svampar består av långa, tunna trådar som kallas **hyfer**. Det vi kal
 :::
 
 > **💬 Förklara så här** {.green}
-> *Varför är svampar viktiga i naturen?*<br>
-> Svampar är *nedbrytare*. De bryter ner döda växter och djur till enklare ämnen. **Därför** kan näringen användas igen av nya växter.
+> *Varför räknas bara vissa svampar som mikrober?*<br>
+> En *mikrob* är så liten att den bara syns i mikroskop. *Jäst* är *encellig* – en enda liten cell – och mögel består av mycket tunna trådar. En kantarell är en stor, *flercellig* svamp som syns med blotta ögat. **Därför** räknas jäst och mögel som mikrober, men inte kantareller.
 
 > **Viktigt att komma ihåg**
 > - Svampar är varken växter eller djur.
