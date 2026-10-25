@@ -20,11 +20,11 @@ I många celler finns en **cellkärna**. Där ligger cellens **arvsmassa** (DNA)
 Celler hos djur, växter och svampar har cellkärna. Bakterier har **ingen cellkärna** – deras arvsmassa ligger fritt i cellen.
 
 Att cellen kan leva själv betyder att den klarar tre saker på egen hand:
-- **Ta upp näring (ämnesomsättning )** – cellen tar in ämnen från omgivningen, till exempel socker och syre, och får energi ur dem.
+- **Ta upp näring** – cellen tar in ämnen från omgivningen, till exempel socker och syre, och får energi ur dem.
 - **Växa** – cellen använder näringen och energin för att bygga nya delar och bli större.
 - **Föröka sig** – när cellen har vuxit kan den dela sig i två nya celler genom att cellens fabriker använder arvsmassan (receptet).
 
-Att cellen tar upp näring och gör om den till energi och nya delar kallas **ämnesomsättning**. Alla levande celler har ämnesomsättning.
+Att cellen tar upp näring och gör om den till energi som används som bräsle till cellens delar (exmempelvis fabrikerna) kallas för **ämnesomsättning**. Alla levande celler har ämnesomsättning.
 
 ![celldelning](bilder/celldelning.svg)
 Bild: Cellen växer och delar sig. Fabrikerna följer receptet (arvsmassan), och båda nya cellerna får ett eget recept.
@@ -39,7 +39,7 @@ Bild: Encellig utan cellkärna, encellig med cellkärna och flercellig.
 > **Begrepp**
 > **organism** – något som lever, till exempel en bakterie, en växt eller ett djur
 > **cell** – den minsta delen av en levande organism som kan leva själv
-> **ämnesomsättning** – när cellen tar upp näring och gör om den till energi och nya delar
+> **ämnesomsättning** – när cellen tar upp näring och gör om den till energi som används till bränsle för cellensdelar
 > **cellkärna**– en del i cellen där arvsmassan finns
 > **arvsmassa** -receptet för att skapa fler celler
 > **encellig** – består av en enda cell
