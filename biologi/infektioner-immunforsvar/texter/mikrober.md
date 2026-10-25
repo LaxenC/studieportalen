@@ -83,7 +83,7 @@ Virus kan **inte föröka sig på egen hand**. De måste ta sig in i en cell hos
 ![virus förökar sig](bilder/virus-forokning.svg)
 Bild: Så förökar sig ett virus. Cellen tvingas tillverka nya virus.
 
-**Lever virus?** De flesta forskare säger nej. Virus har arvsmassa och utvecklas, precis som levande organismer. Men de är inte uppbyggda av celler, de har ingen ämnesomsättning, de växer inte och de kan inte föröka sig själva. Virus har kallats "organismer på kanten av livet".
+**Lever virus?** De flesta forskare säger nej. Virus har arvsmassa och utvecklas, precis som levande organismer. Men de är inte uppbyggda av celler, de har ingen **ämnesomsättning**, de växer inte och de kan inte föröka sig själva. Virus har kallats "organismer på kanten av livet".
 
 Många sjukdomar orsakas av virus, till exempel förkylning, influensa, mässling och covid-19. Det finns minst 600 virus som kan drabba människor – ungefär hälften har med förkylningar att göra. Virus förändrar sig hela tiden, så att immunförsvaret inte känner igen dem. Därför kan man bli förkyld år efter år.
 
@@ -91,6 +91,7 @@ Det finns också **nyttiga virus**. Vissa angriper bakterier och andra skadliga 
 
 > **Begrepp**
 > **virus** – en liten partikel av arvsmassa i ett proteinhölje som behöver en värdcell för att föröka sig
+> **ämnesomsättning** – när cellen tar upp näring och gör om den till energi och nya delar
 
 > **💬 Förklara så här** {.green}
 > *Varför kan man bli förkyld år efter år?*<br>

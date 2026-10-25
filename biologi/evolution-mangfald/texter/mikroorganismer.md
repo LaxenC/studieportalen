@@ -24,6 +24,8 @@ Att cellen kan leva själv betyder att den klarar tre saker på egen hand:
 - **Växa** – cellen använder näringen och energin för att bygga nya delar och bli större.
 - **Föröka sig** – när cellen har vuxit kan den dela sig i två nya celler genom att cellens fabriker använder arvsmassan (receptet).
 
+Att cellen tar upp näring och gör om den till energi och nya delar kallas **ämnesomsättning**. Alla levande celler har ämnesomsättning.
+
 ![celldelning](bilder/celldelning.svg)
 Bild: Cellen växer och delar sig. Fabrikerna följer receptet (arvsmassan), och båda nya cellerna får ett eget recept.
 
@@ -37,6 +39,7 @@ Bild: Encellig utan cellkärna, encellig med cellkärna och flercellig.
 > **Begrepp**
 > **organism** – något som lever, till exempel en bakterie, en växt eller ett djur
 > **cell** – den minsta delen av en levande organism som kan leva själv
+> **ämnesomsättning** – när cellen tar upp näring och gör om den till energi och nya delar
 > **cellkärna**– en del i cellen där arvsmassan finns
 > **arvsmassa** -receptet för att skapa fler celler
 > **encellig** – består av en enda cell
@@ -130,7 +133,11 @@ Ett **virus** är en liten partikel av **arvsmassa** i ett **hölje av protein**
 ![virusets delar](bilder/virusdelar.svg)
 Bild: Ett virus är arvsmassa i ett hölje av protein. Det är ingen cell och har inga egna fabriker.
 
-Därför räknas virus oftast **inte** som levande. De har arvsmassa och utvecklas, men de består inte av celler, har ingen ämnesomsättning och växer inte. De har kallats "organismer på kanten av livet". Det visar att det inom biologin inte alltid finns tydliga gränser – även om vi människor gärna vill ha det.
+Därför räknas virus oftast **inte** som levande. De har arvsmassa och utvecklas, men de består inte av celler, har ingen **ämnesomsättning** och växer inte. De har kallats "organismer på kanten av livet". Det visar att det inom biologin inte alltid finns tydliga gränser – även om vi människor gärna vill ha det.
+
+> **Begrepp**
+> **virus** – arvsmassa i ett hölje av protein som behöver en värdcell för att föröka sig
+> **ämnesomsättning** – när cellen tar upp näring och gör om den till energi och nya delar
 
 > **💬 Förklara så här** {.green}
 > *Vad skiljer ett virus från en bakterie?*<br>
