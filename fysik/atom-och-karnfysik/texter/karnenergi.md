@@ -31,7 +31,7 @@ Bild: En neutron träffar en urankärna. Kärnan klyvs i två nya kärnor, energ
 
 > **💬 Förklara så här** {.green}
 > *Vad händer när en neutron träffar en urankärna?*<br>
-> **Neutronen** gör urankärnan instabil, **därför** **klyvs** den i två lättare kärnor – det kallas **fission**. Delarna väger tillsammans lite mindre än urankärnan, och den massan har blivit **energi**. Samtidigt skickas 2–3 nya **neutroner** ut.
+> Neutronen gör urankärnan instabil, **därför** *klyvs* den i två lättare kärnor – det kallas *fission*. Delarna väger tillsammans lite mindre än urankärnan, och den massan har blivit *energi*. Samtidigt skickas 2–3 nya neutroner ut.
 
 > **Viktigt att komma ihåg**
 > - Vid **fission** klyvs en tung kärna, till exempel uran, i två lättare kärnor.
@@ -59,7 +59,7 @@ Efter bomben så finns det kvar radioaktiva isotoper som spridas över stora omr
 
 > **💬 Förklara så här** {.green}
 > *Hur fungerar en kedjereaktion?*<br>
-> Varje klyvning skickar ut 2–3 nya **neutroner**. De träffar nya urankärnor som också **klyvs**, **därför** fördubblas antalet klyvningar hela tiden – en **kedjereaktion**.
+> Varje klyvning skickar ut 2–3 nya neutroner. De träffar nya urankärnor som också *klyvs*, **därför** fördubblas antalet klyvningar hela tiden – en *kedjereaktion*.
 
 > **Viktigt att komma ihåg**
 > - Vid fission frigörs 2–3 nya neutroner som i sin tur träffar nya kärnor som klyvs.
@@ -91,7 +91,7 @@ Energin omvandlas i flera steg: **kärnenergi → värme → rörelseenergi → 
 
 > **💬 Förklara så här** {.green}
 > *Hur blir uran till el i ett kärnkraftverk?*<br>
-> **Kärnbränslet** (uran) klyvs och ger **värme**. Värmen gör vatten till **ånga**, och ångan får **turbinen** att snurra. **Generatorn** gör om rörelsen till **el**. **Styrstavarna** fångar neutroner, **därför** hålls kedjereaktionen jämn.
+> *Kärnbränslet* (uran) *klyvs* och ger värme. Värmen gör vatten till ånga, och ångan får turbinen att snurra. Generatorn gör om rörelsen till el. Styrstavarna fångar neutroner, **därför** hålls kedjereaktionen jämn.
 
 > **Viktigt att komma ihåg**
 > - I ett kärnkraftverk är kedjereaktionen **kontrollerad**, **eftersom** styrstavarna fångar upp neutroner.
