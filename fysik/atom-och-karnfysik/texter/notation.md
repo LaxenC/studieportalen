@@ -41,18 +41,22 @@ Om antalet protoner, som är positivt laddade, är lika många som antalet elekt
 > Laddning= -2, innebär att det finns 2st fler elektroner än protoner och vi vet att det finns 8st protoner eftersom atomnummer=8, därmed finns det 10st elektroner. Antal elektroner kan räknas ut genom atomnummer-laddning (8--2 = 8+2 = 10)
 
 
- :::Fördjupning åk7 Så räknar du ut partiklarna** 
+::: fördjupning åk 7 Så räknar du ut partiklarna
  1. Antal protoner = atomnummer 
  2. Antal neutroner = masstal − atomnummer 
  3. Antal elektroner = atomnummer (om atomen är neutral) 
 
 > **Exempel:** Syre-16 skrivs med masstal 16 och atomnummer 8. Den har 8 protoner, 16 − 8 = 8 neutroner och 8 elektroner.
 :::
+> **💬 Förklara så här** {.green}
+> *Hur kan du se hur många neutroner en atom har?*<br>
+> **Masstalet** är antalet protoner + **neutroner**, och **atomnumret** är antalet **protoner**. **Därför** får man antalet neutroner genom att ta masstalet minus atomnumret. Kol-14 har alltså 14 − 6 = **8 neutroner**.
+
 > **Viktigt att komma ihåg**
 > [[nota 14 6 C stor farg]]
 > Bild: Kemisk beteckning= C, Atomnummer=6 och Masstal=14
 > - Masstalet står överst: protoner + neutroner.
-> - Atomnumret står nederst: antalet protoner.
-> - (åk8,åk9)I en neutral atom är de lika många elektroner som protoner
+> - Atomnumret står nederst: antalet protoner – **därför** visar atomnumret vilket ämne det är.
+> - (åk8,åk9) I en neutral atom är det lika många elektroner som protoner, **eftersom** laddningarna då tar ut varandra.
 > - (åk8,åk9) Fördjupning: Antalet elektroner kan räknas ut genom laddningen på atomen
 

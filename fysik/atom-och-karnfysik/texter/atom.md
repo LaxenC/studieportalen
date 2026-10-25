@@ -35,12 +35,16 @@ Om elektronskalen var taket på Globen skulle kärnan i mitten vara stor som ett
 Protoner och neutroner är ungefär **2000 gånger tyngre** än en elektron. Nästan hela atomens massa finns alltså i kärnan
 
 >**Fördjupning: Den starka kärnkraften**
->Den starka kärnkraften är en av naturens fyra grundläggande krafter. Den verkar >mellan partiklar i atomkärnan och håller ihop protoner och neutroner. Kraften >är mycket stark på korta avstånd och gör att atomkärnan kan hålla ihop, trots >att protonerna stöter bort varandra eftersom de har samma elektriska laddning.
+>Den starka kärnkraften är en av naturens fyra grundläggande krafter. Den verkar mellan partiklar i atomkärnan och håller ihop protoner och neutroner. Kraften är mycket stark på korta avstånd och gör att atomkärnan kan hålla ihop, trots att protonerna stöter bort varandra eftersom de har samma elektriska laddning.
+
+> **💬 Förklara så här** {.green}
+> *Varför finns nästan hela atomens massa i kärnan?*<br>
+> I kärnan finns **protonerna** och **neutronerna**. De är ungefär 2000 gånger tyngre än **elektronerna**. **Därför** påverkar elektronerna nästan inte massan, och nästan all massa finns i **kärnan**.
 
 > **Viktigt att komma ihåg**
 > - Protoner (+) och neutroner finns i atomkärnan. Elektroner (-) finns i skal runt kärnan.
 > - Atomen består nästan bara av tomrum, om atomen var stor som Globen skulle kärnan vara stor som ett blåbär.
-> - Nästan hela atomens vikt finns i kärnan.
+> - Nästan hela atomens vikt finns i kärnan, **eftersom** protoner och neutroner är ungefär 2000 gånger tyngre än elektroner.
 
 
 
@@ -61,9 +65,13 @@ Ingen har kunnat se en atom med blotta ögat. Forskarna har i stället gjort exp
 | 1926 | **Schrödinger** – elektronmoln | [[del schrodinger]] | Elektroner beter sig både som partiklar och som vågor. Man kan bara säga var en elektron troligen finns – ett elektronmoln. |
 :::
 
+> **💬 Förklara så här** {.green}
+> *Varför har atommodellen ändrats genom åren?*<br>
+> Ingen kan se en atom, **därför** bygger forskarna **modeller** utifrån experiment. När ett nytt experiment visade något som den gamla modellen inte kunde förklara – till exempel att alfapartiklar studsade tillbaka från guldfolie – **ändrades modellen** så att den stämde med de nya upptäckterna.
+
 > **Viktigt att komma ihåg**
 > - En atommodell är en förenklad bild av atomen.
-> - Modellen har ändrats när nya upptäckter har gjorts.
+> - Modellen har ändrats när nya upptäckter har gjorts, **eftersom** en modell måste kunna förklara alla experiment.
 
 ## Elektronskal {#skal}
 Elektronerna finns i skal runt atomkärnan, fördelar sig i olika elektronskal runt kärnan. Elektronerna har samma negativa laddning och stöter därför bort varandra (repellerar), därför får det inte plats med hur många elektroner som helst i ett skal. Lite förenklat kan man säga att skalen längre ut kan rymma fler elektroner eftersom de har mer plats. Det innersta skalet rymmer högst 2 elektroner och det andra skalet högst 8.
@@ -90,17 +98,21 @@ Bild: De fyra elektronerna i det yttersta skalet är valenselektroner.
 >
 > Det yttersta skalet rymmer alltså aldrig mer än 8 elektroner (K-skalet högst 2). Först när ett nytt skal har börjat fyllas utanför kan ett inre skal få fler.
 
-::: fördjupning åk 7 Atommodellerna genom historien
+::: fördjupning åk 7 Elektronernas energi
 Kärnan är positivt laddad och elektronerna är negativt laddade, därför dras de till varandra (attraheras). Det kan liknas vid två magneter som dras mot varandra, om man drar magneterna isär måste man använda kraft. På samma sätt krävs det energi för att flytta en elektron längre bort från atomkärnan. Därför har **elektroner längre ut högre energi**. 
 :::
 
 
+> **💬 Förklara så här** {.green}
+> *Varför kan inte alla elektroner ligga i samma skal?*<br>
+> Alla elektroner har samma **negativa laddning**. Lika laddningar **stöter bort** varandra, **därför** får det bara **plats** ett visst antal elektroner i varje **skal**. När ett skal är fullt hamnar nästa elektron i ett skal längre ut.
+
 > **Viktigt att komma ihåg**
 > - Elektronskalen fylls inifrån och ut.
 > - Elektronskalen heter: K, L, M osv
-> - K-skalet rymmer 2 elektroner, L-skalet 8.
+> - K-skalet rymmer 2 elektroner, L-skalet 8 – det får inte plats fler **eftersom** elektronerna stöter bort varandra.
 > - Elektroner i ytterska skalet heter **valenselektroner**
-> - (åk8,9) Elektroner längre ut har högre energi
+> - (åk8,9) Elektroner längre ut har högre energi, **eftersom** det krävs energi för att flytta dem bort från den positiva kärnan.
 > - (åk 9) Det yttersta skalet har aldrig mer än 8 elektroner.
 
 ## Kvarkar {#kvarkar åk=9}
@@ -122,4 +134,4 @@ De tunga kvarkarna är också **instabila** och sönderfaller snabbt till lätta
 
 > **Viktigt att komma ihåg**
 > - Det finns ännu mindre partiklar som heter **kvarkar**
-> - Vanligt material är byggt av up- och down-kvarkar.
+> - Vanligt material är byggt av up- och down-kvarkar, **eftersom** de tyngre kvarkarna är instabila och snabbt sönderfaller.

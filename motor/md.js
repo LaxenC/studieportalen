@@ -9,7 +9,7 @@ const MD = (() => {
   const AK_RE = /^(?:åk|ak)\s*=?\s*([\d,\s–-]+)$/i;
   const parseAk = s => {
     const out = new Set();
-    String(s).split(",").forEach(d => {
+    String(s).replace(/[^\d,–-]/g, "").split(",").forEach(d => {
       const m = d.trim().match(/^(\d+)\s*[–-]\s*(\d+)$/);
       if (m) for (let i = +m[1]; i <= +m[2]; i++) out.add(i); else if (d.trim()) out.add(+d.trim());
     });

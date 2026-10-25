@@ -433,6 +433,7 @@ Rutor skrivs med `>` först på varje rad.
 | **Exempel** | ruta med orange kant |
 | **Viktigt att komma ihåg** | grön ruta. Visas också i *Plugga*. Skriv en i varje avsnitt. |
 | **Annan rubrik** `{.färg}` | faktaruta. Färger: `.gron` `.bla` `.gul` `.rod` `.lila` `.orange` |
+| **💬 Förklara så här** `{.green}` | modellförklaring: en fråga i kursiv stil, `<br>`, sedan förklaringen med begreppen i fetstil och orden *därför* / *eftersom*. Lägg en före Viktigt-rutan. |
 | **Fördjupning…** eller **Extra…** | hopfälld, eleven klickar för att läsa |
 
 **Rutor bredvid varandra:**

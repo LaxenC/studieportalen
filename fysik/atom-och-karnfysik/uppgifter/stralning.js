@@ -270,5 +270,37 @@ Portal.uppgifter([
         { fraga: "Förklara skillnaden mellan alfastrålning och gammastrålning.",
           begrepp: ["partikel|partiklar|heliumkärna", "foton|elektromagnetisk", "energi", "papper", "bly"],
           modell: "**Alfastrålning** är partikelstrålning – kärnan skickar ut en **heliumkärna** (2 protoner och 2 neutroner). Den stoppas redan av **papper**. **Gammastrålning** är elektromagnetisk strålning – **fotoner** med mycket hög **energi** – och tar sig igenom mycket mer. Den stoppas först av tjockt **bly**." }
+      ] },
+
+    { id: "str-sjukvard-para", kapitel: "stralning", avsnitt: ["sjukvard"], titel: "Strålning i sjukvården – para ihop",
+      typ: "para", nivaerPerArskurs: { 7: [2], 8: [1, 2], 9: [1] },
+      varianter: [
+        { rubrik: "Para ihop användningen med vad den gör.",
+          par: [["Röntgen", "Visar skelett och tänder på en bild"], ["Datortomografi", "Många röntgenbilder blir en 3D-bild"],
+                ["Strålbehandling", "Skadar cancercellernas DNA så att de dör"], ["Spårämne", "Radioaktivt ämne som visar hur ett organ fungerar"],
+                ["Sterilisering", "Dödar bakterier på sjukvårdsutrustning"]] }
+      ] },
+
+    { id: "str-sjukvard-flerval", kapitel: "stralning", avsnitt: ["sjukvard"], titel: "Strålning i sjukvården – välj rätt",
+      typ: "flerval", nivaerPerArskurs: { 7: [3], 8: [2], 9: [1, 2] },
+      varianter: [
+        { fraga: "Varför strålar man mot en tumör från flera olika håll vid strålbehandling?",
+          alt: [ { t: "Så att tumören får en hög dos men de friska cellerna runt omkring en låg dos", s: "ratt", f: "strålarna möts i tumören. Där blir dosen hög, men varje del av den friska vävnaden träffas bara av en stråle." },
+                 { t: "För att det går snabbare", s: "fel", f: "det handlar om att skona de friska cellerna." },
+                 { t: "För att strålningen annars inte når fram", s: "fel", f: "gammastrålning tar sig lätt igenom kroppen. Syftet är att skona friska celler." },
+                 { t: "För att döda bakterier runt tumören", s: "fel", f: "strålbehandling riktas mot cancercellerna." } ] },
+        { fraga: "Varför bär röntgenpersonal dosimeter och står bakom en blyvägg?",
+          alt: [ { t: "De utsätts för strålning varje dag och måste hålla sin stråldos låg", s: "ratt", f: "blyet stoppar strålningen och dosimetern visar hur stor dos de har fått." },
+                 { t: "För att patienterna inte ska se dem", s: "fel", f: "blyväggen skyddar mot strålning." },
+                 { t: "Dosimetern mäter patientens blodtryck", s: "fel", f: "en dosimeter mäter stråldos." },
+                 { t: "För att röntgenstrålning kan explodera", s: "fel", f: "strålningen är farlig för att den är joniserande – den kan skada celler." } ] }
+      ] },
+
+    { id: "fk-str-sjukvard", kapitel: "stralning", avsnitt: ["sjukvard"], titel: "Förklara: strålning i sjukvården",
+      typ: "forklara", nivaerPerArskurs: { 7: [3], 8: [2], 9: [1, 2] }, rullista: [1],
+      varianter: [
+        { fraga: "Ge ett exempel på hur strålning används i sjukvården. Förklara en möjlighet och en risk.",
+          begrepp: ["röntgen|strålbehandling|datortomografi|spårämne", "möjlighet|kan se|bota|upptäcka", "risk|skada", "cell|celler|DNA", "dos"],
+          modell: "**Strålbehandling** används mot cancer. **Möjligheten** är att strålningen skadar cancercellernas **DNA** så att de dör, och många kan **botas**. **Risken** är att strålningen också kan **skada** friska **celler** och ge en ökad risk för cancer senare. Därför används så låg **dos** som möjligt och man strålar från flera håll." }
       ] }
 ]);

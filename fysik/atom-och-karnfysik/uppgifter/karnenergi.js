@@ -193,5 +193,20 @@ Portal.uppgifter([
         { fraga: "Förklara hur solen får sin energi.",
           begrepp: ["fusion", "väte", "helium", "temperatur|varmt|grader", "energi"],
           modell: "I solens kärna är **temperaturen** cirka 15 miljoner grader. Där slås **väte**kärnor ihop till **helium** – det kallas **fusion**. En liten del av massan omvandlas då till **energi**, som når oss som ljus och värme." }
+      ] },
+
+    { id: "ke-stjarnor", kapitel: "karnenergi", avsnitt: ["fusion"], titel: "Så bildas stjärnor – välj rätt",
+      typ: "flerval", nivaer: [3],
+      varianter: [
+        { fraga: "Vad gör att en stjärna börjar lysa?",
+          alt: [ { t: "Gravitationen pressar ihop gasen tills det blir så varmt att fusion startar", s: "ratt", f: "vid omkring 10 miljoner grader börjar vätekärnor slås ihop till helium." },
+                 { t: "Gasen börjar brinna med syre", s: "fel", f: "det är ingen förbränning – det är fusion i kärnan." },
+                 { t: "Urankärnor klyvs i mitten av stjärnan", s: "fel", f: "stjärnor får sin energi från fusion, inte fission." },
+                 { t: "Ljus från andra stjärnor reflekteras", s: "fel", f: "stjärnor lyser av egen energi från fusion." } ] },
+        { fraga: "Var har kolet i din kropp en gång bildats?",
+          alt: [ { t: "I en stjärna", s: "ratt", f: "kol bildas genom fusion i stjärnor och sprids ut i rymden när stora stjärnor exploderar." },
+                 { t: "I jordens kärna", s: "fel", f: "kol bildas genom fusion i stjärnor." },
+                 { t: "I ett kärnkraftverk", s: "fel", f: "kärnkraftverk klyver uran – de bildar inte kol." },
+                 { t: "Det har alltid funnits", s: "fel", f: "efter big bang fanns nästan bara väte och helium. Tyngre ämnen bildades i stjärnor." } ] }
       ] }
 ]);

@@ -29,9 +29,13 @@ Bild: En neutron träffar en urankärna. Kärnan klyvs i två nya kärnor, energ
 > **Begrepp**
 > **fission** –  en tung atomkärna klyvs i två lättare kärnor och energi frigörs
 
+> **💬 Förklara så här** {.green}
+> *Vad händer när en neutron träffar en urankärna?*<br>
+> **Neutronen** gör urankärnan instabil, **därför** **klyvs** den i två lättare kärnor – det kallas **fission**. Delarna väger tillsammans lite mindre än urankärnan, och den massan har blivit **energi**. Samtidigt skickas 2–3 nya **neutroner** ut.
+
 > **Viktigt att komma ihåg**
 > - Vid **fission** klyvs en tung kärna, till exempel uran, i två lättare kärnor.
-> - Det frigörs mycket energi
+> - Det frigörs mycket energi, **eftersom** en liten del av massan blir energi.
 
 ## Kedjereaktion {#kedja}
 
@@ -53,8 +57,12 @@ I en atombomb får kedjereaktionen fortsätta okontrollerat. På en bråkdel av 
 
 Efter bomben så finns det kvar radioaktiva isotoper som spridas över stora områden genom radioaktivt nedfall och orsaka allvarliga strålskador. Hur långt nedfallet sprids beror bland annat på väder och vind. Strålningen från nedfallet minskar snabbt med tiden eftersom de radioaktiva ämnena sönderfaller, de flesta har en kort halveringstid. Efter ungefär två dygn kan strålningsnivån ha sjunkit till omkring en hundradel av den ursprungliga nivån.
 
+> **💬 Förklara så här** {.green}
+> *Hur fungerar en kedjereaktion?*<br>
+> Varje klyvning skickar ut 2–3 nya **neutroner**. De träffar nya urankärnor som också **klyvs**, **därför** fördubblas antalet klyvningar hela tiden – en **kedjereaktion**.
+
 > **Viktigt att komma ihåg**
->- Vid fision frigörs 2-3 nya neutrnoer som i sin tur tärffar nya kärnor som klycs
+> - Vid fission frigörs 2–3 nya neutroner som i sin tur träffar nya kärnor som klyvs.
 > - Vid en **kedjereaktion** orsakar neutronerna från en klyvning nya klyvningar.
 > - **Okontrollerad** kedjereaktion → atombomb.
 > - **Kontrollerad** kedjereaktion → kärnkraftverk.
@@ -81,10 +89,13 @@ Energin omvandlas i flera steg: **kärnenergi → värme → rörelseenergi → 
 > **styrstavar** – stavar som fångar upp neutroner och styr kedjereaktionen
 > **kärnbränsle** – det ämne som klyvs i reaktorn, oftast uran-235
 
+> **💬 Förklara så här** {.green}
+> *Hur blir uran till el i ett kärnkraftverk?*<br>
+> **Kärnbränslet** (uran) klyvs och ger **värme**. Värmen gör vatten till **ånga**, och ångan får **turbinen** att snurra. **Generatorn** gör om rörelsen till **el**. **Styrstavarna** fångar neutroner, **därför** hålls kedjereaktionen jämn.
+
 > **Viktigt att komma ihåg**
-> - I ett kärnkraftverk är kedjereaktionen **kontrollerad**.
->- Kärnkraftverk: kärnbrälse klyvs och frigör energi -> vatten blir till ånga --> ångan får turbinen att snurra (rörelse energi) --> generatorn gör rörelse energin till el --> Värmeväxlare kyler ångan så att det blir vatten som leds till reaktorn igen
-> - **Styrstavarna** fångar neutroner och styr reaktionen.
+> - I ett kärnkraftverk är kedjereaktionen **kontrollerad**, **eftersom** styrstavarna fångar upp neutroner.
+>- Kärnkraftverk: kärnbränsle klyvs och frigör energi -> vatten blir till ånga --> ångan får turbinen att snurra (rörelse energi) --> generatorn gör rörelse energin till el --> Värmeväxlare kyler ångan så att det blir vatten som leds till reaktorn igen
 > - Värmen gör vatten till ånga → ångan snurrar **turbinen** → **generatorn** gör el.
 
 ## Fusion – kärnor slås ihop {#fusion}
@@ -118,14 +129,22 @@ Fusion ger också mindre långlivat radioaktivt avfall, men reaktorn kan fortfar
 Därför anses en fusionsreaktor ha vissa säkerhetsfördelar jämfört med vanliga kärnreaktorer som bygger på fission (kärnklyvning). <br>
 Problemet är att det är väldigt svårt att få fusion att producera mer energi än vad anläggningen förbrukar.
 
+> **Fördjupning: Så bildas stjärnor**
+> I rymden finns enorma moln av gas – mest väte – och stoft. **Gravitationen** drar långsamt ihop molnet. När gasen trycks ihop ökar **trycket** och **temperaturen** i mitten. När det har blivit omkring 10 miljoner grader börjar vätekärnor slås ihop till helium – **fusion** – och en stjärna har tänts.
+> Energin från fusionen trycker utåt och håller emot gravitationen. Därför kan en stjärna lysa stadigt i miljarder år. När vätet tar slut börjar stjärnan slå ihop tyngre kärnor, och ämnen som kol och syre bildas. De största stjärnorna slutar med en enorm explosion – en **supernova** – som sprider ämnena ut i rymden. Kolet i din kropp har alltså en gång bildats i en stjärna.
+
 > **Fördjupning: Vätebomben**
 > En **vätebomb** (fusionsbomb) är en ännu kraftigare kärnvapenbomb än atombomben. Den behöver så hög temperatur för att starta fusionen att en atombomb (fission) används som "tändning". Värmen från fissionen får vätekärnor att slå ihop sig – samma process som i solen, men okontrollerad. En vätebomb kan vara hundratals gånger kraftigare än bomberna över Hiroshima och Nagasaki. Vätebomber har provsprängts, men aldrig använts i krig.
 
+> **💬 Förklara så här** {.green}
+> *Varför får solen sin energi från fusion?*<br>
+> I solens kärna är **temperaturen** cirka 15 miljoner grader. **Därför** rör sig **väte**kärnorna så snabbt att de slås ihop till **helium** trots att de stöter bort varandra – **fusion**. En liten del av massan blir **energi**, som når oss som ljus och värme.
+
 > **Viktigt att komma ihåg**
 > - Vid **fusion** slås lätta kärnor ihop till en tyngre.
-> - Fusion kräver **extremt hög temperatur**.
+> - Fusion kräver **extremt hög temperatur**, **eftersom** de positiva kärnorna stöter bort varandra.
 > - **Solen** får sin energi från fusion av väte till helium.
-> - Fusionsreaktorer säkrare, men svårt att bygga en som skapar mer energi än vad det förbrukar
+> - Fusionsreaktorer är säkrare, men det är svårt att bygga en som ger mer energi än den förbrukar.
 
 ## Massa blir energi – E = mc² {#emc2}
 
@@ -147,9 +166,13 @@ Formeln  beskriver att massa och energi kan omvandlas till varandra. Eftersom lj
 På CERN, världens största partikelfysiklaboratorium nära Genève, använder forskare Einsteins formel (E=mc^2) åt andra hållet. Genom att låta partiklar kollidera med mycket hög energi kan en del av energin omvandlas till massa och skapa nya partiklar. På så sätt kan forskarna studera materiens minsta beståndsdelar och lära sig mer om hur universum fungerar.
 
 >**Fördjupning: Instabila partiklar**
->Partiklar som skapas vid kollisioner på CERN kan vara mycket kortlivade  eftersom de är instabila. De sönderfaller då snabbt till andra, mer stabila partiklar. Det beror på att partikeln kan övergå till ett tillstånd med lägre energi genom att omvandlas till andra partiklar. Instabila partiklar sönderfaller nästan omedelbart efter att de har skapats. Forskarna kan därför inte observera dem direkt, utan studerar i stället de partiklar som >bildas vid sönderfallet. Alla partiklar är dock inte kortlivade – exempelvis >är elektroner stabila.
+>Partiklar som skapas vid kollisioner på CERN kan vara mycket kortlivade  eftersom de är instabila. De sönderfaller då snabbt till andra, mer stabila partiklar. Det beror på att partikeln kan övergå till ett tillstånd med lägre energi genom att omvandlas till andra partiklar. Instabila partiklar sönderfaller nästan omedelbart efter att de har skapats. Forskarna kan därför inte observera dem direkt, utan studerar i stället de partiklar som bildas vid sönderfallet. Alla partiklar är dock inte kortlivade – exempelvis är elektroner stabila.
+
+> **💬 Förklara så här** {.green}
+> *Varför ger lite massa så mycket energi?*<br>
+> Enligt **E = mc^2^** är energin lika med massan gånger **ljusets hastighet** i kvadrat. Ljusets hastighet är ett enormt tal, och i kvadrat blir det ännu större. **Därför** blir även en liten **massa** till väldigt mycket **energi**.
 
 > **Viktigt att komma ihåg**
-> - Lite massa innehåller mycket energi: **E = mc^2^**.
+> - Lite massa innehåller mycket energi: **E = mc^2^**, **eftersom** ljusets hastighet i kvadrat är ett enormt tal.
 > - Vid fission och fusion blir en liten del av massan energi.
-> - Vid partikelacceleratorn i CERN blir mycket energi till lite massan (små partiklar)
+> - Vid partikelacceleratorn i CERN blir mycket energi till lite massa (små partiklar).

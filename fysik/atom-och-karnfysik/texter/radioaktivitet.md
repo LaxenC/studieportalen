@@ -35,7 +35,7 @@ Många blev sjuka. Kvinnorna som målade urtavlorna slickade på penslarna för 
 > **Viktigt att komma ihåg**
 > - **1896** upptäckte Henri Becquerel strålningen från uran.
 > - **1898** gav Marie och Pierre Curie den namnet **radioaktivitet**.
-> - I början visste man inte att strålningen var farlig – den användes till exempel i tandkräm och självlysande urtavlor.
+> - I början visste man inte att strålningen var farlig – **därför** användes den till exempel i tandkräm och självlysande urtavlor.
 
 ## Instabila atomkärnor {#instabil}
 
@@ -54,8 +54,12 @@ En atomkärna kan vara instabil av två skäl:
 | För mycket energi (exciterad) | energi | gammastrålning |
 | Obalans av partiklar i kärnan | partiklar | alfa- eller betastrålning |
 
+> **💬 Förklara så här** {.green}
+> *Varför sänder en instabil kärna ut strålning?*<br>
+> En instabil kärna har antingen **för mycket energi** eller **obalans** mellan protoner och neutroner. Den vill bli **stabil**, **därför** gör den sig av med energi (**gammastrålning**) eller partiklar (**alfa- eller betastrålning**).
+
 > **Viktigt att komma ihåg**
-> - En instabil atomkärna vill bli stabil.
+> - En instabil atomkärna vill bli stabil – **därför** gör den sig av med energi eller partiklar.
 > - För mycket energi → kärnan sänder ut **gammastrålning**.
 > - Obalans av partiklar → kärnan sänder ut **alfa-** eller **betastrålning**.
 
@@ -88,6 +92,10 @@ Sönderfallet får namn efter strålningen som skickas ut: **alfasönderfall**, 
 > [[partiklar p p n n]]
 > Bild: Uran-238 skickar ut en alfapartikel (2 protoner + 2 neutroner) och blir torium-234.
 :::
+
+> **💬 Förklara så här** {.green}
+> *Vad händer när en radioaktiv kärna sönderfaller?*<br>
+> Kärnan är **instabil**. Den **sönderfaller** och skickar ut partiklar eller energi som **joniserande strålning**. Vid alfa- och betasönderfall ändras antalet protoner, **därför** blir det ett nytt ämne. Efter ett eller flera sönderfall är kärnan **stabil**.
 
 > **Viktigt att komma ihåg**
 > - En instabil kärna = en **radioaktiv kärna**.
@@ -125,7 +133,7 @@ Strålning syns inte, hörs inte och känns inte. Därför behövs mätinstrumen
 > - **Dosimeter** mäter stråldos i **sievert (Sv)**.
 > - **GM-mätare** mäter aktivitet i **becquerel (Bq)**.
 > - 1 Bq = ett sönderfall per sekund.
-> - Aktiviteten ändras inte när du flyttar dig – men stråldosen gör det.
+> - Aktiviteten ändras inte när du flyttar dig, **eftersom** den bara beror på källan – men stråldosen minskar, **eftersom** strålningen sprids ut.
 > - Skydda dig med **avstånd**, **tid** och **skärmning**.
 
 ## Bakgrundsstrålning {#bakgrund åk=8-9}
@@ -167,9 +175,13 @@ Strålning i vardagen kan också komma från medicinska undersökningar. Hos tan
 
 Källa: [Strålsäkerhetsmyndigheten](https://www.stralsakerhetsmyndigheten.se/)
 
+> **💬 Förklara så här** {.green}
+> *Varför är radon den största källan till stråldos i Sverige?*<br>
+> **Radon** är en **gas** som bildas i marken och tar sig in i husen. Vi andas in den, och den **sönderfaller** i **lungorna** och skickar ut **alfastrålning** direkt mot cellerna. **Därför** ger radon en större stråldos än alla andra källor tillsammans.
+
 > **Viktigt att komma ihåg**
 > - **Bakgrundsstrålning** är naturlig strålning som finns överallt – från kroppen, marken, rymden och radon.
-> - **Radon** i inomhusluften ger den största delen av stråldosen för de flesta i Sverige.
+> - **Radon** i inomhusluften ger den största delen av stråldosen för de flesta i Sverige, **eftersom** vi andas in gasen och den sönderfaller i lungorna.
 > - Strålning kommer också från sjukvården, till exempel röntgen.
 
 ## Halveringstid {#halvering åk=8-9}
@@ -207,10 +219,14 @@ Olika ämnen har mycket olika halveringstid:
 | Kol-14 | cirka 5 730 år |
 | Uran-238 | cirka 4,5 miljarder år |
 
+> **💬 Förklara så här** {.green}
+> *Varför är inte ämnet borta efter två halveringstider?*<br>
+> Under varje halveringstid sönderfaller **hälften av det som är kvar** – inte hälften av det man började med. **Därför** är hälften kvar efter en halveringstid, **en fjärdedel** efter två och en åttondel efter tre.
+
 > **Viktigt att komma ihåg**
 > - **Halveringstid** = tiden tills hälften av de radioaktiva kärnorna har sönderfallit.
 > - Efter varje halveringstid halveras det som är kvar: 100 % → 50 % → 25 % → 12,5 %.
-> - Man kan inte veta när en enskild kärna sönderfaller.
+> - Man kan inte veta när en enskild kärna sönderfaller, **eftersom** det styrs av slumpen.
 
 ## Kol-14-metoden {#kol14 åk=8-9}
 
@@ -232,7 +248,11 @@ Metoden fungerar för fynd som är upp till cirka 50 000 år gamla. Efter det f
 > **Begrepp**
 > **kol-14-metoden** – ett sätt att ta reda på åldern på något som har levt genom att mäta hur mycket kol-14 som är kvar
 
+> **💬 Förklara så här** {.green}
+> *Hur kan man räkna ut hur gammalt ett träfynd är?*<br>
+> När trädet levde hade det samma andel **kol-14** som luften. När det dog slutade det ta upp nytt kol, och kol-14 började **sönderfalla**. **Halveringstiden** är 5 730 år, **därför** kan man räkna ut hur länge sedan trädet dog genom att mäta hur mycket kol-14 som är **kvar**.
+
 > **Viktigt att komma ihåg**
-> - Allt som lever har samma andel kol-14 över tid.
-> - När organismen dör minskar kol-14, eftersom den slutar ta upp ny klo-14
+> - Allt som lever har samma andel kol-14 som luften, **eftersom** det hela tiden tar upp nytt kol.
+> - När organismen dör minskar kol-14, eftersom den slutar ta upp nytt kol-14.
 > - Mängden kol-14 som är kvar visar hur gammalt fyndet är.
