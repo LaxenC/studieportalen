@@ -250,9 +250,9 @@ Metoden fungerar för fynd som är upp till cirka 50 000 år gamla. Efter det f
 
 > **💬 Förklara så här** {.green}
 > *Hur kan man räkna ut hur gammalt ett träfynd är?*<br>
-> När trädet levde hade det samma andel *kol-14* som luften, **eftersom** det hela tiden tog upp nytt kol-14. När det dog slutade det ta upp nytt kol, och kol-14 började minska. *Halveringstiden* är 5 730 år, **därför** kan man räkna ut hur länge sedan trädet dog genom att mäta hur mycket kol-14 som är kvar.
+> När trädet levde var mängden *kol-14* i trädet hela tiden densamma, **eftersom** det fylldes på med nytt kol-14 hela tiden. När det dog slutade det ta upp nytt kol, och kol-14 började minska. *Halveringstiden* är 5 730 år, **därför** kan man räkna ut hur länge sedan trädet dog genom att mäta hur mycket kol-14 som är kvar.
 
 > **Viktigt att komma ihåg**
-> - Allt som lever har samma andel kol-14 som luften, **eftersom** det hela tiden tar upp nytt kol.
+> - Allt som lever har en jämn nivå av kol-14, **eftersom** det fylls på med nytt kol-14 hela tiden.
 > - När organismen dör minskar kol-14, eftersom den slutar ta upp nytt kol-14.
 > - Mängden kol-14 som är kvar visar hur gammalt fyndet är.

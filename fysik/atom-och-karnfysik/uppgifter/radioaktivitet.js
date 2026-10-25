@@ -282,7 +282,7 @@ Portal.uppgifter([
       ordlista: ["kol-14", "kol-12", "kväve-14", "dör", "lever", "5 730 år", "30 år", "kosmisk strålning"],
       varianter: [
         { text: "Kol-14 bildas i atmosfären när [kosmisk strålning|kosmiska strålningen] ger neutroner som träffar [kväve-14|kväve]." },
-        { text: "Allt som [lever] har samma andel kol-14 som luften. När organismen [dör] tas inget nytt kol upp och mängden [kol-14] minskar." },
+        { text: "Allt som [lever] har en jämn nivå av kol-14, eftersom det fylls på hela tiden. När organismen [dör] tas inget nytt kol upp och mängden [kol-14] minskar." },
         { text: "Halveringstiden för kol-14 är cirka [5 730 år|5730 år|5730|5 730]. Efter den tiden är hälften av kol-14 kvar." }
       ] },
 
@@ -315,7 +315,7 @@ Portal.uppgifter([
                 ["Kol-14-metoden fungerar på stenar.", false], ["Halveringstiden för kol-14 är cirka 5 730 år.", true],
                 ["En stabil kärna sänder ut gammastrålning.", false]] },
         { pst: [["En GM-mätare klickar vid varje sönderfall.", true], ["Becquerel är enheten för stråldos.", false],
-                ["Allt som lever har samma andel kol-14 som luften.", true], ["Efter två halveringstider är hälften kvar.", false],
+                ["Allt som lever fylls hela tiden på med nytt kol-14.", true], ["Efter två halveringstider är hälften kvar.", false],
                 ["En instabil kärna kallas också radioaktiv.", true]] }
       ] },
 
