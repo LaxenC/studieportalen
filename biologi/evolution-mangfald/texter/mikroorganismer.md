@@ -31,7 +31,7 @@ Att cellen kan leva själv betyder att den klarar tre saker på egen hand:
 - **Växa** – cellen använder näringen och energin för att bygga nya delar och bli större.
 - **Föröka sig** – när cellen har vuxit kan den dela sig i två nya celler genom att cellens fabriker använder arvsmassan (receptet).
 
-Att cellen tar upp näring och gör om den till energi som används som bräsle till cellens delar (exmempelvis fabrikerna) kallas för **ämnesomsättning**. Alla levande celler har ämnesomsättning.
+Att cellen tar upp näring och gör om den till energi som används som bränsle till cellens delar (exempelvis fabrikerna) kallas för **ämnesomsättning**. Alla levande celler har ämnesomsättning.
 
 ![celldelning](bilder/celldelning.svg)
 Bild: Cellen växer och delar sig. Fabrikerna följer receptet (arvsmassan), och båda nya cellerna får ett eget recept.
@@ -44,7 +44,7 @@ En organism kan bestå av **en enda cell** de kallas **encellig**, exempel är b
 Bild: Encellig utan cellkärna, encellig med cellkärna och flercellig.
 
 > **Begrepp**
-> **ämnesomsättning** – när cellen tar upp näring och gör om den till energi som används till bränsle för cellensdelar
+> **ämnesomsättning** – när cellen tar upp näring och gör om den till energi som används till bränsle för cellens delar
 > **encellig** – består av en enda cell
 > **flercellig** – består av många celler
 
@@ -61,12 +61,12 @@ Organismer med cellkärna kallas alltså **eukaryota** – precis som våra egna
 
 > **💬 Förklara så här** {.green}
 > *Vad är det som gör att celler kan leva själva?*<br>
-> En *cell* tar upp *näring* och får *energi* ur den. Energin använder cellen för att *växa* och *föröka sig*: Cellen förökar sig genom att fabrikerna använder recpetet i arvmassan för att skapa nya celler. Cellen behöver **därför** ingen hjälp utifrån och kan den leva själv.
+> En *cell* tar upp *näring* och får *energi* ur den. Energin använder cellen för att *växa* och *föröka sig*. Cellen förökar sig genom att fabrikerna använder receptet i arvsmassan för att skapa nya celler. Cellen behöver ingen hjälp utifrån, **därför** kan den leva själv.
 
 > **Viktigt att komma ihåg**
 > - Cellen är den minsta delen som kan leva själv
 >  - Allt levande består av **celler**.
-> - **Arvsmassa (DNA)** receptet för att skapa fler celler, ligger i **Cellkärnan* eller löst i cellen
+> - **Arvsmassa (DNA)** receptet för att skapa fler celler, ligger i **cellkärnan** eller löst i cellen
 > - Celler har **ämnesomsättning** som innebär att det tar upp näring och gör om det till energi som behövs till cellens delar när de jobbar
 > - **Encellig** = en enda cell. **Flercellig** = många celler.
 
