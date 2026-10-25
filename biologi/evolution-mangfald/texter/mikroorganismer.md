@@ -61,9 +61,11 @@ Organismer med cellkärna kallas alltså **eukaryota** – precis som våra egna
 > En *cell* tar upp *näring* och får *energi* ur den. Energin använder cellen för att *växa* och *föröka sig*: Cellen förökar sig genom att fabrikerna använder recpetet i arvmassan för att skapa nya celler. Cellen behöver **därför** ingen hjälp utifrån och kan den leva själv.
 
 > **Viktigt att komma ihåg**
-> - Allt levande består av **celler**.
+> - Cellen är den minsta delen som kan leva själv
+> - > - Allt levande består av **celler**.
+> - **Arvsmassa (DNA)** receptet för att skapa fler celler, ligger i **Cellkärnan* eller löst i cellen
+> - Celler har **ämnesomsättning** som innebär att det tar upp näring och gör om det till energi som behövs till cellens delar när de jobbar
 > - **Encellig** = en enda cell. **Flercellig** = många celler.
-> - I **cellkärnan** finns arvsmassan. Bakterier saknar cellkärna.
 
 ## Vad är mikroorganismer? {#vad}
 
@@ -86,7 +88,7 @@ Mikrober är inte bra eller dåliga. Precis som vi försöker de överleva. Ibla
 | ![bakterier](bilder/bakterier.svg) | **Bakterier** | En cell | Ligger fritt i cellen | ✅ Ja | Finns nästan överallt. Viktiga nedbrytare. Några orsakar sjukdom. |
 | ![virus](bilder/virus.svg) | **Virus** | Ingen cell | Inuti ett skal av protein | ❌ Nej | Kan bara föröka sig inne i en värdcell – använder cellens fabriker. |
 | ![svampar](bilder/svampar.svg) | **Svampar** | En eller många | I en cellkärna | ✅ Ja | Varken växter eller djur. Nedbrytare, till exempel mögel och jäst. |
-| ![protozoer](bilder/protozoer.svg) | **Protozoer** | En cell | I en cellkärna | ✅ Ja | Liknar små djur – de rör sig och äter. Vissa är parasiter, till exempel den som orsakar malaria. |
+| ![protozoer](bilder/protozoer.svg) | **Protozoer** | En cell | I en cellkärna | ✅ Ja | Liknar små djur – sättet de rör sig och äter liknar djurs sätt. Vissa är parasiter, till exempel den som orsakar malaria. |
 | ![alger](bilder/alger.svg) | **Alger** | En eller många | I en cellkärna | ✅ Ja | Gör fotosyntes och bildar syre. Lever oftast i vatten. |
 | ![arkéer](bilder/arkeer.svg) | **Arkéer** | En cell | Ligger fritt i cellen | ✅ Ja | Liknar bakterier. Lever ofta i extrema miljöer, till exempel heta källor. |
 
@@ -119,7 +121,7 @@ Bakterier är viktiga **nedbrytare** i naturen. Vissa bakterier gör fotosyntes 
 
 > **💬 Förklara så här** {.green}
 > *Hur kan en enda bakterie bli till miljoner bakterier på kort tid?*<br>
-> Bakterier förökar sig genom att *dela sig*. En bakterie blir två, två blir fyra, fyra blir åtta och så vidare. Antalet fördubblas vid varje delning, **därför** blir de väldigt många på kort tid.
+> Bakterier är encelliga så för att försöka sig behöver de bara skapa en till cell, när vi människor ska föröka oss behöver många celler skapas. Bakterier förökar sig genom att *dela sig*. En bakterie blir två, två blir fyra, fyra blir åtta och så vidare. Antalet fördubblas vid varje delning, **därför** blir de väldigt många på kort tid.
 
 > **Viktigt att komma ihåg**
 > - Bakterier är **encelliga** och **saknar cellkärna**.
@@ -133,7 +135,7 @@ Ett **virus** är en liten partikel av **arvsmassa** i ett **hölje av protein**
 ![virusets delar](bilder/virusdelar.svg)
 Bild: Ett virus är arvsmassa i ett hölje av protein. Det är ingen cell och har inga egna fabriker.
 
-Därför räknas virus oftast **inte** som levande. De har arvsmassa och utvecklas, men de består inte av celler, har ingen **ämnesomsättning** och växer inte. De har kallats "organismer på kanten av livet". Det visar att det inom biologin inte alltid finns tydliga gränser – även om vi människor gärna vill ha det.
+Därför räknas virus oftast **inte** som levande. De har arvsmassa och och kan förändras över tid, men de består inte av celler, har ingen **ämnesomsättning** och växer inte. Trots att de ibte räknas som levande så är dom en mikrober.
 
 > **Begrepp**
 > **virus** – arvsmassa i ett hölje av protein som behöver en värdcell för att föröka sig
