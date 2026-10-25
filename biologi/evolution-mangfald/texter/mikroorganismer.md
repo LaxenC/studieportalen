@@ -16,20 +16,17 @@ En mikroorganism är alltså en mycket liten levande varelse. Men vad är det so
 
 Allt som lever – alla organismer – är uppbyggt av **celler**. En cell är den minsta delen som kan leva själv. De flesta celler är så små att man bara kan se dem i mikroskop.
 
+I många celler finns en **cellkärna**. Där ligger cellens **arvsmassa** (DNA) – cellens "recept" för att kunna skapa fler celler. Receptet används av cellens fabriker för att skapa nya celler.<br>
+Celler hos djur, växter och svampar har cellkärna. Bakterier har **ingen cellkärna** – deras arvsmassa ligger fritt i cellen.
+
 Att cellen kan leva själv betyder att den klarar tre saker på egen hand:
 - **Ta upp näring** – cellen tar in ämnen från omgivningen, till exempel socker och syre, och får energi ur dem.
 - **Växa** – cellen använder näringen och energin för att bygga nya delar och bli större.
-- **Föröka sig** – när cellen har vuxit kan den dela sig i två nya celler.
+- **Föröka sig** – när cellen har vuxit kan den dela sig i två nya celler genonom att cellens fabriker använder arvsmassan (receptet) 
 
-> **💬 Förklara så här** {.green}
-> *Vad är det som gör att celler kan leva själva?*<br>
-> En *cell* tar upp *näring* och får *energi* ur den. Energin använder cellen för att *växa* och *föröka sig* genom att dela sig. Cellen behöver ingen hjälp utifrån för det här, **därför** kan den leva själv.
+En organism kan bestå av **en enda cell** de kallas **encellig**, exempel är bakterier och amöbor. Eller av **många celler** kallas **flercellig**, exempelvis Människor, djur, växter och skogssvampar – du själv består av tusentals miljarder celler.
 
-- En organism som består av **en enda cell** kallas **encellig**. Exempel är bakterier och amöbor.
-- En organism som består av **många celler** kallas **flercellig**. Människor, djur, växter och skogssvampar är flercelliga – du själv består av tusentals miljarder celler.
 
-I många celler finns en **cellkärna**. Där ligger cellens **arvsmassa** (DNA) – cellens "recept" för att kunna skapa fler celler. Receptet används av cellens fabriker för att skapa nya celler.<br>
-Celler hos djur, växter och svampar har cellkärna. Bakterier har **ingen cellkärna** – deras arvsmassa ligger fritt i cellen.
 
 ![celltyper](bilder/celltyper.svg)
 Bild: Encellig utan cellkärna, encellig med cellkärna och flercellig.
@@ -42,9 +39,7 @@ Bild: Encellig utan cellkärna, encellig med cellkärna och flercellig.
 > **encellig** – består av en enda cell
 > **flercellig** – består av många celler
 
-> **💬 Förklara så här** {.green}
-> *Varför räknas en bakterie som levande trots att den bara är en cell?*<br>
-> En bakterie är en hel *cell*. Den tar upp näring, växer och förökar sig själv genom att dela sig. **Därför** är den en levande *encellig* organism.
+
 
 ::: fördjupning åk 7 Livets tre domäner
 Alla organismer delas in i tre stora grupper – **domäner** – efter hur deras celler är byggda:
@@ -54,6 +49,10 @@ Alla organismer delas in i tre stora grupper – **domäner** – efter hur dera
 
 Organismer med cellkärna kallas alltså **eukaryota** – precis som våra egna celler.
 :::
+
+> **💬 Förklara så här** {.green}
+> *Vad är det som gör att celler kan leva själva?*<br>
+> En *cell* tar upp *näring* och får *energi* ur den. Energin använder cellen för att *växa* och *föröka sig* genom att fabrikerna använder recpetet i arvmassan för att skapa nya celler. Cellen behöver ingen hjälp utifrån  **därför** kan den leva själv.
 
 > **Viktigt att komma ihåg**
 > - Allt levande består av **celler**.
@@ -76,14 +75,14 @@ Mikrober är inte bra eller dåliga. Precis som vi försöker de överleva. Ibla
 
 ### Det finns 6 grupper av mikrober
 
-| | Grupp | Celler och cellkärna | Kännetecken |
+| | Grupp | Cell, arvsmassa (DNA), fabrik | Kännetecken |
 |---|---|---|---|
-| ![bakterier](bilder/bakterier.svg) | **Bakterier** | En cell – ingen cellkärna | Finns nästan överallt. Viktiga nedbrytare. Några orsakar sjukdom. |
-| ![virus](bilder/virus.svg) | **Virus** | Ingen cell | Arvsmassa i ett hölje av protein. Kan bara föröka sig inne i en värdcell. |
-| ![svampar](bilder/svampar.svg) | **Svampar** | En eller många celler – med cellkärna | Varken växter eller djur. Nedbrytare, till exempel mögel och jäst. |
-| ![protozoer](bilder/protozoer.svg) | **Protozoer** | En cell – med cellkärna | Liknar små djur – de rör sig och äter. Vissa är parasiter, till exempel den som orsakar malaria. |
-| ![alger](bilder/alger.svg) | **Alger** | En eller många celler – med cellkärna | Gör fotosyntes och bildar syre. Lever oftast i vatten. |
-| ![arkéer](bilder/arkeer.svg) | **Arkéer** | En cell – ingen cellkärna | Liknar bakterier. Lever ofta i extrema miljöer, till exempel heta källor. |
+| ![bakterier](bilder/bakterier.svg) | **Bakterier** | En cell – ingen cellkärna, arvmassa (DNA) ligger fritt i cellen - har fabriker | Finns nästan överallt. Viktiga nedbrytare. Några orsakar sjukdom. |
+| ![virus](bilder/virus.svg) | **Virus** | Ingen cell – arvmassa (DNA) ligger inuti ett skal av protein - inga fabriker |  Kan bara föröka sig av sig själv. |
+| ![svampar](bilder/svampar.svg) | **Svampar** | En eller många celler – med arvsmassa (DNA) cellkärna - har fabriker | Varken växter eller djur. Nedbrytare, till exempel mögel och jäst. |
+| ![protozoer](bilder/protozoer.svg) | **Protozoer** | En celle – med arvsmassa (DNA) cellkärna - har fabriker | Liknar små djur – de rör sig och äter. Vissa är parasiter, till exempel den som orsakar malaria. |
+| ![alger](bilder/alger.svg) | **Alger** | En eller många celler –  – med arvsmassa (DNA) cellkärna - har fabriker | Gör fotosyntes och bildar syre. Lever oftast i vatten. |
+| ![arkéer](bilder/arkeer.svg) | **Arkéer** | En cell – ingen cellkärna, arvmassa (DNA) ligger fritt i cellen - har fabriker | Liknar bakterier. Lever ofta i extrema miljöer, till exempel heta källor. |
 
 > **💬 Förklara så här** {.green}
 > *Varför upptäckte man mikroorganismerna först på 1600-talet?*<br>
