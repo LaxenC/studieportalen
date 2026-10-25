@@ -91,7 +91,7 @@ Bild: Lymfsystemet i kroppen och en förstorad lymfknuta. I lymfknutan undersök
 
 > **Begrepp**
 > **lymfsystemet** – organ, kärl och vävnader som skyddar mot infektioner och håller vätskebalansen i kroppen
-> **lymfknutor** – små knutor där vita blodkroppar samlas och kontrollerar lymfan
+> **lymfknutor** – små knutor där vita blodkroppar samlas och kontrollerar lymfan, finns bland annat på halsen, i armhålorna och i ljumskarna.
 
 ::: fördjupning åk 7 Immunförsvarets organ
 Flera organ hör till immunförsvaret och lymfsystemet:
@@ -99,7 +99,6 @@ Flera organ hör till immunförsvaret och lymfsystemet:
 - **Brässen** – här "tränas" T-cellerna.
 - **Mjälten** – filtrerar blodet och tar bort gamla blodkroppar och mikrober.
 - **Tonsillerna** (halsmandlarna) – fångar mikrober som kommer in genom munnen.
-- **Lymfknutorna** – finns bland annat på halsen, i armhålorna och i ljumskarna.
 :::
 
 > **💬 Förklara så här** {.green}
@@ -114,12 +113,12 @@ Flera organ hör till immunförsvaret och lymfsystemet:
 
 Om det medfödda försvaret inte räcker startar det **förvärvade** (specifika) **immunförsvaret**. Det är mer träffsäkert – varje försvarscell känner igen bara en sorts mikrob. Förenklat sker det i tre steg:
 
-![immunsvaret](bilder/immunsvar.svg?v=2)
+![immunsvaret](bilder/immunsvar.svg)
 Bild: Immunsvaret i tre steg.
 
-1. **Ätarceller** äter upp mikroberna och visar upp bitar av dem för andra försvarsceller – som ett "efterlysningsfoto".
-2. Andra vita blodkroppar tillverkar **antikroppar** som passar precis mot just den mikroben. Antikropparna fastnar på mikroberna, märker ut dem och gör dem ofarliga.
-3. **Minnesceller** bildas. De kommer ihåg mikroben – ibland hela livet.
+1. **Ätarceller** äter upp patogenen och visar upp bitar av dem för andra försvarsceller – som ett "efterlysningsfoto".
+2. Andra vita blodkroppar tillverkar **antikroppar** som passar precis mot just den patogenen. Antikropparna fastnar på patogenen, märker ut dem och gör dem ofarliga.
+3. **Minnesceller** bildas. De kommer ihåg patogenen coh Om samma patogen kommer tillbaka kan immunförsvaret reagera snabbare nästa gång. Minnesceller kan finnas kvar i många år, ibland hela livet.
 
 Allt det här tar några dagar. Därför hinner man ofta bli sjuk första gången.
 
@@ -150,7 +149,7 @@ Det finns många fler celler och steg i immunsvaret, och det är mycket komplice
 
 ## Immunminnet {#minne}
 
-Minnescellerna stannar kvar i kroppen efter att du har blivit frisk. Om samma mikrob kommer tillbaka känner de igen den direkt. Då kan försvaret tillverka antikroppar mycket snabbare – ofta så snabbt att du inte ens märker att du blivit smittad. Du har blivit **immun**.
+Minnescellerna stannar kvar i kroppen efter att du har blivit frisk. Om samma pantogen kommer tillbaka känner de igen den direkt. Då kan försvaret tillverka antikroppar mycket snabbare – ofta så snabbt att du inte ens märker att du blivit smittad. Du har blivit **immun**.
 
 Mot vissa sjukdomar, till exempel vattkoppor, blir man immun hela livet. Mot förkylning och influensa fungerar det sämre, eftersom de virusen hela tiden förändrar sig så att minnescellerna inte känner igen dem.
 
