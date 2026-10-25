@@ -10,7 +10,7 @@ Livet på jorden är otroligt varierat – från blåvalar till organismer som b
 
 **Mikrober** – förkortning av *mikroorganismer* – är små levande organismer som är för små för att ses med blotta ögat. På 1600-talet uppfanns mikroskopet, och då kunde man för första gången se dem. Det gav forskarna en ny förståelse för sjukdomar, smitta och hur saker bryts ner.
 
-Mikrober är inte bra eller dåliga. Precis som vi försöker de överleva. Ibland innebär deras överlevnad att de måste angripa oss – på samma sätt som en tiger som jagar ett rådjur inte är "ond", den försöker bara överleva.
+Mikrober är inte bra eller dåliga. Precis som vi försöker de överleva. Ibland innebär deras överlevnad att de måste angripa oss – på samma sätt som en tiger som jagar en antilop inte är "ond", den försöker bara överleva.
 
 - De flesta mikrober är **neutrala** – de påverkar oss inte.
 - Många är **nyttiga** – de hjälper oss, till exempel i tarmen.
@@ -20,13 +20,21 @@ Mikrober är inte bra eller dåliga. Precis som vi försöker de överleva. Ibla
 > **mikrober** – små levande organismer som är för små för att ses med blotta ögat
 > **patogen** – en organism som orsakar sjukdom hos sin värd
 
-![mikrober](bilder/mikrobtyper.svg)
-Bild: De sex grupperna av mikrober som vi läser om i det här kapitlet.
+### Det finns 6 grupper av mikrober
+||Grupp|Cell + cellkärna|Beskrivning|
+|![bakterier](bilder/bakterier.svg)|Bakterier |En cell - ingen cellkärna | |
+|![virus](bilder/virus.svg)| Virus | ingen cell | |
+|![svampar](bilder/svampar.svg)|Svampar | Flera cellar ||
+|![protozoer](bilder/protozoer.svg)| Protozoer|En cell - med cellkärnar ||
+|![alger](bilder/alger.svg)| Alger|En cell - med cellkärnar |Gör fotosyntes|
+|![arkeer](bilder/arkeer.svg)| Arkèer|En cell - med cellkärnar |Lever i extrema miljöner|
+
 
 > **Viktigt att komma ihåg**
 > - **Mikrober** är levande organismer som är för små för att synas utan mikroskop.
 > - De flesta mikrober är ofarliga eller nyttiga.
 > - Mikrober som orsakar sjukdom kallas **patogener**.
+> - Det finns 6 grupper av mikrober: Bakterier, Virus, Svampar, Protozoer, Alger och Arkèer
 
 ## Bakterier och arkéer {#bakterier}
 
