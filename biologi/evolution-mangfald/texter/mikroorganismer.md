@@ -19,7 +19,8 @@ Allt som lever – alla organismer – är uppbyggt av **celler**. En cell är d
 - En organism som består av **en enda cell** kallas **encellig**. Exempel är bakterier och amöbor.
 - En organism som består av **många celler** kallas **flercellig**. Människor, djur, växter och skogssvampar är flercelliga – du själv består av tusentals miljarder celler.
 
-I många celler finns en **cellkärna**. Där ligger cellens **arvsmassa** (DNA) – cellens "ritning". Celler hos djur, växter och svampar har cellkärna. Bakterier har **ingen cellkärna** – deras arvsmassa ligger fritt i cellen.
+I många celler finns en **cellkärna**. Där ligger cellens **arvsmassa** (DNA) – cellens "recept" för att kunna skapa fler celler. Receptet används av cellens fabriker för att skapa nya celler <br>
+Celler hos djur, växter och svampar har cellkärna. Bakterier har **ingen cellkärna** – deras arvsmassa ligger fritt i cellen.
 
 ![celltyper](bilder/celltyper.svg)
 Bild: Encellig utan cellkärna, encellig med cellkärna och flercellig.
@@ -27,9 +28,10 @@ Bild: Encellig utan cellkärna, encellig med cellkärna och flercellig.
 > **Begrepp**
 > **organism** – något som lever, till exempel en bakterie, en växt eller ett djur
 > **cell** – den minsta delen av en levande organism som kan leva själv
+> **cellkärna**– en del i cellen där arvsmassan finns
+> **arvsmassa** -receptet för att skapa fler celler
 > **encellig** – består av en enda cell
 > **flercellig** – består av många celler
-> **cellkärna** – en del i cellen där arvsmassan finns
 
 > **💬 Förklara så här** {.green}
 > *Varför räknas en bakterie som levande trots att den bara är en cell?*<br>
