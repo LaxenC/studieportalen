@@ -133,5 +133,24 @@ Portal.uppgifter([
         { rubrik: "Para ihop steget i immunsvaret med vad som händer.",
           par: [["1. Upptäcka", "Ätarceller äter patogenen och visar upp antigener"], ["2. Larma", "Försvaret känner igen antigenerna och larmar"],
                 ["3. Angripa", "Antikroppar märker ut patogenerna och infekterade celler förstörs"], ["4. Minnas", "Minnesceller kommer ihåg patogenen till nästa gång"]] }
+      ] },
+    { id: "for-bast", kapitel: "forsvar", avsnitt: ["oversikt", "inflammation", "immunsvar", "minne"], titel: "Vad beskriver bäst? – kroppens försvar",
+      typ: "flerval", nivaer: [2],
+      varianter: [
+        { fraga: "Vad beskriver bäst vad antikroppar gör?",
+          alt: [ { t: "De fastnar på en viss patogen, märker ut den och gör den ofarlig så att ätarcellerna kan förstöra den", s: "ratt", f: "antikroppar passar bara mot en viss patogen och hjälper resten av försvaret att hitta den." },
+                 { t: "De bekämpar patogener", s: "delvis", f: "stämmer, men säger inte hur – de fastnar på och märker ut patogenen." },
+                 { t: "De bildas av B-celler", s: "delvis", f: "stämmer, men beskriver var de kommer ifrån – inte vad de gör." },
+                 { t: "De äter upp patogenerna", s: "fel", f: "det är ätarcellerna som äter upp patogenerna – antikropparna märker ut dem." } ] },
+        { fraga: "Vad beskriver bäst varför man blir immun mot vattkoppor?",
+          alt: [ { t: "Minnesceller finns kvar och känner igen viruset, så att försvaret går så snabbt att man inte blir sjuk igen", s: "ratt", f: "minnescellerna gör att antikroppar tillverkas direkt nästa gång." },
+                 { t: "Kroppen har redan haft sjukdomen", s: "delvis", f: "stämmer, men förklarar inte vad det är i kroppen som gör att man inte blir sjuk igen." },
+                 { t: "Man har antikroppar mot vattkoppor", s: "delvis", f: "nära – men det är minnescellerna som gör att antikroppar snabbt kan tillverkas igen." },
+                 { t: "Vattkoppsviruset dör ut efter en tid", s: "fel", f: "viruset finns kvar i världen – det är kroppens minne som skyddar." } ] },
+        { fraga: "Vad beskriver bäst vad som händer vid en inflammation?",
+          alt: [ { t: "Mer blod strömmar till området med vita blodkroppar som bekämpar patogener och städar undan skadan – därför blir det rött, varmt och svullet", s: "ratt", f: "inflammation är det medfödda försvarets snabba reaktion." },
+                 { t: "Det blir rött och svullet", s: "delvis", f: "det är tecknen på inflammation, men inte vad som händer i kroppen." },
+                 { t: "Vita blodkroppar kommer till området", s: "delvis", f: "stämmer, men förklarar inte varför det blir rött, varmt och svullet." },
+                 { t: "Antikroppar tillverkas för första gången", s: "fel", f: "antikroppar hör till det förvärvade försvaret – inflammationen är medfödd." } ] }
       ] }
 ]);

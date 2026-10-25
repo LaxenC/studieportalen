@@ -91,5 +91,24 @@ Portal.uppgifter([
                 ["Jäst är en svamp.", true], ["Svampinfektioner är oftast mycket allvarliga.", false]] },
         { pst: [["Malaria orsakas av en protozo.", true], ["En parasit lever på eller i en värd.", true], ["Virus är större än bakterier.", false],
                 ["Svampar är en sorts växter.", false], ["Bakterier förökar sig genom delning.", true]] }
+      ] },
+    { id: "smi-bast", kapitel: "smitta", avsnitt: ["sjukdom", "smittspridning"], titel: "Vad beskriver bäst? – smitta",
+      typ: "flerval", nivaer: [2],
+      varianter: [
+        { fraga: "Vad beskriver bäst vad en infektion är?",
+          alt: [ { t: "En patogen tar sig in i kroppen och förökar sig där", s: "ratt", f: "det är både att patogenen kommer in och att den förökar sig som gör det till en infektion." },
+                 { t: "Man har feber", s: "delvis", f: "feber kan vara ett symptom på en infektion, men det beskriver inte vad en infektion är." },
+                 { t: "Bakterier finns i kroppen", s: "delvis", f: "vi har alltid bakterier i kroppen – en infektion är när en patogen tar sig in och förökar sig." },
+                 { t: "Man har fått en allergi", s: "fel", f: "en allergi smittar inte och är ingen infektion." } ] },
+        { fraga: "Vad beskriver bäst varför handtvätt minskar smittspridning?",
+          alt: [ { t: "Patogener på händerna tvättas bort innan de hinner föras vidare till munnen, näsan eller andra personer", s: "ratt", f: "handtvätt bryter smittvägen via händerna – både till dig själv och till andra." },
+                 { t: "Händerna blir rena", s: "delvis", f: "stämmer, men förklarar inte varför det minskar smittspridningen." },
+                 { t: "Tvål dödar bakterier", s: "delvis", f: "tvål hjälper till att få bort patogener, men svaret säger inte hur det stoppar smittan." },
+                 { t: "Man blir immun mot sjukdomen", s: "fel", f: "immun blir man genom minnesceller – inte av att tvätta händerna." } ] },
+        { fraga: "Vad beskriver bäst vad en pandemi är?",
+          alt: [ { t: "En smittsam sjukdom som sprids över stora delar av världen", s: "ratt", f: "en pandemi är en epidemi som har spridits över flera länder och världsdelar." },
+                 { t: "En sjukdom som många blir sjuka i", s: "delvis", f: "det gäller också en epidemi – det som gör det till en pandemi är att den sprids över världen." },
+                 { t: "En sjukdom som orsakas av virus", s: "delvis", f: "många pandemier orsakas av virus, men digerdöden orsakades av en bakterie. Det avgörande är spridningen." },
+                 { t: "En sjukdom som bara finns i ett land", s: "fel", f: "då är det ingen pandemi – en pandemi sprids över stora delar av världen." } ] }
       ] }
 ]);

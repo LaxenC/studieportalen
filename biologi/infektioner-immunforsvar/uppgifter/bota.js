@@ -114,5 +114,24 @@ Portal.uppgifter([
         { fraga: "Vad har vaccin betytt för människors liv? Förklara.",
           begrepp: ["minnesceller|immun|skydd|skyddar", "sjukdom", "dö|död|rädda|överlev", "utrot|smittkoppor", "flockimmunitet|sprids|spridas"],
           modell: "Ett vaccin gör att kroppen bildar **minnesceller**, så att man blir **immun** utan att först bli sjuk. Därför är **sjukdomar** som förr **dödade** många barn, till exempel mässling och polio, i dag ovanliga. **Smittkoppor** har till och med **utrotats** helt. När många är vaccinerade **sprids** sjukdomen dåligt – **flockimmunitet** – och då skyddas även de som inte kan vaccinera sig." }
+      ] },
+    { id: "bot-bast", kapitel: "bota", avsnitt: ["vaccin", "antibiotika"], titel: "Vad beskriver bäst? – bota och förebygga",
+      typ: "flerval", nivaer: [2],
+      varianter: [
+        { fraga: "Vad beskriver bäst hur ett vaccin skyddar?",
+          alt: [ { t: "Kroppen tränar på ofarliga delar av patogenen och bildar minnesceller, så att försvaret går snabbt om den riktiga smittan kommer", s: "ratt", f: "vaccinet ger immunitet utan att man först blir sjuk." },
+                 { t: "Vaccinet innehåller delar av en patogen", s: "delvis", f: "stämmer, men förklarar inte hur det skyddar." },
+                 { t: "Kroppen tillverkar antikroppar", s: "delvis", f: "stämmer, men det är minnescellerna som ger det långa skyddet." },
+                 { t: "Vaccinet dödar patogenerna i kroppen", s: "fel", f: "vaccin dödar inga patogener – det tränar immunförsvaret." } ] },
+        { fraga: "Vad beskriver bäst flockimmunitet?",
+          alt: [ { t: "När många är vaccinerade sprids sjukdomen dåligt, så att även de som inte kan vaccinera sig skyddas", s: "ratt", f: "flockimmunitet skyddar till exempel nyfödda och sjuka." },
+                 { t: "Många människor är vaccinerade", s: "delvis", f: "det är förutsättningen – men flockimmunitet handlar om att sjukdomen inte kan spridas." },
+                 { t: "Sjukdomen sprids sämre", s: "delvis", f: "stämmer, men säger inte varför eller vilka som skyddas." },
+                 { t: "Alla i en grupp har haft sjukdomen samtidigt", s: "fel", f: "flockimmunitet bygger på att många är immuna – inte på att alla är sjuka." } ] },
+        { fraga: "Vad beskriver bäst varför antibiotika inte hjälper mot förkylning?",
+          alt: [ { t: "Förkylning orsakas av virus, och virus saknar cellvägg och egna fabriker som antibiotikan kan angripa", s: "ratt", f: "antibiotika är en nyckel som behöver ett lås – och låset finns bara i bakterier." },
+                 { t: "Förkylning orsakas av virus", s: "delvis", f: "stämmer, men förklarar inte varför antibiotika inte biter på virus." },
+                 { t: "Antibiotika fungerar bara mot bakterier", s: "delvis", f: "stämmer, men förklarar inte varför." },
+                 { t: "Förkylning är för lindrig för antibiotika", s: "fel", f: "det handlar inte om hur sjuk man är – antibiotika biter inte på virus." } ] }
       ] }
 ]);
