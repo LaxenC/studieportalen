@@ -56,7 +56,7 @@ En atomkärna kan vara instabil av två skäl:
 
 > **💬 Förklara så här** {.green}
 > *Varför sänder en instabil kärna ut strålning?*<br>
-> En instabil kärna har antingen **för mycket energi** eller **obalans** mellan protoner och neutroner. Den vill bli **stabil**, **därför** gör den sig av med energi (**gammastrålning**) eller partiklar (**alfa- eller betastrålning**).
+> En *instabil kärna* har antingen *för mycket energi* eller *obalans* mellan protoner och neutroner. Den vill bli *stabil*, **därför** gör den sig av med energi (*gammastrålning*) eller partiklar (*alfa- eller betastrålning*).
 
 > **Viktigt att komma ihåg**
 > - En instabil atomkärna vill bli stabil – **därför** gör den sig av med energi eller partiklar.
@@ -95,7 +95,7 @@ Sönderfallet får namn efter strålningen som skickas ut: **alfasönderfall**, 
 
 > **💬 Förklara så här** {.green}
 > *Vad händer när en radioaktiv kärna sönderfaller?*<br>
-> Kärnan är **instabil**. Den **sönderfaller** och skickar ut partiklar eller energi som **joniserande strålning**. Vid alfa- och betasönderfall ändras antalet protoner, **därför** blir det ett nytt ämne. Efter ett eller flera sönderfall är kärnan **stabil**.
+> Kärnan är *instabil*. Den *sönderfaller* och skickar ut partiklar eller energi som *joniserande strålning*. Vid alfa- och betasönderfall ändras antalet protoner, **därför** blir det ett nytt ämne. Efter ett eller flera sönderfall är kärnan *stabil*.
 
 > **Viktigt att komma ihåg**
 > - En instabil kärna = en **radioaktiv kärna**.
@@ -177,7 +177,7 @@ Källa: [Strålsäkerhetsmyndigheten](https://www.stralsakerhetsmyndigheten.se/)
 
 > **💬 Förklara så här** {.green}
 > *Varför är radon den största källan till stråldos i Sverige?*<br>
-> **Radon** är en **gas** som bildas i marken och tar sig in i husen. Vi andas in den, och den **sönderfaller** i **lungorna** och skickar ut **alfastrålning** direkt mot cellerna. **Därför** ger radon en större stråldos än alla andra källor tillsammans.
+>Radon är en radioaktiv gas som bildas hela tiden i marken och i byggnadsmaterial. Gasen tar sig in i husen och samlas inomhus, där vi är större delen av dygnet. Därför andas vi in radon nästan hela tiden. Radonet sönderfaller i lungorna och skickar ut alfastrålning direkt mot cellerna. Utanför kroppen hade huden stoppat alfastrålningen, men inne i lungorna når hela strålningen fram. Tillsammans gör det att radon ger mer stråldos än någon annan källa.
 
 > **Viktigt att komma ihåg**
 > - **Bakgrundsstrålning** är naturlig strålning som finns överallt – från kroppen, marken, rymden och radon.
@@ -221,7 +221,7 @@ Olika ämnen har mycket olika halveringstid:
 
 > **💬 Förklara så här** {.green}
 > *Varför är inte ämnet borta efter två halveringstider?*<br>
-> Under varje halveringstid sönderfaller **hälften av det som är kvar** – inte hälften av det man började med. **Därför** är hälften kvar efter en halveringstid, **en fjärdedel** efter två och en åttondel efter tre.
+> Under varje halveringstid sönderfaller hälften av det som är kvar** inte hälften av det man började med. **Därför** är hälften kvar efter en halveringstid, en fjärdedel efter två och en åttondel efter tre.
 
 > **Viktigt att komma ihåg**
 > - **Halveringstid** = tiden tills hälften av de radioaktiva kärnorna har sönderfallit.
@@ -250,7 +250,7 @@ Metoden fungerar för fynd som är upp till cirka 50 000 år gamla. Efter det f
 
 > **💬 Förklara så här** {.green}
 > *Hur kan man räkna ut hur gammalt ett träfynd är?*<br>
-> När trädet levde hade det samma andel **kol-14** som luften. När det dog slutade det ta upp nytt kol, och kol-14 började **sönderfalla**. **Halveringstiden** är 5 730 år, **därför** kan man räkna ut hur länge sedan trädet dog genom att mäta hur mycket kol-14 som är **kvar**.
+> När trädet levde hade det samma andel *kol-14* hela tider **eftersom** den tar upp ny kol-14 hela tiden. När det dog slutade det ta upp nytt kol, och kol-14 började minska. *Halveringstiden* är 5 730 år, **därför** kan man räkna ut hur länge sedan trädet dog genom att mäta hur mycket kol-14 som är kvar.
 
 > **Viktigt att komma ihåg**
 > - Allt som lever har samma andel kol-14 som luften, **eftersom** det hela tiden tar upp nytt kol.
