@@ -162,5 +162,28 @@ Portal.uppgifter([
                  { t: "En bakterie", s: "fel", f: "jäst är en svamp, inte en bakterie." },
                  { t: "Ett virus", s: "fel", f: "jäst är en levande svamp." },
                  { t: "En alg", s: "fel", f: "jäst gör inte fotosyntes – det är en svamp." } ] }
+      ] },
+    { id: "fk-cell-leva", kapitel: "mikroorganismer", avsnitt: ["cell"], titel: "Förklara: vad gör att en cell kan leva själv?",
+      typ: "forklara", nivaerPerArskurs: { 7: [1, 2], 8: [2], 9: [2] }, rullista: [1],
+      varianter: [
+        { fraga: "Förklara vad det är som gör att en cell kan leva själv.",
+          begrepp: ["näring", "energi", "ämnesomsättning", "växa|växer", "föröka|förökar|dela|delar"],
+          modell: "En cell klarar allt som behövs för att leva på egen hand. Den tar upp **näring** och gör om den till **energi** – det kallas **ämnesomsättning**. Energin använder cellen för att **växa** och bygga nya delar. När cellen har vuxit kan den **föröka sig** genom att dela sig i två nya celler." },
+        { fraga: "En bakterie består bara av en enda cell. Förklara varför den ändå räknas som levande.",
+          begrepp: ["encellig|en cell|en enda cell", "näring", "energi|ämnesomsättning", "växa|växer", "föröka|förökar|dela|delar"],
+          modell: "En bakterie är **encellig** – den består av en enda cell. Cellen tar upp **näring** och får **energi** ur den. Med energin kan bakterien **växa**, och sedan **föröka sig** genom att dela sig. Den klarar allt detta själv, och därför räknas den som levande." },
+        { fraga: "Förklara hur en cell kan bli till två nya celler. Använd orden arvsmassa och fabriker.",
+          begrepp: ["växa|växer|vuxit", "arvsmassa|recept|DNA", "fabrik", "kopiera|kopi", "dela|delar"],
+          modell: "Först **växer** cellen. Cellens **fabriker** följer receptet i **arvsmassan** och bygger nya delar. Arvsmassan **kopieras** så att det finns två recept. Sedan **delar** sig cellen, och båda nya cellerna får ett eget recept och egna fabriker." }
+      ] },
+    { id: "fk-virus-undantag", kapitel: "mikroorganismer", avsnitt: ["virus"], titel: "Förklara: varför är virus ett undantag?",
+      typ: "forklara", nivaerPerArskurs: { 7: [1, 2], 8: [2], 9: [2] }, rullista: [1],
+      varianter: [
+        { fraga: "Virus räknas till mikroberna, men är ett undantag. Förklara varför.",
+          begrepp: ["cell", "arvsmassa|recept|DNA|RNA", "protein|hölje", "ämnesomsättning", "värdcell|värd"],
+          modell: "Alla andra mikrober består av minst en **cell**. Ett virus är ingen cell – det är bara **arvsmassa** i ett hölje av **protein**. Det har ingen **ämnesomsättning** och inga egna fabriker. Därför kan det bara föröka sig inne i en **värdcell**, och det räknas oftast inte som levande." },
+        { fraga: "Förklara varför ett virus måste ta sig in i en annan cell för att kunna föröka sig.",
+          begrepp: ["cell", "fabrik", "arvsmassa|recept", "värdcell|värd", "ämnesomsättning"],
+          modell: "Ett virus är ingen **cell**. Det har **arvsmassa** – receptet för nya virus – men inga egna **fabriker** och ingen **ämnesomsättning**. Därför måste viruset ta sig in i en **värdcell** och använda cellens fabriker för att tillverka nya virus." }
       ] }
 ]);
