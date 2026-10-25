@@ -177,7 +177,7 @@ Källa: [Strålsäkerhetsmyndigheten](https://www.stralsakerhetsmyndigheten.se/)
 
 > **💬 Förklara så här** {.green}
 > *Varför är radon den största källan till stråldos i Sverige?*<br>
->Radon är en radioaktiv gas som bildas hela tiden i marken och i byggnadsmaterial. Gasen tar sig in i husen och samlas inomhus, där vi är större delen av dygnet. Därför andas vi in radon nästan hela tiden. Radonet sönderfaller i lungorna och skickar ut alfastrålning direkt mot cellerna. Utanför kroppen hade huden stoppat alfastrålningen, men inne i lungorna når hela strålningen fram. Tillsammans gör det att radon ger mer stråldos än någon annan källa.
+> *Radon* är en radioaktiv *gas* som bildas hela tiden i marken och i byggnadsmaterial. Gasen tar sig in i husen och samlas inomhus, där vi är större delen av dygnet. **Därför** andas vi in radon nästan hela tiden. Radonet *sönderfaller* i *lungorna* och skickar ut *alfastrålning* direkt mot cellerna. Utanför kroppen hade huden stoppat alfastrålningen, men inne i lungorna når hela strålningen fram. **Därför** ger radon mer stråldos än någon annan källa.
 
 > **Viktigt att komma ihåg**
 > - **Bakgrundsstrålning** är naturlig strålning som finns överallt – från kroppen, marken, rymden och radon.
