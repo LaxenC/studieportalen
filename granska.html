@@ -6,8 +6,8 @@
 <meta name="robots" content="noindex">
 <title>Granska uppgifter</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@500;700;800;900&family=Noto+Serif:wght@700&display=swap">
-<link rel="stylesheet" href="motor/ova.css?v=2026-10-25g">
-<link rel="stylesheet" href="motor/portal.css?v=2026-10-25g">
+<link rel="stylesheet" href="motor/ova.css?v=2026-10-25h">
+<link rel="stylesheet" href="motor/portal.css?v=2026-10-25h">
 <style>
 .gr-filter{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
 .gr-filter select{font:inherit;font-weight:700;padding:8px 12px;border-radius:10px;border:1px solid var(--line);background:var(--panel);color:var(--ink)}
@@ -18,6 +18,10 @@
 .gr-val{display:flex;gap:12px;align-items:center;flex-wrap:wrap;position:sticky;top:0;z-index:15;background:var(--bg);padding:10px 0;margin:-10px 0;border-bottom:1px solid var(--line)}
 .gr-val select{font:inherit;font-weight:700;padding:8px 12px;border-radius:10px;border:1px solid var(--line);background:var(--panel);color:var(--ink)}
 .gr-val .akval{margin:0}
+.gr-borr{display:flex;gap:6px;flex-wrap:wrap;align-items:center}
+.gr-borr select{max-width:16rem}
+.gr-borr select:disabled{opacity:.45}
+.gr-avrub{font-size:1rem;color:var(--muted);font-weight:800;margin:0}
 .gr-kap{gap:10px}
 .gr-rubrik{display:flex;gap:6px 14px;align-items:baseline;flex-wrap:wrap}
 .gr-rubrik h2{font-size:1.35rem}
@@ -48,7 +52,7 @@
   <header class="ovhead"><div><p class="eyebrow">För läraren</p><h1>Granska uppgifter</h1>
     <p>Alla uppgifter per kapitel, i samma ordning som i filen. <b>Prova</b> öppnar uppgiften, <b>Svar</b> visar alla varianter med rätt svar, <b>Ändra</b> öppnar filen i GitHub – uppgiften börjar på raden som står under namnet.</p></div>
     <span class="gr-filter"><a class="ghostbtn" href="struktur.html">Översikt</a><a class="ghostbtn" href="./">Till portalen</a></span></header>
-  <div class="gr-val"><select id="filter" aria-label="Visa kapitel"></select><div class="akval" id="akval" role="radiogroup" aria-label="Nivåer för årskurs"></div></div>
+  <div class="gr-val"><span class="gr-borr"><select id="fAmne" aria-label="Ämne"></select><select id="fOmrade" aria-label="Arbetsområde"></select><select id="fKapitel" aria-label="Kapitel"></select><select id="fAvsnitt" aria-label="Avsnitt"></select></span><div class="akval" id="akval" role="radiogroup" aria-label="Nivåer för årskurs"></div></div>
   <div id="fel"></div>
   <div id="ovBody"><p class="laddar">Laddar …</p></div>
 </main>
@@ -58,14 +62,14 @@
   <div class="dlg-body" id="prBody"></div>
   <div class="dlg-foot"><button type="button" class="sec" id="prStang">Stäng</button><button type="button" class="sec" id="prNy">Nästa variant</button><button type="button" class="pri" id="prRatta">Rätta</button></div>
 </dialog>
-<script src="motor/typer.js?v=2026-10-25g"></script>
-<script src="motor/ritningar-bas.js?v=2026-10-25g"></script>
-<script src="motor/ritningar.js?v=2026-10-25g"></script>
-<script src="motor/md.js?v=2026-10-25g"></script>
-<script src="motor/data.js?v=2026-10-25g"></script>
-<script src="konfig/amnen.js?v=2026-10-25g"></script>
-<script src="konfig/elevnivaer.js?v=2026-10-25g"></script>
-<script src="motor/granska.js?v=2026-10-25g"></script>
+<script src="motor/typer.js?v=2026-10-25h"></script>
+<script src="motor/ritningar-bas.js?v=2026-10-25h"></script>
+<script src="motor/ritningar.js?v=2026-10-25h"></script>
+<script src="motor/md.js?v=2026-10-25h"></script>
+<script src="motor/data.js?v=2026-10-25h"></script>
+<script src="konfig/amnen.js?v=2026-10-25h"></script>
+<script src="konfig/elevnivaer.js?v=2026-10-25h"></script>
+<script src="motor/granska.js?v=2026-10-25h"></script>
 <script>startaGranska();</script>
 </body>
 </html>
