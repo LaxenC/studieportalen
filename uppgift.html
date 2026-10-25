@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="sv">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Uppgift</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@500;700;800;900&family=Noto+Serif:wght@700&display=swap">
+<link rel="stylesheet" href="motor/ova.css?v=2026-10-25l">
+<link rel="stylesheet" href="motor/portal.css?v=2026-10-25l">
+<style>
+body{font-size:1.1rem}
+.up-wrap{max-width:900px;margin:0 auto;padding:20px 16px 40px;display:grid;gap:16px}
+.up-head{display:flex;gap:10px 16px;align-items:center;flex-wrap:wrap}
+.up-head h1{font-size:1.6rem;margin:0;flex:1;min-width:14rem}
+.up-meta{color:var(--muted);font-weight:700;font-size:.95rem;margin:0}
+.up-niva{display:flex;gap:6px;align-items:center;flex-wrap:wrap}
+.up-niva button{min-width:44px}
+.up-niva button[aria-pressed="true"]{background:var(--fg,#2563eb);color:#fff;border-color:transparent}
+.up-knappar{display:flex;gap:8px;flex-wrap:wrap;justify-content:flex-end}
+.up-knappar button{font:inherit;font-weight:800;padding:12px 22px;border-radius:999px;cursor:pointer}
+.up-knappar .sec{border:1px solid var(--line);background:var(--bg);color:var(--ink)}
+.up-knappar .pri{border:0;background:var(--accent);color:var(--accent-ink)}
+</style>
+</head>
+<body>
+<main class="up-wrap" id="up"><p class="laddar">Laddar …</p></main>
+<script src="motor/typer.js?v=2026-10-25l"></script>
+<script src="motor/ritningar-bas.js?v=2026-10-25l"></script>
+<script src="motor/ritningar.js?v=2026-10-25l"></script>
+<script src="motor/md.js?v=2026-10-25l"></script>
+<script src="motor/data.js?v=2026-10-25l"></script>
+<script src="konfig/amnen.js?v=2026-10-25l"></script>
+<script src="konfig/elevnivaer.js?v=2026-10-25l"></script>
+<script src="motor/uppgift.js?v=2026-10-25l"></script>
+<script>startaUppgift();</script>
+</body>
+</html>

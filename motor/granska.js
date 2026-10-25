@@ -27,6 +27,7 @@ function rad(o, t, ak) {
     <td>${nivaChips(o, t, ak)}</td>
     <td class="gr-tal">${t.varianter.length}</td>
     <td class="gr-knapp"><button type="button" class="ghostbtn" data-prova="${o.id}|${t.id}|${L}">Prova</button>
+      <a class="ghostbtn" href="uppgift.html?id=${encodeURIComponent(t.id)}&niva=${L}" target="_blank" rel="noopener" title="Öppna uppgiften i ett nytt fönster">↗</a>
       <button type="button" class="ghostbtn" data-svar="${t.id}" aria-expanded="false">Svar</button>${andraLank(o, t)}</td></tr>
     <tr class="gr-svar" id="s-${t.id}" hidden><td colspan="6"><ol>${t.varianter.map(v => `<li>${variantText(t, v)}</li>`).join("")}</ol></td></tr>`;
 }
