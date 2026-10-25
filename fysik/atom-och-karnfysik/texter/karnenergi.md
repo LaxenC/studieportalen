@@ -13,7 +13,13 @@ I slutet av 1930-talet sköt den tyske kemisten **Otto Hahn** neutroner mot uran
 Förklaringen kom 8år senare från fysikerna **Lise Meitner** och **Otto Frisch**: urankärnan hade **delats i två delar**. Därför blev kärnorna lättare. Samtidigt frigjordes **mycket energi** som var lagrad i atomkärnan.
 
 >**Fördjupning: Kärnenergi**
->När en tung atomkärna, exempelvis uran-235, klyvs delas den i två mindre >atomkärnor. Den starka kärnkraften påverkar hur partiklarna hålls samman i >atomkärnan. Efter klyvningen hamnar partiklarna i ett nytt tillstånd där den >totala energin är lägre. Överskottsenergin frigörs i form av rörelseenergi och >strålning.
+>När en tung atomkärna, exempelvis uran-235, klyvs delas den i två mindre
+>atomkärnor. Den starka kärnkraften som håller samman partirklarna i
+>atomkärnan ändras eftersom partiklarna i kärnan är färre.
+>Efter klyvningen hamnar partiklarna i ett nytt tillstånd där den
+>totala energin är lägre. Överskottsenergin frigörs i form av rörelseenergi
+>och strålning.
+>
 
 Processen kallas **fission**, som betyder *klyvning* på latin.
 
@@ -141,8 +147,9 @@ Formeln  beskriver att massa och energi kan omvandlas till varandra. Eftersom lj
 På CERN, världens största partikelfysiklaboratorium nära Genève, använder forskare Einsteins formel (E=mc^2) åt andra hållet. Genom att låta partiklar kollidera med mycket hög energi kan en del av energin omvandlas till massa och skapa nya partiklar. På så sätt kan forskarna studera materiens minsta beståndsdelar och lära sig mer om hur universum fungerar.
 
 >**Fördjupning: Instabila partiklar**
->Partiklar som skapas vid kollisioner på CERN kan vara mycket kortlivade >eftersom de är instabila. De sönderfaller då snabbt till andra, mer stabila >partiklar. Det beror på att partikeln kan övergå till ett tillstånd med >lägre energi genom att omvandlas till andra partiklar. Instabila partiklar >sönderfaller nästan omedelbart efter att de har skapats. Forskarna kan >därför inte observera dem direkt, utan studerar i stället de partiklar som >bildas vid sönderfallet. Alla partiklar är dock inte kortlivade – exempelvis >är elektroner stabila.
+>Partiklar som skapas vid kollisioner på CERN kan vara mycket kortlivade  eftersom de är instabila. De sönderfaller då snabbt till andra, mer stabila partiklar. Det beror på att partikeln kan övergå till ett tillstånd med lägre energi genom att omvandlas till andra partiklar. Instabila partiklar sönderfaller nästan omedelbart efter att de har skapats. Forskarna kan därför inte observera dem direkt, utan studerar i stället de partiklar som >bildas vid sönderfallet. Alla partiklar är dock inte kortlivade – exempelvis >är elektroner stabila.
 
 > **Viktigt att komma ihåg**
 > - Lite massa innehåller mycket energi: **E = mc^2^**.
 > - Vid fission och fusion blir en liten del av massan energi.
+> - Vid partikelacceleratorn i CERN blir mycket energi till lite massan (små partiklar)
