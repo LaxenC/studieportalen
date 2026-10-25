@@ -17,7 +17,7 @@ Portal.uppgifter([
                 ["Epidemi", "En sjukdom sprids snabbt till många människor"], ["Pandemi", "En sjukdom sprids över stora delar av världen"], ["Symptom", "Ett tecken på sjukdom, till exempel feber"]] }
       ] },
 
-    { id: "smi-smitta-sortera", kapitel: "smitta", avsnitt: ["sjukdom"], titel: "Smittar eller smittar inte? – sortera",
+    { id: "smi-smitta-sortera", kapitel: "smitta", avsnitt: ["smittspridning"], titel: "Smittar eller smittar inte? – sortera",
       typ: "sortera", nivaer: [1],
       varianter: [
         { grupper: ["Kan smitta", "Smittar inte"],
