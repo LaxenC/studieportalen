@@ -128,14 +128,17 @@ Allt det här tar några dagar. Därför hinner man ofta bli sjuk första gånge
 
 ::: fördjupning åk 7 Immunsvaret steg för steg
 Det finns många fler celler och steg i immunsvaret, och det är mycket komplicerat. Här är de viktigaste stegen, förenklat:
-1. **Igenkänning** – ätarceller (makrofager och dendritiska celler) äter upp mikroben och visar upp bitar av den – **antigener** – på sin yta.
+1. **Igenkänning** – ätarceller (makrofager och dendritiska celler) äter upp patogenen och visar upp bitar av den – **antigener** – på sin yta.
 2. **T-hjälparceller** känner igen antigenerna och skickar ut signalämnen som sätter igång resten av försvaret.
 3. **B-celler** aktiveras och blir till celler som tillverkar **antikroppar**.
-4. **Antikropparna** fastnar på mikroberna. De hindrar dem från att ta sig in i celler och märker ut dem så att ätarcellerna kan förstöra dem.
+4. **Antikropparna** fastnar på patogenerna. De hindrar dem från att ta sig in i celler och märker ut dem så att ätarcellerna kan förstöra dem.
 5. **T-mördarceller** letar upp kroppens egna celler som blivit infekterade (till exempel av virus) och förstör dem.
 6. **Minnesceller** (minnes-B-celler och minnes-T-celler) bildas.
-7. När mikroberna är borta lugnar andra T-celler ner försvaret så att det inte blir för kraftigt.
+7. När patogenerna är borta lugnar andra T-celler ner försvaret så att det inte blir för kraftigt.
 8. **Immunminne** – minnescellerna stannar kvar i kroppen.
+
+![immunsvaret i åtta steg](bilder/immunsvar-8steg.svg?v=2)
+Bild: Immunsvaret steg för steg, förenklat.
 :::
 
 > **💬 Förklara så här** {.green}
