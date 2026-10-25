@@ -22,6 +22,8 @@ Enkelt uttryckt får kroppen **träna** på att bekämpa sjukdomen, så att den 
 
 I Sverige erbjuds alla barn vaccin mot ett tiotal allvarliga sjukdomar, till exempel mässling, påssjuka, röda hund, polio och kikhosta. Barn i mellanstadiet erbjuds vaccin mot HPV, ett virus som kan orsaka cancer. När många är vaccinerade får sjukdomen svårt att spridas – då skyddas även de som inte kan vaccinera sig. Det kallas **flockimmunitet**.
 
+Vaccin har förändrat människors liv. Sjukdomar som förr dödade många barn, som mässling, polio och kikhosta, är i dag ovanliga i Sverige. Smittkoppor, som dödade miljontals människor, är helt utrotade i världen tack vare vaccin.
+
 ::: fördjupning åk 7 Det första vaccinet
 På 1790-talet märkte den engelske läkaren **Edward Jenner** att mjölkerskor som haft den milda sjukdomen kokoppor inte fick de farliga smittkopporna. Han testade att föra över kokoppor till en pojke – och pojken blev skyddad mot smittkoppor. Ordet vaccin kommer från latinets *vacca*, som betyder ko. Tack vare vaccination är smittkopporna i dag helt utrotade i världen.
 :::
@@ -38,6 +40,8 @@ På 1790-talet märkte den engelske läkaren **Edward Jenner** att mjölkerskor 
 ## Antibiotika och resistens {#antibiotika}
 
 **Antibiotika** är läkemedel som bekämpar infektioner orsakade av **bakterier**. De dödar bakterierna eller hindrar dem från att växa och föröka sig. Penicillin är en sorts antibiotika.
+
+Antibiotika har räddat miljontals liv. Infektioner som förr ofta var dödliga, till exempel lunginflammation och infekterade sår, går i dag att bota. Antibiotika gör också att operationer blir säkrare. Men om bakterierna blir **resistenta** kan vanliga infektioner bli farliga igen – se *Resistens* nedan.
 
 ### Antibiotika är en nyckel till bakteriens maskiner
 

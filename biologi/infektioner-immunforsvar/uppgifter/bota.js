@@ -84,5 +84,35 @@ Portal.uppgifter([
         { grupper: ["Hjälper immunförsvaret", "Hjälper inte"],
           saker: [["Sova ordentligt", 0], ["Äta varierad mat", 0], ["Röra på sig", 0], ["Vaccinera sig", 0], ["Tvätta händerna", 0],
                   ["Sova för lite", 1], ["Ta antibiotika mot förkylning", 1], ["Sitta still hela dagarna", 1]] }
+      ] },
+    { id: "bot-resistens-hur", kapitel: "bota", avsnitt: ["antibiotika"], titel: "Hur blir bakterier resistenta? – välj rätt",
+      typ: "flerval", nivaer: [1, 2],
+      varianter: [
+        { fraga: "Hur blir bakterier resistenta mot antibiotika?",
+          alt: [ { t: "De känsliga bakterierna dör, men några tål antibiotikan, överlever och förökar sig", s: "ratt", f: "efter ett tag består nästan alla bakterier av sådana som tål antibiotikan." },
+                 { t: "Bakterierna vänjer sig vid antibiotikan, precis som man vänjer sig vid kyla", s: "fel", f: "en enskild bakterie vänjer sig inte – det är de som redan tål antibiotikan som överlever och förökar sig." },
+                 { t: "Människan blir resistent och då slutar antibiotikan fungera", s: "fel", f: "det är bakterierna som blir resistenta, inte människan." },
+                 { t: "Antibiotikan gör bakterierna starkare", s: "fel", f: "antibiotikan dödar de känsliga bakterierna – kvar blir de som redan tålde den." } ] },
+        { fraga: "Varför ökar risken för resistens om man använder mycket antibiotika?",
+          alt: [ { t: "Fler gånger får de bakterier som tål antibiotikan överleva och föröka sig", s: "ratt", f: "ju oftare antibiotika används, desto fler resistenta bakterier blir det." },
+                 { t: "Antibiotikan tar slut i kroppen", s: "fel", f: "det handlar om vilka bakterier som överlever och förökar sig." },
+                 { t: "Virus blir resistenta", s: "fel", f: "antibiotika fungerar inte på virus – det är bakterier som blir resistenta." },
+                 { t: "Immunförsvaret slutar fungera", s: "fel", f: "det är bakterierna som förändras, inte immunförsvaret." } ] }
+      ] },
+
+    { id: "fk-antibiotika-mojlighet-risk", kapitel: "bota", avsnitt: ["antibiotika"], titel: "Förklara: möjlighet och risk med antibiotika",
+      typ: "forklara", nivaerPerArskurs: { 7: [1, 2], 8: [2], 9: [2] }, rullista: [1],
+      varianter: [
+        { fraga: "Ge en möjlighet och en risk med att vi använder antibiotika. Förklara vad de betyder för människors liv.",
+          begrepp: ["bakterie", "bota|botas|behandla", "rädda|räddat|överlev|dö", "resistent|resistens", "farlig|fungera"],
+          modell: "En **möjlighet** är att antibiotika kan **bota** infektioner som orsakas av **bakterier**, till exempel lunginflammation. Förr dog många av sådana infektioner – i dag **överlever** de flesta. En **risk** är att bakterierna blir **resistenta** om antibiotika används för mycket. Då slutar medicinen att **fungera**, och vanliga infektioner kan bli **farliga** igen." }
+      ] },
+
+    { id: "fk-vaccin-betydelse", kapitel: "bota", avsnitt: ["vaccin"], titel: "Förklara: vad har vaccin betytt för människors liv?",
+      typ: "forklara", nivaerPerArskurs: { 7: [1, 2], 8: [2], 9: [2] }, rullista: [1],
+      varianter: [
+        { fraga: "Vad har vaccin betytt för människors liv? Förklara.",
+          begrepp: ["minnesceller|immun|skydd|skyddar", "sjukdom", "dö|död|rädda|överlev", "utrot|smittkoppor", "flockimmunitet|sprids|spridas"],
+          modell: "Ett vaccin gör att kroppen bildar **minnesceller**, så att man blir **immun** utan att först bli sjuk. Därför är **sjukdomar** som förr **dödade** många barn, till exempel mässling och polio, i dag ovanliga. **Smittkoppor** har till och med **utrotats** helt. När många är vaccinerade **sprids** sjukdomen dåligt – **flockimmunitet** – och då skyddas även de som inte kan vaccinera sig." }
       ] }
 ]);

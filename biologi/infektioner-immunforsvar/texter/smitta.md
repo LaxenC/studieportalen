@@ -96,8 +96,12 @@ Mikrober som orsakar sjukdom kan spridas på flera olika sätt:
 | **Mat och vatten** | dåligt tillagad mat eller smutsigt vatten |
 | **Insekter** | myggor kan sprida malaria |
 | **Andra djur** | sjukdomar som smittar från djur till människor, till exempel rabies |
+| **Blod** | när blod från en smittad person kommer in i någon annans blod, till exempel via sprutor som delas – hepatit och hiv kan smitta så |
+| **Sexuell kontakt** | sexuellt överförbara sjukdomar, till exempel klamydia, gonorré och hiv |
 
-För att stoppa smittspridning försöker man bryta smittvägarna, till exempel genom att **tvätta händerna**, hosta i armvecket, stanna hemma när man är sjuk, tillaga mat ordentligt och skydda sig mot myggor.
+För att stoppa smittspridning försöker man bryta smittvägarna, till exempel genom att **tvätta händerna**, hosta i armvecket, stanna hemma när man är sjuk, tillaga mat ordentligt, skydda sig mot myggor och **använda kondom** vid sex. Kondomen hindrar att patogener förs över mellan personerna.
+
+Förr kunde man smittas av hepatit och hiv vid en blodtransfusion. I dag testas allt blod som ges i Sverige, och vården använder alltid nya, sterila sprutor.
 
 > **Begrepp**
 > **smittväg** – det sätt som en sjukdom sprids på
@@ -107,5 +111,6 @@ För att stoppa smittspridning försöker man bryta smittvägarna, till exempel 
 > När man hostar sprids små droppar med mikrober *via luften*. Hostar man i handen hamnar dropparna på händerna och sedan på allt man tar i. I armvecket fastnar de i tröjan i stället. **Därför** sprids färre mikrober vidare till andra.
 
 > **Viktigt att komma ihåg**
-> - Smitta kan spridas via **direktkontakt**, **luften**, **indirekt kontakt**, **mat och vatten**, **insekter** och **andra djur**.
+> - Smitta kan spridas via **direktkontakt**, **luften**, **indirekt kontakt**, **mat och vatten**, **insekter**, **andra djur**, **blod** och **sexuell kontakt**.
 > - God **hygien**, till exempel att tvätta händerna, är ett av de bästa sätten att stoppa smittspridning.
+> - **Kondom** skyddar mot sexuellt överförbara sjukdomar.
