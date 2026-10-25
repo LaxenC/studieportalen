@@ -146,18 +146,12 @@ Allt det här tar några dagar. Därför hinner man ofta bli sjuk första gånge
 
 ::: fördjupning åk 7 Immunsvaret steg för steg
 De fyra stegen ovan är förenklade. Så här går det till mer i detalj:
-- **Upptäcka:** ätarcellerna som visar upp antigener heter makrofager och dendritiska celler.
-- **Larma:** det är **T-hjälparcellerna** som känner igen antigenerna och larmar resten av försvaret.
-- **Angripa:** **B-cellerna** tillverkar antikropparna, och **T-mördarcellerna** förstör de infekterade cellerna.
-
-Det här händer också:
-- **T-hjälparcellerna** skickar ut signalämnen som sätter igång både B-cellerna och T-mördarcellerna.
-- **Antikropparna** hindrar också patogenerna från att ta sig in i kroppens celler.
-- **T-mördarceller** tar hand om patogener som redan har tagit sig in i en kroppscell, till exempel virus. Den infekterade cellen visar upp virusets antigener på sin yta. T-mördarcellerna känner igen dem och förstör cellen genom att spruta in ett gift. Varje T-cell känner bara igen ett enda antigen. På samma sätt dödar de även cancerceller.
-- **Bromsande T-celler** lugnar ner försvaret när patogenerna är borta, så att det inte blir för kraftigt.
-- **Minnescellerna** är av två slag: minnes-B-celler och minnes-T-celler.
-
-Efter T-hjälparcellerna delar sig försvaret i två grenar. B-cellerna och antikropparna tar hand om patogener i blodet och kroppsvätskorna. T-mördarcellerna tar hand om patogener som redan har tagit sig in i kroppens celler. Båda grenarna lämnar minnesceller efter sig.
+1. **Upptäcka:** ätarcellerna som visar upp antigener heter makrofager och dendritiska celler.<br>
+2. **Larma:** det är **T-hjälparcellerna** som känner igen antigenerna och larmar resten av försvaret, skickar signlaer som sätter igång både B-cellerna och T-mördarcellerna.
+**Angripa:**  <br>
+3a **B-cellerna** tillverkar **antikropparna** som hindrar också patogenerna från att ta sig in i kroppens celler.<br>
+3b. **T-mördarcellerna** tar hand om patogener som redan har tagit sig in i en kroppscell, till exempel virus. Den infekterade cellen visar upp virusets antigener på sin yta. T-mördarcellerna känner igen dem och förstör cellen genom att spruta in ett gift. Varje T-cell känner bara igen ett enda antigen. På samma sätt dödar de även cancerceller.<br>
+4. **Minnescellerna** båda grenarna lämnar minnesceller efter sig: minnes-B-celler och minnes-T-celler.<br> **Bromsande T-celler** lugnar ner försvaret när patogenerna är borta, så att det inte blir för kraftigt.
 
 ![immunsvaret i två grenar](bilder/immunsvar-8steg.svg?v=4)
 Bild: Hela immunsvaret, förenklat. Efter T-hjälparcellerna delar sig försvaret i två grenar.
