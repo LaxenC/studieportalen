@@ -119,6 +119,8 @@ Bakterier delas in efter formen: runda **kocker**, stavformade **baciller** och 
 ![bakterieformer](bilder/bakterieformer.svg)
 Bild: De tre formerna av bakterier.
 
+**De flesta bakterier är ofarliga** – färre än 1 procent anses vara skadliga. Många är dessutom nödvändiga för oss. Bakterier på huden skyddar mot skadliga bakterier, och bakterier i tarmen hjälper till med matsmältningen och tillverkar vitaminer.
+
 Bakterier är viktiga **nedbrytare** i naturen. Vissa bakterier gör fotosyntes – de kallas cyanobakterier eller blågröna alger och kan orsaka algblomning.
 
 Men bakterier kan också orsaka allvarliga sjukdomar, till exempel kolera, pest, tuberkulos och lunginflammation. De flesta bakterieinfektioner kan i dag behandlas med **antibiotika** – mer om det i kapitlet [Bota och förebygga](#/biologi/infektioner-immunforsvar/las/bota) under *Infektioner och immunförsvar*.
@@ -144,15 +146,21 @@ För att skydda mat mot bakterier används bland annat **kyla** (kylskåp), **to
 > - Bakterier är **encelliga** och **saknar cellkärna**.
 > - De förökar sig genom att **dela sig**.
 > - Bakterier är viktiga **nedbrytare** i naturen.
+> - De flesta bakterier är ofarliga eller nyttiga – färre än 1 % är skadliga.
 
 ## Virus – på gränsen till liv {#virus}
 
-Ett **virus** är en liten partikel av **arvsmassa** i ett **hölje av protein**. Virus kan inte föröka sig själva – de måste ta sig in i en cell hos en **värd** och få den att tillverka nya virus.
+Ett **virus** är en liten partikel av **arvsmassa** (DNA eller RNA) i ett **hölje av protein**. Virus är många gånger mindre än bakterier och kan bara ses i ett elektronmikroskop. Virus kan inte föröka sig själva – de måste ta sig in i en cell hos en **värd** och få den att tillverka nya virus.
 
 ![virusets delar](bilder/virusdelar.svg)
 Bild: Ett virus är arvsmassa i ett hölje av protein. Det är ingen cell och har inga egna fabriker.
 
-Därför räknas virus oftast **inte** som levande. De har arvsmassa och kan förändras över tid, men de består inte av celler, har ingen **ämnesomsättning** och växer inte. Trots att de inte räknas som levande så är räknas dom som mikrober.
+Därför räknas virus oftast **inte** som levande. De har arvsmassa och kan förändras över tid, men de består inte av celler, har ingen **ämnesomsättning** och växer inte. Trots att de inte räknas som levande så räknas de som mikrober.
+
+![virus förökar sig](bilder/virus-forokning.svg)
+Bild: Så förökar sig ett virus. Värdcellens fabriker tvingas tillverka nya virus.
+
+Det finns också **nyttiga virus**. Vissa angriper bakterier och andra skadliga mikrober och skyddar på så sätt sin värd.
 
 > **Begrepp**
 > **virus** – arvsmassa i ett hölje av protein som behöver en värdcell för att föröka sig

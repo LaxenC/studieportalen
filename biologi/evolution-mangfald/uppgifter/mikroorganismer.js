@@ -232,5 +232,22 @@ Portal.uppgifter([
         { fraga: "Malariaparasiten lever i människan. Förklara vilken typ av symbios det är och varför.",
           begrepp: ["parasitism", "gynnas|vinner", "skadas|skada", "sjuk"],
           modell: "Det är **parasitism**. Malariaparasiten **gynnas** eftersom den lever och förökar sig i människan. Människan **skadas** – hon blir **sjuk** i malaria." }
+      ] },
+
+    { id: "mik-bakterier-text", kapitel: "mikroorganismer", avsnitt: ["bakterier"], titel: "Bakterier – fyll i",
+      typ: "lucktext", nivaer: [0, 1], rullista: [0],
+      ordlista: ["encelliga", "flercelliga", "cellkärna", "delning", "parning", "kocker", "baciller", "spiriller", "1 procent", "50 procent"],
+      varianter: [
+        { text: "Bakterier är [encelliga] och saknar [cellkärna]. De förökar sig genom [delning]." },
+        { text: "Runda bakterier kallas [kocker], stavformade kallas [baciller] och spiralformade kallas [spiriller]." },
+        { text: "De flesta bakterier är ofarliga – färre än [1 procent|1 %|1%|en procent] anses vara skadliga." }
+      ] },
+
+    { id: "mik-virus-ordning", kapitel: "mikroorganismer", avsnitt: ["virus"], titel: "Så förökar sig ett virus – para ihop",
+      typ: "para", nivaer: [1, 2],
+      varianter: [
+        { rubrik: "Para ihop steget med vad som händer.",
+          par: [["Steg 1", "Viruset fäster på cellen"], ["Steg 2", "Virusets arvsmassa tar sig in i cellen"],
+                ["Steg 3", "Cellen tillverkar nya virus"], ["Steg 4", "Cellen spricker och de nya virusen sprids"]] }
       ] }
 ]);
