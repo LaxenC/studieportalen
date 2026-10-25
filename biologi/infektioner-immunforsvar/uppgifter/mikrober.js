@@ -1,11 +1,11 @@
 /* =====================================================================
-   UPPGIFTER – Mikrober
+   UPPGIFTER – Bakterier och virus
    ---------------------------------------------------------------------
    Mallar för varje uppgiftstyp finns i mallar.md.
      id : unikt namn · kapitel : kapitlets id · avsnitt : avsnitt i texten
      nivaer : nivå [0]–[3] · nivaerPerArskurs : annan nivå per årskurs
      rullista : nivåer där eleven väljer i en rullista
-   Avsnitt: vad, bakterier, virus, svampar, protozoer, alger
+   Avsnitt: vad, bakterier, virus, svampar
    ===================================================================== */
 Portal.uppgifter([
 
@@ -14,10 +14,7 @@ Portal.uppgifter([
       varianter: [
         { rubrik: "Para ihop begreppet med rätt förklaring.",
           par: [["Mikrober", "Levande organismer som är för små för att synas utan mikroskop"], ["Patogen", "En organism som orsakar sjukdom"],
-                ["Bakterier", "Encelliga organismer utan cellkärna"], ["Virus", "Arvsmassa i ett proteinhölje som behöver en värdcell"]] },
-        { rubrik: "Para ihop mikroben med rätt beskrivning.",
-          par: [["Svampar", "Varken växter eller djur – till exempel jäst och mögel"], ["Protozoer", "Encelliga organismer med cellkärna"],
-                ["Alger", "Gör fotosyntes och lever oftast i vatten"], ["Arkéer", "Liknar bakterier och lever ofta i extrema miljöer"]] }
+                ["Bakterier", "Encelliga organismer utan cellkärna"], ["Virus", "Arvsmassa i ett proteinhölje som behöver en värdcell"]] }
       ] },
 
     { id: "mik-vad-flerval", kapitel: "mikrober", avsnitt: ["vad"], titel: "Vad är mikrober? – välj rätt",
@@ -35,7 +32,7 @@ Portal.uppgifter([
                  { t: "Mikrober finns bara på smutsiga ställen", s: "fel", f: "mikrober finns nästan överallt – även i och på din kropp." } ] }
       ] },
 
-    { id: "mik-sortera-typ", kapitel: "mikrober", avsnitt: ["bakterier", "virus", "svampar", "protozoer"], titel: "Bakterie, virus eller svamp? – sortera",
+    { id: "mik-sortera-typ", kapitel: "mikrober", avsnitt: ["bakterier", "virus", "svampar"], titel: "Bakterie, virus eller svamp? – sortera",
       typ: "sortera", nivaer: [1],
       varianter: [
         { grupper: ["Bakterier", "Virus", "Svampar"],
@@ -81,36 +78,12 @@ Portal.uppgifter([
                 ["Steg 3", "Cellen tillverkar nya virus"], ["Steg 4", "Cellen spricker och de nya virusen sprids"]] }
       ] },
 
-    { id: "mik-protozoer-text", kapitel: "mikrober", avsnitt: ["protozoer", "alger"], titel: "Protozoer, alger och arkéer – fyll i",
-      typ: "lucktext", nivaer: [1], rullista: [1],
-      ordlista: ["cellkärna", "fotosyntes", "malaria", "förkylning", "parasit", "värden", "extrema miljöer", "skogen"],
-      varianter: [
-        { text: "Protozoer är encelliga, men till skillnad från bakterier har de en [cellkärna]. En känd sjukdom som orsakas av en protozo är [malaria]." },
-        { text: "En [parasit] lever på eller i en annan organism, som kallas [värden|värd]." },
-        { text: "Alger gör [fotosyntes]. Arkéer lever ofta i [extrema miljöer|extrem miljö]." }
-      ] },
-
-    { id: "mik-eukaryot", kapitel: "mikrober", avsnitt: ["protozoer"], titel: "Eukaryoter – välj rätt",
-      typ: "flerval", nivaerPerArskurs: { 7: [3], 8: [2], 9: [1, 2] },
-      varianter: [
-        { fraga: "Vad betyder det att protozoer är eukaryota?",
-          alt: [ { t: "Deras celler har en cellkärna", s: "ratt", f: "eukaryoter har cellkärna och andra organeller – precis som våra celler." },
-                 { t: "De saknar cellkärna", s: "fel", f: "det gäller bakterier och arkéer." },
-                 { t: "De är flercelliga", s: "fel", f: "protozoer är encelliga – eukaryot handlar om cellkärnan." },
-                 { t: "De är virus", s: "fel", f: "virus har inga celler alls." } ] },
-        { fraga: "Vilken av grupperna saknar cellkärna och är alltså inte eukaryot?",
-          alt: [ { t: "Bakterier", s: "ratt", f: "bakterier saknar cellkärna." },
-                 { t: "Svampar", s: "fel", f: "svampar har celler med cellkärna." },
-                 { t: "Protozoer", s: "fel", f: "protozoer har cellkärna." },
-                 { t: "Alger", s: "fel", f: "alger har celler med cellkärna." } ] }
-      ] },
-
     { id: "mik-sf", kapitel: "mikrober", titel: "Mikrober – sant eller falskt",
       typ: "santfalskt", nivaer: [1, 2],
       varianter: [
         { pst: [["Bakterier saknar cellkärna.", true], ["Alla bakterier är farliga.", false], ["Virus kan föröka sig utan värdcell.", false],
-                ["Jäst är en svamp.", true], ["Arkéer orsakar många sjukdomar hos människor.", false]] },
-        { pst: [["Malaria orsakas av en protozo.", true], ["Alger gör fotosyntes.", true], ["Virus är större än bakterier.", false],
+                ["Jäst är en svamp.", true], ["Svampinfektioner är oftast mycket allvarliga.", false]] },
+        { pst: [["Malaria orsakas av en protozo.", true], ["En parasit lever på eller i en värd.", true], ["Virus är större än bakterier.", false],
                 ["Svampar är en sorts växter.", false], ["Bakterier förökar sig genom delning.", true]] }
       ] }
 ]);

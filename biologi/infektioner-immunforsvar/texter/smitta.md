@@ -2,41 +2,9 @@
 kapitel: smitta
 ---
 
-# Mikrober och människan
+# Infektioner och smittspridning
 
-Vi lever tillsammans med mikrober hela tiden. De flesta hjälper oss – men några kan göra oss sjuka och spridas mellan människor.
-
-## Mikrobiomet {#mikrobiom}
-
-De flesta cellerna i och på din kropp är faktiskt inte dina egna – de är mikrober. Bakterier, virus, svampar, arkéer och protozoer lever i din mun, på din hud, i lungorna och framför allt i tarmen. Alla mikrober i och på kroppen kallas tillsammans **mikrobiomet**.
-
-Mikrobiomet är mycket viktigt för att vi ska vara friska. Det påverkar hur du smälter maten, hur frisk huden är, hjälper till att förhindra infektioner och kan till och med påverka humöret.
-
-Mikroberna är så små att de inte väger särskilt mycket. Länge sa man att de vägde 1,5–2 kg, men nyare forskning tyder på att de väger några hekto.
-
-> **Begrepp**
-> **mikrobiom** – alla mikrober som lever i och på människokroppen
-
-> **Viktigt att komma ihåg**
-> - **Mikrobiomet** är alla mikrober i och på kroppen.
-> - Mikrobiomet hjälper oss bland annat med matsmältningen och skyddar mot infektioner.
-
-## Symbios {#symbios}
-
-Mikroberna i kroppen lever i **symbios** med oss. Symbios är ett nära och långvarigt samband mellan två olika arter. Sambandet kan vara bra, neutralt eller dåligt för de olika arterna:
-
-| Typ av symbios | Vad händer? | Exempel |
-|---|---|---|
-| **Mutualism** | båda arterna gynnas | tarmbakterier får mat – vi får hjälp att smälta maten |
-| **Kommensalism** | den ena gynnas, den andra påverkas inte | många hudbakterier |
-| **Parasitism** | den ena gynnas, den andra skadas | malariaparasiten |
-
-> **Begrepp**
-> **symbios** – ett nära, långvarigt samband mellan två olika arter
-
-> **Viktigt att komma ihåg**
-> - **Symbios** = nära samband mellan två olika arter.
-> - **Mutualism**: båda vinner. **Kommensalism**: en vinner, den andra påverkas inte. **Parasitism**: en vinner, den andra skadas.
+Vad händer när vi blir sjuka – och hur sprids smittan mellan människor?
 
 ## Sjukdom och smitta {#sjukdom}
 

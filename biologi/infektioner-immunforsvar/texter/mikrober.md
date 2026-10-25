@@ -2,9 +2,9 @@
 kapitel: mikrober
 ---
 
-# Mikrober
+# Bakterier och virus
 
-Runt omkring oss, och i och på vår kropp, finns miljarder levande organismer som är för små för att synas. De kallas mikrober.
+De flesta infektioner orsakas av bakterier och virus. För att förstå hur vi blir sjuka – och hur vi kan skydda oss – behöver vi veta hur de fungerar.
 
 ## Vad är mikrober? {#vad}
 
@@ -19,9 +19,6 @@ Mikrober är inte bra eller dåliga. Precis som vi försöker de överleva. Ibla
 > **Begrepp**
 > **mikrober** – små levande organismer som är för små för att ses med blotta ögat
 > **patogen** – en organism som orsakar sjukdom hos sin värd
-
-![mikrober](bilder/mikrobtyper.svg)
-Bild: De sex grupperna av mikrober som vi läser om i det här kapitlet.
 
 > **Viktigt att komma ihåg**
 > - **Mikrober** är levande organismer som är för små för att synas utan mikroskop.
@@ -90,65 +87,18 @@ Det finns också **nyttiga virus**. Vissa angriper bakterier och andra skadliga 
 > - Virus räknas oftast **inte** som levande – de består inte av celler.
 > - **Antibiotika fungerar inte mot virus.**
 
-## Svampar {#svampar}
+## Svampar och parasiter {#svampar}
 
-**Svampar** är en egen grupp av organismer – de är varken växter eller djur. Hit hör stora skogssvampar, men också **mögel** och **jästsvampar**. Svampar kan vara **encelliga** (som jäst) eller **flercelliga** (som mögel och skogssvamp).
+Bakterier och virus orsakar de flesta infektioner, men även svampar och parasiter kan göra oss sjuka.
 
-Svampar är viktiga **nedbrytare** i naturen – de bryter ner döda växter och djur så att näringen kan användas igen. Vi använder jäst när vi bakar bröd. Vissa svampar lever tillsammans med växter och hjälper dem att ta upp näring.
+**Svampar** som orsakar sjukdom hos människor ger oftast inte så allvarliga infektioner, till exempel fotsvamp, svamp på naglarna och i munnen. De brukar vara ganska lätta att behandla.
 
-Svampar kan också orsaka sjukdomar, både hos växter och människor. Hos människor är svampinfektioner oftast inte så allvarliga, till exempel fotsvamp, svamp på naglarna och i munnen.
-
-> **Begrepp**
-> **svampar** – organismer som varken är växter eller djur, till exempel mögel, jäst och skogssvampar
-
-::: fördjupning åk 7 Svampens uppbyggnad
-Många svampar består av långa, tunna trådar som kallas **hyfer**. Det vi kallar en svamp i skogen är bara svampens fruktkropp – den största delen är ett nät av hyfer i marken.
-:::
-
-> **Viktigt att komma ihåg**
-> - Svampar är varken växter eller djur.
-> - De kan vara encelliga (jäst) eller flercelliga (mögel, skogssvamp).
-> - Svampar är viktiga **nedbrytare** i naturen.
-
-## Protozoer och parasiter {#protozoer}
-
-**Protozoer** (urdjur) är **encelliga** organismer som – till skillnad från bakterier – **har en cellkärna**. De finns ofta i vatten, och om man tittar på en vattendroppe i mikroskop kan man se dem. Kända exempel är amöbor och toffeldjur.
-
-De flesta protozoer är ofarliga. Men vissa är **parasiter** och orsakar sjukdomar. Den mest kända är **malaria**, som sprids med myggor och varje år orsakar hundratusentals dödsfall i världen.
-
-En **parasit** lever på eller i en annan organism – **värden** – och får sin näring därifrån. Det skadar ofta värden.
+En **parasit** lever på eller i en annan organism – **värden** – och får sin näring därifrån. Det skadar ofta värden. Vissa encelliga organismer, **protozoer**, är parasiter. Den mest kända sjukdomen är **malaria**, som sprids med myggor och varje år orsakar hundratusentals dödsfall i världen. Även springmask och löss är parasiter.
 
 > **Begrepp**
-> **protozoer** – encelliga organismer med cellkärna, ofta i vatten
 > **parasit** – en organism som lever på eller i en annan organism (värden) och får näring från den
 
-::: fördjupning åk 7 Eukaryota organismer
-Alla organismer delas in i tre stora grupper – **domäner** – efter hur deras celler är byggda:
-- **Bakterier** – celler utan cellkärna
-- **Arkéer** – celler utan cellkärna, men med annorlunda arvsmassa och cellvägg
-- **Eukaryoter** – celler **med cellkärna** och andra delar (organeller). Hit hör djur, växter, svampar, protozoer och alger.
-
-Protozoer är alltså **eukaryota** – de har en cellkärna, precis som våra egna celler.
-:::
-
 > **Viktigt att komma ihåg**
-> - Protozoer är encelliga och **har cellkärna**.
+> - Svampinfektioner, som fotsvamp, är oftast inte allvarliga.
 > - En **parasit** lever på eller i en värd och skadar den.
-> - **Malaria** orsakas av en protozo och sprids med myggor.
-
-## Alger och arkéer {#alger}
-
-**Alger** gör **fotosyntes**, precis som växter, och lever oftast i vatten. Man kan tänka på dem som enkla växter – de saknar rötter, stjälkar och blad. Alger kan vara encelliga eller flercelliga. De är viktiga eftersom de bildar mycket av jordens syre och är mat för andra organismer i vattnet.
-
-Alger orsakar inga sjukdomar i sig. Men när det finns väldigt mycket alger – en **algblomning** – kan de bilda gifter som är farliga för människor och djur.
-
-**Arkéer** liknar bakterier – de är encelliga och saknar cellkärna – men de är en egen grupp. Många arkéer lever i **extrema miljöer**: i heta källor, mycket salt vatten, sura sjöar eller vid varma källor djupt nere på havsbotten. Det finns inga kända arkéer som orsakar sjukdom.
-
-> **Begrepp**
-> **alger** – organismer som gör fotosyntes och oftast lever i vatten
-> **arkéer** – encelliga organismer som liknar bakterier men är en egen grupp, ofta i extrema miljöer
-
-> **Viktigt att komma ihåg**
-> - **Alger** gör fotosyntes och bildar syre. Algblomning kan ge gifter.
-> - **Arkéer** liknar bakterier men är en egen grupp. De lever ofta i extrema miljöer.
-> - Arkéer orsakar inga kända sjukdomar.
+> - **Malaria** orsakas av en encellig parasit och sprids med myggor.

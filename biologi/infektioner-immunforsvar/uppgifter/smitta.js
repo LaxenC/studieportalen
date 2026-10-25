@@ -1,32 +1,13 @@
 /* =====================================================================
-   UPPGIFTER – Mikrober och människan
+   UPPGIFTER – Infektioner och smittspridning
    ---------------------------------------------------------------------
    Mallar för varje uppgiftstyp finns i mallar.md.
      id : unikt namn · kapitel : kapitlets id · avsnitt : avsnitt i texten
      nivaer : nivå [0]–[3] · nivaerPerArskurs : annan nivå per årskurs
      rullista : nivåer där eleven väljer i en rullista
-   Avsnitt: mikrobiom, symbios, sjukdom, smittspridning
+   Avsnitt: sjukdom, smittspridning
    ===================================================================== */
 Portal.uppgifter([
-
-    { id: "smi-mikrobiom-text", kapitel: "smitta", avsnitt: ["mikrobiom", "symbios"], titel: "Mikrobiom och symbios – fyll i",
-      typ: "lucktext", nivaer: [0, 1], rullista: [0],
-      ordlista: ["mikrobiomet", "immunförsvaret", "symbios", "pandemi", "matsmältningen", "andningen"],
-      varianter: [
-        { text: "Alla mikrober som lever i och på kroppen kallas tillsammans [mikrobiomet|mikrobiom]." },
-        { text: "Tarmbakterierna hjälper oss bland annat med [matsmältningen]." },
-        { text: "Ett nära och långvarigt samband mellan två olika arter kallas [symbios]." }
-      ] },
-
-    { id: "smi-symbios-para", kapitel: "smitta", avsnitt: ["symbios"], titel: "Typer av symbios – para ihop",
-      typ: "para", nivaerPerArskurs: { 7: [2], 8: [1, 2], 9: [1] },
-      varianter: [
-        { rubrik: "Para ihop typen av symbios med vad som händer.",
-          par: [["Mutualism", "Båda arterna gynnas"], ["Kommensalism", "Den ena gynnas, den andra påverkas inte"], ["Parasitism", "Den ena gynnas, den andra skadas"]] },
-        { rubrik: "Para ihop exemplet med rätt typ av symbios.",
-          par: [["Tarmbakterier som får mat och hjälper oss smälta maten", "Mutualism"], ["Malariaparasiten i människans blod", "Parasitism"],
-                ["Hudbakterier som lever på oss utan att påverka oss", "Kommensalism"]] }
-      ] },
 
     { id: "smi-sjukdom-para", kapitel: "smitta", avsnitt: ["sjukdom"], titel: "Sjukdom och smitta – para ihop",
       typ: "para", nivaer: [0, 1],
@@ -70,7 +51,7 @@ Portal.uppgifter([
     { id: "smi-sf", kapitel: "smitta", titel: "Mikrober och människan – sant eller falskt",
       typ: "santfalskt", nivaer: [1, 2],
       varianter: [
-        { pst: [["Mikrobiomet hjälper oss att smälta maten.", true], ["Vid parasitism gynnas båda arterna.", false],
+        { pst: [["En infektion är när en patogen förökar sig i kroppen.", true], ["Inkubationstid är tiden det tar att bli frisk.", false],
                 ["Alla sjukdomar smittar.", false], ["En pandemi sprids över stora delar av världen.", true], ["Myggor kan sprida sjukdomar.", true]] }
       ] }
 ]);
