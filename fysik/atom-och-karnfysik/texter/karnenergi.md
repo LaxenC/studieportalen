@@ -91,7 +91,7 @@ Energin omvandlas i flera steg: **kärnenergi → värme → rörelseenergi → 
 
 > **💬 Förklara så här** {.green}
 > *Hur blir uran till el i ett kärnkraftverk?*<br>
-> *Kärnbränslet* (uran) *klyvs* och ger värme. Värmen gör vatten till ånga, och ångan får turbinen att snurra. Generatorn gör om rörelsen till el. Styrstavarna fångar neutroner, **därför** hålls kedjereaktionen jämn.
+> I reaktorn *klyvs* urankärnorna i *kärnbränslet*, och då frigörs *värme*. *Styrstavarna* fångar upp en del av neutronerna, så att kedjereaktionen hålls jämn och reaktorn inte blir för varm. Värmen kokar vatten till *ånga*. Ångan får *turbinen* att snurra, och *generatorn* gör om rörelsen till *el*. Energin omvandlas alltså i flera steg: kärnenergi → värme → rörelseenergi → elenergi.
 
 > **Viktigt att komma ihåg**
 > - I ett kärnkraftverk är kedjereaktionen **kontrollerad**, **eftersom** styrstavarna fångar upp neutroner.
@@ -138,7 +138,7 @@ Problemet är att det är väldigt svårt att få fusion att producera mer energ
 
 > **💬 Förklara så här** {.green}
 > *Varför får solen sin energi från fusion?*<br>
-> I solens kärna är **temperaturen** cirka 15 miljoner grader. **Därför** rör sig **väte**kärnorna så snabbt att de slås ihop till **helium** trots att de stöter bort varandra – **fusion**. En liten del av massan blir **energi**, som når oss som ljus och värme.
+> I solens kärna är *temperaturen* cirka 15 miljoner grader. **Därför** rör sig *vätekärnorna* så snabbt att de slås ihop till *helium* trots att de stöter bort varandra – *fusion*. En liten del av massan blir *energi*, som når oss som ljus och värme.
 
 > **Viktigt att komma ihåg**
 > - Vid **fusion** slås lätta kärnor ihop till en tyngre.
@@ -170,7 +170,7 @@ På CERN, världens största partikelfysiklaboratorium nära Genève, använder 
 
 > **💬 Förklara så här** {.green}
 > *Varför ger lite massa så mycket energi?*<br>
-> Enligt **E = mc^2^** är energin lika med massan gånger **ljusets hastighet** i kvadrat. Ljusets hastighet är ett enormt tal, och i kvadrat blir det ännu större. **Därför** blir även en liten **massa** till väldigt mycket **energi**.
+> Enligt *E = mc^2^* är energin lika med massan gånger *ljusets hastighet* i kvadrat. Ljusets hastighet är ett enormt tal, och i kvadrat blir det ännu större. **Därför** blir även en liten *massa* till väldigt mycket *energi*.
 
 > **Viktigt att komma ihåg**
 > - Lite massa innehåller mycket energi: **E = mc^2^**, **eftersom** ljusets hastighet i kvadrat är ett enormt tal.

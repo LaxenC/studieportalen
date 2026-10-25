@@ -51,8 +51,7 @@ Den används inom sjukvården för att ta bilder av kroppens inre. På röntgenb
 
 > **💬 Förklara så här** {.green}
 > *Varför syns skelettet vitt på en röntgenbild?*<br>
-> Röntgenstrålning är *energirik* och tar sig igenom mjukdelar som muskler. Skelettet är tätare och absorberar mer av strålningen.<br>
-**Därför** når mindre strålning bilden bakom skelettet, och skelettet syns vitt medan mjukdelarna blir mörka.
+> Röntgenstrålning är *energirik* och tar sig igenom mjukdelar som muskler. Skelettet är tätare och absorberar mer av strålningen. **Därför** når mindre strålning bilden bakom skelettet, och skelettet syns vitt medan mjukdelarna blir mörka.
 
 > **Viktigt att komma ihåg**
 > - **Elektromagnetisk strålning:** fotoner (elektromagnetiska vågor i partikelform) överför energin.

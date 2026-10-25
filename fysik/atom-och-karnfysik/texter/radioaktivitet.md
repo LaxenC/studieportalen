@@ -221,7 +221,7 @@ Olika ämnen har mycket olika halveringstid:
 
 > **💬 Förklara så här** {.green}
 > *Varför är inte ämnet borta efter två halveringstider?*<br>
-> Under varje halveringstid sönderfaller hälften av det som är kvar** inte hälften av det man började med. **Därför** är hälften kvar efter en halveringstid, en fjärdedel efter två och en åttondel efter tre.
+> Under varje halveringstid sönderfaller hälften av det som är *kvar* – inte hälften av det man började med. **Därför** är hälften kvar efter en halveringstid, en fjärdedel efter två och en åttondel efter tre.
 
 > **Viktigt att komma ihåg**
 > - **Halveringstid** = tiden tills hälften av de radioaktiva kärnorna har sönderfallit.
@@ -250,7 +250,7 @@ Metoden fungerar för fynd som är upp till cirka 50 000 år gamla. Efter det f
 
 > **💬 Förklara så här** {.green}
 > *Hur kan man räkna ut hur gammalt ett träfynd är?*<br>
-> När trädet levde hade det samma andel *kol-14* hela tider **eftersom** den tar upp ny kol-14 hela tiden. När det dog slutade det ta upp nytt kol, och kol-14 började minska. *Halveringstiden* är 5 730 år, **därför** kan man räkna ut hur länge sedan trädet dog genom att mäta hur mycket kol-14 som är kvar.
+> När trädet levde hade det samma andel *kol-14* som luften, **eftersom** det hela tiden tog upp nytt kol-14. När det dog slutade det ta upp nytt kol, och kol-14 började minska. *Halveringstiden* är 5 730 år, **därför** kan man räkna ut hur länge sedan trädet dog genom att mäta hur mycket kol-14 som är kvar.
 
 > **Viktigt att komma ihåg**
 > - Allt som lever har samma andel kol-14 som luften, **eftersom** det hela tiden tar upp nytt kol.
