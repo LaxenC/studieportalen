@@ -176,6 +176,61 @@ Portal.uppgifter([
         { text: "En vägg av [bly] stoppar det mesta av strålningen. Det kallas skärmning." }
       ] },
 
+    /* ---------- Bakgrundsstrålning ---------- */
+
+    { id: "rad-bakgrund-flerval", kapitel: "radioaktivitet", avsnitt: ["bakgrund"], titel: "Bakgrundsstrålning – välj rätt",
+      typ: "flerval", nivaerPerArskurs: { 8: [1, 2], 9: [0, 1] },
+      varianter: [
+        { fraga: "Vad ger den största delen av stråldosen för de flesta i Sverige?",
+          alt: [ { t: "Radon i inomhusluften", s: "ratt", f: "radon ger cirka 4 mSv per år vid den svenska medelhalten – mer än alla andra källor tillsammans." },
+                 { t: "Kärnkraftverk", s: "fel", f: "kärnkraften ger en mycket liten del av vår stråldos." },
+                 { t: "Tandröntgen", s: "fel", f: "en tandröntgen ger bara 0,005 mSv." },
+                 { t: "Strålning från rymden", s: "fel", f: "kosmisk strålning ger cirka 0,3 mSv per år – mycket mindre än radon." } ] },
+        { fraga: "Vad är radon?",
+          alt: [ { t: "En radioaktiv gas som bildas när radium sönderfaller", s: "ratt", f: "radon syns inte, luktar inte och kan finnas i inomhusluften." },
+                 { t: "En sorts röntgenstrålning", s: "fel", f: "radon är en gas – ett ämne – inte en sorts strålning." },
+                 { t: "Ett mätinstrument för strålning", s: "fel", f: "mätinstrument är till exempel dosimeter och GM-mätare." },
+                 { t: "Strålning från rymden", s: "fel", f: "strålning från rymden kallas kosmisk strålning." } ] },
+        { fraga: "Vad är bakgrundsstrålning?",
+          alt: [ { t: "Naturlig strålning som finns runt omkring oss hela tiden", s: "ratt", f: "den kommer från kroppen, marken, rymden och radon." },
+                 { t: "Strålning som bara finns vid kärnkraftverk", s: "fel", f: "bakgrundsstrålning finns överallt, hela tiden." },
+                 { t: "Strålning från röntgen", s: "fel", f: "röntgen kommer från sjukvården. Bakgrundsstrålningen är naturlig." },
+                 { t: "Strålning som inte är joniserande", s: "fel", f: "bakgrundsstrålningen är joniserande, men dosen är oftast liten." } ] }
+      ] },
+
+    { id: "rad-bakgrund-sortera", kapitel: "radioaktivitet", avsnitt: ["bakgrund"], titel: "Naturlig eller från människan? – sortera",
+      typ: "sortera", nivaerPerArskurs: { 8: [1, 2], 9: [1] },
+      varianter: [
+        { grupper: ["Naturlig bakgrundsstrålning", "Från människans verksamhet"],
+          saker: [["Radon från marken", 0], ["Kosmisk strålning", 0], ["Kalium-40 i kroppen", 0], ["Uran i berggrunden", 0],
+                  ["Tandröntgen", 1], ["Datortomografi", 1], ["Kärnkraftverk", 1]] }
+      ] },
+
+    { id: "rad-bakgrund-jamfor", kapitel: "radioaktivitet", avsnitt: ["bakgrund"], titel: "Jämför stråldoser",
+      typ: "flerval", nivaerPerArskurs: { 8: [2, 3], 9: [2] },
+      varianter: [
+        { fraga: "En tandröntgen ger 0,005 mSv och en flygresa över Atlanten (tur och retur) ger 0,05 mSv. Hur många gånger större är dosen från flygresan?",
+          alt: [ { t: "10 gånger", s: "ratt", f: "0,05 / 0,005 = 10." },
+                 { t: "2 gånger", s: "fel", f: "räkna 0,05 / 0,005." },
+                 { t: "100 gånger", s: "fel", f: "0,05 / 0,005 = 10, inte 100." },
+                 { t: "Lika stor", s: "fel", f: "0,05 är tio gånger större än 0,005." } ] },
+        { fraga: "Ungefär hur stor del av den totala årsdosen (cirka 5,3 mSv) kommer från radon (4 mSv)?",
+          alt: [ { t: "Ungefär tre fjärdedelar", s: "ratt", f: "4 / 5,3 ≈ 0,75 = 75 %." },
+                 { t: "Ungefär hälften", s: "fel", f: "4 av 5,3 är mer än hälften – cirka 75 %." },
+                 { t: "Ungefär en fjärdedel", s: "fel", f: "radon är den största delen – cirka 75 %." },
+                 { t: "Nästan allt – 99 %", s: "fel", f: "de andra källorna ger tillsammans cirka 1,3 mSv, så radon är cirka 75 %." } ] }
+      ] },
+
+    { id: "rad-radon-text", kapitel: "radioaktivitet", avsnitt: ["bakgrund"], titel: "Radon – fyll i",
+      typ: "lucktext", nivaerPerArskurs: { 8: [1], 9: [0, 1] }, rullista: [0, 1],
+      ordlista: ["radium", "uran", "gas", "vätska", "marken", "byggnadsmaterialet", "vattnet", "luften", "lungcancer", "ventilation"],
+      varianter: [
+        { text: "Radon är en radioaktiv [gas] som bildas när [radium] sönderfaller." },
+        { text: "Radon kan komma in i hus från [*marken/byggnadsmaterialet/vattnet], [*marken/byggnadsmaterialet/vattnet] och [*marken/byggnadsmaterialet/vattnet].",
+          facit: "Radon kan komma in i hus från <b>marken</b>, <b>byggnadsmaterialet</b> och <b>vattnet</b>." },
+        { text: "Radon som andas in kan orsaka [lungcancer]. Radonhalten kan sänkas med bättre [ventilation]." }
+      ] },
+
     /* ---------- Halveringstid ---------- */
 
     { id: "rad-halv-text", kapitel: "radioaktivitet", avsnitt: ["halvering"], titel: "Halveringstid – fyll i",

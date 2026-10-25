@@ -128,6 +128,50 @@ Strålning syns inte, hörs inte och känns inte. Därför behövs mätinstrumen
 > - Aktiviteten ändras inte när du flyttar dig – men stråldosen gör det.
 > - Skydda dig med **avstånd**, **tid** och **skärmning**.
 
+## Bakgrundsstrålning {#bakgrund åk=8-9}
+
+Joniserande strålning syns inte, luktar inte och känns inte. Men var du än är utsätts du för strålning. Den naturliga strålningen som finns runt omkring oss hela tiden kallas **bakgrundsstrålning**. Den kommer från:
+
+- **Egna kroppen** – i kroppen finns små mängder radioaktiva ämnen, till exempel kalium-40 och kol-14.
+- **Marken** – i berggrunden och i byggnadsmaterial finns radioaktiva ämnen som uran, torium och kalium.
+- **Rymden** – kosmisk strålning från rymden når ända ner till marken.
+- **Radon** – en osynlig, luktfri gas som bildas när radium sönderfaller.
+
+> **Begrepp**
+> **bakgrundsstrålning** – naturlig strålning som finns runt omkring oss hela tiden
+> **radon** – en radioaktiv gas som bildas när radium sönderfaller
+
+![bakgrundsstrålning](bilder/bakgrundsstralning.svg)
+Bild: Ungefär så stor stråldos får en person i Sverige under ett år. Radon i inomhusluften står för den största delen.
+
+### Radon i hus
+
+Radon kan komma in i bostäder från tre källor: **marken** under och runt huset, **byggnadsmaterialet** och **vattnet** som hushållet använder. Mängden radon varierar beroende på var man bor, eftersom det finns olika mycket radioaktiva ämnen i marken. Radon som andas in sönderfaller i lungorna och kan orsaka lungcancer. Därför kan man mäta radonhalten hemma och sänka den, till exempel med bättre ventilation.
+
+### Strålning från sjukvården
+
+Strålning i vardagen kan också komma från medicinska undersökningar. Hos tandläkaren eller vid en undersökning av de inre organen tas ofta bilder med röntgenstrålning.
+
+### Exempel på stråldoser
+
+| Stråldos | Exempel |
+|---|---|
+| 0,005 mSv | tandröntgen (två bilder) |
+| 0,05 mSv | kosmisk strålning under en flygresa över Atlanten, tur och retur |
+| 0,2 mSv | årsdos från egna kroppen |
+| 0,3 mSv | årsdos från kosmisk strålning vid marknivå |
+| 0,6 mSv | genomsnittlig årsdos från mark och byggnadsmaterial |
+| 1,3 mSv | genomsnittlig total årsdos, utan radon och medicinska undersökningar |
+| 1–10 mSv | en datortomografiundersökning (skiktröntgen) |
+| 4 mSv | årsdos från radon i inomhusluft, vid den svenska medelhalten |
+
+Källa: [Strålsäkerhetsmyndigheten](https://www.stralsakerhetsmyndigheten.se/)
+
+> **Viktigt att komma ihåg**
+> - **Bakgrundsstrålning** är naturlig strålning som finns överallt – från kroppen, marken, rymden och radon.
+> - **Radon** i inomhusluften ger den största delen av stråldosen för de flesta i Sverige.
+> - Strålning kommer också från sjukvården, till exempel röntgen.
+
 ## Halveringstid {#halvering åk=8-9}
 
 Man kan inte veta *när* en enskild radioaktiv kärna sönderfaller – det är slumpen. Men om man har väldigt många kärnor vet man hur lång tid det tar tills hälften av dem har sönderfallit. Den tiden kallas **halveringstid**.
