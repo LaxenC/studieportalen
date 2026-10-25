@@ -14,7 +14,16 @@ En mikroorganism är alltså en mycket liten levande varelse. Men vad är det so
 
 ## Celler – livets byggstenar {#cell}
 
-Allt som lever – alla organismer – är uppbyggt av **celler**. En cell är den minsta delen som kan leva själv – den tar upp näring, växer och kan föröka sig. De flesta celler är så små att man bara kan se dem i mikroskop.
+Allt som lever – alla organismer – är uppbyggt av **celler**. En cell är den minsta delen som kan leva själv. De flesta celler är så små att man bara kan se dem i mikroskop.
+
+Att cellen kan leva själv betyder att den klarar tre saker på egen hand:
+- **Ta upp näring** – cellen tar in ämnen från omgivningen, till exempel socker och syre, och får energi ur dem.
+- **Växa** – cellen använder näringen och energin för att bygga nya delar och bli större.
+- **Föröka sig** – när cellen har vuxit kan den dela sig i två nya celler.
+
+> **💬 Förklara så här** {.green}
+> *Vad är det som gör att celler kan leva själva?*<br>
+> En *cell* tar upp *näring* och får *energi* ur den. Energin använder cellen för att *växa* och *föröka sig* genom att dela sig. Cellen behöver ingen hjälp utifrån för det här, **därför** kan den leva själv.
 
 - En organism som består av **en enda cell** kallas **encellig**. Exempel är bakterier och amöbor.
 - En organism som består av **många celler** kallas **flercellig**. Människor, djur, växter och skogssvampar är flercelliga – du själv består av tusentals miljarder celler.
