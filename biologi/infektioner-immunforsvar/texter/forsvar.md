@@ -111,20 +111,25 @@ Flera organ hör till immunförsvaret och lymfsystemet:
 
 ## Förvärvat försvar – immunsvaret {#immunsvar}
 
-Om det medfödda försvaret inte räcker startar det **förvärvade** (specifika) **immunförsvaret**. Det är mer träffsäkert – varje försvarscell känner igen bara en sorts mikrob. Förenklat sker det i tre steg:
+Om det medfödda försvaret inte räcker startar det **förvärvade** (specifika) **immunförsvaret**. Det är mer träffsäkert – varje försvarscell känner igen bara en sorts patogen.
+
+Varje patogen har egna kännetecken på sin yta – **antigener**. Det är med hjälp av antigenerna som det förvärvade försvaret känner igen just den patogenen. Förenklat sker det i fyra steg:
 
 ![immunsvaret](bilder/immunsvar.svg)
 Bild: Immunsvaret i tre steg.
 
-1. **Ätarceller** äter upp patogenen och visar upp bitar av den för andra försvarsceller – som ett "efterlysningsfoto".
-2. Andra vita blodkroppar tillverkar **antikroppar** som passar precis mot just den patogenen. Antikropparna fastnar på patogenen, märker ut den och gör den ofarlig.
-3. **Minnesceller** bildas. De kommer ihåg patogenen. Om samma patogen kommer tillbaka kan immunförsvaret reagera snabbare nästa gång. Minnesceller kan finnas kvar i många år, ibland hela livet.
+1. **Ätarceller** känner igen patogenen på ett allmänt sätt och äter upp den. Sedan visar de upp antigenerna på sin yta – som ett "efterlysningsfoto".
+2. **T-hjälparceller** känner igen antigenerna och talar om för resten av försvaret vad det ska hålla utkik efter.
+3. **B-celler** tillverkar **antikroppar** som passar precis mot just den patogenen. Antikropparna fastnar på patogenen, märker ut den och gör den ofarlig.
+4. **Minnesceller** bildas. De kommer ihåg patogenen. Om samma patogen kommer tillbaka kan immunförsvaret reagera snabbare nästa gång. Minnesceller kan finnas kvar i många år, ibland hela livet.
 
 Allt det här tar några dagar. Därför hinner man ofta bli sjuk första gången.
 
 > **Begrepp**
-> **antikroppar** – proteiner som fastnar på en viss mikrob och märker ut den
-> **minnesceller** – celler som kommer ihåg en mikrob så att försvaret går snabbare nästa gång
+> **antigen** – kännetecken på en patogens yta som försvaret känner igen
+> **T-hjälparceller** – vita blodkroppar som känner igen antigener och sätter igång försvaret
+> **antikroppar** – proteiner som fastnar på en viss patogen och märker ut den
+> **minnesceller** – celler som kommer ihåg en patogen så att försvaret går snabbare nästa gång
 
 ::: fördjupning åk 7 Immunsvaret steg för steg
 Det finns många fler celler och steg i immunsvaret, och det är mycket komplicerat. Här är de viktigaste stegen, förenklat:
@@ -132,7 +137,7 @@ Det finns många fler celler och steg i immunsvaret, och det är mycket komplice
 2. **T-hjälparceller** känner igen antigenerna och skickar ut signalämnen som sätter igång resten av försvaret.
 3. **B-celler** aktiveras och blir till celler som tillverkar **antikroppar**.
 4. **Antikropparna** fastnar på patogenerna. De hindrar dem från att ta sig in i celler och märker ut dem så att ätarcellerna kan förstöra dem.
-5. **T-mördarceller** letar upp kroppens egna celler som blivit infekterade (till exempel av virus) och förstör dem.
+5. **T-mördarceller** känner igen antigenerna på kroppens egna celler som blivit infekterade (till exempel av virus) och förstör dem.
 6. **Minnesceller** (minnes-B-celler och minnes-T-celler) bildas.
 7. När patogenerna är borta lugnar andra T-celler ner försvaret så att det inte blir för kraftigt.
 8. **Immunminne** – minnescellerna stannar kvar i kroppen.
@@ -143,11 +148,11 @@ Bild: Immunsvaret steg för steg, förenklat.
 
 > **💬 Förklara så här** {.green}
 > *Varför hinner man ofta bli sjuk första gången man smittas?*<br>
-> Första gången måste det *specifika immunförsvaret* lära sig känna igen mikroben och börja tillverka rätt *antikroppar*. Det tar några dagar. **Därför** hinner mikroberna föröka sig och göra en sjuk innan försvaret är klart.
+> Första gången måste det *förvärvade försvaret* lära sig känna igen patogenens *antigener* och börja tillverka rätt *antikroppar*. Det tar några dagar. **Därför** hinner patogenerna föröka sig och göra en sjuk innan försvaret är klart.
 
 > **Viktigt att komma ihåg**
-> - Det **specifika immunförsvaret** känner igen en viss mikrob.
-> - **Ätarceller** → **antikroppar** → **minnesceller**.
+> - Det **förvärvade** (specifika) **immunförsvaret** känner igen en viss patogen på dess **antigener**.
+> - **Ätarceller** → **T-hjälparceller** → **B-celler och antikroppar** → **minnesceller**.
 > - Antikroppar märker ut patogenerna och gör dem ofarliga.
 
 ## Immunminnet {#minne}
