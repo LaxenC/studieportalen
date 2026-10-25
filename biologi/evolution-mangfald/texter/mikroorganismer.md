@@ -22,7 +22,10 @@ Celler hos djur, växter och svampar har cellkärna. Bakterier har **ingen cellk
 Att cellen kan leva själv betyder att den klarar tre saker på egen hand:
 - **Ta upp näring** – cellen tar in ämnen från omgivningen, till exempel socker och syre, och får energi ur dem.
 - **Växa** – cellen använder näringen och energin för att bygga nya delar och bli större.
-- **Föröka sig** – när cellen har vuxit kan den dela sig i två nya celler genonom att cellens fabriker använder arvsmassan (receptet) 
+- **Föröka sig** – när cellen har vuxit kan den dela sig i två nya celler genom att cellens fabriker använder arvsmassan (receptet).
+
+![celldelning](bilder/celldelning.svg)
+Bild: Cellen växer och delar sig. Fabrikerna följer receptet (arvsmassan), och båda nya cellerna får ett eget recept.
 
 En organism kan bestå av **en enda cell** de kallas **encellig**, exempel är bakterier och amöbor. Eller av **många celler** kallas **flercellig**, exempelvis Människor, djur, växter och skogssvampar – du själv består av tusentals miljarder celler.
 
