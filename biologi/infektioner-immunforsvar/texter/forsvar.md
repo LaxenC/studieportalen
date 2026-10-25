@@ -6,9 +6,38 @@ kapitel: forsvar
 
 Din kropp är i ständig kamp mot mikrober. Den har flera försvar – från huden längst ut till celler som kommer ihåg mikroberna i många år.
 
-## Hud och slemhinnor {#hud}
+## Översikt – kroppens försvar {#oversikt}
 
-Kroppens första försvar är att stänga mikroberna ute.
+Kroppens försvar mot mikrober kan delas in i två delar:
+
+1. **Yttre försvar** – huden och slemhinnorna stänger ute mikroberna, så att de inte kommer in i kroppen.
+2. **Inre försvar** – om mikroberna ändå tar sig in tar **immunförsvaret** över.
+
+Immunförsvaret delas i sin tur in i två delar:
+- Det **medfödda** (ospecifika) försvaret reagerar direkt och likadant mot alla mikrober, till exempel med inflammation och ätarceller.
+- Det **förvärvade** (specifika) försvaret känner igen en viss mikrob. Det tillverkar antikroppar och bildar minnesceller. Det tar längre tid att komma igång, men det kommer ihåg mikroben till nästa gång.
+
+![kroppens försvar](bilder/forsvar-oversikt.svg)
+Bild: Kroppens försvar delas in i ett yttre och ett inre försvar. Det inre försvaret – immunförsvaret – är medfött eller förvärvat.
+
+> **Begrepp**
+> **yttre försvar** – huden och slemhinnorna, som stänger ute mikroberna
+> **inre försvar** – immunförsvaret, som bekämpar mikrober som har tagit sig in i kroppen
+> **medfött försvar** – ospecifikt försvar som reagerar likadant mot alla mikrober
+> **förvärvat försvar** – specifikt försvar som känner igen en viss mikrob och kommer ihåg den
+
+> **💬 Förklara så här** {.green}
+> *Varför kallas en del av immunförsvaret förvärvat?*<br>
+> Det *förvärvade försvaret* finns inte färdigt när vi föds. Kroppen lär sig känna igen varje mikrob först när den har träffat på den, och sparar det i *minnesceller*. **Därför** säger man att försvaret är förvärvat – det byggs upp under livet.
+
+> **Viktigt att komma ihåg**
+> - **Yttre försvar**: huden och slemhinnorna stänger ute mikroberna.
+> - **Inre försvar** = immunförsvaret. Det är **medfött** (ospecifikt) eller **förvärvat** (specifikt).
+> - Det medfödda försvaret reagerar likadant mot alla mikrober. Det förvärvade känner igen en viss mikrob.
+
+## Yttre försvar – hud och slemhinnor {#hud}
+
+Kroppens första försvar är det **yttre försvaret** – att stänga mikroberna ute.
 
 - **Huden** är en tät mur som mikrober har svårt att ta sig igenom. Nyttiga bakterier på huden konkurrerar dessutom med de skadliga.
 - **Slemhinnor** finns i näsan, munnen, luftvägarna och tarmen. Slemmet fångar upp mikrober, och små hår i luftvägarna för ut slemmet.
@@ -22,12 +51,12 @@ Om huden går sönder, eller mikrober på något annat sätt tar sig in, blir de
 > *Huden* är en tät mur som stänger ute mikroberna. När huden går sönder får mikroberna en öppning in i kroppen. **Därför** kan de ta sig in, föröka sig och orsaka en *infektion*.
 
 > **Viktigt att komma ihåg**
-> - Kroppens första försvar är **huden** och **slemhinnorna**.
+> - Kroppens första försvar – det **yttre försvaret** – är **huden** och **slemhinnorna**.
 > - De stänger ute mikroberna innan de kommer in i kroppen.
 
-## Inflammation och ätarceller {#inflammation}
+## Medfött försvar – inflammation och ätarceller {#inflammation}
 
-När mikrober har tagit sig in startar kroppen direkt ett försvar som alltid ser likadant ut, oavsett vilken mikrob det är. Det kallas det **medfödda immunförsvaret**.
+När mikrober har tagit sig in startar kroppen direkt ett försvar som alltid ser likadant ut, oavsett vilken mikrob det är. Det kallas det **medfödda immunförsvaret** – eller det ospecifika försvaret. Det är en del av kroppens inre försvar.
 
 Området blir **inflammerat** – rött, svullet, varmt och ömt. Det beror på att mer blod strömmar dit, med vita blodkroppar som ska bekämpa mikroberna.
 
@@ -75,9 +104,9 @@ Flera organ hör till immunförsvaret och lymfsystemet:
 > - **Lymfsystemet** transporterar **lymfa** och vita blodkroppar.
 > - I **lymfknutorna** samlas vita blodkroppar.
 
-## Immunsvaret {#immunsvar}
+## Förvärvat försvar – immunsvaret {#immunsvar}
 
-Om det medfödda försvaret inte räcker startar det **specifika immunförsvaret**. Det är mer träffsäkert – varje försvarscell känner igen bara en sorts mikrob. Förenklat sker det i tre steg:
+Om det medfödda försvaret inte räcker startar det **förvärvade** (specifika) **immunförsvaret**. Det är mer träffsäkert – varje försvarscell känner igen bara en sorts mikrob. Förenklat sker det i tre steg:
 
 ![immunsvaret](bilder/immunsvar.svg)
 Bild: Immunsvaret i tre steg.

@@ -5,9 +5,32 @@
      id : unikt namn · kapitel : kapitlets id · avsnitt : avsnitt i texten
      nivaer : nivå [0]–[3] · nivaerPerArskurs : annan nivå per årskurs
      rullista : nivåer där eleven väljer i en rullista
-   Avsnitt: hud, inflammation, lymfsystemet, immunsvar, minne
+   Avsnitt: oversikt, hud, inflammation, lymfsystemet, immunsvar, minne
    ===================================================================== */
 Portal.uppgifter([
+
+    { id: "for-oversikt-sortera", kapitel: "forsvar", avsnitt: ["oversikt"], titel: "Yttre, medfött eller förvärvat? – sortera",
+      typ: "sortera", nivaer: [1, 2],
+      varianter: [
+        { grupper: ["Yttre försvar", "Medfött försvar", "Förvärvat försvar"],
+          saker: [["Huden", 0], ["Slemhinnor", 0], ["Sur magsaft", 0], ["Inflammation", 1], ["Ätarceller", 1], ["Reagerar likadant mot alla mikrober", 1],
+                  ["Antikroppar", 2], ["Minnesceller", 2], ["Känner igen en viss mikrob", 2]] }
+      ] },
+
+    { id: "for-oversikt-flerval", kapitel: "forsvar", avsnitt: ["oversikt"], titel: "Kroppens försvar – välj rätt",
+      typ: "flerval", nivaer: [0, 1],
+      varianter: [
+        { fraga: "Vad är kroppens inre försvar?",
+          alt: [ { t: "Immunförsvaret", s: "ratt", f: "det inre försvaret bekämpar mikrober som har tagit sig in i kroppen." },
+                 { t: "Huden", s: "fel", f: "huden är en del av det yttre försvaret." },
+                 { t: "Slemhinnorna", s: "fel", f: "slemhinnorna är en del av det yttre försvaret." },
+                 { t: "Vaccin", s: "fel", f: "vaccin tränar immunförsvaret, men det är inte kroppens eget försvar." } ] },
+        { fraga: "Vad är skillnaden mellan det medfödda och det förvärvade försvaret?",
+          alt: [ { t: "Det medfödda reagerar likadant mot alla mikrober – det förvärvade känner igen en viss mikrob", s: "ratt", f: "därför kallas de också ospecifikt och specifikt." },
+                 { t: "Det medfödda finns i huden – det förvärvade i blodet", s: "fel", f: "båda är en del av det inre försvaret." },
+                 { t: "Det förvärvade är snabbast", s: "fel", f: "det förvärvade tar några dagar första gången – det medfödda reagerar direkt." },
+                 { t: "Det finns ingen skillnad", s: "fel", f: "det medfödda är ospecifikt, det förvärvade är specifikt." } ] }
+      ] },
 
     { id: "for-ordning-para", kapitel: "forsvar", avsnitt: ["hud", "inflammation", "immunsvar"], titel: "Kroppens försvar i ordning – para ihop",
       typ: "para", nivaer: [0, 1, 2],
@@ -88,6 +111,6 @@ Portal.uppgifter([
       typ: "santfalskt", nivaer: [1, 2],
       varianter: [
         { pst: [["Huden är kroppens första försvar.", true], ["Ätarceller tillverkar antikroppar.", false], ["Minnesceller gör att man kan bli immun.", true],
-                ["Lymfknutorna kan svullna när man är sjuk.", true], ["Det specifika immunförsvaret reagerar likadant mot alla mikrober.", false]] }
+                ["Lymfknutorna kan svullna när man är sjuk.", true], ["Det förvärvade (specifika) immunförsvaret reagerar likadant mot alla mikrober.", false]] }
       ] }
 ]);
