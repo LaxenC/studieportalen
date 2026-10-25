@@ -490,3 +490,15 @@ a.ghostbtn{text-decoration:none;white-space:nowrap}
 .fk-check li{border-radius:999px;padding:2px 10px;font-weight:800;font-size:.9rem}
 .fk-check li.ja{background:var(--green-bg);color:var(--green)}
 .fk-check li.nej{background:var(--red-bg);color:var(--red, #d63c45)}
+/* kedja */
+.kedja{list-style:none;margin:0;padding:0;display:grid;gap:26px;counter-reset:none}
+.kd-steg{position:relative;display:flex;gap:12px;align-items:center;padding:12px 14px;border-radius:14px;background:#fff6d6;border:2px solid #f0d27a}
+.kd-steg:not(:last-child)::after{content:"";position:absolute;left:50%;bottom:-24px;transform:translateX(-50%);border-left:9px solid transparent;border-right:9px solid transparent;border-top:14px solid var(--muted)}
+.kd-steg:not(:last-child)::before{content:"";position:absolute;left:50%;bottom:-12px;width:4px;height:12px;transform:translateX(-50%);background:var(--muted)}
+.kd-tom{background:var(--panel);border-style:dashed;border-color:var(--muted)}
+.kd-nr{flex:none;width:28px;height:28px;border-radius:50%;display:grid;place-items:center;font-weight:900;background:var(--panel);font-size:.9rem}
+.kd-tom .kd-nr{background:var(--bg)}
+.kd-text{font-weight:700}
+.kd-steg select.blank{flex:1;min-width:0;width:100%}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .kd-steg:not(.kd-tom){background:#3a3216;border-color:#6b5a1e}}
+:root[data-theme="dark"] .kd-steg:not(.kd-tom){background:#3a3216;border-color:#6b5a1e}

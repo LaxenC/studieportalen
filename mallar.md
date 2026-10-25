@@ -212,6 +212,22 @@ På nivåer i `rullista` visas begreppen som stöd: "Använd orden …".
   ] },
 ```
 
+### Kedja – `kedja`
+
+Steg i ordning med pilar emellan. Några steg är tomma och eleven väljer rätt steg i en rullista. Bra för orsak–verkan-kedjor.
+`luckor` säger vilka steg som är tomma på varje nivå (steg 1 = 0). `fel` är extra felaktiga alternativ i rullistorna.
+
+```js
+{ id: "kedja-kol14", kapitel: "radioaktivitet", avsnitt: ["kol14"], titel: "Kedja: kol-14-metoden",
+  typ: "kedja", nivaer: [1, 2, 3],
+  varianter: [
+    { rubrik: "Fyll i de tomma stegen i kedjan om kol-14-metoden.",
+      steg: ["Strålning från rymden träffar kväve-14", "Kol-14 bildas", "Kol-14 tas upp av levande organismer", "…"],
+      luckor: { 1: [1], 2: [1, 2], 3: [1, 2, 3] },
+      fel: ["Kol-14 bildas när växter gör fotosyntes"] }
+  ] },
+```
+
 ### Flerval – `flerval`
 
 En fråga med alternativ. `s: "ratt"`, `s: "fel"` eller `s: "delvis"` (delvis rätt). `f` är förklaringen eleven ser efter rättning.

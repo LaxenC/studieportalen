@@ -571,6 +571,30 @@ TYPER.flerval = {
   }
 };
 
+/* KEDJA – steg i ordning med pilar. Några steg är tomma och fylls i med rullistor.
+   steg: ["…", "…", …]   luckor: { 1: [1, 3], 2: [1, 3, 5] } (index från 0, per nivå) eller en lista
+   fel: ["…"] extra felaktiga alternativ i rullistorna (valfritt) */
+TYPER.kedja = {
+  instr: q => q.v.rubrik || "Fyll i de tomma stegen i kedjan.",
+  luckorFor(q) {
+    const l = q.v.luckor; if (Array.isArray(l)) return l;
+    if (l && typeof l === "object") { const n = Object.keys(l).map(Number).sort((a, b) => a - b); let val = n[0]; n.forEach(k => { if (k <= q.niva) val = k; }); return l[val]; }
+    return [1, Math.floor(q.v.steg.length / 2) + 1].filter(i => i < q.v.steg.length);
+  },
+  setup(q) { q.luckor = this.luckorFor(q); q.val = shuffle([...q.luckor.map(i => q.v.steg[i]), ...(q.v.fel || [])]); },
+  html(q) {
+    return `<ol class="kedja">${q.v.steg.map((t, i) => `<li class="kd-steg${q.luckor.includes(i) ? " kd-tom" : ""}"><span class="kd-nr">${i + 1}</span>${q.luckor.includes(i)
+      ? `<select class="blank" id="${q.uid}-k${i}" aria-label="Steg ${i + 1}"><option value="">Välj …</option>${q.val.map(o => `<option>${esc(o)}</option>`).join("")}</select>`
+      : `<span class="kd-text">${MD.inline(t)}</span>`}</li>`).join("")}</ol>`;
+  },
+  grade(root, q) {
+    let right = 0;
+    q.luckor.forEach(i => { const f = root.querySelector(`#${q.uid}-k${i}`), ok = f.value === q.v.steg[i]; f.classList.add(ok ? "is-right" : "is-wrong"); if (ok) right++; });
+    return { ok: right === q.luckor.length, right, total: q.luckor.length,
+      facit: `<ol class="facit-list">${q.v.steg.map((t, i) => `<li>${q.luckor.includes(i) ? `<b>${MD.inline(t)}</b>` : MD.inline(t)}</li>`).join("")}</ol>` };
+  }
+};
+
 /* SANT ELLER FALSKT – lista med påståenden: [text, true/false] */
 TYPER.santfalskt = {
   instr: () => "Är påståendena sanna eller falska?",
@@ -761,10 +785,11 @@ TYPER.forklara = {
 };
 
 /* ---------- Namn på typerna och text för granskning ---------- */
-const TYPNAMN = { dratabell: "Dra i tabell", dra: "Dra till beskrivning", flerval: "Flerval", santfalskt: "Sant eller falskt", udda: "Vilket passar inte in?", sortera: "Sortera", isotoptabell: "Fyll i tabell", andra: "Ändra med reglage", reglage: "Reglage", skrivnotation: "Skriva atomnotation", lucktext: "Lucktext", markera: "Märk ut i bild", para: "Para ihop", bygg: "Bygg atom", skal: "Elektronskal", kvark: "Bygg med kvarkar", kvarktabell: "Pussel", forklara: "Förklara med begrepp" };
+const TYPNAMN = { dratabell: "Dra i tabell", dra: "Dra till beskrivning", flerval: "Flerval", santfalskt: "Sant eller falskt", udda: "Vilket passar inte in?", sortera: "Sortera", isotoptabell: "Fyll i tabell", andra: "Ändra med reglage", reglage: "Reglage", skrivnotation: "Skriva atomnotation", lucktext: "Lucktext", markera: "Märk ut i bild", para: "Para ihop", bygg: "Bygg atom", skal: "Elektronskal", kvark: "Bygg med kvarkar", kvarktabell: "Pussel", forklara: "Förklara med begrepp", kedja: "Kedja" };
 function variantText(t, v) {
   if (t.typ === "lucktext") return v.facit ? v.facit : esc(v.text).replace(/\[\*?([^\]]+)\]/g, (m, a) => `<b class="ans">${esc(a.split("/").map(x => x.split("|")[0]).join(" / "))}</b>`);
   if (t.typ === "para") return `${esc(v.rubrik || "")} ${v.par.map(([l, r]) => `${l.startsWith("bild:") ? "[bild: " + l.slice(5) + "]" : esc(l)} → <b>${esc(r)}</b>`).join(" · ")}`;
+  if (t.typ === "kedja") { const l = v.luckor || {}; const tom = new Set(Array.isArray(l) ? l : Object.values(l).flat()); return `${esc(v.rubrik || "")} ${v.steg.map((x, i) => tom.has(i) ? `<b>${i + 1}. ${esc(x)}</b>` : `${i + 1}. ${esc(x)}`).join(" → ")}${v.fel ? ` <i>(fel alternativ: ${v.fel.map(esc).join(" · ")})</i>` : ""}`; }
   if (t.typ === "bygg") return `${cap(v.namn)}: ${v.p} p, ${v.n} n, ${v.e} e`;
   if (t.typ === "skal") { const k = v.skal, L = "KLMNOP"[k - 1]; return `${L}-skalet${k === 1 ? " (alltid ihop med ett annat skal)" : ""} · max som yttersta: <b>${k === 1 ? 2 : 8}</b>${t.treFragor ? ` · annars: <b>${2 * k * k}</b>` : ""}`; }
   if (t.typ === "kvark") return v.visaLaddning ? "Laddningen står utskriven" : "Laddningen står inte utskriven";

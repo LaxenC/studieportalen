@@ -351,5 +351,47 @@ Portal.uppgifter([
         { fraga: "Förklara varför radon i inomhusluften kan vara farligt.",
           begrepp: ["radon", "gas", "lungor|lungorna", "joniserande|alfa", "cancer|celler|DNA"],
           modell: "**Radon** är en radioaktiv **gas** som bildas i marken och tar sig in i husen, där den samlas i inomhusluften. När vi andas in radonet sönderfaller det i **lungorna** och skickar ut **joniserande** strålning (**alfa**) direkt mot cellerna. Utanför kroppen hade huden stoppat alfastrålningen, men inne i lungorna når den fram och kan skada DNA. Det kan leda till lungcancer (**cancer**)." }
+      ] },
+    { id: "kedja-sonderfall", kapitel: "radioaktivitet", avsnitt: ["instabil", "sonderfall"], titel: "Kedja: radioaktivt sönderfall",
+      typ: "kedja", nivaer: [1, 2, 3], arskurs: [8, 9],
+      varianter: [
+        { rubrik: "Fyll i de tomma stegen i kedjan om radioaktivt sönderfall.",
+          steg: ["En atomkärna har för mycket energi eller obalans mellan protoner och neutroner",
+                 "Kärnan är instabil – en radioaktiv kärna",
+                 "Kärnan sönderfaller och gör sig av med partiklar eller energi",
+                 "Det skickas ut joniserande strålning – alfa, beta eller gamma",
+                 "Vid alfa- och betasönderfall ändras antalet protoner – det blir ett annat grundämne",
+                 "Efter ett eller flera sönderfall har kärnan blivit stabil"],
+          luckor: { 1: [1, 3], 2: [1, 3, 4], 3: [1, 2, 3, 4] },
+          fel: ["Kärnan tar upp fler neutroner och blir större", "Elektronerna i skalen skickas ut som strålning"] }
+      ] },
+
+    { id: "kedja-sonderfall-7", kapitel: "radioaktivitet", avsnitt: ["instabil", "sonderfall"], titel: "Kedja: radioaktivt sönderfall",
+      typ: "kedja", nivaer: [1, 2], arskurs: [7],
+      varianter: [
+        { rubrik: "Fyll i de tomma stegen i kedjan om radioaktivt sönderfall.",
+          steg: ["En atomkärna har för mycket energi eller obalans mellan protoner och neutroner",
+                 "Kärnan är instabil – en radioaktiv kärna",
+                 "Kärnan sönderfaller och gör sig av med partiklar eller energi",
+                 "Det skickas ut joniserande strålning",
+                 "Efter ett eller flera sönderfall har kärnan blivit stabil"],
+          luckor: { 1: [1], 2: [1, 3] },
+          fel: ["Kärnan tar upp fler neutroner och blir större", "Elektronerna i skalen skickas ut som strålning"] }
+      ] },
+
+    { id: "kedja-kol14", kapitel: "radioaktivitet", avsnitt: ["kol14", "halvering"], titel: "Kedja: kol-14-metoden",
+      typ: "kedja", nivaer: [1, 2, 3],
+      varianter: [
+        { rubrik: "Fyll i de tomma stegen i kedjan om kol-14-metoden.",
+          steg: ["Strålning från rymden träffar kväve-14 i atmosfären",
+                 "Kol-14 bildas",
+                 "Kol-14 tas upp av levande organismer",
+                 "Nivån av kol-14 är jämn medan organismen lever, eftersom den fylls på hela tiden",
+                 "När organismen dör slutar den ta upp kol-14",
+                 "Kol-14 sönderfaller och andelen minskar",
+                 "Man mäter hur mycket kol-14 som är kvar och räknar ut hur många halveringstider som har gått",
+                 "Ålder = antal halveringstider × halveringstiden (5 730 år)"],
+          luckor: { 1: [1, 4], 2: [1, 3, 5], 3: [1, 3, 4, 6] },
+          fel: ["Kol-14 bildas när växter gör fotosyntes", "Andelen kol-14 ökar efter att organismen har dött"] }
       ] }
 ]);

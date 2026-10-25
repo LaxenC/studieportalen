@@ -208,5 +208,20 @@ Portal.uppgifter([
                  { t: "I jordens kärna", s: "fel", f: "kol bildas genom fusion i stjärnor." },
                  { t: "I ett kärnkraftverk", s: "fel", f: "kärnkraftverk klyver uran – de bildar inte kol." },
                  { t: "Det har alltid funnits", s: "fel", f: "efter big bang fanns nästan bara väte och helium. Tyngre ämnen bildades i stjärnor." } ] }
+      ] },
+    { id: "kedja-fission", kapitel: "karnenergi", avsnitt: ["fission", "kedja", "karnkraft"], titel: "Kedja: från fission till el",
+      typ: "kedja", nivaer: [1, 2, 3],
+      varianter: [
+        { rubrik: "Fyll i de tomma stegen i kedjan – från fission till el i ett kärnkraftverk.",
+          steg: ["En neutron träffar en uran-235-kärna",
+                 "Kärnan blir instabil och klyvs i två mindre kärnor",
+                 "Det frigörs 2–3 nya neutroner och mycket energi",
+                 "De nya neutronerna klyver fler urankärnor – en kedjereaktion",
+                 "Styrstavar fångar upp neutroner så att kedjereaktionen hålls jämn",
+                 "Värmen kokar vatten till ånga",
+                 "Ångan får turbinen att snurra",
+                 "Generatorn gör om rörelsen till el"],
+          luckor: { 1: [1, 5], 2: [1, 3, 6], 3: [1, 2, 3, 4] },
+          fel: ["Två små kärnor slås ihop till en större kärna", "Strålningen från uranet gör om sig själv till el"] }
       ] }
 ]);
