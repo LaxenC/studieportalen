@@ -63,7 +63,9 @@ En jon är en atom som har fått ett annat antal **elektroner** än protoner och
 
 > **💬 Förklara så här** {.green}
 > *Vad är skillnaden mellan en isotop och en jon?*<br>
-> Båda är samma ämne, **eftersom** antalet **protoner** inte ändras. En **isotop** har ett annat antal **neutroner** – **därför** ändras masstalet men inte laddningen. En **jon** har ett annat antal **elektroner** än protoner – **därför** blir atomen **laddad**.
+> Båda är samma ämne, **eftersom** antalet *protoner* inte ändras. <br>
+En *isotop* har ett annat antal *neutroner* – **därför** ändras masstalet men inte laddningen. <br>
+En *jon* har ett annat antal *elektroner* än protoner – **därför** blir atomen laddad.
 
 > **Viktigt att komma ihåg**
 > - Protoner → ämne. Neutroner → isotop. Elektroner → jon.
