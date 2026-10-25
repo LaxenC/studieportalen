@@ -194,7 +194,7 @@ section.avsnitt.ak-extra>.aktag{justify-self:start}
 .figbilder{width:100%}
 .figbilder img[src$=".svg"]{background:#fff;border-radius:12px;padding:6px}
 /* nivå 3 = utmaning */
-.levels{grid-template-columns:repeat(5,1fr)!important}
+.levels{grid-template-columns:repeat(3,1fr)!important}
 .level.utmaning{gap:6px}
 .utm-ic{font-size:1.6rem;line-height:1}
 .utm-t{font-weight:900;color:var(--purple);font-size:.95rem}
@@ -202,3 +202,4 @@ section.avsnitt.ak-extra>.aktag{justify-self:start}
 
 .fd-ak{display:grid;gap:10px}
 .fd-ak>.fdtag{justify-self:start}
+.utm-t.fk-t{color:var(--green)}

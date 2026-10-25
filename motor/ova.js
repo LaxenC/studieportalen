@@ -103,19 +103,23 @@ function renderOva() {
   $("levels").innerHTML = [1, 2, 3, 4].map(n => `<button type="button" class="card level ${LEVELCLS[n]}" role="radio" data-level="${n}" aria-checked="${OVA.level === n}" aria-label="${n} ${n === 1 ? "stjärna" : "stjärnor"}">
     <span class="stars">${[1, 2, 3, 4].map(i => star(i <= n)).join("")}</span><span class="radio"></span></button>`).join("")
     + `<button type="button" class="card level utmaning c-purple" role="radio" data-level="5" aria-checked="${OVA.level === 5}" aria-label="Utmaning – utanför kunskapskraven">
-    <span class="utm-ic" aria-hidden="true">🚀</span><span class="utm-t">Utmaning</span><span class="radio"></span></button>`;
-  $("nivaNote").textContent = OVA.level === 5 ? "Utmaning: uppgifter utanför kunskapskraven – för dig som vill lite mer." : ak === "alla" ? "" : `Nivåerna är anpassade för åk ${ak}.`;
+    <span class="utm-ic" aria-hidden="true">🚀</span><span class="utm-t">Utmaning</span><span class="radio"></span></button>`
+    + `<button type="button" class="card level utmaning c-green" role="radio" data-level="6" aria-checked="${OVA.level === 6}" aria-label="Förklara med begrepp">
+    <span class="utm-ic" aria-hidden="true">💬</span><span class="utm-t fk-t">Förklara</span><span class="radio"></span></button>`;
+  $("nivaNote").textContent = OVA.level === 6 ? "Förklara med begrepp: skriv egna förklaringar. Gör detta när du känner dig trygg med faktafrågorna." : OVA.level === 5 ? "Utmaning: uppgifter utanför kunskapskraven – för dig som vill lite mer." : ak === "alla" ? "" : `Nivåerna är anpassade för åk ${ak}.`;
   $("counts").innerHTML = COUNTS.map(c => `<button type="button" role="radio" data-count="${c}" aria-checked="${OVA.count === c}" ${c === "loop" ? 'class="inf" title="Uppgifterna fortsätter tills du väljer att avsluta"' : ""}>${c === "loop" ? "Löpande" : c}</button>`).join("");
   const loop = OVA.count === "loop"; if (loop) OVA.feedback = "each";
   document.querySelectorAll("[data-fb]").forEach(b => { b.setAttribute("aria-checked", b.dataset.fb === OVA.feedback); b.setAttribute("aria-disabled", loop && b.dataset.fb === "end"); });
   $("note").textContent = loop ? "Löpande: nya uppgifter kommer tills du avslutar. Rättning sker efter varje uppgift." : "";
-  const finns = OVA.kapitel === "mix" ? kapMedUppg(o).length > 0 : poolFor(OVA.kapitel).length > 0;
+  const finns = OVA.kapitel === "mix" ? kapMedUppg(o).some(k => poolFor(k.id).length) : poolFor(OVA.kapitel).length > 0;
   $("start").disabled = !finns; $("quick").disabled = !finns; $("err").hidden = finns;
-  $("err").textContent = "Det finns inga uppgifter här för din årskurs än.";
+  $("err").textContent = OVA.level === 6 ? "Det finns inga förklaringsuppgifter här än." : "Det finns inga uppgifter här för din årskurs än.";
 }
 
 /* ---------- urval ---------- */
-const poolFor = kap => aktivaUppgifter(OVA.o, AK(), kap, OVA.avsnitt);
+// Förklara-uppgifter är en egen del (nivåkortet "Förklara") och blandas inte med de vanliga
+const arFk = t => t.typ === "forklara";
+const poolFor = kap => aktivaUppgifter(OVA.o, AK(), kap, OVA.avsnitt).filter(t => arFk(t) === (OVA.level === 6));
 
 function nivaPlan(N, mix) {
   const ls = Object.keys(mix).map(Number), raw = ls.map(l => mix[l] * N);
@@ -128,21 +132,22 @@ function slumpNiva(mix) { let r = Math.random(); for (const [l, w] of Object.ent
 
 // Varje uppgift kommer högst maxPerOvning gånger (standard 1), aldrig samma variant två gånger.
 function skapaFraga(kap, niva, used, senast) {
-  const o = OVA.o, ak = AK(), pool = aktivaUppgifter(o, ak, kap, OV.avsnitt); if (!pool.length) return null;
+  const o = OVA.o, ak = AK(), pool = aktivaUppgifter(o, ak, kap, OV.avsnitt).filter(t => arFk(t) === !!OV.forklara); if (!pool.length) return null;
   const k = kapitelAv(o, kap) || {};
   const nyckel = t => t.grupp || t.id, anv = t => used.get(nyckel(t)) || [];
   const max = t => t.maxPerOvning || k.maxPerOvning || 1;
   const fria = t => anv(t).length >= max(t) ? [] : t.varianter.map((v, i) => i).filter(i => !anv(t).includes(t.id + "#" + i));
-  for (const d of [0, -1, 1, -2, 2]) {
+  for (const d of OV.forklara ? [0] : [0, -1, 1, -2, 2]) {
     const L = niva + d;
-    if (OV.mix && !(OV.mix[L] > 0)) continue;   // håll dig till nivåerna som stjärnorna ger
-    let kand = pool.filter(t => nivaerFor(o, t, ak).some(x => x.niva === L) && fria(t).length);
+    if (!OV.forklara && OV.mix && !(OV.mix[L] > 0)) continue;   // håll dig till nivåerna som stjärnorna ger
+    let kand = pool.filter(t => (OV.forklara || nivaerFor(o, t, ak).some(x => x.niva === L)) && fria(t).length);
     if (!kand.length) continue;
     if (kand.length > 1 && senast && kand.some(t => nyckel(t) !== senast)) kand = kand.filter(t => nyckel(t) !== senast);
     const task = kand[rnd(kand.length)], lediga = fria(task), vi = lediga[rnd(lediga.length)];
     used.set(nyckel(task), [...anv(task), task.id + "#" + vi]);
-    const orig = nivaerFor(o, task, ak).filter(x => x.niva === L).map(x => x.orig);
-    const q = { uid: "q" + (++qCounter), task, v: task.varianter[vi], niva: L, omrade: kap, rull: orig.some(n => (task.rullista || []).includes(n)) };
+    const nv = OV.forklara ? nivaerFor(o, task, ak).slice(0, 1) : nivaerFor(o, task, ak).filter(x => x.niva === L);
+    const orig = nv.map(x => x.orig), NL = OV.forklara ? (nv[0] ? nv[0].niva : 1) : L;
+    const q = { uid: "q" + (++qCounter), task, v: task.varianter[vi], niva: NL, omrade: kap, rull: orig.some(n => (task.rullista || []).includes(n)) };
     TYPER[task.typ].setup && TYPER[task.typ].setup(q);
     return q;
   }
@@ -155,9 +160,9 @@ function skapaFragaNagonstans(forst, omr, niva, used, senast) {
 
 /* ---------- övningen ---------- */
 function startQuiz() {
-  const mix = mixFor(OVA.level, AK()), loop = OVA.count === "loop";
-  const omr = OVA.kapitel === "mix" ? kapMedUppg(OVA.o).map(k => k.id) : [OVA.kapitel];
-  Object.assign(OV, { mix, loop, omr, list: [], idx: 0, used: new Map(), results: [], each: OVA.feedback === "each", slut: false,
+  const forklara = OVA.level === 6, mix = forklara ? { 1: 1 } : mixFor(OVA.level, AK()), loop = OVA.count === "loop";
+  const omr = OVA.kapitel === "mix" ? kapMedUppg(OVA.o).map(k => k.id).filter(id => poolFor(id).length) : [OVA.kapitel];
+  Object.assign(OV, { mix, loop, omr, forklara, list: [], idx: 0, used: new Map(), results: [], each: forklara || OVA.feedback === "each", slut: false,
     avsnitt: OVA.kapitel === "mix" ? null : OVA.avsnitt, aktiv: true });
   if (!loop) {
     const N = OVA.count, plan = nivaPlan(N, mix);
@@ -185,7 +190,7 @@ function visaFraga() {
   $("qBar").style.width = OV.loop ? "100%" : `${(OV.idx / OV.list.length) * 100}%`;
   $("qBar").parentElement.hidden = OV.loop;
   $("qArea").textContent = (kapitelAv(OVA.o, q.omrade) || {}).namn || q.omrade;
-  $("qLevel").textContent = q.niva >= 3 ? "Utmaning" : `Nivå ${q.niva}`; $("qLevel").dataset.n = q.niva;
+  $("qLevel").textContent = arFk(q.task) ? "Förklara" : q.niva >= 3 ? "Utmaning" : `Nivå ${q.niva}`; $("qLevel").dataset.n = arFk(q.task) ? "fk" : q.niva;
   $("qTitle").textContent = q.task.titel;
   $("qInstr").innerHTML = typeof T.instr === "function" ? T.instr(q) : "";
   const body = $("qBody"); body.innerHTML = T.html(q);
@@ -292,7 +297,7 @@ function visaOva(o, p, el) {
   OVA.o = o;
   if (p.kapitel && kapitelAv(o, p.kapitel)) { OVA.kapitel = p.kapitel; OVA.avsnitt = p.avsnitt || null; }
   else if (OVA.kapitel !== "mix" && !kapitelAv(o, OVA.kapitel)) { OVA.kapitel = "mix"; OVA.avsnitt = null; }
-  if (p.stjarnor) OVA.level = Math.max(1, Math.min(5, +p.stjarnor));
+  if (p.stjarnor) OVA.level = Math.max(1, Math.min(6, +p.stjarnor));
   el.innerHTML = ovaHtml();
   renderOmraden(); renderOva();
   if (p.kor !== undefined) { OVA.count = "loop"; OVA.feedback = "each"; if (!p.stjarnor) OVA.level = 2; renderOva(); if (!$("start").disabled) startQuiz(); }
