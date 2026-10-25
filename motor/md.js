@@ -89,7 +89,9 @@ const MD = (() => {
       ctx.viktigt.push(h); return { html: h };
     }
     if (tl.startsWith("fördjupning") || tl.startsWith("extra")) return { html: `<details class="fordjup"><summary>${inline(titel)}</summary><div class="fd-inne">${innehall}</div></details>` };
-    return { html: `<div class="callout ${FARGKLASS[farg] || "c-blue"}"><h4>${inline(titel)}</h4>${innehall}</div>` };
+    const h = `<div class="callout ${FARGKLASS[farg] || "c-blue"}"><h4>${inline(titel)}</h4>${innehall}</div>`;
+    if (/förklara så här/.test(tl) && ctx.forklara) ctx.forklara.push(h);   // visas också i Plugga
+    return { html: h };
   }
 
   // Delar upp rader i block. Returnerar [{html, typ}]
@@ -202,17 +204,17 @@ const MD = (() => {
       if (h1) { res.titel = h1[1].trim(); return; }
       akt.rader.push(l);
     });
-    const ctx0 = { viktigt: [], begrepp: res.begrepp };
+    const ctx0 = { viktigt: [], forklara: [], begrepp: res.begrepp };
     const intro = block(delar[0].rader, ctx0);
     const fp = intro.findIndex(b => b.typ === "p");
     if (fp === 0) { res.ingress = intro[0].html.replace(/^<p>|<\/p>$/g, ""); intro.shift(); }
-    res.intro = sattIhop(intro); res.introViktigt = ctx0.viktigt;
+    res.intro = sattIhop(intro); res.introViktigt = ctx0.viktigt; res.introForklara = ctx0.forklara;
     delar.slice(1).forEach(d => {
       if (d.dold) return;
-      const ctx = { viktigt: [], begrepp: [] };
+      const ctx = { viktigt: [], forklara: [], begrepp: [] };
       const html = sattIhop(block(d.rader, ctx));
       res.begrepp.push(...ctx.begrepp);
-      res.avsnitt.push({ id: d.id, rubrik: d.rubrik, ak: d.ak, html, viktigt: ctx.viktigt, begrepp: ctx.begrepp });
+      res.avsnitt.push({ id: d.id, rubrik: d.rubrik, ak: d.ak, html, viktigt: ctx.viktigt, forklara: ctx.forklara, begrepp: ctx.begrepp });
     });
     return res;
   }

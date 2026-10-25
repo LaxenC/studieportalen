@@ -250,11 +250,11 @@ function pluggaHtml(o, kapId, avIds) {
   const ak = AK();
   let av = t.avsnitt.filter(a => passar(a.ak, ak));
   // Har uppgiftens avsnitt ingen egen Viktigt-ruta visas kapitlets rutor
-  if (avIds && avIds.length) { const v = av.filter(a => avIds.includes(a.id)); if (v.length && v.some(a => a.viktigt.length)) av = v; }
+  if (avIds && avIds.length) { const v = av.filter(a => avIds.includes(a.id)); if (v.length && v.some(a => a.viktigt.length || (a.forklara || []).length)) av = v; }
   const intro = t.introViktigt && t.introViktigt.length && !(avIds && avIds.length && av.some(a => avIds.includes(a.id)))
-    ? `<section class="plugga-av">${t.introViktigt.join("")}<details class="lasmer"><summary>Läs texten</summary><div class="lastext">${t.ingress ? `<p>${t.ingress}</p>` : ""}${t.intro}</div></details></section>` : "";
+    ? `<section class="plugga-av">${t.introViktigt.join("")}${(t.introForklara || []).join("")}<details class="lasmer"><summary>Läs texten</summary><div class="lastext">${t.ingress ? `<p>${t.ingress}</p>` : ""}${t.intro}</div></details></section>` : "";
   return intro + av.filter(a => !(avIds && avIds.length) || avIds.includes(a.id) || !intro).map(a => `<section class="plugga-av"><h3 class="sub-h">${esc(a.rubrik)}</h3>
-    ${a.viktigt.join("") || ""}
+    ${a.viktigt.join("") || ""}${(a.forklara || []).join("")}
     <details class="lasmer"><summary>Läs hela avsnittet</summary><div class="lastext">${a.html}</div></details></section>`).join("");
 }
 function oppnaPlugga(kapId, avIds, iOvning) {

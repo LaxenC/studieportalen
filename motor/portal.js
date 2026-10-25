@@ -90,7 +90,7 @@ function visaLasIndex(o) {
   vy().innerHTML = `${flikar(o, "las")}
     ${sk ? `<a class="fortsatt" href="${lank(o.amne, o.id, "las", senast.k, senast.a)}">Fortsätt läsa: <b>${esc(kapitelAv(o, senast.k).namn)}${senast.a && avsnittAv(o, senast.k, senast.a) ? " – " + esc(avsnittAv(o, senast.k, senast.a).rubrik) : ""}</b> →</a>` : ""}
     ${kap.length ? `<div class="laskort">${kap.map((k, i) => { const t = o.texter[k.id]; const av = t.avsnitt.filter(x => passar(x.ak, ak));
-      const harViktigt = av.some(x => x.viktigt.length) || (t.introViktigt || []).length > 0;
+      const harViktigt = av.some(x => x.viktigt.length || (x.forklara || []).length) || (t.introViktigt || []).length > 0 || (t.introForklara || []).length > 0;
       return `<div class="cell"><a class="card c-${k.farg || "blue"} laskap" href="${lank(o.amne, o.id, "las", k.id)}"><span class="kapnr">Kapitel ${i + 1}</span><h3>${esc(t.titel || k.namn)}</h3><p>${t.ingress ? t.ingress.replace(/<[^>]+>/g, "") : esc(k.text || "")}</p>
         <ul class="avlista">${av.map(x => `<li>${esc(x.rubrik)}</li>`).join("")}</ul></a>
         ${harViktigt ? `<button type="button" class="info" data-plugga="${k.id}" aria-label="Viktigt att komma ihåg: ${esc(k.namn)}" title="Viktigt att komma ihåg">i</button>` : ""}</div>`; }).join("")}</div>` : tom("Det finns inga texter här än.")}
