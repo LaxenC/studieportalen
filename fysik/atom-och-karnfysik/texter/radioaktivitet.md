@@ -95,7 +95,7 @@ Sönderfallet får namn efter strålningen som skickas ut: **alfasönderfall**, 
 
 > **💬 Förklara så här** {.green}
 > *Vad händer när en radioaktiv kärna sönderfaller?*<br>
-> Kärnan är *instabil*. Den *sönderfaller* och skickar ut partiklar eller energi som *joniserande strålning*. Vid alfa- och betasönderfall ändras antalet protoner, **därför** blir det ett nytt ämne. Efter ett eller flera sönderfall är kärnan *stabil*.
+> Kärnan är *instabil*. Den *sönderfaller* och skickar ut partiklar eller energi som *joniserande strålning*, **eftersom** den vill få en stabil atomkärna. Vid alfa- och betasönderfall ändras antalet protoner, **därför** blir det ett nytt ämne. Efter ett eller flera sönderfall är kärnan *stabil*.
 
 > **Viktigt att komma ihåg**
 > - En instabil kärna = en **radioaktiv kärna**.
