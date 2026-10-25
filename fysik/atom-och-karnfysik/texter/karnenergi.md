@@ -129,10 +129,19 @@ Varifrån kommer all energi? Om man väger delarna efter en fission eller fusion
 
 **E = mc^2^** – energi = massa · ljusets hastighet^2^
 
-Ljusets hastighet är enormt stor (300 000 km/s), och den tas dessutom i kvadrat. Därför blir det **väldigt mycket energi av väldigt lite massa**. Det är förklaringen till kärnenergin.
+Formeln  beskriver att massa och energi kan omvandlas till varandra. Eftersom ljushastigheten är en mycket stor siffra (omkring 300 000 000 meter per sekund), innebär detta att även en liten mängd massa motsvarar en enorm mängd energi. Det är förklaringen till kärnenergin.
 
 > **Exempel:**
-> I solen omvandlas cirka 4 miljoner ton massa till energi – *varje sekund*.
+>Låt oss se hur mycket energi 1g motsvara. <br>
+> E = m*c*c = 0,001kg * 300 000 000 * 300 000 000 = 9 * 10^13 joule <br>
+> Hur mycket energi är 9 * 10^13 joule? <br>
+> Det motsvara ett års elförbrukning för ~6 500 svenska hushåll eller 21,5 kiloton TNT (Atombomben över Hiroshima hade 15 kilton)
+
+### CERN - partikelacceleratorn
+På CERN, världens största partikelfysiklaboratorium nära Genève, använder forskare Einsteins formel (E=mc^2) åt andra hållet. Genom att låta partiklar kollidera med mycket hög energi kan en del av energin omvandlas till massa och skapa nya partiklar. På så sätt kan forskarna studera materiens minsta beståndsdelar och lära sig mer om hur universum fungerar.
+
+>**Fördjupning: Instabila partiklar**
+>Partiklar som skapas vid kollisioner på CERN kan vara mycket kortlivade >eftersom de är instabila. De sönderfaller då snabbt till andra, mer stabila >partiklar. Det beror på att partikeln kan övergå till ett tillstånd med >lägre energi genom att omvandlas till andra partiklar. Instabila partiklar >sönderfaller nästan omedelbart efter att de har skapats. Forskarna kan >därför inte observera dem direkt, utan studerar i stället de partiklar som >bildas vid sönderfallet. Alla partiklar är dock inte kortlivade – exempelvis >är elektroner stabila.
 
 > **Viktigt att komma ihåg**
 > - Lite massa innehåller mycket energi: **E = mc^2^**.
