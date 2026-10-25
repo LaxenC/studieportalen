@@ -91,7 +91,7 @@ Energin omvandlas i flera steg: **kärnenergi → värme → rörelseenergi → 
 
 > **💬 Förklara så här** {.green}
 > *Hur blir uran till el i ett kärnkraftverk?*<br>
-> I reaktorn *klyvs* urankärnorna i *kärnbränslet*, och då frigörs *värme*. *Styrstavarna* fångar upp en del av neutronerna, **därför** hålls kedjereaktionen jämn och reaktorn blir inte för varm. Värmen kokar vatten till *ånga*. Ångan får *turbinen* att snurra, och *generatorn* gör om rörelsen till *el*. Energin omvandlas alltså i flera steg: kärnenergi → värme → rörelseenergi → elenergi.
+> I reaktorn *klyvs* urankärnorna i *kärnbränslet*, och då frigörs mycket *värme*. **Därför** kokar vattnet runt bränslet till *ånga*. Ångan får *turbinen* att snurra, och *generatorn* gör om rörelsen till *el*. Energin omvandlas alltså i flera steg: kärnenergi → värme → rörelseenergi → elenergi.
 
 > **Viktigt att komma ihåg**
 > - I ett kärnkraftverk är kedjereaktionen **kontrollerad**, **eftersom** styrstavarna fångar upp neutroner.
