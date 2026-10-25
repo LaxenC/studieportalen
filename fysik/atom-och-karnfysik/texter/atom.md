@@ -39,7 +39,7 @@ Protoner och neutroner är ungefär **2000 gånger tyngre** än en elektron. Nä
 
 > **💬 Förklara så här** {.green}
 > *Varför finns nästan hela atomens massa i kärnan?*<br>
-> I kärnan finns **protonerna** och **neutronerna**. De är ungefär 2000 gånger tyngre än **elektronerna**. **Därför** påverkar elektronerna nästan inte massan, och nästan all massa finns i **kärnan**.
+> I kärnan finns *protonerna* och *neutronerna*. De är ungefär 2000 gånger tyngre än *elektronerna*. **Därför** påverkar elektronerna nästan inte massan, och nästan all massa finns i *atomkärnan*.
 
 > **Viktigt att komma ihåg**
 > - Protoner (+) och neutroner finns i atomkärnan. Elektroner (-) finns i skal runt kärnan.
@@ -67,7 +67,7 @@ Ingen har kunnat se en atom med blotta ögat. Forskarna har i stället gjort exp
 
 > **💬 Förklara så här** {.green}
 > *Varför har atommodellen ändrats genom åren?*<br>
-> Ingen kan se en atom, **därför** bygger forskarna **modeller** utifrån experiment. När ett nytt experiment visade något som den gamla modellen inte kunde förklara – till exempel att alfapartiklar studsade tillbaka från guldfolie – **ändrades modellen** så att den stämde med de nya upptäckterna.
+> Ingen kan se en atom, **därför** bygger forskarna *modeller* utifrån experiment. När ett nytt experiment visade något som den gamla modellen inte kunde förklara – till exempel att alfapartiklar studsade tillbaka från guldfolie – **ändrades modellen** så att den stämde med de nya upptäckterna.
 
 > **Viktigt att komma ihåg**
 > - En atommodell är en förenklad bild av atomen.
@@ -105,7 +105,7 @@ Kärnan är positivt laddad och elektronerna är negativt laddade, därför dras
 
 > **💬 Förklara så här** {.green}
 > *Varför kan inte alla elektroner ligga i samma skal?*<br>
-> Alla elektroner har samma **negativa laddning**. Lika laddningar **stöter bort** varandra, **därför** får det bara **plats** ett visst antal elektroner i varje **skal**. När ett skal är fullt hamnar nästa elektron i ett skal längre ut.
+> Alla elektroner har samma *negativa laddning*. Lika laddningar *stöter bort* varandra, **därför** får det bara plats ett visst antal elektroner i varje *skal*. När ett skal är fullt hamnar nästa elektron i ett skal längre ut.
 
 > **Viktigt att komma ihåg**
 > - Elektronskalen fylls inifrån och ut.
