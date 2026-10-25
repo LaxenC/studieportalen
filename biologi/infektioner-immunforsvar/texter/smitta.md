@@ -35,7 +35,7 @@ När en patogen tar sig in i kroppen och börjar föröka sig kallas det en **in
 > - **Inkubationstid** = tiden från smitta till sjukdom.
 > - **Epidemi** = snabb spridning. **Pandemi** = spridning över stora delar av världen.
 
-## Vad är det som smittar? {#vadsmittar}
+## Patogener – det som gör oss sjuka {#vadsmittar}
 
 De flesta infektioner orsakas av **bakterier** och **virus**, men även **svampar** och **parasiter** kan göra oss sjuka. Här kommer en kort repetition. Hur mikroberna är uppbyggda kan du läsa mer om i kapitlet [Mikroorganismer](#/biologi/evolution-mangfald/las/mikroorganismer) under *Evolution och livets mångfald*.
 
