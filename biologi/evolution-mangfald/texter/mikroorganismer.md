@@ -28,7 +28,7 @@ Att cellen kan leva själv betyder att den klarar tre saker på egen hand:
 - En organism som består av **en enda cell** kallas **encellig**. Exempel är bakterier och amöbor.
 - En organism som består av **många celler** kallas **flercellig**. Människor, djur, växter och skogssvampar är flercelliga – du själv består av tusentals miljarder celler.
 
-I många celler finns en **cellkärna**. Där ligger cellens **arvsmassa** (DNA) – cellens "recept" för att kunna skapa fler celler. Receptet används av cellens fabriker för att skapa nya celler <br>
+I många celler finns en **cellkärna**. Där ligger cellens **arvsmassa** (DNA) – cellens "recept" för att kunna skapa fler celler. Receptet används av cellens fabriker för att skapa nya celler.<br>
 Celler hos djur, växter och svampar har cellkärna. Bakterier har **ingen cellkärna** – deras arvsmassa ligger fritt i cellen.
 
 ![celltyper](bilder/celltyper.svg)
