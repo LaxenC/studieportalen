@@ -204,7 +204,7 @@ Mikroberna i kroppen lever i **symbios** med oss. Symbios är när två olika ar
 | Typ av symbios | Vad händer? | Exempel |
 |---|---|---|
 | **Mutualism** | båda arterna gynnas | tarmbakterier, de får energi från mat vi äter och vi får hjälp med att smälta maten |
-| **Kommensalism** | den ena gynnas, den andra påverkas inte | många hudbakterier som får näring från våran hur men vi märker inte av dom |
+| **Kommensalism** | den ena gynnas, den andra påverkas inte | många hudbakterier som får näring från vår hud men vi märker inte av dem |
 | **Parasitism** | den ena gynnas, den andra skadas | malariaparasiten som lever i oss och gör oss sjuka |
 
 > **Begrepp**

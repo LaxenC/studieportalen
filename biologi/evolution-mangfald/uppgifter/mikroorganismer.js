@@ -185,5 +185,29 @@ Portal.uppgifter([
         { fraga: "Förklara varför ett virus måste ta sig in i en annan cell för att kunna föröka sig.",
           begrepp: ["cell", "fabrik", "arvsmassa|recept", "värdcell|värd", "ämnesomsättning"],
           modell: "Ett virus är ingen **cell**. Det har **arvsmassa** – receptet för nya virus – men inga egna **fabriker** och ingen **ämnesomsättning**. Därför måste viruset ta sig in i en **värdcell** och använda cellens fabriker för att tillverka nya virus." }
+      ] },
+    { id: "fk-mikrobiom", kapitel: "mikroorganismer", avsnitt: ["mikrobiom"], titel: "Förklara: hur hjälper mikrobiomet oss?",
+      typ: "forklara", nivaerPerArskurs: { 7: [1, 2], 8: [2], 9: [2] }, rullista: [1],
+      varianter: [
+        { fraga: "Förklara vad mikrobiomet är och hur det hjälper oss.",
+          begrepp: ["mikrob|mikroorganism", "tarm|hud|mun", "matsmältning|smälta", "infektion|skydd|skyddar"],
+          modell: "**Mikrobiomet** är alla **mikrober** som lever i och på kroppen, till exempel i **tarmen**, i munnen och på **huden**. Tarmbakterierna hjälper oss med **matsmältningen**. De nyttiga mikroberna **skyddar** oss också mot **infektioner**." },
+        { fraga: "Förklara hur de nyttiga mikroberna i mikrobiomet gör det svårare för skadliga mikrober att göra oss sjuka.",
+          begrepp: ["nyttiga", "plats", "näring", "skadliga", "infektion|sjuk"],
+          modell: "De **nyttiga** mikroberna tar upp **plats** och **näring** i och på kroppen. Då finns det mindre plats och näring kvar till de **skadliga** mikroberna. Därför får de skadliga mikroberna svårare att föröka sig och orsaka **infektioner**." }
+      ] },
+
+    { id: "fk-symbios", kapitel: "mikroorganismer", avsnitt: ["symbios"], titel: "Förklara: vilken typ av symbios?",
+      typ: "forklara", nivaerPerArskurs: { 7: [1, 2], 8: [2], 9: [2] }, rullista: [1],
+      varianter: [
+        { fraga: "Tarmbakterierna lever i symbios med oss. Förklara vilken typ av symbios det är och varför.",
+          begrepp: ["mutualism", "båda", "gynnas|vinner", "mat|energi|näring", "smälta|matsmältning"],
+          modell: "Det är **mutualism**. Tarmbakterierna får **energi** från maten vi äter, och vi får hjälp att **smälta** maten. **Båda** arterna **gynnas**." },
+        { fraga: "Många hudbakterier lever på vår hud. Förklara vilken typ av symbios det är och varför.",
+          begrepp: ["kommensalism", "gynnas|vinner", "näring", "påverkas inte|märker inte|märker vi inte|påverkar inte"],
+          modell: "Det är **kommensalism**. Hudbakterierna **gynnas** eftersom de får **näring** från vår hud. Vi **påverkas inte** – vi märker inte ens av dem." },
+        { fraga: "Malariaparasiten lever i människan. Förklara vilken typ av symbios det är och varför.",
+          begrepp: ["parasitism", "gynnas|vinner", "skadas|skada", "sjuk"],
+          modell: "Det är **parasitism**. Malariaparasiten **gynnas** eftersom den lever och förökar sig i människan. Människan **skadas** – hon blir **sjuk** i malaria." }
       ] }
 ]);
