@@ -67,4 +67,14 @@ Portal.uppgifter([
         { text: "Isotop bestäms av antalet [*neutroner/neutron]. " },
         { text: "Jon bestäms av antalet [elektron/elektroner]." }
       ] },
+
+    /* ---------- Förklara med begrepp ---------- */
+
+    { id: "fk-isotop-jon", kapitel: "samband", titel: "Förklara: isotop eller jon?",
+      typ: "forklara", nivaerPerArskurs: { 7: [3], 8: [2], 9: [1, 2] }, rullista: [1],
+      varianter: [
+        { fraga: "Förklara skillnaden mellan en isotop och en jon.",
+          begrepp: ["isotop", "jon", "neutron", "elektron", "laddning|laddad"],
+          modell: "Både isotoper och joner är samma ämne, eftersom antalet protoner inte ändras. En **isotop** har ett annat antal **neutroner** – då ändras masstalet men inte laddningen. En **jon** har ett annat antal **elektroner** än protoner – då blir atomen **laddad**, positiv om den har förlorat elektroner och negativ om den har tagit upp elektroner." }
+      ] }
 ]);

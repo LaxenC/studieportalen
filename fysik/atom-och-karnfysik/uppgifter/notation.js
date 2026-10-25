@@ -88,5 +88,15 @@ Portal.uppgifter([
         { X: "H", A: 1, Z: 1, ch: "+" },   { X: "H", A: 1, Z: 1, ch: "-" },
         { X: "Li", A: 7, Z: 3, ch: "+" },  { X: "Be", A: 9, Z: 4, ch: "2+" },
         { X: "N", A: 14, Z: 7, ch: "3-" }, { X: "O", A: 16, Z: 8, ch: "2-" }
+      ] },
+
+    /* ---------- Förklara med begrepp ---------- */
+
+    { id: "fk-not-partiklar", kapitel: "notation", titel: "Förklara: läs av atomnotationen",
+      typ: "forklara", nivaerPerArskurs: { 7: [3], 8: [2], 9: [1, 2] }, rullista: [1],
+      varianter: [
+        { fraga: "Förklara hur du med hjälp av atomnotationen kan ta reda på hur många protoner, neutroner och elektroner en atom har.",
+          begrepp: ["atomnummer", "masstal", "proton", "neutron", "elektron"],
+          modell: "**Atomnumret** (nere till vänster) visar antalet **protoner**. **Masstalet** (uppe till vänster) är antalet protoner + **neutroner**, så antalet neutroner = masstal − atomnummer. En oladdad atom har lika många **elektroner** som protoner, eftersom laddningarna då tar ut varandra." }
       ] }
 ]);

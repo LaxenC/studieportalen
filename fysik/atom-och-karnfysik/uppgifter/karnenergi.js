@@ -167,5 +167,31 @@ Portal.uppgifter([
         { pst: [["En kedjereaktion startar med en neutron.", true], ["Ett kärnkraftverk gör el direkt av uran utan värme.", false],
                 ["Fusion kräver mycket hög temperatur.", true], ["Lise Meitner och Otto Frisch förklarade fissionen.", true],
                 ["Det finns många fusionskraftverk som ger el i dag.", false]] }
+      ] },
+
+    /* ---------- Förklara med begrepp ---------- */
+
+    { id: "fk-ke-kedja", kapitel: "karnenergi", avsnitt: ["kedja", "karnkraft"], titel: "Förklara: kedjereaktion i kärnkraftverk",
+      typ: "forklara", nivaerPerArskurs: { 7: [3], 8: [2], 9: [1, 2] }, rullista: [1],
+      varianter: [
+        { fraga: "Förklara hur en kedjereaktion fungerar och hur den kontrolleras i ett kärnkraftverk.",
+          begrepp: ["neutron", "klyvs|klyvning|fission", "kedjereaktion", "styrstav", "fångar|fånga|tar upp"],
+          modell: "När en **neutron** träffar en urankärna **klyvs** den. Då frigörs energi och 2–3 nya neutroner, som kan klyva nya kärnor – en **kedjereaktion**. I ett kärnkraftverk används **styrstavar** som **fångar** upp neutroner, så att antalet klyvningar hålls jämnt och reaktionen inte skenar." }
+      ] },
+
+    { id: "fk-ke-levnad", kapitel: "karnenergi", avsnitt: ["fission", "karnkraft"], titel: "Förklara: kärnklyvning och levnadsvillkor",
+      typ: "forklara", nivaerPerArskurs: { 7: [3], 8: [2], 9: [1, 2] }, rullista: [1],
+      varianter: [
+        { fraga: "Förklara hur upptäckten av kärnklyvning har påverkat människors levnadsvillkor. Ta upp minst en möjlighet och en risk.",
+          begrepp: ["el|elektricitet|energi", "kärnkraft", "koldioxid|klimat", "avfall|radioaktivt", "olycka|atombomb|kärnvapen"],
+          modell: "Kärnklyvningen gjorde det möjligt att bygga **kärnkraftverk** som ger mycket **el** utan att släppa ut **koldioxid**, vilket är bra för klimatet. Men det bildas **radioaktivt avfall** som måste förvaras säkert i över 100 000 år, och en **olycka** kan sprida radioaktiva ämnen. Upptäckten ledde också till **atombomben**, som har dödat hundratusentals människor." }
+      ] },
+
+    { id: "fk-ke-solen", kapitel: "karnenergi", avsnitt: ["fusion"], titel: "Förklara: varför lyser solen?",
+      typ: "forklara", nivaerPerArskurs: { 7: [3], 8: [2], 9: [1, 2] }, rullista: [1],
+      varianter: [
+        { fraga: "Förklara hur solen får sin energi.",
+          begrepp: ["fusion", "väte", "helium", "temperatur|varmt|grader", "energi"],
+          modell: "I solens kärna är **temperaturen** cirka 15 miljoner grader. Där slås **väte**kärnor ihop till **helium** – det kallas **fusion**. En liten del av massan omvandlas då till **energi**, som når oss som ljus och värme." }
       ] }
 ]);

@@ -725,8 +725,42 @@ TYPER.dratabell = {
 };
 
 
+/* FÖRKLARA MED BEGREPP – eleven skriver en egen förklaring.
+   fraga   : frågan
+   begrepp : lista med begrepp som ska finnas med. "absorberar|absorber|tar upp" =
+             första ordet visas, alla varianter godkänns (räcker att texten innehåller ordet)
+   modell  : exempel på en bra förklaring (visas efteråt)
+   bild    : (valfritt) ritning eller bild ovanför frågan
+   På nivåer i rullista visas begreppen som stöd ("Använd orden …"). */
+const begreppVisa = b => b.split("|")[0];
+const begreppFinns = (text, b) => {   // ordet räknas om ett ord i texten börjar så (absorber → absorberar)
+  const t = norm(text), ord = t.split(" ");
+  return b.split("|").map(norm).some(x => x.includes(" ") ? t.includes(x) : ord.some(w => w.startsWith(x)));
+};
+TYPER.forklara = {
+  instr: q => esc(q.v.fraga),
+  html(q) {
+    const bild = q.v.bild || q.task.bild;
+    return `${bild ? `<div class="mcbild">${MD.inline(bild)}</div>` : ""}
+      ${q.rull ? `<p class="fk-bank"><span>Använd orden:</span> ${shuffle(q.v.begrepp).map(b => `<b>${esc(begreppVisa(b))}</b>`).join("")}</p>` : ""}
+      <textarea class="fk-text" rows="5" placeholder="Skriv din förklaring här …" aria-label="Din förklaring"></textarea>
+      <p class="fk-tips">Förklara med hela meningar. Använd naturvetenskapliga begrepp och förklara <i>varför</i>, inte bara <i>vad</i>.</p>`;
+  },
+  grade(root, q) {
+    q.locked = true;
+    const ta = root.querySelector(".fk-text"), text = ta.value.trim(); ta.readOnly = true;
+    const lista = q.v.begrepp.map(b => ({ b, ok: !!text && begreppFinns(text, b) }));
+    const right = lista.filter(x => x.ok).length, total = lista.length;
+    const verdict = !text ? "Du skrev ingen förklaring." : right === total ? "Alla begrepp är med!" : `Du använde ${right} av ${total} begrepp.`;
+    return { ok: !!text && right === total, right, total, part: right > 0 && right < total, verdict,
+      facit: `<ul class="fk-check">${lista.map(x => `<li class="${x.ok ? "ja" : "nej"}">${x.ok ? "✔" : "✗"} ${esc(begreppVisa(x.b))}</li>`).join("")}</ul>
+        <p class="fl">Exempel på en bra förklaring</p><p>${MD.inline(q.v.modell)}</p>
+        <p class="fk-tips">Begreppen kontrolleras automatiskt. Jämför också själv: hänger din förklaring ihop lika bra som exemplet?</p>` };
+  }
+};
+
 /* ---------- Namn på typerna och text för granskning ---------- */
-const TYPNAMN = { dratabell: "Dra i tabell", dra: "Dra till beskrivning", flerval: "Flerval", santfalskt: "Sant eller falskt", udda: "Vilket passar inte in?", sortera: "Sortera", isotoptabell: "Fyll i tabell", andra: "Ändra med reglage", reglage: "Reglage", skrivnotation: "Skriva atomnotation", lucktext: "Lucktext", markera: "Märk ut i bild", para: "Para ihop", bygg: "Bygg atom", skal: "Elektronskal", kvark: "Bygg med kvarkar", kvarktabell: "Pussel" };
+const TYPNAMN = { dratabell: "Dra i tabell", dra: "Dra till beskrivning", flerval: "Flerval", santfalskt: "Sant eller falskt", udda: "Vilket passar inte in?", sortera: "Sortera", isotoptabell: "Fyll i tabell", andra: "Ändra med reglage", reglage: "Reglage", skrivnotation: "Skriva atomnotation", lucktext: "Lucktext", markera: "Märk ut i bild", para: "Para ihop", bygg: "Bygg atom", skal: "Elektronskal", kvark: "Bygg med kvarkar", kvarktabell: "Pussel", forklara: "Förklara med begrepp" };
 function variantText(t, v) {
   if (t.typ === "lucktext") return v.facit ? v.facit : esc(v.text).replace(/\[\*?([^\]]+)\]/g, (m, a) => `<b class="ans">${esc(a.split("/").map(x => x.split("|")[0]).join(" / "))}</b>`);
   if (t.typ === "para") return `${esc(v.rubrik || "")} ${v.par.map(([l, r]) => `${l.startsWith("bild:") ? "[bild: " + l.slice(5) + "]" : esc(l)} → <b>${esc(r)}</b>`).join(" · ")}`;
@@ -737,6 +771,7 @@ function variantText(t, v) {
   if (t.typ === "kvarktabell") return "Symboler och namn blandas varje gång";
   if (t.typ === "dratabell") return v.rader.map(r => `<b>${esc(r[0])}</b> → ${r.slice(1).map(x => TYPER.dratabell.visa(x, true)).join(" → ")}`).join(" · ");
   if (t.typ === "dra") return v.par.map(([b, d]) => `<b>${esc(b)}</b> → ${esc(d)}`).join(" · ");
+  if (t.typ === "forklara") return `${esc(v.fraga)} Begrepp: <b>${v.begrepp.map(b => esc(begreppVisa(b))).join(", ")}</b><br><i>${MD.inline(v.modell)}</i>`;
   if (t.typ === "flerval") return `${esc(v.fraga)} Rätt: <b>${esc(v.alt.find(a => a.s === "ratt").t)}</b>`;
   if (t.typ === "santfalskt") return v.pst.map(([x, y]) => `${esc(x)} <b>${y ? "Sant" : "Falskt"}</b>`).join(" · ");
   if (t.typ === "udda") return (v.fragor || [v]).map(f => `${f.ord.map(esc).join(" · ")} → <b>${esc(f.svar)}</b>`).join("<br>");

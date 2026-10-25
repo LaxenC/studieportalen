@@ -220,5 +220,23 @@ Portal.uppgifter([
 
     { id: "atom-kvark", kapitel: "atom", avsnitt: ["kvarkar"], titel: "Bygg med kvarkar",
       typ: "kvark", nivaer: [3],
-      varianter: [{ visaLaddning: true }, { visaLaddning: false }] }
+      varianter: [{ visaLaddning: true }, { visaLaddning: false }] },
+
+    /* ---------- Förklara med begrepp ---------- */
+
+    { id: "fk-atom-massa", kapitel: "atom", avsnitt: ["delar"], titel: "Förklara: var finns atomens massa?",
+      typ: "forklara", nivaerPerArskurs: { 7: [3], 8: [2], 9: [1, 2] }, rullista: [1],
+      varianter: [
+        { fraga: "Förklara varför nästan hela atomens massa finns i atomkärnan.",
+          begrepp: ["proton", "neutron", "elektron", "kärna|kärnan", "lätt|lättare|väger nästan ingenting|väger mycket lite"],
+          modell: "I atomkärnan finns **protonerna** och **neutronerna**. De är ungefär 2000 gånger tyngre än **elektronerna**, som finns i skalen runt kärnan. Elektronerna är alltså så **lätta** att de nästan inte påverkar atomens massa. Därför finns nästan all massa i **kärnan**." }
+      ] },
+
+    { id: "fk-atom-skal", kapitel: "atom", avsnitt: ["skal"], titel: "Förklara: varför flera elektronskal?",
+      typ: "forklara", nivaerPerArskurs: { 7: [3], 8: [2], 9: [1, 2] }, rullista: [1],
+      varianter: [
+        { fraga: "Förklara varför alla elektroner inte kan ligga i samma elektronskal.",
+          begrepp: ["negativ|laddning", "stöter bort|repeller|repellerar", "skal", "plats|rymmer|max"],
+          modell: "Alla elektroner har samma **negativa laddning**. Lika laddningar **stöter bort** varandra, så det får bara **plats** ett visst antal elektroner i varje **skal** – K-skalet rymmer högst 2 och L-skalet högst 8. När ett skal är fullt hamnar nästa elektron i ett skal längre ut." }
+      ] }
 ]);

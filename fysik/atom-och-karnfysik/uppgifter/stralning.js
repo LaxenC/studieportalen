@@ -252,5 +252,23 @@ Portal.uppgifter([
           par: [["Elektromagnetisk strålning", "Strålning som består av fotoner"], ["Partikelstrålning", "Strålning som består av delar av atomkärnan"],
                 ["Alfastrålning", "Består av heliumkärnor"], ["Betastrålning", "Består av elektroner"],
                 ["Synligt ljus", "Elektromagnetisk strålning som ögat kan uppfatta"], ["Gammastrålning", "Elektromagnetisk strålning med mycket hög energi från atomkärnan"]] }
+      ] },
+
+    /* ---------- Förklara med begrepp ---------- */
+
+    { id: "fk-str-bly", kapitel: "stralning", avsnitt: ["jonis"], titel: "Förklara: varför bly mot röntgen?",
+      typ: "forklara", nivaerPerArskurs: { 7: [3], 8: [2], 9: [1, 2] }, rullista: [1],
+      varianter: [
+        { fraga: "Förklara varför röntgenstrålning är farlig för kroppen och varför man använder bly för att skydda sig.",
+          begrepp: ["joniserande", "elektron|joner|jonen", "cell|celler|DNA", "bly", "stoppar|absorber|tar upp|tät"],
+          modell: "Röntgenstrålning är **joniserande** – den har så mycket energi att den kan slå loss **elektroner** från atomer så att det bildas **joner**. Då kan **celler och DNA** skadas, vilket kan leda till mutationer och cancer. **Bly** är ett tungt och tätt ämne med många elektroner som **stoppar (absorberar)** strålningen innan den når kroppen." }
+      ] },
+
+    { id: "fk-str-alfa-gamma", kapitel: "stralning", avsnitt: ["partikel"], titel: "Förklara: alfa och gamma",
+      typ: "forklara", nivaerPerArskurs: { 7: [3], 8: [2], 9: [1, 2] }, rullista: [1],
+      varianter: [
+        { fraga: "Förklara skillnaden mellan alfastrålning och gammastrålning.",
+          begrepp: ["partikel|partiklar|heliumkärna", "foton|elektromagnetisk", "energi", "papper", "bly"],
+          modell: "**Alfastrålning** är partikelstrålning – kärnan skickar ut en **heliumkärna** (2 protoner och 2 neutroner). Den stoppas redan av **papper**. **Gammastrålning** är elektromagnetisk strålning – **fotoner** med mycket hög **energi** – och tar sig igenom mycket mer. Den stoppas först av tjockt **bly**." }
       ] }
 ]);

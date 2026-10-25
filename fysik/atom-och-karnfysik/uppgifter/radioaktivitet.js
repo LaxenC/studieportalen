@@ -317,5 +317,39 @@ Portal.uppgifter([
         { pst: [["En GM-mätare klickar vid varje sönderfall.", true], ["Becquerel är enheten för stråldos.", false],
                 ["Allt som lever har samma andel kol-14 som luften.", true], ["Efter två halveringstider är hälften kvar.", false],
                 ["En instabil kärna kallas också radioaktiv.", true]] }
+      ] },
+
+    /* ---------- Förklara med begrepp ---------- */
+
+    { id: "fk-rad-sonderfall", kapitel: "radioaktivitet", avsnitt: ["instabil", "sonderfall"], titel: "Förklara: radioaktivt sönderfall",
+      typ: "forklara", nivaerPerArskurs: { 7: [3], 8: [2], 9: [1, 2] }, rullista: [1],
+      varianter: [
+        { fraga: "Förklara vad som händer när en radioaktiv atomkärna sönderfaller.",
+          begrepp: ["instabil", "sönderfall|sönderfaller", "strålning", "stabil", "alfa|beta|gamma"],
+          modell: "En radioaktiv kärna är **instabil** – den har för mycket energi eller fel balans mellan protoner och neutroner. Kärnan **sönderfaller** och gör sig av med partiklar eller energi som **strålning** (**alfa**, **beta** eller **gamma**). Efter ett eller flera sönderfall har kärnan blivit **stabil**." }
+      ] },
+
+    { id: "fk-rad-halvering", kapitel: "radioaktivitet", avsnitt: ["halvering"], titel: "Förklara: halveringstid",
+      typ: "forklara", nivaerPerArskurs: { 7: [3], 8: [2], 9: [1, 2] }, rullista: [1],
+      varianter: [
+        { fraga: "Förklara vad halveringstid betyder och varför ämnet inte är borta efter två halveringstider.",
+          begrepp: ["hälften", "sönderfall|sönderfallit", "kvar", "fjärdedel|25"],
+          modell: "**Halveringstiden** är den tid det tar tills **hälften** av de radioaktiva kärnorna har **sönderfallit**. Under nästa halveringstid sönderfaller hälften av det som är **kvar** – inte resten. Efter två halveringstider är alltså **en fjärdedel (25 %)** kvar." }
+      ] },
+
+    { id: "fk-rad-avstand", kapitel: "radioaktivitet", avsnitt: ["mata"], titel: "Förklara: aktivitet och stråldos",
+      typ: "forklara", nivaerPerArskurs: { 7: [3], 8: [2], 9: [1, 2] }, rullista: [1],
+      varianter: [
+        { fraga: "En person går längre bort från en strålkälla. Förklara vad som händer med aktiviteten och med stråldosen – och varför.",
+          begrepp: ["aktivitet", "stråldos|dosen", "samma|ändras inte|densamma", "sprids|sprider|åt alla håll", "färre|mindre|minskar"],
+          modell: "**Aktiviteten** är **densamma**, eftersom den bara beror på hur många sönderfall som sker i källan. **Stråldosen** **minskar**. Strålningen **sprids** åt alla håll, så ju längre bort personen står desto **färre** partiklar träffar kroppen." }
+      ] },
+
+    { id: "fk-rad-radon", kapitel: "radioaktivitet", avsnitt: ["bakgrund"], titel: "Förklara: varför är radon farligt?",
+      typ: "forklara", nivaerPerArskurs: { 7: [3], 8: [2], 9: [1, 2] }, rullista: [1],
+      varianter: [
+        { fraga: "Förklara varför radon i inomhusluften kan vara farligt.",
+          begrepp: ["radon", "gas", "lungor|lungorna", "joniserande|alfa", "cancer|celler|DNA"],
+          modell: "**Radon** är en radioaktiv **gas** som bildas när radium i marken sönderfaller. Gasen andas in och sönderfaller i **lungorna**. Då skickas **joniserande** strålning (**alfa**) ut direkt mot cellerna, vilket kan skada DNA och leda till lung**cancer**." }
       ] }
 ]);

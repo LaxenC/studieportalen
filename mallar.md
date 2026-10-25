@@ -196,6 +196,22 @@ Text med luckor. Svaret skrivs inom hakparentes. Med `rullista` väljer eleven o
   ] },
 ```
 
+### Förklara med begrepp – `forklara`
+
+Eleven skriver en egen förklaring. Efteråt visas vilka begrepp som fanns med och ett exempel på en bra förklaring.
+`begrepp`: första ordet visas, alla varianter efter `|` godkänns. Det räcker att ett ord i texten *börjar* som varianten (`absorber` godkänner *absorberar*).
+På nivåer i `rullista` visas begreppen som stöd: "Använd orden …".
+
+```js
+{ id: "fk-str-bly", kapitel: "stralning", avsnitt: ["jonis"], titel: "Förklara: varför bly mot röntgen?",
+  typ: "forklara", nivaerPerArskurs: { 7: [3], 8: [2], 9: [1, 2] }, rullista: [1],
+  varianter: [
+    { fraga: "Förklara varför röntgenstrålning är farlig och varför man använder bly för att skydda sig.",
+      begrepp: ["joniserande", "elektron|joner", "cell|celler|DNA", "bly", "stoppar|absorber|tar upp"],
+      modell: "Röntgenstrålning är **joniserande** – den kan slå loss **elektroner** … " }
+  ] },
+```
+
 ### Flerval – `flerval`
 
 En fråga med alternativ. `s: "ratt"`, `s: "fel"` eller `s: "delvis"` (delvis rätt). `f` är förklaringen eleven ser efter rättning.
