@@ -114,7 +114,7 @@ Flera organ hör till immunförsvaret och lymfsystemet:
 
 Om det medfödda försvaret inte räcker startar det **förvärvade** (specifika) **immunförsvaret**. Det är mer träffsäkert – varje försvarscell känner igen bara en sorts mikrob. Förenklat sker det i tre steg:
 
-![immunsvaret](bilder/immunsvar.svg)
+![immunsvaret](bilder/immunsvar.svg?v=2)
 Bild: Immunsvaret i tre steg.
 
 1. **Ätarceller** äter upp mikroberna och visar upp bitar av dem för andra försvarsceller – som ett "efterlysningsfoto".
