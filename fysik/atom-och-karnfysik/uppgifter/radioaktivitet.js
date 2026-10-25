@@ -326,7 +326,7 @@ Portal.uppgifter([
       varianter: [
         { fraga: "Förklara vad som händer när en radioaktiv atomkärna sönderfaller.",
           begrepp: ["instabil", "sönderfall|sönderfaller", "strålning", "stabil", "alfa|beta|gamma"],
-          modell: "En radioaktiv kärna är **instabil** – den har för mycket energi eller fel balans mellan protoner och neutroner. Kärnan **sönderfaller** och gör sig av med partiklar eller energi som **strålning** (**alfa**, **beta** eller **gamma**). Efter ett eller flera sönderfall har kärnan blivit **stabil**." }
+          modell: "En radioaktiv kärna är **instabil** – den har för mycket energi eller fel balans mellan protoner och neutroner. Den vill bli stabil, så den **sönderfaller** och gör sig av med partiklar eller energi som **strålning** (**alfa**, **beta** eller **gamma**). Vid alfa- och betasönderfall ändras antalet protoner, och då blir det ett nytt ämne. Efter ett eller flera sönderfall har kärnan blivit **stabil**." }
       ] },
 
     { id: "fk-rad-halvering", kapitel: "radioaktivitet", avsnitt: ["halvering"], titel: "Förklara: halveringstid",
@@ -350,6 +350,6 @@ Portal.uppgifter([
       varianter: [
         { fraga: "Förklara varför radon i inomhusluften kan vara farligt.",
           begrepp: ["radon", "gas", "lungor|lungorna", "joniserande|alfa", "cancer|celler|DNA"],
-          modell: "**Radon** är en radioaktiv **gas** som bildas när radium i marken sönderfaller. Gasen andas in och sönderfaller i **lungorna**. Då skickas **joniserande** strålning (**alfa**) ut direkt mot cellerna, vilket kan skada DNA och leda till lung**cancer**." }
+          modell: "**Radon** är en radioaktiv **gas** som bildas i marken och tar sig in i husen, där den samlas i inomhusluften. När vi andas in radonet sönderfaller det i **lungorna** och skickar ut **joniserande** strålning (**alfa**) direkt mot cellerna. Utanför kroppen hade huden stoppat alfastrålningen, men inne i lungorna når den fram och kan skada DNA. Det kan leda till lungcancer (**cancer**)." }
       ] }
 ]);
