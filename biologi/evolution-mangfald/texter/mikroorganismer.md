@@ -6,9 +6,15 @@ kapitel: mikroorganismer
 
 Livet på jorden är otroligt varierat – från blåvalar till organismer som bara består av en enda cell. De allra minsta kallas mikroorganismer, och de var de första organismerna på jorden.
 
+Ordet **mikroorganism** består av två delar:
+- **mikro** = mycket liten
+- **organism** = något som lever
+
+En mikroorganism är alltså en mycket liten levande varelse. Men vad är det som gör att något lever? För att förstå det börjar vi med det som allt levande är byggt av – **cellen**.
+
 ## Celler – livets byggstenar {#cell}
 
-Allt levande är uppbyggt av **celler**. En cell är den minsta delen som kan leva själv – den tar upp näring, växer och kan föröka sig. De flesta celler är så små att man bara kan se dem i mikroskop.
+Allt som lever – alla organismer – är uppbyggt av **celler**. En cell är den minsta delen som kan leva själv – den tar upp näring, växer och kan föröka sig. De flesta celler är så små att man bara kan se dem i mikroskop.
 
 - En organism som består av **en enda cell** kallas **encellig**. Exempel är bakterier och amöbor.
 - En organism som består av **många celler** kallas **flercellig**. Människor, djur, växter och skogssvampar är flercelliga – du själv består av tusentals miljarder celler.
@@ -19,6 +25,7 @@ I många celler finns en **cellkärna**. Där ligger cellens **arvsmassa** (DNA)
 Bild: Encellig utan cellkärna, encellig med cellkärna och flercellig.
 
 > **Begrepp**
+> **organism** – något som lever, till exempel en bakterie, en växt eller ett djur
 > **cell** – den minsta delen av en levande organism som kan leva själv
 > **encellig** – består av en enda cell
 > **flercellig** – består av många celler

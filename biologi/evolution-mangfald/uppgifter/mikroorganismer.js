@@ -20,6 +20,11 @@ Portal.uppgifter([
     { id: "cell-flerval", kapitel: "mikroorganismer", avsnitt: ["cell"], titel: "Celler – välj rätt",
       typ: "flerval", nivaer: [0, 1],
       varianter: [
+        { fraga: "Ordet mikroorganism består av mikro + organism. Vad betyder det?",
+          alt: [ { t: "En mycket liten levande varelse", s: "ratt", f: "mikro = mycket liten, organism = något som lever." },
+                 { t: "En liten del av en cell", s: "fel", f: "en organism är något som lever – mikro betyder mycket liten." },
+                 { t: "Ett litet mikroskop", s: "fel", f: "mikroskopet behövs för att se dem – ordet betyder mycket liten levande varelse." },
+                 { t: "Något som orsakar sjukdom", s: "fel", f: "det kallas patogen – de flesta mikroorganismer är ofarliga." } ] },
         { fraga: "Vad betyder det att en organism är encellig?",
           alt: [ { t: "Den består av en enda cell", s: "ratt", f: "en = en cell, till exempel en bakterie." },
                  { t: "Den består av många celler", s: "fel", f: "det kallas flercellig." },
