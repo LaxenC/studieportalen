@@ -18,7 +18,7 @@ Vad mikrober är och hur de är uppbyggda kan du läsa om i kapitlet [Mikroorgan
 ![bakteriecell](bilder/bakteriecell.svg?v=2)
 Bild: En bakterie är en cell utan cellkärna – arvsmassan ligger fritt i cellen. Jämför med en cell som har cellkärna.
 
-Bakterier förökar sig genom att **dela sig**. Vid rätt temperatur och med mycket näring kan det gå mycket snabbt. Om det blir för kallt, varmt eller torrt kan vissa bakterier bilda **sporer** – ett skal som skyddar dem länge.
+Bakterier förökar sig genom att **dela sig**.
 
 Bakterier delas in i tre grupper efter hur de ser ut:
 
@@ -33,19 +33,8 @@ Bild: De tre formerna av bakterier.
 
 **De flesta bakterier är ofarliga** – färre än 1 procent anses vara skadliga. Många är dessutom nödvändiga för oss. Bakterier på huden skyddar mot skadliga bakterier, och bakterier i tarmen hjälper till med matsmältningen och tillverkar vitaminer.
 
-Men bakterier kan också orsaka allvarliga sjukdomar, till exempel kolera, pest, tuberkulos och lunginflammation. De flesta bakterieinfektioner kan i dag behandlas med **antibiotika** – mer om det i kapitlet *Bota och förebygga*.
-
 > **Begrepp**
 > **bakterier** – mycket små encelliga organismer utan cellkärna som finns nästan överallt
-> **antibiotika** – läkemedel som dödar bakterier eller hindrar dem från att växa och föröka sig
-
-::: fördjupning åk 7 Bakterier och mat
-För att skydda mat mot bakterier används bland annat **kyla** (kylskåp), **torkning** (russin, kryddor), **saltning** (sill), **rökning** (korv), **syra** (ättiksgurka) och **mycket socker** (sylt). Alla metoderna gör det svårt för bakterierna att växa.
-:::
-
-> **💬 Förklara så här** {.green}
-> *Varför håller sig maten längre i kylskåpet?*<br>
-> *Bakterier* behöver värme och näring för att föröka sig snabbt. I kylan *delar sig* bakterierna mycket långsammare. **Därför** tar det längre tid innan maten blir dålig.
 
 > **Viktigt att komma ihåg**
 > - Bakterier är **encelliga** och **saknar cellkärna**.

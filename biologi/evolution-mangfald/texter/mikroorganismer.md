@@ -112,19 +112,33 @@ Mikrober är inte bra eller dåliga. Precis som vi försöker de överleva. Ibla
 ![bakteriecell](bilder/bakteriecell.svg?v=2)
 Bild: En bakterie är en cell utan cellkärna – arvsmassan ligger fritt i cellen. Jämför med en cell som har cellkärna.
 
-Bakterier finns nästan överallt: i marken, i vatten, i luften och i och på din kropp. De förökar sig genom att **dela sig**. Bakterier delas in efter formen: runda **kocker**, stavformade **baciller** och spiralformade **spiriller**.
+Bakterier finns nästan överallt: i marken, i vatten, i luften och i och på din kropp. De förökar sig genom att **dela sig**. Vid rätt temperatur och med mycket näring kan det gå mycket snabbt. Om det blir för kallt, varmt eller torrt kan vissa bakterier bilda **sporer** – ett skal som skyddar dem länge.
+
+Bakterier delas in efter formen: runda **kocker**, stavformade **baciller** och spiralformade **spiriller**.
 
 ![bakterieformer](bilder/bakterieformer.svg)
 Bild: De tre formerna av bakterier.
 
 Bakterier är viktiga **nedbrytare** i naturen. Vissa bakterier gör fotosyntes – de kallas cyanobakterier eller blågröna alger och kan orsaka algblomning.
 
+Men bakterier kan också orsaka allvarliga sjukdomar, till exempel kolera, pest, tuberkulos och lunginflammation. De flesta bakterieinfektioner kan i dag behandlas med **antibiotika** – mer om det i kapitlet [Bota och förebygga](#/biologi/infektioner-immunforsvar/las/bota) under *Infektioner och immunförsvar*.
+
 > **Begrepp**
 > **bakterier** – mycket små encelliga organismer utan cellkärna som finns nästan överallt
+> **sporer** – ett skyddande skal som vissa bakterier bildar när det blir för kallt, varmt eller torrt
+> **antibiotika** – läkemedel som dödar bakterier eller hindrar dem från att växa och föröka sig
+
+::: fördjupning åk 7 Bakterier och mat
+För att skydda mat mot bakterier används bland annat **kyla** (kylskåp), **torkning** (russin, kryddor), **saltning** (sill), **rökning** (korv), **syra** (ättiksgurka) och **mycket socker** (sylt). Alla metoderna gör det svårt för bakterierna att växa.
+:::
 
 > **💬 Förklara så här** {.green}
 > *Hur kan en enda bakterie bli till miljoner bakterier på kort tid?*<br>
-> Bakterier är encelliga så för att försöka sig behöver de bara skapa en till cell, när vi människor ska föröka oss behöver många celler skapas. Bakterier förökar sig genom att *dela sig*. En bakterie blir två, två blir fyra, fyra blir åtta och så vidare. Antalet fördubblas vid varje delning, **därför** blir de väldigt många på kort tid.
+> Bakterier är encelliga så för att föröka sig behöver de bara skapa en till cell, när vi människor ska föröka oss behöver många celler skapas. Bakterier förökar sig genom att *dela sig*. En bakterie blir två, två blir fyra, fyra blir åtta och så vidare. Antalet fördubblas vid varje delning, **därför** blir de väldigt många på kort tid.
+
+> **💬 Förklara så här** {.green}
+> *Varför håller sig maten längre i kylskåpet?*<br>
+> *Bakterier* behöver värme och näring för att föröka sig snabbt. I kylan *delar sig* bakterierna mycket långsammare. **Därför** tar det längre tid innan maten blir dålig.
 
 > **Viktigt att komma ihåg**
 > - Bakterier är **encelliga** och **saknar cellkärna**.
