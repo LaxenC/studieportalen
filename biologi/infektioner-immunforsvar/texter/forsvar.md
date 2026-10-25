@@ -81,8 +81,12 @@ Varet som bildas i ett sår består av döda vita blodkroppar, döda patogener o
 
 **Lymfsystemet**  är en del av immunförsvaret, men har också andra uppgifter. Det är ett nätverk av kärl och organ i hela kroppen som transporterar en klar vätska som kallas lymfa. Lymfsystemet samlar upp överflödig vätska från kroppens vävnader och för tillbaka den till blodet.
 
-I lymfknutorna finns många vita blodkroppar. De kan upptäcka patogener i lymfan och hjälpa kroppen att bekämpa dem. När du är sjuk kan lymfknutorna, till exempel på halsen, bli svullna eftersom immunförsvaret arbetar där
+I lymfknutorna finns många vita blodkroppar. De kan upptäcka patogener i lymfan och hjälpa kroppen att bekämpa dem. När du är sjuk kan lymfknutorna, till exempel på halsen, bli svullna eftersom immunförsvaret arbetar där.
+
 **Lymfknutor** fungerar som kontrollstationer i lymfsystemet. Vita blodkroppar undersöker lymfan efter patogener. Om de hittar en patogen kan de starta en försvarsreaktion där vita blodkroppar hjälper till att bekämpa den.
+
+![lymfsystemet](bilder/lymfsystemet.svg)
+Bild: Lymfsystemet i kroppen och en förstorad lymfknuta. I lymfknutan undersöker vita blodkroppar lymfan efter patogener.
 
 
 > **Begrepp**
