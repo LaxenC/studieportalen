@@ -51,7 +51,8 @@ Den används inom sjukvården för att ta bilder av kroppens inre. På röntgenb
 
 > **💬 Förklara så här** {.green}
 > *Varför syns skelettet vitt på en röntgenbild?*<br>
-> Röntgenstrålning är **energirik** och tar sig igenom **mjukdelar** som muskler. Skelettet är tätare och **absorberar** mer av strålningen. **Därför** når mindre strålning bilden bakom skelettet, och skelettet syns **vitt** medan mjukdelarna blir mörka.
+> Röntgenstrålning är *energirik* och tar sig igenom mjukdelar som muskler. Skelettet är tätare och absorberar mer av strålningen.<br>
+**Därför** når mindre strålning bilden bakom skelettet, och skelettet syns vitt medan mjukdelarna blir mörka.
 
 > **Viktigt att komma ihåg**
 > - **Elektromagnetisk strålning:** fotoner (elektromagnetiska vågor i partikelform) överför energin.
@@ -116,7 +117,7 @@ Kärnan får en proton mer och en neutron mindre. Atomnumret ökar med 1, så de
 
 > **💬 Förklara så här** {.green}
 > *Varför blir det ett nytt ämne vid alfa- och betastrålning?*<br>
-> Vilket ämne det är bestäms av antalet **protoner**. Vid **alfastrålning** lämnar 2 protoner kärnan, och vid **betastrålning** blir en neutron till en proton. I båda fallen **ändras antalet protoner** – **därför** blir det ett annat ämne.
+> Vilket ämne det är bestäms av antalet protoner. Vid *alfastrålning* lämnar 2 protoner kärnan, och vid *betastrålning* blir en neutron till en proton. I båda fallen ändras antalet protoner – **därför** blir det ett annat ämne.
 
 > **Viktigt att komma ihåg**
 > - (åk8,9)Vid partikelstrålning så är det partiklar från atomkärnan som strålar ut, så atomkärnan ser annorlunda ut efter strålningen
@@ -147,7 +148,7 @@ Joniserande stårlning
 
 > **💬 Förklara så här** {.green}
 > *Varför är joniserande strålning farlig, och varför skyddar bly?*<br>
-> Joniserande strålning har så mycket energi att den kan slå loss **elektroner** från atomer så att det bildas **joner**. **Därför** kan **celler och DNA** skadas, vilket kan leda till mutationer och cancer. **Bly** är ett tungt och tätt ämne som **absorberar** strålningen innan den når kroppen.
+> *Joniserande strålning* har så mycket *energi* att den kan slå loss elektroner från atomer så att det bildas *joner*. **Därför** kan celler och DNA skadas, vilket kan leda till mutationer och cancer. Bly är ett tungt och tätt ämne som absorberar strålningen innan den når kroppen.
 
 > **Viktigt att komma ihåg**
 > - Joniserande strålning kan slå loss elektroner och bilda joner – **därför** kan den skada celler och DNA.
@@ -167,11 +168,10 @@ Joniserande strålning kan skada celler – men just därför är den också myc
 | **Röntgen** | Röntgenstrålning går igenom kroppen. Skelett och tänder stoppar mer strålning än mjukdelar, så man kan se dem på bilden. |
 | **Datortomografi (skiktröntgen)** | Många röntgenbilder tas runt kroppen och sätts ihop i en dator till tredimensionella bilder. Ger en högre stråldos än en vanlig röntgen. |
 | **Strålbehandling** | Gammastrålning eller röntgenstrålning riktas mot en tumör. Strålningen skadar cancercellernas DNA så att de dör. |
-| **Spårämnen** | Ett radioaktivt ämne med kort halveringstid sprutas in. En kamera mäter strålningen och visar hur ett organ fungerar. |
 | **Sterilisering** | Gammastrålning dödar bakterier på sprutor, kanyler och annan utrustning. |
 
 ::: fördjupning åk 7 Så skonar man friska celler
-Vid strålbehandling strålar man mot tumören från **flera olika håll**. Där strålarna möts – i tumören – blir dosen hög, men de friska cellerna runt omkring får bara en liten dos. Behandlingen delas också upp i många små doser, eftersom friska celler är bättre än cancerceller på att reparera skador mellan behandlingarna. Ett exempel på spårämne är **jod-131**, som tas upp av sköldkörteln och används både för att undersöka och behandla den.
+Vid strålbehandling strålar man mot tumören från **flera olika håll**. Där strålarna möts – i tumören – blir dosen hög, men de friska cellerna runt omkring får bara en liten dos. Behandlingen delas också upp i många små doser, eftersom friska celler är bättre än cancerceller på att reparera skador mellan behandlingarna.
 :::
 
 **Möjligheter och risker:**
@@ -181,11 +181,10 @@ Vid strålbehandling strålar man mot tumören från **flera olika håll**. Där
 
 > **Begrepp**
 > **strålbehandling** – behandling av cancer med joniserande strålning
-> **spårämne** – radioaktivt ämne som sprutas in för att visa hur ett organ fungerar
 
 > **💬 Förklara så här** {.green}
 > *Hur kan strålning, som är farlig, användas för att bota cancer?*<br>
-> Joniserande strålning **skadar DNA** i cellerna. Om man riktar strålningen mot en **tumör** skadas **cancercellerna** så att de dör. Man strålar från flera håll så att de **friska cellerna** runt omkring får en låg dos. **Därför** blir nyttan större än risken.
+> *Joniserande strålning* har hög *energi* och skadar DNA i cellerna. Om man riktar strålningen mot en tumör skadas cancercellerna så att de dör. Man strålar från flera håll så att de friska cellerna runt omkring får en låg dos. De friska cellerna kan reparera sig, så de kan bli återställda. **Därför** blir nyttan större än risken.
 
 > **Viktigt att komma ihåg**
 > - Joniserande strålning används i sjukvården till **röntgen**, **datortomografi**, **strålbehandling**, **spårämnen** och **sterilisering**.
