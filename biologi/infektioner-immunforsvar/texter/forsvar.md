@@ -17,6 +17,10 @@ Kroppens första försvar är att stänga mikroberna ute.
 
 Om huden går sönder, eller mikrober på något annat sätt tar sig in, blir det en **infektion**.
 
+> **💬 Förklara så här** {.green}
+> *Varför kan ett sår bli infekterat?*<br>
+> *Huden* är en tät mur som stänger ute mikroberna. När huden går sönder får mikroberna en öppning in i kroppen. **Därför** kan de ta sig in, föröka sig och orsaka en *infektion*.
+
 > **Viktigt att komma ihåg**
 > - Kroppens första försvar är **huden** och **slemhinnorna**.
 > - De stänger ute mikroberna innan de kommer in i kroppen.
@@ -32,6 +36,10 @@ Området blir **inflammerat** – rött, svullet, varmt och ömt. Det beror på 
 > **Begrepp**
 > **vita blodkroppar** – kroppens försvarsceller
 > **ätarceller** – vita blodkroppar som äter upp mikrober och döda celler
+
+> **💬 Förklara så här** {.green}
+> *Varför blir det rött och varmt runt ett sår?*<br>
+> Kroppen skickar mer blod till området för att få dit *vita blodkroppar* som ska bekämpa mikroberna. **Därför** blir området rött, varmt och svullet – en *inflammation*.
 
 > **Viktigt att komma ihåg**
 > - Det **medfödda immunförsvaret** reagerar likadant mot alla mikrober.
@@ -58,6 +66,10 @@ Flera organ hör till immunförsvaret och lymfsystemet:
 - **Tonsillerna** (halsmandlarna) – fångar mikrober som kommer in genom munnen.
 - **Lymfknutorna** – finns bland annat på halsen, i armhålorna och i ljumskarna.
 :::
+
+> **💬 Förklara så här** {.green}
+> *Varför kan lymfknutorna på halsen bli svullna när man är sjuk?*<br>
+> I *lymfknutorna* samlas *vita blodkroppar* som bekämpar mikroberna. När man är sjuk arbetar försvaret där och många vita blodkroppar samlas. **Därför** blir lymfknutorna svullna.
 
 > **Viktigt att komma ihåg**
 > - **Lymfsystemet** transporterar **lymfa** och vita blodkroppar.
@@ -92,6 +104,10 @@ Det finns många fler celler och steg i immunsvaret, och det är mycket komplice
 8. **Immunminne** – minnescellerna stannar kvar i kroppen.
 :::
 
+> **💬 Förklara så här** {.green}
+> *Varför hinner man ofta bli sjuk första gången man smittas?*<br>
+> Första gången måste det *specifika immunförsvaret* lära sig känna igen mikroben och börja tillverka rätt *antikroppar*. Det tar några dagar. **Därför** hinner mikroberna föröka sig och göra en sjuk innan försvaret är klart.
+
 > **Viktigt att komma ihåg**
 > - Det **specifika immunförsvaret** känner igen en viss mikrob.
 > - **Ätarceller** → **antikroppar** → **minnesceller**.
@@ -105,6 +121,10 @@ Mot vissa sjukdomar, till exempel vattkoppor, blir man immun hela livet. Mot fö
 
 > **Begrepp**
 > **immun** – att kroppen har minnesceller mot en sjukdom och inte blir sjuk av den igen
+
+> **💬 Förklara så här** {.green}
+> *Varför får man oftast vattkoppor bara en gång?*<br>
+> Efter sjukdomen finns *minnesceller* kvar som känner igen viruset. Om det kommer tillbaka tillverkar kroppen *antikroppar* direkt. **Därför** stoppas viruset innan man blir sjuk – man är *immun*.
 
 > **Viktigt att komma ihåg**
 > - **Minnesceller** gör att försvaret går mycket snabbare andra gången.

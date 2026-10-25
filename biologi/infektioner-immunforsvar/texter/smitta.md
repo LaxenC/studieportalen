@@ -25,6 +25,10 @@ När en patogen tar sig in i kroppen och börjar föröka sig kallas det en **in
 **Spanska sjukan** var en influensa som spreds över världen 1918–1920, strax efter första världskriget. Kanske 50 miljoner människor dog – fler än i kriget. Under medeltiden dödade **digerdöden** (pest, en bakteriesjukdom) ungefär en tredjedel av Europas befolkning. **Covid-19** blev en pandemi 2020.
 :::
 
+> **💬 Förklara så här** {.green}
+> *Hur kan man smitta andra innan man själv känner sig sjuk?*<br>
+> Under *inkubationstiden* har *patogenen* redan kommit in i kroppen och börjat föröka sig, men man har ännu inga *symptom*. **Därför** kan man sprida smittan utan att veta om det.
+
 > **Viktigt att komma ihåg**
 > - En **infektion** är när en patogen tar sig in i kroppen och förökar sig.
 > - **Inkubationstid** = tiden från smitta till sjukdom.
@@ -47,6 +51,10 @@ För att stoppa smittspridning försöker man bryta smittvägarna, till exempel 
 
 > **Begrepp**
 > **smittväg** – det sätt som en sjukdom sprids på
+
+> **💬 Förklara så här** {.green}
+> *Varför är det bra att hosta i armvecket?*<br>
+> När man hostar sprids små droppar med mikrober *via luften*. Hostar man i handen hamnar dropparna på händerna och sedan på allt man tar i. I armvecket fastnar de i tröjan i stället. **Därför** sprids färre mikrober vidare till andra.
 
 > **Viktigt att komma ihåg**
 > - Smitta kan spridas via **direktkontakt**, **luften**, **indirekt kontakt**, **mat och vatten**, **insekter** och **andra djur**.

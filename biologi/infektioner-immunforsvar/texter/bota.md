@@ -26,6 +26,10 @@ I Sverige erbjuds alla barn vaccin mot ett tiotal allvarliga sjukdomar, till exe
 På 1790-talet märkte den engelske läkaren **Edward Jenner** att mjölkerskor som haft den milda sjukdomen kokoppor inte fick de farliga smittkopporna. Han testade att föra över kokoppor till en pojke – och pojken blev skyddad mot smittkoppor. Ordet vaccin kommer från latinets *vacca*, som betyder ko. Tack vare vaccination är smittkopporna i dag helt utrotade i världen.
 :::
 
+> **💬 Förklara så här** {.green}
+> *Hur skyddar ett vaccin mot en sjukdom?*<br>
+> Ett *vaccin* innehåller ofarliga delar av en mikrob. Immunförsvaret tillverkar *antikroppar* och bildar *minnesceller*. **Därför** känner kroppen igen den riktiga mikroben direkt om man smittas senare, och man blir oftast inte sjuk.
+
 > **Viktigt att komma ihåg**
 > - Ett **vaccin** tränar immunförsvaret utan att man blir sjuk.
 > - Kroppen bildar **minnesceller** och blir **immun**.
@@ -48,6 +52,10 @@ För att minska resistensen ska antibiotika bara användas när det verkligen be
 ::: fördjupning åk 7 Penicillinet upptäcks
 År 1928 upptäckte **Alexander Fleming** av en slump att en mögelsvamp hade dödat bakterierna i en av hans odlingsskålar. Ämnet från mögelsvampen fick namnet **penicillin** – det första antibiotikumet. Det har sedan dess räddat miljontals liv.
 :::
+
+> **💬 Förklara så här** {.green}
+> *Varför ska man bara använda antibiotika när det verkligen behövs?*<br>
+> Varje gång bakterier utsätts för *antibiotika* kan några av dem överleva och föröka sig. Om antibiotika används ofta blir de överlevande bakterierna allt fler. **Därför** blir fler bakterier *resistenta* om antibiotika används för mycket.
 
 > **Viktigt att komma ihåg**
 > - **Antibiotika** bekämpar **bakterier** – inte virus.

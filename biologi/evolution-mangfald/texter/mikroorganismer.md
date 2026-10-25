@@ -74,6 +74,10 @@ Mikrober är inte bra eller dåliga. Precis som vi försöker de överleva. Ibla
 | ![alger](bilder/alger.svg) | **Alger** | En eller många celler – med cellkärna | Gör fotosyntes och bildar syre. Lever oftast i vatten. |
 | ![arkéer](bilder/arkeer.svg) | **Arkéer** | En cell – ingen cellkärna | Liknar bakterier. Lever ofta i extrema miljöer, till exempel heta källor. |
 
+> **💬 Förklara så här** {.green}
+> *Varför upptäckte man mikroorganismerna först på 1600-talet?*<br>
+> *Mikroorganismer* är för små för att ses med blotta ögat. Först när *mikroskopet* uppfanns på 1600-talet kunde man förstora dem så mycket att de syntes. **Därför** upptäckte man dem först då.
+
 > **Viktigt att komma ihåg**
 > - **Mikrober** är levande organismer som är för små för att synas utan mikroskop.
 > - De flesta mikrober är ofarliga eller nyttiga.
@@ -97,6 +101,10 @@ Bakterier är viktiga **nedbrytare** i naturen. Vissa bakterier gör fotosyntes 
 > **Begrepp**
 > **bakterier** – mycket små encelliga organismer utan cellkärna som finns nästan överallt
 
+> **💬 Förklara så här** {.green}
+> *Hur kan en enda bakterie bli till miljoner bakterier på kort tid?*<br>
+> Bakterier förökar sig genom att *dela sig*. En bakterie blir två, två blir fyra, fyra blir åtta och så vidare. Antalet fördubblas vid varje delning, **därför** blir de väldigt många på kort tid.
+
 > **Viktigt att komma ihåg**
 > - Bakterier är **encelliga** och **saknar cellkärna**.
 > - De förökar sig genom att **dela sig**.
@@ -107,6 +115,10 @@ Bakterier är viktiga **nedbrytare** i naturen. Vissa bakterier gör fotosyntes 
 Ett **virus** är en liten partikel av **arvsmassa** i ett **hölje av protein**. Virus kan inte föröka sig själva – de måste ta sig in i en cell hos en **värd** och få den att tillverka nya virus.
 
 Därför räknas virus oftast **inte** som levande. De har arvsmassa och utvecklas, men de består inte av celler, har ingen ämnesomsättning och växer inte. De har kallats "organismer på kanten av livet". Det visar att det inom biologin inte alltid finns tydliga gränser – även om vi människor gärna vill ha det.
+
+> **💬 Förklara så här** {.green}
+> *Vad skiljer ett virus från en bakterie?*<br>
+> En bakterie är en *cell* som förökar sig själv genom att dela sig. Ett *virus* är ingen cell utan *arvsmassa* i ett hölje av protein, och det kan bara föröka sig inne i en *värdcell*. **Därför** räknas bakterier som levande, men virus oftast inte.
 
 > **Viktigt att komma ihåg**
 > - Virus består inte av celler och kan inte föröka sig utan en värdcell.
@@ -127,6 +139,10 @@ Svampar kan också orsaka sjukdomar, både hos växter och människor. Hos männ
 Många svampar består av långa, tunna trådar som kallas **hyfer**. Det vi kallar en svamp i skogen är bara svampens fruktkropp – den största delen är ett nät av hyfer i marken.
 :::
 
+> **💬 Förklara så här** {.green}
+> *Varför är svampar viktiga i naturen?*<br>
+> Svampar är *nedbrytare*. De bryter ner döda växter och djur till enklare ämnen. **Därför** kan näringen användas igen av nya växter.
+
 > **Viktigt att komma ihåg**
 > - Svampar är varken växter eller djur.
 > - De kan vara encelliga (jäst) eller flercelliga (mögel, skogssvamp).
@@ -142,6 +158,10 @@ Mikroberna är så små att de inte väger särskilt mycket. Länge sa man att d
 
 > **Begrepp**
 > **mikrobiom** – alla mikrober som lever i och på människokroppen
+
+> **💬 Förklara så här** {.green}
+> *Hur hjälper mikrobiomet oss att hålla oss friska?*<br>
+> *Mikrobiomet* är alla mikrober i och på kroppen. De nyttiga mikroberna tar plats och näring som skadliga mikrober annars hade använt. **Därför** får skadliga mikrober svårare att orsaka infektioner.
 
 > **Viktigt att komma ihåg**
 > - **Mikrobiomet** är alla mikrober i och på kroppen.
@@ -159,6 +179,10 @@ Mikroberna i kroppen lever i **symbios** med oss. Symbios är ett nära och lån
 
 > **Begrepp**
 > **symbios** – ett nära, långvarigt samband mellan två olika arter
+
+> **💬 Förklara så här** {.green}
+> *Vilken typ av symbios lever vi i med tarmbakterierna?*<br>
+> Tarmbakterierna får mat och en plats att bo på. Vi får hjälp att smälta maten. Båda arterna gynnas, **därför** är det *mutualism*.
 
 > **Viktigt att komma ihåg**
 > - **Symbios** = nära samband mellan två olika arter.

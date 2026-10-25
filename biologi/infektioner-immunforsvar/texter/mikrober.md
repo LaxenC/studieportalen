@@ -20,6 +20,10 @@ Mikrober är inte bra eller dåliga. Precis som vi försöker de överleva. Ibla
 > **mikrober** – små levande organismer som är för små för att ses med blotta ögat
 > **patogen** – en organism som orsakar sjukdom hos sin värd
 
+> **💬 Förklara så här** {.green}
+> *Varför upptäckte man mikroberna först på 1600-talet?*<br>
+> *Mikrober* är för små för att ses med blotta ögat. Först när *mikroskopet* uppfanns på 1600-talet kunde man förstora dem så mycket att de syntes. **Därför** upptäckte man dem först då.
+
 > **Viktigt att komma ihåg**
 > - **Mikrober** är levande organismer som är för små för att synas utan mikroskop.
 > - De flesta mikrober är ofarliga eller nyttiga.
@@ -57,6 +61,10 @@ Men bakterier kan också orsaka allvarliga sjukdomar, till exempel kolera, pest,
 För att skydda mat mot bakterier används bland annat **kyla** (kylskåp), **torkning** (russin, kryddor), **saltning** (sill), **rökning** (korv), **syra** (ättiksgurka) och **mycket socker** (sylt). Alla metoderna gör det svårt för bakterierna att växa.
 :::
 
+> **💬 Förklara så här** {.green}
+> *Varför håller sig maten längre i kylskåpet?*<br>
+> *Bakterier* behöver värme och näring för att föröka sig snabbt. I kylan *delar sig* bakterierna mycket långsammare. **Därför** tar det längre tid innan maten blir dålig.
+
 > **Viktigt att komma ihåg**
 > - Bakterier är **encelliga** och **saknar cellkärna**.
 > - De förökar sig genom **delning**.
@@ -81,6 +89,10 @@ Det finns också **nyttiga virus**. Vissa angriper bakterier och andra skadliga 
 > **Begrepp**
 > **virus** – en liten partikel av arvsmassa i ett proteinhölje som behöver en värdcell för att föröka sig
 
+> **💬 Förklara så här** {.green}
+> *Varför kan man bli förkyld år efter år?*<br>
+> Förkylningsvirus förändrar sig hela tiden. När viruset har förändrats känner *immunförsvaret* inte igen det. **Därför** kan man bli förkyld igen och igen.
+
 > **Viktigt att komma ihåg**
 > - Ett virus är **arvsmassa** i ett **proteinhölje**.
 > - Virus måste ta sig in i en **värdcell** för att föröka sig.
@@ -97,6 +109,10 @@ En **parasit** lever på eller i en annan organism – **värden** – och får 
 
 > **Begrepp**
 > **parasit** – en organism som lever på eller i en annan organism (värden) och får näring från den
+
+> **💬 Förklara så här** {.green}
+> *Hur sprids malaria?*<br>
+> Malaria orsakas av en encellig *parasit* som lever i vissa myggor. När en sådan mygga sticker en människa kommer parasiten in i blodet. **Därför** sprids malaria där det finns myggor som bär på parasiten.
 
 > **Viktigt att komma ihåg**
 > - Svampinfektioner, som fotsvamp, är oftast inte allvarliga.
