@@ -52,7 +52,7 @@ Organismer med cellkärna kallas alltså **eukaryota** – precis som våra egna
 
 > **💬 Förklara så här** {.green}
 > *Vad är det som gör att celler kan leva själva?*<br>
-> En *cell* tar upp *näring* och får *energi* ur den. Energin använder cellen för att *växa* och *föröka sig* genom att fabrikerna använder recpetet i arvmassan för att skapa nya celler. Cellen behöver ingen hjälp utifrån  **därför** kan den leva själv.
+> En *cell* tar upp *näring* och får *energi* ur den. Energin använder cellen för att *växa* och *föröka sig*: Cellen förökar sig genom att fabrikerna använder recpetet i arvmassan för att skapa nya celler. Cellen behöver **därför** ingen hjälp utifrån och kan den leva själv.
 
 > **Viktigt att komma ihåg**
 > - Allt levande består av **celler**.
