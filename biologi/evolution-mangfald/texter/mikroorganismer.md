@@ -19,6 +19,13 @@ Allt som lever – alla organismer – är uppbyggt av **celler**. En cell är d
 I många celler finns en **cellkärna**. Där ligger cellens **arvsmassa** (DNA) – cellens "recept" för att kunna skapa fler celler. Receptet används av cellens fabriker för att skapa nya celler.<br>
 Celler hos djur, växter och svampar har cellkärna. Bakterier har **ingen cellkärna** – deras arvsmassa ligger fritt i cellen.
 
+> **Begrepp**
+> **organism** – något som lever, till exempel en bakterie, en växt eller ett djur
+> **cell** – den minsta delen av en levande organism som kan leva själv
+> **cellkärna**– en del i cellen där arvsmassan finns
+> **arvsmassa** - receptet för att skapa fler celler
+
+
 Att cellen kan leva själv betyder att den klarar tre saker på egen hand:
 - **Ta upp näring** – cellen tar in ämnen från omgivningen, till exempel socker och syre, och får energi ur dem.
 - **Växa** – cellen använder näringen och energin för att bygga nya delar och bli större.
@@ -37,11 +44,7 @@ En organism kan bestå av **en enda cell** de kallas **encellig**, exempel är b
 Bild: Encellig utan cellkärna, encellig med cellkärna och flercellig.
 
 > **Begrepp**
-> **organism** – något som lever, till exempel en bakterie, en växt eller ett djur
-> **cell** – den minsta delen av en levande organism som kan leva själv
 > **ämnesomsättning** – när cellen tar upp näring och gör om den till energi som används till bränsle för cellensdelar
-> **cellkärna**– en del i cellen där arvsmassan finns
-> **arvsmassa** -receptet för att skapa fler celler
 > **encellig** – består av en enda cell
 > **flercellig** – består av många celler
 
@@ -62,7 +65,7 @@ Organismer med cellkärna kallas alltså **eukaryota** – precis som våra egna
 
 > **Viktigt att komma ihåg**
 > - Cellen är den minsta delen som kan leva själv
-> - > - Allt levande består av **celler**.
+>  - Allt levande består av **celler**.
 > - **Arvsmassa (DNA)** receptet för att skapa fler celler, ligger i **Cellkärnan* eller löst i cellen
 > - Celler har **ämnesomsättning** som innebär att det tar upp näring och gör om det till energi som behövs till cellens delar när de jobbar
 > - **Encellig** = en enda cell. **Flercellig** = många celler.
@@ -135,11 +138,11 @@ Ett **virus** är en liten partikel av **arvsmassa** i ett **hölje av protein**
 ![virusets delar](bilder/virusdelar.svg)
 Bild: Ett virus är arvsmassa i ett hölje av protein. Det är ingen cell och har inga egna fabriker.
 
-Därför räknas virus oftast **inte** som levande. De har arvsmassa och och kan förändras över tid, men de består inte av celler, har ingen **ämnesomsättning** och växer inte. Trots att de ibte räknas som levande så är dom en mikrober.
+Därför räknas virus oftast **inte** som levande. De har arvsmassa och kan förändras över tid, men de består inte av celler, har ingen **ämnesomsättning** och växer inte. Trots att de inte räknas som levande så är räknas dom som mikrober.
 
 > **Begrepp**
 > **virus** – arvsmassa i ett hölje av protein som behöver en värdcell för att föröka sig
-> **ämnesomsättning** – när cellen tar upp näring och gör om den till energi och nya delar
+
 
 > **💬 Förklara så här** {.green}
 > *Varför säger man att virus är på gränsen till liv?*<br>
@@ -196,20 +199,17 @@ Mikroberna är så små att de inte väger särskilt mycket. Länge sa man att d
 
 ## Symbios {#symbios}
 
-Mikroberna i kroppen lever i **symbios** med oss. Symbios är ett nära och långvarigt samband mellan två olika arter. Sambandet kan vara bra, neutralt eller dåligt för de olika arterna:
+Mikroberna i kroppen lever i **symbios** med oss. Symbios är när två olika arter lever tillsammans. Det finns olika typer av symbios som beskriver om samlevnaden är bra, neutralt eller dåligt för de olika arterna.
 
 | Typ av symbios | Vad händer? | Exempel |
 |---|---|---|
-| **Mutualism** | båda arterna gynnas | tarmbakterier får mat – vi får hjälp att smälta maten |
-| **Kommensalism** | den ena gynnas, den andra påverkas inte | många hudbakterier |
-| **Parasitism** | den ena gynnas, den andra skadas | malariaparasiten |
+| **Mutualism** | båda arterna gynnas | tarmbakterier, de får energi från mat vi äter och vi får hjälp med att smälta maten |
+| **Kommensalism** | den ena gynnas, den andra påverkas inte | många hudbakterier som får näring från våran hur men vi märker inte av dom |
+| **Parasitism** | den ena gynnas, den andra skadas | malariaparasiten som lever i oss och gör oss sjuka |
 
 > **Begrepp**
-> **symbios** – ett nära, långvarigt samband mellan två olika arter
+> **symbios** – betyder att två olika arter lever tillsammans och påverkar varandra.
 
-> **💬 Förklara så här** {.green}
-> *Vilken typ av symbios lever vi i med tarmbakterierna?*<br>
-> Tarmbakterierna får mat och en plats att bo på. Vi får hjälp att smälta maten. Båda arterna gynnas, **därför** är det *mutualism*.
 
 > **Viktigt att komma ihåg**
 > - **Symbios** = nära samband mellan två olika arter.
