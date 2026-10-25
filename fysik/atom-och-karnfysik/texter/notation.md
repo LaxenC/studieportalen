@@ -50,7 +50,7 @@ Om antalet protoner, som är positivt laddade, är lika många som antalet elekt
 :::
 > **💬 Förklara så här** {.green}
 > *Hur kan du se hur många neutroner en atom har?*<br>
-> **Masstalet** är antalet protoner + **neutroner**, och **atomnumret** är antalet **protoner**. **Därför** får man antalet neutroner genom att ta masstalet minus atomnumret. Kol-14 har alltså 14 − 6 = **8 neutroner**.
+> *Masstalet* är antalet protoner + neutroner, och *atomnumret* är antalet protoner. **Därför** får man antalet neutroner genom att ta masstalet minus atomnumret. Kol-14 har alltså 14 − 6 = 8 neutroner.
 
 > **Viktigt att komma ihåg**
 > [[nota 14 6 C stor farg]]
