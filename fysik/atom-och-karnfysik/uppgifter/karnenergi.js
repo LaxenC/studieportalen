@@ -20,7 +20,7 @@ Portal.uppgifter([
     /* ---------- Fission ---------- */
 
     { id: "ke-fission-text", kapitel: "karnenergi", avsnitt: ["fission"], titel: "Fission – fyll i",
-      typ: "lucktext", nivaerPerArskurs: { 7: [2], 8: [1], 9: [0, 1] }, rullista: [0, 1],
+      typ: "lucktext", nivaerPerArskurs: { 7: [3], 8: [1], 9: [1] }, rullista: [0, 1],
       ordlista: ["neutron", "proton", "elektron", "klyvs", "slås ihop", "energi", "lättare", "tyngre", "fission", "fusion"],
       varianter: [
         { text: "Vid [fission] klyvs en tung atomkärna i två [lättare] kärnor." },
@@ -29,7 +29,7 @@ Portal.uppgifter([
       ] },
 
     { id: "ke-fission-hahn", kapitel: "karnenergi", avsnitt: ["fission"], titel: "Fission – vad hände?",
-      typ: "flerval", nivaerPerArskurs: { 7: [2], 8: [1, 2], 9: [1] },
+      typ: "flerval", nivaerPerArskurs: { 7: [3], 8: [1], 9: [1] },
       varianter: [
         { fraga: "Otto Hahn sköt neutroner mot uran och fick lättare ämnen. Hur förklarade Meitner och Frisch det?",
           alt: [ { t: "Urankärnan hade delats i två delar", s: "ratt", f: "kärnan klyvdes – det kallas fission." },
@@ -46,7 +46,7 @@ Portal.uppgifter([
     /* ---------- Kedjereaktion ---------- */
 
     { id: "ke-kedja-text", kapitel: "karnenergi", avsnitt: ["kedja"], titel: "Kedjereaktion – fyll i",
-      typ: "lucktext", nivaerPerArskurs: { 7: [2], 8: [1], 9: [0, 1] }, rullista: [0, 1],
+      typ: "lucktext", nivaerPerArskurs: { 7: [3], 8: [1], 9: [1] }, rullista: [0, 1],
       ordlista: ["neutroner", "elektroner", "kedjereaktion", "kontrollerad", "okontrollerad", "atombomb", "kärnkraftverk"],
       varianter: [
         { text: "När en urankärna klyvs skickas det ut nya [neutroner|neutron] som kan klyva fler kärnor. Det kallas en [kedjereaktion]." },
@@ -54,7 +54,7 @@ Portal.uppgifter([
       ] },
 
     { id: "ke-kedja-rakna", kapitel: "karnenergi", avsnitt: ["kedja"], titel: "Kedjereaktion – hur många?",
-      typ: "flerval", nivaerPerArskurs: { 7: [3], 8: [2], 9: [1, 2] },
+      typ: "flerval", nivaerPerArskurs: { 7: [3], 8: [1,2], 9: [1, 2] },
       varianter: [
         { fraga: "Varje klyvning ger 2 neutroner som klyver 2 nya kärnor. Första generationen har 1 klyvning. Hur många klyvningar är det i 4:e generationen?",
           alt: [ { t: "8", s: "ratt", f: "antalet fördubblas: 1 → 2 → 4 → 8." },
@@ -69,7 +69,7 @@ Portal.uppgifter([
       ] },
 
     { id: "ke-bomb-kraft-sortera", kapitel: "karnenergi", avsnitt: ["kedja", "karnkraft"], titel: "Atombomb eller kärnkraftverk? – sortera",
-      typ: "sortera", nivaerPerArskurs: { 7: [3], 8: [2], 9: [1] },
+      typ: "sortera", nivaerPerArskurs: { 7: [3], 8: [1], 9: [1] },
       varianter: [
         { grupper: ["Atombomb", "Kärnkraftverk"],
           saker: [["Okontrollerad kedjereaktion", 0], ["All energi frigörs på en gång", 0], ["Användes mot Hiroshima och Nagasaki", 0],
@@ -79,7 +79,7 @@ Portal.uppgifter([
     /* ---------- Kärnkraftverk ---------- */
 
     { id: "ke-delar-para", kapitel: "karnenergi", avsnitt: ["karnkraft"], titel: "Kärnkraftverkets delar – para ihop",
-      typ: "para", nivaerPerArskurs: { 7: [2], 8: [1, 2], 9: [1] },
+      typ: "para", nivaerPerArskurs: { 7: [3], 8: [1, 2], 9: [1,2] },
       varianter: [
         { rubrik: "Para ihop delen med dess uppgift.",
           par: [["Kärnbränsle", "Uran som klyvs och ger värme"], ["Styrstavar", "Fångar neutroner och styr kedjereaktionen"],
@@ -91,7 +91,7 @@ Portal.uppgifter([
       ] },
 
     { id: "ke-styrstavar", kapitel: "karnenergi", avsnitt: ["karnkraft"], titel: "Kärnkraftverk – välj rätt",
-      typ: "flerval", nivaerPerArskurs: { 7: [3], 8: [2], 9: [1, 2] },
+      typ: "flerval", nivaerPerArskurs: { 7: [3], 8: [1,2], 9: [1, 2] },
       varianter: [
         { fraga: "Reaktorn blir för varm. Vad gör man för att minska antalet klyvningar?",
           alt: [ { t: "Skjuter in styrstavarna längre", s: "ratt", f: "styrstavarna fångar fler neutroner, så färre kärnor klyvs." },
@@ -108,7 +108,7 @@ Portal.uppgifter([
     /* ---------- Fusion ---------- */
 
     { id: "ke-fusion-text", kapitel: "karnenergi", avsnitt: ["fusion"], titel: "Fusion – fyll i",
-      typ: "lucktext", nivaerPerArskurs: { 7: [2], 8: [1], 9: [0, 1] }, rullista: [0, 1],
+      typ: "lucktext", nivaerPerArskurs: { 7: [3], 8: [1], 9: [1] }, rullista: [0, 1],
       ordlista: ["fusion", "fission", "lätta", "tunga", "väte", "uran", "helium", "solen", "månen", "hög temperatur", "låg temperatur"],
       varianter: [
         { text: "Vid [fusion] slås två [lätta] atomkärnor ihop till en tyngre kärna." },
@@ -116,8 +116,8 @@ Portal.uppgifter([
         { text: "Fusion kräver mycket [hög temperatur], eftersom kärnorna är positivt laddade och stöter bort varandra." }
       ] },
 
-    { id: "ke-fission-fusion-sortera", kapitel: "karnenergi", avsnitt: ["fission", "fusion"], titel: "Fission eller fusion? – sortera",
-      typ: "sortera", nivaerPerArskurs: { 7: [3], 8: [2], 9: [1] },
+    { id: "ke-fission-fusion-sortera", kapitel: "karnenergi", avsnitt: ["fusion"], titel: "Fission eller fusion? – sortera",
+      typ: "sortera", nivaerPerArskurs: { 7: [3], 8: [1], 9: [1] },
       varianter: [
         { grupper: ["Fission", "Fusion"],
           saker: [["En tung kärna klyvs", 0], ["Uran", 0], ["Används i kärnkraftverk", 0], ["Startar med en neutron", 0],
@@ -125,7 +125,7 @@ Portal.uppgifter([
       ] },
 
     { id: "ke-solen", kapitel: "karnenergi", avsnitt: ["fusion"], titel: "Fusion och solen – välj rätt",
-      typ: "flerval", nivaerPerArskurs: { 7: [2], 8: [1, 2], 9: [1] },
+      typ: "flerval", nivaerPerArskurs: { 7: [3], 8: [1, 2], 9: [1,2] },
       varianter: [
         { fraga: "Varifrån får solen sin energi?",
           alt: [ { t: "Fusion – vätekärnor slås ihop till helium", s: "ratt", f: "i solens kärna är det cirka 15 miljoner grader, så vätekärnor kan slås ihop." },
@@ -142,7 +142,7 @@ Portal.uppgifter([
     /* ---------- E = mc² ---------- */
 
     { id: "ke-emc2", kapitel: "karnenergi", avsnitt: ["emc2"], titel: "Massa blir energi – välj rätt",
-      typ: "flerval", nivaerPerArskurs: { 7: [3], 8: [2, 3], 9: [2] },
+      typ: "flerval", nivaerPerArskurs: { 7: [3], 8: [2], 9: [2] },
       varianter: [
         { fraga: "Efter en fission väger delarna lite mindre än innan. Vart tog massan vägen?",
           alt: [ { t: "Den blev energi", s: "ratt", f: "enligt E = mc² kan massa omvandlas till energi." },
@@ -159,7 +159,7 @@ Portal.uppgifter([
     /* ---------- Hela kapitlet ---------- */
 
     { id: "ke-sf", kapitel: "karnenergi", titel: "Kärnenergi – sant eller falskt",
-      typ: "santfalskt", nivaerPerArskurs: { 7: [3], 8: [2], 9: [1, 2] },
+      typ: "santfalskt", nivaerPerArskurs: { 7: [3], 8: [1], 9: [1] },
       varianter: [
         { pst: [["Vid fission klyvs en tung kärna.", true], ["Vid fusion slås lätta kärnor ihop.", true],
                 ["Solen får sin energi från fission.", false], ["Styrstavar fångar upp neutroner.", true],
