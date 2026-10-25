@@ -1,0 +1,154 @@
+---
+kapitel: mikrober
+---
+
+# Mikrober
+
+Runt omkring oss, och i och på vår kropp, finns miljarder levande organismer som är för små för att synas. De kallas mikrober.
+
+## Vad är mikrober? {#vad}
+
+**Mikrober** – förkortning av *mikroorganismer* – är små levande organismer som är för små för att ses med blotta ögat. På 1600-talet uppfanns mikroskopet, och då kunde man för första gången se dem. Det gav forskarna en ny förståelse för sjukdomar, smitta och hur saker bryts ner.
+
+Mikrober är inte bra eller dåliga. Precis som vi försöker de överleva. Ibland innebär deras överlevnad att de måste angripa oss – på samma sätt som en tiger som jagar ett rådjur inte är "ond", den försöker bara överleva.
+
+- De flesta mikrober är **neutrala** – de påverkar oss inte.
+- Många är **nyttiga** – de hjälper oss, till exempel i tarmen.
+- Några är **skadliga** – de orsakar sjukdom. De kallas **patogener**.
+
+> **Begrepp**
+> **mikrober** – små levande organismer som är för små för att ses med blotta ögat
+> **patogen** – en organism som orsakar sjukdom hos sin värd
+
+![mikrober](bilder/mikrobtyper.svg)
+Bild: De sex grupperna av mikrober som vi läser om i det här kapitlet.
+
+> **Viktigt att komma ihåg**
+> - **Mikrober** är levande organismer som är för små för att synas utan mikroskop.
+> - De flesta mikrober är ofarliga eller nyttiga.
+> - Mikrober som orsakar sjukdom kallas **patogener**.
+
+## Bakterier {#bakterier}
+
+**Bakterier** är mycket små, **encelliga** organismer som finns nästan överallt. De har en enkel uppbyggnad och **saknar cellkärna** – arvsmassan ligger fritt i cellen. Bakterier hör till de första organismerna på jorden och fanns redan för över 3 000 miljoner år sedan.
+
+![bakteriecell](bilder/bakteriecell.svg)
+Bild: En bakteriecell. Arvsmassan ligger fritt i cellen.
+
+Bakterier förökar sig genom att **dela sig**. Vid rätt temperatur och med mycket näring kan det gå mycket snabbt. Om det blir för kallt, varmt eller torrt kan vissa bakterier bilda **sporer** – ett skal som skyddar dem länge.
+
+Bakterier delas in i tre grupper efter hur de ser ut:
+
+![bakterieformer](bilder/bakterieformer.svg)
+Bild: De tre formerna av bakterier.
+
+| Form | Utseende | Exempel på sjukdom |
+|---|---|---|
+| **Kocker** | runda, sitter ofta ihop | halsfluss, lunginflammation |
+| **Baciller** | stavformade | stelkramp, salmonella |
+| **Spiriller** | spiralformade | magsår |
+
+**De flesta bakterier är ofarliga** – färre än 1 procent anses vara skadliga. Många är dessutom nödvändiga för oss. Bakterier på huden skyddar mot skadliga bakterier, och bakterier i tarmen hjälper till med matsmältningen och tillverkar vitaminer.
+
+Men bakterier kan också orsaka allvarliga sjukdomar, till exempel kolera, pest, tuberkulos och lunginflammation. De flesta bakterieinfektioner kan i dag behandlas med **antibiotika** – mer om det i kapitlet *Bota och förebygga*.
+
+> **Begrepp**
+> **bakterier** – mycket små encelliga organismer utan cellkärna som finns nästan överallt
+> **antibiotika** – läkemedel som dödar bakterier eller hindrar dem från att växa och föröka sig
+
+::: fördjupning åk 7 Bakterier och mat
+För att skydda mat mot bakterier används bland annat **kyla** (kylskåp), **torkning** (russin, kryddor), **saltning** (sill), **rökning** (korv), **syra** (ättiksgurka) och **mycket socker** (sylt). Alla metoderna gör det svårt för bakterierna att växa.
+:::
+
+> **Viktigt att komma ihåg**
+> - Bakterier är **encelliga** och **saknar cellkärna**.
+> - De förökar sig genom **delning**.
+> - Tre former: **kocker** (runda), **baciller** (stavar) och **spiriller** (spiraler).
+> - De flesta bakterier är ofarliga eller nyttiga – färre än 1 % är skadliga.
+
+## Virus {#virus}
+
+Ett **virus** är en liten partikel som består av **arvsmassa** (DNA eller RNA) inuti ett **hölje av protein**. Virus är många gånger mindre än bakterier och kan bara ses i ett elektronmikroskop.
+
+Virus kan **inte föröka sig på egen hand**. De måste ta sig in i en cell hos en annan organism – en **värd** – och ta över den.
+
+![virus förökar sig](bilder/virus-forokning.svg)
+Bild: Så förökar sig ett virus. Cellen tvingas tillverka nya virus.
+
+**Lever virus?** De flesta forskare säger nej. Virus har arvsmassa och utvecklas, precis som levande organismer. Men de är inte uppbyggda av celler, de har ingen ämnesomsättning, de växer inte och de kan inte föröka sig själva. Virus har kallats "organismer på kanten av livet".
+
+Många sjukdomar orsakas av virus, till exempel förkylning, influensa, mässling och covid-19. Det finns minst 600 virus som kan drabba människor – ungefär hälften har med förkylningar att göra. Virus förändrar sig hela tiden, så att immunförsvaret inte känner igen dem. Därför kan man bli förkyld år efter år.
+
+Det finns också **nyttiga virus**. Vissa angriper bakterier och andra skadliga mikrober och skyddar på så sätt sin värd.
+
+> **Begrepp**
+> **virus** – en liten partikel av arvsmassa i ett proteinhölje som behöver en värdcell för att föröka sig
+
+> **Viktigt att komma ihåg**
+> - Ett virus är **arvsmassa** i ett **proteinhölje**.
+> - Virus måste ta sig in i en **värdcell** för att föröka sig.
+> - Virus räknas oftast **inte** som levande – de består inte av celler.
+> - **Antibiotika fungerar inte mot virus.**
+
+## Svampar {#svampar}
+
+**Svampar** är en egen grupp av organismer – de är varken växter eller djur. Hit hör stora skogssvampar, men också **mögel** och **jästsvampar**. Svampar kan vara **encelliga** (som jäst) eller **flercelliga** (som mögel och skogssvamp).
+
+Svampar är viktiga **nedbrytare** i naturen – de bryter ner döda växter och djur så att näringen kan användas igen. Vi använder jäst när vi bakar bröd. Vissa svampar lever tillsammans med växter och hjälper dem att ta upp näring.
+
+Svampar kan också orsaka sjukdomar, både hos växter och människor. Hos människor är svampinfektioner oftast inte så allvarliga, till exempel fotsvamp, svamp på naglarna och i munnen.
+
+> **Begrepp**
+> **svampar** – organismer som varken är växter eller djur, till exempel mögel, jäst och skogssvampar
+
+::: fördjupning åk 7 Svampens uppbyggnad
+Många svampar består av långa, tunna trådar som kallas **hyfer**. Det vi kallar en svamp i skogen är bara svampens fruktkropp – den största delen är ett nät av hyfer i marken.
+:::
+
+> **Viktigt att komma ihåg**
+> - Svampar är varken växter eller djur.
+> - De kan vara encelliga (jäst) eller flercelliga (mögel, skogssvamp).
+> - Svampar är viktiga **nedbrytare** i naturen.
+
+## Protozoer och parasiter {#protozoer}
+
+**Protozoer** (urdjur) är **encelliga** organismer som – till skillnad från bakterier – **har en cellkärna**. De finns ofta i vatten, och om man tittar på en vattendroppe i mikroskop kan man se dem. Kända exempel är amöbor och toffeldjur.
+
+De flesta protozoer är ofarliga. Men vissa är **parasiter** och orsakar sjukdomar. Den mest kända är **malaria**, som sprids med myggor och varje år orsakar hundratusentals dödsfall i världen.
+
+En **parasit** lever på eller i en annan organism – **värden** – och får sin näring därifrån. Det skadar ofta värden.
+
+> **Begrepp**
+> **protozoer** – encelliga organismer med cellkärna, ofta i vatten
+> **parasit** – en organism som lever på eller i en annan organism (värden) och får näring från den
+
+::: fördjupning åk 7 Eukaryota organismer
+Alla organismer delas in i tre stora grupper – **domäner** – efter hur deras celler är byggda:
+- **Bakterier** – celler utan cellkärna
+- **Arkéer** – celler utan cellkärna, men med annorlunda arvsmassa och cellvägg
+- **Eukaryoter** – celler **med cellkärna** och andra delar (organeller). Hit hör djur, växter, svampar, protozoer och alger.
+
+Protozoer är alltså **eukaryota** – de har en cellkärna, precis som våra egna celler.
+:::
+
+> **Viktigt att komma ihåg**
+> - Protozoer är encelliga och **har cellkärna**.
+> - En **parasit** lever på eller i en värd och skadar den.
+> - **Malaria** orsakas av en protozo och sprids med myggor.
+
+## Alger och arkéer {#alger}
+
+**Alger** gör **fotosyntes**, precis som växter, och lever oftast i vatten. Man kan tänka på dem som enkla växter – de saknar rötter, stjälkar och blad. Alger kan vara encelliga eller flercelliga. De är viktiga eftersom de bildar mycket av jordens syre och är mat för andra organismer i vattnet.
+
+Alger orsakar inga sjukdomar i sig. Men när det finns väldigt mycket alger – en **algblomning** – kan de bilda gifter som är farliga för människor och djur.
+
+**Arkéer** liknar bakterier – de är encelliga och saknar cellkärna – men de är en egen grupp. Många arkéer lever i **extrema miljöer**: i heta källor, mycket salt vatten, sura sjöar eller vid varma källor djupt nere på havsbotten. Det finns inga kända arkéer som orsakar sjukdom.
+
+> **Begrepp**
+> **alger** – organismer som gör fotosyntes och oftast lever i vatten
+> **arkéer** – encelliga organismer som liknar bakterier men är en egen grupp, ofta i extrema miljöer
+
+> **Viktigt att komma ihåg**
+> - **Alger** gör fotosyntes och bildar syre. Algblomning kan ge gifter.
+> - **Arkéer** liknar bakterier men är en egen grupp. De lever ofta i extrema miljöer.
+> - Arkéer orsakar inga kända sjukdomar.

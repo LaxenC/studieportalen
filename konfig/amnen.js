@@ -22,7 +22,7 @@ Portal.amnen([
     omraden: [] },
   { id: "biologi",   namn: "Biologi",   bild: "[[amne-biologi]]",
     text: "Kroppen, ekologi, celler och evolution.",
-    omraden: [] },
+    omraden: ["mikrober-immunforsvar"] },
   { id: "matematik", namn: "Matematik", bild: "[[amne-matematik]]",
     text: "Tal, algebra, geometri och statistik.",
     omraden: [] }
