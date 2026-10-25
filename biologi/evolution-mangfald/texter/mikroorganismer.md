@@ -78,14 +78,14 @@ Mikrober är inte bra eller dåliga. Precis som vi försöker de överleva. Ibla
 
 ### Det finns 6 grupper av mikrober
 
-| | Grupp | Cell, arvsmassa (DNA), fabrik | Kännetecken |
-|---|---|---|---|
-| ![bakterier](bilder/bakterier.svg) | **Bakterier** | En cell – ingen cellkärna, arvmassa (DNA) ligger fritt i cellen - har fabriker | Finns nästan överallt. Viktiga nedbrytare. Några orsakar sjukdom. |
-| ![virus](bilder/virus.svg) | **Virus** | Ingen cell – arvmassa (DNA) ligger inuti ett skal av protein - inga fabriker |  Kan bara föröka sig av sig själv. |
-| ![svampar](bilder/svampar.svg) | **Svampar** | En eller många celler – med arvsmassa (DNA) cellkärna - har fabriker | Varken växter eller djur. Nedbrytare, till exempel mögel och jäst. |
-| ![protozoer](bilder/protozoer.svg) | **Protozoer** | En celle – med arvsmassa (DNA) cellkärna - har fabriker | Liknar små djur – de rör sig och äter på liknande sätt som djur. Vissa är parasiter, till exempel den som orsakar malaria. |
-| ![alger](bilder/alger.svg) | **Alger** | En eller många celler –  – med arvsmassa (DNA) cellkärna - har fabriker | Gör fotosyntes och bildar syre. Lever oftast i vatten. |
-| ![arkéer](bilder/arkeer.svg) | **Arkéer** | En cell – ingen cellkärna, arvmassa (DNA) ligger fritt i cellen - har fabriker | Liknar bakterier. Lever ofta i extrema miljöer, till exempel heta källor. |
+| | Grupp | Celler | Arvsmassa (DNA) | Fabriker | Kännetecken |
+|---|---|---|---|---|---|
+| ![bakterier](bilder/bakterier.svg) | **Bakterier** | En cell | Ligger fritt i cellen | ✅ Ja | Finns nästan överallt. Viktiga nedbrytare. Några orsakar sjukdom. |
+| ![virus](bilder/virus.svg) | **Virus** | Ingen cell | Inuti ett skal av protein | ❌ Nej | Kan bara föröka sig inne i en värdcell – använder cellens fabriker. |
+| ![svampar](bilder/svampar.svg) | **Svampar** | En eller många | I en cellkärna | ✅ Ja | Varken växter eller djur. Nedbrytare, till exempel mögel och jäst. |
+| ![protozoer](bilder/protozoer.svg) | **Protozoer** | En cell | I en cellkärna | ✅ Ja | Liknar små djur – de rör sig och äter. Vissa är parasiter, till exempel den som orsakar malaria. |
+| ![alger](bilder/alger.svg) | **Alger** | En eller många | I en cellkärna | ✅ Ja | Gör fotosyntes och bildar syre. Lever oftast i vatten. |
+| ![arkéer](bilder/arkeer.svg) | **Arkéer** | En cell | Ligger fritt i cellen | ✅ Ja | Liknar bakterier. Lever ofta i extrema miljöer, till exempel heta källor. |
 
 > **💬 Förklara så här** {.green}
 > *Varför upptäckte man mikroorganismerna först på 1600-talet?*<br>
