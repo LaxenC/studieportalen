@@ -75,6 +75,9 @@ För att skydda mat mot bakterier används bland annat **kyla** (kylskåp), **to
 
 Ett **virus** är en liten partikel som består av **arvsmassa** (DNA eller RNA) inuti ett **hölje av protein**. Virus är många gånger mindre än bakterier och kan bara ses i ett elektronmikroskop.
 
+![virusets delar](bilder/virusdelar.svg)
+Bild: Ett virus är arvsmassa i ett hölje av protein. Det är ingen cell och har inga egna fabriker.
+
 Virus kan **inte föröka sig på egen hand**. De måste ta sig in i en cell hos en annan organism – en **värd** – och ta över den.
 
 ![virus förökar sig](bilder/virus-forokning.svg)

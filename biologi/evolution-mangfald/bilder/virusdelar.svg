@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 10 680 300" font-family="Inter,Arial,sans-serif" text-anchor="middle">
+<rect width="680" height="300" fill="#fff"/>
+<text x="230" y="34" font-size="18" font-weight="800" fill="#1d2a3a">Virus</text>
+<line x1="307" y1="176" x2="329" y2="181" stroke="#2f9e57" stroke-width="5"/><circle cx="329" cy="181" r="8" fill="#2f9e57"/><line x1="287" y1="211" x2="302" y2="227" stroke="#2f9e57" stroke-width="5"/><circle cx="302" cy="227" r="8" fill="#2f9e57"/><line x1="251" y1="232" x2="257" y2="253" stroke="#2f9e57" stroke-width="5"/><circle cx="257" cy="253" r="8" fill="#2f9e57"/><line x1="209" y1="232" x2="204" y2="254" stroke="#2f9e57" stroke-width="5"/><circle cx="204" cy="254" r="8" fill="#2f9e57"/><line x1="174" y1="212" x2="158" y2="227" stroke="#2f9e57" stroke-width="5"/><circle cx="158" cy="227" r="8" fill="#2f9e57"/><line x1="153" y1="176" x2="132" y2="182" stroke="#2f9e57" stroke-width="5"/><circle cx="132" cy="182" r="8" fill="#2f9e57"/><line x1="153" y1="134" x2="131" y2="129" stroke="#2f9e57" stroke-width="5"/><circle cx="131" cy="129" r="8" fill="#2f9e57"/><line x1="173" y1="99" x2="158" y2="83" stroke="#2f9e57" stroke-width="5"/><circle cx="158" cy="83" r="8" fill="#2f9e57"/><line x1="209" y1="78" x2="203" y2="57" stroke="#2f9e57" stroke-width="5"/><circle cx="203" cy="57" r="8" fill="#2f9e57"/><line x1="251" y1="78" x2="256" y2="56" stroke="#2f9e57" stroke-width="5"/><circle cx="256" cy="56" r="8" fill="#2f9e57"/><line x1="286" y1="98" x2="302" y2="83" stroke="#2f9e57" stroke-width="5"/><circle cx="302" cy="83" r="8" fill="#2f9e57"/><line x1="307" y1="134" x2="328" y2="128" stroke="#2f9e57" stroke-width="5"/><circle cx="328" cy="128" r="8" fill="#2f9e57"/><circle cx="230" cy="155" r="80" fill="#2f9e57"/><circle cx="230" cy="155" r="68" fill="#eaf7ee"/>
+<path d="M188 140 C200 112 222 170 238 138 S270 112 276 146 S246 186 222 170 S190 182 186 160" fill="none" stroke="#c4524b" stroke-width="4" stroke-linecap="round"/>
+<line x1="415" y1="98" x2="306" y2="117" stroke="#4a5568" stroke-width="2"/><circle cx="306" cy="117" r="4.5" fill="#4a5568"/>
+<text x="425" text-anchor="start" y="88" font-size="17" font-weight="800" fill="#1d2a3a">hölje av protein</text>
+<text x="425" text-anchor="start" y="110" font-size="15" fill="#4a5568">skyddar arvsmassan</text>
+<line x1="415" y1="202" x2="274" y2="150" stroke="#4a5568" stroke-width="2"/><circle cx="274" cy="150" r="4.5" fill="#4a5568"/>
+<text x="425" text-anchor="start" y="200" font-size="17" font-weight="800" fill="#1d2a3a">arvsmassa (DNA eller RNA)</text>
+<text x="425" text-anchor="start" y="222" font-size="15" fill="#4a5568">receptet för nya virus</text>
+<text x="340" y="302" font-size="15" font-weight="700" fill="#4a5568">Ingen cell, inga fabriker – viruset måste använda en värdcells fabriker.</text>
+</svg>

@@ -127,6 +127,9 @@ Bakterier är viktiga **nedbrytare** i naturen. Vissa bakterier gör fotosyntes 
 
 Ett **virus** är en liten partikel av **arvsmassa** i ett **hölje av protein**. Virus kan inte föröka sig själva – de måste ta sig in i en cell hos en **värd** och få den att tillverka nya virus.
 
+![virusets delar](bilder/virusdelar.svg)
+Bild: Ett virus är arvsmassa i ett hölje av protein. Det är ingen cell och har inga egna fabriker.
+
 Därför räknas virus oftast **inte** som levande. De har arvsmassa och utvecklas, men de består inte av celler, har ingen ämnesomsättning och växer inte. De har kallats "organismer på kanten av livet". Det visar att det inom biologin inte alltid finns tydliga gränser – även om vi människor gärna vill ha det.
 
 > **💬 Förklara så här** {.green}
