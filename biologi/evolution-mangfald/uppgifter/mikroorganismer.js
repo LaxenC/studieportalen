@@ -77,12 +77,30 @@ Portal.uppgifter([
                  { t: "Mikrober finns bara på smutsiga ställen", s: "fel", f: "mikrober finns nästan överallt – även i och på din kropp." } ] }
       ] },
 
+    { id: "mio-grupper-skriv", kapitel: "mikroorganismer", avsnitt: ["vad"], titel: "De sex grupperna av mikrober – skriv",
+      typ: "lucktext", nivaer: [0, 1], rullista: [0],
+      ordlista: ["bakterier", "virus", "svampar", "protozoer", "alger", "arkéer", "växter", "insekter", "maskar"],
+      varianter: [
+        { text: "Det finns sex grupper av mikrober: [*bakterier|bakterie], [*virus], [*svampar|svamp], [*protozoer|protozo|protozoa], [*alger|alg] och [*arkéer|arkeer|arké|arke]." }
+      ] },
+
     { id: "mio-grupper-para", kapitel: "mikroorganismer", avsnitt: ["vad"], titel: "Mikroorganismernas grupper – para ihop",
       typ: "para", nivaer: [1],
       varianter: [
-        { rubrik: "Para ihop mikroben med rätt beskrivning.",
-          par: [["Svampar", "Varken växter eller djur – till exempel jäst och mögel"], ["Protozoer", "Encelliga organismer med cellkärna"],
-                ["Alger", "Gör fotosyntes och lever oftast i vatten"], ["Arkéer", "Liknar bakterier och lever ofta i extrema miljöer"]] }
+        { rubrik: "Para ihop gruppen med rätt beskrivning.",
+          par: [["Bakterier", "En cell utan cellkärna – finns nästan överallt"], ["Virus", "Ingen cell – arvsmassa i ett hölje av protein"],
+                ["Svampar", "Varken växter eller djur – till exempel jäst och mögel"], ["Protozoer", "En cell med cellkärna – liknar små djur som rör sig och äter"],
+                ["Alger", "Gör fotosyntes och bildar syre"], ["Arkéer", "Liknar bakterier och lever ofta i extrema miljöer"]] }
+      ] },
+
+    { id: "mio-grupper-celler", kapitel: "mikroorganismer", avsnitt: ["vad", "cell"], titel: "Mikrobernas celler och arvsmassa – para ihop",
+      typ: "para", nivaer: [2],
+      varianter: [
+        { rubrik: "Välj hur många celler gruppen har och var arvsmassan finns.",
+          rubriker: ["Grupp", "Celler", "Arvsmassan"],
+          par: [["Bakterier", "En cell", "Ligger fritt i cellen"], ["Virus", "Ingen cell", "I ett hölje av protein"],
+                ["Svampar", "En eller många", "I en cellkärna"], ["Protozoer", "En cell", "I en cellkärna"],
+                ["Alger", "En eller många", "I en cellkärna"], ["Arkéer", "En cell", "Ligger fritt i cellen"]] }
       ] },
 
     { id: "mik-protozoer-text", kapitel: "mikroorganismer", avsnitt: ["vad"], titel: "Protozoer, alger och arkéer – fyll i",
