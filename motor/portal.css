@@ -204,3 +204,27 @@ section.avsnitt.ak-extra>.aktag{justify-self:start}
 .fd-ak>.fdtag{justify-self:start}
 .utm-t.fk-t{color:var(--green)}
 .lastext .rules td img{width:80px;max-width:none;height:auto;display:block}
+/* ---------- studieplan ---------- */
+.plan-ak{margin:0 0 12px;display:flex;gap:10px;align-items:center;flex-wrap:wrap;color:var(--muted)}
+.plan-status{margin-bottom:14px}
+.plan-status p{margin:0;color:var(--muted)}
+.plan-bar{height:12px;border-radius:99px;background:var(--bg);overflow:hidden}
+.plan-bar span{display:block;height:100%;background:var(--green);border-radius:99px;transition:width .3s}
+.plan-mal{list-style:none;margin:0;padding:0;display:grid;gap:14px}
+.plan-ett{border:2px solid transparent}
+.plan-ett.klar{border-color:var(--green-bd);background:var(--green-bg)}
+.plan-rubrik{display:flex;gap:12px;align-items:flex-start;flex-wrap:wrap}
+.plan-rubrik h2{font-size:1.15rem;margin:2px 0 0;flex:1;min-width:12rem}
+.plan-nr{flex:none;width:32px;height:32px;border-radius:50%;display:grid;place-items:center;font-weight:900;background:var(--bg)}
+.plan-ett.klar .plan-nr{background:var(--green);color:#fff}
+.plan-check{display:flex;gap:6px;align-items:center;font-weight:700;font-size:.9rem;color:var(--muted);cursor:pointer}
+.plan-check input{width:20px;height:20px;accent-color:var(--green)}
+.plan-avlista{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+.plan-av{display:flex;gap:8px 14px;align-items:center;flex-wrap:wrap;padding:10px 12px;border-radius:12px;background:var(--bg)}
+.plan-namn{flex:1;min-width:11rem}
+.plan-namn small{display:block;color:var(--muted);font-size:.8rem}
+.plan-knappar{display:flex;gap:6px;flex-wrap:wrap}
+.plan-knappar .ghostbtn{padding:5px 12px;font-size:.88rem;text-decoration:none}
+.plan-knappar small{color:var(--muted);font-weight:700}
+.plan-saknas{margin:0;padding:8px 12px;border-radius:10px;background:var(--orange-bg, #fff4e6);color:var(--ink);font-size:.92rem}
+.plan-fel{color:var(--proton, #c92a2a);font-weight:700;font-size:.9rem}

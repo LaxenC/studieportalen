@@ -596,3 +596,30 @@ Citattecken: använd raka `"` i `.js`-filerna, inte typografiska `”`.
 | `::: rad` · `::: åk 7-8` · `::: fördjupning åk 7` | block |
 | `![text](bilder/fil.png)` · `Bild:` · `[[ritning]]` | bilder |
 | `- (åk 9)` · `H~2~O` · `10^3^` · `**fet**` · `*kursiv*` | i texten |
+
+## Studieplan – en skräddarsydd del
+
+En studieplan plockar avsnitt ur ett eller flera arbetsområden och ordnar dem efter en lärares mål (till exempel en "studiekompis" eller en matris). Eleven får en egen sida med målen som checklista och knapparna **Läs**, **Plugga**, **Öva** och **Förklara** för varje avsnitt.
+
+1. Skapa en fil i mappen `planer/`, till exempel `planer/mikrober-ak7.js`. Kopiera gärna en befintlig plan.
+2. Skriv målen och vilka avsnitt de hör till som `"område/kapitel/avsnitt"`. Avsnittet kan utelämnas – då gäller hela kapitlet.
+3. `saknas: "…"` visar en ruta om att portalen inte täcker målet helt. Ett mål utan avsnitt får rutan automatiskt.
+4. Dela adressen `…/studieportalen/#/plan/mikrober-ak7`. Planen visas inte på startsidan.
+
+```js
+Portal.plan({
+  id: "mikrober-ak7",                 // samma som filnamnet
+  titel: "Mikrober – studiekompis",
+  text: "Det här ska du kunna.",
+  arskurs: 7,                         // (valfritt) eleven får en knapp för att byta till åk 7
+  mal: [
+    { text: "Lär dig de 3 typerna av mikrober.",
+      avsnitt: ["infektioner-immunforsvar/smitta/vadsmittar", "evolution-mangfald/mikroorganismer/virus"] },
+    { text: "Hur mikrober kan komma in i kroppen.",
+      avsnitt: ["infektioner-immunforsvar/forsvar/hud"],
+      saknas: "En samlad lista över vägarna in i kroppen finns inte än." }
+  ]
+});
+```
+
+Stavas ett område, kapitel eller avsnitt fel visas en röd varning på plansidan. Avsnittens id står i rubrikerna i texterna, `{#id}`, och i rullistorna på granska-sidan.

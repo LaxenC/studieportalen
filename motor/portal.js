@@ -7,6 +7,7 @@
      #/fysik/atom-och-karnfysik/las/stralning/alfa
      #/fysik/atom-och-karnfysik/ova?kapitel=stralning&avsnitt=alfa&stjarnor=2&kor
      #/fysik/atom-och-karnfysik/aktiviteter/kol14
+     #/plan/mikrober-ak7                 en studieplan (planer/mikrober-ak7.js)
    Rörs inte för att lägga till innehåll.
    ===================================================================== */
 let AKTIV_AK = hamtaAk();
@@ -181,6 +182,7 @@ async function route() {
   // Samma kapitel – bara scrolla till avsnittet
   if (d[2] === "las" && d[3] && AKTUELLT.nyckel.startsWith(`las:${d[0]}/${d[1]}/${d[3]}:${AK()}`) && vy().querySelector(".avmeny")) { scrollaTill(d[4]); return; }
   if (!d.length) { AKTUELLT.nyckel = ""; return visaStart(); }
+  if (d[0] === "plan" && d[1]) return visaPlan(d[1]);
   const a = amneAv(d[0]); if (!a) { AKTUELLT.nyckel = ""; return visaStart(); }
   if (d.length === 1) { AKTUELLT.nyckel = ""; return visaAmne(a); }
   const o = Portal.omraden[d[1]]; if (!o || o.amne !== a.id) return visaAmne(a);
