@@ -8,29 +8,30 @@ Din kropp är i ständig kamp mot mikrober. Den har flera försvar – från hud
 
 ## Översikt – kroppens försvar {#oversikt}
 
-Kroppens försvar mot mikrober kan delas in i två delar:
+Kroppens försvar mot pantogener kan delas in i två delar:
 
 1. **Yttre försvar** – huden och slemhinnorna stänger ute mikroberna, så att de inte kommer in i kroppen.
-2. **Inre försvar** – om mikroberna ändå tar sig in tar **immunförsvaret** över.
+2. **Inre försvar** – om mikroberna ändå tar sig in tar våra inre delar över .
 
-Immunförsvaret delas i sin tur in i två delar:
-- Det **medfödda** (ospecifika) försvaret reagerar direkt och likadant mot alla mikrober, till exempel med inflammation och ätarceller.
-- Det **förvärvade** (specifika) försvaret känner igen en viss mikrob. Det tillverkar antikroppar och bildar minnesceller. Det tar längre tid att komma igång, men det kommer ihåg mikroben till nästa gång.
+Kroppens fösvar som även kallas **immunförsvaret** delas i sin tur in i två delar:
+- Det **medfödda** (ospecifika) finns från födseln och reagerar snabbt på många olika mikrober.
+- Det **förvärvade** (specifika) lär sig känna igen specifika mikrober och bildar minnesceller som hjälper kroppen att bekämpa dem snabbare nästa gång.
 
 ![kroppens försvar](bilder/forsvar-oversikt.svg)
 Bild: Kroppens försvar delas in i ett yttre och ett inre försvar. Det inre försvaret – immunförsvaret – är medfött eller förvärvat.
 
 > **Begrepp**
+> **immunförsvaret** - kroppens försvar mot pantogener
 > **yttre försvar** – huden och slemhinnorna, som stänger ute mikroberna
 > **inre försvar** – immunförsvaret, som bekämpar mikrober som har tagit sig in i kroppen
-> **medfött försvar** – ospecifikt försvar som reagerar likadant mot alla mikrober
-> **förvärvat försvar** – specifikt försvar som känner igen en viss mikrob och kommer ihåg den
-
+> **medfött försvar** – (ospecifikt) försvar  som finns från födseln och reagerar snabbt på många olika mikrober.
+> **förvärvat försvar** – (specifikt) försvar som lär sig känna igen en viss mikrob och kommer ihåg den
 > **💬 Förklara så här** {.green}
 > *Varför kallas en del av immunförsvaret förvärvat?*<br>
 > Det *förvärvade försvaret* finns inte färdigt när vi föds. Kroppen lär sig känna igen varje mikrob först när den har träffat på den, och sparar det i *minnesceller*. **Därför** säger man att försvaret är förvärvat – det byggs upp under livet.
 
 > **Viktigt att komma ihåg**
+> - **immunförsvaret**: kroppens försvar
 > - **Yttre försvar**: huden och slemhinnorna stänger ute mikroberna.
 > - **Inre försvar** = immunförsvaret. Det är **medfött** (ospecifikt) eller **förvärvat** (specifikt).
 > - Det medfödda försvaret reagerar likadant mot alla mikrober. Det förvärvade känner igen en viss mikrob.
@@ -41,10 +42,10 @@ Kroppens första försvar är det **yttre försvaret** – att stänga mikrobern
 
 - **Huden** är en tät mur som mikrober har svårt att ta sig igenom. Nyttiga bakterier på huden konkurrerar dessutom med de skadliga.
 - **Slemhinnor** finns i näsan, munnen, luftvägarna och tarmen. Slemmet fångar upp mikrober, och små hår i luftvägarna för ut slemmet.
-- **Magsaften** är så sur att de flesta mikrober i maten dör.
 - **Tårar och saliv** innehåller ämnen som bryter ner bakterier.
+- **Magsaften** är så sur att de flesta mikrober i maten dör. Magsaft är något som skapas i magsäcken det vill säga är inuti kroppen, men det räknas som ett ytrrefösvar eftersom den förhindrar att pantogenerna tar sig vidare in i kroppen.
 
-Om huden går sönder, eller mikrober på något annat sätt tar sig in, blir det en **infektion**.
+Om huden går sönder, eller pantogenerna på något annat sätt tar sig in, blir det en **infektion**.
 
 > **💬 Förklara så här** {.green}
 > *Varför kan ett sår bli infekterat?*<br>
@@ -56,15 +57,16 @@ Om huden går sönder, eller mikrober på något annat sätt tar sig in, blir de
 
 ## Medfött försvar – inflammation och ätarceller {#inflammation}
 
-När mikrober har tagit sig in startar kroppen direkt ett försvar som alltid ser likadant ut, oavsett vilken mikrob det är. Det kallas det **medfödda immunförsvaret** – eller det ospecifika försvaret. Det är en del av kroppens inre försvar.
+När pantogenerna har tagit sig in startar kroppen direkt ett försvar som alltid ser likadant ut, oavsett vilken pantogen det är. Det kallas det **medfödda immunförsvaret** – eller det ospecifika försvaret. Det är en del av kroppens inre försvar.
 
 Området blir **inflammerat** – rött, svullet, varmt och ömt. Det beror på att mer blod strömmar dit, med vita blodkroppar som ska bekämpa mikroberna.
 
-**Vita blodkroppar** är kroppens försvarsceller. En sorts vita blodkroppar är **ätarceller**. De äter upp mikrober och döda celler. Gult var i ett sår är ett tecken på att ätarcellerna har arbetat.
+**Vita blodkroppar** är kroppens försvarsceller. En sorts vita blodkroppar är **ätarceller**. De äter upp pantogener och döda celler. Gult var i ett sår är ett tecken på att ätarcellerna har arbetat. <br>
+Varet som bildas i ett sår består av döda vita blodkroppar, döda patogener och rester av skadade celler och vävnad. Den gula färgen kommer bland annat från de döda cellerna.
 
 > **Begrepp**
 > **vita blodkroppar** – kroppens försvarsceller
-> **ätarceller** – vita blodkroppar som äter upp mikrober och döda celler
+> **ätarceller** – en typ av vita blodkroppar som äter upp mikrober och döda celler
 
 > **💬 Förklara så här** {.green}
 > *Varför blir det rött och varmt runt ett sår?*<br>
@@ -73,15 +75,15 @@ Området blir **inflammerat** – rött, svullet, varmt och ömt. Det beror på 
 > **Viktigt att komma ihåg**
 > - Det **medfödda immunförsvaret** reagerar likadant mot alla mikrober.
 > - **Inflammation**: rött, svullet, varmt och ömt.
-> - **Ätarceller** äter upp mikroberna.
+> - **Ätarceller** en viss typ av vitablodkroppar som äter upp mikroberna.
 
 ## Lymfsystemet {#lymfsystemet}
 
-**Lymfsystemet** är ett nätverk av kärl och organ i hela kroppen. Det transporterar en klar vätska som kallas **lymfa**. Lymfsystemet hjälper till att hålla vätskebalansen i kroppen – lite som ett avloppssystem – och det transporterar vita blodkroppar dit de behövs.
+**Lymfsystemet**  är en del av immunförsvaret, men har också andra uppgifter. Det är ett nätverk av kärl och organ i hela kroppen som transporterar en klar vätska som kallas lymfa. Lymfsystemet samlar upp överflödig vätska från kroppens vävnader och för tillbaka den till blodet.
 
-I **lymfknutorna** samlas vita blodkroppar och "kontrollerar" lymfan. När du är sjuk kan lymfknutorna på halsen bli svullna – då arbetar försvaret där.
+I lymfknutorna finns många vita blodkroppar. De kan upptäcka patogener i lymfan och hjälpa kroppen att bekämpa dem. När du är sjuk kan lymfknutorna, till exempel på halsen, bli svullna eftersom immunförsvaret arbetar där
+**Lymfknutor** fungerar som kontrollstationer i lymfsystemet. Vita blodkroppar undersöker lymfan efter patogener. Om de hittar en patogen kan de starta en försvarsreaktion där vita blodkroppar hjälper till att bekämpa den.
 
-Lymfsystemet och immunförsvaret är egentligen inte samma sak, men de hänger så tätt ihop att vi behandlar dem som ett system här.
 
 > **Begrepp**
 > **lymfsystemet** – organ, kärl och vävnader som skyddar mot infektioner och håller vätskebalansen i kroppen
