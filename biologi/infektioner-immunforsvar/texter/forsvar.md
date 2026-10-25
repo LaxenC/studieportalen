@@ -126,15 +126,15 @@ Flera organ hör till immunförsvaret och lymfsystemet:
 
 Om det medfödda försvaret inte räcker startar det **förvärvade** (specifika) **immunförsvaret**. Det är mer träffsäkert – varje försvarscell känner igen bara en sorts patogen.
 
-Varje patogen har egna kännetecken på sin yta – **antigener**. Det är med hjälp av antigenerna som det förvärvade försvaret känner igen just den patogenen. Förenklat sker det i fyra steg:
+Varje patogen har egna kännetecken på sin yta – **antigener**. Det är med hjälp av antigenerna som det förvärvade försvaret känner igen just den patogenen. Förenklat sker det i fyra steg – *upptäcka, larma, angripa* och *minnas*:
 
-![immunsvaret](bilder/immunsvar.svg?v=3)
-Bild: Immunsvaret i fyra steg.
+![immunsvaret](bilder/immunsvar.svg?v=4)
+Bild: Immunsvaret i fyra steg: upptäcka, larma, angripa och minnas.
 
-1. **Ätarceller** känner igen patogenen på ett allmänt sätt och äter upp den. Sedan visar de upp antigenerna på sin yta – som ett "efterlysningsfoto".
-2. **T-hjälparceller** känner igen antigenerna och talar om för resten av försvaret vad det ska hålla utkik efter.
-3. **B-celler** tillverkar **antikroppar** som passar precis mot just den patogenen. Antikropparna fastnar på patogenen, märker ut den och gör den ofarlig.
-4. **Minnesceller** bildas. De kommer ihåg patogenen. Om samma patogen kommer tillbaka kan immunförsvaret reagera snabbare nästa gång. Minnesceller kan finnas kvar i många år, ibland hela livet.
+1. **Upptäcka** – ätarceller äter upp patogenen och visar upp dess *antigener* – som ett "efterlysningsfoto".
+2. **Larma** – försvaret känner igen antigenerna och larmar resten av immunförsvaret.
+3. **Angripa** – **antikroppar** märker ut patogenerna så att de kan förstöras, och kroppsceller som har blivit infekterade förstörs.
+4. **Minnas** – **minnesceller** kommer ihåg patogenen, så att försvaret går mycket snabbare nästa gång. Minnesceller kan finnas kvar i många år, ibland hela livet.
 
 Allt det här tar några dagar. Därför hinner man ofta bli sjuk första gången.
 
@@ -145,8 +145,12 @@ Allt det här tar några dagar. Därför hinner man ofta bli sjuk första gånge
 > **minnesceller** – celler som kommer ihåg en patogen så att försvaret går snabbare nästa gång
 
 ::: fördjupning åk 7 Immunsvaret steg för steg
-De fyra stegen ovan är förenklade. Det här händer också:
-- **Ätarcellerna** som visar upp antigener heter makrofager och dendritiska celler.
+De fyra stegen ovan är förenklade. Så här går det till mer i detalj:
+- **Upptäcka:** ätarcellerna som visar upp antigener heter makrofager och dendritiska celler.
+- **Larma:** det är **T-hjälparcellerna** som känner igen antigenerna och larmar resten av försvaret.
+- **Angripa:** **B-cellerna** tillverkar antikropparna, och **T-mördarcellerna** förstör de infekterade cellerna.
+
+Det här händer också:
 - **T-hjälparcellerna** skickar ut signalämnen som sätter igång både B-cellerna och T-mördarcellerna.
 - **Antikropparna** hindrar också patogenerna från att ta sig in i kroppens celler.
 - **T-mördarceller** tar hand om patogener som redan har tagit sig in i en kroppscell, till exempel virus. Den infekterade cellen visar upp virusets antigener på sin yta. T-mördarcellerna känner igen dem och förstör cellen genom att spruta in ett gift. Varje T-cell känner bara igen ett enda antigen. På samma sätt dödar de även cancerceller.
@@ -165,7 +169,7 @@ Bild: Hela immunsvaret, förenklat. Efter T-hjälparcellerna delar sig försvare
 
 > **Viktigt att komma ihåg**
 > - Det **förvärvade** (specifika) **immunförsvaret** känner igen en viss patogen på dess **antigener**.
-> - **Ätarceller** → **T-hjälparceller** → **B-celler och antikroppar** → **minnesceller**.
+> - Immunsvaret i fyra steg: **upptäcka** → **larma** → **angripa** → **minnas**.
 > - Antikroppar märker ut patogenerna och gör dem ofarliga.
 
 ## Immunminnet {#minne}

@@ -126,5 +126,12 @@ Portal.uppgifter([
                  { t: "Det är omöjligt – inflammation kommer bara av patogener", s: "fel", f: "även skador ger inflammation." },
                  { t: "Det är minnesceller som arbetar", s: "fel", f: "inflammationen hör till det medfödda försvaret." },
                  { t: "Det är en allergi", s: "fel", f: "rodnad och svullnad vid en skada är en inflammation." } ] }
+      ] },
+    { id: "for-fyra-steg", kapitel: "forsvar", avsnitt: ["immunsvar"], titel: "Upptäcka, larma, angripa, minnas – para ihop",
+      typ: "para", nivaer: [0, 1], iOrdning: true,
+      varianter: [
+        { rubrik: "Para ihop steget i immunsvaret med vad som händer.",
+          par: [["1. Upptäcka", "Ätarceller äter patogenen och visar upp antigener"], ["2. Larma", "Försvaret känner igen antigenerna och larmar"],
+                ["3. Angripa", "Antikroppar märker ut patogenerna och infekterade celler förstörs"], ["4. Minnas", "Minnesceller kommer ihåg patogenen till nästa gång"]] }
       ] }
 ]);
