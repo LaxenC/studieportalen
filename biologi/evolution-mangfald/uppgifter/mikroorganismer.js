@@ -158,7 +158,7 @@ Portal.uppgifter([
                 ["Hudbakterier som lever på oss utan att påverka oss", "Kommensalism"]] }
       ] },
 
-    { id: "mio-sortera-karna", kapitel: "mikroorganismer", avsnitt: ["cell", "vad"], titel: "Med eller utan cellkärna? – sortera",
+    { id: "mio-sortera-karna", kapitel: "mikroorganismer", avsnitt: ["vad"], titel: "Med eller utan cellkärna? – sortera",
       punkter: ["bakt-encellig", "virus-ingen-cell", "cell-arvsmassa"],
       typ: "sortera", nivaer: [1],
       varianter: [
