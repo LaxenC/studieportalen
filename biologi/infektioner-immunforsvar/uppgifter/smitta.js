@@ -64,7 +64,7 @@ Portal.uppgifter([
           ]}]},
    
           { id: "pat-mik-flerval", kapitel: "smitta", avsnitt: ["vadsmittar"], titel: "Vad är det som smittar – välj rätt",
-            typ: "flerval", nivaer: [1], punkter:["pat-mik}"],
+            typ: "flerval", nivaer: [1], punkter:["pat-mik"],
             varianter: [              
             {fraga: "Vilka patogener orsakar de flesta infektioner?",
               alt: [
