@@ -506,7 +506,7 @@ a.ghostbtn{text-decoration:none;white-space:nowrap}
 .komihag{border-top:1px dashed var(--line);padding-top:8px}
 .komihag ul{margin:4px 0 0;padding-left:1.2em;display:grid;gap:4px}
 .quick.lar{border-color:var(--green);color:var(--green)}
-.larlank{margin-left:8px}
+.larlank{margin-left:0}
 .nytt{border-radius:14px;padding:12px 16px;background:var(--yellow-bg,#fff8db);border:2px solid var(--yellow,#e8a100)}
 .nytt .fl{margin:0;font-weight:900}
 .nytt ul{margin:6px 0 0;padding-left:1.2em;display:grid;gap:4px}

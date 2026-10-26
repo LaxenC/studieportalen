@@ -116,7 +116,7 @@ function visaKapitel(o, kapId, avId) {
       <header class="kaphuvud"><p class="kapnr">Kapitel ${i + 1} av ${kaps.length}</p><h1>${esc(t.titel || k.namn)}</h1>${t.ingress ? `<p class="ingress">${t.ingress}</p>` : ""}</header>${t.intro ? `<div class="kaphuvud kapintro">${t.intro}</div>` : ""}
       ${avs.map(x => { const n = aktivaUppgifter(o, ak, kapId, x.id).length;
         return `<section class="avsnitt" id="av-${x.id}" data-av="${x.id}" ${x.ak ? `data-ak="${x.ak}"` : ""}><h2>${esc(x.rubrik)}</h2>${x.html}
-          ${n ? `<p class="ovahar"><a class="start" href="${ovaLank(x.id)}">Öva på det här <span>(${n} ${n === 1 ? "uppgift" : "uppgifter"})</span> →</a>${(x.punkter || []).length ? ` <a class="ghostbtn larlank" href="${lank(o.amne, o.id, "ova")}?kapitel=${kapId}&avsnitt=${x.id}&lar${fran(x.id)}">🎯 Öva tills du kan</a>` : ""}</p>` : ""}</section>`; }).join("")}
+          ${n && (x.punkter || []).length ? `<p class="ovahar"><a class="ghostbtn larlank" href="${lank(o.amne, o.id, "ova")}?kapitel=${kapId}&avsnitt=${x.id}&lar${fran(x.id)}">🎯 Öva tills du kan avsnittet</a></p>` : ""}</section>`; }).join("")}
       <footer class="kapslut">
         ${nKap ? `<a class="start" href="${ovaLank()}">Öva på hela kapitlet (${nKap}) →</a>` : ""}
         <div class="kapnav">${i > 0 ? `<a class="ghostbtn" href="${lank(o.amne, o.id, "las", kaps[i - 1].id)}">← ${esc(kaps[i - 1].namn)}</a>` : "<span></span>"}
