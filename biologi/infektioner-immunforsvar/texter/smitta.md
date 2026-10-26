@@ -8,7 +8,7 @@ Vad händer när vi blir sjuka – och hur sprids smittan mellan människor?
 
 ## Sjukdom och smitta {#sjukdom}
 
-En **sjukdom** är när något i kroppen inte fungerar som det ska. Alla sjukdomar orsakas inte av **patogener** (mikrober eller organismer som orsakar sjukdomar) – till exempel diabetes, allergier och cancer smittar inte. Men många vanliga sjukdomar orsakas av **patogener**: bakterier, virus, svampar eller parasiter.
+En **sjukdom** är när något i kroppen inte fungerar som det ska. Alla sjukdomar orsakas inte av **patogener** (mikrober eller organismer som orsakar sjukdomar) – till exempel diabetes, allergier och cancer smittar inte. Men många vanliga sjukdomar orsakas av **patogener**: bakterier, virus eller svampar.
 
 När en patogen tar sig in i kroppen och börjar föröka sig kallas det en **infektion**.
 
