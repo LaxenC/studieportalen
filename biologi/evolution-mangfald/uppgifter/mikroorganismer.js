@@ -139,7 +139,7 @@ Portal.uppgifter([
       ] },
 
     { id: "cell-flerval", kapitel: "mikroorganismer", avsnitt: ["cell"], titel: "Celler – välj rätt",
-      punkter: { 0: ["vad-mikrob"], 1: ["cell-encellig"], 2: ["cell-encellig"], 3: ["cell-arvsmassa"] },
+      punkter: { 0: ["vad-mikrob"], 1: ["cell-encellig"], 2: ["cell-encellig"]},
       typ: "flerval", nivaer: [1],
       varianter: [
         { fraga: "Ordet mikroorganism består av mikro + organism. Vad betyder det?",
@@ -164,7 +164,7 @@ Portal.uppgifter([
                  { t: "Virus", s: "fel", f: "cellkärnan innehåller cellens egen arvsmassa." } ] }
       ] },
 
-    { id: "cell-tre-saker", kapitel: "mikroorganismer", avsnitt: ["cell"], titel: "Vad klarar en cell på egen hand?",
+    { id: "cell-tre-saker", kapitel: "mikroorganismer", avsnitt: ["cell"], titel: "Vad klarar en cell på egen hand, som gör att den kan leva av sig själv?",
       typ: "valjflera", nivaer: [0, 1], punkter: ["cell-minsta"],
       varianter: [
         { fraga: "Vilka tre saker klarar en cell på egen hand?",
@@ -225,7 +225,7 @@ Portal.uppgifter([
       ] },
 
     { id: "mio-grupper-celler", kapitel: "mikroorganismer", avsnitt: ["vad", "cell"], titel: "Mikrobernas celler och arvsmassa – para ihop",
-      punkter: ["vad-grupper", "cell-arvsmassa"],
+      punkter: ["vad-grupper"],
       typ: "para", nivaer: [2],
       varianter: [
         { rubrik: "Välj hur många celler gruppen har och var arvsmassan finns.",
@@ -283,7 +283,7 @@ Portal.uppgifter([
       ] },
 
     { id: "mio-sortera-karna", kapitel: "mikroorganismer", avsnitt: ["vad"], titel: "Med eller utan cellkärna? – sortera",
-      punkter: ["bakt-encellig", "virus-ingen-cell", "cell-arvsmassa"],
+      punkter: ["bakt-encellig", "virus-ingen-cell"],
       typ: "sortera", nivaer: [1],
       varianter: [
         { grupper: ["Utan cellkärna", "Med cellkärna", "Inga celler"],
