@@ -73,7 +73,7 @@ Portal.uppgifter([
                 { t: "Bara bakterier", s: "fel", f: "Virus orsakar också många infektioner, även svampar och protozoer kan göra oss sjuka men de orsakar inte flest sjukdomar" }]},
             {fraga: "Vilket påstående om svampar och protozoer stämmer?",
               alt: [
-                { t: "Både svampar och protozoer kan göra människor sjuka.", s: "ratt", f: "Svampar kan orsaka exempelvis fotsvamp och protozoer kan orsaka malaria." },
+                { t: "Både svampar och protozoer kan göra människor sjuka.", s: "ratt", f: "Svampar kan orsaka exempelvis fotsvamp och protozoer kan orsaka ." },
                 { t: "Bara svampar kan göra människor sjuka.", s: "fel", f: "Även protozoer kan göra människor sjuka." },
                 { t: "Bara protozoer kan göra människor sjuka.", s: "fel", f: "Även svampar kan orsaka sjukdomar." }]},
             {fraga: "Vad kan orsakar infektioner?",
@@ -116,9 +116,15 @@ Portal.uppgifter([
                varianter: [
                  { rubrik: "Para ihop sätt att stoppa smittväg med rätt smittväg.",
                    par: [["Städa ytor som många rör, exempelvis handtag", "Indirekt kontakt"], ["Hosta i armvecket", "Via luften"], ["Tillaga maten ordentligt", "Föda"],["Använda kondom vid sex", "Sexuell kontakt"], ["Använda rena sprutor", "Blod"],
-                         ["Skydda sig mot myggor och fästingar", "Djur"], ["Använda handskar när man hanterar blod", "Blod"],["Tvätta händerna och undvika nära kontakt med någon som är sjuk", "Direktkontakt"]
-  ] }
+                         ["Skydda sig mot myggor och fästingar", "Djur"], ["Använda handskar när man hanterar blod", "Blod"],["Tvätta händerna och undvika nära kontakt med någon som är sjuk", "Direktkontakt"]] }
                ] },
+                { id: "pat-sjuk-para", kapitel: "smitta", avsnitt: ["smittspridning"], titel: "Patogener och sjukdomar – para ihop",
+               typ: "para", nivaer: [1, 2], punkter: ["pat-sjuk"],
+               varianter: [
+                 { rubrik: "Para ihop sjukdom med rätt patogen.",
+                   par: [["Halsfluss", "Bakterier"], ["Förkylning", "Virus"], ["Milda infektioner som fotsvamp", "Svamp"],["Malaria", "Protozoer"]] }
+               ] },
+
                
          { id: "sjukdom-inkub-flerval", kapitel: "smitta", avsnitt: ["sjukdom"], titel: "Inkuvationstid – välj rätt",
             typ: "flerval", nivaer: [1], punkter:["sjukdom-inkub"],
