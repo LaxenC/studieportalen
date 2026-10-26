@@ -112,7 +112,7 @@ Portal.uppgifter([
                   ] },
    
              { id: "smit-stop-para", kapitel: "smitta", avsnitt: ["smittspridning"], titel: "Stoppa smittvägar – para ihop",
-               typ: "para", nivaer: [0, 1, 2],punkter["smit-stop"],
+               typ: "para", nivaer: [0, 1, 2], punkter: ["smit-stop"],
                varianter: [
                  { rubrik: "Para ihop sätt att stoppa smittväg med rätt smittväg.",
                    par: [["Städa ytor som många rör, exempelvis handtag", "Indirekt kontakt"], ["Hosta i armvecket", "Via luften"], ["Tillaga maten ordentligt", "Föda"],["Använda kondom vid sex", "Sexuell kontakt"], ["Använda rena sprutor", "Blod"],
