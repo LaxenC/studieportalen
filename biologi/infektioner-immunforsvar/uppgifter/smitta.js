@@ -185,14 +185,14 @@ Portal.uppgifter([
       ] },
 
     { id: "smi-smitta-sortera", kapitel: "smitta", avsnitt: ["smittspridning"], titel: "Smittar eller smittar inte? – sortera",
-      typ: "sortera", nivaer: [1],punkter["pat-mik"],
+      typ: "sortera", nivaer: [1],punkter:["pat-mik"],
       varianter: [
         { grupper: ["Kan smitta", "Smittar inte"],
           saker: [["Förkylning", 0], ["Influensa", 0], ["Malaria", 0], ["Halsfluss", 0], ["Diabetes", 1], ["Allergi", 1], ["Cancer", 1]] }
       ] },
 
     { id: "smi-smittvag-para", kapitel: "smitta", avsnitt: ["smittspridning"], titel: "Smittvägar – para ihop",
-      typ: "para", nivaer: [0, 1, 2],punkter["smit-vag"],
+      typ: "para", nivaer: [0, 1, 2],punkter:["smit-vag"],
       varianter: [
         { rubrik: "Para ihop exemplet med rätt smittväg.",
           par: [["Någon nyser bredvid dig", "Via luften"], ["Du tar i ett dörrhandtag som en sjuk har rört", "Indirekt kontakt"],
