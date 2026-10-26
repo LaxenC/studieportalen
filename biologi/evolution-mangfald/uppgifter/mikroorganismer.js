@@ -424,7 +424,7 @@ Portal.uppgifter([
                  { t: "Fotosyntes", s: "delvis", f: "fotosyntes är ett sätt för vissa celler att tillverka näring – men att ta upp näring och få energi kallas ämnesomsättning." },
                  { t: "Celldelning", s: "fel", f: "celldelning är när cellen förökar sig." },
                  { t: "Arvsmassa", s: "fel", f: "arvsmassan är cellens recept." } ] },
-        { fraga: "Var finns arvsmassan i en bakterie?", punkter: ["cell-arvsmassa", "bakt-encellig"],
+        { fraga: "Var finns arvsmassan i en bakterie?", punkter: ["bakt-encellig"],
           alt: [ { t: "Den ligger fritt i cellen", s: "ratt", f: "bakterier saknar cellkärna." },
                  { t: "I cellkärnan", s: "fel", f: "bakterier har ingen cellkärna." },
                  { t: "I ett hölje av protein", s: "fel", f: "det gäller virus." },
