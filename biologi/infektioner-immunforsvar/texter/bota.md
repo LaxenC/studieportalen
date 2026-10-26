@@ -33,9 +33,8 @@ På 1790-talet märkte den engelske läkaren **Edward Jenner** att mjölkerskor 
 > Ett *vaccin* innehåller ofarliga delar av en patogen. Immunförsvaret tillverkar *antikroppar* och bildar *minnesceller*. **Därför** känner kroppen igen den riktiga patogenen direkt om man smittas senare, och man blir oftast inte sjuk.
 
 > **Viktigt att komma ihåg**
-> - Ett **vaccin** tränar immunförsvaret utan att man blir sjuk.
-> - Kroppen bildar **minnesceller** och blir **immun**.
-> - Vaccin fungerar både mot virus och bakterier.
+> - {#bota-vac-trana} Ett **vaccin** tränar immunförsvaret utan att man blir sjuk. Kroppen bildar **minnesceller** och blir **immun**.
+> - {#bota-vac-funka} Vaccin fungerar både mot virus och bakterier.
 
 ## Antibiotika och resistens {#antibiotika}
 
@@ -91,10 +90,9 @@ För att minska resistensen ska antibiotika bara användas när det verkligen be
 > Varje gång bakterier utsätts för *antibiotika* kan några av dem överleva och föröka sig. Om antibiotika används ofta blir de överlevande bakterierna allt fler. **Därför** blir fler bakterier *resistenta* om antibiotika används för mycket.
 
 > **Viktigt att komma ihåg**
-> - **Antibiotika** bekämpar **bakterier** – inte virus.
-> - Antibiotika är en nyckel som passar i ett lås i bakteriens cell, till exempel cellväggen eller fabrikerna. Virus saknar låset.
-> - Bakterier kan bli **resistenta** om antibiotika används för mycket.
-> - Använd antibiotika bara när det behövs.
+> -{#bota-ant-bak} Antibiotika kan döda bakterier eller stoppa dem från att växa och föröka sig genom att angripa deras cellvägg, fabriker eller förmåga att kopiera sitt DNA.
+> - {#bota-ant-vir} Virus består av arvsmassa i ett proteinskal. De kan inte föröka sig själva utan måste ta sig in i en levande cell och använda dess fabriker. Antibiotika fungerar inte mot virus, eftersom virus saknar de delar som antibiotika angriper.
+> - {#bota-ant-res} Bakterier kan bli **resistenta** om antibiotika används för mycket. Därför ska du använda antibiotika bara när det behövs.
 
 ## Så stärker du ditt immunförsvar {#starka}
 
@@ -111,4 +109,4 @@ Du kan inte "träna upp" immunförsvaret på ett gym, men du kan ge det bra för
 > När man rör sig cirkulerar blodet bättre, så att de *vita blodkropparna* lättare kommer dit de behövs. Träning minskar också inflammation och stress och gör att man sover bättre. **Därför** får immunförsvaret bättre förutsättningar att arbeta.
 
 > **Viktigt att komma ihåg**
-> - Vaccin, varierad mat, rörelse, sömn och god hygien hjälper immunförsvaret.
+> - {#bota-starka-satt} Vaccin, varierad mat, rörelse, sömn och god hygien hjälper immunförsvaret.
