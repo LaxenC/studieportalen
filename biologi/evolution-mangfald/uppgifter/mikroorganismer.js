@@ -17,6 +17,37 @@ Portal.uppgifter([
           par: [["Cell", "Den minsta delen som kan leva själv"], ["Encellig", "Består av en enda cell"],
                 ["Flercellig", "Består av många celler"], ["Cellkärna", "Del i cellen där arvsmassan finns."]] }
       ] },
+       { id: "organism-flerval", kapitel: "mikroorganismer", avsnitt: ["cell"], titel: "Organism – välj rätt",
+      punkter: { 0: ["cell-allt"]},
+      typ: "flerval", nivaer: [1],
+      varianter: [
+        { fraga: "Vilket påstående beskriver bäst vad en organism är?",
+          alt: [ { t: "En mycket liten levande varelse", s: "fel", f: "mikroorganism är något litet som lever, en organism behöver inte vara liten även vi männikor är organismer." },
+                 { t: "En liten del av en cell", s: "fel", f: "en organism är uppbyggt av en eller flera celler" },
+                 { t: "Något som lever och består av celler", s: "ratt", f: "en organism är något som lever och är uppbyggt av en eller flera celler." },
+                 { t: "Något som har organ", s: "fel", f: "stora organismer som vi människor har organ men alla organismer har det inte, en organism är något som lever och är uppbyggt av en eller flera celler" } ] },
+       ,
+        {fraga: "Vilket av följande är en organism?",
+          alt: [
+                  { t: "En sten", s: "fel", f: "En sten lever inte och består inte av levande celler." },
+                  { t: "En bakterie", s: "ratt", f: "En bakterie är en levande organism som består av en enda cell." },
+                  { t: "Vatten", s: "fel", f: "Vatten är ett ämne, inte en levande organism." },
+                  { t: "Syre", s: "fel", f: "Syre är ett ämne som levande celler kan använda, men det är ingen organism." }]},
+ 
+      {fraga: "Vad har alla organismer gemensamt?",
+          alt: [
+            { t: "De består av en eller flera celler", s: "ratt", f: "Alla organismer är uppbyggda av celler, även om de kan ha väldigt olika antal celler." },
+            { t: "De har en cellkärna", s: "fel", f: "Bakterier är organismer som saknar cellkärna." },
+            { t: "De består av många celler", s: "fel", f: "En del organismer består av bara en enda cell." },
+            { t: "De har ben eller rötter", s: "fel", f: "Organismer kan se mycket olika ut. Bakterier har varken ben eller rötter." }]},
+     { fraga: "Vad är skillnaden mellan en organism och en cell?",
+          alt: [
+            { t: "En organism är alltid mindre än en cell", s: "fel", f: "En organism kan bestå av en enda cell eller av många celler." },
+            { t: "En cell är alltid uppbyggd av många organismer", s: "fel", f: "Celler bygger upp organismer, inte tvärtom." },
+            { t: "En organism är något levande som består av en eller flera celler", s: "ratt", f: "En cell är livets minsta levande enhet, medan en organism är en levande individ som består av celler." },
+            { t: "Det finns ingen skillnad mellan orden", s: "fel", f: "En cell är en byggsten i livet. En organism är en levande individ som kan bestå av en eller flera celler." }]}
+      ] }, 
+   
 
     { id: "cell-flerval", kapitel: "mikroorganismer", avsnitt: ["cell"], titel: "Celler – välj rätt",
       punkter: { 0: ["vad-mikrob"], 1: ["cell-encellig"], 2: ["cell-encellig"], 3: ["cell-arvsmassa"] },
