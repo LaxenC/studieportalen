@@ -8,7 +8,117 @@
    Avsnitt: sjukdom, vadsmittar, smittspridning
    ===================================================================== */
 Portal.uppgifter([
+    { id: "sjukdom-orsak-flerval", kapitel: "smitta", avsnitt: ["sjukdom"], titel: "Orsakar sjukdom – välj rätt",
+      typ: "flerval", nivaer: [1], punkter:["sjukdom-orsak"],
+      varianter:[
+        {fraga: "Vad kallas bakterier, virus, svampar eller parasiter som orsakar sjukdomar?",
+          alt: [
+            { t: "Patogener", s: "ratt", f: "Bakterier, virus, svampar och parasiter som orsakar sjukdomar kallas patogener." },
+            { t: "Symptom", s: "fel", f: "Symptom är tecken på sjukdom, till exempel feber, hosta eller utslag. Mikrober eller organismer som orsakar sjukdomar kalllas Patogener." },
+            { t: "Diagnoser", s: "fel", f: "En diagnos är ett beslut om vilken sjukdom det är. Mikrober eller organismer som orsakar sjukdomar kalllas Patogener." }]},
+        {fraga: "Orsakas alla sjukdomar av patogener?",
+          alt: [
+            { t: "Nej, till exempel diabetes, allergier och cancer orsakas inte av mikrober.", s: "ratt", f: "Alla sjukdomar orsakas inte av patogener. Patogener orsakar sjukdomar som smittar." },
+            { t: "Ja, alla sjukdomar orsakas av bakterier eller virus.", s: "fel", f: "Alla sjukdomar orsakas inte av patgoner, endast de sjukdomar som smittar." },
+            { t: "Nej, men alla sjukdomar orsakas av parasiter.", s: "fel", f: "Parasiter är organismer som livnärar sig på andra organismer, patogener orsakar sjukdomar som smitta." }]},
+        {fraga: "Vilka av följande kan vara patogener?",
+          alt: [
+            { t: "Bakterier, virus och svampar.", s: "ratt", f: "Ja det stämmer dessa tre mikrober kan vara patogener och orsakar sjukdomar." },
+            { t: "Feber, hosta och utslag.", s: "fel", f: "Feber, hosta och utslag är exempel på symptom-" },
+            { t: "Diabetes, allergier och cancer.", s: "fel", f: "Det är exempel på sjukdomar som inte smittar inte och orsakas därmed inte av patogener." }]},
+        {fraga: "Vilket påstående om patogener stämmer?",
+          alt: [
+            { t: "Patogener kan orsaka sjukdomar.", s: "ratt", f: "Patogener är mikrober (bakterier, virus eller svampar) som orsakar sjukdomar." },
+            { t: "Patogener är tecken på sjukdom.", s: "fel", f: "Tecken på sjukdom kallas symptom. Patogener är mikrober (bakterier, virus eller svampar) som orsakar sjukdomar." },
+            { t: "Patogener är tiden från smitta till sjukdom.", s: "fel", f: "Tiden från smitta till sjukdom kallas inkubationstid. Patogener är mikrober (bakterier, virus eller svampar) som orsakar sjukdomar." }]},
+        {fraga: "Vilket av följande är ett exempel på en patogen?",
+          alt: [
+            { t: "En svamp som orsakar sjukdom.", s: "ratt", f: "Stämmer, svampar kan vara mikrober som orsakar sjukdomar de är därmed patogener." },
+            { t: "Feber", s: "fel", f: "Feber är ett symptom på sjukdom. " },
+            { t: "Inkubationstid", s: "fel", f: "Inkubationstid är tiden från att man blivit smittad till att man blir sjuk." }]}]},
 
+       { id: "sjukdom-infek-flerval", kapitel: "smitta", avsnitt: ["sjukdom"], titel: "Infektion – välj rätt",
+         typ: "flerval", nivaer: [1], punkter:["sjukdom-infek"],
+         varianter:[
+           {fraga: "Vad är en infektion?",
+             alt: [
+               { t: "När en patogen tar sig in i kroppen och börjar föröka sig.", s: "ratt", f: "En infektion uppstår när en patogen tar sig in i kroppen och börjar föröka sig." },
+               { t: "När en sjukdom snabbt sprids till många människor.", s: "fel", f: "Det kallas en epidemi. En infektion uppstår när en patogen tar sig in i kroppen och börjar föröka sig." },
+               { t: "När kroppen visar tecken på sjukdom, till exempel feber eller hosta.", s: "fel", f: "Tecken på sjukdom kallas symptom. En infektion uppstår när en patogen tar sig in i kroppen och börjar föröka sig." }]},
+        {fraga: "Vad behöver en patogen göra för att det ska räknas som en infektion?",
+          alt: [
+            { t: "Ta sig in i kroppen och börja föröka sig.", s: "ratt", f: "Det är det som definierar en infektion." },
+            { t: "Spridas över stora delar av världen.", s: "fel", f: "Det kallas en pandemi. Patogenen behöver börja föröka sig för att det ska bli en infektion." },
+            { t: "Göra att läkaren ställer en diagnos.", s: "fel", f: "En diagnos är ett beslut om vilken sjukdom det är. Patogenen behöver börja föröka sig för att det ska bli en infektion." }]},
+        {fraga: "Vilket påstående beskriver en infektion?",
+          alt: [
+            { t: "En patogen har tagit sig in i kroppen och förökar sig.", s: "ratt", f: "En infektion innebär att en patogen tar sig in i kroppen och börjar föröka sig." },
+            { t: "En sjukdom sprids snabbt till många människor.", s: "fel", f: "Det beskriver en epidemi. En infektion innebär att en patogen tar sig in i kroppen och börjar föröka sig." },
+            { t: "Tiden går från smitta till att personen blir sjuk.", s: "fel", f: "Den tiden kallas inkubationstid. En infektion innebär att en patogen tar sig in i kroppen och börjar föröka sig." }
+          ]},
+        { fraga: "Vad är det som förökar sig vid en infektion?",
+          alt: [
+            { t: "Patogenen som har tagit sig in i kroppen.", s: "ratt", f: "Vid en infektion har en patogen tagit sig in i kroppen och börjar föröka sig." },
+            { t: "Symptomen.", s: "fel", f: "Symptom är tecken på sjukdom, till exempel feber, hosta eller utslag. Vid en infektion har en patogen tagit sig in i kroppen och börjar föröka sig." },
+            { t: "Diagnosen.", s: "fel", f: "En diagnos är ett beslut om vilken sjukdom det är. Vid en infektion har en patogen tagit sig in i kroppen och börjar föröka sig." }
+          ]}]
+      
+         { id: "sjukdom-inkub-flerval", kapitel: "smitta", avsnitt: ["sjukdom"], titel: "Inkuvationstid – välj rätt",
+            typ: "flerval", nivaer: [1], punkter:["sjukdom-inkub"],
+            varianter:[
+              {fraga: "Vad betyder inkubationstid?",
+                alt: [
+                  { t: "Tiden från att man blivit smittad till att man blir sjuk.", s: "ratt", f: "Inkubationstid är tiden från smitta till sjukdom." },
+                  { t: "Tiden som en patogen förökar sig i kroppen.", s: "fel", f: "Inkubationstid beskriver tiden från att man blivit smittad till att man blir sjuk." },
+                  { t: "Tiden det tar för en sjukdom att spridas över världen.", s: "fel", f: "Spridning över stora delar av världen kallas pandemi. Inkubationstid är tiden från smitta till sjukdom." }
+                ]},
+              {fraga: "När är starten för inkubationstiden?",
+                alt: [
+                  { t: "När man blivit smittad.", s: "ratt", f: "Inkubationstiden börjar när man blivit smittad." },
+                  { t: "När man får symptom.", s: "fel", f: "Inkubationstiden är tiden från smitta till att man blir sjuk." },
+                  { t: "När läkaren ställer en diagnos.", s: "fel", f: "En diagnos är ett beslut om vilken sjukdom det är. Inkubationstid är tiden från smitta till sjukdom." }]},
+              {fraga: "När är slutet för inkubationstiden?",
+                alt: [
+                  { t: "När man blir sjuk.", s: "ratt", f: "Inkubationstiden sträcker sig från smitta till att man blir sjuk." },
+                  { t: "När man blir smittad.", s: "fel", f: "Det är då inkubationstiden börjar. Inkubationstiden sträcker sig från smitta till att man blir sjuk." },
+                  { t: "När sjukdomen sprids till många människor.", s: "fel", f: "Snabb spridning till många människor kallas epidemi. Inkubationstiden sträcker sig från smitta till att man blir sjuk." }]},
+              {fraga: "Vilket alternativ beskriver inkubationstid?",
+                alt: [
+                  { t: "Tiden mellan smitta och sjukdom.", s: "ratt", f: "Inkubationstid är tiden från att man blivit smittad till att man blir sjuk." },
+                  { t: "Tecken på sjukdom, till exempel feber eller hosta.", s: "fel", f: "Tecken på sjukdom kallas symptom. Inkubationstid är tiden från att man blivit smittad till att man blir sjuk." },
+                  { t: "När en sjukdom sprids över stora delar av världen.", s: "fel", f: "Det kallas pandemi. Inkubationstid är tiden från att man blivit smittad till att man blir sjuk." }
+                ]}]},
+        
+    { id: "sjukdom-sprid-flerval", kapitel: "smitta", avsnitt: ["sjukdom"], titel: "Spridning sjukdom – välj rätt",
+      typ: "flerval", nivaer: [1], punkter:["sjukdom-sprid"],
+      varianter:[
+        {fraga: "Vad är en epidemi?",
+          alt: [
+            { t: "När en sjukdom snabbt sprids till många människor.", s: "ratt", f: "En epidemi innebär att en sjukdom snabbt sprids till många människor." },
+            { t: "När en sjukdom sprids över stora delar av världen.", s: "fel", f: "Det kallas en pandemi. En epidemi innebär att en sjukdom snabbt sprids till många människor." },
+            { t: "När en patogen tar sig in i kroppen och börjar föröka sig.", s: "fel", f: "Det kallas en infektion. En epidemi innebär att en sjukdom snabbt sprids till många människor." }]},
+        {fraga: "Vad är en pandemi?",
+          alt: [
+            { t: "När en sjukdom sprids över stora delar av världen.", s: "ratt", f: "En pandemi innebär att en sjukdom sprids över stora delar av världen." },
+            { t: "När en sjukdom snabbt sprids till många människor.", s: "fel", f: "Det beskriver en epidemi. En pandemi innebär att en sjukdom sprids över stora delar av världen." },
+            { t: "När en patogen börjar föröka sig i kroppen.", s: "fel", f: "Det beskriver en infektion. En pandemi innebär att en sjukdom sprids över stora delar av världen." }]},
+        {fraga: "Vad är skillnaden mellan en epidemi och en pandemi?",
+          alt: [
+            { t: "En epidemi sprids snabbt till många människor, medan en pandemi sprids över stora delar av världen.", s: "ratt", f: "Skillnaden handlar om hur långt sjukdomen sprids." },
+            { t: "En epidemi orsakas av virus, medan en pandemi orsakas av bakterier.", s: "fel", f: "Skillnaden är inte vilken patogen som orsakar den. Skillnaden är hur långt sjukdomen sprids." },
+            { t: "En epidemi är ett symptom, medan en pandemi är en infektion.", s: "fel", f: "Epidemi och pandemi beskriver hur långt en sjukdom sprids." }]},
+        {fraga: "När kallas spridningen av en sjukdom för en pandemi?",
+           alt: [
+            { t: "När sjukdomen sprids över stora delar av världen.", s: "ratt", f: "Det är definitionen av en pandemi." },
+            { t: "När sjukdomen snabbt sprids till många människor.", s: "fel", f: "Det är definitionen av en epidemi. Pandemi är när sjukdomen sprids över stora delar av världen." },
+            { t: "När en person blir smittad.", s: "fel", f: "Det beskriver inte spridning över stora delar av världen. Pandemi är när sjukdomen sprids över stora delar av världen." }]},
+        {fraga: "Vilket påstående om en epidemi stämmer?",
+          alt: [
+            { t: "En sjukdom sprids snabbt till många människor.", s: "ratt", f: "Det är vad en epidemi innebär." },
+            { t: "En sjukdom sprids alltid över hela världen.", s: "fel", f: "Spridning över stora delar av världen kallas pandemi. Epidemi är när en sjukdom sprids snabbt till många människor, men inte stora delar av världen." },
+            { t: "En patogen tar sig in i kroppen och börjar föröka sig.", s: "fel", f: "Det beskriver en infektion. Epidemi är när en sjukdom sprids snabbt till många människor, men inte stora delar av världen." }
+          ]}]},
+        
     { id: "smi-sjukdom-para", kapitel: "smitta", avsnitt: ["sjukdom"], titel: "Sjukdom och smitta – para ihop",
       typ: "para", nivaer: [0, 1],
       varianter: [
