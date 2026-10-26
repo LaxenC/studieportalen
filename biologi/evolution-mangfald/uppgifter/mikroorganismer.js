@@ -9,7 +9,7 @@
    ===================================================================== */
 Portal.uppgifter([   
       { id: "organism-flerval", kapitel: "mikroorganismer", avsnitt: ["cell"], titel: "Organism – välj rätt",
-      punkter: { "cell-allt"},
+      punkter: ["cell-allt"],
       typ: "flerval", nivaer: [1],
       varianter: [ 
          { fraga: "Vad består allt levande av?", 
@@ -44,7 +44,7 @@ Portal.uppgifter([
       ]}, 
    
       { id: "arvsmassa-flerval", kapitel: "mikroorganismer", avsnitt: ["cell"], titel: "Arvsmassa(DNA) – välj rätt",
-      punkter: { "cell-arvsmassa"},
+      punkter: ["cell-arvsmassa"],
       typ: "flerval", nivaer: [1],
       varianter:[
         { fraga: "Vad är cellens arvsmassa (DNA)?",
@@ -73,7 +73,7 @@ Portal.uppgifter([
             { t: "För att göra cellen större utan näring", s: "fel", f: "Cellen behöver näring och energi för att växa. Arvsmassan innehåller instruktioner för att skapa fler celler." }]}] },
    
     { id: "amnesomsattning-flerval", kapitel: "mikroorganismer", avsnitt: ["cell"], titel: "Cellens ämnesomsättning – välj rätt",
-      punkter: { "cell-amnes"},
+      punkter: ["cell-amnes"],
       typ: "flerval", nivaer: [1],
       varianter:[
         {fraga: "Vad betyder ämnesomsättning?",
@@ -102,7 +102,7 @@ Portal.uppgifter([
          { t: "Cellen gör om energi till en helt ny organism direkt", s: "fel", f: "Ämnesomsättning är att cellen för om närigen till bränsle åt cellens delar. Så att cellen kan dela sig och skapa nya celler" } ]}]},
 
       { id: "minsta-levande-flerval", kapitel: "mikroorganismer", avsnitt: ["cell"], titel: "Cellen kan leva själv – välj rätt",
-      punkter: { "cell-minsta"},
+      punkter: ["cell-minsta"],
       typ: "flerval", nivaer: [1],
       varianter: [
         {fraga: "Vad betyder det att en cell kan leva själv?",
