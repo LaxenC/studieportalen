@@ -10,6 +10,7 @@
 Portal.uppgifter([
 
     { id: "bot-vaccin-text", kapitel: "bota", avsnitt: ["vaccin"], titel: "Vaccin – fyll i",
+      punkter: ["bota-vac-trana"],
       typ: "lucktext", nivaer: [0, 1], rullista: [0],
       ordlista: ["immunförsvaret", "minnesceller", "antikroppar", "ofarliga", "farliga", "sjuk", "immun"],
       varianter: [
@@ -34,6 +35,7 @@ Portal.uppgifter([
       ] },
 
     { id: "bot-vaccin-steg", kapitel: "bota", avsnitt: ["vaccin"], titel: "Så fungerar ett vaccin – para ihop",
+      punkter: ["bota-vac-trana"],
       typ: "para", nivaer: [1, 2],
       varianter: [
         { rubrik: "Para ihop steget med vad som händer.",
@@ -50,6 +52,7 @@ Portal.uppgifter([
       ] },
 
     { id: "bot-antibiotika-flerval", kapitel: "bota", avsnitt: ["antibiotika"], titel: "Antibiotika och resistens – välj rätt",
+      punkter: ["bota-ant-res"],
       typ: "flerval", nivaer: [1, 2],
       varianter: [
         { fraga: "Vad betyder det att bakterier har blivit resistenta?",
@@ -79,6 +82,7 @@ Portal.uppgifter([
                 ["Antibiotika dödar även kroppens nyttiga bakterier.", true]] }
       ] },
     { id: "bot-starka", kapitel: "bota", avsnitt: ["starka"], titel: "Stärk immunförsvaret – sortera",
+      punkter: ["bota-starka-satt"],
       typ: "sortera", nivaer: [0, 1],
       varianter: [
         { grupper: ["Hjälper immunförsvaret", "Hjälper inte"],
@@ -86,6 +90,7 @@ Portal.uppgifter([
                   ["Sova för lite", 1], ["Ta antibiotika mot förkylning", 1], ["Sitta still hela dagarna", 1]] }
       ] },
     { id: "bot-resistens-hur", kapitel: "bota", avsnitt: ["antibiotika"], titel: "Hur blir bakterier resistenta? – välj rätt",
+      punkter: ["bota-ant-res"],
       typ: "flerval", nivaer: [1, 2],
       varianter: [
         { fraga: "Hur blir bakterier resistenta mot antibiotika?",
@@ -116,6 +121,7 @@ Portal.uppgifter([
           modell: "Ett vaccin gör att kroppen bildar **minnesceller**, så att man blir **immun** utan att först bli sjuk. Därför är **sjukdomar** som förr **dödade** många barn, till exempel mässling och polio, i dag ovanliga. **Smittkoppor** har till och med **utrotats** helt. När många är vaccinerade **sprids** sjukdomen dåligt – **flockimmunitet** – och då skyddas även de som inte kan vaccinera sig." }
       ] },
     { id: "bot-bast", kapitel: "bota", avsnitt: ["vaccin", "antibiotika"], titel: "Vad beskriver bäst? – bota och förebygga",
+      punkter: {0: ["bota-vac-trana"], 2: ["bota-ant-vir"]},
       typ: "flerval", nivaer: [2],
       varianter: [
         { fraga: "Vad beskriver bäst hur ett vaccin skyddar?",
@@ -133,5 +139,65 @@ Portal.uppgifter([
                  { t: "Förkylning orsakas av virus", s: "delvis", f: "stämmer, men förklarar inte varför antibiotika inte biter på virus." },
                  { t: "Antibiotika fungerar bara mot bakterier", s: "delvis", f: "stämmer, men förklarar inte varför." },
                  { t: "Förkylning är för lindrig för antibiotika", s: "fel", f: "det handlar inte om hur sjuk man är – antibiotika biter inte på virus." } ] }
+      ] },
+    { id: "lar-vac-flerval", kapitel: "bota", avsnitt: ["vaccin"], titel: "Vaccin – välj rätt",
+      typ: "flerval", nivaer: [0, 1],
+      varianter: [
+        { fraga: "Vad gör ett vaccin?", punkter: ["bota-vac-trana"],
+          alt: [ { t: "Tränar immunförsvaret utan att man blir sjuk", s: "ratt", f: "kroppen bildar minnesceller och blir immun." },
+                 { t: "Innehåller ofarliga delar av en patogen", s: "delvis", f: "stämmer – men säger inte vad vaccinet gör." },
+                 { t: "Dödar patogenerna i kroppen", s: "fel", f: "vaccin dödar inga patogener – det tränar immunförsvaret." },
+                 { t: "Botar en sjukdom man redan har", s: "fel", f: "vaccin förebygger – det skyddar innan man blir sjuk." } ] },
+        { fraga: "Mot vilka patogener kan vaccin fungera?", punkter: ["bota-vac-funka"],
+          alt: [ { t: "Både virus och bakterier", s: "ratt", f: "det finns vaccin mot både virussjukdomar och bakteriesjukdomar." },
+                 { t: "Bara bakterier", s: "fel", f: "vaccin fungerar också mot virus." },
+                 { t: "Bara virus", s: "fel", f: "vaccin fungerar också mot bakterier." },
+                 { t: "Bara svampar", s: "fel", f: "vaccin fungerar mot både virus och bakterier." } ] }
+      ] },
+    { id: "lar-vac-sf", kapitel: "bota", avsnitt: ["vaccin"], titel: "Vaccin – sant eller falskt",
+      typ: "santfalskt", nivaer: [0, 1], punkter: ["bota-vac-trana", "bota-vac-funka"],
+      varianter: [
+        { pst: [["Ett vaccin tränar immunförsvaret.", true], ["Efter ett vaccin finns minnesceller kvar som kommer ihåg patogenen.", true], ["Man blir sjuk av ett vaccin.", false], ["Vaccin kan skydda både mot virus och bakterier.", true], ["Vaccin fungerar bara mot virus.", false]] }
+      ] },
+    { id: "lar-ant-flerval", kapitel: "bota", avsnitt: ["antibiotika"], titel: "Antibiotika – välj rätt",
+      typ: "flerval", nivaer: [0, 1],
+      varianter: [
+        { fraga: "Hur kan antibiotika döda bakterier?", punkter: ["bota-ant-bak"],
+          alt: [ { t: "Genom att angripa bakteriens cellvägg, fabriker eller kopiering av DNA", s: "ratt", f: "antibiotika är en nyckel som passar i ett lås i bakteriens cell." },
+                 { t: "Genom att angripa cellväggen", s: "delvis", f: "penicillin gör det – men andra antibiotika angriper fabrikerna eller kopieringen av DNA." },
+                 { t: "Genom att träna immunförsvaret", s: "fel", f: "det gör vaccin." },
+                 { t: "Genom att värma upp bakterien", s: "fel", f: "antibiotika angriper delar av bakteriens cell." } ] },
+        { fraga: "Vad beskriver bäst varför antibiotika bara biter på bakterier?", punkter: ["bota-ant-vir"],
+          alt: [ { t: "Virus saknar cellvägg och egna fabriker – delarna som antibiotika angriper", s: "ratt", f: "låset finns bara i bakteriens cell." },
+                 { t: "Virus är ingen cell", s: "delvis", f: "stämmer – men förklarar inte varför antibiotikan inte biter." },
+                 { t: "Virus är resistenta mot antibiotika", s: "fel", f: "resistens gäller bakterier – virus har inget lås för antibiotikan." },
+                 { t: "Antibiotika är för svagt för virus", s: "fel", f: "det handlar inte om styrka – låset saknas." } ] },
+        { fraga: "Vad händer om antibiotika används för mycket?", punkter: ["bota-ant-res"],
+          alt: [ { t: "Fler bakterier blir resistenta", s: "ratt", f: "de bakterier som tål antibiotikan överlever och förökar sig." },
+                 { t: "Immunförsvaret blir starkare", s: "fel", f: "antibiotika påverkar bakterierna, inte immunförsvaret." },
+                 { t: "Virusen försvinner", s: "fel", f: "antibiotika fungerar inte mot virus." },
+                 { t: "Bakterierna blir nyttiga", s: "fel", f: "resistenta bakterier kan vara mycket farliga." } ] }
+      ] },
+    { id: "lar-ant-sf", kapitel: "bota", avsnitt: ["antibiotika"], titel: "Antibiotika – sant eller falskt",
+      typ: "santfalskt", nivaer: [0, 1], punkter: ["bota-ant-bak", "bota-ant-vir", "bota-ant-res"],
+      varianter: [
+        { pst: [["Penicillin stoppar bakterien från att bygga sin cellvägg.", true], ["Ett virus har egna fabriker.", false], ["Antibiotika hjälper mot förkylning.", false], ["Bakterier kan bli resistenta om antibiotika används för mycket.", true], ["Man ska använda antibiotika bara när det verkligen behövs.", true]] }
+      ] },
+    { id: "lar-starka-valj", kapitel: "bota", avsnitt: ["starka"], titel: "Vad hjälper immunförsvaret? – välj fem",
+      typ: "valjflera", nivaer: [0, 1], punkter: ["bota-starka-satt"],
+      varianter: [
+        { fraga: "Vilka fem saker hjälper immunförsvaret?",
+          ratt: ["Vaccin", "Varierad mat", "Rörelse och träning", "Sömn och vila", "God hygien"],
+          fel: ["Sova för lite", "Äta bara godis", "Sitta still hela dagarna", "Antibiotika mot förkylning"],
+          forklaring: "de ger immunförsvaret bra förutsättningar att arbeta." }
+      ] },
+    { id: "lar-starka-flerval", kapitel: "bota", avsnitt: ["starka"], titel: "Stärk immunförsvaret – välj rätt",
+      typ: "flerval", nivaer: [0, 1],
+      varianter: [
+        { fraga: "Hur hjälper rörelse och träning immunförsvaret?", punkter: ["bota-starka-satt"],
+          alt: [ { t: "Blodet cirkulerar bättre, och träning minskar inflammation och stress", s: "ratt", f: "då får immunförsvaret bättre förutsättningar att arbeta." },
+                 { t: "Man blir starkare i musklerna", s: "delvis", f: "stämmer – men förklarar inte hur det hjälper immunförsvaret." },
+                 { t: "Musklerna stänger ute patogenerna", s: "fel", f: "rörelse hjälper genom att blodet cirkulerar bättre." },
+                 { t: "Svetten dödar alla patogener", s: "fel", f: "rörelse hjälper genom bättre blodcirkulation och mindre stress." } ] }
       ] }
 ]);

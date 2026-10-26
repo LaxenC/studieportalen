@@ -90,7 +90,7 @@ För att minska resistensen ska antibiotika bara användas när det verkligen be
 > Varje gång bakterier utsätts för *antibiotika* kan några av dem överleva och föröka sig. Om antibiotika används ofta blir de överlevande bakterierna allt fler. **Därför** blir fler bakterier *resistenta* om antibiotika används för mycket.
 
 > **Viktigt att komma ihåg**
-> -{#bota-ant-bak} Antibiotika kan döda bakterier eller stoppa dem från att växa och föröka sig genom att angripa deras cellvägg, fabriker eller förmåga att kopiera sitt DNA.
+> - {#bota-ant-bak} Antibiotika kan döda bakterier eller stoppa dem från att växa och föröka sig genom att angripa deras cellvägg, fabriker eller förmåga att kopiera sitt DNA.
 > - {#bota-ant-vir} Virus består av arvsmassa i ett proteinskal. De kan inte föröka sig själva utan måste ta sig in i en levande cell och använda dess fabriker. Antibiotika fungerar inte mot virus, eftersom virus saknar de delar som antibiotika angriper.
 > - {#bota-ant-res} Bakterier kan bli **resistenta** om antibiotika används för mycket. Därför ska du använda antibiotika bara när det behövs.
 
