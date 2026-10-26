@@ -232,7 +232,7 @@ Portal.uppgifter([
       ] },
 
     { id: "mik-virus-flerval", kapitel: "smitta", avsnitt: ["vadsmittar"], titel: "Virus – välj rätt",
-      typ: "flerval", nivaer: [1, 2],
+      typ: "flerval", nivaer: [1, 2],punkter:{ 2: ["pat-ant"]},
       varianter: [
         { fraga: "Varför räknas virus oftast inte som levande?",
           alt: [ { t: "De består inte av celler och kan inte föröka sig själva", s: "ratt", f: "virus behöver en värdcell för att föröka sig och har ingen egen ämnesomsättning." },
