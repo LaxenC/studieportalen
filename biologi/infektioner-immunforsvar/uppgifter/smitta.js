@@ -11,16 +11,16 @@ Portal.uppgifter([
     { id: "sjukdom-orsak-flerval", kapitel: "smitta", avsnitt: ["sjukdom"], titel: "Orsakar sjukdom – välj rätt",
       typ: "flerval", nivaer: [1], punkter:["sjukdom-orsak"],
       varianter:[
-        {fraga: "Vad kallas bakterier, virus, svampar eller parasiter som orsakar sjukdomar?",
+        {fraga: "Vad kallas bakterier, virus, svampar eller protozoer som orsakar sjukdomar?",
           alt: [
-            { t: "Patogener", s: "ratt", f: "Bakterier, virus, svampar och parasiter som orsakar sjukdomar kallas patogener." },
+            { t: "Patogener", s: "ratt", f: "Mikrober som orsakar sjukdomar kallas patogener. Bakterier, virus, svampar och protozoer är mikrober som orsakar sjukdomar." },
             { t: "Symptom", s: "fel", f: "Symptom är tecken på sjukdom, till exempel feber, hosta eller utslag. Mikrober eller organismer som orsakar sjukdomar kalllas Patogener." },
             { t: "Diagnoser", s: "fel", f: "En diagnos är ett beslut om vilken sjukdom det är. Mikrober eller organismer som orsakar sjukdomar kalllas Patogener." }]},
         {fraga: "Orsakas alla sjukdomar av patogener?",
           alt: [
             { t: "Nej, till exempel diabetes, allergier och cancer orsakas inte av mikrober.", s: "ratt", f: "Alla sjukdomar orsakas inte av patogener. Patogener orsakar sjukdomar som smittar." },
             { t: "Ja, alla sjukdomar orsakas av bakterier eller virus.", s: "fel", f: "Alla sjukdomar orsakas inte av patgoner, endast de sjukdomar som smittar." },
-            { t: "Nej, men alla sjukdomar orsakas av parasiter.", s: "fel", f: "Parasiter är organismer som livnärar sig på andra organismer, patogener orsakar sjukdomar som smitta." }]},
+            { t: "Nej, men alla sjukdomar orsakas av protozoer.", s: "fel", f: "Protozoer orsakar endast malaria." }]},
         {fraga: "Vilka av följande kan vara patogener?",
           alt: [
             { t: "Bakterier, virus och svampar.", s: "ratt", f: "Ja det stämmer dessa tre mikrober kan vara patogener och orsakar sjukdomar." },
@@ -62,6 +62,45 @@ Portal.uppgifter([
             { t: "Symptomen.", s: "fel", f: "Symptom är tecken på sjukdom, till exempel feber, hosta eller utslag. Vid en infektion har en patogen tagit sig in i kroppen och börjar föröka sig." },
             { t: "Diagnosen.", s: "fel", f: "En diagnos är ett beslut om vilken sjukdom det är. Vid en infektion har en patogen tagit sig in i kroppen och börjar föröka sig." }
           ]}]},
+   
+          { id: "pat-mik-flerval", kapitel: "smitta", avsnitt: ["vadsmittar"], titel: "Vad är det som smittar – välj rätt",
+            typ: "flerval", nivaer: [1], punkter:["pat-mik}"],
+            varianter: [              
+            {fraga: "Vilka patogener orsakar de flesta infektioner?",
+              alt: [
+                { t: "Bakterier och virus", s: "ratt", f: "De flesta infektioner orsakas av bakterier och virus." },
+                { t: "Svampar och protozoer", s: "fel", f: "Även svampar och protozoer kan göra oss sjuka, men de flesta infektioner orsakas av bakterier och virus." },
+                { t: "Bara bakterier", s: "fel", f: "Virus orsakar också många infektioner, även svampar och protozoer kan göra oss sjuka men de orsakar inte flest sjukdomar" }]},
+            {fraga: "Vilket påstående om svampar och protozoer stämmer?",
+              alt: [
+                { t: "Både svampar och protozoer kan göra människor sjuka.", s: "ratt", f: "Svampar kan orsaka exempelvis fotsvamp och protozoer kan orsaka malaria." },
+                { t: "Bara svampar kan göra människor sjuka.", s: "fel", f: "Även protozoer kan göra människor sjuka." },
+                { t: "Bara protozoer kan göra människor sjuka.", s: "fel", f: "Även svampar kan orsaka sjukdomar." }]},
+            {fraga: "Vad kan orsakar infektioner?",
+              alt: [
+                { t: "Bakterier, virus, svampar och protozoer", s: "ratt", f: "Bakterier kan exempelvis orsaka halsfluss, virus kan orsaka förkylning, svampar kan orsaka fotsvamp och protozoer kan orsaka malaria." },
+                { t: "Kyla och dålig mat.", s: "fel", f: "Bakterier, virus, svampar och protozoer kan orsaka infektioner." },
+                { t: "Bara bakterier och virus kan orsaka sjukdomar.", s: "fel", f: "Även svampar och protozoer kan göra oss sjuka." }
+              ]}]},
+             { id: "pat-mik-tre-saker", kapitel: "smitta", avsnitt: ["vadsmittar"], titel: "Vad klarar en cell på egen hand, som gör att den kan leva av sig själv?",
+               typ: "valjflera", nivaer: [0, 1], punkter: ["pat-mik"],
+               varianter: [
+                 { fraga: "Vad förutom protozoer kan orsaka sjukdomar?",
+                   ratt: ["Bakterier", "Virus", "Svampar"],
+                   fel: ["Alger", "Kyla", "Dålig mat", "Brist på sömn", "Vind", "Brist på motion"],
+                   forklaring: "Bakterier kan exempelvis orsaka halsfluss, virus kan orsaka förkylning, svampar kan orsaka fotsvamp och protozoer kan orsaka malaria." },
+                  { fraga: "Vad förutom virus kan orsaka sjukdomar?",
+                   ratt: ["Bakterier", "Protozoer", "Svampar"],
+                   fel: ["Alger", "Kyla", "Dålig mat", "Brist på sömn", "Vind", "Brist på motion"],
+                   forklaring: "Bakterier kan exempelvis orsaka halsfluss, virus kan orsaka förkylning, svampar kan orsaka fotsvamp och protozoer kan orsaka malaria." },
+                  {fraga: "Vad förutom svampar kan orsaka sjukdomar?",
+                   ratt: ["Bakterier", "Protozoer", "Virus"],
+                   fel: ["Alger", "Kyla", "Dålig mat", "Brist på sömn", "Vind", "Brist på motion"],
+                   forklaring: "Bakterier kan exempelvis orsaka halsfluss, virus kan orsaka förkylning, svampar kan orsaka fotsvamp och protozoer kan orsaka malaria." },
+                  {fraga: "Vad förutom bakterier kan orsaka sjukdomar?",
+                   ratt: ["virus", "Protozoer", "Svampar"],
+                   fel: ["Alger", "Kyla", "Dålig mat", "Brist på sömn", "Vind", "Brist på motion"],
+                   forklaring: "Bakterier kan exempelvis orsaka halsfluss, virus kan orsaka förkylning, svampar kan orsaka fotsvamp och protozoer kan orsaka malaria." }] },
       
          { id: "sjukdom-inkub-flerval", kapitel: "smitta", avsnitt: ["sjukdom"], titel: "Inkuvationstid – välj rätt",
             typ: "flerval", nivaer: [1], punkter:["sjukdom-inkub"],
