@@ -127,6 +127,19 @@ function mixFor(stjarnor, ak) {
   const ut = {}; Object.entries(m).forEach(([l, w]) => { if (w > 0) ut[l] = w / sum; }); return ut;
 }
 
+// Kunskapspunkter (från Viktigt-rutornas "- {#id} …") för ett kapitel, valfritt ett avsnitt
+function punkterFor(o, kapId, avId, ak) {
+  const t = o.texter[kapId]; if (!t) return [];
+  return t.avsnitt.filter(a => passar(a.ak, ak) && (!avId || a.id === avId)).flatMap(a => (a.punkter || []).map(p => ({ ...p, av: a.id, rubrik: a.rubrik })));
+}
+// Vilka punkter en variant tränar: variantens egna, uppgiftens lista eller uppgiftens { variantnr: [...] }
+function uppgiftPunkter(t, vi) {
+  const v = t.varianter[vi] || {};
+  if (v.punkter) return v.punkter;
+  if (Array.isArray(t.punkter)) return t.punkter;
+  return (t.punkter && t.punkter[vi]) || [];
+}
+
 function amneAv(id) { return Portal.amnenLista.find(a => a.id === id); }
 
 // Repots namn på GitHub, t.ex. "LaxenC/studieportalen" (räknas ut från adressen)

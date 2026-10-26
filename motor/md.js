@@ -81,7 +81,9 @@ const MD = (() => {
       termer.forEach(t => t.term && ctx.begrepp.push(t));
       return { typ: "begrepp", html: `<aside class="begrepp"><p class="bt">Begrepp</p><dl>${termer.map(t => `<dt>${inline(t.term)}</dt><dd>${inline(t.def)}</dd>`).join("")}</dl></aside>` };
     }
-    const inre = (rest ? [rest, ...resten] : resten);
+    let inre = (rest ? [rest, ...resten] : resten);
+    // Kunskapspunkter i Viktigt-rutan: "- {#id} text"
+    if (tl.startsWith("viktigt")) inre = inre.map(l => { const k = l.match(/^(\s*[-*]\s+)\{#([\w-]+)\}\s*(.*)$/); if (!k) return l; ctx.punkter && ctx.punkter.push({ id: k[2], html: inline(k[3]) }); return k[1] + k[3]; });
     const innehall = block(inre, ctx).map(b => b.html).join("");
     if (tl.startsWith("exempel")) return { html: `<div class="exempel"><p class="et">${inline(titel)}</p>${innehall}</div>` };
     if (tl.startsWith("viktigt")) {
@@ -204,17 +206,17 @@ const MD = (() => {
       if (h1) { res.titel = h1[1].trim(); return; }
       akt.rader.push(l);
     });
-    const ctx0 = { viktigt: [], forklara: [], begrepp: res.begrepp };
+    const ctx0 = { viktigt: [], forklara: [], punkter: [], begrepp: res.begrepp };
     const intro = block(delar[0].rader, ctx0);
     const fp = intro.findIndex(b => b.typ === "p");
     if (fp === 0) { res.ingress = intro[0].html.replace(/^<p>|<\/p>$/g, ""); intro.shift(); }
     res.intro = sattIhop(intro); res.introViktigt = ctx0.viktigt; res.introForklara = ctx0.forklara;
     delar.slice(1).forEach(d => {
       if (d.dold) return;
-      const ctx = { viktigt: [], forklara: [], begrepp: [] };
+      const ctx = { viktigt: [], forklara: [], punkter: [], begrepp: [] };
       const html = sattIhop(block(d.rader, ctx));
       res.begrepp.push(...ctx.begrepp);
-      res.avsnitt.push({ id: d.id, rubrik: d.rubrik, ak: d.ak, html, viktigt: ctx.viktigt, forklara: ctx.forklara, begrepp: ctx.begrepp });
+      res.avsnitt.push({ id: d.id, rubrik: d.rubrik, ak: d.ak, html, viktigt: ctx.viktigt, forklara: ctx.forklara, punkter: ctx.punkter, begrepp: ctx.begrepp });
     });
     return res;
   }

@@ -64,11 +64,11 @@ Organismer med cellkärna kallas alltså **eukaryota** – precis som våra egna
 > En *cell* tar upp *näring* och får *energi* ur den. Energin använder cellen för att *växa* och *föröka sig*. Cellen förökar sig genom att fabrikerna använder receptet i arvsmassan för att skapa nya celler. Cellen behöver ingen hjälp utifrån, **därför** kan den leva själv.
 
 > **Viktigt att komma ihåg**
-> - Cellen är den minsta delen som kan leva själv
->  - Allt levande består av **celler**.
-> - **Arvsmassa (DNA)** receptet för att skapa fler celler, ligger i **cellkärnan** eller löst i cellen
-> - Celler har **ämnesomsättning** som innebär att det tar upp näring och gör om det till energi som behövs till cellens delar när de jobbar
-> - **Encellig** = en enda cell. **Flercellig** = många celler.
+> - {#cell-minsta} Cellen är den minsta delen som kan leva själv.
+> - {#cell-allt} Allt levande består av **celler**.
+> - {#cell-arvsmassa} **Arvsmassa (DNA)** receptet för att skapa fler celler, ligger i **cellkärnan** eller löst i cellen
+> - {#cell-amnes} Celler har **ämnesomsättning** som innebär att det tar upp näring och gör om det till energi som behövs till cellens delar när de jobbar
+> - {#cell-encellig} **Encellig** = en enda cell. **Flercellig** = många celler.
 
 ## Vad är mikroorganismer? {#vad}
 
@@ -100,10 +100,10 @@ Mikrober är inte bra eller dåliga. Precis som vi försöker de överleva. Ibla
 > *Mikroorganismer* är för små för att ses med blotta ögat. Först när *mikroskopet* uppfanns på 1600-talet kunde man förstora dem så mycket att de syntes. **Därför** upptäckte man dem först då.
 
 > **Viktigt att komma ihåg**
-> - **Mikrober** är levande organismer som är för små för att synas utan mikroskop.
-> - De flesta mikrober är ofarliga eller nyttiga.
-> - Mikrober som orsakar sjukdom kallas **patogener**.
-> - Det finns 6 grupper av mikrober: bakterier, virus, svampar, protozoer, alger och arkéer.
+> - {#vad-mikrob} **Mikrober** är levande organismer som är för små för att synas utan mikroskop.
+> - {#vad-ofarliga} De flesta mikrober är ofarliga eller nyttiga.
+> - {#vad-patogen} Mikrober som orsakar sjukdom kallas **patogener**.
+> - {#vad-grupper} Det finns 6 grupper av mikrober: bakterier, virus, svampar, protozoer, alger och arkéer.
 
 ## Bakterier {#bakterier}
 
@@ -143,10 +143,10 @@ För att skydda mat mot bakterier används bland annat **kyla** (kylskåp), **to
 > *Bakterier* behöver värme och näring för att föröka sig snabbt. I kylan *delar sig* bakterierna mycket långsammare. **Därför** tar det längre tid innan maten blir dålig.
 
 > **Viktigt att komma ihåg**
-> - Bakterier är **encelliga** och **saknar cellkärna**.
-> - De förökar sig genom att **dela sig**.
-> - Bakterier är viktiga **nedbrytare** i naturen.
-> - De flesta bakterier är ofarliga eller nyttiga – färre än 1 % är skadliga.
+> - {#bakt-encellig} Bakterier är **encelliga** och **saknar cellkärna**.
+> - {#bakt-dela} De förökar sig genom att **dela sig**.
+> - {#bakt-nedbrytare} Bakterier är viktiga **nedbrytare** i naturen.
+> - {#bakt-ofarliga} De flesta bakterier är ofarliga eller nyttiga – färre än 1 % är skadliga.
 
 ## Virus – på gränsen till liv {#virus}
 
@@ -171,8 +171,8 @@ Det finns också **nyttiga virus**. Vissa angriper bakterier och andra skadliga 
 > Ett *virus* har *arvsmassa*, precis som levande organismer. Men det är ingen *cell*, har ingen *ämnesomsättning* och inga egna fabriker. Det kan bara föröka sig genom att använda en *värdcells* fabriker. **Därför** säger man att virus är på gränsen till liv.
 
 > **Viktigt att komma ihåg**
-> - Virus består inte av celler och kan inte föröka sig utan en värdcell.
-> - Därför räknas virus oftast inte som levande.
+> - {#virus-ingen-cell} Virus består inte av celler och kan inte föröka sig utan en värdcell.
+> - {#virus-ej-levande} Därför räknas virus oftast inte som levande.
 
 ## Svampar {#svampar}
 
@@ -196,9 +196,9 @@ Många svampar består av långa, tunna trådar som kallas **hyfer**. Det vi kal
 > En *mikrob* är så liten att den bara syns i mikroskop. *Jäst* är *encellig* – en enda liten cell – och mögel består av mycket tunna trådar. En kantarell är en stor, *flercellig* svamp som syns med blotta ögat. **Därför** räknas jäst och mögel som mikrober, men inte kantareller.
 
 > **Viktigt att komma ihåg**
-> - Svampar är varken växter eller djur.
-> - De kan vara encelliga (jäst) eller flercelliga (mögel, skogssvamp).
-> - Svampar är viktiga **nedbrytare** i naturen.
+> - {#svamp-grupp} Svampar är varken växter eller djur.
+> - {#svamp-en-fler} De kan vara encelliga (jäst) eller flercelliga (mögel, skogssvamp).
+> - {#svamp-nedbrytare} Svampar är viktiga **nedbrytare** i naturen.
 
 ## Mikrobiomet {#mikrobiom}
 
@@ -216,8 +216,8 @@ Mikroberna är så små att de inte väger särskilt mycket. Länge sa man att d
 > *Mikrobiomet* är alla mikrober i och på kroppen. De nyttiga mikroberna tar plats och näring som skadliga mikrober annars hade använt. **Därför** får skadliga mikrober svårare att orsaka infektioner.
 
 > **Viktigt att komma ihåg**
-> - **Mikrobiomet** är alla mikrober i och på kroppen.
-> - Mikrobiomet hjälper oss bland annat med matsmältningen och skyddar mot infektioner.
+> - {#mbiom-vad} **Mikrobiomet** är alla mikrober i och på kroppen.
+> - {#mbiom-hjalper} Mikrobiomet hjälper oss bland annat med matsmältningen och skyddar mot infektioner.
 
 ## Symbios {#symbios}
 
@@ -234,6 +234,6 @@ Mikroberna i kroppen lever i **symbios** med oss. Symbios är när två olika ar
 
 
 > **Viktigt att komma ihåg**
-> - **Symbios** = nära samband mellan två olika arter.
-> - **Mutualism**: båda vinner. **Kommensalism**: en vinner, den andra påverkas inte. **Parasitism**: en vinner, den andra skadas.
+> - {#symb-vad} **Symbios** = nära samband mellan två olika arter.
+> - {#symb-typer} **Mutualism**: båda vinner. **Kommensalism**: en vinner, den andra påverkas inte. **Parasitism**: en vinner, den andra skadas.
 

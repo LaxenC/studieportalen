@@ -59,7 +59,14 @@ function bygg() {
         else (u.avsnitt || []).forEach(av => { if (o.texter[u.kapitel] && !avsnittAv(o, u.kapitel, av)) varna(`Uppgift <code>${esc(u.id)}</code>: avsnittet "#${esc(av)}" finns inte i ${esc(u.kapitel)}.md`, `granska.html?kapitel=${o.id}/${u.kapitel}#u-${u.id}`); });
         if (!grundNivaer(u).length) varna(`Uppgift <code>${esc(u.id)}</code>: har ingen nivå (nivaer eller nivaerPerArskurs)`);
         if (!(u.varianter || []).length) varna(`Uppgift <code>${esc(u.id)}</code>: har inga varianter`);
+        const kanda = punkterFor(o, u.kapitel, null, "alla").map(p => p.id);
+        (u.varianter || []).forEach((v, vi) => uppgiftPunkter(u, vi).forEach(id => { if (!kanda.includes(id)) varna(`Uppgift <code>${esc(u.id)}</code>: kunskapspunkten "${esc(id)}" finns inte i texten`, `granska.html?kapitel=${o.id}/${u.kapitel}#u-${u.id}`); }));
       });
+      // kunskapspunkter som har för få uppgifter (Öva tills du kan behöver minst två)
+      o.kapitel.forEach(k => punkterFor(o, k.id, null, "alla").forEach(p => {
+        const n = o.uppgifter.filter(u => !u.dold && u.kapitel === k.id && u.typ !== "forklara").reduce((s, u) => s + u.varianter.filter((v, vi) => uppgiftPunkter(u, vi).includes(p.id)).length, 0);
+        if (n < 2) varna(`${esc(k.namn)} › ${esc(p.rubrik)}: kunskapspunkten "${esc(p.id)}" har ${n} ${n === 1 ? "uppgift" : "uppgifter"} (minst 2 behövs)`, L("las", k.id, p.av));
+      }));
     }
     rader.push(`</ul></li>`);
   }

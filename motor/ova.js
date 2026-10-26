@@ -39,10 +39,12 @@ function ovaHtml() {
   <div class="go">
     <p class="err" id="err" hidden></p>
     <div class="btns">
+      <button type="button" class="quick lar" id="lar" hidden>🎯 Öva tills du kan</button>
       <button type="button" class="quick" id="quick">Bara kör</button>
       <button type="button" class="start" id="start">Starta uppgifter <svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M6 3l5 5-5 5" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
     </div>
     <p class="note">Bara kör = valt kapitel (eller blandat), två stjärnor, löpande, rättning efter varje uppgift.</p>
+    <p class="note" id="larNote" hidden>🎯 Öva tills du kan = frågorna kommer tillbaka i nya former tills du kan allt i <span id="larVad"></span>. Du behöver inte ha läst först.</p>
   </div>
 </div>
 
@@ -56,6 +58,7 @@ function ovaHtml() {
   <section class="panel qcard">
     <div class="qmeta"><span class="chip" id="qArea"></span><span class="chip lvchip" id="qLevel"></span></div>
     <h2 id="qTitle"></h2>
+    <div class="nytt" id="qNytt" hidden></div>
     <p class="instr" id="qInstr"></p>
     <div class="qbody" id="qBody"></div>
     <div class="fb" id="qFb" hidden aria-live="polite"></div>
@@ -113,6 +116,9 @@ function renderOva() {
   $("note").textContent = loop ? "Löpande: nya uppgifter kommer tills du avslutar. Rättning sker efter varje uppgift." : "";
   const finns = OVA.kapitel === "mix" ? kapMedUppg(o).some(k => poolFor(k.id).length) : poolFor(OVA.kapitel).length > 0;
   $("start").disabled = !finns; $("quick").disabled = !finns; $("err").hidden = finns;
+  const lp = OVA.kapitel !== "mix" ? larPunkter().length : 0;
+  $("lar").hidden = !lp; $("larNote").hidden = !lp;
+  if (lp) $("larVad").textContent = OVA.avsnitt ? "avsnittet" : "kapitlet";
   $("err").textContent = OVA.level === 6 ? "Det finns inga förklaringsuppgifter här än." : "Det finns inga uppgifter här för din årskurs än.";
 }
 
@@ -175,6 +181,7 @@ function startQuiz() {
   visaFraga();
 }
 function nuvarande() {
+  if (OV.lar && !OV.list[OV.idx]) { const q = larNasta(); if (!q) return null; OV.list.push(q); return q; }
   if (OV.loop && !OV.list[OV.idx]) {
     const prev = OV.list[OV.idx - 1];
     const q = skapaFragaNagonstans(OV.omr[rnd(OV.omr.length)], OV.omr, slumpNiva(OV.mix), OV.used, prev && (prev.task.grupp || prev.task.id));
@@ -186,13 +193,16 @@ function nuvarande() {
 function visaFraga() {
   const q = nuvarande(); if (!q) return visaResultat();
   const T = TYPER[q.task.typ], ratt = OV.results.filter(r => r && r.ok).length;
-  $("qProg").textContent = OV.loop ? `Uppgift ${OV.idx + 1} · ${ratt} rätt hittills` : `Uppgift ${OV.idx + 1} av ${OV.list.length}`;
-  $("qBar").style.width = OV.loop ? "100%" : `${(OV.idx / OV.list.length) * 100}%`;
-  $("qBar").parentElement.hidden = OV.loop;
+  $("qProg").textContent = OV.lar ? `🎯 Du kan ${larAntalKlara()} av ${OV.lar.pk.size} saker` : OV.loop ? `Uppgift ${OV.idx + 1} · ${ratt} rätt hittills` : `Uppgift ${OV.idx + 1} av ${OV.list.length}`;
+  $("qBar").style.width = OV.lar ? `${100 * larAntalKlara() / OV.lar.pk.size}%` : OV.loop ? "100%" : `${(OV.idx / OV.list.length) * 100}%`;
+  $("qBar").parentElement.hidden = OV.loop && !OV.lar;
   $("qArea").textContent = (kapitelAv(OVA.o, q.omrade) || {}).namn || q.omrade;
   $("qLevel").textContent = arFk(q.task) ? "Förklara" : q.niva >= 3 ? "Utmaning" : `Nivå ${q.niva}`; $("qLevel").dataset.n = arFk(q.task) ? "fk" : q.niva;
   $("qTitle").textContent = q.task.titel;
   $("qInstr").innerHTML = typeof T.instr === "function" ? T.instr(q) : "";
+  const nya = OV.lar && q.larItem ? (q.nya || (q.nya = q.larItem.punkter.map(id => OV.lar.pk.get(id)).filter(p => p && !p.sett))) : [];
+  $("qNytt").hidden = !nya.length;
+  $("qNytt").innerHTML = nya.length ? `<p class="fl">💡 Nytt – läs först</p><ul>${nya.map(p => `<li>${p.html}</li>`).join("")}</ul>` : "";
   const body = $("qBody"); body.innerHTML = T.html(q);
   const fresh = body.cloneNode(true); body.replaceWith(fresh);
   T.mount && T.mount(fresh, q);
@@ -208,6 +218,7 @@ function rattaNu() {
   const r = TYPER[q.task.typ].grade(body, q);
   body.querySelectorAll("input,select").forEach(el => el.disabled = true);
   q.graded = true; OV.results[OV.idx] = { q, ...r };
+  if (OV.lar) larEfterSvar(q, r);
   return r;
 }
 function nasta() {
@@ -215,8 +226,8 @@ function nasta() {
   if (OV.each && !q.graded) {
     const r = rattaNu();
     const fb = $("qFb"); fb.hidden = false; fb.className = "fb " + (r.ok ? "ok" : (r.right || r.part) ? "part" : "no");
-    fb.innerHTML = `<p class="verdict">${r.verdict ? r.verdict : r.ok ? "Rätt!" : r.right ? `Delvis rätt – ${r.right} av ${r.total}.` : "Inte rätt den här gången."}</p><div class="facit"><p class="fl">Rätt svar</p>${r.facit}</div>`;
-    $("qNext").textContent = !OV.loop && OV.idx === OV.list.length - 1 ? "Se resultat" : "Nästa uppgift";
+    fb.innerHTML = `<p class="verdict">${r.verdict ? r.verdict : r.ok ? "Rätt!" : r.right ? `Delvis rätt – ${r.right} av ${r.total}.` : "Inte rätt den här gången."}</p><div class="facit"><p class="fl">Rätt svar</p>${r.facit}</div>${komIhag(q, r)}`;
+    $("qNext").textContent = OV.lar ? (larKlar() ? "Se resultat" : "Nästa uppgift") : !OV.loop && OV.idx === OV.list.length - 1 ? "Se resultat" : "Nästa uppgift";
     fb.scrollIntoView({ block: "nearest", behavior: matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth" });
     return;
   }
@@ -226,6 +237,7 @@ function nasta() {
 }
 function visaResultat() {
   OV.aktiv = false;
+  if (OV.lar) return larResultat();
   const res = OV.results.filter(Boolean), ok = res.filter(r => r.ok).length;
   $("quizView").hidden = true; $("resultView").hidden = false; window.scrollTo(0, 0);
   $("rScore").textContent = res.length ? `${ok} av ${res.length}` : "0";
@@ -277,12 +289,13 @@ function ovaKlick(e) {
   else if (b.dataset.count) OVA.count = b.dataset.count === "loop" ? "loop" : +b.dataset.count;
   else if (b.dataset.fb) { if (b.getAttribute("aria-disabled") === "true") return; OVA.feedback = b.dataset.fb; }
   else if (b.id === "avBort") OVA.avsnitt = null;
-  else if (b.id === "start") { startQuiz(); return; }
-  else if (b.id === "quick") { OVA.level = 2; OVA.count = "loop"; OVA.feedback = "each"; renderOva(); startQuiz(); return; }
+  else if (b.id === "start") { OV.lar = null; startQuiz(); return; }
+  else if (b.id === "quick") { OV.lar = null; OVA.level = 2; OVA.count = "loop"; OVA.feedback = "each"; renderOva(); startQuiz(); return; }
   else if (b.id === "qNext") { nasta(); return; }
   else if (b.id === "qQuit") { if (OV.loop || OV.results.filter(Boolean).length) visaResultat(); else tillStart(); return; }
   else if (b.id === "qInfo") { const q = OV.list[OV.idx]; oppnaPlugga(q.omrade, q.task.avsnitt, true); return; }
-  else if (b.id === "rAgain") { startQuiz(); return; }
+  else if (b.id === "rAgain") { OV.lar ? startLar() : startQuiz(); return; }
+  else if (b.id === "lar") { startLar(); return; }
   else if (b.id === "rHome") { tillStart(); return; }
   else return;
   renderOva();
@@ -300,5 +313,71 @@ function visaOva(o, p, el) {
   if (p.stjarnor) OVA.level = Math.max(1, Math.min(6, +p.stjarnor));
   el.innerHTML = ovaHtml();
   renderOmraden(); renderOva();
+  if (p.lar !== undefined && OVA.kapitel !== "mix" && larPunkter().length) { startLar(); return; }
   if (p.kor !== undefined) { OVA.count = "loop"; OVA.feedback = "each"; if (!p.stjarnor) OVA.level = 2; renderOva(); if (!$("start").disabled) startQuiz(); }
+}
+
+/* ---------- Öva tills du kan (lär-läget) ----------
+   Varje kunskapspunkt (rad i Viktigt-rutan med {#id}) ska besvaras rätt två gånger,
+   i två olika uppgifter/varianter. Fel svar kommer tillbaka efter några frågor. */
+function larPunkter() {
+  const o = OVA.o, ak = AK(), pk = punkterFor(o, OVA.kapitel, OVA.avsnitt, ak); if (!pk.length) return [];
+  const items = larItems(pk.map(p => p.id));
+  return pk.filter(p => items.some(it => it.punkter.includes(p.id)));
+}
+function larItems(ids) {
+  const o = OVA.o, ak = AK();
+  return aktivaUppgifter(o, ak, OVA.kapitel).filter(t => !arFk(t)).flatMap(t => t.varianter.map((v, vi) => ({ t, vi, key: t.id + "#" + vi,
+    punkter: uppgiftPunkter(t, vi).filter(id => ids.includes(id)) }))).filter(it => it.punkter.length);
+}
+function startLar() {
+  const pk = larPunkter(); if (!pk.length) return;
+  const items = larItems(pk.map(p => p.id));
+  OV.lar = { pk: new Map(pk.map(p => [p.id, { ...p, ratt: new Set(), typer: new Set(), due: 0, sett: false, fel: 0,
+    antal: items.filter(it => it.punkter.includes(p.id)).length }])), items, n: 0 };
+  Object.assign(OV, { mix: { 1: 1 }, loop: true, omr: [OVA.kapitel], forklara: false, list: [], idx: 0, used: new Map(), results: [], each: true, slut: false, avsnitt: OVA.avsnitt, aktiv: true });
+  $("startView").hidden = true; $("resultView").hidden = true; $("quizView").hidden = false;
+  visaFraga();
+}
+const larArKlar = p => p.ratt.size >= Math.min(2, p.antal);
+const larAntalKlara = () => [...OV.lar.pk.values()].filter(larArKlar).length;
+const larKlar = () => [...OV.lar.pk.values()].every(larArKlar);
+function larNasta() {
+  const L = OV.lar; if (larKlar()) return null;
+  const kvar = [...L.pk.values()].filter(p => !larArKlar(p));
+  // först punkter som eleven inte har mött (i textens ordning), sedan de som är på tur
+  let p = kvar.find(x => !x.sett) || kvar.filter(x => x.due <= L.n).sort((a, b) => a.due - b.due)[0] || kvar.sort((a, b) => a.due - b.due)[0];
+  const senast = OV.list.length ? OV.list[OV.list.length - 1].task.id : null;
+  const nivaMin = t => Math.min(...nivaerFor(OVA.o, t, AK()).map(x => x.niva));
+  let kand = L.items.filter(it => it.punkter.includes(p.id) && !p.ratt.has(it.key));
+  if (!kand.length) kand = L.items.filter(it => it.punkter.includes(p.id));
+  if (kand.length > 1 && kand.some(it => it.t.id !== senast)) kand = kand.filter(it => it.t.id !== senast);
+  if (kand.some(it => !p.typer.has(it.t.typ))) kand = kand.filter(it => !p.typer.has(it.t.typ));
+  if (!p.sett) { const m = Math.min(...kand.map(it => it.punkter.length)); kand = kand.filter(it => it.punkter.length === m); }   // första mötet: en sak i taget
+  if (!p.ratt.size) { const m = Math.min(...kand.map(it => nivaMin(it.t))); kand = kand.filter(it => nivaMin(it.t) === m); }
+  const it = kand[rnd(kand.length)], nv = nivaerFor(OVA.o, it.t, AK()).sort((a, b) => a.niva - b.niva)[0] || { niva: 1, orig: 1 };
+  const q = { uid: "q" + (++qCounter), task: it.t, v: it.t.varianter[it.vi], niva: nv.niva, omrade: it.t.kapitel,
+    rull: !p.ratt.size && (it.t.rullista || []).includes(nv.orig), larItem: it };
+  TYPER[it.t.typ].setup && TYPER[it.t.typ].setup(q);
+  return q;
+}
+function larEfterSvar(q, r) {
+  const L = OV.lar; L.n++;
+  (q.larItem ? q.larItem.punkter : []).forEach(id => { const p = L.pk.get(id); if (!p) return;
+    p.sett = true;
+    if (r.ok) { p.ratt.add(q.larItem.key); p.typer.add(q.task.typ); }
+    else { p.fel++; p.due = L.n + 2; } });
+}
+function komIhag(q, r) {
+  const ids = q.larItem ? q.larItem.punkter : uppgiftPunkter(q.task, q.task.varianter.indexOf(q.v));
+  if (!ids.length || (r.ok && !OV.lar)) return "";
+  const alla = punkterFor(OVA.o, q.task.kapitel, null, "alla"), pk = ids.map(id => alla.find(p => p.id === id)).filter(Boolean);
+  return pk.length ? `<div class="komihag"><p class="fl">⭐ Kom ihåg</p><ul>${pk.map(p => `<li>${p.html}</li>`).join("")}</ul></div>` : "";
+}
+function larResultat() {
+  const L = OV.lar, alla = [...L.pk.values()], klara = alla.filter(larArKlar);
+  $("quizView").hidden = true; $("resultView").hidden = false; window.scrollTo(0, 0);
+  $("rScore").textContent = `${klara.length} av ${alla.length}`;
+  $("rText").textContent = klara.length === alla.length ? `Du kan allt i ${OVA.avsnitt ? "avsnittet" : "kapitlet"} – snyggt jobbat! 🎉` : "Det här kan du – och det här är kvar. Öva igen så kommer de som är kvar först.";
+  $("rList").innerHTML = alla.map(p => `<details class="ritem ${larArKlar(p) ? "ok" : "no"}" ${larArKlar(p) ? "" : "open"}><summary><span class="mark">${larArKlar(p) ? "✓" : "✗"}</span><span>${p.html}</span><span class="lv">${esc(p.rubrik)}</span></summary></details>`).join("");
 }

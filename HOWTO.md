@@ -623,3 +623,22 @@ Portal.plan({
 ```
 
 Stavas ett område, kapitel eller avsnitt fel visas en röd varning på plansidan. Avsnittens id står i rubrikerna i texterna, `{#id}`, och i rullistorna på granska-sidan.
+
+## Öva tills du kan – kunskapspunkter
+
+Varje rad i en Viktigt-ruta kan bli en **kunskapspunkt** genom att få ett id:
+
+```
+> **Viktigt att komma ihåg**
+> - {#virus-ingen-cell} Virus består inte av celler och kan inte föröka sig utan en värdcell.
+```
+
+Id:t syns inte för eleven. I uppgifterna skriver du vilka punkter de tränar:
+
+```js
+punkter: ["virus-ingen-cell"],                       // gäller alla varianter
+punkter: { 0: ["vad-patogen"], 1: ["vad-ofarliga"] },   // olika per variant (variant 1 = 0)
+```
+
+eller `punkter: [...]` direkt i en variant. När ett avsnitt har punkter visas knappen **🎯 Öva tills du kan** i Läs och i Öva. Eleven får frågor tills varje punkt är rätt besvarad två gånger, i två olika uppgifter. Fel svar kommer tillbaka efter några frågor, och första gången en punkt dyker upp visas den som "💡 Nytt".
+Översiktssidan varnar om en punkt har färre än två uppgifter.
