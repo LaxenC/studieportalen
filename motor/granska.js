@@ -20,8 +20,11 @@ function rad(o, t, ak) {
   if (t.nivaerPerArskurs) ovrigt.push("egen nivå för åk " + Object.keys(t.nivaerPerArskurs).join(", "));
   if (t.grupp) ovrigt.push("grupp: " + esc(t.grupp));
   if (t.arskurs) ovrigt.push("åk " + MD.akText(t.arskurs));
+  const pids = [...new Set(t.varianter.flatMap((v, vi) => uppgiftPunkter(t, vi)))];
+  const pkInfo = punkterFor(o, t.kapitel, null, "alla");
+  const pk = pids.length ? `<span class="gr-pk">${pids.map(id => { const p = pkInfo.find(x => x.id === id); return `<span class="gr-pkchip${p ? "" : " fel"}" title="${p ? esc(p.html.replace(/<[^>]+>/g, "")) : "finns inte i texten"}">🎯 ${esc(id)}</span>`; }).join("")}</span>` : "";
   return `<tr id="u-${t.id}">
-    <td class="gr-namn"><b>${esc(t.titel)}</b><small>${esc(t.id)}${RADER[t.id] ? ` · rad ${RADER[t.id].fran}` : ""}${ovrigt.length ? " · " + ovrigt.join(" · ") : ""}</small></td>
+    <td class="gr-namn"><b>${esc(t.titel)}</b><small>${esc(t.id)}${RADER[t.id] ? ` · rad ${RADER[t.id].fran}` : ""}${ovrigt.length ? " · " + ovrigt.join(" · ") : ""}</small>${pk}</td>
     <td>${TYPNAMN[t.typ] || t.typ}</td>
     <td>${avs || '<span class="gr-dim">hela kapitlet</span>'}</td>
     <td>${nivaChips(o, t, ak)}</td>
@@ -94,6 +97,12 @@ function visa() {
       const per = [0, 1, 2, 3].map(L => tasks.filter(t => nivaerFor(o, t, ak).some(x => x.niva === L)).length);
       out.push(`<section class="panel gr-kap"><div class="gr-rubrik"><h2>${esc(k.namn)}</h2><span class="gr-dim">${esc(o.namn)}</span>${VAL.avsnitt ? `<p class="gr-avrub">› ${VAL.avsnitt === "_hela" ? "Hela kapitlet (inget avsnitt)" : esc((avsnittAv(o, k.id, VAL.avsnitt) || {}).rubrik || VAL.avsnitt)}</p>` : ""}
         <span class="gr-sum">${tasks.length} uppgifter · nivå 0: ${per[0]} · nivå 1: ${per[1]} · nivå 2: ${per[2]}${per[3] ? ` · utmaning: ${per[3]}` : ""}</span></div>`);
+      const pkt = punkterFor(o, k.id, VAL.avsnitt && VAL.avsnitt !== "_hela" ? VAL.avsnitt : null, ak);
+      if (pkt.length) {
+        const antal = id => alla.filter(t => !t.dold && t.typ !== "forklara" && (ak === "alla" || passar(uppgiftArskurs(o, t), ak))).reduce((n, t) => n + t.varianter.filter((v, vi) => uppgiftPunkter(t, vi).includes(id)).length, 0);
+        out.push(`<details class="gr-pkt"><summary>🎯 Öva tills du kan – ${pkt.length} kunskapspunkter</summary><table class="rules"><thead><tr><th>Punkt</th><th>Text</th><th>Uppgifter</th></tr></thead><tbody>${pkt.map(p => { const n = antal(p.id);
+          return `<tr><td><code>${esc(p.id)}</code></td><td>${p.html}</td><td class="gr-tal${n < 2 ? " gr-fel" : ""}">${n}</td></tr>`; }).join("")}</tbody></table></details>`);
+      }
       if (!tasks.length) out.push(`<p class="gr-dim">Inga uppgifter${VAL.avsnitt ? " i det här avsnittet" : ""}${ak === "alla" ? "" : " för åk " + ak}.</p>`);
       else out.push(`<div class="tablewrap"><table class="rules gr-tab"><thead><tr><th>Uppgift</th><th>Typ</th><th>Avsnitt</th><th>Nivå</th><th>Var.</th><th></th></tr></thead>
         <tbody>${tasks.map(t => rad(o, t, ak)).join("")}</tbody></table></div>`);
