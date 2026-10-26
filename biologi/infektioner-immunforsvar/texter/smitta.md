@@ -8,7 +8,7 @@ Vad händer när vi blir sjuka – och hur sprids smittan mellan människor?
 
 ## Sjukdom och smitta {#sjukdom}
 
-En **sjukdom** är när något i kroppen inte fungerar som det ska. Alla sjukdomar orsakas inte av mikrober – till exempel diabetes, allergier och cancer smittar inte. Men många vanliga sjukdomar orsakas av **patogener**: bakterier, virus, svampar eller parasiter.
+En **sjukdom** är när något i kroppen inte fungerar som det ska. Alla sjukdomar orsakas inte av **patogener** (mikrober eller organismer som orsakar sjukdomar) – till exempel diabetes, allergier och cancer smittar inte. Men många vanliga sjukdomar orsakas av **patogener**: bakterier, virus, svampar eller parasiter.
 
 När en patogen tar sig in i kroppen och börjar föröka sig kallas det en **infektion**.
 
@@ -31,9 +31,10 @@ När en patogen tar sig in i kroppen och börjar föröka sig kallas det en **in
 > Under *inkubationstiden* har *patogenen* redan kommit in i kroppen och börjat föröka sig, men man har ännu inga *symptom*. **Därför** kan man sprida smittan utan att veta om det.
 
 > **Viktigt att komma ihåg**
-> - En **infektion** är när en patogen tar sig in i kroppen och förökar sig.
-> - **Inkubationstid** = tiden från smitta till sjukdom.
-> - **Epidemi** = snabb spridning. **Pandemi** = spridning över stora delar av världen.
+> -{#sjukdom-orsak} Mikrober eller organismer som orsakar sjukdomar kallas för **Patogener**, men alla sjukdonar kommer inte från patogener.  
+> - {#sjukdom-infek} En **infektion** är när en patogen tar sig in i kroppen och förökar sig.
+> - {#sjukdom-inkub} **Inkubationstid** = tiden från smitta till sjukdom.
+> - {#sjukdom-sprid} **Epidemi** = snabb spridning. **Pandemi** = spridning över stora delar av världen.
 
 ## Patogener – det som gör oss sjuka {#vadsmittar}
 
