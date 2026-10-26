@@ -31,7 +31,7 @@ När en patogen tar sig in i kroppen och börjar föröka sig kallas det en **in
 > Under *inkubationstiden* har *patogenen* redan kommit in i kroppen och börjat föröka sig, men man har ännu inga *symptom*. **Därför** kan man sprida smittan utan att veta om det.
 
 > **Viktigt att komma ihåg**
-> -{#sjukdom-orsak} Mikrober eller organismer som orsakar sjukdomar kallas för **Patogener**, men alla sjukdonar kommer inte från patogener.  
+> - {#sjukdom-orsak} Mikrober eller organismer som orsakar sjukdomar kallas för **Patogener**, men alla sjukdonar kommer inte från patogener.  
 > - {#sjukdom-infek} En **infektion** är när en patogen tar sig in i kroppen och förökar sig.
 > - {#sjukdom-inkub} **Inkubationstid** = tiden från smitta till sjukdom.
 > - {#sjukdom-sprid} **Epidemi** = snabb spridning. **Pandemi** = spridning över stora delar av världen.
@@ -57,13 +57,13 @@ Andra allvarliga bakteriesjukdomar är kolera, pest och tuberkulos. De flesta ba
 
 ### Virus
 
-Ett virus är **arvsmassa i ett hölje av protein**. Det måste ta sig in i en **värdcell** för att föröka sig. Många sjukdomar orsakas av virus, till exempel förkylning, influensa, mässling och covid-19. Det finns minst 600 virus som kan drabba människor – ungefär hälften har med förkylningar att göra.
+Ett virus är har ingen cell utan de har **arvsmassa i ett skal av protein**. De måste ta sig in i en **värdcell** för att föröka sig. Många sjukdomar orsakas av virus, till exempel förkylning, influensa, mässling och covid-19. Det finns minst 600 virus som kan drabba människor – ungefär hälften har med förkylningar att göra.
 
 Virus förändrar sig hela tiden, så att immunförsvaret inte känner igen dem. Därför kan man bli förkyld år efter år. **Antibiotika fungerar inte mot virus.**
 
 ### Svampar och parasiter
 
-**Svampar** som orsakar sjukdom hos människor ger oftast inte så allvarliga infektioner, till exempel fotsvamp, svamp på naglarna och i munnen. De brukar vara ganska lätta att behandla.
+**Svampar** består av celler och deras arvsmassa ligger i cellkärnan. De svampar som orsakar sjukdom hos människor ger oftast inte så allvarliga infektioner, till exempel fotsvamp, svamp på naglarna och i munnen. De brukar vara ganska lätta att behandla.
 
 En **parasit** lever på eller i en annan organism – **värden** – och får sin näring därifrån. Det skadar ofta värden. Vissa encelliga organismer, **protozoer**, är parasiter. Den mest kända sjukdomen är **malaria**, som sprids med myggor och varje år orsakar hundratusentals dödsfall i världen. Även springmask och löss är parasiter.
 
@@ -80,10 +80,10 @@ En **parasit** lever på eller i en annan organism – **värden** – och får 
 > Malaria orsakas av en encellig *parasit* som lever i vissa myggor. När en sådan mygga sticker en människa kommer parasiten in i blodet. **Därför** sprids malaria där det finns myggor som bär på parasiten.
 
 > **Viktigt att komma ihåg**
-> - De flesta infektioner orsakas av **bakterier** och **virus**. Även **svampar** och **parasiter** kan göra oss sjuka.
-> - Bakteriesjukdomar kan behandlas med **antibiotika**. **Antibiotika fungerar inte mot virus.**
-> - Virus förändrar sig – därför kan man bli förkyld igen och igen.
-> - **Malaria** orsakas av en encellig parasit och sprids med myggor.
+> - {#pat-mik} De flesta infektioner orsakas av **bakterier** och **virus**. Även **svampar** och **parasiter** kan göra oss sjuka.
+> - {#pat-sjuk} Patogener kan orsaka olika sjukdomar: bakterier kan orsaka halsfluss och stelkramp, virus kan orsaka förkylning och influensa, svampar kan orsaka mildare infektioner så som fotsvamp och parasiten protozoer kan orsaka malaria.
+> - {#pat-ant} Bakteriesjukdomar kan behandlas med **antibiotika**. **Antibiotika fungerar inte mot virus.**
+> - {#pat-mut} Virus förändrar sig – därför kan man bli förkyld igen och igen.
 
 ## Hur smitta sprids {#smittspridning}
 
