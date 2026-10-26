@@ -61,7 +61,7 @@ Portal.uppgifter([
             { t: "Patogenen som har tagit sig in i kroppen.", s: "ratt", f: "Vid en infektion har en patogen tagit sig in i kroppen och börjar föröka sig." },
             { t: "Symptomen.", s: "fel", f: "Symptom är tecken på sjukdom, till exempel feber, hosta eller utslag. Vid en infektion har en patogen tagit sig in i kroppen och börjar föröka sig." },
             { t: "Diagnosen.", s: "fel", f: "En diagnos är ett beslut om vilken sjukdom det är. Vid en infektion har en patogen tagit sig in i kroppen och börjar föröka sig." }
-          ]}]
+          ]}]},
       
          { id: "sjukdom-inkub-flerval", kapitel: "smitta", avsnitt: ["sjukdom"], titel: "Inkuvationstid – välj rätt",
             typ: "flerval", nivaer: [1], punkter:["sjukdom-inkub"],
