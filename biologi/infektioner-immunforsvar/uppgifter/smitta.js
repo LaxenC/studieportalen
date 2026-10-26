@@ -102,8 +102,8 @@ Portal.uppgifter([
                    fel: ["Alger", "Kyla", "Dålig mat", "Brist på sömn", "Vind", "Brist på motion"],
                    forklaring: "Bakterier kan exempelvis orsaka halsfluss, virus kan orsaka förkylning, svampar kan orsaka fotsvamp och protozoer kan orsaka malaria." }] },
          
-               { id: "smit-vag-text", kapitel: "smitta", avsnitt: ["smittspridning"], titel: "Smittvägar – fyll i",
-                  typ: "lucktext", nivaer: [0, 1], rullista: [0], punkter: ["smit-vag"],
+               { id: "sprid-vag-text", kapitel: "smitta", avsnitt: ["smittspridning"], titel: "Smittvägar – fyll i",
+                  typ: "lucktext", nivaer: [0, 1], rullista: [0], punkter: ["sprid-vag"],
                   ordlista: ["luften", "blod", "mat och vatten", "djur", "direktkontakt", "indirekt kontakt", "sexuell kontakt", "solljus", "kläder"],
                   varianter: [
                     { text: "Smitta kan spridas på många sätt, till exempel genom direktkontakt, indirekt kontakt, sexuell kontakt, [*luft|luften/blod/mat och vatten|mat|vatten|föda/djur|andra djur|insekter], [*luft|luften/blod/mat och vatten|mat|vatten|föda/djur|andra djur|insekter] och [*luft|luften/blod/mat och vatten|mat|vatten|föda/djur|andra djur|insekter]." },
@@ -111,8 +111,8 @@ Portal.uppgifter([
                     { text: "Smitta kan spridas på många sätt, till exempel via mat och vatten, direktkontakt, sexuell kontakt, [*luft|luften/blod/indirekt kontakt|indirekt/djur|andra djur|insekter], [*luft|luften/blod/indirekt kontakt|indirekt/djur|andra djur|insekter] och [*luft|luften/blod/indirekt kontakt|indirekt/djur|andra djur|insekter]." }
                   ] },
    
-             { id: "smit-stop-para", kapitel: "smitta", avsnitt: ["smittspridning"], titel: "Stoppa smittvägar – para ihop",
-               typ: "para", nivaer: [0, 1, 2], punkter: ["smit-stop"],
+             { id: "sprid-stop-para", kapitel: "smitta", avsnitt: ["smittspridning"], titel: "Stoppa smittvägar – para ihop",
+               typ: "para", nivaer: [0, 1, 2], punkter: ["sprid-stop"],
                varianter: [
                  { rubrik: "Para ihop sätt att stoppa smittväg med rätt smittväg.",
                    par: [["Städa ytor som många rör, exempelvis handtag", "Indirekt kontakt"], ["Hosta i armvecket", "Via luften"], ["Tillaga maten ordentligt", "Föda"],["Använda kondom vid sex", "Sexuell kontakt"], ["Använda rena sprutor", "Blod"],
@@ -192,7 +192,7 @@ Portal.uppgifter([
       ] },
 
     { id: "smi-smittvag-para", kapitel: "smitta", avsnitt: ["smittspridning"], titel: "Smittvägar – para ihop",
-      typ: "para", nivaer: [0, 1, 2],punkter:["smit-vag"],
+      typ: "para", nivaer: [0, 1, 2],punkter:["sprid-vag"],
       varianter: [
         { rubrik: "Para ihop exemplet med rätt smittväg.",
           par: [["Någon nyser bredvid dig", "Via luften"], ["Du tar i ett dörrhandtag som en sjuk har rört", "Indirekt kontakt"],
