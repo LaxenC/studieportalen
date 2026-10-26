@@ -19,7 +19,7 @@ Portal.uppgifter([
       ] },
 
     { id: "cell-flerval", kapitel: "mikroorganismer", avsnitt: ["cell"], titel: "Celler – välj rätt",
-      punkter: { 0: ["vad-mikrob"], 1: ["cell-minsta"], 2: ["cell-encellig"], 3: ["cell-encellig"], 4: ["cell-arvsmassa"] },
+      punkter: { 0: ["vad-mikrob"], 1: ["cell-encellig"], 2: ["cell-encellig"], 3: ["cell-arvsmassa"] },
       typ: "flerval", nivaer: [1],
       varianter: [
         { fraga: "Ordet mikroorganism består av mikro + organism. Vad betyder det?",
@@ -27,11 +27,6 @@ Portal.uppgifter([
                  { t: "En liten del av en cell", s: "fel", f: "en organism är något som lever – mikro betyder mycket liten." },
                  { t: "Ett litet mikroskop", s: "fel", f: "mikroskopet behövs för att se dem – ordet betyder mycket liten levande varelse." },
                  { t: "Något som orsakar sjukdom", s: "fel", f: "det kallas patogen – de flesta mikroorganismer är ofarliga." } ] },
-        { fraga: "Vilka tre saker klarar en cell på egen hand?",
-          alt: [ { t: "Ta upp näring, växa och föröka sig", s: "ratt", f: "det är därför en cell kan leva själv." },
-                 { t: "Tänka, röra sig och sova", s: "fel", f: "en cell tar upp näring, växer och förökar sig." },
-                 { t: "Göra fotosyntes, simma och äta", s: "fel", f: "bara vissa celler gör fotosyntes – alla celler tar upp näring, växer och förökar sig." },
-                 { t: "Bilda virus, växa och dö", s: "fel", f: "en cell tar upp näring, växer och förökar sig." } ] },
         { fraga: "Vad betyder det att en organism är encellig?",
           alt: [ { t: "Den består av en enda cell", s: "ratt", f: "en = en cell, till exempel en bakterie." },
                  { t: "Den består av många celler", s: "fel", f: "det kallas flercellig." },
@@ -47,6 +42,15 @@ Portal.uppgifter([
                  { t: "Syre", s: "fel", f: "cellkärnan innehåller arvsmassan." },
                  { t: "Mat till cellen", s: "fel", f: "cellkärnan innehåller arvsmassan." },
                  { t: "Virus", s: "fel", f: "cellkärnan innehåller cellens egen arvsmassa." } ] }
+      ] },
+
+    { id: "cell-tre-saker", kapitel: "mikroorganismer", avsnitt: ["cell"], titel: "Vad klarar en cell på egen hand?",
+      typ: "valjflera", nivaer: [0, 1], punkter: ["cell-minsta"],
+      varianter: [
+        { fraga: "Vilka tre saker klarar en cell på egen hand?",
+          ratt: ["Ta upp näring", "Växa", "Föröka sig"],
+          fel: ["Tänka", "Sova", "Prata", "Bilda virus", "Andas med lungor", "Se med ögon"],
+          forklaring: "det är därför en cell kan leva själv." }
       ] },
 
     { id: "cell-sortera", kapitel: "mikroorganismer", avsnitt: ["cell"], titel: "Encellig eller flercellig? – sortera",

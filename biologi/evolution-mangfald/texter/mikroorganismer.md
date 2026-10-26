@@ -64,7 +64,7 @@ Organismer med cellkärna kallas alltså **eukaryota** – precis som våra egna
 > En *cell* tar upp *näring* och får *energi* ur den. Energin använder cellen för att *växa* och *föröka sig*. Cellen förökar sig genom att fabrikerna använder receptet i arvsmassan för att skapa nya celler. Cellen behöver ingen hjälp utifrån, **därför** kan den leva själv.
 
 > **Viktigt att komma ihåg**
-> - {#cell-minsta} Cellen är den minsta delen som kan leva själv.
+> - {#cell-minsta} Cellen är den minsta delen som kan leva själv – den tar upp näring, växer och förökar sig.
 > - {#cell-allt} Allt levande består av **celler**.
 > - {#cell-arvsmassa} **Arvsmassa (DNA)** receptet för att skapa fler celler, ligger i **cellkärnan** eller löst i cellen
 > - {#cell-amnes} Celler har **ämnesomsättning** som innebär att det tar upp näring och gör om det till energi som behövs till cellens delar när de jobbar

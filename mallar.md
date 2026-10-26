@@ -212,6 +212,21 @@ På nivåer i `rullista` visas begreppen som stöd: "Använd orden …".
   ] },
 ```
 
+### Välj flera – `valjflera`
+
+Flera alternativ i ett rutnät. Eleven väljer lika många som det finns rätt svar (antalet står i frågan). Delvis rätt ger poäng för de rätta valen.
+
+```js
+{ id: "cell-tre-saker", kapitel: "mikroorganismer", avsnitt: ["cell"], titel: "Vad klarar en cell på egen hand?",
+  typ: "valjflera", nivaer: [0, 1],
+  varianter: [
+    { fraga: "Vilka tre saker klarar en cell på egen hand?",
+      ratt: ["Ta upp näring", "Växa", "Föröka sig"],
+      fel: ["Tänka", "Sova", "Prata", "Bilda virus", "Andas med lungor", "Se med ögon"],
+      forklaring: "det är därför en cell kan leva själv." }
+  ] },
+```
+
 ### Kedja – `kedja`
 
 Steg i ordning med pilar emellan. Några steg är tomma och eleven väljer rätt steg i en rullista. Bra för orsak–verkan-kedjor.

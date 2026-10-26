@@ -595,6 +595,29 @@ TYPER.kedja = {
   }
 };
 
+/* VÄLJ FLERA – välj rätt antal alternativ bland flera.
+   ratt: ["…"]  fel: ["…"]  (antal att välja = antal rätt). Valfritt: forklaring visas efter rättning. */
+TYPER.valjflera = {
+  instr: q => `${esc(q.v.fraga)} <b>Välj ${q.v.ratt.length}.</b>`,
+  setup(q) { q.alt = shuffle([...q.v.ratt.map(t => ({ t, r: true })), ...q.v.fel.map(t => ({ t, r: false }))]); q.val = new Set(); },
+  html(q) { return `<div class="vf" role="group">${q.alt.map((a, i) => `<button type="button" class="vfopt" data-vf="${i}" aria-pressed="false">${MD.inline(a.t)}</button>`).join("")}</div><p class="vfrakna" aria-live="polite">Valda: 0 av ${q.v.ratt.length}</p>`; },
+  mount(root, q) {
+    root.addEventListener("click", e => {
+      const b = e.target.closest("[data-vf]"); if (!b || q.locked) return; const i = +b.dataset.vf;
+      if (q.val.has(i)) q.val.delete(i); else if (q.val.size < q.v.ratt.length) q.val.add(i); else return;
+      b.setAttribute("aria-pressed", q.val.has(i)); root.querySelector(".vfrakna").textContent = `Valda: ${q.val.size} av ${q.v.ratt.length}`;
+    });
+  },
+  grade(root, q) {
+    q.locked = true; let right = 0;
+    q.alt.forEach((a, i) => { const b = root.querySelector(`[data-vf="${i}"]`), vald = q.val.has(i);
+      if (vald && a.r) { b.classList.add("is-right"); right++; } else if (vald) b.classList.add("is-wrong"); else if (a.r) b.classList.add("is-missed"); });
+    const n = q.v.ratt.length;
+    return { ok: right === n && q.val.size === n, right, total: n,
+      facit: `<p><b>${q.v.ratt.map(t => MD.inline(t)).join(", ")}</b>${q.v.forklaring ? ` – ${MD.inline(q.v.forklaring)}` : ""}</p>` };
+  }
+};
+
 /* SANT ELLER FALSKT – lista med påståenden: [text, true/false] */
 TYPER.santfalskt = {
   instr: () => "Är påståendena sanna eller falska?",
@@ -785,10 +808,11 @@ TYPER.forklara = {
 };
 
 /* ---------- Namn på typerna och text för granskning ---------- */
-const TYPNAMN = { dratabell: "Dra i tabell", dra: "Dra till beskrivning", flerval: "Flerval", santfalskt: "Sant eller falskt", udda: "Vilket passar inte in?", sortera: "Sortera", isotoptabell: "Fyll i tabell", andra: "Ändra med reglage", reglage: "Reglage", skrivnotation: "Skriva atomnotation", lucktext: "Lucktext", markera: "Märk ut i bild", para: "Para ihop", bygg: "Bygg atom", skal: "Elektronskal", kvark: "Bygg med kvarkar", kvarktabell: "Pussel", forklara: "Förklara med begrepp", kedja: "Kedja" };
+const TYPNAMN = { dratabell: "Dra i tabell", dra: "Dra till beskrivning", flerval: "Flerval", santfalskt: "Sant eller falskt", udda: "Vilket passar inte in?", sortera: "Sortera", isotoptabell: "Fyll i tabell", andra: "Ändra med reglage", reglage: "Reglage", skrivnotation: "Skriva atomnotation", lucktext: "Lucktext", markera: "Märk ut i bild", para: "Para ihop", bygg: "Bygg atom", skal: "Elektronskal", kvark: "Bygg med kvarkar", kvarktabell: "Pussel", forklara: "Förklara med begrepp", kedja: "Kedja", valjflera: "Välj flera" };
 function variantText(t, v) {
   if (t.typ === "lucktext") return v.facit ? v.facit : esc(v.text).replace(/\[\*?([^\]]+)\]/g, (m, a) => `<b class="ans">${esc(a.split("/").map(x => x.split("|")[0]).join(" / "))}</b>`);
   if (t.typ === "para") return `${esc(v.rubrik || "")} ${v.par.map(([l, r]) => `${l.startsWith("bild:") ? "[bild: " + l.slice(5) + "]" : esc(l)} → <b>${esc(r)}</b>`).join(" · ")}`;
+  if (t.typ === "valjflera") return `${esc(v.fraga)} <b>${v.ratt.map(esc).join(", ")}</b> <i>(fel: ${v.fel.map(esc).join(", ")})</i>`;
   if (t.typ === "kedja") { const l = v.luckor || {}; const tom = new Set(Array.isArray(l) ? l : Object.values(l).flat()); return `${esc(v.rubrik || "")} ${v.steg.map((x, i) => tom.has(i) ? `<b>${i + 1}. ${esc(x)}</b>` : `${i + 1}. ${esc(x)}`).join(" → ")}${v.fel ? ` <i>(fel alternativ: ${v.fel.map(esc).join(" · ")})</i>` : ""}`; }
   if (t.typ === "bygg") return `${cap(v.namn)}: ${v.p} p, ${v.n} n, ${v.e} e`;
   if (t.typ === "skal") { const k = v.skal, L = "KLMNOP"[k - 1]; return `${L}-skalet${k === 1 ? " (alltid ihop med ett annat skal)" : ""} · max som yttersta: <b>${k === 1 ? 2 : 8}</b>${t.treFragor ? ` · annars: <b>${2 * k * k}</b>` : ""}`; }
