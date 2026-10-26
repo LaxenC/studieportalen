@@ -82,8 +82,8 @@ Portal.uppgifter([
                 { t: "Kyla och dålig mat.", s: "fel", f: "Bakterier, virus, svampar och protozoer kan orsaka infektioner." },
                 { t: "Bara bakterier och virus kan orsaka sjukdomar.", s: "fel", f: "Även svampar och protozoer kan göra oss sjuka." }
               ]}]},
-             { id: "pat-mik-tre-saker", kapitel: "smitta", avsnitt: ["vadsmittar"], titel: "Vad klarar en cell på egen hand, som gör att den kan leva av sig själv?",
-               typ: "valjflera", nivaer: [0, 1], punkter: ["pat-mik"],
+             { id: "pat-mik-tre-saker", kapitel: "smitta", avsnitt: ["vadsmittar"], titel: "Orsakar sjukdomar",
+               typ: "valjflera", nivaer: [1], punkter: ["pat-mik"],
                varianter: [
                  { fraga: "Vad förutom protozoer kan orsaka sjukdomar?",
                    ratt: ["Bakterier", "Virus", "Svampar"],
