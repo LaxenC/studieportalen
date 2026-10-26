@@ -9,7 +9,7 @@
    ===================================================================== */
 Portal.uppgifter([   
       { id: "organism-flerval", kapitel: "mikroorganismer", avsnitt: ["cell"], titel: "Organism – välj rätt",
-      punkter: { 0: ["cell-allt"]},
+      punkter: { "cell-allt"},
       typ: "flerval", nivaer: [1],
       varianter: [ 
          { fraga: "Vad består allt levande av?", 
@@ -44,7 +44,7 @@ Portal.uppgifter([
       ]}, 
    
       { id: "arvsmassa-flerval", kapitel: "mikroorganismer", avsnitt: ["cell"], titel: "Arvsmassa(DNA) – välj rätt",
-      punkter: { 0: ["cell-arvsmassa"]},
+      punkter: { "cell-arvsmassa"},
       typ: "flerval", nivaer: [1],
       varianter:[
         { fraga: "Vad är cellens arvsmassa (DNA)?",
@@ -73,7 +73,7 @@ Portal.uppgifter([
             { t: "För att göra cellen större utan näring", s: "fel", f: "Cellen behöver näring och energi för att växa. Arvsmassan innehåller instruktioner för att skapa fler celler." }]}] },
    
     { id: "amnesomsattning-flerval", kapitel: "mikroorganismer", avsnitt: ["cell"], titel: "Cellens ämnesomsättning – välj rätt",
-      punkter: { 0: ["cell-amnes"]},
+      punkter: { "cell-amnes"},
       typ: "flerval", nivaer: [1],
       varianter:[
         {fraga: "Vad betyder ämnesomsättning?",
@@ -100,9 +100,37 @@ Portal.uppgifter([
          { t: "Cellen tar upp arvsmassa och gör om den till cellkärnor", s: "fel", f: "Arvsmassan är cellens recept till nya celler. Ämnesomsättning är att cellen för om närigen till bränsle åt cellens delar." },
          { t: "Cellen slutar ta upp ämnen när den har vuxit", s: "fel", f: "Levande celler fortsåtter ta upp ämnen även när de har vuxit. Ämnesomsättning är att cellen för om närigen till bränsle åt cellens delar." },
          { t: "Cellen gör om energi till en helt ny organism direkt", s: "fel", f: "Ämnesomsättning är att cellen för om närigen till bränsle åt cellens delar. Så att cellen kan dela sig och skapa nya celler" } ]}]},
+
+      { id: "minsta-levande-flerval", kapitel: "mikroorganismer", avsnitt: ["cell"], titel: "Cellen kan leva själv – välj rätt",
+      punkter: { "cell-minsta"},
+      typ: "flerval", nivaer: [1],
+      varianter: [
+        {fraga: "Vad betyder det att en cell kan leva själv?",
+          alt: [
+            { t: "Att den kan ta upp näring, växa och föröka sig på egen hand.", s: "ratt", f: "Precis! Att en cell som kan leva själv innebär att den kan ta upp näring, växa och föröka sig på egen hand." },
+            { t: "Att den kan leva utan att ta upp näring.", s: "fel", f: "Att ta upp näring är inte det enda, utan den behöver även kunna äxa och föröka sig på egen hand. " },
+            { t: "Att den kan växa men inte föröka sig.", s: "fel", f: "Cellen behöver kunna både växa och föröka sig men också kunna ta upp näring" } ]},
+        { fraga: "Vilka tre saker ska en cell klara på egen hand för att kunna leva själv?",
+          alt: [
+            { t: "Ta upp näring, växa och föröka sig.", s: "ratt", f: "Precis! Att en cell som kan leva själv innebär att den kan ta upp näring, växa och föröka sig på egen hand." },
+            { t: "Ta upp näring, bli en organism och få en cellkärna.", s: "fel", f: "Cellen behöver kunna ta upp näring, växa och föröka sig." },
+            { t: "Växa, få en cellkärna och skapa arvsmassa.", s: "fel", f: "Cellen behöver kunna ta upp näring, växa och föröka sig." }]},
+        { fraga: "Vilket alternativ beskriver att cellen kan leva själv?",
+          alt: [
+            { t: "Den kan ta upp näring, växa och föröka sig.", s: "ratt", f: "Att leva själv innebär att cellen klarar alla tre sakerna på egen hand." },
+            { t: "Den kan bara ta upp näring.", s: "fel", f: "Cellen behöver också kunna växa och föröka sig." },
+            { t: "Den kan bara växa och föröka sig.", s: "fel", f: "Cellen behöver också kunna ta upp näring." }]}]},
+
+        { id: "minsta-levande--para", kapitel: "mikroorganismer", avsnitt: ["cell"], titel: "Cellen kan leva själv  – para ihop ",
+         punkter: ["cell-minsta"],
+         typ: "para", nivaer: [1],
+         varianter: [
+           { rubrik: "Para ihop varje sak med rätt beskrivning..",
+             par: [ ["Ta upp näring", "Cellen tar in ämnen från omgivningen, till exempel socker och syre, och får energi ur dem."], 
+                   ["Växa", "Cellen använder näringen och energin för att bygga nya delar och bli större."],
+                   ["Föröka sig", "När cellen har vuxit kan den dela sig i två nya celler."]] }] },
          
      { id: "cell-begrepp-para", kapitel: "mikroorganismer", avsnitt: ["cell"], titel: "Celler – para ihop begrepp",
-      punkter: ["cell-minsta", "cell-encellig", "cell-arvsmassa"],
       typ: "para", nivaer: [1],
       varianter: [
         { rubrik: "Para ihop begreppet med rätt förklaring.",
