@@ -93,7 +93,7 @@ Portal.uppgifter([
             { t: "En ny cellkärna varje gång", s: "fel", f: "Det blir inte en ny cellkärna. Cellen gör om närigen till bränsle åt cellens delar." },
             { t: "Energi som den kan använda", s: "ratt", f: "Cellen omvandlar näringen till bränsle åt cellens delar." },
             { t: "Fler organismer direkt", s: "fel", f: "Förökning innebär att celler bildar nya celler. Vid ämnesomsättning gör cellen om närigen till bränsle åt cellens delar." },
-            { t: "En större cellkärna", s: "fel", f: "Ämnesomsättning betyder inte att cellkärnan blir större. Vid ämnesomsättning gör cellen om närigen till bränsle åt cellens delar. }]},
+            { t: "En större cellkärna", s: "fel", f: "Ämnesomsättning betyder inte att cellkärnan blir större. Vid ämnesomsättning gör cellen om närigen till bränsle åt cellens delar." }]},
      {fraga: "Vilket av följande beskriver bäst hur ämnesomsättning fungerar?",
        alt: [
          { t: "Cellen tar upp näring och gör om det till bränsle åt cellens delar", s: "ratt", f: "Cellen tar upp ämnen från omgivningen och gör om det till bränsle åt cellens delar." },
