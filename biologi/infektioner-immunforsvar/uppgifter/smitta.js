@@ -283,5 +283,28 @@ Portal.uppgifter([
                  { t: "En sjukdom som många blir sjuka i", s: "delvis", f: "det gäller också en epidemi – det som gör det till en pandemi är att den sprids över världen." },
                  { t: "En sjukdom som orsakas av virus", s: "delvis", f: "många pandemier orsakas av virus, men digerdöden orsakades av en bakterie. Det avgörande är spridningen." },
                  { t: "En sjukdom som bara finns i ett land", s: "fel", f: "då är det ingen pandemi – en pandemi sprids över stora delar av världen." } ] }
+      ] },
+    { id: "pat-mut-text", kapitel: "smitta", avsnitt: ["vadsmittar"], titel: "Varför blir man förkyld igen? – fyll i",
+      typ: "lucktext", nivaer: [0, 1], rullista: [0], punkter: ["pat-mut"],
+      ordlista: ["förändrar", "immunförsvaret", "förkyld", "växer", "antibiotikan", "huden"],
+      varianter: [
+        { text: "Virus [förändrar|förändras|ändrar] sig hela tiden. Då känner [immunförsvaret] inte igen dem. Därför kan man bli [förkyld|sjuk] år efter år." }
+      ] },
+
+    { id: "pat-mut-flerval", kapitel: "smitta", avsnitt: ["vadsmittar"], titel: "Varför blir man förkyld igen? – välj rätt",
+      typ: "flerval", nivaer: [0, 1], punkter: ["pat-mut"],
+      varianter: [
+        { fraga: "Varför kan man bli förkyld år efter år?",
+          alt: [ { t: "Viruset förändrar sig, så immunförsvaret känner inte igen det", s: "ratt", f: "ett förändrat virus ser nytt ut för immunförsvaret." },
+                 { t: "Förkylning orsakas av virus", s: "delvis", f: "stämmer – men förklarar inte varför man blir sjuk igen. Det beror på att viruset förändrar sig." },
+                 { t: "Man har tagit för lite antibiotika", s: "fel", f: "antibiotika fungerar inte mot virus." },
+                 { t: "Förkylning orsakas av bakterier som har blivit resistenta", s: "fel", f: "förkylning orsakas av virus." } ] }
+      ] },
+
+    { id: "pat-mut-sf", kapitel: "smitta", avsnitt: ["vadsmittar"], titel: "Virus som förändrar sig – sant eller falskt",
+      typ: "santfalskt", nivaer: [1], punkter: ["pat-mut"],
+      varianter: [
+        { pst: [["Virus förändrar sig hela tiden.", true], ["Ett virus som har förändrats känns alltid igen av immunförsvaret.", false],
+                ["Man kan bli förkyld flera gånger.", true], ["Förkylning går att bota med antibiotika.", false]] }
       ] }
 ]);

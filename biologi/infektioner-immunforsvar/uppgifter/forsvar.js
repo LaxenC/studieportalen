@@ -152,5 +152,27 @@ Portal.uppgifter([
                  { t: "Det blir rött och svullet", s: "delvis", f: "det är tecknen på inflammation, men inte vad som händer i kroppen." },
                  { t: "Vita blodkroppar kommer till området", s: "delvis", f: "stämmer, men förklarar inte varför det blir rött, varmt och svullet." },
                  { t: "Antikroppar tillverkas för första gången", s: "fel", f: "antikroppar hör till det förvärvade försvaret – inflammationen är medfödd." } ] }
+      ] },
+
+    { id: "for-forkyld-flerval", kapitel: "forsvar", avsnitt: ["minne"], titel: "Varför blir man förkyld igen? – välj rätt",
+      typ: "flerval", nivaer: [1, 2],
+      varianter: [
+        { fraga: "Varför kan man bli förkyld flera gånger, fast kroppen har minnesceller?",
+          alt: [ { t: "Förkylningsviruset förändrar sig, så minnescellerna känner inte igen det nästa gång", s: "ratt", f: "ett förändrat virus ser nytt ut för immunförsvaret." },
+                 { t: "Det finns många olika förkylningsvirus", s: "delvis", f: "det stämmer också – men det viktiga här är att virusen förändrar sig hela tiden." },
+                 { t: "Minnescellerna försvinner efter en vecka", s: "fel", f: "minnesceller kan finnas kvar i många år – problemet är att viruset har förändrats." },
+                 { t: "Man har tagit för lite antibiotika", s: "fel", f: "antibiotika fungerar inte mot virus." } ] },
+        { fraga: "Mot vattkoppor blir man immun hela livet, men inte mot förkylning. Vad beskriver bäst varför?",
+          alt: [ { t: "Förkylningsvirus förändrar sig hela tiden – vattkoppsviruset gör det inte på samma sätt", s: "ratt", f: "minnescellerna känner igen vattkoppsviruset, men inte ett förkylningsvirus som har förändrats." },
+                 { t: "Förkylning är en lindrigare sjukdom", s: "delvis", f: "stämmer, men förklarar inte varför man kan bli sjuk igen." },
+                 { t: "Vattkoppor orsakas av bakterier", s: "fel", f: "vattkoppor orsakas av ett virus." },
+                 { t: "Man får bara minnesceller mot barnsjukdomar", s: "fel", f: "minnesceller bildas mot alla patogener kroppen har bekämpat." } ] }
+      ] },
+
+    { id: "for-forkyld-text", kapitel: "forsvar", avsnitt: ["minne"], titel: "Varför blir man förkyld igen? – fyll i",
+      typ: "lucktext", nivaer: [0, 1], rullista: [0],
+      ordlista: ["förändrar", "minnescellerna", "förkyld", "antibiotikan", "växer", "immun"],
+      varianter: [
+        { text: "Förkylningsvirus [förändrar|förändras|ändrar] sig hela tiden. Då känner [minnescellerna|minnesceller|immunförsvaret] inte igen viruset, och därför kan man bli [förkyld|sjuk] igen och igen." }
       ] }
 ]);
