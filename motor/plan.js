@@ -45,7 +45,7 @@ function planMal(p, m, i) {
     if (d.fel) return `<li class="plan-fel">⚠ ${esc(m.avsnitt[j])}: ${esc(d.fel)}</li>`;
     const { o, kap, av, kid, aid } = d;
     const las = `#/${o.amne}/${o.id}/las/${kid}${aid ? "/" + aid : ""}`;
-    const ova = `#/${o.amne}/${o.id}/ova?kapitel=${kid}${aid ? "&avsnitt=" + aid : ""}`;
+    const ova = `#/${o.amne}/${o.id}/ova?kapitel=${kid}${aid ? "&avsnitt=" + aid : ""}&fran=${encodeURIComponent("#/plan/" + p.id)}`;
     const upp = aktivaUppgifter(o, AK(), kid, aid);
     const nFakta = upp.filter(t => t.typ !== "forklara").length, nFk = upp.filter(t => t.typ === "forklara").length;
     return `<li class="plan-av"><div class="plan-namn"><b>${esc(av ? av.rubrik : kap.namn)}</b><small>${esc(o.namn)} › ${esc(kap.namn)}</small></div>

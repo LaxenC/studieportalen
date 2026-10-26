@@ -11,6 +11,7 @@ let qCounter = 0;
 function ovaHtml() {
   return `
 <div id="startView" class="ova-start">
+  <p class="ova-tillbaka" id="sTillbaka" hidden><a class="ghostbtn" id="sTillbakaL"></a></p>
   <div class="ovarad1">
     <section class="panel">
       <h2>1. Välj kapitel</h2>
@@ -71,7 +72,7 @@ function ovaHtml() {
     <p class="eyebrow">Resultat</p>
     <p class="score" id="rScore"></p>
     <p id="rText"></p>
-    <div class="btns"><button type="button" class="quick" id="rHome">Ändra val</button><button type="button" class="start" id="rAgain">Öva igen</button></div>
+    <div class="btns"><a class="quick" id="rTillbaka" hidden></a><button type="button" class="quick" id="rHome">Ändra val</button><button type="button" class="start" id="rAgain">Öva igen</button></div>
   </section>
   <div class="rlist" id="rList"></div>
 </div>`;
@@ -116,6 +117,8 @@ function renderOva() {
   $("note").textContent = loop ? "Löpande: nya uppgifter kommer tills du avslutar. Rättning sker efter varje uppgift." : "";
   const finns = OVA.kapitel === "mix" ? kapMedUppg(o).some(k => poolFor(k.id).length) : poolFor(OVA.kapitel).length > 0;
   $("start").disabled = !finns; $("quick").disabled = !finns; $("err").hidden = finns;
+  $("sTillbaka").hidden = !OVA.fran;
+  if (OVA.fran) { $("sTillbakaL").href = OVA.fran; $("sTillbakaL").textContent = OVA.fran.startsWith("#/plan/") ? "← Tillbaka till planen" : "📖 Tillbaka till texten"; }
   const lp = OVA.kapitel !== "mix" ? larPunkter().length : 0;
   $("lar").hidden = !lp; $("larNote").hidden = !lp;
   if (lp) $("larVad").textContent = OVA.avsnitt ? "avsnittet" : "kapitlet";
@@ -236,8 +239,12 @@ function nasta() {
   if (!OV.loop && OV.idx >= OV.list.length - 1) return visaResultat();
   OV.idx++; visaFraga();
 }
+function visaTillbaka() {
+  const a = $("rTillbaka"); a.hidden = !OVA.fran; if (!OVA.fran) return;
+  a.href = OVA.fran; a.textContent = OVA.fran.startsWith("#/plan/") ? "← Tillbaka till planen" : "📖 Tillbaka till texten";
+}
 function visaResultat() {
-  OV.aktiv = false;
+  OV.aktiv = false; visaTillbaka();
   if (OV.lar) return larResultat();
   const res = OV.results.filter(Boolean), ok = res.filter(r => r.ok).length;
   $("quizView").hidden = true; $("resultView").hidden = false; window.scrollTo(0, 0);
@@ -308,7 +315,7 @@ document.addEventListener("keydown", e => {
 
 // Visar Öva-vyn. p = { kapitel, avsnitt, stjarnor, kor }
 function visaOva(o, p, el) {
-  OVA.o = o;
+  OVA.o = o; OVA.fran = p.fran && /^#\//.test(p.fran) ? p.fran : null;
   if (p.kapitel && kapitelAv(o, p.kapitel)) { OVA.kapitel = p.kapitel; OVA.avsnitt = p.avsnitt || null; }
   else if (OVA.kapitel !== "mix" && !kapitelAv(o, OVA.kapitel)) { OVA.kapitel = "mix"; OVA.avsnitt = null; }
   if (p.stjarnor) OVA.level = Math.max(1, Math.min(6, +p.stjarnor));

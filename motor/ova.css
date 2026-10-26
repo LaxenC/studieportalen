@@ -522,3 +522,5 @@ a.ghostbtn{text-decoration:none;white-space:nowrap}
 .vfrakna{margin:0;color:var(--muted);font-weight:700;font-size:.9rem}
 .nytt summary{cursor:pointer}
 .nytt:not([open]){padding:8px 16px}
+.ova-tillbaka{margin:0 0 10px}
+.ova-tillbaka a{text-decoration:none}
