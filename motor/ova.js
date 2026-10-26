@@ -347,15 +347,16 @@ function larNasta() {
   const L = OV.lar; if (larKlar()) return null;
   const kvar = [...L.pk.values()].filter(p => !larArKlar(p));
   // först punkter som eleven inte har mött (i textens ordning), sedan de som är på tur
-  let p = kvar.find(x => !x.sett) || kvar.filter(x => x.due <= L.n).sort((a, b) => a.due - b.due)[0] || kvar.sort((a, b) => a.due - b.due)[0];
+  // repetition som är på tur går först, annars nästa nya punkt i textens ordning, annars den repetition som ligger närmast
+  let p = kvar.filter(x => x.sett && x.fel && x.due <= L.n).sort((a, b) => a.due - b.due)[0] || kvar.find(x => !x.sett) || kvar.filter(x => x.due <= L.n).sort((a, b) => a.due - b.due)[0] || kvar.sort((a, b) => a.due - b.due)[0];
   const senast = OV.list.length ? OV.list[OV.list.length - 1].task.id : null;
   const nivaMin = t => Math.min(...nivaerFor(OVA.o, t, AK()).map(x => x.niva));
   let kand = L.items.filter(it => it.punkter.includes(p.id) && !p.ratt.has(it.key));
   if (!kand.length) kand = L.items.filter(it => it.punkter.includes(p.id));
-  if (kand.length > 1 && kand.some(it => it.t.id !== senast)) kand = kand.filter(it => it.t.id !== senast);
-  if (kand.some(it => !p.typer.has(it.t.typ))) kand = kand.filter(it => !p.typer.has(it.t.typ));
   if (!p.sett) { const m = Math.min(...kand.map(it => it.punkter.length)); kand = kand.filter(it => it.punkter.length === m); }   // första mötet: en sak i taget
   if (!p.ratt.size) { const m = Math.min(...kand.map(it => nivaMin(it.t))); kand = kand.filter(it => nivaMin(it.t) === m); }
+  if (kand.some(it => !p.typer.has(it.t.typ))) kand = kand.filter(it => !p.typer.has(it.t.typ));
+  if (kand.length > 1 && kand.some(it => it.t.id !== senast)) kand = kand.filter(it => it.t.id !== senast);
   const it = kand[rnd(kand.length)], nv = nivaerFor(OVA.o, it.t, AK()).sort((a, b) => a.niva - b.niva)[0] || { niva: 1, orig: 1 };
   const q = { uid: "q" + (++qCounter), task: it.t, v: it.t.varianter[it.vi], niva: nv.niva, omrade: it.t.kapitel,
     rull: !p.ratt.size && (it.t.rullista || []).includes(nv.orig), larItem: it };
@@ -366,7 +367,7 @@ function larEfterSvar(q, r) {
   const L = OV.lar; L.n++;
   (q.larItem ? q.larItem.punkter : []).forEach(id => { const p = L.pk.get(id); if (!p) return;
     p.sett = true;
-    if (r.ok) { p.ratt.add(q.larItem.key); p.typer.add(q.task.typ); }
+    if (r.ok) { p.ratt.add(q.larItem.key); p.typer.add(q.task.typ); p.fel = 0; p.due = L.n + 4; }   // rätt: kommer tillbaka lite senare för andra gången
     else { p.fel++; p.due = L.n + 2; } });
 }
 function komIhag(q, r) {
