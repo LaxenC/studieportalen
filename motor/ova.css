@@ -520,3 +520,5 @@ a.ghostbtn{text-decoration:none;white-space:nowrap}
 .vfopt.is-wrong{border-color:var(--proton);background:var(--red-bg)}
 .vfopt.is-missed{border-style:dashed;border-color:var(--green)}
 .vfrakna{margin:0;color:var(--muted);font-weight:700;font-size:.9rem}
+.nytt summary{cursor:pointer}
+.nytt:not([open]){padding:8px 16px}

@@ -58,7 +58,7 @@ function ovaHtml() {
   <section class="panel qcard">
     <div class="qmeta"><span class="chip" id="qArea"></span><span class="chip lvchip" id="qLevel"></span></div>
     <h2 id="qTitle"></h2>
-    <div class="nytt" id="qNytt" hidden></div>
+    <details class="nytt" id="qNytt" hidden></details>
     <p class="instr" id="qInstr"></p>
     <div class="qbody" id="qBody"></div>
     <div class="fb" id="qFb" hidden aria-live="polite"></div>
@@ -202,7 +202,8 @@ function visaFraga() {
   $("qInstr").innerHTML = typeof T.instr === "function" ? T.instr(q) : "";
   const nya = OV.lar && q.larItem ? (q.nya || (q.nya = q.larItem.punkter.map(id => OV.lar.pk.get(id)).filter(p => p && !p.sett))) : [];
   $("qNytt").hidden = !nya.length;
-  $("qNytt").innerHTML = nya.length ? `<p class="fl">💡 Nytt – läs först</p><ul>${nya.map(p => `<li>${p.html}</li>`).join("")}</ul>` : "";
+  $("qNytt").open = false;
+  $("qNytt").innerHTML = nya.length ? `<summary class="fl">💡 Nytt – läs först</summary><ul>${nya.map(p => `<li>${p.html}</li>`).join("")}</ul>` : "";
   const body = $("qBody"); body.innerHTML = T.html(q);
   const fresh = body.cloneNode(true); body.replaceWith(fresh);
   T.mount && T.mount(fresh, q);
