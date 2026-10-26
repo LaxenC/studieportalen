@@ -7,46 +7,7 @@
      rullista : nivåer där eleven väljer i en rullista
    Avsnitt: cell, vad, bakterier, virus, svampar, mikrobiom, symbios
    ===================================================================== */
-Portal.uppgifter([
-
-    { id: "cell-begrepp-para", kapitel: "mikroorganismer", avsnitt: ["cell"], titel: "Celler – para ihop begrepp",
-      punkter: ["cell-minsta", "cell-encellig", "cell-arvsmassa"],
-      typ: "para", nivaer: [1],
-      varianter: [
-        { rubrik: "Para ihop begreppet med rätt förklaring.",
-          par: [["Cell", "Den minsta delen som kan leva själv"], ["Encellig", "Består av en enda cell"],
-                ["Flercellig", "Består av många celler"], ["Cellkärna", "Del i cellen där arvsmassan finns."]] }
-      ] },
-   
-   { id: "arvsmassa-flerval", kapitel: "mikroorganismer", avsnitt: ["cell"], titel: "Arvsmassa(DNA) – välj rätt",
-      punkter: { 0: ["cell-arvsmassa"]},
-      typ: "flerval", nivaer: [1],
-      varianter:[
-        { fraga: "Vad är cellens arvsmassa (DNA)?",
-          alt: [
-            { t: "Cellens bränsle", s: "fel", f: "Cellen använder energi som bränsle till sina delar. Arvsmassan innehåller i stället recept för att skapa fler celler." },
-            { t: "Recept för att skapa fler celler", s: "ratt", f: "Recept som cellen använder för att skapa fler celler." },
-            { t: "Ämnen som cellen tar upp som näring", s: "fel", f: "Näring ger cellen ämnen som den behöver. Arvsmassan innehåller i stället recept för att skapa fler celler." },
-            { t: "Cellens yttersta gräns", s: "fel", f: "Cellens yttersta gräns skiljer cellen från omgivningen. Arvsmassan innehåller i stället recept för att skapa fler celler." }]},
-     {fraga: "Vad kan man likna cellens arvsmassa (DNA) vid?",
-          alt: [
-            { t: "Ett recept med instruktioner för att skapa fler celler", s: "ratt", f: "Arvsmassan kan liknas vid ett recept som innehåller instruktioner för att skapa fler celler." },
-            { t: "En soptunna för cellen", s: "fel", f: "Arvsmassan samlar inte upp avfall. Den innehåller i stället recept för att skapa fler celler.." },
-            { t: "En motor som driver cellen", s: "fel", f: "Arvsmassan är inte en motor. Den innehåller i stället recept för att skapa fler celler." },
-            { t: "Ett skal som skyddar cellen", s: "fel", f: "Arvsmassan är inte cellens skal. innehåller i stället recept för att skapa fler celler." }]},
-     {fraga: "Vad innehåller cellens arvsmassa (DNA)?",
-          alt: [
-            { t: "Bara vatten", s: "fel", f: "Vatten finns i celler, men arvsmassan innehåller instruktioner för att skapa fler celler." },
-             { t: "Ett recept med instruktioner för att skapa fler celler", s: "ratt", f: "Arvsmassan kan liknas vid ett recept som innehåller instruktioner för att skapa fler celler." },
-            { t: "Bara syre och socker", s: "fel", f: "Syre och socker kan användas i cellens ämnesomsättning. De är inte cellens arvsmassa." },
-            { t: "Färdiga nya celler", s: "fel", f: "Arvsmassan innehåller instruktioner som används för att skapa nya celler, inte färdiga celler." }]},
-     {fraga: "Vad använder cellen arvsmassan (DNA) till?",
-          alt: [
-            { t: "För att fånga upp syre från luften", s: "fel", f: "Arvsmassan fångar inte upp syre. Den innehåller instruktioner för att skapa fler celler." },
-            { t: "För att få energi direkt från maten", s: "fel", f: "Cellen får användbar energi genom ämnesomsättningen. Arvsmassan innehåller instruktioner för att skapa fler celler." },
-            { t: "För att få instruktioner när nya celler ska bildas", s: "ratt", f: "Arvsmassan innehåller instruktioner som cellen använder när den växer och delar sig." },
-            { t: "För att göra cellen större utan näring", s: "fel", f: "Cellen behöver näring och energi för att växa. Arvsmassan innehåller instruktioner för att skapa fler celler." }]}] },
-   
+Portal.uppgifter([   
       { id: "organism-flerval", kapitel: "mikroorganismer", avsnitt: ["cell"], titel: "Organism – välj rätt",
       punkter: { 0: ["cell-allt"]},
       typ: "flerval", nivaer: [1],
@@ -80,8 +41,74 @@ Portal.uppgifter([
             { t: "En cell är alltid uppbyggd av många organismer", s: "fel", f: "Celler bygger upp organismer, inte tvärtom." },
             { t: "En organism är något levande som består av en eller flera celler", s: "ratt", f: "En cell är livets minsta levande enhet, medan en organism är en levande individ som består av celler." },
             { t: "Det finns ingen skillnad mellan orden", s: "fel", f: "En cell är en byggsten i livet. En organism är en levande individ som kan bestå av en eller flera celler." }]}
-      ] }, 
+      ]}, 
    
+      { id: "arvsmassa-flerval", kapitel: "mikroorganismer", avsnitt: ["cell"], titel: "Arvsmassa(DNA) – välj rätt",
+      punkter: { 0: ["cell-arvsmassa"]},
+      typ: "flerval", nivaer: [1],
+      varianter:[
+        { fraga: "Vad är cellens arvsmassa (DNA)?",
+          alt: [
+            { t: "Cellens bränsle", s: "fel", f: "Cellen använder energi som bränsle till sina delar. Arvsmassan innehåller i stället recept för att skapa fler celler." },
+            { t: "Recept för att skapa fler celler", s: "ratt", f: "Recept som cellen använder för att skapa fler celler." },
+            { t: "Ämnen som cellen tar upp som näring", s: "fel", f: "Näring ger cellen ämnen som den behöver. Arvsmassan innehåller i stället recept för att skapa fler celler." },
+            { t: "Cellens yttersta gräns", s: "fel", f: "Cellens yttersta gräns skiljer cellen från omgivningen. Arvsmassan innehåller i stället recept för att skapa fler celler." }]},
+     {fraga: "Vad kan man likna cellens arvsmassa (DNA) vid?",
+          alt: [
+            { t: "Ett recept med instruktioner för att skapa fler celler", s: "ratt", f: "Arvsmassan kan liknas vid ett recept som innehåller instruktioner för att skapa fler celler." },
+            { t: "En soptunna för cellen", s: "fel", f: "Arvsmassan samlar inte upp avfall. Den innehåller i stället recept för att skapa fler celler.." },
+            { t: "En motor som driver cellen", s: "fel", f: "Arvsmassan är inte en motor. Den innehåller i stället recept för att skapa fler celler." },
+            { t: "Ett skal som skyddar cellen", s: "fel", f: "Arvsmassan är inte cellens skal. innehåller i stället recept för att skapa fler celler." }]},
+     {fraga: "Vad innehåller cellens arvsmassa (DNA)?",
+          alt: [
+            { t: "Bara vatten", s: "fel", f: "Vatten finns i celler, men arvsmassan innehåller instruktioner för att skapa fler celler." },
+             { t: "Ett recept med instruktioner för att skapa fler celler", s: "ratt", f: "Arvsmassan kan liknas vid ett recept som innehåller instruktioner för att skapa fler celler." },
+            { t: "Bara syre och socker", s: "fel", f: "Syre och socker kan användas i cellens ämnesomsättning. De är inte cellens arvsmassa." },
+            { t: "Färdiga nya celler", s: "fel", f: "Arvsmassan innehåller instruktioner som används för att skapa nya celler, inte färdiga celler." }]},
+     {fraga: "Vad använder cellen arvsmassan (DNA) till?",
+          alt: [
+            { t: "För att fånga upp syre från luften", s: "fel", f: "Arvsmassan fångar inte upp syre. Den innehåller instruktioner för att skapa fler celler." },
+            { t: "För att få energi direkt från maten", s: "fel", f: "Cellen får användbar energi genom ämnesomsättningen. Arvsmassan innehåller instruktioner för att skapa fler celler." },
+            { t: "För att få instruktioner när nya celler ska bildas", s: "ratt", f: "Arvsmassan innehåller instruktioner som cellen använder när den växer och delar sig." },
+            { t: "För att göra cellen större utan näring", s: "fel", f: "Cellen behöver näring och energi för att växa. Arvsmassan innehåller instruktioner för att skapa fler celler." }]}] },
+   
+    { id: "amnesomsattning-flerval", kapitel: "mikroorganismer", avsnitt: ["cell"], titel: "Cellens ämnesomsättning – välj rätt",
+      punkter: { 0: ["cell-amnes"]},
+      typ: "flerval", nivaer: [1],
+      varianter:[
+        {fraga: "Vad betyder ämnesomsättning?",
+          alt: [
+            { t: "Att cellen tar upp näring och gör om den till bränsle till cellens använder", s: "ratt", f: "Ämnesomsättning handlar om att cellen tar upp näring och omvandlar den till energi som används som bränsle till cellens delar." },
+            { t: "Att cellen delar sig i två nya celler", s: "fel", f: "Att cellen delar sig är ett sätt att föröka sig. Ämnesomsättning handlar om näring görs om till bränsle till cellens delar." },
+            { t: "Att cellen lagrar sin arvsmassa i cellkärnan", s: "fel", f: "Arvsmassan finns i cellkärnan hos djur, växter och svampar. Ämnesomsättning handlar om hur cellen omvandlar näring till bränsle åt cellens delar." },
+            { t: "Att flera celler går ihop och bildar en organism", s: "fel", f: "En organism kan bestå av en eller många celler. Ämnesomsättning är processen där cellen tar upp näring och omvandlar den till bränsle åt cellens delar." }]},
+     {fraga: "Vad tar cellen upp från omgivningen vid ämnesomsättningen?",
+          alt: [
+            { t: "Bara nya celler", s: "fel", f: "Cellen tar inte upp färdiga nya celler. Den tar upp näring från omgivningen till exempel socker och syre, som sen görs om till bärnsle till cellens delar." },
+            { t: "Näring, till exempel socker och syre", s: "ratt", f: "Cellen tar upp näring till exempel socker och syre, som sen görs om till bärnsle till cellens delar." },
+            { t: "Bara arvsmassa från andra organismer", s: "fel", f: "Arvsmassan är cellens genetiska information. Cellen tar upp näring till exempel socker och syre, som sen görs om till bärnsle till cellens delar." },
+            { t: "Cellkärnor från andra celler", s: "fel", f: "Cellen tar inte upp cellkärnor för att få energi. Cellen tar upp näring till exempel socker och syre, som sen görs om till bärnsle till cellens delar." }]},
+     {fraga: "Vad får cellen ut av näringen vid ämnesomsättningen?",
+          alt: [
+            { t: "En ny cellkärna varje gång", s: "fel", f: "Det blir inte en ny cellkärna. Cellen gör om närigen till bränsle åt cellens delar." },
+            { t: "Energi som den kan använda", s: "ratt", f: "Cellen omvandlar näringen till bränsle åt cellens delar." },
+            { t: "Fler organismer direkt", s: "fel", f: "Förökning innebär att celler bildar nya celler. Vid ämnesomsättning gör cellen om närigen till bränsle åt cellens delar." },
+            { t: "En större cellkärna", s: "fel", f: "Ämnesomsättning betyder inte att cellkärnan blir större. Vid ämnesomsättning gör cellen om närigen till bränsle åt cellens delar. }]},
+     {fraga: "Vilket av följande beskriver bäst hur ämnesomsättning fungerar?",
+       alt: [
+         { t: "Cellen tar upp näring och gör om det till bränsle åt cellens delar", s: "ratt", f: "Cellen tar upp ämnen från omgivningen och gör om det till bränsle åt cellens delar." },
+         { t: "Cellen tar upp arvsmassa och gör om den till cellkärnor", s: "fel", f: "Arvsmassan är cellens recept till nya celler. Ämnesomsättning är att cellen för om närigen till bränsle åt cellens delar." },
+         { t: "Cellen slutar ta upp ämnen när den har vuxit", s: "fel", f: "Levande celler fortsåtter ta upp ämnen även när de har vuxit. Ämnesomsättning är att cellen för om närigen till bränsle åt cellens delar." },
+         { t: "Cellen gör om energi till en helt ny organism direkt", s: "fel", f: "Ämnesomsättning är att cellen för om närigen till bränsle åt cellens delar. Så att cellen kan dela sig och skapa nya celler" } ]}]},
+         
+     { id: "cell-begrepp-para", kapitel: "mikroorganismer", avsnitt: ["cell"], titel: "Celler – para ihop begrepp",
+      punkter: ["cell-minsta", "cell-encellig", "cell-arvsmassa"],
+      typ: "para", nivaer: [1],
+      varianter: [
+        { rubrik: "Para ihop begreppet med rätt förklaring.",
+          par: [["Cell", "Den minsta delen som kan leva själv"], ["Encellig", "Består av en enda cell"],
+                ["Flercellig", "Består av många celler"], ["Cellkärna", "Del i cellen där arvsmassan finns."]] }
+      ] },
 
     { id: "cell-flerval", kapitel: "mikroorganismer", avsnitt: ["cell"], titel: "Celler – välj rätt",
       punkter: { 0: ["vad-mikrob"], 1: ["cell-encellig"], 2: ["cell-encellig"], 3: ["cell-arvsmassa"] },
