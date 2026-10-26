@@ -14,7 +14,7 @@ En mikroorganism är alltså en mycket liten levande varelse. Men vad är det so
 
 ## Celler – livets byggstenar {#cell}
 
-Allt som lever – alla organismer – är uppbyggt av **celler**. En cell är den minsta delen som kan leva själv. De flesta celler är så små att man bara kan se dem i mikroskop.
+Allt som lever – alla **organismer** – är uppbyggt av **celler**. En cell är den minsta delen som kan leva själv. De flesta celler är så små att man bara kan se dem i mikroskop.
 
 I många celler finns en **cellkärna**. Där ligger cellens **arvsmassa** (DNA) – cellens "recept" för att kunna skapa fler celler. Receptet används av cellens fabriker för att skapa nya celler.<br>
 Celler hos djur, växter och svampar har cellkärna. Bakterier har **ingen cellkärna** – deras arvsmassa ligger fritt i cellen.
@@ -64,9 +64,9 @@ Organismer med cellkärna kallas alltså **eukaryota** – precis som våra egna
 > En *cell* tar upp *näring* och får *energi* ur den. Energin använder cellen för att *växa* och *föröka sig*. Cellen förökar sig genom att fabrikerna använder receptet i arvsmassan för att skapa nya celler. Cellen behöver ingen hjälp utifrån, **därför** kan den leva själv.
 
 > **Viktigt att komma ihåg**
-> - {#cell-minsta} Cellen är den minsta delen som kan leva själv – den tar upp näring, växer och förökar sig.
-> - {#cell-allt} Allt levande består av **celler**.
+> - {#cell-allt} Allt levande (alla organismer) består av **celler**.
 > - {#cell-arvsmassa} **Arvsmassa (DNA)** receptet för att skapa fler celler, ligger i **cellkärnan** eller löst i cellen
+> - {#cell-minsta} Cellen är den minsta delen som kan leva själv – den tar upp näring, växer och förökar sig.
 > - {#cell-amnes} Celler har **ämnesomsättning** som innebär att det tar upp näring och gör om det till energi som behövs till cellens delar när de jobbar
 > - {#cell-encellig} **Encellig** = en enda cell. **Flercellig** = många celler.
 
