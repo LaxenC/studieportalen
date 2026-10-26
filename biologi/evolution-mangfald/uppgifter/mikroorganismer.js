@@ -17,10 +17,45 @@ Portal.uppgifter([
           par: [["Cell", "Den minsta delen som kan leva själv"], ["Encellig", "Består av en enda cell"],
                 ["Flercellig", "Består av många celler"], ["Cellkärna", "Del i cellen där arvsmassan finns."]] }
       ] },
-       { id: "organism-flerval", kapitel: "mikroorganismer", avsnitt: ["cell"], titel: "Organism – välj rätt",
+   
+   { id: "arvsmassa-flerval", kapitel: "mikroorganismer", avsnitt: ["cell"], titel: "Arvsmassa(DNA) – välj rätt",
+      punkter: { 0: ["cell-arvsmassa"]},
+      typ: "flerval", nivaer: [1],
+      varianter:[
+        { fraga: "Vad är cellens arvsmassa (DNA)?",
+          alt: [
+            { t: "Cellens bränsle", s: "fel", f: "Cellen använder energi som bränsle till sina delar. Arvsmassan innehåller i stället recept för att skapa fler celler." },
+            { t: "Recept för att skapa fler celler", s: "ratt", f: "Recept som cellen använder för att skapa fler celler." },
+            { t: "Ämnen som cellen tar upp som näring", s: "fel", f: "Näring ger cellen ämnen som den behöver. Arvsmassan innehåller i stället recept för att skapa fler celler." },
+            { t: "Cellens yttersta gräns", s: "fel", f: "Cellens yttersta gräns skiljer cellen från omgivningen. Arvsmassan innehåller i stället recept för att skapa fler celler." }]},
+     {fraga: "Vad kan man likna cellens arvsmassa (DNA) vid?",
+          alt: [
+            { t: "Ett recept med instruktioner för att skapa fler celler", s: "ratt", f: "Arvsmassan kan liknas vid ett recept som innehåller instruktioner för att skapa fler celler." },
+            { t: "En soptunna för cellen", s: "fel", f: "Arvsmassan samlar inte upp avfall. Den innehåller i stället recept för att skapa fler celler.." },
+            { t: "En motor som driver cellen", s: "fel", f: "Arvsmassan är inte en motor. Den innehåller i stället recept för att skapa fler celler." },
+            { t: "Ett skal som skyddar cellen", s: "fel", f: "Arvsmassan är inte cellens skal. innehåller i stället recept för att skapa fler celler." }]},
+     {fraga: "Vad innehåller cellens arvsmassa (DNA)?",
+          alt: [
+            { t: "Bara vatten", s: "fel", f: "Vatten finns i celler, men arvsmassan innehåller instruktioner för att skapa fler celler." },
+             { t: "Ett recept med instruktioner för att skapa fler celler", s: "ratt", f: "Arvsmassan kan liknas vid ett recept som innehåller instruktioner för att skapa fler celler." },
+            { t: "Bara syre och socker", s: "fel", f: "Syre och socker kan användas i cellens ämnesomsättning. De är inte cellens arvsmassa." },
+            { t: "Färdiga nya celler", s: "fel", f: "Arvsmassan innehåller instruktioner som används för att skapa nya celler, inte färdiga celler." }]},
+     {fraga: "Vad använder cellen arvsmassan (DNA) till?",
+          alt: [
+            { t: "För att fånga upp syre från luften", s: "fel", f: "Arvsmassan fångar inte upp syre. Den innehåller instruktioner för att skapa fler celler." },
+            { t: "För att få energi direkt från maten", s: "fel", f: "Cellen får användbar energi genom ämnesomsättningen. Arvsmassan innehåller instruktioner för att skapa fler celler." },
+            { t: "För att få instruktioner när nya celler ska bildas", s: "ratt", f: "Arvsmassan innehåller instruktioner som cellen använder när den växer och delar sig." },
+            { t: "För att göra cellen större utan näring", s: "fel", f: "Cellen behöver näring och energi för att växa. Arvsmassan innehåller instruktioner för att skapa fler celler." }]}] },
+   
+      { id: "organism-flerval", kapitel: "mikroorganismer", avsnitt: ["cell"], titel: "Organism – välj rätt",
       punkter: { 0: ["cell-allt"]},
       typ: "flerval", nivaer: [1],
-      varianter: [
+      varianter: [ 
+         { fraga: "Vad består allt levande av?", 
+          alt: [ { t: "Celler", s: "ratt", f: "allt som lever är uppbyggt av celler." },
+                 { t: "Mikrober", s: "fel", f: "mikrober är levande, men allt levande är inte mikrober." },
+                 { t: "Vatten", s: "fel", f: "levande organismer innehåller vatten, men de är uppbyggda av celler." },
+                 { t: "Cellkärnor", s: "fel", f: "cellkärnan är bara en del av vissa celler." } ] },
         { fraga: "Vilket påstående beskriver bäst vad en organism är?",
           alt: [ { t: "En mycket liten levande varelse", s: "fel", f: "mikroorganism är något litet som lever, en organism behöver inte vara liten även vi männikor är organismer." },
                  { t: "En liten del av en cell", s: "fel", f: "en organism är uppbyggt av en eller flera celler" },
@@ -33,7 +68,6 @@ Portal.uppgifter([
                   { t: "En bakterie", s: "ratt", f: "En bakterie är en levande organism som består av en enda cell." },
                   { t: "Vatten", s: "fel", f: "Vatten är ett ämne, inte en levande organism." },
                   { t: "Syre", s: "fel", f: "Syre är ett ämne som levande celler kan använda, men det är ingen organism." }]},
- 
       {fraga: "Vad har alla organismer gemensamt?",
           alt: [
             { t: "De består av en eller flera celler", s: "ratt", f: "Alla organismer är uppbyggda av celler, även om de kan ha väldigt olika antal celler." },
@@ -323,18 +357,13 @@ Portal.uppgifter([
                 ["Steg 3", "Cellen tillverkar nya virus"], ["Steg 4", "Cellen spricker och de nya virusen sprids"]] }
       ] },
     { id: "lar-cell-sf", kapitel: "mikroorganismer", avsnitt: ["cell"], titel: "Celler – sant eller falskt",
-      typ: "santfalskt", nivaer: [0, 1], punkter: ["cell-minsta", "cell-allt", "cell-arvsmassa", "cell-amnes", "cell-encellig"],
+      typ: "santfalskt", nivaer: [0, 1], punkter: ["cell-minsta", "cell-arvsmassa", "cell-amnes", "cell-encellig"],
       varianter: [
         { pst: [["Allt levande består av celler.", true], ["En cell är den minsta delen som kan leva själv.", true], ["Arvsmassan ligger alltid i en cellkärna.", false], ["Ämnesomsättning betyder att cellen tar upp näring och gör om den till energi.", true], ["En människa är encellig.", false]] }
       ] },
     { id: "lar-cell-flerval", kapitel: "mikroorganismer", avsnitt: ["cell"], titel: "Celler – välj rätt",
       typ: "flerval", nivaer: [0, 1],
       varianter: [
-        { fraga: "Vad består allt levande av?", punkter: ["cell-allt"],
-          alt: [ { t: "Celler", s: "ratt", f: "allt som lever är uppbyggt av celler." },
-                 { t: "Mikrober", s: "fel", f: "mikrober är levande, men allt levande är inte mikrober." },
-                 { t: "Vatten", s: "fel", f: "levande organismer innehåller vatten, men de är uppbyggda av celler." },
-                 { t: "Cellkärnor", s: "fel", f: "cellkärnan är bara en del av vissa celler." } ] },
         { fraga: "Vad kallas det när en cell tar upp näring och gör om den till energi?", punkter: ["cell-amnes"],
           alt: [ { t: "Ämnesomsättning", s: "ratt", f: "alla levande celler har ämnesomsättning." },
                  { t: "Fotosyntes", s: "delvis", f: "fotosyntes är ett sätt för vissa celler att tillverka näring – men att ta upp näring och få energi kallas ämnesomsättning." },
