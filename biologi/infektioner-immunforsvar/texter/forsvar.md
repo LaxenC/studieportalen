@@ -34,10 +34,10 @@ Bild: Kroppens försvar delas in i ett yttre och ett inre försvar. Det inre fö
 > Det *förvärvade försvaret* finns inte färdigt när vi föds. Kroppen lär sig känna igen varje patogen först när den har träffat på den, och sparar det i *minnesceller*. **Därför** säger man att försvaret är förvärvat – det byggs upp under livet.
 
 > **Viktigt att komma ihåg**
-> - **immunförsvaret**: kroppens försvar
-> - **Yttre försvar**: huden och slemhinnorna stänger ute patogenerna.
-> - **Inre försvar** = immunförsvaret. Det är **medfött** (ospecifikt) eller **förvärvat** (specifikt).
-> - Det medfödda försvaret reagerar likadant mot alla patogener. Det förvärvade känner igen en viss patogen.
+> - {#forsvar-imm} **immunförsvaret**: kroppens försvar
+> - {#forsvar-yttre} **Yttre försvar**: huden och slemhinnorna stänger ute patogenerna.
+> - {#forsvar-inre} **Inre försvar** = immunförsvaret. Det är **medfött** (ospecifikt) eller **förvärvat** (specifikt).
+> - {#forsvar-inre-del} Det **medfödda försvaret** reagerar likadant mot alla patogener. Det **förvärvade** känner igen en viss patogen.
 
 ## Yttre försvar – hud och slemhinnor {#hud}
 
@@ -55,8 +55,8 @@ Om huden går sönder, eller patogenerna på något annat sätt tar sig in, blir
 > *Huden* är en tät mur som stänger ute patogenerna. När huden går sönder får patogenerna en öppning in i kroppen. **Därför** kan de ta sig in, föröka sig och orsaka en *infektion*.
 
 > **Viktigt att komma ihåg**
-> - Kroppens första försvar – det **yttre försvaret** – är **huden** och **slemhinnorna**.
-> - De stänger ute patogenerna innan de kommer in i kroppen.
+> - {#forsvar-ytt-satt} De stänger ute patogenerna innan de kommer in i kroppen.
+> - {#forsvar-ytt-ex} Kroppens första försvar – det **yttre försvaret** – är **huden** och **slemhinnorna**.
 
 ## Medfött försvar – inflammation och ätarceller {#inflammation}
 
@@ -85,10 +85,9 @@ Varet som bildas i ett sår består av döda vita blodkroppar, döda patogener o
 > När kroppen bekämpar patogener uppstår en *inflammation*. Vid en kraftig inflammation når ämnen från vävnaden hjärnans temperaturcentrum. **Därför** höjs kroppens temperatur och man får *feber*.
 
 > **Viktigt att komma ihåg**
-> - Det **medfödda immunförsvaret** reagerar likadant mot alla patogener.
-> - **Inflammation**: rött, svullet, varmt och ömt. Den kan komma både av infektioner och av skador.
-> - Vid en kraftig inflammation kan man få **feber**.
-> - **Ätarceller** en viss typ av vita blodkroppar som äter upp patogenerna.
+> - {#forsvar-fodd-satt} Det **medfödda immunförsvaret** reagerar likadant mot alla patogener.
+> - {#forsvar-fodd-infl} **Inflammation**: rött, svullet, varmt och ömt. Den kan komma både av infektioner och av skador.Vid en kraftig inflammation kan man få **feber**.
+> - {#forsvar-fodd-at} **Ätarceller** en viss typ av vita blodkroppar som äter upp patogenerna.
 
 ## Lymfsystemet {#lymfsystemet}
 
@@ -119,8 +118,8 @@ Flera organ hör till immunförsvaret och lymfsystemet:
 > I *lymfknutorna* samlas *vita blodkroppar* som bekämpar patogenerna. När man är sjuk arbetar försvaret där och många vita blodkroppar samlas. **Därför** blir lymfknutorna svullna.
 
 > **Viktigt att komma ihåg**
-> - **Lymfsystemet** transporterar **lymfa** och vita blodkroppar.
-> - I **lymfknutorna** samlas vita blodkroppar.
+> - {#forsvar-lymf} **Lymfsystemet** transporterar **lymfa** och vita blodkroppar.
+> - {#forsvar-lymfknut} **lymfknutorna** undersöker vita blodkroppar lymfan efter patogener, om patogener hittas samlas  vita blodkroppar där för att bekämpa patogenen.
 
 ## Förvärvat försvar – immunsvaret {#immunsvar}
 
@@ -162,9 +161,10 @@ Bild: Hela immunsvaret, förenklat. Efter T-hjälparcellerna delar sig försvare
 > Första gången måste det *förvärvade försvaret* lära sig känna igen patogenens *antigener* och börja tillverka rätt *antikroppar*. Det tar några dagar. **Därför** hinner patogenerna föröka sig och göra en sjuk innan försvaret är klart.
 
 > **Viktigt att komma ihåg**
-> - Det **förvärvade** (specifika) **immunförsvaret** känner igen en viss patogen på dess **antigener**.
-> - Immunsvaret i fyra steg: **upptäcka** → **larma** → **angripa** → **minnas**.
-> - Antikroppar märker ut patogenerna och gör dem ofarliga.
+> - {#forsvar-spec-satt} Det **förvärvade** (specifika) **immunförsvaret** känner igen en viss patogen på dess **antigener**.
+> - {#forsvar-spec-steg} Immunsvaret i fyra steg: **upptäcka** → **larma** → **angripa** → **minnas**.
+> - {#forsvar-spec-anti} **Antigen** är ett kännetecken på en patogens yta som försvaret känner igen
+> - {#forsvar-spec-detalj} **Ätarceller** visar upp antigener. **T-hjälparceller** känner igen antigenerna och larmar **B-celler** och **T-mördarceller**. B-celler tillverkar **antikroppar** som hindrar patogener från att ta sig in i celler. T-mördarceller förstör infekterade celler och cancerceller. **Bromsande T-celler** lugnar ner immunförsvaret när patogenerna är borta. **Minnesceller** (B-celler och T-celler) finns kvar och hjälper kroppen att känna igen patogener igen.
 
 ## Immunminnet {#minne}
 
@@ -186,6 +186,6 @@ Därför är små barn ofta sjuka. Under de första åren har ett barn i genomsn
 > Efter sjukdomen finns *minnesceller* kvar som känner igen viruset. Om det kommer tillbaka tillverkar kroppen *antikroppar* direkt. **Därför** stoppas viruset innan man blir sjuk – man är *immun*.
 
 > **Viktigt att komma ihåg**
-> - **Minnesceller** gör att försvaret går mycket snabbare andra gången.
-> - Då är man **immun** mot sjukdomen.
-> - Virus som förändrar sig, som influensa, kan lura immunminnet.
+> - {#forsvar-imm-minn} **Minnesceller** gör att försvaret går mycket snabbare andra gången.
+> - {#forsvar-imm-imun} Försvaret reagerar så snabbt att du inte hinner bli sjuk, då är man **immun** mot sjukdomen.
+> - {#forsvar-imm-lura} Virus som förändrar sig, som influensa, kan lura immunminnet.
