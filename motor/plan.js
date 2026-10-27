@@ -23,6 +23,7 @@ async function visaPlan(id) {
   if (!Portal.planer[id]) await laddaSkript(`planer/${encodeURIComponent(id)}.js?v=` + Date.now().toString(36).slice(0, -3));
   const p = Portal.planer[id];
   if (!p) { topp([["Studieplan"]]); vy().innerHTML = tom("Den här studieplanen finns inte."); return; }
+  sparaPlanMinne(id, p.titel);
   // ladda innehållet i alla områden som planen använder
   const oids = [...new Set(p.mal.flatMap(m => (m.avsnitt || []).map(v => v.split("/")[0])))];
   vy().innerHTML = '<p class="laddar">Laddar …</p>';

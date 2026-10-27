@@ -20,9 +20,23 @@ function akVal(stor) {
   return `<div class="akval ${stor ? "stor" : ""}" role="radiogroup" aria-label="Årskurs">${stor ? "" : '<span class="aklbl">Åk</span>'}
     ${["alla", ...ARSKURSER].map(v => `<button type="button" role="radio" data-ak="${v}" aria-checked="${String(AK()) === String(v)}">${v === "alla" ? "Alla" : (stor ? "Åk " : "") + v}</button>`).join("")}</div>`;
 }
+// Studieplan som eleven kom ifrån – sparas bara så länge fliken är öppen (sessionStorage).
+const PLAN_MINNE = "studieplan";
+function planMinne() { try { return JSON.parse(sessionStorage.getItem(PLAN_MINNE)); } catch (e) { return null; } }
+function sparaPlanMinne(id, titel) { try { sessionStorage.setItem(PLAN_MINNE, JSON.stringify({ id, titel })); } catch (e) {} }
+function planPil() {
+  const pm = planMinne();
+  if (!pm || !pm.id || location.hash.startsWith("#/plan/" + pm.id)) return "";
+  return `<span class="planpil"><a href="#/plan/${encodeURIComponent(pm.id)}" title="Tillbaka till ${esc(pm.titel || "studieplanen")}">← <span>${esc(pm.titel || "Studieplan")}</span></a><button type="button" data-planpil-x aria-label="Sluta visa knappen till studieplanen">×</button></span>`;
+}
+document.addEventListener("click", e => {
+  const x = e.target.closest("[data-planpil-x]"); if (!x) return;
+  try { sessionStorage.removeItem(PLAN_MINNE); } catch (err) {}
+  x.closest(".planpil").remove();
+});
 function topp(smulor) {
   document.getElementById("topp").innerHTML = `<div class="topp-in">
-    <a class="logo" href="#/">${esc(Portal.inst.titel)}</a>
+    <a class="logo" href="#/">${esc(Portal.inst.titel)}</a>${planPil()}
     <nav class="smulor" aria-label="Var du är">${smulor.map(([t, h]) => h ? `<a href="${h}">${esc(t)}</a>` : `<span>${esc(t)}</span>`).join('<span class="sep">›</span>')}</nav>
     ${akVal(false)}</div>`;
 }
