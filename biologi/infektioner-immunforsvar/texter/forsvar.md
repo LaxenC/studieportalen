@@ -127,7 +127,7 @@ Bild: Immunsvaret i fyra steg: upptäcka, larma, angripa och minnas.
 
 1. **Upptäcka** – ätarceller äter upp patogenen och visar upp dess *antigener* – som ett "efterlysningsfoto".
 2. **Larma** – försvaret känner igen antigenerna och larmar resten av immunförsvaret.
-3. **Angripa** – **antikroppar** märker ut patogenerna så att de kan förstöras, och kroppsceller som har blivit infekterade förstörs.
+3. **Angripa** – **antikroppar** märker ut patogenerna så att de kan förstöras och hindrar patogenen från att ta sig in i cellen. kroppsceller som har blivit infekterade förstörs.
 4. **Minnas** – **minnesceller** kommer ihåg patogenen, så att försvaret går mycket snabbare nästa gång. Minnesceller kan finnas kvar i många år, ibland hela livet.
 
 Allt det här tar några dagar. Därför hinner man ofta bli sjuk första gången.
@@ -135,7 +135,7 @@ Allt det här tar några dagar. Därför hinner man ofta bli sjuk första gånge
 > **Begrepp**
 > **antigen** – kännetecken på en patogens yta som försvaret känner igen
 > **T-hjälparceller** – vita blodkroppar som känner igen antigener och sätter igång försvaret
-> **antikroppar** – proteiner som fastnar på en viss patogen och märker ut den
+> **antikroppar** – fastnar på en viss patogen och för att göra en av två saker: märker ut den så att resten av försvaret känner igen dom eller för förhindra att patogenerna ska kunna ta sig in i cellen
 > **minnesceller** – celler som kommer ihåg en patogen så att försvaret går snabbare nästa gång
 
 ::: fördjupning åk 7 Immunsvaret steg för steg
@@ -143,7 +143,7 @@ De fyra stegen ovan är förenklade. Så här går det till mer i detalj:
 1. **Upptäcka:** ätarcellerna som visar upp antigener heter makrofager och dendritiska celler.<br>
 2. **Larma:** det är **T-hjälparcellerna** som känner igen antigenerna och larmar resten av försvaret, skickar signlaer som sätter igång både B-cellerna och T-mördarcellerna.
 **Angripa:**  <br>
-3a **B-cellerna** tillverkar **antikropparna** som hindrar också patogenerna från att ta sig in i kroppens celler.<br>
+3a **B-cellerna** tillverkar **antikropparna** som hindrar också patogenerna från att ta sig in i kroppens celler eller märker ut dom så att resten av försvaret ska känna igen patogenen.<br>
 3b. **T-mördarcellerna** tar hand om patogener som redan har tagit sig in i en kroppscell, till exempel virus. Den infekterade cellen visar upp virusets antigener på sin yta. T-mördarcellerna känner igen dem och förstör cellen genom att spruta in ett gift. Varje T-cell känner bara igen ett enda antigen. På samma sätt dödar de även cancerceller.<br>
 4. **Minnescellerna** båda grenarna lämnar minnesceller efter sig: minnes-B-celler och minnes-T-celler.<br> **Bromsande T-celler** lugnar ner försvaret när patogenerna är borta, så att det inte blir för kraftigt.
 
@@ -159,7 +159,7 @@ Bild: Hela immunsvaret, förenklat. Efter T-hjälparcellerna delar sig försvare
 > - {#forsvar-spec-satt} Det **förvärvade** (specifika) **immunförsvaret** känner igen en viss patogen på dess **antigener**.
 > - {#forsvar-spec-steg} Immunsvaret i fyra steg: **upptäcka** → **larma** → **angripa** → **minnas**.
 > - {#forsvar-spec-anti} **Antigen** är ett kännetecken på en patogens yta som försvaret känner igen
-> - {#forsvar-spec-detalj} **Ätarceller** visar upp antigener. **T-hjälparceller** känner igen antigenerna och larmar **B-celler** och **T-mördarceller**. B-celler tillverkar **antikroppar** som hindrar patogener från att ta sig in i celler. T-mördarceller förstör infekterade celler och cancerceller. **Bromsande T-celler** lugnar ner immunförsvaret när patogenerna är borta. **Minnesceller** (B-celler och T-celler) finns kvar och hjälper kroppen att känna igen patogener igen.
+> - {#forsvar-spec-detalj} **Ätarceller** visar upp antigener. **T-hjälparceller** känner igen antigenerna och larmar **B-celler** och **T-mördarceller**. B-celler tillverkar **antikroppar** som hindrar patogener från att ta sig in i celler eller märker ut dom så att resten av försvaret känner igen patogenen. T-mördarceller förstör infekterade celler och cancerceller. **Bromsande T-celler** lugnar ner immunförsvaret när patogenerna är borta. **Minnesceller** (B-celler och T-celler) finns kvar och hjälper kroppen att känna igen patogener igen.
 
 ## Immunminnet {#minne}
 
