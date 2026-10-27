@@ -112,7 +112,7 @@ Mikrober är inte bra eller dåliga. Precis som vi försöker de överleva. Ibla
 ![bakteriecell](bilder/bakteriecell.svg?v=2)
 Bild: En bakterie är en cell utan cellkärna – arvsmassan ligger fritt i cellen. Jämför med en cell som har cellkärna.
 
-Bakterier finns nästan överallt: i marken, i vatten, i luften och i och på din kropp. De förökar sig genom att **dela sig**. Vid rätt temperatur och med mycket näring kan det gå mycket snabbt. Om det blir för kallt, varmt eller torrt kan vissa bakterier bilda **sporer** – ett skal som skyddar dem länge.
+Bakterier finns nästan överallt: i marken, i vatten, i luften och i och på din kropp. De förökar sig genom att **dela sig**. Bakterier är känsliga för temperatur och deras tillväxt påverkas av både värme och kyla. De flesta bakterier slutar växa vid temperaturer över +60 °C, vid cirka +70 °C dör de flesta bakterier. Vid temperaturer under +8 °C växer bakterier oftast långsammare, vid −18 °C förökar sig bakterier normalt inte, men de flesta dör inte utan kan börja växa igen när maten tinas.
 
 Bakterier delas in efter formen: runda **kocker**, stavformade **baciller** och spiralformade **spiriller**.
 
