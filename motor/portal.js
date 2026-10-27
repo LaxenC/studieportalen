@@ -107,7 +107,7 @@ function visaKapitel(o, kapId, avId) {
   document.title = `${t.titel || k.namn} – ${o.namn}`;
   const avs = t.avsnitt.filter(x => passar(x.ak, ak));
   const kaps = synligaKapitel(o, ak).filter(x => o.texter[x.id]), i = kaps.findIndex(x => x.id === kapId);
-  const fran = av => "&fran=" + encodeURIComponent(lank(o.amne, o.id, "las", kapId, av));
+  const fran = av => "&fran=" + encodeURIComponent(lank(o.amne, o.id, "las", kapId, av) + (av ? "?slut" : ""));
   const ovaLank = (av) => `${lank(o.amne, o.id, "ova")}?kapitel=${kapId}${av ? "&avsnitt=" + av : ""}&kor${fran(av)}`;
   const nKap = aktivaUppgifter(o, ak, kapId).length;
   vy().innerHTML = `${flikar(o, "las")}
@@ -149,6 +149,17 @@ function visaKapitel(o, kapId, avId) {
 }
 function scrollaTill(avId) {
   const el = avId && document.getElementById("av-" + avId);
+  // Tillbaka från Öva (…?slut): visa slutet av avsnittet, där Öva-knappen finns.
+  if (el && /\?(.*&)?slut\b/.test(location.hash)) {
+    const slut = el.querySelector(".ovahar") || el;
+    const till = () => scrollTo({ top: Math.max(0, slut.getBoundingClientRect().bottom + scrollY - innerHeight + 24), behavior: "auto" });
+    till();
+    // Bilder ovanför kan laddas klart senare och flytta texten – justera igen.
+    let rord = false; const stopp = () => { rord = true; };
+    addEventListener("wheel", stopp, { once: true, passive: true }); addEventListener("touchstart", stopp, { once: true, passive: true });
+    [...vy().querySelectorAll("img")].filter(i => !i.complete).forEach(i => i.addEventListener("load", () => { if (!rord) till(); }, { once: true }));
+    return;
+  }
   if (el) { const y = el.getBoundingClientRect().top + scrollY - (document.querySelector(".avmeny")?.offsetHeight || 0) - (document.getElementById("topp").offsetHeight || 0) - 8; scrollTo({ top: y, behavior: "auto" }); }
   else scrollTo(0, 0);
 }
