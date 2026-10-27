@@ -8,19 +8,19 @@ Din kropp är i ständig kamp mot patogener. Den har flera försvar – från hu
 
 ## Översikt – kroppens försvar {#oversikt}
 
-Kroppens försvar mot patogener kan delas in i två delar:
+Kroppens försvar mot sjukdomar, som även kallas **immunförsvaret**, kan delas in i två delar:
 
 1. **Yttre försvar** – huden och slemhinnorna stänger ute patogenerna, så att de inte kommer in i kroppen.
 2. **Inre försvar** – om patogenerna ändå tar sig in tar våra inre delar över.
 
-Kroppens försvar som även kallas **immunförsvaret** delas i sin tur in i två delar:
+Kroppens inre försvar kan i sin tur delas in i två delar:
 - Det **medfödda** (ospecifika) finns från födseln och reagerar snabbt på många olika patogener.
 - Det **förvärvade** (specifika) lär sig känna igen specifika patogener och bildar minnesceller som hjälper kroppen att bekämpa dem snabbare nästa gång.
 
-Immunförsvaret arbetar hela tiden, inte bara när vi är sjuka. Det hjälper till att laga skador, städar undan döda celler och känner igen celler som har förändrats, till exempel cancerceller.
+Immunförsvaret arbetar hela tiden, inte bara när vi är sjuka. Det hjälper till att laga skador och städar undan döda celler.
 
 ![kroppens försvar](bilder/forsvar-oversikt.svg?v=2)
-Bild: Kroppens försvar delas in i ett yttre och ett inre försvar. Det inre försvaret – immunförsvaret – är medfött eller förvärvat.
+Bild: Kroppens försvar, **immunförsvaret**, delas in i ett yttre och ett inre försvar. Det inre försvarets delar är medfött eller förvärvat.
 
 > **Begrepp**
 > **immunförsvaret** - kroppens försvar mot patogener
@@ -29,9 +29,6 @@ Bild: Kroppens försvar delas in i ett yttre och ett inre försvar. Det inre fö
 > **medfött försvar** – (ospecifikt) försvar  som finns från födseln och reagerar snabbt på många olika patogener.
 > **förvärvat försvar** – (specifikt) försvar som lär sig känna igen en viss patogen och kommer ihåg den
 
-> **💬 Förklara så här** {.green}
-> *Varför kallas en del av immunförsvaret förvärvat?*<br>
-> Det *förvärvade försvaret* finns inte färdigt när vi föds. Kroppen lär sig känna igen varje patogen först när den har träffat på den, och sparar det i *minnesceller*. **Därför** säger man att försvaret är förvärvat – det byggs upp under livet.
 
 > **Viktigt att komma ihåg**
 > - {#forsvar-imm} **immunförsvaret**: kroppens försvar
@@ -55,7 +52,7 @@ Om huden går sönder, eller patogenerna på något annat sätt tar sig in, blir
 > *Huden* är en tät mur som stänger ute patogenerna. När huden går sönder får patogenerna en öppning in i kroppen. **Därför** kan de ta sig in, föröka sig och orsaka en *infektion*.
 
 > **Viktigt att komma ihåg**
-> - {#forsvar-ytt-satt} De stänger ute patogenerna innan de kommer in i kroppen.
+> - {#forsvar-ytt-satt} Yttre försvaret stänger ute patogenerna innan de kommer in i kroppen.
 > - {#forsvar-ytt-ex} Kroppens första försvar – det **yttre försvaret** – är **huden** och **slemhinnorna**.
 
 ## Medfött försvar – inflammation och ätarceller {#inflammation}
@@ -68,7 +65,7 @@ Inflammation startar inte bara vid en infektion. Även en skada, som en sticka i
 
 Vid en kraftig inflammation kan man få **feber**. Ämnen från den inflammerade vävnaden påverkar hjärnans temperaturcentrum, som då höjer kroppens temperatur.
 
-**Vita blodkroppar** är kroppens försvarsceller. En sorts vita blodkroppar är **ätarceller** – de kallas också makrofager eller storätande celler. De äter upp patogener och döda celler. Ätarcellerna känner igen många olika sorters patogener, men de bildar inget minne. Gult var i ett sår är ett tecken på att ätarcellerna har arbetat. <br>
+**Vita blodkroppar** är kroppens försvarsceller, en sorts vita blodkroppar är **ätarceller**. De äter upp patogener och döda celler. Ätarcellerna känner igen många olika sorters patogener, men de bildar inget minne. Gult var i ett sår är ett tecken på att ätarcellerna har arbetat. <br>
 Varet som bildas i ett sår består av döda vita blodkroppar, döda patogener och rester av skadade celler och vävnad. Den gula färgen kommer bland annat från de döda cellerna.
 
 > **Begrepp**
@@ -92,8 +89,6 @@ Varet som bildas i ett sår består av döda vita blodkroppar, döda patogener o
 ## Lymfsystemet {#lymfsystemet}
 
 **Lymfsystemet**  är en del av immunförsvaret, men har också andra uppgifter. Det är ett nätverk av kärl och organ i hela kroppen som transporterar en klar vätska som kallas lymfa. Lymfsystemet samlar upp överflödig vätska från kroppens vävnader och för tillbaka den till blodet.
-
-I lymfknutorna finns många vita blodkroppar. De kan upptäcka patogener i lymfan och hjälpa kroppen att bekämpa dem. När du är sjuk kan lymfknutorna, till exempel på halsen, bli svullna eftersom immunförsvaret arbetar där.
 
 **Lymfknutor** fungerar som kontrollstationer i lymfsystemet. Vita blodkroppar undersöker lymfan efter patogener. Om de hittar en patogen kan de starta en försvarsreaktion där vita blodkroppar hjälper till att bekämpa den.
 
