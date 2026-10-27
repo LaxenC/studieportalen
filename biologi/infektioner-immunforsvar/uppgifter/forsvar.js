@@ -22,8 +22,8 @@ Portal.uppgifter([
       punkter: {0: ["forsvar-inre"], 1: ["forsvar-inre-del"]},
       typ: "flerval", nivaer: [0, 1],
       varianter: [
-        { fraga: "Vad är kroppens inre försvar?",
-          alt: [ { t: "Immunförsvaret", s: "ratt", f: "det inre försvaret bekämpar patogener som har tagit sig in i kroppen." },
+        { fraga: "Vad är kroppens försvar?",
+          alt: [ { t: "Immunförsvaret", s: "ratt", f: "Kroppen försvar, immunförsvaret, hindrar patogener från att ta sig in i kroppen och bekämpar dom om de tar sig in." },
                  { t: "Huden", s: "fel", f: "huden är en del av det yttre försvaret." },
                  { t: "Slemhinnorna", s: "fel", f: "slemhinnorna är en del av det yttre försvaret." },
                  { t: "Vaccin", s: "fel", f: "vaccin tränar immunförsvaret, men det är inte kroppens eget försvar." } ] },
@@ -38,8 +38,8 @@ Portal.uppgifter([
       typ: "para", nivaer: [0, 1, 2],
       varianter: [
         { rubrik: "Para ihop försvaret med vad det gör.",
-          par: [["Huden och slemhinnorna", "Stänger ute patogenerna"], ["Ätarceller", "Äter upp patogener och döda celler"],
-                ["Antikroppar", "Fastnar på patogenerna och märker ut dem"], ["Minnesceller", "Kommer ihåg patogenen till nästa gång"]] }
+          par: [["Huden och slemhinnorna", "Stänger ute patogenerna"], ["Ätarceller", "Äter upp patogener."],
+                ["Antikroppar", "Fastnar på patogenerna och märker ut dem och hindrar dom från att ta sin in i cellen"], ["Minnesceller", "Kommer ihåg patogenen till nästa gång"]] }
       ] },
 
     { id: "for-hud-flerval", kapitel: "forsvar", avsnitt: ["hud", "inflammation"], titel: "Första försvaret – välj rätt",
@@ -79,7 +79,7 @@ Portal.uppgifter([
       typ: "lucktext", nivaer: [1], rullista: [1],
       ordlista: ["ätarceller", "antikroppar", "minnesceller", "röda blodkroppar", "antibiotika"],
       varianter: [
-        { text: "Först äter [ätarceller|ätarcellerna] upp patogenerna. Sedan tillverkas [antikroppar] som märker ut dem. Till sist bildas [minnesceller] som kommer ihåg patogenen." }
+        { text: "Först äter [ätarceller|ätarcellerna] upp patogenerna. Sedan tillverkas [antikroppar] som hindrar patogener från att ta sig in i celler. Till sist bildas [minnesceller] som kommer ihåg patogenen." }
       ] },
 
     { id: "for-immunsvar-flerval", kapitel: "forsvar", avsnitt: ["immunsvar", "minne"], titel: "Immunsvar och immunminne – välj rätt",
@@ -138,16 +138,16 @@ Portal.uppgifter([
       varianter: [
         { rubrik: "Para ihop steget i immunsvaret med vad som händer.",
           par: [["1. Upptäcka", "Ätarceller äter patogenen och visar upp antigener"], ["2. Larma", "Försvaret känner igen antigenerna och larmar"],
-                ["3. Angripa", "Antikroppar märker ut patogenerna och infekterade celler förstörs"], ["4. Minnas", "Minnesceller kommer ihåg patogenen till nästa gång"]] }
+                ["3. Angripa", "Antikroppar bildas och hindrar patogener från att ta sig in i celler"], ["4. Minnas", "Minnesceller kommer ihåg patogenen till nästa gång"]] }
       ] },
     { id: "for-bast", kapitel: "forsvar", avsnitt: ["oversikt", "inflammation", "immunsvar", "minne"], titel: "Vad beskriver bäst? – kroppens försvar",
       typ: "flerval", nivaer: [2],
       varianter: [
         { fraga: "Vad beskriver bäst vad antikroppar gör?",
-          alt: [ { t: "De fastnar på en viss patogen, märker ut den och gör den ofarlig så att ätarcellerna kan förstöra den", s: "ratt", f: "antikroppar passar bara mot en viss patogen och hjälper resten av försvaret att hitta den." },
+          alt: [ { t: "De fastnar på en viss patogen, och hindrar den från att ta sig in i celler. De märker också ut patgonen så att resten av försvaret känner igen den.", s: "ratt", f: "antikroppar passar bara mot en viss patogen och hjälper resten av försvaret att hitta den." },
                  { t: "De bekämpar patogener", s: "delvis", f: "stämmer, men säger inte hur – de fastnar på och märker ut patogenen." },
                  { t: "De bildas av B-celler", s: "delvis", f: "stämmer, men beskriver var de kommer ifrån – inte vad de gör." },
-                 { t: "De äter upp patogenerna", s: "fel", f: "det är ätarcellerna som äter upp patogenerna – antikropparna märker ut dem." } ] },
+                 { t: "De äter upp patogenerna", s: "fel", f: "det är ätarcellerna som äter upp patogenerna – antikropparna märker ut dem och förhindrar att de tar sig in i cellen." } ] },
         { fraga: "Vad beskriver bäst varför man blir immun mot vattkoppor?",
           alt: [ { t: "Minnesceller finns kvar och känner igen viruset, så att försvaret går så snabbt att man inte blir sjuk igen", s: "ratt", f: "minnescellerna gör att antikroppar tillverkas direkt nästa gång." },
                  { t: "Kroppen har redan haft sjukdomen", s: "delvis", f: "stämmer, men förklarar inte vad det är i kroppen som gör att man inte blir sjuk igen." },
@@ -299,7 +299,7 @@ Portal.uppgifter([
                  { t: "En sorts vit blodkropp", s: "fel", f: "antigenet sitter på patogenen." },
                  { t: "Ett läkemedel", s: "fel", f: "antigenet sitter på patogenens yta." } ] },
         { fraga: "Vad gör B-cellerna?", punkter: ["forsvar-spec-detalj"],
-          alt: [ { t: "De tillverkar antikroppar", s: "ratt", f: "antikropparna hindrar patogenerna från att ta sig in i celler." },
+          alt: [ { t: "De tillverkar antikroppar", s: "ratt", f: "antikropparna hindrar patogenerna från att ta sig in i celler och märker ut patogener så att resten av försvaret känner igen dom." },
                  { t: "De förstör infekterade celler", s: "fel", f: "det gör T-mördarcellerna." },
                  { t: "De visar upp antigener", s: "fel", f: "det gör ätarcellerna." },
                  { t: "De lugnar ner försvaret", s: "fel", f: "det gör de bromsande T-cellerna." } ] }
@@ -310,7 +310,7 @@ Portal.uppgifter([
         { rubrik: "Fyll i de tomma stegen i immunsvaret.",
           steg: ["Upptäcka – ätarceller äter patogenen och visar upp dess antigener",
                  "Larma – försvaret känner igen antigenerna och larmar resten av immunförsvaret",
-                 "Angripa – antikroppar märker ut patogenerna, och infekterade celler förstörs",
+                 "Angripa – antikroppar märker ut patogenerna och hindrar dom från att ta sig in i celler, och infekterade celler förstörs",
                  "Minnas – minnesceller kommer ihåg patogenen till nästa gång"],
           luckor: { 0: [1], 1: [1, 2], 2: [0, 1, 3] },
           fel: ["Stänga ute – huden stoppar patogenerna", "Värma – kroppen får feber"] }
