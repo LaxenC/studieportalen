@@ -126,7 +126,7 @@ Portal.uppgifter([
                ] },
 
                
-         { id: "sjukdom-inkub-flerval", kapitel: "smitta", avsnitt: ["sjukdom"], titel: "Inkuvationstid – välj rätt",
+         { id: "sjukdom-inkub-flerval", kapitel: "smitta", avsnitt: ["sjukdom"], titel: "Inkubationstid – välj rätt",
             typ: "flerval", nivaer: [1], punkter:["sjukdom-inkub"],
             varianter:[
               {fraga: "Vad betyder inkubationstid?",
