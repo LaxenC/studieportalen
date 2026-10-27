@@ -124,7 +124,11 @@ Bild: De tre formerna av bakterier.
 
 **De flesta bakterier är ofarliga** – färre än 1 procent anses vara skadliga. Många är dessutom nödvändiga för oss. Bakterier på huden skyddar mot skadliga bakterier, och bakterier i tarmen hjälper till med matsmältningen och tillverkar vitaminer.
 
-Bakterier är viktiga **nedbrytare** i naturen. Vissa bakterier gör fotosyntes – de kallas cyanobakterier eller blågröna alger och kan orsaka algblomning.
+Bakterier är viktiga **nedbrytare** i naturen. Vissa bakterier gör fotosyntes – de kallas cyanobakterier och kallas ibland för blågröna alger eftersom de ser ut som alger men det är bakterier. 
+
+:: Fördjupning - Algblomning
+Algblomning uppstår nä cyanobakterierväxer väldigt snabbt i vatten, till exempel i en sjö eller i havet. Det händer ofta när vattnet är varmt och innehåller mycket näring, till exempel från gödsel och jordbruk. Algblomning kan göra vattnet grumligt och färgat grönt. Vissa algblomningar kan också vara giftiga för människor och djur.
+::
 
 Men bakterier kan också orsaka allvarliga sjukdomar, till exempel kolera, pest, tuberkulos och lunginflammation. De flesta bakterieinfektioner kan i dag behandlas med **antibiotika** – mer om det i kapitlet [Bota och förebygga](#/biologi/infektioner-immunforsvar/las/bota) under *Infektioner och immunförsvar*.
 
