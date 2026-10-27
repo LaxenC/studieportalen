@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 510" font-family="Inter,Arial,sans-serif">
+<rect width="680" height="510" fill="#fff"/>
+<text x="340" y="26" font-size="18" font-weight="800" fill="#1d2a3a" text-anchor="middle">Hur påverkar temperaturen bakterier?</text>
+<rect x="150" y="43" width="515" height="64" rx="10" fill="#fbe0de" stroke="#c4524b" stroke-width="2"/>
+<text x="166" y="69.0" font-size="16" font-weight="800" fill="#1d2a3a">Över +70 °C</text>
+<text x="166" y="91.0" font-size="15" fill="#1d2a3a">De flesta bakterier dör.</text>
+<rect x="509" y="69.0" width="22" height="12" rx="6" fill="#e6e6e6" stroke="#8a8f98" stroke-width="2"/><path d="M514 71.0 l12 8 M526 71.0 l-12 8" stroke="#c4524b" stroke-width="2.4" stroke-linecap="round"/>
+<rect x="545" y="69.0" width="22" height="12" rx="6" fill="#e6e6e6" stroke="#8a8f98" stroke-width="2"/><path d="M550 71.0 l12 8 M562 71.0 l-12 8" stroke="#c4524b" stroke-width="2.4" stroke-linecap="round"/>
+<rect x="581" y="69.0" width="22" height="12" rx="6" fill="#e6e6e6" stroke="#8a8f98" stroke-width="2"/><path d="M586 71.0 l12 8 M598 71.0 l-12 8" stroke="#c4524b" stroke-width="2.4" stroke-linecap="round"/>
+<rect x="617" y="69.0" width="22" height="12" rx="6" fill="#e6e6e6" stroke="#8a8f98" stroke-width="2"/><path d="M622 71.0 l12 8 M634 71.0 l-12 8" stroke="#c4524b" stroke-width="2.4" stroke-linecap="round"/>
+<rect x="150" y="113" width="515" height="64" rx="10" fill="#fdebd3" stroke="#d9822b" stroke-width="2"/>
+<text x="166" y="139.0" font-size="16" font-weight="800" fill="#1d2a3a">Över +60 °C</text>
+<text x="166" y="161.0" font-size="15" fill="#1d2a3a">Bakterierna slutar växa.</text>
+<rect x="509" y="139.0" width="22" height="12" rx="6" fill="#c9ecc9" stroke="#2e8b3e" stroke-width="2"/><circle cx="520" cy="145.0" r="2.4" fill="#2e8b3e"/>
+<rect x="545" y="139.0" width="22" height="12" rx="6" fill="#c9ecc9" stroke="#2e8b3e" stroke-width="2"/><circle cx="556" cy="145.0" r="2.4" fill="#2e8b3e"/>
+<rect x="581" y="139.0" width="22" height="12" rx="6" fill="#c9ecc9" stroke="#2e8b3e" stroke-width="2"/><circle cx="592" cy="145.0" r="2.4" fill="#2e8b3e"/>
+<rect x="617" y="139.0" width="22" height="12" rx="6" fill="#c9ecc9" stroke="#2e8b3e" stroke-width="2"/><circle cx="628" cy="145.0" r="2.4" fill="#2e8b3e"/>
+<rect x="150" y="183" width="515" height="114" rx="10" fill="#e3f4dc" stroke="#3f8f3a" stroke-width="2"/>
+<text x="166" y="234.0" font-size="16" font-weight="800" fill="#1d2a3a">Mellan +8 °C och +60 °C</text>
+<text x="166" y="256.0" font-size="15" fill="#1d2a3a">Bakterierna växer och förökar sig.</text>
+<rect x="494" y="204" width="22" height="12" rx="6" fill="#c9ecc9" stroke="#2e8b3e" stroke-width="2"/><circle cx="505" cy="210" r="2.4" fill="#2e8b3e"/>
+<rect x="530" y="204" width="22" height="12" rx="6" fill="#c9ecc9" stroke="#2e8b3e" stroke-width="2"/><circle cx="541" cy="210" r="2.4" fill="#2e8b3e"/>
+<rect x="566" y="204" width="22" height="12" rx="6" fill="#c9ecc9" stroke="#2e8b3e" stroke-width="2"/><circle cx="577" cy="210" r="2.4" fill="#2e8b3e"/>
+<rect x="602" y="204" width="22" height="12" rx="6" fill="#c9ecc9" stroke="#2e8b3e" stroke-width="2"/><circle cx="613" cy="210" r="2.4" fill="#2e8b3e"/>
+<rect x="503" y="234" width="22" height="12" rx="6" fill="#c9ecc9" stroke="#2e8b3e" stroke-width="2"/><circle cx="514" cy="240" r="2.4" fill="#2e8b3e"/>
+<rect x="539" y="234" width="22" height="12" rx="6" fill="#c9ecc9" stroke="#2e8b3e" stroke-width="2"/><circle cx="550" cy="240" r="2.4" fill="#2e8b3e"/>
+<rect x="575" y="234" width="22" height="12" rx="6" fill="#c9ecc9" stroke="#2e8b3e" stroke-width="2"/><circle cx="586" cy="240" r="2.4" fill="#2e8b3e"/>
+<rect x="611" y="234" width="22" height="12" rx="6" fill="#c9ecc9" stroke="#2e8b3e" stroke-width="2"/><circle cx="622" cy="240" r="2.4" fill="#2e8b3e"/>
+<rect x="494" y="264" width="22" height="12" rx="6" fill="#c9ecc9" stroke="#2e8b3e" stroke-width="2"/><circle cx="505" cy="270" r="2.4" fill="#2e8b3e"/>
+<rect x="530" y="264" width="22" height="12" rx="6" fill="#c9ecc9" stroke="#2e8b3e" stroke-width="2"/><circle cx="541" cy="270" r="2.4" fill="#2e8b3e"/>
+<rect x="566" y="264" width="22" height="12" rx="6" fill="#c9ecc9" stroke="#2e8b3e" stroke-width="2"/><circle cx="577" cy="270" r="2.4" fill="#2e8b3e"/>
+<rect x="150" y="303" width="515" height="69" rx="10" fill="#e2eefb" stroke="#4a86c5" stroke-width="2"/>
+<text x="166" y="331.5" font-size="16" font-weight="800" fill="#1d2a3a">Under +8 °C – till exempel i kylskåpet</text>
+<text x="166" y="353.5" font-size="15" fill="#1d2a3a">Bakterierna växer långsammare.</text>
+<rect x="509" y="331.5" width="22" height="12" rx="6" fill="#c9ecc9" stroke="#2e8b3e" stroke-width="2"/><circle cx="520" cy="337.5" r="2.4" fill="#2e8b3e"/>
+<rect x="545" y="331.5" width="22" height="12" rx="6" fill="#c9ecc9" stroke="#2e8b3e" stroke-width="2"/><circle cx="556" cy="337.5" r="2.4" fill="#2e8b3e"/>
+<rect x="581" y="331.5" width="22" height="12" rx="6" fill="#c9ecc9" stroke="#2e8b3e" stroke-width="2"/><circle cx="592" cy="337.5" r="2.4" fill="#2e8b3e"/>
+<rect x="617" y="331.5" width="22" height="12" rx="6" fill="#c9ecc9" stroke="#2e8b3e" stroke-width="2"/><circle cx="628" cy="337.5" r="2.4" fill="#2e8b3e"/>
+<rect x="150" y="378" width="515" height="89" rx="10" fill="#d3e2f5" stroke="#2c5f9e" stroke-width="2"/>
+<text x="166" y="405.5" font-size="16" font-weight="800" fill="#1d2a3a">−18 °C – till exempel i frysen</text>
+<text x="166" y="427.5" font-size="15" fill="#1d2a3a">Bakterierna förökar sig inte, men de flesta dör inte.</text>
+<text x="166" y="448.5" font-size="15" fill="#1d2a3a">De kan börja växa igen när maten tinas.</text>
+<rect x="554" y="436" width="22" height="12" rx="6" fill="#c9ecc9" stroke="#2e8b3e" stroke-width="2"/><g stroke="#2c5f9e" stroke-width="1.8" stroke-linecap="round"><path d="M577 428 v10 M572 433 h10 M573.5 429.5 l7 7 M580.5 429.5 l-7 7"/></g>
+<rect x="588" y="436" width="22" height="12" rx="6" fill="#c9ecc9" stroke="#2e8b3e" stroke-width="2"/><g stroke="#2c5f9e" stroke-width="1.8" stroke-linecap="round"><path d="M611 428 v10 M606 433 h10 M607.5 429.5 l7 7 M614.5 429.5 l-7 7"/></g>
+<rect x="622" y="436" width="22" height="12" rx="6" fill="#c9ecc9" stroke="#2e8b3e" stroke-width="2"/><g stroke="#2c5f9e" stroke-width="1.8" stroke-linecap="round"><path d="M645 428 v10 M640 433 h10 M641.5 429.5 l7 7 M648.5 429.5 l-7 7"/></g>
+<rect x="92" y="40" width="30" height="440" rx="15" fill="#fff" stroke="#4a5568" stroke-width="3"/>
+<rect x="99" y="48" width="16" height="70" fill="#c4524b"/>
+<rect x="99" y="110" width="16" height="70" fill="#d9822b"/>
+<rect x="99" y="180" width="16" height="120" fill="#3f8f3a"/>
+<rect x="99" y="300" width="16" height="75" fill="#4a86c5"/>
+<rect x="99" y="375" width="16" height="95" fill="#2c5f9e"/>
+<rect x="99" y="47" width="16" height="16" rx="8" fill="#c4524b"/>
+<circle cx="107" cy="480" r="24" fill="#2c5f9e" stroke="#4a5568" stroke-width="3"/>
+<line x1="80" y1="110" x2="92" y2="110" stroke="#4a5568" stroke-width="2.5"/><text x="74" y="115" font-size="15" font-weight="700" fill="#1d2a3a" text-anchor="end">+70 °C</text>
+<line x1="80" y1="180" x2="92" y2="180" stroke="#4a5568" stroke-width="2.5"/><text x="74" y="185" font-size="15" font-weight="700" fill="#1d2a3a" text-anchor="end">+60 °C</text>
+<line x1="80" y1="300" x2="92" y2="300" stroke="#4a5568" stroke-width="2.5"/><text x="74" y="305" font-size="15" font-weight="700" fill="#1d2a3a" text-anchor="end">+8 °C</text>
+<line x1="80" y1="375" x2="92" y2="375" stroke="#4a5568" stroke-width="2.5"/><text x="74" y="380" font-size="15" font-weight="700" fill="#1d2a3a" text-anchor="end">−18 °C</text>
+</svg>

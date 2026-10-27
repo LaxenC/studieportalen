@@ -114,6 +114,9 @@ Bild: En bakterie är en cell utan cellkärna – arvsmassan ligger fritt i cell
 
 Bakterier finns nästan överallt: i marken, i vatten, i luften och i och på din kropp. De förökar sig genom att **dela sig**. Bakterier är känsliga för temperatur och deras tillväxt påverkas av både värme och kyla. De flesta bakterier slutar växa vid temperaturer över +60 °C, vid cirka +70 °C dör de flesta bakterier. Vid temperaturer under +8 °C växer bakterier oftast långsammare, vid −18 °C förökar sig bakterier normalt inte, men de flesta dör inte utan kan börja växa igen när maten tinas.
 
+![bakterier-temperatur](bilder/bakterier-temperatur.svg)
+Bild: Hur temperaturen påverkar bakterier – från frysen till över +70 °C.
+
 Bakterier delas in efter formen: runda **kocker**, stavformade **baciller** och spiralformade **spiriller**.
 
 ![bakterieformer](bilder/bakterieformer.svg)
