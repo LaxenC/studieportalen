@@ -4,7 +4,7 @@ kapitel: bota
 
 # Bota och förebygga
 
-Med vaccin kan vi förebygga sjukdomar innan de bryter ut, och med antibiotika kan vi bota många bakteriesjukdomar. Men båda behöver användas klokt.
+Med olika typer av mediciner kan vi förebygga sjukdomar innan de bryter ut. Vaccin och antibiotika är mediciner som förhindrar sjukdomar på olika sätt, vaccin tränar kroppen på att försvara sig mot sjukdomar och antibiotika förhindrar bakterier från att göra oss sjuka. Men båda behöver användas klokt.
 
 ## Vaccin {#vaccin}
 
@@ -35,6 +35,7 @@ På 1790-talet märkte den engelske läkaren **Edward Jenner** att mjölkerskor 
 > **Viktigt att komma ihåg**
 > - {#bota-vac-trana} Ett **vaccin** tränar immunförsvaret utan att man blir sjuk. Kroppen bildar **minnesceller** och blir **immun**.
 > - {#bota-vac-funka} Vaccin fungerar både mot virus och bakterier.
+> - {#bota-vac-uppt} Edward Jenner hittade vaccin mot smittkoppor på 1790 talet, han upptäckte att de som haft den milda sjukdomen kokopper inte fick smittkoppor
 
 ## Antibiotika och resistens {#antibiotika}
 
@@ -44,7 +45,7 @@ Antibiotika har räddat miljontals liv. Infektioner som förr ofta var dödliga,
 
 ### Antibiotika är en nyckel till bakteriens maskiner
 
-Antibiotika fungerar som en **nyckel** som passar i ett visst **lås** hos bakterien. Låset är en del av bakteriens cell:
+Antibiotika påverkar delar av bakteriens cell:
 
 - **Penicillin** stoppar bakterien från att bygga sin **cellvägg** – det skyddande skalet runt cellen. Då går bakterien sönder och dör.
 - Andra antibiotika stoppar bakteriens **fabriker**, så att cellen inte kan bygga nya delar.
@@ -54,7 +55,7 @@ Låset finns alltså bara i bakteriens cell.
 
 ### Viruset är bara ett recept – ingen fabrik
 
-Ett virus är inte en cell. Det består bara av **arvsmassa** (DNA eller RNA) i ett hölje av protein. Virus har ingen cellvägg, inga egna fabriker och ingen egen **ämnesomsättning**. Det kan alltså varken äta, tillverka energi eller bygga något själv. Ett virus är som ett recept utan kök.
+Ett virus är inte en cell. Det består bara av **arvsmassa** (DNA) i ett hölje av protein. Virus har ingen cellvägg, inga egna fabriker och ingen egen **ämnesomsättning**. Det kan alltså varken äta, tillverka energi eller bygga något själv.
 
 För att föröka sig måste viruset ta sig in i en levande cell och låna cellens fabriker. Det är kroppens egen cell som bygger de nya virusen – viruset gör ingenting själv.
 
@@ -64,7 +65,7 @@ För att föröka sig måste viruset ta sig in i en levande cell och låna celle
 - Virus har inga egna fabriker – antibiotika som stoppar fabrikerna hittar inget att stoppa.
 - Virus har ingen egen ämnesomsättning – det finns ingen fabrik som kan stängas av.
 
-Antibiotika behöver alltså ett lås som viruset inte har. Nyckeln passar inte – inte för att nyckeln är trasig, utan för att låset saknas. **Därför hjälper antibiotika inte mot förkylning eller influensa.** Antibiotika dödar dessutom kroppens nyttiga bakterier, till exempel i tarmen.
+ **Därför hjälper antibiotika inte mot förkylning eller influensa.** Antibiotika dödar dessutom kroppens nyttiga bakterier, till exempel i tarmen.
 
 ### Resistens
 
@@ -93,6 +94,7 @@ För att minska resistensen ska antibiotika bara användas när det verkligen be
 > - {#bota-ant-bak} Antibiotika kan döda bakterier eller stoppa dem från att växa och föröka sig genom att angripa deras cellvägg, fabriker eller förmåga att kopiera sitt DNA.
 > - {#bota-ant-vir} Virus består av arvsmassa i ett proteinskal. De kan inte föröka sig själva utan måste ta sig in i en levande cell och använda dess fabriker. Antibiotika fungerar inte mot virus, eftersom virus saknar de delar som antibiotika angriper.
 > - {#bota-ant-res} Bakterier kan bli **resistenta** om antibiotika används för mycket. Därför ska du använda antibiotika bara när det behövs.
+> - {#bota-ant-up}  1928**Alexander Fleming** upptäckte en mögelsvamp som dödat bakterierna i en av hans odlingsskålar. Han hade upptäckt **penicillin**.
 
 ## Så stärker du ditt immunförsvar {#starka}
 
