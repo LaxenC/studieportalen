@@ -12,7 +12,8 @@ Portal.plan({
   arskurs: 7,
   mal: [
     { text: "Lär dig de 3 typerna av mikrober.",
-      avsnitt: ["evolution-mangfald/mikroorganismer/bakterier",
+      avsnitt: ["evolution-mangfald/mikroorganismer/cell", "evolution-mangfald/mikroorganismer/vad",
+                "evolution-mangfald/mikroorganismer/bakterier",
                 "evolution-mangfald/mikroorganismer/virus", "evolution-mangfald/mikroorganismer/svampar"] },
     { text: "Hur mikrober överförs från person till person.",
       avsnitt: ["infektioner-immunforsvar/smitta/smittspridning"] },
