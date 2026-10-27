@@ -22,8 +22,10 @@ När en patogen tar sig in i kroppen och börjar föröka sig kallas det en **in
 > **inkubationstid** – tiden från smitta till sjukdom
 > **pandemi** – en sjukdom som sprids över stora delar av världen
 
-::: fördjupning åk 7 Historiens värsta pandemier
-**Spanska sjukan** var en influensa som spreds över världen 1918–1920, strax efter första världskriget. Kanske 50 miljoner människor dog – fler än i kriget. Under medeltiden dödade **digerdöden** (pest, en bakteriesjukdom) ungefär en tredjedel av Europas befolkning. **Covid-19** blev en pandemi 2020.
+::: fördjupning åk 7 Pandemier
+**Spanska sjukan** var en influensa orsakad av virus som spreds över världen 1918–1920, strax efter första världskriget. Kanske 50 miljoner människor dog – fler än i kriget. <br> 
+Under medeltiden dödade **digerdöden** (pest, en bakteriesjukdom) ungefär en tredjedel av Europas befolkning.
+**Covid-19** som var ett virus som spreds över stora delar av världen 2020.
 :::
 
 > **💬 Förklara så här** {.green}
@@ -57,7 +59,7 @@ Andra allvarliga bakteriesjukdomar är kolera, pest och tuberkulos. De flesta ba
 
 ### Virus
 
-Ett virus är har ingen cell utan de har **arvsmassa i ett skal av protein**. De måste ta sig in i en **värdcell** för att föröka sig. Många sjukdomar orsakas av virus, till exempel förkylning, influensa, mässling och covid-19. Det finns minst 600 virus som kan drabba människor – ungefär hälften har med förkylningar att göra.
+Ett virus har ingen cell utan de har **arvsmassa i ett skal av protein**. De måste ta sig in i en **värdcell** för att föröka sig. Många sjukdomar orsakas av virus, till exempel förkylning, influensa, mässling och covid-19. Det finns minst 600 virus som kan drabba människor – ungefär hälften har med förkylningar att göra.
 
 Virus förändrar sig hela tiden, så att immunförsvaret inte känner igen dem. Därför kan man bli förkyld år efter år. **Antibiotika fungerar inte mot virus.**
 
@@ -94,15 +96,14 @@ Mikrober som orsakar sjukdom kan spridas på flera olika sätt:
 | **Direktkontakt** | att ta i hand, kramas, pussas |
 | **Via luften** | droppar när någon hostar eller nyser |
 | **Indirekt kontakt** | via saker som många rör vid, till exempel dörrhandtag och muggar |
-| **Mat och vatten** | dåligt tillagad mat eller smutsigt vatten |
-| **Insekter** | myggor kan sprida malaria |
-| **Andra djur** | sjukdomar som smittar från djur till människor, till exempel rabies |
+| **Föda (Mat och vatten)** | dåligt tillagad mat eller smutsigt vatten |
+| **Djur** | sjukdomar som smittar från djur till människor, till exempel rabies. Myggor kan sprida malaria och   |
 | **Blod** | när blod från en smittad person kommer in i någon annans blod, till exempel via sprutor som delas – hepatit och hiv kan smitta så |
 | **Sexuell kontakt** | sexuellt överförbara sjukdomar, till exempel klamydia, gonorré och hiv |
 
-För att stoppa smittspridning försöker man bryta smittvägarna, till exempel genom att **tvätta händerna**, hosta i armvecket, stanna hemma när man är sjuk, tillaga mat ordentligt, skydda sig mot myggor och använda kondom vid sex. Kondomen hindrar att patogener förs över mellan personerna.
+För att stoppa smittspridning försöker man bryta smittvägarna, till exempel genom att **tvätta händerna**, hosta i armvecket, stanna hemma när man är sjuk, tillaga mat ordentligt, skydda sig mot myggor och använda kondom vid sex. 
 
-Förr kunde man smittas av hepatit och hiv vid en blodtransfusion. I dag testas allt blod som ges i Sverige, och vården använder alltid nya, sterila sprutor.
+Förr kunde man smittas av hepatit och hiv vid en blodtransfusion (när man får blod på sjukhus). I dag testas allt blod som ges i Sverige, och vården använder alltid nya, sterila sprutor.
 
 > **Begrepp**
 > **smittväg** – det sätt som en sjukdom sprids på
