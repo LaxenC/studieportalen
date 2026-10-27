@@ -33,7 +33,7 @@ Under medeltiden dödade **digerdöden** (pest, en bakteriesjukdom) ungefär en 
 > Under *inkubationstiden* har *patogenen* redan kommit in i kroppen och börjat föröka sig, men man har ännu inga *symptom*. **Därför** kan man sprida smittan utan att veta om det.
 
 > **Viktigt att komma ihåg**
-> - {#sjukdom-orsak} Mikrober eller organismer som orsakar sjukdomar kallas för **Patogener**, men alla sjukdonar kommer inte från patogener.  
+> - {#sjukdom-orsak} Mikrober eller organismer som orsakar sjukdomar kallas för **Patogener**, men alla sjukdomar kommer inte från patogener.  
 > - {#sjukdom-infek} En **infektion** är när en patogen tar sig in i kroppen och förökar sig.
 > - {#sjukdom-inkub} **Inkubationstid** = tiden från smitta till sjukdom.
 > - {#sjukdom-sprid} **Epidemi** = snabb spridning. **Pandemi** = spridning över stora delar av världen.
@@ -114,5 +114,5 @@ Förr kunde man smittas av hepatit och hiv vid en blodtransfusion (när man får
 
 > **Viktigt att komma ihåg**
 > - {#sprid-vag} Smitta kan spridas via **direktkontakt**, **luften**, **indirekt kontakt**, **mat och vatten**, **insekter**, **andra djur**, **blod** och **sexuell kontakt**.
-> - {#sprid-stop} God **hygien**, till exempel att tvätta händerna, är ett av de bästa sätten att stoppa smittspridning. Men om det smittar via blod eller sexuellkontakt behöver man skydda sig på andra sätt tex. kodom vid sex och handskar om man ska röra vid blod.
+> - {#sprid-stop} God **hygien**, till exempel att tvätta händerna, är ett av de bästa sätten att stoppa smittspridning. Men om det smittar via blod eller sexuell kontakt behöver man skydda sig på andra sätt till exempel kondom vid sex och handskar om man ska röra vid blod.
 

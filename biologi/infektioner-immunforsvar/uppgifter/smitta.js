@@ -14,12 +14,12 @@ Portal.uppgifter([
         {fraga: "Vad kallas bakterier, virus, svampar eller protozoer som orsakar sjukdomar?",
           alt: [
             { t: "Patogener", s: "ratt", f: "Mikrober som orsakar sjukdomar kallas patogener. Bakterier, virus, svampar och protozoer är mikrober som orsakar sjukdomar." },
-            { t: "Symptom", s: "fel", f: "Symptom är tecken på sjukdom, till exempel feber, hosta eller utslag. Mikrober eller organismer som orsakar sjukdomar kalllas Patogener." },
-            { t: "Diagnoser", s: "fel", f: "En diagnos är ett beslut om vilken sjukdom det är. Mikrober eller organismer som orsakar sjukdomar kalllas Patogener." }]},
+            { t: "Symptom", s: "fel", f: "Symptom är tecken på sjukdom, till exempel feber, hosta eller utslag. Mikrober eller organismer som orsakar sjukdomar kallas Patogener." },
+            { t: "Diagnoser", s: "fel", f: "En diagnos är ett beslut om vilken sjukdom det är. Mikrober eller organismer som orsakar sjukdomar kallas Patogener." }]},
         {fraga: "Orsakas alla sjukdomar av patogener?",
           alt: [
             { t: "Nej, till exempel diabetes, allergier och cancer orsakas inte av mikrober.", s: "ratt", f: "Alla sjukdomar orsakas inte av patogener. Patogener orsakar sjukdomar som smittar." },
-            { t: "Ja, alla sjukdomar orsakas av bakterier eller virus.", s: "fel", f: "Alla sjukdomar orsakas inte av patgoner, endast de sjukdomar som smittar." },
+            { t: "Ja, alla sjukdomar orsakas av bakterier eller virus.", s: "fel", f: "Alla sjukdomar orsakas inte av patogener, endast de sjukdomar som smittar." },
             { t: "Nej, men alla sjukdomar orsakas av protozoer.", s: "fel", f: "Protozoer orsakar endast malaria." }]},
         {fraga: "Vilka av följande kan vara patogener?",
           alt: [

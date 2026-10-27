@@ -112,6 +112,11 @@ const MD = (() => {
         // ::: fördjupning åk 7 [Rubrik] – fördjupning för åk 7, vanlig text för övriga
         const fd = arg.match(/^(?:fördjupning|fordjupning|extra)\s+(?:åk|ak)\s*=?\s*([\d,–-]+(?:\s*,\s*\d+)*)\s*(.*)$/i);
         if (fd) ut.push({ html: `<div class="fd-ak" data-fdak="${parseAk(fd[1])}" data-titel="${esc(fd[2].trim() || "Fördjupning")}">${sattIhop(inre)}</div>` });
+        else if ((m = arg.match(/^(?:fördjupning|fordjupning|extra)\b\s*[-–:]?\s*(.*)$/i))) {
+          // ::: fördjupning Rubrik – fördjupning (infälld) för alla årskurser
+          const t = m[1].trim() || "Fördjupning";
+          ut.push({ html: `<details class="fordjup"><summary>${esc(/^fördjupning/i.test(t) ? t : "Fördjupning: " + t)}</summary><div class="fd-inne">${sattIhop(inre)}</div></details>` });
+        }
         else if (ak) ut.push({ html: `<div class="ak-block" data-ak="${parseAk(ak[1])}">${sattIhop(inre)}</div>` });
         else if (arg === "rad") ut.push({ html: `<div class="rad">${inre.map(b => `<div class="rad-cell">${b.html}</div>`).join("")}</div>` });
         else ut.push({ html: `<div class="${esc(arg)}">${sattIhop(inre)}</div>` });

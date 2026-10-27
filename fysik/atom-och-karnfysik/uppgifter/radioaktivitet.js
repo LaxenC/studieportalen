@@ -302,7 +302,7 @@ Portal.uppgifter([
         { fraga: "Vilket fynd kan man åldersbestämma med kol-14-metoden?",
           alt: [ { t: "Ett ben från ett djur som levde för 3 000 år sedan", s: "ratt", f: "benet har varit levande och är yngre än cirka 50 000 år." },
                  { t: "En sten som är 1 miljon år gammal", s: "fel", f: "stenen har aldrig levt, och 1 miljon år är för gammalt för metoden." },
-                 { t: "Ett dinosarieben som är 70 miljoner år", s: "fel", f: "efter cirka 50 000 år finns för lite kol-14 kvar att mäta." },
+                 { t: "Ett dinosaurieben som är 70 miljoner år", s: "fel", f: "efter cirka 50 000 år finns för lite kol-14 kvar att mäta." },
                  { t: "En plastleksak", s: "fel", f: "plast har inte varit levande på samma sätt och tar inte upp kol-14 från luften." } ] }
       ] },
 

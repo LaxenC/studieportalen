@@ -35,7 +35,7 @@ På 1790-talet märkte den engelske läkaren **Edward Jenner** att mjölkerskor 
 > **Viktigt att komma ihåg**
 > - {#bota-vac-trana} Ett **vaccin** tränar immunförsvaret utan att man blir sjuk. Kroppen bildar **minnesceller** och blir **immun**.
 > - {#bota-vac-funka} Vaccin fungerar både mot virus och bakterier.
-> - {#bota-vac-uppt} Edward Jenner hittade vaccin mot smittkoppor på 1790 talet, han upptäckte att de som haft den milda sjukdomen kokopper inte fick smittkoppor
+> - {#bota-vac-uppt} Edward Jenner hittade vaccin mot smittkoppor på 1790-talet, han upptäckte att de som haft den milda sjukdomen kokoppor inte fick smittkoppor
 
 ## Antibiotika och resistens {#antibiotika}
 

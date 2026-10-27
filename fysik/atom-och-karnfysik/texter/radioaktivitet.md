@@ -194,7 +194,7 @@ Man kan inte veta *när* en enskild radioaktiv kärna sönderfaller – det är 
 ![halveringstid](bilder/halveringstid.svg)
 Bild: Ett ämne med halveringstiden 30 år. Efter varje halveringstid är hälften av det som var kvar borta.
 
-Efter en halveringstid är hälften kvar. Efter två halveringstider är *hälften av hälften* kvar – alltså en fjärdedel, inte noll. Hlaveringen är alltid från föregående steg inte vad som fanns från start.
+Efter en halveringstid är hälften kvar. Efter två halveringstider är *hälften av hälften* kvar – alltså en fjärdedel, inte noll. Halveringen är alltid från föregående steg inte vad som fanns från start.
 
 | Tid | Antal halveringstider | Kvar | Har sönderfallit |
 |---|---|---|---|

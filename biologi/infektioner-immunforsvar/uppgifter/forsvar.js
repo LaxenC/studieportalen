@@ -144,7 +144,7 @@ Portal.uppgifter([
       typ: "flerval", nivaer: [2],
       varianter: [
         { fraga: "Vad beskriver bäst vad antikroppar gör?",
-          alt: [ { t: "De fastnar på en viss patogen, och hindrar den från att ta sig in i celler. De märker också ut patgonen så att resten av försvaret känner igen den.", s: "ratt", f: "antikroppar passar bara mot en viss patogen och hjälper resten av försvaret att hitta den." },
+          alt: [ { t: "De fastnar på en viss patogen, och hindrar den från att ta sig in i celler. De märker också ut patogenen så att resten av försvaret känner igen den.", s: "ratt", f: "antikroppar passar bara mot en viss patogen och hjälper resten av försvaret att hitta den." },
                  { t: "De bekämpar patogener", s: "delvis", f: "stämmer, men säger inte hur – de fastnar på och märker ut patogenen." },
                  { t: "De bildas av B-celler", s: "delvis", f: "stämmer, men beskriver var de kommer ifrån – inte vad de gör." },
                  { t: "De äter upp patogenerna", s: "fel", f: "det är ätarcellerna som äter upp patogenerna – antikropparna märker ut dem och förhindrar att de tar sig in i cellen." } ] },

@@ -14,7 +14,7 @@ Förklaringen kom 8år senare från fysikerna **Lise Meitner** och **Otto Frisch
 
 >**Fördjupning: Kärnenergi**
 >När en tung atomkärna, exempelvis uran-235, klyvs delas den i två mindre
->atomkärnor. Den starka kärnkraften som håller samman partirklarna i
+>atomkärnor. Den starka kärnkraften som håller samman partiklarna i
 >atomkärnan ändras eftersom partiklarna i kärnan är färre.
 >Efter klyvningen hamnar partiklarna i ett nytt tillstånd där den
 >totala energin är lägre. Överskottsenergin frigörs i form av rörelseenergi
@@ -160,7 +160,7 @@ Formeln  beskriver att massa och energi kan omvandlas till varandra. Eftersom lj
 >Låt oss se hur mycket energi 1g motsvara. <br>
 > E = m*c*c = 0,001kg * 300 000 000 * 300 000 000 = 9 * 10^13 joule <br>
 > Hur mycket energi är 9 * 10^13 joule? <br>
-> Det motsvara ett års elförbrukning för ~6 500 svenska hushåll eller 21,5 kiloton TNT (Atombomben över Hiroshima hade 15 kilton)
+> Det motsvarar ett års elförbrukning för ~6 500 svenska hushåll eller 21,5 kiloton TNT (Atombomben över Hiroshima hade 15 kiloton)
 
 ### CERN - partikelacceleratorn
 På CERN, världens största partikelfysiklaboratorium nära Genève, använder forskare Einsteins formel (E=mc^2) åt andra hållet. Genom att låta partiklar kollidera med mycket hög energi kan en del av energin omvandlas till massa och skapa nya partiklar. På så sätt kan forskarna studera materiens minsta beståndsdelar och lära sig mer om hur universum fungerar.

@@ -7,7 +7,7 @@ kapitel: notation
 Atomnotation är ett kort sätt att skriva vilka partiklar en atom är uppbyggd av.<br>
 
 Notationen består av:
-- **Kemisk beteckning**: En bokstavs förkottning för grundämnet. **C** betyder kol.
+- **Kemisk beteckning**: En bokstavs förkortning för grundämnet. **C** betyder kol.
 - **Masstal**: Antalet partiklar i atomkärnan: protoner + neutroner. 
 - **Atomnummer**: Antal protoner i atomkärnan
 
@@ -25,7 +25,7 @@ Antal protoner är det som bestämmer vilket grundämne det är, vilket innebär
 
 
 Antal elektroner syns inte i notationen. När atomen är oladdad är antalet elektroner lika med antalet protoner. <br>
-Om antalet protoner, som är positivt laddade, är lika många som antalet elektroner, som är negativt laddade, så tar laddningnar ut varandra och för atomen oladdad. 
+Om antalet protoner, som är positivt laddade, är lika många som antalet elektroner, som är negativt laddade, så tar laddningarna ut varandra och gör atomen oladdad. 
 
 >**Exempel**
 > Ovan atom har atomnummer=6, så då vet vi att det finns 6st protoner =+6.

@@ -141,7 +141,7 @@ Allt det här tar några dagar. Därför hinner man ofta bli sjuk första gånge
 ::: fördjupning åk 7 Immunsvaret steg för steg
 De fyra stegen ovan är förenklade. Så här går det till mer i detalj:
 1. **Upptäcka:** ätarcellerna som visar upp antigener heter makrofager och dendritiska celler.<br>
-2. **Larma:** det är **T-hjälparcellerna** som känner igen antigenerna och larmar resten av försvaret, skickar signlaer som sätter igång både B-cellerna och T-mördarcellerna.
+2. **Larma:** det är **T-hjälparcellerna** som känner igen antigenerna och larmar resten av försvaret, skickar signaler som sätter igång både B-cellerna och T-mördarcellerna.
 **Angripa:**  <br>
 3a **B-cellerna** tillverkar **antikropparna** som hindrar också patogenerna från att ta sig in i kroppens celler eller märker ut dom så att resten av försvaret ska känna igen patogenen.<br>
 3b. **T-mördarcellerna** tar hand om patogener som redan har tagit sig in i en kroppscell, till exempel virus. Den infekterade cellen visar upp virusets antigener på sin yta. T-mördarcellerna känner igen dem och förstör cellen genom att spruta in ett gift. Varje T-cell känner bara igen ett enda antigen. På samma sätt dödar de även cancerceller.<br>

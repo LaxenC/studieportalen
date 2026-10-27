@@ -18,7 +18,7 @@ Portal.uppgifter([
                  { t: "Vatten", s: "fel", f: "levande organismer innehåller vatten, men de är uppbyggda av celler." },
                  { t: "Cellkärnor", s: "fel", f: "cellkärnan är bara en del av vissa celler." } ] },
         { fraga: "Vilket påstående beskriver bäst vad en organism är?",
-          alt: [ { t: "En mycket liten levande varelse", s: "fel", f: "mikroorganism är något litet som lever, en organism behöver inte vara liten även vi männikor är organismer." },
+          alt: [ { t: "En mycket liten levande varelse", s: "fel", f: "mikroorganism är något litet som lever, en organism behöver inte vara liten även vi människor är organismer." },
                  { t: "En liten del av en cell", s: "fel", f: "en organism är uppbyggt av en eller flera celler" },
                  { t: "Något som lever och består av celler", s: "ratt", f: "en organism är något som lever och är uppbyggt av en eller flera celler." },
                  { t: "Något som har organ", s: "fel", f: "stora organismer som vi människor har organ men alla organismer har det inte, en organism är något som lever och är uppbyggt av en eller flera celler" } ] },
@@ -98,7 +98,7 @@ Portal.uppgifter([
        alt: [
          { t: "Cellen tar upp näring och gör om det till bränsle åt cellens delar", s: "ratt", f: "Cellen tar upp ämnen från omgivningen och gör om det till bränsle åt cellens delar." },
          { t: "Cellen tar upp arvsmassa och gör om den till cellkärnor", s: "fel", f: "Arvsmassan är cellens recept till nya celler. Ämnesomsättning är att cellen för om närigen till bränsle åt cellens delar." },
-         { t: "Cellen slutar ta upp ämnen när den har vuxit", s: "fel", f: "Levande celler fortsåtter ta upp ämnen även när de har vuxit. Ämnesomsättning är att cellen för om närigen till bränsle åt cellens delar." },
+         { t: "Cellen slutar ta upp ämnen när den har vuxit", s: "fel", f: "Levande celler fortsätter ta upp ämnen även när de har vuxit. Ämnesomsättning är att cellen för om närigen till bränsle åt cellens delar." },
          { t: "Cellen gör om energi till en helt ny organism direkt", s: "fel", f: "Ämnesomsättning är att cellen för om närigen till bränsle åt cellens delar. Så att cellen kan dela sig och skapa nya celler" } ]}]},
 
       { id: "minsta-levande-flerval", kapitel: "mikroorganismer", avsnitt: ["cell"], titel: "Cellen kan leva själv – välj rätt",
@@ -108,7 +108,7 @@ Portal.uppgifter([
         {fraga: "Vad betyder det att en cell kan leva själv?",
           alt: [
             { t: "Att den kan ta upp näring, växa och föröka sig på egen hand.", s: "ratt", f: "Precis! Att en cell som kan leva själv innebär att den kan ta upp näring, växa och föröka sig på egen hand." },
-            { t: "Att den kan leva utan att ta upp näring.", s: "fel", f: "Att ta upp näring är inte det enda, utan den behöver även kunna äxa och föröka sig på egen hand. " },
+            { t: "Att den kan leva utan att ta upp näring.", s: "fel", f: "Att ta upp näring är inte det enda, utan den behöver även kunna växa och föröka sig på egen hand. " },
             { t: "Att den kan växa men inte föröka sig.", s: "fel", f: "Cellen behöver kunna både växa och föröka sig men också kunna ta upp näring" } ]},
         { fraga: "Vilka tre saker ska en cell klara på egen hand för att kunna leva själv?",
           alt: [

@@ -5,7 +5,7 @@ kapitel: samband
 # isotop, ämne, jon
 
 Vad händer med atomen när antalet protoner, neutroner eller elektroner ändras? <br>
-Ämne - bestäms av antal protoner i atomkänar <br>
+Ämne - bestäms av antal protoner i atomkärnan <br>
 Jon - är en laddad atom och bestäms av antal elektroner <br>
 Isotop - är en variant av ett ämne och bestäms av antalet neutroner i atomkärnan
 
@@ -23,7 +23,7 @@ Om en atom har ett annat antal **protoner** blir det ett annat grundämne. Varje
 
 ## Isotop {#isotop åk=8,9}
 
-Isotoper är atomer av samma grundämne med samma antal protoner men olika antal **neutroner**. De har samma kemiska beteckning men olika masstal. Olika istoper är samma ämne men de har ändå olika egenskaper på grund av att antalet neutroner skiljer sig, de kan till exempel ha olika kokpunkt.
+Isotoper är atomer av samma grundämne med samma antal protoner men olika antal **neutroner**. De har samma kemiska beteckning men olika masstal. Olika isotoper är samma ämne men de har ändå olika egenskaper på grund av att antalet neutroner skiljer sig, de kan till exempel ha olika kokpunkt.
 
 ::: rad
 [[atomkort titel="Väte-1" under="(protium)" A=1 Z=1 X=H p=1 n=0 e=1 farg=gron]]

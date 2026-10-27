@@ -515,6 +515,16 @@ Skrivsätt för årskurser: `åk 9`, `åk 7-8`, `åk 7,9`.
 - Med "Alla" valt syns texten med en liten etikett: *fördjupning för åk 7*.
 - Rubriken efter årskursen är valfri.
 
+**Fördjupning för alla årskurser:**
+
+```markdown
+::: fördjupning Algblomning
+Texten här är hopfälld för alla.
+:::
+```
+
+- Alla årskurser ser en hopfälld ruta: *Fördjupning: Algblomning*.
+
 ---
 
 ## 21. Länka direkt
@@ -593,7 +603,7 @@ Citattecken: använd raka `"` i `.js`-filerna, inte typografiska `”`.
 |---|---|
 | `#` · `##  {#id åk=9 dold}` · `###` | rubriker |
 | `> **Begrepp**` · `> **Exempel:**` · `> **Viktigt att komma ihåg**` · `> **Rubrik** {.färg}` · `> **Fördjupning…**` | rutor |
-| `::: rad` · `::: åk 7-8` · `::: fördjupning åk 7` | block |
+| `::: rad` · `::: åk 7-8` · `::: fördjupning åk 7` · `::: fördjupning Rubrik` | block |
 | `![text](bilder/fil.png)` · `Bild:` · `[[ritning]]` | bilder |
 | `- (åk 9)` · `H~2~O` · `10^3^` · `**fet**` · `*kursiv*` | i texten |
 

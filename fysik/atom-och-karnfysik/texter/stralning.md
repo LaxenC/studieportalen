@@ -7,8 +7,8 @@ kapitel: stralning
 Strålning överför energi – antingen som vågor eller som partiklar.
 
 ### Typer av strålning 
-Stårlning delas in i olika typer av strålning beroende på vad som strålar ut.
-- vid **elektromagnetisk strålning:** då är det elektromagnetiskavågor (fotoner) som strålar ut.
+Strålning delas in i olika typer av strålning beroende på vad som strålar ut.
+- vid **elektromagnetisk strålning:** då är det elektromagnetiska vågor (fotoner) som strålar ut.
 - vid **partikelstrålning:** är det partiklar (delar av atomkärnan) som strålar ut.
 
 > **Begrepp**
@@ -33,7 +33,7 @@ Från radiovågor till gammastrålning blir våglängden kortare och frekvensen 
 ### Synligt ljus
 Synligt ljus skapas när elektroner hoppar mellan olika elektronskal i en atom. När en elektron tar upp energi, till exempel från värme eller elektricitet, kan den hoppa till ett skal längre ut som har högre energinivå. När elektronen sedan faller tillbaka till ett skal med lägre energinivå frigörs energi i form av en foton. 
 ![elektronhopp](bilder/elektronhopp.svg)
-Bild: Synligt ljus skapas när energi frigörs när en elektron hoppar från ett yttreskal till ett längre in.
+Bild: Synligt ljus skapas när energi frigörs när en elektron hoppar från ett yttre skal till ett längre in.
 
 Vilken färg ljuset får beror på hur stor mycket energi som frisläpps,  mycket energi innebär högre frekvens vilket ger blått ljus, medan en mindre energi ger rött ljus.
 
@@ -82,7 +82,7 @@ Kärnan förlorar 2 protoner och 2 neutroner. Atomnumret minskar med 2 och masst
 > [[nota 235 92 U]]
 > Uran-235 har 92 protoner (atomnummer =92) och 143 neutroner (235 - 92 = 143) 
 >:::
->När den skickar ut alfastrålning får den 2 prontoner och 2 neutroner mindre. Antalet partiklar i kärnan ändras.<br>
+>När den skickar ut alfastrålning får den 2 protoner och 2 neutroner mindre. Antalet partiklar i kärnan ändras.<br>
 >Protoner: 92-2 = 90 <br>
 >Neutroner 143-2 = 141 <br>
 >Atomnummer (antal protoner) = 233 och Masstal (antal protoner + neutroner) = 90+141=231 <br>
@@ -106,7 +106,7 @@ Kärnan får en proton mer och en neutron mindre. Atomnumret ökar med 1, så de
 > [[nota 14 6 C]]
 > Kol-14 har 6 protoner (atomnummer =6) och 8 neutroner (14 - 6 = 8) 
 >:::
->När en naturon omvandlas till en proton och elektron, ändras vilka partiklar som finns i kärnan.<br>
+>När en neutron omvandlas till en proton och elektron, ändras vilka partiklar som finns i kärnan.<br>
 >Protoner: 6 + 1 = 7 <br>
 >Neutroner 8-1 = 7 <br>
 >Atomnummer (antal protoner) = 7 och Masstal (antal protoner + neutroner) = 7+7=14 <br>
@@ -120,20 +120,20 @@ Kärnan får en proton mer och en neutron mindre. Atomnumret ökar med 1, så de
 
 > **Viktigt att komma ihåg**
 > - (åk8,9)Vid partikelstrålning så är det partiklar från atomkärnan som strålar ut, så atomkärnan ser annorlunda ut efter strålningen
-> - Alfastrålning och Betastrålning är typer av partikelstrålnin
-> - (åk8,9)**Alfapartikel** är partikelstrålning och det är en alfapartikel strålar ut
+> - Alfastrålning och Betastrålning är typer av partikelstrålning.
+> - (åk8,9)**Alfastrålning** är partikelstrålning och det är en alfapartikel som strålar ut
 > - (åk8,9)**Alfapartikel** är en heliumkärna med mycket energi.
-> - (åk8,9)**Betastrålning** är partikelstrålning och det är en betaapartikel strålar ut
+> - (åk8,9)**Betastrålning** är partikelstrålning och det är en betapartikel som strålar ut
 > - (åk8,9)**Betapartikel** är en elektron med mycket energi
 
 ## Joniserande strålning {#jonis åk=8,9}
 
 Joniserande strålning är en egenskap hos strålning, inte en egen typ av strålning. Det betyder att strålningen har tillräckligt mycket energi för att slå loss elektroner från atomer och bilda joner. Den kan skada celler och DNA, men används också inom sjukvården, till exempel vid röntgen och cancerbehandling.
-Joniserande stårlning
+Joniserande strålning
 - Alfastrålning
 - Betastrålning
 - Röntgenstrålning
-- Gammastrålnin
+- Gammastrålning
   
 
 > **Begrepp**

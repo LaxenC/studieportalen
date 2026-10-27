@@ -20,7 +20,7 @@ Atomen är uppdelad i 2 olika delar: atomkärna och elektronskal. Kärnan är i 
 [[atom p=6 n=5 e=6]]
 Bild: En kolatom har 6 protoner, 5 neutroner och 6 elektroner.
 
-Protoner och neutroner kallas tillsammans för **nukleoner**. Kärna på engelska heter nukleus, det är därfirån namnet nukleoner kommer.
+Protoner och neutroner kallas tillsammans för **nukleoner**. Kärna på engelska heter nukleus, det är därifrån namnet nukleoner kommer.
 
 > **Begrepp**
 > **atomkärna** – mitten av atomen, där protonerna och neutronerna finns

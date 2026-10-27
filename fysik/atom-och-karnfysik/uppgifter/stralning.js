@@ -49,7 +49,7 @@ Portal.uppgifter([
       ordlista: ["fotoner", "delar av atomkärnan", "elektromagnetisk strålning", "partikelstrålning", "elektroner i skalen"],
       varianter: [
         { text: "Vid elektromagnetisk strålning är det [fotoner|foton|elektromagnetiska vågor] som överför energin. Vid partikelstrålning är det [delar av atomkärnan|partiklar|delar av kärnan] som överför energin." },
-        { text: "Vid [elektromagnetisk strålning|elektromagnetisk] är det fotoner som överför energin. Vid [partikelstrålning|partikel strålning] är detpartiklar (delar av atomkärnan) som överför energin." }
+        { text: "Vid [elektromagnetisk strålning|elektromagnetisk] är det fotoner som överför energin. Vid [partikelstrålning|partikel strålning] är det partiklar (delar av atomkärnan) som överför energin." }
       ] },
 
     { id: "str-bestar", kapitel: "stralning", titel: "Vad består strålningen av? – fyll i begrepp",
