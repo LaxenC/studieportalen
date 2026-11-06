@@ -57,9 +57,23 @@ a{color:var(--accent)}
 .btn[aria-pressed="true"]{background:var(--accent-soft);border-color:var(--accent);color:var(--ink)}
 .arbete{display:grid;gap:12px;grid-template-areas:"rit" "reg" "steg" "delar" "knapp";min-width:0}
 .arbete .kedjaRam{grid-area:kedja}.arbete .ritning{grid-area:rit}.arbete .reglage{grid-area:reg}.arbete .sida{grid-area:steg;display:grid;gap:12px;min-width:0}.arbete .delar{grid-area:delar}.arbete .knapprad.nere{grid-area:knapp}
-@media (min-width:1250px){.wrap{max-width:1400px}
- .arbete{grid-template-columns:minmax(0,1fr) 370px;grid-template-areas:"rit steg" "reg steg" "delar steg" "knapp steg";align-items:start}
- .arbete .sida{position:sticky;top:12px;max-height:calc(100vh - 24px);overflow:auto}}
+/* kompakt: bild och text bredvid varandra */
+.wrap{padding:14px 12px 24px;gap:12px}
+header h1{font-size:clamp(1.4rem,3vw,1.9rem)}
+header p{font-size:.98rem}
+.panel{padding:14px;gap:10px}
+.ritning svg{max-height:max(320px,calc(var(--skarm,100vh) - 250px))}
+.reglage{padding:6px 12px}
+.btn{padding:7px 14px;font-size:.92rem}
+.steg{padding:12px 14px;gap:8px}
+.steg .text{font-size:1rem;line-height:1.5}
+.svar{padding:8px 12px}
+.alt button{padding:8px 12px}
+@media (min-width:760px){.wrap{max-width:1500px}
+ .arbete{grid-template-columns:minmax(0,1fr) 300px;grid-template-areas:"rit steg" "reg steg" "knapp steg";grid-template-rows:auto auto 1fr;align-items:start}
+ .arbete .delar{display:none}
+ .steg{font-size:.95rem}}
+@media (min-width:1150px){.arbete{grid-template-columns:minmax(0,1fr) 340px}}
 .kedjaRam{border-radius:14px;padding:12px 14px;background:var(--bg);border:1px solid var(--line);display:grid;gap:8px}
 .kedjaRam h3{font-size:.9rem;text-transform:uppercase;letter-spacing:.06em;color:var(--muted)}
 .kedja{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;align-items:stretch;gap:8px 4px}
@@ -69,9 +83,10 @@ a{color:var(--accent)}
 .kedja li small{color:var(--muted);font-style:italic;font-weight:700;font-size:.78rem}
 .kedja li.ny{border-color:var(--green);background:var(--green-bg)}.kedja li.ny span{font-weight:800}
 .stavval{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px}
-.olyckor{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:10px}
-.olycka{font:inherit;text-align:left;border:2px solid var(--line);background:var(--panel);color:var(--ink);border-radius:14px;padding:12px 14px;cursor:pointer;display:grid;gap:2px}
-.olycka b{font-size:1.1rem;font-weight:900}.olycka span{color:var(--muted);font-weight:700;font-size:.92rem}
+.olyckor{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.olycka{font:inherit;text-align:left;border:2px solid var(--line);background:var(--panel);color:var(--ink);border-radius:999px;padding:6px 14px;cursor:pointer;display:flex;gap:6px;align-items:baseline}
+.olycka b{font-size:1rem;font-weight:900}.olycka span{color:var(--muted);font-weight:700;font-size:.85rem}
+.olyckor .etikett{font-weight:900;margin-right:4px}
 .olycka:hover{border-color:var(--accent)}
 .olycka[aria-pressed="true"]{border-color:var(--accent);background:var(--accent-soft)}
 .olycka .klar{color:var(--green);font-weight:900}
@@ -110,6 +125,7 @@ a{color:var(--accent)}
 #verk .ledtrad{animation:blinkD .55s ease-in-out infinite alternate}
 @keyframes blinkD{from{opacity:1;filter:drop-shadow(0 0 3px #f59e0b) drop-shadow(0 0 3px #f59e0b)}to{opacity:.35;filter:drop-shadow(0 0 14px #f59e0b) drop-shadow(0 0 6px #f59e0b)}}
 .dold{display:none}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
 #verk .gronblink{animation:gronB .5s ease-in-out infinite alternate}
 @keyframes gronB{from{filter:drop-shadow(0 0 2px #22c55e)}to{filter:drop-shadow(0 0 12px #22c55e) drop-shadow(0 0 5px #22c55e) brightness(1.15)}}
 .steg .text.tidigare{color:var(--muted);font-size:.98rem}
@@ -156,13 +172,9 @@ a{color:var(--accent)}
     <p>Tre kända olyckor – Harrisburg, Tjernobyl och Fukushima. Läs vad som hände och utsätt kärnkraftverket för samma sak, steg för steg. Gör du fel säger modellen ifrån.</p>
   </header>
 
-  <section class="panel" aria-labelledby="h-val">
-    <h2 id="h-val">Välj en olycka</h2>
-    <div class="olyckor" id="olyckor"></div>
-  </section>
-
   <section class="panel" aria-labelledby="h-verk">
-    <h2 id="h-verk">Kärnkraftverket</h2>
+    <h2 id="h-verk" class="sr">Kärnkraftverket</h2>
+    <div class="olyckor"><span class="etikett" id="h-val">Välj en olycka:</span><span id="olyckor" class="olyckor" role="group" aria-labelledby="h-val"></span></div>
     <div class="arbete">
     <div class="ritning" id="ritning"><svg id="verk" viewBox="-190 -24 1390 684" role="group" aria-labelledby="svgT" aria-describedby="svgD" font-family="Nunito,Arial,sans-serif">
 <title id="svgT">Ett kärnkraftverk</title>
@@ -569,7 +581,7 @@ function ritaVal() {
 }
 function startaOlycka(id) {
   olycka = id; S = bas(); OLYCKOR[id].setup(); idx = 0; kedjaKlar = []; ritaKedja(); gissar = false; gissResultat = null; gissStat = { ratt: 0, alla: 0 }; ritaVal(); visaSteg();
-  document.querySelector("#h-verk").scrollIntoView({ behavior: "smooth", block: "start" });
+  
 }
 function steg() { return olycka ? OLYCKOR[olycka].steg[idx] : null; }
 function antalSteg() { return OLYCKOR[olycka].steg.length; }
@@ -819,6 +831,8 @@ function rita(t) {
   kl("havsvatten", "dold", !S.havsvatten); kl("oversvamning", "dold", !S.flood);
   requestAnimationFrame(rita);
 }
+function skarm() { let h = innerHeight; try { if (parent !== window) h = parent.innerHeight; } catch (e) {} document.documentElement.style.setProperty("--skarm", h + "px"); }
+skarm(); addEventListener("resize", skarm); try { if (parent !== window) parent.addEventListener("resize", skarm); } catch (e) {}
 ritaVal(); visaSteg(); visaReg(); requestAnimationFrame(rita);
 
 </script>
