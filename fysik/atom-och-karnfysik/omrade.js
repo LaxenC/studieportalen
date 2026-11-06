@@ -50,6 +50,8 @@ Portal.omrade({
     { id: "sonderfallskedja", namn: "Sönderfallskedjan för uran-235", fil: "aktiviteter/sonderfallskedja.html", arskurs: [8, 9],
       text: "Bygg kedjan från uran-235 till stabilt bly med hjälp av en isotoptabell och periodiska systemet." },
     { id: "stralskydd", namn: "Skydda dig mot strålning", fil: "aktiviteter/stralskydd.html", arskurs: [8, 9],
-      text: "Vad händer med aktiviteten och stråldosen när man går längre bort, ställer sig bakom bly eller stannar längre?" }
+      text: "Vad händer med aktiviteten och stråldosen när man går längre bort, ställer sig bakom bly eller stannar längre?" },
+    { id: "karnkraftsolyckor", namn: "Olyckorna i kärnkraftverken", fil: "aktiviteter/karnkraftverk.html", arskurs: [8, 9],
+      text: "Harrisburg, Tjernobyl och Fukushima – utsätt kärnkraftverket för det som hände, steg för steg." }
   ]
 });
