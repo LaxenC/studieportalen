@@ -1,0 +1,373 @@
+<!doctype html>
+<html lang="sv">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Antiken och källkritik</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bitter:wght@600;700&family=Source+Sans+3:wght@400;600;700&display=swap">
+<style>
+/* Layout: en smal mobilkolumn där varje vy har ett enda nästa steg. */
+:root {
+  --bg: #F1F4F7; --surface: #FFFFFF; --fg: #18263A; --muted: #4B5A6E; --line: #D5DBE3;
+  --blue: #1F5FA8; --blue-soft: #E4EEF8; --on-blue: #FFFFFF;
+  --orange: #A84A0C; --orange-soft: #FBEDE2; --panel: #18263A; --on-panel: #FFFFFF; --track: #40506A; --meter: #F2A25C;
+  --display: Bitter, Georgia, serif; --body: "Source Sans 3", "Segoe UI", system-ui, sans-serif;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --bg: #111A26; --surface: #1B2736; --fg: #EAF0F6; --muted: #AEBBCB; --line: #34445A;
+  --blue: #8FBDF0; --blue-soft: #203A58; --on-blue: #0E1A28;
+  --orange: #F2A25C; --orange-soft: #43301F; --panel: #243449; --on-panel: #FFFFFF; --track: #4B5D76; --meter: #F2A25C; color-scheme: dark;
+} }
+:root[data-theme="dark"] {
+  --bg: #111A26; --surface: #1B2736; --fg: #EAF0F6; --muted: #AEBBCB; --line: #34445A;
+  --blue: #8FBDF0; --blue-soft: #203A58; --on-blue: #0E1A28;
+  --orange: #F2A25C; --orange-soft: #43301F; --panel: #243449; --on-panel: #FFFFFF; --track: #4B5D76; --meter: #F2A25C; color-scheme: dark;
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--fg); font: 400 17px/1.5 var(--body); }
+#app { max-width: 640px; margin: 0 auto; padding-block: 24px 48px; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); display: flex; flex-direction: column; gap: 20px; }
+h1, h2 { font-family: var(--display); margin: 0; text-wrap: balance; line-height: 1.2; }
+h1 { font-size: 30px; } h2 { font-size: 20px; }
+p { margin: 0; }
+.eyebrow { font-size: 14px; font-weight: 700; color: var(--orange); }
+.stack { display: flex; flex-direction: column; gap: 8px; min-width: 0; }
+.muted { color: var(--muted); }
+button { font: inherit; color: inherit; cursor: pointer; }
+button:focus-visible, textarea:focus-visible, summary:focus-visible { outline: 3px solid var(--blue); outline-offset: 2px; }
+.primary, .secondary { min-height: 50px; padding: 10px 16px; border-radius: 10px; font-weight: 700; width: 100%; }
+.primary { background: var(--blue); color: var(--on-blue); border: 0; }
+.secondary { background: var(--surface); border: 1px solid var(--line); }
+.back { align-self: flex-start; min-height: 44px; background: none; border: 0; padding: 0; color: var(--blue); font-weight: 700; }
+.top { display: flex; justify-content: space-between; align-items: center; gap: 12px; }
+.hero { background: var(--panel); color: var(--on-panel); border-radius: 16px; padding: 20px; display: flex; flex-direction: column; gap: 14px; }
+.hero h2 { font-size: 22px; }
+.meter { height: 8px; border-radius: 4px; background: var(--track); overflow: hidden; }
+.meter span { display: block; height: 100%; background: var(--meter); }
+.hero button { min-height: 48px; border: 0; border-radius: 10px; background: #FFFFFF; color: #18263A; font-weight: 700; }
+.modes { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
+.mode { text-align: left; padding: 14px; background: var(--surface); border: 1px solid var(--line); border-radius: 12px; display: flex; flex-direction: column; gap: 2px; }
+.mode b { font-size: 17px; } .mode span { font-size: 15px; color: var(--muted); }
+.list { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; overflow: hidden; }
+.row { width: 100%; min-height: 54px; padding: 8px 14px; background: none; border: 0; border-top: 1px solid var(--line); display: flex; align-items: center; gap: 10px; text-align: left; }
+.row:first-child { border-top: 0; }
+.row .n { width: 22px; color: var(--muted); font-variant-numeric: tabular-nums; flex-shrink: 0; }
+.row .t { flex: 1; min-width: 0; }
+.tag { font-size: 14px; font-weight: 700; flex-shrink: 0; }
+.tag.Kan { color: var(--blue); } .tag.Nästan { color: var(--orange); } .tag.Öva { color: var(--muted); }
+.hint { background: var(--blue-soft); border-radius: 12px; padding: 14px; }
+.hint ul { margin: 6px 0 0; padding-left: 20px; }
+label { font-weight: 700; }
+textarea { width: 100%; min-height: 160px; border: 1px solid var(--muted); border-radius: 12px; padding: 14px; background: var(--surface); color: var(--fg); font: 400 17px/1.5 var(--body); resize: vertical; }
+.check { width: 100%; padding: 12px 14px; display: flex; gap: 12px; align-items: flex-start; text-align: left; background: var(--surface); border: 1px solid var(--line); border-radius: 10px; }
+.check.on { background: var(--blue-soft); border-color: var(--blue); }
+.box { width: 24px; height: 24px; flex-shrink: 0; border: 2px solid var(--blue); border-radius: 6px; display: flex; align-items: center; justify-content: center; font-weight: 700; color: var(--on-blue); line-height: 1; margin-top: 1px; }
+.check.on .box { background: var(--blue); }
+mark { background: var(--orange-soft); color: var(--fg); padding: 0 3px; border-radius: 3px; }
+.check small { display: table; margin-bottom: 5px; padding: 2px 8px; border-radius: 6px; font-size: 14px; font-weight: 700; color: var(--orange); background: var(--orange-soft); }
+.tip { background: var(--orange-soft); border-radius: 12px; padding: 14px; }
+details { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 12px 14px; }
+summary { font-weight: 700; min-height: 28px; cursor: pointer; }
+details p { margin-top: 8px; white-space: pre-wrap; overflow-wrap: anywhere; }
+.rate { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; }
+.rate button { min-height: 50px; border-radius: 10px; font-weight: 700; background: var(--surface); border: 1px solid var(--muted); }
+.rate button.on { background: var(--blue); color: var(--on-blue); border-color: var(--blue); }
+.opt { width: 100%; min-height: 54px; padding: 10px 16px; display: flex; justify-content: space-between; align-items: center; gap: 12px; font-weight: 600; background: var(--surface); border: 2px solid var(--line); border-radius: 10px; }
+.opt.right { background: var(--blue-soft); border-color: var(--blue); }
+.opt.wrong { background: var(--orange-soft); border-color: var(--orange); }
+.note { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 14px; }
+.stats { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; }
+.stats div { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 12px; }
+.stats b { display: block; font: 700 28px/1.1 var(--display); }
+.copybox { width: 100%; min-height: 200px; }
+</style>
+</head>
+<body>
+
+<div id="app"></div>
+
+<script>
+// Lägg hennes nya svar i fältet "now" när de är klara. Då visas de i stället för "first".
+var QUESTIONS = [
+  { n: 1, part: "A", short: "Vad är en källa?", q: "Vad är en källa? Ge två exempel på källor till antiken.",
+    first: "En källa är allt som kan ge oss kunskap om det förflut. på källor från antiken är kvarlevor och berättelser men så klart är det inte så att man kan lita på allt man ser eftersom att till exempel berättelser kan göras om med tiden och även vara falska från början.",
+    now: "En källa är allt som kan ge oss kunskap om det förflutna. Källor från antiken är kvarlevor och berättelser, men så klart är det inte så att man kan lita på allt man ser eftersom att de kan vara förfalskade. Två exempel på källor från antiken är kvarlevor, till exempel gamla byggnader och föremål, och berättelser som människor har skrivit. Även fast de kan vara en bra källa så kan de vara så att den görs om med tiden eller redan från början vara en falsk källa.", tip: "Bra att du har med att källor kan ändras och vara falska. Gör exemplen konkreta genom att nämna en viss byggnad och en viss text.",
+    parts: [
+      ["Säg vad det är", "En källa är allt som kan ge oss kunskap om det förflutna."],
+      ["Två konkreta exempel", "Två exempel på källor från antiken är kvarlevor, till exempel gamla byggnader{+ som husen i Pompeji+} och föremål, och berättelser som människor har skrivit{+, som Caesars bok om sina krig+}."],
+      ["Förklara varför källor spelar roll", "{+Källor spelar roll eftersom det är genom dem vi kan få veta hur livet har varit och få en bild av händelser som vi inte själva var med om.+}"],
+      ["Säg att källan måste värderas", "Även fast de kan vara en bra källa kan de göras om med tiden eller redan från början vara falska. {+Därför behöver man värdera hur mycket man kan lita på källan.+}"]
+    ] },
+  { n: 2, part: "A", short: "Kvarleva eller berättande källa", q: "Vad är skillnaden mellan en kvarleva och en berättande källa?",
+    first: "Skillnaden mellan berättelser och kvarlevor är att kvarlevor är något det har gjort och inte vill berätta något för oss om det. medans berättelser är att de vill berätta för oss om vad de har gjort och hur bra saker har varit.",
+    now: "Skillnaden mellan berättande källor och kvarlevor är att kvarlevor är något de har gjort och inte vill berätta något för oss om det. Medan berättande källor är att de vill berätta för oss om vad de har gjort och hur bra saker har varit. Kvarlevor är till exempel ett mynt, ett vapen eller en byggnad och berättande källor är till exempel en text eller berättelse om vad som har hänt. De försöker beskriva historien.", tip: "Bra exempel. Skriv människor i stället för de, så att det blir tydligt vem du menar.",
+    parts: [
+      ["Förklara kvarlevan", "Kvarlevor är något {+människor+} har gjort och inte vill berätta något för oss om, till exempel ett mynt, ett vapen eller en byggnad."],
+      ["Förklara berättande källa", "Berättande källor är att de vill berätta för oss om vad de har gjort och hur bra saker har varit, till exempel en text eller berättelse om vad som har hänt. De försöker beskriva historien."],
+      ["Visa vad skillnaden betyder", "{+Berättande källor kan därför vara vinklade, medan kvarlevor inte är gjorda för att berätta för oss.+}"]
+    ] },
+  { n: 3, part: "A", short: "Tendenskriteriet", q: "Vad innebär tendenskriteriet?",
+    first: "Alla källor har en avsikt. En kejsare vill framstå som stark, en senat vill kritisera kejsarmakten. Tendens betyder inte lögn, men du måste räkna med dem.",
+    now: "Tendenskriteriet handlar om att undersöka om en källa är vinklad eller om personen bakom källan försöker påverka hur vi ska uppfatta källan. Till exempel ville en kejsare i Rom framstå som stark och mäktig. Därför måste man tänka på att allt som står i en källa inte behöver vara helt objektivt.", tip: "Starkt svar. Lägg till att tendens inte är samma sak som lögn.",
+    parts: [
+      ["Säg vad det är", "Tendenskriteriet handlar om att undersöka om en källa är vinklad eller om personen bakom källan försöker påverka hur vi ska uppfatta källan."],
+      ["Ge exempel", "Till exempel ville en kejsare i Rom framstå som stark och mäktig."],
+      ["Förklara vad det betyder", "{+Tendens betyder inte lögn, men avsändaren kan välja att bara berätta det som passar.+} Därför måste man tänka på att allt som står i en källa inte behöver vara helt objektivt."]
+    ] },
+  { n: 4, part: "A", short: "Beroendekriteriet", q: "Vad innebär beroendekriteriet?",
+    first: "Två källor som säger samma sak är bara starka om de är oberoende av varandra. Har den ena skrivit av den andra är det egentligen en enda källa. inte två",
+    now: "Beroendekriteriet handlar om att undersöka om olika källor är oberoende av varandra. Om två personer skriver samma sak kan det verka som att informationen är trovärdig, men om den ena bara har kopierat den andra räknas det egentligen som en enda källa. Därför är det viktigt att källorna bygger på olika uppgifter.", tip: "Bra svar. Lägg till vad en förstahandskälla och en andrahandskälla är.",
+    parts: [
+      ["Säg vad det är", "Beroendekriteriet handlar om att undersöka om olika källor är oberoende av varandra. {+När du läser en källa frågar du dig om den är en förstahandskälla eller om den återberättar vad någon annan har sagt eller skrivit.+}"],
+      ["Förklara första- och andrahandskälla", "{+En förstahandskälla är ett originaldokument eller den första berättelsen om en händelse, och den är ofta oberoende av andra källor. En andra- eller tredjehandskälla återberättar vad någon annan har sagt eller skrivit, så den är beroende.+}"],
+      ["Ge exempel", "Om två personer skriver samma sak kan det verka som att informationen är trovärdig, men om den ena bara har kopierat den andra räknas det egentligen som en enda källa."],
+      ["Förklara varför det spelar roll", "Därför är det viktigt att källorna bygger på olika uppgifter. {+Om två oberoende källor säger samma sak stärker det trovärdigheten.+}"]
+    ] },
+  { n: 5, part: "A", short: "Tidskriteriet", q: "Vad innebär tidskriteriet?",
+    first: "Ju närmare i tid, desto bättre minne. Plutarchos skrev om caesar mer än hundra år efteråt. Han kunde alltså inte minnas något själv utan byggde på andras texter",
+    now: "Tidskriteriet handlar om hur lång tid det har gått mellan en händelse och när källan skrevs. Ju närmare händelsen källan är skriven, desto mer trovärdig kan den vara eftersom informationen inte har hunnit glömmas eller förändras lika mycket.", tip: "Bra förklaring. Ta också med ett exempel, som Plutarchos.",
+    parts: [
+      ["Säg vad det är", "Tidskriteriet handlar om hur lång tid det har gått mellan en händelse och när källan skrevs. Ju närmare händelsen källan är skriven, desto mer trovärdig kan den vara eftersom informationen inte har hunnit glömmas eller förändras lika mycket."],
+      ["Ge exempel", "{+Plutarchos skrev om Caesar mer än hundra år efteråt. Han kunde alltså inte minnas något själv utan byggde på andras texter.+}"],
+      ["Förklara vad det betyder", "{+En senare källa behöver inte ha fel, men du behöver vara mer försiktig med den.+}"]
+    ] },
+  { n: 6, part: "A", short: "Äkthetskriteriet", q: "Vad betyder äkthetskriteriet?",
+    first: "Är den äkta eller förfalskad? Är texten verkligen skriven av den som står som författare? Under medeltiden tillverkades till exempel falska romerska dokument för att styrka rättigheter.",
+    now: "Äkthetskriteriet handlar om att undersöka om en källa verkligen är äkta eller om den har blivit förfalskad. Man behöver till exempel kontrollera om en text verkligen är skriven av personen som står som författare. Under historien har det förekommit falska dokument som människor har skapat för att få andra att tro på något som egentligen inte stämmer.", tip: "Bra svar. Gör exemplet konkret, som de falska romerska dokumenten från medeltiden.",
+    parts: [
+      ["Säg vad det är", "Äkthetskriteriet handlar om att undersöka om en källa verkligen är äkta eller om den har blivit förfalskad."],
+      ["Visa vad man frågar", "Man behöver till exempel kontrollera om en text verkligen är skriven av personen som står som författare."],
+      ["Ge exempel", "Under historien har det förekommit falska dokument som människor har skapat för att få andra att tro på något som egentligen inte stämmer. {+Under medeltiden tillverkades till exempel falska romerska dokument för att styrka rättigheter.+}"]
+    ] },
+  { n: 7, part: "B", short: "Från republik till kejsardöme", q: "Vad förändrades när republiken blev ett kejsardöme?",
+    first: "republiken: senaten valda ämbetsmän bestämde i ett år i taget, två konsuler samtidigt och staten utsåg befälen.\nKejsartiden: kejsaren bestämde på livstid helt ensam. Kejsaren bestämde allt som hände inom landet helt själv, även armen.",
+    now: "", tip: "Skriv hela meningar. Senaten och ämbetsmännen är olika saker, och kejsaren styrde inte helt ensam.",
+    parts: [
+      ["Beskriv hur det var först", "I republiken {+var makten uppdelad. Senaten hade stort inflytande, och+} valda ämbetsmän bestämde ett år i taget. Det fanns två konsuler samtidigt{+, så att ingen ensam skulle få för mycket makt+}, och staten utsåg befälen."],
+      ["Förklara hur det ändrades", "{+Efter inbördeskrig, där generaler med lojala arméer stred om makten, blev Augustus Roms förste kejsare år 27 f.Kr.+}"],
+      ["Beskriv hur det blev", "Under kejsartiden bestämde kejsaren på livstid, även över armén. {+Senaten och ämbetena fanns kvar, men de hade mycket mindre makt.+}"],
+      ["Säg vad som förändrades", "{+Den stora förändringen är att makten gick från flera personer som turades om till en person som styrde på livstid. Efter inbördeskrigen blev det mer fred och stabilitet i riket, men medborgarna fick mindre politiskt inflytande.+}"]
+    ] },
+  { n: 8, part: "B", short: "Hur Rom växte och vad det ledde till", q: "Rom växte från en stad till ett stort rike. Hur gick det till och vad gav det för konsekvenser?",
+    first: "armerna blev lojala till sin general och inte mot staten eftersom att de var borta i åratal",
+    now: "Rom växte genom att erövra nya områden med hjälp av sin stora och starka armé. När romarna vann krig fick de kontroll över mer mark och fler människor. En konsekvens var att arméerna blev mer lojala mot sina generaler än mot staten, eftersom soldaterna var ute i krig under långa perioder. Det gjorde att vissa generaler fick väldigt mycket makt och att det blev konflikter om vem som skulle styra Rom.", tip: "Nu svarar du på båda delarna. Lägg till fler konsekvenser, som rikedomar och vägar.",
+    parts: [
+      ["Hur det gick till", "Rom växte genom att erövra nya områden med hjälp av sin stora och starka armé. När romarna vann krig fick de kontroll över mer mark och fler människor. {+Först erövrades Italien, sedan besegrades Karthago och till slut styrde Rom områdena runt Medelhavet.+}"],
+      ["Konsekvens: rikedom", "{+Rikedomar, skatter och slavar togs från de erövrade områdena till Rom. Den rika eliten i Rom blev ännu rikare, medan många i de erövrade områdena blev lidande. Även många småbönder i Italien fick det svårare, eftersom de var borta i krig och stora gods drevs med slavar.+}"],
+      ["Konsekvens: vägar", "{+Romarna byggde ut vägarna för att armén snabbare skulle kunna ta sig fram och riket bli lättare att styra. Vägarna gjorde också att handel och nyheter lättare kunde spridas.+}"],
+      ["Konsekvens: armén", "En konsekvens var att arméerna blev mer lojala mot sina generaler än mot staten, eftersom soldaterna var ute i krig under långa perioder."],
+      ["Vad det ledde till", "Det gjorde att vissa generaler fick väldigt mycket makt och att det blev konflikter om vem som skulle styra Rom. {+Det ledde till inbördeskrig som försvagade republiken.+}"]
+    ] },
+  { n: 9, part: "B", short: "Att bli romersk medborgare", q: "Vad betydde det för en vanlig person att bli romersk medborgare?",
+    first: "", now: "Att bli romersk medborgare betydde att man fick fler rättigheter och ett starkare skydd enligt romersk lag. Man kunde till exempel få rätt att gifta sig enligt romersk lag, äga egendom och i vissa fall rösta. Det var en stor fördel eftersom man blev en del av det romerska samhället och fick en tydligare ställning.", tip: "Bra grund. Skriv att det var män som kunde rösta, och lägg till vad som hände år 212.",
+    parts: [
+      ["Säg vad det betydde", "Att bli romersk medborgare betydde att man fick fler rättigheter och ett starkare skydd enligt romersk lag."],
+      ["Ge exempel: skydd", "{+En medborgare kunde överklaga vissa domar och slapp oftast de hårdaste straffen, som korsfästelse.+}"],
+      ["Ge exempel: vardagen", "Man kunde till exempel få rätt att gifta sig enligt romersk lag och äga egendom, och {+män kunde+} i vissa fall rösta. {+Kvinnor kunde vara medborgare, men de fick inte rösta.+} Det var en stor fördel eftersom man blev en del av det romerska samhället och fick en tydligare ställning."],
+      ["Förklara hur man blev medborgare", "{+Man kunde födas som medborgare, men en soldat från provinserna kunde också bli medborgare efter sin tjänst. Även slavar som frigavs av romerska medborgare kunde bli det.+}"],
+      ["Visa förändringen", "{+År 212 blev nästan alla fria invånare i riket medborgare. Då omfattade medborgarskapet mycket fler, men det blev också mindre speciellt.+}"]
+    ] },
+  { n: 10, part: "B", short: "Kristendomen under kejsartiden", q: "Vad hände med kristendomen under kejsartiden?",
+    first: "under kejsartiden gick de först från att de är fri tro förda kristna och sen att de blev till en statsreligion.",
+    now: "Under kejsartiden förändrades kristendomens ställning väldigt mycket. I början blev kristna ibland förföljda eftersom de hade en annan tro än den romerska religionen. Senare blev kristendomen tillåten och fick allt större betydelse. Till slut blev den Romarrikets statsreligion, vilket gjorde att kristendomen fick en mycket starkare position i samhället.", tip: "Bra steg. Lägg till årtalen och varför Konstantin stödde kristendomen.",
+    parts: [
+      ["Först", "Under kejsartiden förändrades kristendomens ställning väldigt mycket. I början blev kristna ibland förföljda eftersom de hade en annan tro än den romerska religionen{+ och vägrade offra till gudarna och kejsaren+}."],
+      ["Sedan", "Senare blev kristendomen tillåten och fick allt större betydelse. {+År 313 fick de kristna fri tro under kejsar Konstantin.+}"],
+      ["Förklara varför Konstantin satsade på kristendomen", "{+Kyrkan hade vuxit sig så stor att det inte längre var någon idé att förtrycka den. Konstantin såg att han kunde ha nytta av den för att ena riket. Det är svårt att veta hur mycket han själv trodde, men han döptes först på sin dödsbädd.+}"],
+      ["Till sist", "Till slut{+, år 380,+} blev den Romarrikets statsreligion{+ under kejsar Theodosius+}, vilket gjorde att kristendomen fick en mycket starkare position i samhället."]
+    ] },
+  { n: 12, part: "C", short: "Något som finns kvar i dag", q: "Välj en sak från antiken som finns kvar i dagens samhälle. Förklara kopplingen.",
+    first: "caesars egna text caesar skrev en bok om sina krig även när krigen pågick runt år 52 f.Kr. caesar skrev caesar istället för jag gjorde. kopplingen är att de sägs vara en text som caesar har skrivit.",
+    now: "En sak från antiken som fortfarande finns kvar idag är hur vi kan använda gamla texter för att förstå historien. Ett exempel är Julius Caesars texter om sina krig, som han skrev under tiden som krigen pågick omkring år 52 f.Kr. Han skrev ofta om sig själv i tredje person och använde sitt eget namn istället för att skriva jag. Det är intressant eftersom vi fortfarande använder gamla texter för att lära oss om historiska händelser.", tip: "Bra koppling. Avsluta med varför vi ändå måste granska Caesars text, så att kopplingen blir tydlig.",
+    parts: [
+      ["Välj en sak", "En sak från antiken som fortfarande finns kvar idag är hur vi kan använda gamla texter för att förstå historien."],
+      ["Förklara hur det var då", "Ett exempel är Julius Caesars texter om sina krig, som han skrev under tiden som krigen pågick omkring år 52 f.Kr. Han skrev ofta om sig själv i tredje person och använde sitt eget namn istället för att skriva jag."],
+      ["Förklara kopplingen", "Det är intressant eftersom vi fortfarande använder gamla texter för att lära oss om historiska händelser. {+Vi behöver också granska dem, eftersom Caesar skrev om sig själv och ville ge en viss bild.+}"]
+    ] },
+  { n: 13, part: "C", short: "Självklart då, men inte nu", q: "Ge ett exempel på något som var självklart i antiken men inte idag.",
+    first: "en självklarhet är att kvinnor inte fick rösta utan de var bara männen.",
+    now: "Ett exempel är att kvinnor inte hade samma rättigheter som män. I det antika Rom fick kvinnor inte rösta eller vara med och bestämma politiskt på samma sätt som männen. Idag har kvinnor och män samma grundläggande politiska rättigheter i Sverige och båda får rösta och påverka samhället. Det visar hur mycket samhället har förändrats genom historien.", tip: "Bra svar. Kvinnor fick inte rösta alls i Rom, så du kan stryka på samma sätt som männen.",
+    parts: [
+      ["Hur det var då", "Ett exempel är att kvinnor inte hade samma rättigheter som män. I det antika Rom fick kvinnor inte rösta eller {+ha politiska ämbeten+}."],
+      ["Hur det är i dag", "Idag har kvinnor och män samma grundläggande politiska rättigheter i Sverige och båda får rösta och påverka samhället."],
+      ["Vad det visar", "Det visar hur mycket samhället har förändrats genom historien."]
+    ] },
+  { n: 14, part: "C", short: "Svara klasskamraten", q: "En klasskamrat säger: varför ska vi läsa om saker som hände för tvåtusen år sedan? Skriv ett svar och använd minst ett exempel från antiken.",
+    first: "Eftersom att saken som har hänt innan som till exempel republiken att folket fick bestämma mer i landet och att det inte bara var en person som bestämde. man fick rösta om olika saker i landet och de gjorde folket väldigt glada.",
+    now: "Till exempel kan vi lära oss mycket av hur Rom styrdes under republiken, när makten var uppdelad mellan olika personer och senaten. Senare samlades mer makt hos kejsaren, vilket visar hur viktigt det är att förstå vem som har makten i ett samhälle. Genom att läsa om historien kan vi också lära oss av gamla misstag och förstå varför demokrati och människors rättigheter är viktiga idag.", tip: "Bra exempel. Börja med att svara direkt på varför man ska läsa historia.",
+    parts: [
+      ["Svara på frågan", "{+Vi läser om det här eftersom det kan lära oss något om hur samhällen fungerar i dag.+}"],
+      ["Ge exempel från antiken", "Till exempel kan vi lära oss mycket av hur Rom styrdes under republiken, när makten var uppdelad mellan olika personer och senaten. Senare samlades mer makt hos kejsaren."],
+      ["Förklara vad vi lär oss", "Det visar hur viktigt det är att förstå vem som har makten i ett samhälle."],
+      ["Koppla till i dag", "Genom att läsa om historien kan vi också lära oss av gamla misstag och förstå varför demokrati och människors rättigheter är viktiga i dag."]
+    ] }
+];
+var PARTS = { A: "A. Källkritik", B: "B. Antiken och förändring", C: "C. Varför läser man historia?" };
+var QUIZ = [
+  { t: "Plutarchos skrev om Caesar mer än hundra år efteråt.", a: "Tid", w: "Lång tid mellan händelsen och källan ger större risk för fel." },
+  { t: "En kejsare låter skriva om sina stora segrar.", a: "Tendens", w: "Kejsaren vill framstå som stark, så bilden kan vara vinklad." },
+  { t: "Två texter säger samma sak, men den ena är avskriven från den andra.", a: "Beroende", w: "Då räknas de egentligen som en enda källa." },
+  { t: "Ett dokument från medeltiden utger sig för att vara romerskt.", a: "Äkthet", w: "Dokumentet är inte det det utger sig för att vara." },
+  { t: "Caesar skriver om sina egna krig och beskriver sig själv på ett positivt sätt.", a: "Tendens", w: "Caesar har en avsikt med hur han vill framstå." },
+  { t: "En författare skriver om en händelse flera hundra år senare och bygger på andras texter.", a: "Tid", w: "Författaren kan inte minnas händelsen själv." }
+];
+var CRITERIA = ["Tendens", "Beroende", "Tid", "Äkthet"];
+var KEY = "antiken-plugg-v1";
+var saved = { answers: {}, ratings: {}, checks: {} };
+try { var raw = localStorage.getItem(KEY); if (raw) saved = Object.assign(saved, JSON.parse(raw)); } catch (e) {}
+function save() { try { localStorage.setItem(KEY, JSON.stringify(saved)); } catch (e) {} }
+
+var view = { name: "start" };
+var app = document.getElementById("app");
+function esc(s) { return String(s).replace(/[&<>"']/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]; }); }
+function fmt(s) { return esc(s).replace(/\{\+(.*?)\+\}/g, '<mark>$1</mark>'); }
+function byN(n) { return QUESTIONS.filter(function (x) { return x.n === n; })[0]; }
+function nextToPractise(after) {
+  var open = QUESTIONS.filter(function (x) { return saved.ratings[x.n] !== "Kan"; });
+  if (!open.length) return null;
+  var later = open.filter(function (x) { return x.n > after; });
+  return (later[0] || open[0]).n;
+}
+function knownCount() { return QUESTIONS.filter(function (x) { return saved.ratings[x.n] === "Kan"; }).length; }
+
+function renderStart() {
+  var k = knownCount(), total = QUESTIONS.length, next = nextToPractise(0);
+  var html = '<div class="stack"><div class="eyebrow">Historia · provfrågor</div><h1>Antiken och källkritik</h1></div>';
+  html += '<div class="hero"><h2>Du kan ' + k + ' av ' + total + ' frågor</h2><div class="meter"><span style="width:' + Math.round(k / total * 100) + '%"></span></div>' +
+    (next ? '<button data-open="' + next + '">Öva på nästa fråga</button>' : '<button data-mode="prov">Testa dig i provläge</button>') + '</div>';
+  html += '<div class="modes"><button class="mode" data-mode="quiz"><b>Snabbförhör</b><span>Vilket kriterium är det?</span></button><button class="mode" data-mode="prov"><b>Provläge</b><span>Alla frågor utan hjälp</span></button></div>';
+  Object.keys(PARTS).forEach(function (p) {
+    html += '<section class="stack"><h2>' + PARTS[p] + '</h2>' + (p === 'A' ? '<p class="muted">Tendens, beroende, tid och äkthet är kriterier i källkritiken. Det är en metod för att granska källor, och kriterierna visar vad du behöver tänka på när du läser en källa.</p>' : '') + '<div class="list">';
+    QUESTIONS.filter(function (x) { return x.part === p; }).forEach(function (x) {
+      var r = saved.ratings[x.n];
+      html += '<button class="row" data-open="' + x.n + '"><span class="n">' + x.n + '</span><span class="t">' + esc(x.short) + '</span>' + (r ? '<span class="tag ' + r.split(" ")[0] + '">' + esc(r) + '</span>' : '') + '</button>';
+    });
+    html += '</div></section>';
+  });
+  html += '<div class="note"><b>Del D: Källövning</b><p class="muted">Öva i dokumentet i Classroom.</p></div>';
+  html += '<button class="secondary" data-action="copyview">Kopiera mina svar</button>';
+  app.innerHTML = html;
+}
+
+function renderQuestion() {
+  var x = byN(view.n), prov = !!view.prov, shown = !!view.shown;
+  var position = prov ? (view.i + 1) + ' av ' + view.order.length : 'Fråga ' + x.n;
+  var html = '<div class="top"><button class="back" data-action="home">Alla frågor</button><span class="muted">' + position + '</span></div>';
+  html += '<div class="stack"><div class="eyebrow">' + PARTS[x.part] + '</div><h1>' + esc(x.q) + '</h1></div>';
+  if (!prov) {
+    html += '<div class="hint"><b>Skriv hela tanken. Har du med:</b><ul>' + x.parts.map(function (p) { return '<li>' + esc(p[0]) + '?</li>'; }).join('') + '</ul></div>';
+  }
+  html += '<div class="stack"><label for="answer-' + x.n + '">Ditt svar</label><textarea id="answer-' + x.n + '" data-answer="' + x.n + '">' + esc(saved.answers[x.n] || '') + '</textarea></div>';
+  if (!shown) {
+    html += '<button class="primary" data-action="compare">Jämför mitt svar</button>';
+  } else {
+    var checks = saved.checks[x.n] || {};
+    html += '<section class="stack"><h2>Exempelsvar</h2><p class="muted">Rubrikerna visar svarets delar. Svaret bygger på det du har skrivit, och <mark>markerad text</mark> är tillägg. Bocka för det du fick med.</p>' + x.parts.map(function (p, i) {
+      var on = !!checks[i];
+      return '<button class="check' + (on ? ' on' : '') + '" data-check="' + i + '" aria-pressed="' + on + '"><span class="box" aria-hidden="true">' + (on ? '✓' : '') + '</span><span><small>' + esc(p[0]) + '</small>' + fmt(p[1]) + '</span></button>';
+    }).join('') + '</section>';
+    var mine = x.now || x.first;
+    html += '<div class="tip"><b>Tänk på:</b> ' + esc(x.tip) + '</div>';
+    html += '<details><summary>' + (x.now ? 'Ditt senaste svar' : 'Ditt första svar') + '</summary><p>' + (mine ? esc(mine) : 'Inget svar skrivet än.') + '</p></details>';
+    html += '<section class="stack"><h2>Hur gick det?</h2><div class="rate">' + ["Öva mer", "Nästan", "Kan"].map(function (r) {
+      return '<button class="' + (saved.ratings[x.n] === r ? 'on' : '') + '" data-rate="' + r + '">' + r + '</button>';
+    }).join('') + '</div></section>';
+    html += '<button class="primary" data-action="next">' + (prov && view.i === view.order.length - 1 ? 'Se resultat' : 'Nästa fråga') + '</button>';
+  }
+  app.innerHTML = html;
+}
+
+function renderQuiz() {
+  var q = QUIZ[view.i];
+  var html = '<div class="top"><button class="back" data-action="home">Alla frågor</button><span class="muted">' + (q ? (view.i + 1) + ' av ' + QUIZ.length : 'Klart') + '</span></div>';
+  if (!q) {
+    html += '<h1>' + view.score + ' av ' + QUIZ.length + ' rätt</h1><p>Förklara nu kriterierna med egna ord i provfrågorna. Det är så de kommer på provet.</p><button class="primary" data-mode="quiz">Börja om</button>';
+  } else {
+    var answered = view.picked != null;
+    html += '<div class="eyebrow">Vilket kriterium handlar det om?</div><h1>' + esc(q.t) + '</h1><div class="stack">' + CRITERIA.map(function (c) {
+      var right = answered && c === q.a, wrong = answered && c === view.picked && c !== q.a;
+      return '<button class="opt' + (right ? ' right' : wrong ? ' wrong' : '') + '" data-pick="' + c + '"><span>' + c + '</span><span>' + (right ? 'Rätt' : wrong ? 'Inte den' : '') + '</span></button>';
+    }).join('') + '</div>';
+    if (answered) html += '<div class="note">' + esc(q.w) + '</div><button class="primary" data-action="quiznext">' + (view.i === QUIZ.length - 1 ? 'Se resultat' : 'Nästa') + '</button>';
+  }
+  app.innerHTML = html;
+}
+
+function renderResult() {
+  var counts = { "Kan": 0, "Nästan": 0, "Öva mer": 0 };
+  QUESTIONS.forEach(function (x) { var r = saved.ratings[x.n]; if (counts[r] !== undefined) counts[r]++; });
+  var rest = QUESTIONS.filter(function (x) { return saved.ratings[x.n] !== "Kan"; });
+  var html = '<button class="back" data-action="home">Alla frågor</button><div class="stack"><div class="eyebrow">Provläge klart</div><h1>' + (rest.length ? 'Frågor kvar att öva på: ' + rest.length : 'Du kan alla frågor') + '</h1></div>';
+  html += '<div class="stats"><div><b>' + counts["Kan"] + '</b>Kan</div><div><b>' + counts["Nästan"] + '</b>Nästan</div><div><b>' + counts["Öva mer"] + '</b>Öva mer</div></div>';
+  if (rest.length) {
+    html += '<section class="stack"><h2>Öva på de här</h2><div class="list">' + rest.map(function (x) {
+      return '<button class="row" data-open="' + x.n + '"><span class="n">' + x.n + '</span><span class="t">' + esc(x.short) + '</span></button>';
+    }).join('') + '</div></section>';
+  }
+  app.innerHTML = html;
+}
+
+function buildExport() {
+  return QUESTIONS.map(function (x) { return x.n + '. ' + x.q + '\n' + (saved.answers[x.n] || '(inget svar)'); }).join('\n\n');
+}
+function renderCopy() {
+  app.innerHTML = '<button class="back" data-action="home">Alla frågor</button><h1>Kopiera mina svar</h1><p>Kopiera texten och klistra in den i chatten när svaren ska jämföras.</p>' +
+    '<label for="copy-box">Dina svar</label><textarea class="copybox" id="copy-box" readonly>' + esc(buildExport()) + '</textarea><button class="primary" data-action="copy">Kopiera</button><p id="copy-status" class="muted" role="status"></p>';
+}
+function render(keepScroll) {
+  if (view.name === "start") renderStart();
+  else if (view.name === "question") renderQuestion();
+  else if (view.name === "quiz") renderQuiz();
+  else if (view.name === "result") renderResult();
+  else if (view.name === "copy") renderCopy();
+  if (!keepScroll) window.scrollTo(0, 0);
+}
+
+app.addEventListener("input", function (e) {
+  var n = e.target.getAttribute("data-answer");
+  if (n) { saved.answers[n] = e.target.value; save(); }
+});
+app.addEventListener("click", function (e) {
+  var b = e.target.closest("button"); if (!b) return;
+  var d = b.dataset;
+  if (d.open) { view = { name: "question", n: +d.open }; return render(); }
+  if (d.mode === "quiz") { view = { name: "quiz", i: 0, score: 0, picked: null }; return render(); }
+  if (d.mode === "prov") {
+    var order = QUESTIONS.map(function (x) { return x.n; });
+    view = { name: "question", prov: true, order: order, i: 0, n: order[0] };
+    return render();
+  }
+  if (d.pick && view.picked == null) {
+    view.picked = d.pick; if (d.pick === QUIZ[view.i].a) view.score++;
+    return render(true);
+  }
+  if (d.check !== undefined) {
+    var c = saved.checks[view.n] || {}; c[d.check] = !c[d.check]; saved.checks[view.n] = c; save();
+    return render(true);
+  }
+  if (d.rate) { saved.ratings[view.n] = d.rate; save(); return render(true); }
+  switch (d.action) {
+    case "home": view = { name: "start" }; return render();
+    case "copyview": view = { name: "copy" }; return render();
+    case "compare": view.shown = true; return render(true);
+    case "quiznext": view.i++; view.picked = null; return render();
+    case "next":
+      if (view.prov) {
+        if (view.i === view.order.length - 1) { view = { name: "result" }; return render(); }
+        view.i++; view.n = view.order[view.i]; view.shown = false; return render();
+      }
+      var nx = nextToPractise(view.n);
+      view = nx ? { name: "question", n: nx } : { name: "start" };
+      return render();
+    case "copy":
+      var box = document.getElementById("copy-box"), status = document.getElementById("copy-status");
+      function fallback() { box.focus(); box.select(); status.textContent = "Texten är markerad. Kopiera den med snabbmenyn eller tangentbordet."; }
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(box.value).then(function () { status.textContent = "Svaren är kopierade."; }, fallback);
+      } else { fallback(); }
+      return;
+  }
+});
+render();
+</script>
+</body>
+</html>
