@@ -1,0 +1,361 @@
+<!doctype html>
+<html lang="sv">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Testa kärnkraftverket</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@500;700;800;900&family=Noto+Serif:wght@700&display=swap">
+<style>
+*,*::before,*::after{box-sizing:border-box}
+[hidden]{display:none!important}
+:root{
+  --bg:#eef3fb; --panel:#ffffff; --ink:#152238; --muted:#4f5d75; --line:#d5deeb;
+  --accent:#2563eb; --accent-ink:#ffffff; --accent-soft:#dbe7ff;
+  --green-bg:#e8f7ec; --green-bd:#a9dfb8; --green:#2f9e57;
+  --blue-bg:#e6f1fc; --blue-bd:#a8cdf1; --blue:#2b78c9;
+  --yellow-bg:#fff6dd; --yellow-bd:#f2d78a; --yellow:#b7850c;
+  --red-bg:#fdeaec; --red-bd:#f2b3b9; --red:#d63c45;
+  --purple-bg:#f0ebfd; --purple-bd:#c9b8f5; --purple:#6d48d6;
+  --c14:#e07a1f; --n14:#2b78c9;
+  --font:"Nunito",system-ui,sans-serif; --serif:"Noto Serif",Georgia,serif;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#0f1626; --panel:#18223a; --ink:#e8edf7; --muted:#a6b1c6; --line:#2c3a58;
+  --accent:#5b8cff; --accent-ink:#0f1626; --accent-soft:#233a6b;
+  --green-bg:#16301f; --green-bd:#2f6b44; --green:#5fd38a;
+  --blue-bg:#152a44; --blue-bd:#2f5d8f; --blue:#6fb0f2;
+  --yellow-bg:#33290f; --yellow-bd:#6f5a1c; --yellow:#f0c44a;
+  --red-bg:#3a1a20; --red-bd:#7a3540; --red:#ff7a82;
+  --purple-bg:#251d45; --purple-bd:#4f3e94; --purple:#a88cff;
+  --c14:#ff9f4a; --n14:#6fb0f2; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0f1626; --panel:#18223a; --ink:#e8edf7; --muted:#a6b1c6; --line:#2c3a58;
+  --accent:#5b8cff; --accent-ink:#0f1626; --accent-soft:#233a6b;
+  --green-bg:#16301f; --green-bd:#2f6b44; --green:#5fd38a;
+  --blue-bg:#152a44; --blue-bd:#2f5d8f; --blue:#6fb0f2;
+  --yellow-bg:#33290f; --yellow-bd:#6f5a1c; --yellow:#f0c44a;
+  --red-bg:#3a1a20; --red-bd:#7a3540; --red:#ff7a82;
+  --purple-bg:#251d45; --purple-bd:#4f3e94; --purple:#a88cff;
+  --c14:#ff9f4a; --n14:#6fb0f2; color-scheme:dark}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--font);font-size:16px;line-height:1.5}
+.wrap{max-width:980px;margin:0 auto;padding:28px 16px 48px;display:grid;gap:18px}
+header h1{margin:0;font-weight:900;font-size:clamp(1.8rem,4.5vw,2.5rem);line-height:1.1}
+header p{margin:6px 0 0;color:var(--muted);font-size:1.08rem;max-width:68ch}
+.eyebrow{margin:0 0 4px;font-weight:800;text-transform:uppercase;letter-spacing:.08em;font-size:.78rem;color:var(--muted)}
+.panel{background:var(--panel);border-radius:16px;padding:18px;display:grid;gap:14px;min-width:0}
+h2{margin:0;font-weight:900;font-size:1.35rem}
+h3{margin:0;font-weight:900;font-size:1.05rem}
+p{margin:0}
+a{color:var(--accent)}
+
+
+.btn{font:inherit;font-weight:900;padding:7px 14px;font-size:.92rem;border-radius:999px;border:1px solid var(--line);background:var(--panel);color:var(--ink);cursor:pointer}
+.btn:hover{border-color:var(--accent);color:var(--accent)}
+.wrap{padding:14px 12px 24px;gap:12px}
+header h1{font-size:clamp(1.4rem,3vw,1.9rem)}
+header p{font-size:.98rem}
+.panel{padding:14px;gap:10px}
+.arbete{display:grid;gap:12px;grid-template-areas:"rit" "sida";min-width:0}
+.ritning{grid-area:rit;border-radius:14px;background:#f7fafe;overflow:hidden;border:1px solid var(--line)}
+.ritning svg{display:block;width:100%;height:auto;max-height:max(320px,calc(var(--skarm,100vh) - 170px))}
+.sida{grid-area:sida;display:grid;gap:10px;align-content:start;min-width:0}
+@media (min-width:760px){.wrap{max-width:1500px}.arbete{grid-template-columns:minmax(0,1fr) 300px;grid-template-areas:"rit sida";align-items:start}}
+@media (min-width:1150px){.arbete{grid-template-columns:minmax(0,1fr) 340px}}
+.ruta{border-radius:12px;padding:10px 12px;background:var(--bg);display:grid;gap:8px}
+.ruta h3{font-size:.78rem;text-transform:uppercase;letter-spacing:.06em;color:var(--muted)}
+.reglage{display:grid;gap:4px}
+.reglage label{font-weight:900;font-size:.9rem;display:flex;justify-content:space-between}
+.reglage output{font-variant-numeric:tabular-nums}
+.reglage input{width:100%;accent-color:#3a3f47}
+.vaxlar{display:grid;gap:6px}
+.vaxel{font:inherit;display:flex;justify-content:space-between;align-items:center;gap:8px;width:100%;text-align:left;padding:7px 10px;border-radius:10px;border:1.5px solid var(--green-bd);background:var(--green-bg);color:var(--ink);cursor:pointer;font-size:.88rem;font-weight:800}
+.vaxel span{font-size:.78rem;font-weight:900;color:var(--green);white-space:nowrap}
+.vaxel[aria-pressed="false"]{border-color:var(--red-bd);background:var(--red-bg)}
+.vaxel[aria-pressed="false"] span{color:var(--red)}
+.vaxel:hover{outline:2px solid var(--accent)}
+.kedjan{display:flex;flex-wrap:wrap;gap:4px;align-items:center;font-size:.8rem;font-weight:800}
+.kedjan span{padding:3px 8px;border-radius:999px;background:var(--green-bg);border:1px solid var(--green-bd)}
+.kedjan span.av{background:var(--panel);border:1px dashed var(--line);color:var(--muted);text-decoration:line-through}
+.kedjan i{font-style:normal;color:var(--muted)}
+.forklaring{display:grid;gap:6px;font-size:.88rem;line-height:1.45}
+.forklaring p{margin:0;padding:7px 10px;border-radius:10px;background:var(--panel);border:1px solid var(--line)}
+.forklaring p.varn{background:var(--red-bg);border-color:var(--red-bd);font-weight:800}
+.forklaring p.ok{background:var(--green-bg);border-color:var(--green-bd)}
+.dold{display:none}
+#verk [data-del]{cursor:pointer;outline:none}
+#verk [data-del]:hover,#verk [data-del]:focus-visible{filter:drop-shadow(0 0 5px #2563eb) drop-shadow(0 0 2px #2563eb)}
+.flode{fill:none;stroke-linecap:round;stroke-dasharray:4 22;animation:flyt 1.4s linear infinite}
+.flode.lang{animation-duration:2.2s}
+@keyframes flyt{to{stroke-dashoffset:-26}}
+.rotor{animation:snurr .5s linear infinite}
+@keyframes snurr{to{transform:translateY(-20px)}}
+.bubbla{animation:stig 3s linear infinite;transform-box:fill-box}
+@keyframes stig{0%{transform:translateY(0);opacity:0}10%{opacity:.9}85%{opacity:.9}100%{transform:translateY(-320px);opacity:0}}
+.glod{animation:glod 1.6s ease-in-out infinite alternate}
+@keyframes glod{from{opacity:.35}to{opacity:.9}}
+.blixt{animation:blixt .9s ease-in-out infinite alternate}
+@keyframes blixt{from{opacity:.3}to{opacity:1}}
+.genhjul{animation:hjul 1s linear infinite;transform-origin:130px 125px}
+@keyframes hjul{to{transform:rotate(360deg)}}
+.stopp,.stopp *{animation-play-state:paused!important}
+@media (prefers-reduced-motion:reduce){.ritning *{animation-play-state:paused!important}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <p class="eyebrow">Fysik · Kärnenergi · Kärnkraftverk</p>
+    <h1>Testa kärnkraftverket</h1>
+    <p>Stäng av eller ta bort delar av kärnkraftverket och se vad som händer. Klicka på en del i bilden eller använd knapparna.</p>
+  </header>
+  <section class="panel" aria-label="Kärnkraftverket">
+    <div class="arbete">
+      <div class="ritning" id="ritning"><svg id="verk" viewBox="0 -10 1200 640" role="group" aria-labelledby="svgT" aria-describedby="svgD" font-family="Nunito,Arial,sans-serif">
+<title id="svgT">Ett kärnkraftverk att testa</title>
+<desc id="svgD">Kärnbränslet i reaktorn värmer vattnet till ånga. Ångan snurrar turbinen som driver generatorn, och generatorn gör el. I värmeväxlaren kyls ångan av kylvatten och blir vatten igen, som går tillbaka till reaktorn. Styrstavarna styr kedjereaktionen. I kontrollrummet finns mätare för effekt, temperatur, vattennivå och el.</desc>
+<defs>
+ <linearGradient id="gTurb" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#8f7f96"/><stop offset=".5" stop-color="#c9bfd0"/><stop offset="1" stop-color="#8f7f96"/></linearGradient>
+ <linearGradient id="gVatten" x1="0" y1="0" x2="0" y2="1"><stop id="vTopp" offset="0" stop-color="#bfe3f7"/><stop id="vBotten" offset="1" stop-color="#6fb8e6"/></linearGradient>
+ <linearGradient id="gVvx" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#9fd3f2"/><stop offset="1" stop-color="#5aa9dd"/></linearGradient>
+ <clipPath id="cRotor"><path d="M395 125 L400 103 L563 67 L563 183 L400 147 Z"/></clipPath>
+ <clipPath id="cReak"><rect x="768" y="70" width="164" height="482" rx="70"/></clipPath>
+ <clipPath id="cVatten"><rect id="vattenClip" x="768" y="150" width="164" height="410"/></clipPath>
+ <clipPath id="cStavar"><rect x="760" y="240" width="200" height="380"/></clipPath>
+</defs>
+<rect x="0" y="-10" width="1200" height="640" fill="#f7fafe"/>
+
+<!-- el ut -->
+<g stroke="#3a4658" stroke-width="3"><line x1="14" y1="112" x2="62" y2="112"/><line x1="14" y1="138" x2="62" y2="138"/></g>
+<g id="elUt"><line class="flode" x1="62" y1="112" x2="14" y2="112" stroke="#f2c230" stroke-width="5"/>
+<line class="flode" x1="62" y1="138" x2="14" y2="138" stroke="#f2c230" stroke-width="5" style="animation-delay:-.7s"/></g>
+<text x="16" y="96" font-size="17" font-weight="900" fill="#b7850c" text-anchor="start"  >el</text>
+
+<!-- generator -->
+<g data-del="generator" tabindex="0" role="button" aria-label="Generatorn"><text x="130" y="52" font-size="19" font-weight="900" fill="#1d2a3a" text-anchor="middle"  >generator</text>
+<g id="generatorDel"><rect x="62" y="64" width="136" height="122" rx="12" fill="#f7a54a" stroke="#c97a22" stroke-width="3"/>
+<g class="genhjul snurr"><circle cx="130" cy="125" r="34" fill="#f9bf7a" stroke="#c97a22" stroke-width="3"/><path d="M130 91 V159 M96 125 H164 M106 101 L154 149 M154 101 L106 149" stroke="#c97a22" stroke-width="3"/></g>
+<path id="blixt" class="blixt" d="M176 70 l-10 20 h8 l-8 18 l18 -24 h-9 l7 -14 z" fill="#ffe14d" stroke="#b7850c" stroke-width="1.5"/></g>
+<g id="genBorta" class="dold"><rect x="62" y="64" width="136" height="122" rx="12" fill="#f7fafe" stroke="#c97a22" stroke-width="3" stroke-dasharray="8 7"/><text x="130" y="130" font-size="16" font-weight="900" fill="#c97a22" text-anchor="middle"  >borttagen</text></g></g>
+
+<!-- axel -->
+<rect x="198" y="120" width="440" height="10" fill="#6b7280"/>
+<line class="flode snurr" x1="198" y1="125" x2="638" y2="125" stroke="#d1d5db" stroke-width="10" style="stroke-dasharray:3 9;stroke-linecap:butt;animation-duration:.35s"/>
+
+<!-- turbin -->
+<g data-del="turbin" tabindex="0" role="button" aria-label="Turbinen"><text x="485" y="52" font-size="19" font-weight="900" fill="#1d2a3a" text-anchor="middle"  >turbin</text>
+<path d="M335 62 H635 V188 H335 Z" fill="url(#gTurb)" stroke="#5f5368" stroke-width="3"/>
+<path d="M335 62 L470 100 L470 150 L335 188 Z" fill="#6f6177" opacity=".55"/>
+<g clip-path="url(#cRotor)"><path d="M395 125 L400 103 L563 67 L563 183 L400 147 Z" fill="#e8e4ec"/>
+ <g class="rotor snurr" fill="#3f3647"><rect x="400" y="103" width="9" height="44" rx="2"/><rect x="426" y="97" width="9" height="56" rx="2"/><rect x="452" y="91" width="9" height="68" rx="2"/><rect x="478" y="85" width="9" height="80" rx="2"/><rect x="504" y="79" width="9" height="92" rx="2"/><rect x="530" y="73" width="9" height="104" rx="2"/><rect x="556" y="67" width="9" height="116" rx="2"/></g></g>
+<g fill="#3f3647"><rect x="400" y="103" width="9" height="44" rx="2"/><rect x="426" y="97" width="9" height="56" rx="2"/><rect x="452" y="91" width="9" height="68" rx="2"/><rect x="478" y="85" width="9" height="80" rx="2"/><rect x="504" y="79" width="9" height="92" rx="2"/><rect x="530" y="73" width="9" height="104" rx="2"/><rect x="556" y="67" width="9" height="116" rx="2"/></g>
+<rect x="335" y="121" width="300" height="8" fill="#6b7280"/>
+<g id="angaTurbin"><line class="flode" x1="635" y1="88" x2="400" y2="88" stroke="#ffffff" stroke-width="7" opacity=".9"/>
+<line class="flode" x1="635" y1="162" x2="400" y2="162" stroke="#ffffff" stroke-width="7" opacity=".9" style="animation-delay:-.6s"/></g>
+<g id="turbinAv" class="dold"><rect x="440" y="98" width="90" height="28" rx="8" fill="#d63c45"/><text x="485" y="118" font-size="14" font-weight="900" fill="#fff" text-anchor="middle"  >AVSTÄNGD</text></g></g>
+
+<!-- värmeväxlare -->
+<g data-del="varmevaxlare" tabindex="0" role="button" aria-label="Värmeväxlaren"><rect x="330" y="252" width="372" height="314" rx="16" fill="url(#gVvx)" stroke="#2b78c9" stroke-width="3"/>
+<text x="516" y="290" font-size="20" font-weight="900" fill="#0f3b66" text-anchor="middle"  >värmeväxlare</text>
+<rect id="kondensat" x="333" y="540" width="366" height="23" fill="#3f8fd2" opacity=".7"/>
+<path d="M14 510 H640 a30 30 0 0 1 0 -60 H405 a30 30 0 0 0 0 -60 H640 a30 30 0 0 1 0 -60 H14" fill="none" stroke="#e9f4fb" stroke-width="24" stroke-linejoin="round"/>
+<g id="kylFlode">
+<path class="flode lang" d="M14 510 H640 a30 30 0 0 1 0 -60" stroke="#2b78c9" stroke-width="10"/>
+<path class="flode lang" d="M640 450 H405 a30 30 0 0 0 0 -60" stroke="#7a72c2" stroke-width="10"/>
+<path class="flode lang" d="M405 390 H640 a30 30 0 0 1 0 -60" stroke="#b5679a" stroke-width="10"/>
+<path class="flode lang" d="M640 330 H14" stroke="#e0703a" stroke-width="10"/></g>
+<g id="kylAv" class="dold"><rect x="436" y="404" width="160" height="30" rx="8" fill="#d63c45"/><text x="516" y="425" font-size="15" font-weight="900" fill="#fff" text-anchor="middle"  >KYLNING AV</text></g></g>
+<text x="16" y="490" font-size="18" font-weight="900" fill="#1d2a3a" text-anchor="start" paint-order="stroke" stroke="#f7fafe" stroke-width="5" stroke-linejoin="round" >kylvatten</text>
+<text x="16" y="312" font-size="18" font-weight="900" fill="#1d2a3a" text-anchor="start" paint-order="stroke" stroke="#f7fafe" stroke-width="5" stroke-linejoin="round" >upphettat kylvatten</text>
+
+<!-- ånga ner till värmeväxlaren -->
+<rect x="586" y="188" width="22" height="64" fill="#c9ccd3" stroke="#6b7280" stroke-width="3"/>
+<line id="angaNer" class="flode" x1="597" y1="188" x2="597" y2="252" stroke="#ffffff" stroke-width="9"/>
+<!-- ångrör -->
+<rect x="635" y="112" width="135" height="26" fill="#c9ccd3" stroke="#6b7280" stroke-width="3"/>
+<line id="angaRor" class="flode" x1="770" y1="125" x2="635" y2="125" stroke="#ffffff" stroke-width="10"/>
+<text x="700" y="104" font-size="16" font-weight="800" fill="#4f5d75" text-anchor="middle"  >ånga</text>
+<!-- vatten tillbaka -->
+<rect x="702" y="528" width="68" height="24" fill="#8cc4ea" stroke="#2b78c9" stroke-width="3"/>
+<line id="returFlode" class="flode" x1="702" y1="540" x2="770" y2="540" stroke="#1f5fa8" stroke-width="9"/>
+<text x="736" y="580" font-size="16" font-weight="800" fill="#4f5d75" text-anchor="middle"  >vatten</text>
+
+<!-- reaktor -->
+<rect x="762" y="64" width="176" height="494" rx="76" fill="#3a4658"/>
+<g data-del="vatten" tabindex="0" role="button" aria-label="Vattnet i reaktorn"><g clip-path="url(#cReak)">
+ <rect x="768" y="70" width="164" height="482" fill="#eef3f8"/>
+ <rect id="vatten" x="768" y="150" width="164" height="402" fill="url(#gVatten)"/>
+ <g id="bubblor" fill="#ffffff" clip-path="url(#cVatten)"><circle class="bubbla" cx="867" cy="449" r="5" style="animation-delay:-1.95s;animation-duration:2.49s"/><circle class="bubbla" cx="809" cy="463" r="3" style="animation-delay:-2.73s;animation-duration:2.66s"/><circle class="bubbla" cx="807" cy="467" r="5" style="animation-delay:-0.21s;animation-duration:2.51s"/><circle class="bubbla" cx="893" cy="443" r="3" style="animation-delay:-2.84s;animation-duration:3.16s"/><circle class="bubbla" cx="800" cy="476" r="5" style="animation-delay:-0.15s;animation-duration:2.67s"/><circle class="bubbla" cx="819" cy="458" r="5" style="animation-delay:-0.43s;animation-duration:2.54s"/><circle class="bubbla" cx="863" cy="475" r="4" style="animation-delay:-0.31s;animation-duration:3.09s"/><circle class="bubbla" cx="833" cy="463" r="3" style="animation-delay:-1.64s;animation-duration:2.48s"/><circle class="bubbla" cx="800" cy="479" r="4" style="animation-delay:-1.49s;animation-duration:3.04s"/><circle class="bubbla" cx="865" cy="469" r="5" style="animation-delay:-1.08s;animation-duration:2.70s"/><circle class="bubbla" cx="831" cy="484" r="4" style="animation-delay:-0.25s;animation-duration:2.76s"/><circle class="bubbla" cx="911" cy="461" r="5" style="animation-delay:-0.86s;animation-duration:3.58s"/><circle class="bubbla" cx="815" cy="472" r="5" style="animation-delay:-0.49s;animation-duration:2.81s"/><circle class="bubbla" cx="910" cy="466" r="3" style="animation-delay:-2.89s;animation-duration:2.49s"/><circle class="bubbla" cx="865" cy="461" r="4" style="animation-delay:-1.78s;animation-duration:3.10s"/><circle class="bubbla" cx="901" cy="444" r="3" style="animation-delay:-2.83s;animation-duration:2.97s"/><circle class="bubbla" cx="801" cy="443" r="4" style="animation-delay:-1.94s;animation-duration:3.59s"/><circle class="bubbla" cx="899" cy="458" r="5" style="animation-delay:-2.66s;animation-duration:2.82s"/><circle class="bubbla" cx="903" cy="462" r="4" style="animation-delay:-1.83s;animation-duration:2.99s"/><circle class="bubbla" cx="840" cy="489" r="4" style="animation-delay:-0.39s;animation-duration:2.70s"/><circle class="bubbla" cx="885" cy="471" r="3" style="animation-delay:-0.50s;animation-duration:2.88s"/><circle class="bubbla" cx="856" cy="448" r="5" style="animation-delay:-2.59s;animation-duration:2.73s"/><circle class="bubbla" cx="891" cy="462" r="5" style="animation-delay:-2.87s;animation-duration:2.58s"/><circle class="bubbla" cx="830" cy="449" r="4" style="animation-delay:-1.98s;animation-duration:2.41s"/><circle class="bubbla" cx="831" cy="456" r="4" style="animation-delay:-0.01s;animation-duration:2.90s"/><circle class="bubbla" cx="879" cy="479" r="4" style="animation-delay:-2.86s;animation-duration:3.23s"/><circle class="bubbla" cx="798" cy="469" r="5" style="animation-delay:-1.19s;animation-duration:2.87s"/><circle class="bubbla" cx="908" cy="480" r="5" style="animation-delay:-0.19s;animation-duration:2.48s"/><circle class="bubbla" cx="838" cy="468" r="4" style="animation-delay:-0.33s;animation-duration:3.12s"/><circle class="bubbla" cx="811" cy="440" r="4" style="animation-delay:-1.61s;animation-duration:3.54s"/><circle class="bubbla" cx="791" cy="444" r="4" style="animation-delay:-1.84s;animation-duration:2.58s"/><circle class="bubbla" cx="849" cy="462" r="4" style="animation-delay:-1.42s;animation-duration:2.54s"/><circle class="bubbla" cx="909" cy="469" r="5" style="animation-delay:-1.45s;animation-duration:2.50s"/><circle class="bubbla" cx="811" cy="487" r="4" style="animation-delay:-2.22s;animation-duration:2.97s"/><circle class="bubbla" cx="826" cy="473" r="3" style="animation-delay:-0.62s;animation-duration:3.54s"/><circle class="bubbla" cx="877" cy="449" r="3" style="animation-delay:-2.27s;animation-duration:2.76s"/><circle class="bubbla" cx="808" cy="484" r="4" style="animation-delay:-1.56s;animation-duration:3.49s"/><circle class="bubbla" cx="876" cy="489" r="4" style="animation-delay:-1.60s;animation-duration:3.33s"/><circle class="bubbla" cx="869" cy="480" r="4" style="animation-delay:-1.84s;animation-duration:3.35s"/><circle class="bubbla" cx="834" cy="455" r="5" style="animation-delay:-2.22s;animation-duration:2.67s"/></g>
+</g></g>
+<text x="850" y="118" font-size="19" font-weight="900" fill="#1d2a3a" text-anchor="middle"  >kärnreaktor</text>
+<text x="850" y="232" font-size="17" font-weight="900" fill="#0f3b66" text-anchor="middle"  >kärnbränsle</text>
+<g data-del="bransle" tabindex="0" role="button" aria-label="Kärnbränslet"><g id="bransleGrupp"><g><rect x="786" y="250" width="14" height="230" rx="3" fill="#7b2e86" stroke="transparent" stroke-width="10"/><rect x="814" y="250" width="14" height="230" rx="3" fill="#7b2e86" stroke="transparent" stroke-width="10"/><rect x="842" y="250" width="14" height="230" rx="3" fill="#7b2e86" stroke="transparent" stroke-width="10"/><rect x="870" y="250" width="14" height="230" rx="3" fill="#7b2e86" stroke="transparent" stroke-width="10"/><rect x="898" y="250" width="14" height="230" rx="3" fill="#7b2e86" stroke="transparent" stroke-width="10"/></g><g id="glodGrupp" pointer-events="none"><rect class="glod" x="783" y="250" width="20" height="230" rx="6" fill="#d66ad8" style="animation-delay:-0.0s"/><rect class="glod" x="811" y="250" width="20" height="230" rx="6" fill="#d66ad8" style="animation-delay:-0.3s"/><rect class="glod" x="839" y="250" width="20" height="230" rx="6" fill="#d66ad8" style="animation-delay:-0.6s"/><rect class="glod" x="867" y="250" width="20" height="230" rx="6" fill="#d66ad8" style="animation-delay:-0.9s"/><rect class="glod" x="895" y="250" width="20" height="230" rx="6" fill="#d66ad8" style="animation-delay:-1.2s"/></g><g id="hettGrupp" pointer-events="none"><rect class="hett" x="786" y="250" width="14" height="0" rx="3" fill="#ef4444"/><rect class="hett" x="814" y="250" width="14" height="0" rx="3" fill="#ef4444"/><rect class="hett" x="842" y="250" width="14" height="0" rx="3" fill="#ef4444"/><rect class="hett" x="870" y="250" width="14" height="0" rx="3" fill="#ef4444"/><rect class="hett" x="898" y="250" width="14" height="0" rx="3" fill="#ef4444"/></g></g>
+<g id="bransleBorta" class="dold"><rect x="786" y="250" width="14" height="230" rx="3" fill="none" stroke="#7b2e86" stroke-width="2" stroke-dasharray="6 5"/><rect x="814" y="250" width="14" height="230" rx="3" fill="none" stroke="#7b2e86" stroke-width="2" stroke-dasharray="6 5"/><rect x="842" y="250" width="14" height="230" rx="3" fill="none" stroke="#7b2e86" stroke-width="2" stroke-dasharray="6 5"/><rect x="870" y="250" width="14" height="230" rx="3" fill="none" stroke="#7b2e86" stroke-width="2" stroke-dasharray="6 5"/><rect x="898" y="250" width="14" height="230" rx="3" fill="none" stroke="#7b2e86" stroke-width="2" stroke-dasharray="6 5"/><text x="850" y="370" font-size="15" font-weight="900" fill="#7b2e86" text-anchor="middle" paint-order="stroke" stroke="#f7fafe" stroke-width="5" stroke-linejoin="round" >borttaget</text></g></g>
+<g id="smalt" class="dold" pointer-events="none"><path d="M784 470 q 20 -40 40 -10 q 18 -36 40 -6 q 20 -30 44 6 l0 24 h-124 z" fill="#f97316" stroke="#b91c1c" stroke-width="3"/><text x="850" y="505" font-size="13" font-weight="900" fill="#7f1d1d" text-anchor="middle"  >smält bränsle</text></g>
+<g data-del="styrstavar" tabindex="0" role="button" aria-label="Styrstavarna"><g clip-path="url(#cStavar)"><g id="stavar" fill="#3a3f47"><rect x="803" y="250" width="8" height="330" rx="2" stroke="transparent" stroke-width="14"/><rect x="831" y="250" width="8" height="330" rx="2" stroke="transparent" stroke-width="14"/><rect x="859" y="250" width="8" height="330" rx="2" stroke="transparent" stroke-width="14"/><rect x="887" y="250" width="8" height="330" rx="2" stroke="transparent" stroke-width="14"/></g></g>
+<rect x="784" y="556" width="132" height="62" fill="transparent"/><rect x="790" y="592" width="120" height="24" rx="6" fill="#f7fafe"/><text x="850" y="610" font-size="17" font-weight="900" fill="#1d2a3a" text-anchor="middle"  >styrstavar</text></g>
+
+<!-- kontrollrum -->
+<g id="kontrollrum" pointer-events="none">
+ <rect x="990" y="34" width="206" height="312" rx="14" fill="#1f2937"/>
+ <text x="1093" y="62" font-size="16" font-weight="900" fill="#e5e7eb" text-anchor="middle"  >kontrollrum</text>
+ <rect x="1008" y="84" width="22" height="160" rx="6" fill="#374151"/><rect id="effektStapel" x="1008" y="140" width="22" height="104" rx="6" fill="#a78bfa"/>
+ <text x="1019" y="266" font-size="12" font-weight="800" fill="#e5e7eb" text-anchor="middle"  >effekt</text>
+ <rect x="1052" y="84" width="22" height="160" rx="6" fill="#374151"/><rect id="tempStapel" x="1052" y="160" width="22" height="84" rx="6" fill="#f59e0b"/>
+ <text x="1063" y="284" font-size="12" font-weight="800" fill="#e5e7eb" text-anchor="middle"  >temperatur</text>
+ <rect x="1096" y="84" width="22" height="160" rx="6" fill="#374151"/><rect id="nivaStapel" x="1096" y="84" width="22" height="160" rx="6" fill="#60a5fa"/>
+ <text x="1107" y="266" font-size="12" font-weight="800" fill="#e5e7eb" text-anchor="middle"  >vattennivå</text>
+ <circle id="elLampa" cx="1162" cy="118" r="15" fill="#facc15" stroke="#e5e7eb" stroke-width="2"/>
+ <text x="1162" y="150" font-size="12" font-weight="800" fill="#e5e7eb" text-anchor="middle"  >el</text>
+ <text id="elText" x="1162" y="166" font-size="12" font-weight="900" fill="#fde68a" text-anchor="middle">PÅ</text>
+ <text id="varning" x="1093" y="322" font-size="13" font-weight="900" fill="#fca5a5" text-anchor="middle" class="dold blixt">⚠</text>
+</g>
+</svg></div>
+      <div class="sida">
+        <div class="ruta">
+          <div class="reglage"><label for="stavReg">Styrstavar <output id="stavUt" for="stavReg">60 % inne</output></label>
+            <input type="range" id="stavReg" min="0" max="100" step="10" value="60"></div>
+          <div class="vaxlar" id="vaxlar"></div>
+          <button type="button" class="btn" id="aterstall">↺ Återställ allt</button>
+        </div>
+        <div class="ruta"><h3>Energin omvandlas</h3><div class="kedjan" id="kedjan"></div></div>
+        <div class="ruta"><h3>Vad händer?</h3><div class="forklaring" id="forklaring" aria-live="polite"></div></div>
+      </div>
+    </div>
+  </section>
+</div>
+<script>
+"use strict";
+const $ = id => document.getElementById(id);
+const reg = $("stavReg"), regUt = $("stavUt");
+const DELAR = [
+  ["bransle", "Kärnbränsle", "i reaktorn", "borttaget"],
+  ["vatten", "Vatten i reaktorn", "fyllt", "tömt"],
+  ["kyl", "Kylning i värmeväxlaren", "på", "av"],
+  ["turbin", "Turbin", "på", "avstängd"],
+  ["generator", "Generator", "inkopplad", "borttagen"]
+];
+const SVGDEL = { bransle: "bransle", vatten: "vatten", varmevaxlare: "kyl", turbin: "turbin", generator: "generator" };
+
+function bas() {
+  return { on: { bransle: true, vatten: true, kyl: true, turbin: true, generator: true },
+    p: .6, stavar: .6, cur: { effekt: 1, temp: .55, niva: 1 }, smalt: false, fyll: false };
+}
+let S = bas();
+
+function ritaVaxlar() {
+  $("vaxlar").innerHTML = DELAR.map(([k, namn, pa, av]) =>
+    `<button type="button" class="vaxel" data-vaxel="${k}" aria-pressed="${S.on[k]}">${namn}<span>${S.on[k] ? "✔ " + pa : "✖ " + av}</span></button>`).join("");
+}
+function vaxla(k) {
+  S.on[k] = !S.on[k];
+  if (k === "vatten" && S.on.vatten) S.fyll = true;
+  ritaVaxlar();
+}
+$("vaxlar").addEventListener("click", e => { const b = e.target.closest("[data-vaxel]"); if (b) vaxla(b.dataset.vaxel); });
+const svg = $("verk");
+function klickDel(d) {
+  if (d === "styrstavar") { S.p = S.p < 1 ? 1 : .6; reg.value = Math.round(S.p * 100); visaReg(); return; }
+  if (SVGDEL[d]) vaxla(SVGDEL[d]);
+}
+svg.addEventListener("click", e => { const g = e.target.closest("[data-del]"); if (g) klickDel(g.dataset.del); });
+svg.addEventListener("keydown", e => { if ((e.key === "Enter" || e.key === " ") && e.target.dataset && e.target.dataset.del) { e.preventDefault(); klickDel(e.target.dataset.del); } });
+function visaReg() { regUt.textContent = `${reg.value} % inne`; }
+reg.addEventListener("input", () => { S.p = Number(reg.value) / 100; visaReg(); });
+$("aterstall").addEventListener("click", () => { S = bas(); reg.value = 60; visaReg(); ritaVaxlar(); });
+
+/* ---------- simulering ---------- */
+const narma = (a, b, f) => Math.abs(b - a) <= f ? b : a + Math.sign(b - a) * f;
+const kl = (id, c, on) => $(id).classList.toggle(c, !!on);
+let t0 = performance.now(), senasteText = "";
+function steg(t) {
+  const dt = Math.min(.1, (t - t0) / 1000); t0 = t;
+  const o = S.on, c = S.cur;
+  S.stavar = narma(S.stavar, S.p, 1.5 * dt);
+  // fission
+  const fission = S.p >= .95 ? 0 : Math.max(0, Math.min(2.5, (1 - S.p) / .4));
+  const moderator = o.vatten ? Math.min(1, c.niva / .6) : 0;
+  const effektMal = o.bransle && !S.smalt ? fission * moderator : 0;
+  c.effekt = narma(c.effekt, effektMal, .6 * dt);
+  const varme = c.effekt + (o.bransle ? .12 : 0);
+  const vattenOk = o.vatten && c.niva > .3;
+  const anga = vattenOk && varme > .15;
+  const angaFlode = anga && o.turbin;
+  const kondens = angaFlode && o.kyl;
+  // vattennivå
+  let nivaMal = c.niva, nivaFart = .05;
+  if (!o.vatten) { nivaMal = 0; nivaFart = .5; }
+  else if (S.fyll) { nivaMal = 1; nivaFart = .3; if (c.niva >= 1) S.fyll = false; }
+  else if (angaFlode && !o.kyl) nivaMal = 0;
+  else if (kondens) nivaMal = 1;
+  c.niva = narma(c.niva, nivaMal, nivaFart * dt);
+  // temperatur
+  let tempMal;
+  if (varme < .05) tempMal = .15;
+  else if (vattenOk && !anga) tempMal = .3;
+  else if (anga && o.turbin && o.kyl) tempMal = .35 + .2 * Math.min(c.effekt, 2.5);
+  else tempMal = 1;
+  c.temp = narma(c.temp, tempMal, (tempMal > c.temp ? .07 : .1) * dt);
+  if (o.bransle && c.temp > .95 && c.niva < .4) S.smalt = true;
+  const snurrar = angaFlode && varme > .2;
+  const el = snurrar && o.generator;
+
+  // ---------- rita ----------
+  document.querySelectorAll("#verk .snurr").forEach(e => e.classList.toggle("stopp", !snurrar));
+  ["angaTurbin", "angaRor", "angaNer"].forEach(id => kl(id, "dold", !angaFlode));
+  kl("elUt", "dold", !el); kl("blixt", "dold", !el);
+  kl("generatorDel", "dold", !o.generator); kl("genBorta", "dold", o.generator);
+  kl("turbinAv", "dold", o.turbin);
+  kl("kylFlode", "dold", !o.kyl); kl("kylAv", "dold", o.kyl);
+  kl("returFlode", "dold", !kondens);
+  kl("bransleGrupp", "dold", !o.bransle || S.smalt); kl("bransleBorta", "dold", o.bransle); kl("smalt", "dold", !S.smalt);
+  $("glodGrupp").style.opacity = Math.max(0, Math.min(1, c.effekt));
+  $("bubblor").style.opacity = o.vatten ? Math.max(0, Math.min(1, (c.temp - .25) * 2.2)) : 0;
+  const v = Math.max(0, Math.min(1, (c.temp - .5) / .45));
+  const blanda = (a, b) => "#" + [0, 2, 4].map(i => Math.round(parseInt(a.substr(i, 2), 16) * (1 - v) + parseInt(b.substr(i, 2), 16) * v).toString(16).padStart(2, "0")).join("");
+  $("vTopp").setAttribute("stop-color", blanda("bfe3f7", "fed7aa")); $("vBotten").setAttribute("stop-color", blanda("6fb8e6", "ef4444"));
+  const y = 150 + (1 - c.niva) * 402;
+  $("vatten").setAttribute("y", y); $("vatten").setAttribute("height", Math.max(0, 552 - y)); $("vattenClip").setAttribute("y", y);
+  const ut = Math.max(0, Math.min(230, y - 250));
+  document.querySelectorAll("#hettGrupp .hett").forEach(r => { r.setAttribute("height", ut); r.style.opacity = ut && c.temp > .6 ? .85 : 0; });
+  $("stavar").setAttribute("transform", `translate(0 ${((1 - S.stavar) * 230).toFixed(1)})`);
+  const eh = Math.min(160, c.effekt / 2 * 160);
+  $("effektStapel").setAttribute("y", 244 - eh); $("effektStapel").setAttribute("height", eh); $("effektStapel").setAttribute("fill", c.effekt > 1.6 ? "#ef4444" : "#a78bfa");
+  const th = c.temp * 160; $("tempStapel").setAttribute("y", 244 - th); $("tempStapel").setAttribute("height", th); $("tempStapel").setAttribute("fill", c.temp > .8 ? "#ef4444" : "#f59e0b");
+  const nh = c.niva * 160; $("nivaStapel").setAttribute("y", 244 - nh); $("nivaStapel").setAttribute("height", nh);
+  $("elLampa").setAttribute("fill", el ? "#facc15" : "#4b5563"); $("elText").textContent = el ? "PÅ" : "AV"; $("elText").setAttribute("fill", el ? "#fde68a" : "#9ca3af");
+  const farlig = S.smalt || c.temp > .8;
+  kl("varning", "dold", !farlig);
+  $("varning").textContent = S.smalt ? "⚠ HÄRDSMÄLTA" : "⚠ För varmt!";
+
+  // ---------- energikedjan ----------
+  const kedja = [["kärnenergi", c.effekt > .1], ["värme", o.bransle && varme > .15 && !S.smalt], ["rörelseenergi", snurrar], ["elenergi", el]];
+  const kh = kedja.map(([n, ok]) => `<span class="${ok ? "" : "av"}">${n}</span>`).join("<i>→</i>");
+  if ($("kedjan").innerHTML !== kh) $("kedjan").innerHTML = kh;
+
+  // ---------- förklaring ----------
+  const r = [];
+  if (!o.bransle) r.push(["", "Kärnbränslet är borttaget. <b>Därför</b> sker ingen fission – det blir ingen värme, ingen ånga och ingen el."]);
+  else if (S.smalt) r.push(["varn", "Härdsmälta! Bränslet blev så varmt att det smälte. Tryck på <b>Återställ allt</b>."]);
+  if (o.bransle && !S.smalt) {
+    if (!o.vatten) r.push(["varn", "Vattnet i reaktorn är borta. Utan vatten bromsas inte neutronerna, <b>därför</b> slutar kedjereaktionen. Men bränslet är fortfarande varmt och kyls inte – <b>därför</b> blir det varmare och varmare."]);
+    else if (c.niva < .45) r.push(["varn", "Vattnet räcker inte till. Bränslet hamnar ovanför vattnet och kyls inte – <b>därför</b> överhettas det."]);
+    if (S.p >= .95) r.push(["", "Styrstavarna är helt inne och fångar upp neutronerna. <b>Därför</b> slutar kedjereaktionen. Bränslet är ändå fortfarande lite varmt."]);
+    else if (S.p <= .2 && o.vatten) r.push(["varn", "Nästan alla styrstavar är ute. <b>Därför</b> blir det många fler fissioner – effekten och temperaturen blir för höga."]);
+    else if (S.p < .6) r.push(["", "Styrstavarna är en bit ute. <b>Därför</b> blir det fler fissioner och mer värme."]);
+    else if (S.p > .6) r.push(["", "Styrstavarna är en bit inne. <b>Därför</b> blir det färre fissioner och mindre värme."]);
+  }
+  if (!o.kyl) r.push([o.bransle && o.vatten ? "varn" : "", "Kylningen i värmeväxlaren är avstängd. <b>Därför</b> blir ångan inte till vatten igen, och inget vatten kommer tillbaka till reaktorn."]);
+  if (!o.turbin) r.push([o.bransle && o.vatten ? "varn" : "", "Turbinen är avstängd. <b>Därför</b> kan ångan inte gå vidare – det blir ingen el, och värmen stannar i reaktorn. Temperaturen och trycket stiger."]);
+  if (!o.generator) r.push(["", "Generatorn är borttagen. Turbinen snurrar, men <b>därför</b> blir rörelseenergin inte till el."]);
+  if (!r.length) r.push(["ok", "Allt fungerar. Bränslet värmer vattnet till ånga, ångan snurrar turbinen och generatorn gör el. I värmeväxlaren blir ångan vatten igen."]);
+  const txt = r.map(([k, s]) => `<p class="${k}">${s}</p>`).join("");
+  if (txt !== senasteText) { $("forklaring").innerHTML = txt; senasteText = txt; }
+  requestAnimationFrame(steg);
+}
+function skarm() { let h = innerHeight; try { if (parent !== window) h = parent.innerHeight; } catch (e) {} document.documentElement.style.setProperty("--skarm", h + "px"); }
+skarm(); addEventListener("resize", skarm); try { if (parent !== window) parent.addEventListener("resize", skarm); } catch (e) {}
+ritaVaxlar(); visaReg(); requestAnimationFrame(steg);
+
+</script>
+</body>
+</html>
