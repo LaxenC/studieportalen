@@ -55,17 +55,19 @@ a{color:var(--accent)}
 .btn.pri{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
 .btn.pri:hover{filter:brightness(1.08);color:var(--accent-ink)}
 .btn[aria-pressed="true"]{background:var(--accent-soft);border-color:var(--accent);color:var(--ink)}
-.arbete{display:grid;gap:12px;grid-template-areas:"rit" "reg" "steg" "delar" "knapp";min-width:0}
-.arbete .ritning{grid-area:rit}.arbete .reglage{grid-area:reg}.arbete .sida{grid-area:steg;display:grid;gap:12px;min-width:0}.arbete .delar{grid-area:delar}.arbete .knapprad.nere{grid-area:knapp}
+.arbete{display:grid;gap:12px;grid-template-areas:"kedja" "rit" "reg" "steg" "delar" "knapp";min-width:0}
+.arbete .kedjaRam{grid-area:kedja}.arbete .ritning{grid-area:rit}.arbete .reglage{grid-area:reg}.arbete .sida{grid-area:steg;display:grid;gap:12px;min-width:0}.arbete .delar{grid-area:delar}.arbete .knapprad.nere{grid-area:knapp}
 @media (min-width:1250px){.wrap{max-width:1400px}
- .arbete{grid-template-columns:minmax(0,1fr) 370px;grid-template-areas:"rit steg" "reg steg" "delar steg" "knapp steg";align-items:start}
+ .arbete{grid-template-columns:minmax(0,1fr) 370px;grid-template-areas:"kedja kedja" "rit steg" "reg steg" "delar steg" "knapp steg";align-items:start}
  .arbete .sida{position:sticky;top:12px;max-height:calc(100vh - 24px);overflow:auto}}
-.kedjaRam{border-radius:14px;padding:14px 16px;background:var(--bg);border:1px solid var(--line);display:grid;gap:8px}
-.kedja{list-style:none;margin:0;padding:0;display:grid;gap:0}
-.kedja li{display:grid;gap:1px;padding:6px 0 6px 14px;border-left:3px solid var(--line);position:relative;font-size:.95rem}
-.kedja li::before{content:"";position:absolute;left:-7px;top:11px;width:11px;height:11px;border-radius:50%;background:var(--muted)}
-.kedja li small{color:var(--muted);font-style:italic;font-weight:700;font-size:.82rem}
-.kedja li.ny{border-left-color:var(--green)}.kedja li.ny::before{background:var(--green)}.kedja li.ny span{font-weight:800}
+.kedjaRam{border-radius:14px;padding:12px 14px;background:var(--bg);border:1px solid var(--line);display:grid;gap:8px}
+.kedjaRam h3{font-size:.9rem;text-transform:uppercase;letter-spacing:.06em;color:var(--muted)}
+.kedja{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;align-items:stretch;gap:8px 4px}
+.kedja li{display:grid;align-content:start;gap:1px;max-width:15em;padding:6px 10px;border-radius:10px;background:var(--panel);border:1px solid var(--line);font-size:.9rem;line-height:1.35}
+.kedja li+li{margin-left:22px;position:relative}
+.kedja li+li::before{content:"→";position:absolute;left:-19px;top:50%;transform:translateY(-50%);font-weight:900;color:var(--muted)}
+.kedja li small{color:var(--muted);font-style:italic;font-weight:700;font-size:.78rem}
+.kedja li.ny{border-color:var(--green);background:var(--green-bg)}.kedja li.ny span{font-weight:800}
 .stavval{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px}
 .olyckor{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:10px}
 .olycka{font:inherit;text-align:left;border:2px solid var(--line);background:var(--panel);color:var(--ink);border-radius:14px;padding:12px 14px;cursor:pointer;display:grid;gap:2px}
@@ -162,6 +164,7 @@ a{color:var(--accent)}
   <section class="panel" aria-labelledby="h-verk">
     <h2 id="h-verk">Kärnkraftverket</h2>
     <div class="arbete">
+    <div class="kedjaRam" id="kedja" hidden><h3>Händelsekedjan</h3><ol class="kedja" id="kedjaLista"></ol></div>
     <div class="ritning" id="ritning"><svg id="verk" viewBox="-190 -24 1390 684" role="group" aria-labelledby="svgT" aria-describedby="svgD" font-family="Nunito,Arial,sans-serif">
 <title id="svgT">Ett kärnkraftverk</title>
 <desc id="svgD">Kärnbränslet i reaktorn värmer vattnet till ånga. Ångan snurrar turbinen som driver generatorn, och generatorn gör el som går ut på elnätet. I värmeväxlaren kyls ångan av kylvatten från havet och blir vatten igen. En pump pumpar tillbaka vattnet till reaktorn. Pumparna får el från elnätet eller från en reservgenerator. Runt reaktorn finns en tjock inneslutning, överst på reaktorn en säkerhetsventil och bredvid en nödkylning. I kontrollrummet finns mätare för effekt, temperatur och vattennivå och en lampa för ventilen.</desc>
@@ -344,8 +347,7 @@ a{color:var(--accent)}
       <input type="range" id="stavReg" min="0" max="100" step="10" value="60" aria-describedby="stavUt">
       <output id="stavUt" for="stavReg">60 % inne</output></div>
     <div class="delar" id="delar"><small>Delar:</small></div>
-    <div class="sida"><div class="steg" id="steg" aria-live="polite"></div>
-      <div class="kedjaRam" id="kedja" hidden><h3>Händelsekedjan</h3><ol class="kedja" id="kedjaLista"></ol></div></div>
+    <div class="sida"><div class="steg" id="steg" aria-live="polite"></div></div>
     <div class="knapprad nere"><button type="button" class="btn" id="paus" aria-pressed="false">⏸ Pausa rörelsen</button>
       <button type="button" class="btn" id="omstart">↺ Börja om</button></div>
     </div>
