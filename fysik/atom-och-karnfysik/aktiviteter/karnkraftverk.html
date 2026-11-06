@@ -100,7 +100,7 @@ a{color:var(--accent)}
 #verk .ledtrad{animation:blinkD .55s ease-in-out infinite alternate}
 @keyframes blinkD{from{opacity:1;filter:drop-shadow(0 0 3px #f59e0b) drop-shadow(0 0 3px #f59e0b)}to{opacity:.35;filter:drop-shadow(0 0 14px #f59e0b) drop-shadow(0 0 6px #f59e0b)}}
 .dold{display:none}
-#verk .gronblink{animation:gronB .5s ease-in-out 6 alternate}
+#verk .gronblink{animation:gronB .5s ease-in-out infinite alternate}
 @keyframes gronB{from{filter:drop-shadow(0 0 2px #22c55e)}to{filter:drop-shadow(0 0 12px #22c55e) drop-shadow(0 0 5px #22c55e) brightness(1.15)}}
 .steg .text.tidigare{color:var(--muted);font-size:.98rem}
 /* rörelse */
@@ -597,7 +597,6 @@ function blinka(lista) {
   (lista || []).forEach(n => {
     const el = $(n) || svg.querySelector(`[data-del="${n}"]`); if (!el) return;
     el.classList.remove("gronblink"); void el.getBoundingClientRect(); el.classList.add("gronblink");
-    setTimeout(() => el.classList.remove("gronblink"), 3200);
   });
 }
 function fel(text) {
@@ -614,6 +613,7 @@ function visaLedtrad() {
   });
 }
 function rensaLedtrad() {
+  document.querySelectorAll(".gronblink").forEach(e => e.classList.remove("gronblink"));
   document.querySelectorAll(".ledtrad").forEach(e => e.classList.remove("ledtrad"));
   document.querySelector(".reglage").classList.remove("ledtrad-reg");
 }
