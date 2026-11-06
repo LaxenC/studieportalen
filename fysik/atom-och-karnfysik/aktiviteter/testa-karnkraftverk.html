@@ -278,14 +278,14 @@ function steg(t) {
   c.effekt = narma(c.effekt, effektMal, .6 * dt);
   const varme = c.effekt + (o.bransle ? .12 : 0);
   const vattenOk = o.vatten && c.niva > .3;
-  const anga = vattenOk && varme > .15;
+  const anga = vattenOk && varme > .1;   // även restvärmen kokar vattnet
   const angaFlode = anga && o.turbin;
   const kondens = angaFlode && o.kyl;
   // vattennivå
   let nivaMal = c.niva, nivaFart = .05;
   if (!o.vatten) { nivaMal = 0; nivaFart = .5; }
   else if (S.fyll) { nivaMal = 1; nivaFart = .3; if (c.niva >= 1) S.fyll = false; }
-  else if (angaFlode && !o.kyl) nivaMal = 0;
+  else if (angaFlode && !o.kyl) { nivaMal = 0; nivaFart = .06; }
   else if (kondens) nivaMal = 1;
   c.niva = narma(c.niva, nivaMal, nivaFart * dt);
   // temperatur
@@ -344,7 +344,7 @@ function steg(t) {
     else if (S.p < .6) r.push(["", "Styrstavarna är en bit ute. <b>Därför</b> blir det fler fissioner och mer värme."]);
     else if (S.p > .6) r.push(["", "Styrstavarna är en bit inne. <b>Därför</b> blir det färre fissioner och mindre värme."]);
   }
-  if (!o.kyl) r.push([o.bransle && o.vatten ? "varn" : "", "Kylningen i värmeväxlaren är avstängd. <b>Därför</b> blir ångan inte till vatten igen, och inget vatten kommer tillbaka till reaktorn."]);
+  if (!o.kyl) r.push([o.bransle && o.vatten ? "varn" : "", "Kylningen i värmeväxlaren är avstängd. <b>Därför</b> blir ångan inte till vatten igen, och inget vatten kommer tillbaka till reaktorn. Vattnet i reaktorn blir varmare och kokar bort – till slut hamnar bränslet ovanför vattnet."]);
   if (!o.turbin) r.push([o.bransle && o.vatten ? "varn" : "", "Turbinen är avstängd. <b>Därför</b> kan ångan inte gå vidare – det blir ingen el, och värmen stannar i reaktorn. Temperaturen och trycket stiger."]);
   if (!o.generator) r.push(["", "Generatorn är borttagen. Turbinen snurrar, men <b>därför</b> blir rörelseenergin inte till el."]);
   if (!r.length) r.push(["ok", "Allt fungerar. Bränslet värmer vattnet till ånga, ångan snurrar turbinen och generatorn gör el. I värmeväxlaren blir ångan vatten igen."]);
