@@ -55,10 +55,10 @@ a{color:var(--accent)}
 .btn.pri{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
 .btn.pri:hover{filter:brightness(1.08);color:var(--accent-ink)}
 .btn[aria-pressed="true"]{background:var(--accent-soft);border-color:var(--accent);color:var(--ink)}
-.arbete{display:grid;gap:12px;grid-template-areas:"kedja" "rit" "reg" "steg" "delar" "knapp";min-width:0}
+.arbete{display:grid;gap:12px;grid-template-areas:"rit" "reg" "steg" "delar" "knapp";min-width:0}
 .arbete .kedjaRam{grid-area:kedja}.arbete .ritning{grid-area:rit}.arbete .reglage{grid-area:reg}.arbete .sida{grid-area:steg;display:grid;gap:12px;min-width:0}.arbete .delar{grid-area:delar}.arbete .knapprad.nere{grid-area:knapp}
 @media (min-width:1250px){.wrap{max-width:1400px}
- .arbete{grid-template-columns:minmax(0,1fr) 370px;grid-template-areas:"kedja kedja" "rit steg" "reg steg" "delar steg" "knapp steg";align-items:start}
+ .arbete{grid-template-columns:minmax(0,1fr) 370px;grid-template-areas:"rit steg" "reg steg" "delar steg" "knapp steg";align-items:start}
  .arbete .sida{position:sticky;top:12px;max-height:calc(100vh - 24px);overflow:auto}}
 .kedjaRam{border-radius:14px;padding:12px 14px;background:var(--bg);border:1px solid var(--line);display:grid;gap:8px}
 .kedjaRam h3{font-size:.9rem;text-transform:uppercase;letter-spacing:.06em;color:var(--muted)}
@@ -164,7 +164,6 @@ a{color:var(--accent)}
   <section class="panel" aria-labelledby="h-verk">
     <h2 id="h-verk">Kärnkraftverket</h2>
     <div class="arbete">
-    <div class="kedjaRam" id="kedja" hidden><h3>Händelsekedjan</h3><ol class="kedja" id="kedjaLista"></ol></div>
     <div class="ritning" id="ritning"><svg id="verk" viewBox="-190 -24 1390 684" role="group" aria-labelledby="svgT" aria-describedby="svgD" font-family="Nunito,Arial,sans-serif">
 <title id="svgT">Ett kärnkraftverk</title>
 <desc id="svgD">Kärnbränslet i reaktorn värmer vattnet till ånga. Ångan snurrar turbinen som driver generatorn, och generatorn gör el som går ut på elnätet. I värmeväxlaren kyls ångan av kylvatten från havet och blir vatten igen. En pump pumpar tillbaka vattnet till reaktorn. Pumparna får el från elnätet eller från en reservgenerator. Runt reaktorn finns en tjock inneslutning, överst på reaktorn en säkerhetsventil och bredvid en nödkylning. I kontrollrummet finns mätare för effekt, temperatur och vattennivå och en lampa för ventilen.</desc>
@@ -556,7 +555,7 @@ const OLYCKOR = {
 /* ===================== Motor för stegen ===================== */
 let kedjaKlar = [];
 function ritaKedja(dold) {
-  const el = $("kedjaLista"), ram = $("kedja");
+  const el = $("kedjaLista"), ram = $("kedja"); if (!ram) return;
   if (!olycka || dold || !kedjaKlar.length) { ram.hidden = true; return; }
   ram.hidden = false;
   el.innerHTML = kedjaKlar.map((s, i) => `<li class="${i === kedjaKlar.length - 1 ? "ny" : ""}">${s.tid ? `<small>${s.tid}</small>` : ""}<span>${s.kedja}</span></li>`).join("");
@@ -747,7 +746,7 @@ stegEl.addEventListener("click", e => {
   else if (e.target.id === "vidareKnapp") { idx++; visaSteg(); }
   else if (e.target.id === "slutKnapp") {
     klaraOlyckor.add(olycka); ritaVal(); ritaKedja(true);
-    stegEl.innerHTML = `<p class="nr">${OLYCKOR[olycka].namn} · klar</p><p class="text">Bra jobbat! Du har gått igenom olyckan i ${OLYCKOR[olycka].namn}.</p><p class="svar ratt">🎯 Du gissade rätt på <b>${gissStat.ratt} av ${gissStat.alla}</b> steg.</p><p class="svar info">Händelsekedjan är dold nu. Kommer du ihåg hur det gick till, steg för steg?</p><p class="text">Välj en annan olycka ovanför bilden.</p>`;
+    stegEl.innerHTML = `<p class="nr">${OLYCKOR[olycka].namn} · klar</p><p class="text">Bra jobbat! Du har gått igenom olyckan i ${OLYCKOR[olycka].namn}.</p><p class="svar ratt">🎯 Du gissade rätt på <b>${gissStat.ratt} av ${gissStat.alla}</b> steg.</p><p class="text">Välj en annan olycka ovanför bilden.</p>`;
   } else if (e.target.dataset.gissa !== undefined && gissar) { gissa(Number(e.target.dataset.gissa));
   } else if (e.target.dataset.alt !== undefined && st.fraga && !vantar) {
     const a = st.fraga.alt[Number(e.target.dataset.alt)];
