@@ -89,6 +89,8 @@ a{color:var(--accent)}
 .svar.ratt{background:var(--green-bg);border:1px solid var(--green-bd)}
 .svar.info{background:var(--yellow-bg);border:1px solid var(--yellow-bd)}
 .alt{display:grid;gap:8px}
+.svar.gissa{display:grid;gap:10px}
+.svar.gissa small{color:var(--red);font-weight:800}
 .alt button{font:inherit;text-align:left;font-weight:700;padding:10px 14px;border-radius:12px;border:2px solid var(--line);background:var(--panel);color:var(--ink);cursor:pointer}
 .alt button:hover{border-color:var(--accent)}
 .alt button.fel{border-color:var(--red);background:var(--red-bg)}
@@ -380,23 +382,23 @@ const OLYCKOR = {
       { text: "<b>28 mars 1979.</b> Kärnkraftverket Three Mile Island vid Harrisburg i USA. Klockan är 4 på natten och kärnkraftverket går som vanligt.", nasta: "Starta" },
       { text: "Pumpen som pumpar tillbaka vatten till reaktorn stannar på grund av ett tekniskt fel.",
         krav: [{ del: "pump", gor() { S.pump = false; mal({ temp: .8 }); } }],
-        fel: "Vilken del slutade fungera?",
+        fel: "Vilken del slutade fungera?", gissa: ["Temperaturen i reaktorn stiger", "Reaktorn stannar direkt", "Ingenting – det finns ju vatten kvar i reaktorn"],
         blink: ["pump","returFlode","tempStapel"], sen: "Pumpen har stannat. Inget nytt vatten kommer in i reaktorn. <b>Därför</b> kyls reaktorn inte längre – temperaturen stiger." },
       { text: "Säkerhetssystemet stoppar reaktorn automatiskt efter några sekunder.",
         krav: [{ stavar: "in-helt", gor() { S.turbin = false; mal({ effekt: 0, temp: .72 }); } }],
-        fel: "Vilken del fångar upp neutroner och kan stoppa kedjereaktionen?",
+        fel: "Vilken del fångar upp neutroner och kan stoppa kedjereaktionen?", gissa: ["Fissionen slutar, men bränslet är fortfarande varmt", "Reaktorn blir kall direkt", "Effekten ökar"],
         blink: ["styrstavar","turbin","effektStapel"], sen: "Fissionen har slutat. När reaktorn är stoppad ska ångan inte längre göra el, så säkerhetssystemet stänger ångan till turbinen. Turbinen och generatorn stannar. Men bränslet fortsätter att vara varmt fast styrstavarna är inne. <b>Därför</b> kokar vattnet fortfarande, men ångan stängs inne i reaktorn – och trycket stiger." },
       { text: "Trycket i reaktorn blir för högt. Säkerhetsventilen öppnas för att släppa ut ånga.",
         krav: [{ del: "ventil", gor() { S.ventil = "oppen"; S.lampa = "stangd"; mal({ niva: .72 }); fart({ niva: .07 }); } }],
-        fel: "Vilken del släpper ut ånga när trycket blir för högt?",
+        fel: "Vilken del släpper ut ånga när trycket blir för högt?", gissa: ["Ånga släpps ut och trycket sjunker", "Reaktorn kyls ner direkt", "Vattennivån stiger"],
         blink: ["ventil","ventilLampa","vatten"], sen: "Trycket sjönk – men ventilen <b>fastnade i öppet läge</b>. Bränslet är fortfarande varmt och fortsätter att koka vattnet till ånga. Ångan försvinner ut genom ventilen, och inget nytt vatten kommer in. Lampan i kontrollrummet visar ändå <b>STÄNGD</b>." },
       { text: "Vattnet kokar bort och ångan försvinner ut genom ventilen. Nödkylningen startar automatiskt och pumpar in nytt vatten.",
         krav: [{ del: "nodkylning", gor() { S.nod = "pa"; S.nivaFel = true; mal({ niva: S.cur.niva }); } }],
-        fel: "Vad startar automatiskt och pumpar in nytt vatten?",
+        fel: "Vad startar automatiskt och pumpar in nytt vatten?", gissa: ["Vattennivån i reaktorn slutar sjunka", "Reaktorn startar igen", "Temperaturen stiger snabbare"],
         blink: ["nodkylning","nodFlode","nivaStapel"], sen: "Nytt vatten strömmar in från nödkylningen, och vattennivån i reaktorn slutar sjunka. Men titta på mätaren för vattennivå i kontrollrummet – den slår i taket och visar <b>FULL</b>." },
       { text: "Personalen tittar på mätarna. Mätaren visar att reaktorn är <b>full</b> av vatten. De tror att det är för mycket vatten och stänger av nödkylningen.",
         krav: [{ del: "nodkylning", gor() { S.nod = "av"; mal({ niva: .45, temp: .9 }); fart({ niva: .08 }); } }],
-        fel: "Vad stängde personalen av?",
+        fel: "Vad stängde personalen av?", gissa: ["Vattennivån i reaktorn sjunker igen", "Vattennivån blir lagom", "Reaktorn kyls bättre"],
         blink: ["nodkylning","vatten","nivaStapel"], sen: "Mätaren visade fel – i reaktorn sjunker vattnet igen. Varken lampan för ventilen eller mätaren för vattennivån visade hur det egentligen var." },
       { text: "Vatten kokar fortfarande bort och ångan försvinner ut genom ventilen.",
         fraga: { q: "Vad händer med kärnbränslet när vattnet sjunker?", alt: [
@@ -410,7 +412,7 @@ const OLYCKOR = {
         krav: [{ del: "ventil", gor() { S.ventil = "stangd"; S.lampa = "stangd"; S.nivaFel = false; } },
                { del: "nodkylning", gor() { S.nod = "pa"; } }],
         klart() { mal({ niva: 1, temp: .4 }); fart({ niva: .08, temp: .1 }); },
-        fel: "Vilka två saker gjorde personalen?",
+        fel: "Vilka två saker gjorde personalen?", gissa: ["Vattnet stiger och bränslet kyls", "Bränslet blir som nytt igen", "Reaktorn startar och gör el igen"],
         blink: ["ventil","nodkylning","vatten"], sen: "Vattnet stiger och bränslet kyls." },
       { text: "Ångan från ventilen hamnade inne i inneslutningen. Där kyldes den och blev till vatten.", nasta: "Fortsätt",
         efter() { S.inn = "holl"; S.moln = "litet"; S.molnText = "lite gas"; },
@@ -435,23 +437,23 @@ const OLYCKOR = {
       { text: "<b>25 april 1986.</b> Kärnkraftverket Tjernobyl i Sovjetunionen – i det som idag är Ukraina. Personalen ska göra ett säkerhetstest. Om elen skulle försvinna måste pumparna ändå få el, så att de kan fortsätta kyla reaktorn. Personalen vill testa en idé: när ångan till turbinen stängs av snurrar turbinen vidare en stund av bara farten. Kan generatorn då göra tillräckligt med el till pumparna under den stunden?<br><b>Den här reaktorn hade ingen tät inneslutning.</b>", nasta: "Starta" },
       { text: "Inför testet stänger personalen av nödkylningen, så att den inte ska starta och störa testet.",
         krav: [{ del: "nodkylning", gor() { S.nod = "avstangd"; } }],
-        fel: "Vad stängde personalen av inför testet?",
+        fel: "Vad stängde personalen av inför testet?", gissa: ["Inget märks än – men nu finns ingen nödkylning", "Reaktorn blir varmare direkt", "Reaktorn stoppas"],
         blink: ["nodkylning"], sen: "Nödkylningen är avstängd. Om något händer kan den inte starta." },
       { text: "Testet ska göras när reaktorn går på låg fart. Personalen skjuter in styrstavarna en bit för att sänka effekten.",
         krav: [{ stavar: "in-bit", gor() { mal({ effekt: .03, temp: .4 }); fart({ effekt: .4 }); } }],
-        fel: "Hur sänker man effekten i en reaktor?",
+        fel: "Hur sänker man effekten i en reaktor?", gissa: ["Effekten sjunker", "Effekten ökar", "Reaktorn exploderar"],
         blink: ["styrstavar","effektStapel"], sen: "Effekten sjönk för mycket – reaktorn nästan slocknade. Det blir nästan inga fissioner och för lite ånga för testet." },
       { text: "För att få fart på reaktorn igen drar personalen ut nästan alla styrstavar. Det är fler än reglerna tillåter.",
         krav: [{ stavar: "ut", gor() { mal({ effekt: .25, temp: .45 }); S.varning = true; } }],
-        fel: "Vad gör personalen för att få fart på reaktorn igen?",
+        fel: "Vad gör personalen för att få fart på reaktorn igen?", gissa: ["Effekten ökar igen", "Effekten sjunker ännu mer", "Reaktorn stoppas"],
         blink: ["styrstavar","effektStapel","varning"], sen: "Effekten stiger lite igen. Men nu är nästan alla styrstavar ute – reaktorn är svår att styra." },
       { text: "<b>Natten till 26 april</b> startar testet. Ångan till turbinen stängs av. Turbinen saktar ner, och <b>därför</b> får pumparna mindre el och pumpar mindre vatten.",
         krav: [{ del: "turbin", gor() { S.turbin = false; S.pumpSakta = true; mal({ effekt: 1.3, temp: .8 }); fart({ effekt: .15 }); } }],
-        fel: "Ångan till vilken del stängs av?",
+        fel: "Ångan till vilken del stängs av?", gissa: ["Mindre vatten kommer in och vattnet kokar mer", "Mer vatten pumpas in i reaktorn", "Reaktorn stoppas"],
         blink: ["turbin","pump","effektStapel"], sen: "Mindre vatten kommer in, och vattnet kokar mer. I den här reaktorn gav mer ånga fler fissioner. <b>Därför</b> börjar effekten öka." },
       { text: "Personalen ser att effekten ökar och trycker på nödstopp – alla styrstavar ska skjutas in.",
         krav: [{ stavar: "in", gor() { S.stavarMal = 1; S.stavarFart = .07; mal({ effekt: 3.5, temp: 1 }); fart({ effekt: 1.5, temp: .3 }); } }],
-        fel: "Vad händer vid ett nödstopp?",
+        fel: "Vad händer vid ett nödstopp?", gissa: ["Effekten rusar", "Reaktorn stoppas direkt", "Ingenting händer"],
         blink: ["styrstavar","effektStapel"], sen: "Styrstavarna går in för långsamt. Effekten rusar på några sekunder – mätaren slår i taket!" },
       { fraga: { q: "Vad händer när effekten rusar?", alt: [
           { t: "Vattnet blir ånga på en gång och reaktorn sprängs", ok: true },
@@ -491,22 +493,22 @@ const OLYCKOR = {
       { text: "<b>11 mars 2011.</b> Kärnkraftverket Fukushima Daiichi ligger vid havet på Japans östkust. Det är eftermiddag och kärnkraftverket går som vanligt.", nasta: "Starta" },
       { text: "En mycket kraftig jordbävning – den kraftigaste som har uppmätts i Japan. Reaktorn stoppas automatiskt.",
         krav: [{ stavar: "in-helt", gor() { S.turbin = false; mal({ effekt: 0, temp: .7 }); } }],
-        fel: "Vad händer när en reaktor stoppas automatiskt?",
+        fel: "Vad händer när en reaktor stoppas automatiskt?", gissa: ["Fissionen slutar, men bränslet är fortfarande varmt", "Reaktorn blir kall direkt", "Effekten ökar"],
         blink: ["styrstavar","turbin","pump"], sen: "Fissionen har slutat. När reaktorn är stoppad ska ångan inte längre göra el, så säkerhetssystemet stänger ångan till turbinen. Turbinen och generatorn stannar. Men bränslet fortsätter att vara varmt – pumparna måste fortsätta att kyla. De får el från elnätet." },
       { text: "Jordbävningen förstör elledningarna – elen utifrån försvinner.",
         krav: [{ del: "elnat", gor() { S.elnat = false; S.reserv = "pa"; } }],
-        fel: "Vad förstörde jordbävningen?",
+        fel: "Vad förstörde jordbävningen?", gissa: ["Reservgeneratorn startar och pumparna fortsätter", "Pumparna stannar direkt", "Reaktorn startar igen"],
         blink: ["elnat","reserv"], sen: "Elnätet är borta. Reservgeneratorn startade automatiskt – pumparna får el och fortsätter att kyla." },
       { text: "En knapp timme senare kommer en <b>tsunami</b>. Vågen är ungefär 14 meter hög. Skyddsmuren är bara 6 meter.",
         krav: [{ del: "hav", gor() {
           visaEngang("tsunami", 2400);
           setTimeout(() => { S.flood = true; S.reserv = "trasig"; mal({ temp: .85, niva: .7 }); fart({ niva: .07 }); }, 1500);
           return 2600; } }],
-        fel: "Var kommer tsunamin ifrån?",
+        fel: "Var kommer tsunamin ifrån?", gissa: ["Reservgeneratorn översvämmas och pumparna stannar", "Vågen kyler reaktorn", "Ingenting – skyddsmuren stoppar vågen"],
         blink: ["reserv","oversvamning"], sen: "Vågen spolade över muren och översvämmade reservgeneratorn. Utan el stannar alla pumpar – även nödkylningens." },
       { text: "Ingen pump fungerar. Bränslet kokar vattnet till ånga, och trycket i reaktorn stiger. För att reaktorn inte ska spricka öppnar personalen ventilen och släpper ut ånga.",
         krav: [{ del: "ventil", gor() { S.ventil = "oppen"; S.lampa = "oppen"; S.moln = "litet"; S.molnText = "radioaktiv ånga"; mal({ niva: .42 }); fart({ niva: .08 }); } }],
-        fel: "Vad öppnar personalen för att släppa ut ånga?",
+        fel: "Vad öppnar personalen för att släppa ut ånga?", gissa: ["Ånga pyser ut och trycket sjunker", "Reaktorn kyls ner direkt", "Vattennivån stiger"],
         blink: ["ventil","moln","vatten"], sen: "Ånga pyser ut och trycket sjunker. Ångan är radioaktiv, så lite strålning kommer ut. Vattennivån sjunker." },
       { text: "Inget nytt vatten kommer in.",
         fraga: { q: "Vad händer med kärnbränslet när vattnet sjunker?", alt: [
@@ -521,7 +523,7 @@ const OLYCKOR = {
         blink: ["innSkadad","moln"], sen: "Vätgasen exploderade och blåste bort taket på byggnaden. Radioaktiva ämnen läckte ut." },
       { text: "Personalen pumpar in havsvatten med brandbilar för att kyla bränslet.",
         krav: [{ del: "hav", gor() { S.havsvatten = true; mal({ niva: .8, temp: .5 }); fart({ niva: .06, temp: .06 }); } }],
-        fel: "Varifrån tog personalen vattnet?",
+        fel: "Varifrån tog personalen vattnet?", gissa: ["Vattnet stiger och bränslet kyls", "Reaktorn startar igen", "Det blir en ny explosion"],
         blink: ["havsvatten","vatten"], sen: "Havsvatten strömmar in i reaktorn och kyler bränslet. Över 100 000 människor fick flytta från området. Jordbävningen och tsunamin dödade nästan 18 000 människor – ingen dog direkt av strålningen." },
       { fraga: { q: "Varför behövde reaktorn kylas fast styrstavarna var inne?", alt: [
           { t: "Bränslet fortsätter att vara varmt fast fissionen har slutat", ok: true },
@@ -551,7 +553,7 @@ function ritaVal() {
     `<button type="button" class="olycka" data-olycka="${id}" aria-pressed="${olycka === id}"><b>${o.namn}</b><span>${o.ar}</span>${klaraOlyckor.has(id) ? '<span class="klar">✔ Klar</span>' : ""}</button>`).join("");
 }
 function startaOlycka(id) {
-  olycka = id; S = bas(); OLYCKOR[id].setup(); idx = 0; ritaVal(); visaSteg();
+  olycka = id; S = bas(); OLYCKOR[id].setup(); idx = 0; gissar = false; gissResultat = null; gissStat = { ratt: 0, alla: 0 }; ritaVal(); visaSteg();
   document.querySelector("#h-verk").scrollIntoView({ behavior: "smooth", block: "start" });
 }
 function steg() { return olycka ? OLYCKOR[olycka].steg[idx] : null; }
@@ -583,7 +585,11 @@ function stegKlart() {
     upptagen = false;
     const sista = idx === antalSteg() - 1;
     const knapp = sista ? `<button type="button" class="btn pri" id="slutKnapp">Klar ✔</button>` : `<button type="button" class="btn pri" id="vidareKnapp">Nästa steg →</button>`;
-    const sen = st.sen ? `<p class="svar ratt">✔ ${st.sen}</p>` : (st.fraga ? `<p class="svar ratt">✔ Rätt!</p>` : "");
+    let sen = st.sen ? `<p class="svar ratt">✔ ${st.sen}</p>` : (st.fraga ? `<p class="svar ratt">✔ Rätt!</p>` : "");
+    if (gissResultat) {
+      sen = (gissResultat.ratt ? `<p class="svar ratt">🎯 Du gissade rätt!</p>` : `<p class="svar info">Du gissade: <i>${gissResultat.text}</i>. Så blev det inte – titta på bilden!</p>`) + sen;
+      gissResultat = null;
+    }
     stegEl.querySelectorAll(".gor, #nastaKnapp").forEach(x => x.remove());
     stegEl.querySelectorAll(".text").forEach(x => x.classList.add("tidigare"));
     const a = $("aterkoppling"); if (a) a.innerHTML = `<div class="knapprad">${knapp}</div>`;
@@ -620,18 +626,41 @@ function rensaLedtrad() {
 
 function uppfyll(i) {
   const st = steg(); gjorda.add(i);
-  const r = st.krav[i].gor() || 0;
   rensaLedtrad(); if (felAntal >= 2) visaLedtrad();
+  if (st.gissa) {
+    if (gjorda.size === st.krav.length) visaGissa(); else aterkoppling("Bra – en sak till.", "ratt");
+    return;
+  }
+  const r = st.krav[i].gor() || 0;
   if (gjorda.size === st.krav.length) {
     if (st.klart) st.klart();
     if (r) { upptagen = true; setTimeout(() => { upptagen = false; stegKlart(); }, r); } else stegKlart();
   } else aterkoppling("Bra – en sak till.", "ratt");
 }
 
+let gissar = false, gissResultat = null, gissStat = { ratt: 0, alla: 0 };
+function visaGissa() {
+  const st = steg(); gissar = true; rensaLedtrad();
+  const ordning = st.gissa.map((t, i) => i).sort(() => Math.random() - .5);
+  aterkoppling("", "");
+  $("aterkoppling").innerHTML = `<div class="svar info gissa"><b>🤔 Rätt! Gissa först: vad tror du händer nu?</b>
+    <div class="alt">${ordning.map(i => `<button type="button" data-gissa="${i}">${st.gissa[i]}</button>`).join("")}</div>
+    <small id="gissNot"></small></div>`;
+}
+function gissa(i) {
+  const st = steg(); gissar = false;
+  gissResultat = { ratt: i === 0, text: st.gissa[i] };
+  gissStat.alla++; if (i === 0) gissStat.ratt++;
+  let r = 0; st.krav.forEach(k => { r = Math.max(r, k.gor() || 0); });
+  if (st.klart) st.klart();
+  $("aterkoppling").innerHTML = `<p class="svar info">Titta på bilden …</p>`;
+  upptagen = true; setTimeout(() => { upptagen = false; stegKlart(); }, Math.max(r, 1200));
+}
 function klickDel(del) {
   const st = steg();
   if (!st) { infoUtanOlycka(); return; }
   if (upptagen) return;
+  if (gissar) { $("gissNot").textContent = "Välj först vad du tror händer!"; return; }
   if (vantar) { aterkoppling2("Klicka på <b>Nästa steg</b> för att gå vidare."); return; }
   if (st.fraga) { aterkoppling("Svara på frågan först.", "info"); return; }
   if (st.nasta) { aterkoppling(`Läs texten och klicka på <b>${st.nasta}</b>.`, "info"); return; }
@@ -660,7 +689,7 @@ function stavarAndrade(nytt) {
   const forra = S.stavarMal, st = steg();
   const aterstall = () => { reg.value = Math.round(forra * 100); visaReg(); };
   if (!st) { aterstall(); infoUtanOlycka(); return; }
-  if (upptagen || vantar || st.fraga || st.nasta) { aterstall(); klickDel("__ingen"); return; }
+  if (upptagen || gissar || vantar || st.fraga || st.nasta) { aterstall(); klickDel("__ingen"); return; }
   const i = st.krav.findIndex((k, j) => k.stavar && !gjorda.has(j));
   if (i < 0) { aterstall(); fel(st.fel); return; }
   const typ = st.krav[i].stavar;
@@ -701,7 +730,8 @@ stegEl.addEventListener("click", e => {
   else if (e.target.id === "vidareKnapp") { idx++; visaSteg(); }
   else if (e.target.id === "slutKnapp") {
     klaraOlyckor.add(olycka); ritaVal();
-    stegEl.innerHTML = `<p class="nr">${OLYCKOR[olycka].namn} · klar</p><p class="text">Bra jobbat! Du har gått igenom olyckan i ${OLYCKOR[olycka].namn}. Välj en annan olycka ovanför bilden.</p>`;
+    stegEl.innerHTML = `<p class="nr">${OLYCKOR[olycka].namn} · klar</p><p class="text">Bra jobbat! Du har gått igenom olyckan i ${OLYCKOR[olycka].namn}.</p><p class="svar ratt">🎯 Du gissade rätt på <b>${gissStat.ratt} av ${gissStat.alla}</b> steg.</p><p class="text">Välj en annan olycka ovanför bilden.</p>`;
+  } else if (e.target.dataset.gissa !== undefined && gissar) { gissa(Number(e.target.dataset.gissa));
   } else if (e.target.dataset.alt !== undefined && st.fraga && !vantar) {
     const a = st.fraga.alt[Number(e.target.dataset.alt)];
     if (a.ok) { e.target.classList.add("ratt"); stegEl.querySelectorAll("[data-alt]").forEach(b => b.disabled = true); stegKlart(); }
