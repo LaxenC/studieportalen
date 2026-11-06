@@ -429,7 +429,7 @@ const OLYCKOR = {
     namn: "Tjernobyl", ar: "Sovjetunionen 1986",
     setup() { S.inn = "saknas"; },
     steg: [
-      { text: "<b>25 april 1986.</b> Kärnkraftverket Tjernobyl i Sovjetunionen – i det som idag är Ukraina. Personalen ska göra ett säkerhetstest: kan turbinen, som snurrar vidare en stund av sig själv, ge el till pumparna om elen skulle försvinna?<br><b>Den här reaktorn hade ingen tät inneslutning.</b>", nasta: "Starta" },
+      { text: "<b>25 april 1986.</b> Kärnkraftverket Tjernobyl i Sovjetunionen – i det som idag är Ukraina. Personalen ska göra ett säkerhetstest. Om elen skulle försvinna måste pumparna ändå få el, så att de kan fortsätta kyla reaktorn. Personalen vill testa en idé: när ångan till turbinen stängs av snurrar turbinen vidare en stund av bara farten. Kan generatorn då göra tillräckligt med el till pumparna under den stunden?<br><b>Den här reaktorn hade ingen tät inneslutning.</b>", nasta: "Starta" },
       { text: "Inför testet stänger personalen av nödkylningen, så att den inte ska starta och störa testet.",
         krav: [{ del: "nodkylning", gor() { S.nod = "avstangd"; } }],
         fel: "Vad stängde personalen av inför testet?",
@@ -442,7 +442,7 @@ const OLYCKOR = {
         krav: [{ stavar: "ut", gor() { mal({ effekt: .25, temp: .45 }); S.varning = true; } }],
         fel: "Vad gör personalen för att få fart på reaktorn igen?",
         sen: "Effekten stiger lite igen. Men nu är nästan alla styrstavar ute – reaktorn är svår att styra." },
-      { text: "<b>Natten till 26 april</b> startar testet. Ångan till turbinen stängs av. Turbinen saktar ner, och pumparna pumpar mindre vatten.",
+      { text: "<b>Natten till 26 april</b> startar testet. Ångan till turbinen stängs av. Turbinen saktar ner, och <b>därför</b> får pumparna mindre el och pumpar mindre vatten.",
         krav: [{ del: "turbin", gor() { S.turbin = false; S.pumpSakta = true; mal({ effekt: 1.3, temp: .8 }); fart({ effekt: .15 }); } }],
         fel: "Ångan till vilken del stängs av?",
         sen: "Mindre vatten kommer in, och vattnet kokar mer. I den här reaktorn gav mer ånga fler fissioner. <b>Därför</b> börjar effekten öka." },
@@ -473,11 +473,6 @@ const OLYCKOR = {
           { t: "De stängde säkerhetsventilen och pumpen", f: "Tänk på vad personalen gjorde inför testet." },
           { t: "De pumpade in för mycket vatten", f: "Pumparna pumpade tvärtom mindre vatten." },
           { t: "De glömde stänga av turbinen", f: "Ångan till turbinen stängdes av – det var en del av testet." }] } },
-      { fraga: { q: "Varför kom det ut så mycket mer radioaktivt material än i Harrisburg?", alt: [
-          { t: "Det fanns ingen inneslutning som höll det inne", ok: true },
-          { t: "Reaktorn var större", f: "Storleken var inte det viktiga. Tänk på vad som fanns runt reaktorn i Harrisburg." },
-          { t: "Säkerhetsventilen fastnade öppen", f: "Det hände i Harrisburg." },
-          { t: "Det blåste mycket", f: "Tänk på vad som fanns runt reaktorn i Harrisburg." }] } },
       { fraga: { q: "Varför ökade effekten när pumparna pumpade mindre vatten?", alt: [
           { t: "Vattnet kokade mer, och i den här reaktorn gav mer ånga fler fissioner", ok: true },
           { t: "Pumparna tillverkar neutroner", f: "Pumparna pumpar bara vatten." },
