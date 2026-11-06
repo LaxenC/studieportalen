@@ -117,8 +117,10 @@ a{color:var(--accent)}
 .pumphjul{animation:hjul .6s linear infinite}
 .pumphjul.sakta{animation-duration:2.4s}
 @keyframes hjul{to{transform:rotate(360deg)}}
-.puff{animation:puff 2s ease-out infinite;transform-box:fill-box;transform-origin:center}
-@keyframes puff{0%{transform:translate(0,0) scale(.5);opacity:.9}100%{transform:translate(60px,-40px) scale(2);opacity:0}}
+.puff{animation:puff 2.8s ease-out infinite;transform-box:fill-box;transform-origin:center}
+@keyframes puff{0%{transform:translate(0,0) scale(.5);opacity:.9}100%{transform:translate(40px,170px) scale(2.8);opacity:0}}
+#ventilAnga.ute .puff{animation-name:puffUt}
+@keyframes puffUt{0%{transform:translate(0,0) scale(.5);opacity:.9}100%{transform:translate(50px,-50px) scale(2.4);opacity:0}}
 .flamma{animation:flamma .5s ease-in-out infinite alternate;transform-box:fill-box;transform-origin:bottom}
 @keyframes flamma{to{transform:scaleY(1.35) scaleX(.85)}}
 #explosion.visa{animation:boom 1.2s ease-out forwards;transform-box:fill-box;transform-origin:center}
@@ -160,6 +162,7 @@ a{color:var(--accent)}
  <clipPath id="cRotor"><path d="M395 125 L400 103 L563 67 L563 183 L400 147 Z"/></clipPath>
  <clipPath id="cReak"><rect x="768" y="70" width="164" height="482" rx="70"/></clipPath>
  <clipPath id="cVatten"><rect id="vattenClip" x="768" y="150" width="164" height="410"/></clipPath>
+ <clipPath id="cInne"><rect x="745" y="31" width="214" height="558" rx="97"/></clipPath>
  <clipPath id="cStavar"><rect x="760" y="240" width="200" height="355"/></clipPath>
 </defs>
 <rect x="-190" y="-24" width="1390" height="684" fill="#f7fafe"/>
@@ -239,7 +242,8 @@ a{color:var(--accent)}
 <line id="angaNer" class="flode" x1="597" y1="188" x2="597" y2="252" stroke="#ffffff" stroke-width="9"/>
 
 <!-- inneslutning -->
-<g id="inneslutning"><rect id="innRam" x="738" y="24" width="228" height="572" rx="104" fill="#e9ecf0" stroke="#9aa1ab" stroke-width="14"/></g>
+<g id="inneslutning"><rect id="innRam" x="738" y="24" width="228" height="572" rx="104" fill="#e9ecf0" stroke="#9aa1ab" stroke-width="14"/>
+ <rect id="innAnga" x="745" y="31" width="214" height="558" rx="97" fill="#ffffff" opacity="0"/></g>
 <g id="innSaknas" class="dold"><rect x="738" y="24" width="228" height="572" rx="104" fill="none" stroke="#9aa1ab" stroke-width="3" stroke-dasharray="10 10"/>
  <rect x="640" y="196" width="96" height="46" rx="8" fill="#fff6dd" stroke="#b7850c" stroke-width="2"/><text x="688" y="215" font-size="13" font-weight="900" fill="#7a5a06" text-anchor="middle"  >ingen</text><text x="688" y="232" font-size="13" font-weight="900" fill="#7a5a06" text-anchor="middle"  >inneslutning</text></g>
 <g id="innSkadad" class="dold"><path d="M790 18 l14 18 l-8 6 l16 14 M880 16 l-10 20 l12 4 l-6 18" stroke="#d63c45" stroke-width="5" fill="none" stroke-linecap="round"/></g>
@@ -272,12 +276,12 @@ a{color:var(--accent)}
 <rect x="784" y="556" width="132" height="62" fill="transparent"/><rect x="790" y="592" width="120" height="24" rx="6" fill="#f7fafe"/><text x="850" y="610" font-size="17" font-weight="900" fill="#1d2a3a" text-anchor="middle"  >styrstavar</text></g>
 
 <!-- säkerhetsventil -->
-<rect x="843" y="34" width="14" height="34" fill="#c9ccd3" stroke="#6b7280" stroke-width="2.5"/>
-<rect x="850" y="34" width="72" height="14" fill="#c9ccd3" stroke="#6b7280" stroke-width="2.5"/>
-<g data-del="ventil" tabindex="0" role="button" aria-label="Säkerhetsventilen"><circle cx="894" cy="41" r="24" fill="transparent"/><path id="ventilSymbol" d="M872 30 L872 52 L894 41 Z M916 30 L916 52 L894 41 Z" fill="#2f9e57" stroke="#1d2a3a" stroke-width="2"/></g>
-<g id="ventilAnga" class="dold" fill="#ffffff" stroke="#b9c0ca" stroke-width="1.5"><circle class="puff" cx="930" cy="41" r="7" style="animation-delay:-0s"/><circle class="puff" cx="930" cy="41" r="9" style="animation-delay:-0.5s"/><circle class="puff" cx="930" cy="41" r="6" style="animation-delay:-1s"/><circle class="puff" cx="930" cy="41" r="8" style="animation-delay:-1.5s"/></g>
+<rect x="838" y="36" width="12" height="32" fill="#c9ccd3" stroke="#6b7280" stroke-width="2.5"/>
+<rect x="844" y="36" width="44" height="12" fill="#c9ccd3" stroke="#6b7280" stroke-width="2.5"/>
+<g data-del="ventil" tabindex="0" role="button" aria-label="Säkerhetsventilen"><circle cx="872" cy="42" r="20" fill="transparent"/><path id="ventilSymbol" d="M858 33 L858 51 L872 42 Z M886 33 L886 51 L872 42 Z" fill="#2f9e57" stroke="#1d2a3a" stroke-width="2"/></g>
+<g id="ventilAnga" class="dold" fill="#ffffff" stroke="#b9c0ca" stroke-width="1.5"><g id="ventilAngaPuffar"><circle class="puff" cx="892" cy="44" r="7" style="animation-delay:-0s"/><circle class="puff" cx="892" cy="44" r="9" style="animation-delay:-0.4s"/><circle class="puff" cx="892" cy="44" r="6" style="animation-delay:-0.8s"/><circle class="puff" cx="892" cy="44" r="8" style="animation-delay:-1.2s"/><circle class="puff" cx="892" cy="44" r="7" style="animation-delay:-1.6s"/><circle class="puff" cx="892" cy="44" r="9" style="animation-delay:-2s"/><circle class="puff" cx="892" cy="44" r="6" style="animation-delay:-2.4s"/></g></g>
 <text x="840" y="2" font-size="15" font-weight="900" fill="#1d2a3a" text-anchor="end" paint-order="stroke" stroke="#f7fafe" stroke-width="5" stroke-linejoin="round" >säkerhetsventil</text>
-<path d="M842 -2 Q 880 -6 892 28" fill="none" stroke="#4f5d75" stroke-width="1.5"/>
+<path d="M842 -2 Q 868 -6 872 28" fill="none" stroke="#4f5d75" stroke-width="1.5"/>
 
 <!-- nödkylning -->
 <g data-del="nodkylning" tabindex="0" role="button" aria-label="Nödkylningen"><text x="1060" y="372" font-size="17" font-weight="900" fill="#1d2a3a" text-anchor="middle"  >nödkylning</text>
@@ -303,6 +307,7 @@ a{color:var(--accent)}
  <rect x="1052" y="84" width="22" height="160" rx="6" fill="#374151"/><rect id="tempStapel" x="1052" y="160" width="22" height="84" rx="6" fill="#f59e0b"/>
  <text x="1063" y="284" font-size="12" font-weight="800" fill="#e5e7eb" text-anchor="middle"  >temperatur</text>
  <rect x="1096" y="84" width="22" height="160" rx="6" fill="#374151"/><rect id="nivaStapel" x="1096" y="84" width="22" height="160" rx="6" fill="#60a5fa"/>
+ <text id="nivaFel" x="1107" y="79" font-size="12" font-weight="900" fill="#fca5a5" text-anchor="middle" class="dold blixt">FULL!</text>
  <text x="1107" y="266" font-size="12" font-weight="800" fill="#e5e7eb" text-anchor="middle"  >vattennivå</text>
  <circle id="ventilLampa" cx="1162" cy="118" r="15" fill="#22c55e" stroke="#e5e7eb" stroke-width="2"/>
  <text x="1162" y="150" font-size="12" font-weight="800" fill="#e5e7eb" text-anchor="middle"  >ventil</text>
@@ -349,7 +354,7 @@ function bas() {
     cur: { effekt: 1, temp: .55, niva: 1 }, mal: { effekt: 1, temp: .55, niva: 1 },
     fart: { effekt: .5, temp: .12, niva: .08 },
     pump: true, pumpSakta: false, turbin: true, ventil: "stangd", lampa: "stangd", nod: "av",
-    elnat: true, reserv: "av", inn: "hel", smalt: false, brand: false, moln: null, molnText: "radioaktivt",
+    elnat: true, reserv: "av", inn: "hel", nivaFel: false, smalt: false, brand: false, moln: null, molnText: "radioaktivt",
     drift: false, havsvatten: false, varning: false, flood: false };
 }
 let S = bas();
@@ -375,21 +380,21 @@ const OLYCKOR = {
         fel: "Vilken del slutade fungera?",
         sen: "Pumpen har stannat. Inget nytt vatten kommer in i reaktorn. <b>Därför</b> kyls reaktorn inte längre – temperaturen stiger." },
       { text: "Säkerhetssystemet stoppar reaktorn automatiskt efter några sekunder.",
-        krav: [{ stavar: "in-helt", gor() { mal({ effekt: 0, temp: .72 }); } }],
+        krav: [{ stavar: "in-helt", gor() { S.turbin = false; mal({ effekt: 0, temp: .72 }); } }],
         fel: "Vilken del fångar upp neutroner och kan stoppa kedjereaktionen?",
-        sen: "Fissionen har slutat. Ingen ny ånga går till turbinen, så turbinen och generatorn stannar och elen försvinner. Men temperaturen är fortfarande hög, <b>eftersom</b> bränslet fortsätter att vara varmt fast styrstavarna är inne." },
+        sen: "Fissionen har slutat. Säkerhetssystemet stänger ångan till turbinen, så turbinen och generatorn stannar. Men bränslet fortsätter att vara varmt fast styrstavarna är inne. <b>Därför</b> kokar vattnet fortfarande, men ångan stängs inne i reaktorn – och trycket stiger." },
       { text: "Trycket i reaktorn blir för högt. Säkerhetsventilen öppnas för att släppa ut ånga.",
         krav: [{ del: "ventil", gor() { S.ventil = "oppen"; S.lampa = "stangd"; mal({ niva: .72 }); fart({ niva: .07 }); } }],
         fel: "Vilken del släpper ut ånga när trycket blir för högt?",
         sen: "Trycket sjönk – men ventilen <b>fastnade i öppet läge</b>. Bränslet är fortfarande varmt och fortsätter att koka vattnet till ånga. Ångan försvinner ut genom ventilen, och inget nytt vatten kommer in. Lampan i kontrollrummet visar ändå <b>STÄNGD</b>." },
       { text: "Vattnet kokar bort och ångan försvinner ut genom ventilen. Nödkylningen startar automatiskt och pumpar in nytt vatten.",
-        krav: [{ del: "nodkylning", gor() { S.nod = "pa"; mal({ niva: S.cur.niva }); } }],
+        krav: [{ del: "nodkylning", gor() { S.nod = "pa"; S.nivaFel = true; mal({ niva: S.cur.niva }); } }],
         fel: "Vad startar automatiskt och pumpar in nytt vatten?",
-        sen: "Nytt vatten strömmar in från nödkylningen. Vattennivån i reaktorn slutar sjunka." },
-      { text: "Personalen tittar på mätarna. De tror att reaktorn har <b>för mycket</b> vatten och stänger av nödkylningen.",
+        sen: "Nytt vatten strömmar in från nödkylningen, och vattennivån i reaktorn slutar sjunka. Men titta på mätaren för vattennivå i kontrollrummet – den slår i taket och visar <b>FULL</b>." },
+      { text: "Personalen tittar på mätarna. Mätaren visar att reaktorn är <b>full</b> av vatten. De tror att det är för mycket vatten och stänger av nödkylningen.",
         krav: [{ del: "nodkylning", gor() { S.nod = "av"; mal({ niva: .45, temp: .9 }); fart({ niva: .08 }); } }],
         fel: "Vad stängde personalen av?",
-        sen: "Inget nytt vatten kommer in. Vattennivån sjunker igen." },
+        sen: "Mätaren visade fel – i reaktorn sjunker vattnet igen. Varken lampan för ventilen eller mätaren för vattennivån visade hur det egentligen var." },
       { text: "Vatten kokar fortfarande bort och ångan försvinner ut genom ventilen.",
         fraga: { q: "Vad händer med kärnbränslet när vattnet sjunker?", alt: [
           { t: "Det överhettas och börjar smälta", ok: true },
@@ -399,7 +404,7 @@ const OLYCKOR = {
         efter() { S.smalt = true; mal({ niva: .35, temp: 1 }); },
         sen: "Den övre delen av bränslet hamnade ovanför vattnet. Det överhettades och ungefär hälften smälte. Det kallas <b>härdsmälta</b>." },
       { text: "Efter drygt två timmar förstår personalen att ventilen är öppen. De stänger den och startar nödkylningen igen.",
-        krav: [{ del: "ventil", gor() { S.ventil = "stangd"; S.lampa = "stangd"; } },
+        krav: [{ del: "ventil", gor() { S.ventil = "stangd"; S.lampa = "stangd"; S.nivaFel = false; } },
                { del: "nodkylning", gor() { S.nod = "pa"; } }],
         klart() { mal({ niva: 1, temp: .4 }); fart({ niva: .08, temp: .1 }); },
         fel: "Vilka två saker gjorde personalen?",
@@ -487,9 +492,9 @@ const OLYCKOR = {
     steg: [
       { text: "<b>11 mars 2011.</b> Kärnkraftverket Fukushima Daiichi ligger vid havet på Japans östkust. Det är eftermiddag och kärnkraftverket går som vanligt.", nasta: "Starta" },
       { text: "En mycket kraftig jordbävning – den kraftigaste som har uppmätts i Japan. Reaktorn stoppas automatiskt.",
-        krav: [{ stavar: "in-helt", gor() { mal({ effekt: 0, temp: .7 }); } }],
+        krav: [{ stavar: "in-helt", gor() { S.turbin = false; mal({ effekt: 0, temp: .7 }); } }],
         fel: "Vad händer när en reaktor stoppas automatiskt?",
-        sen: "Fissionen har slutat och turbinen och generatorn stannar. Men bränslet är fortfarande varmt – pumparna måste fortsätta att kyla. De får el från elnätet." },
+        sen: "Fissionen har slutat. Säkerhetssystemet stänger ångan till turbinen, så turbinen och generatorn stannar. Men bränslet fortsätter att vara varmt – pumparna måste fortsätta att kyla. De får el från elnätet." },
       { text: "Jordbävningen förstör elledningarna – elen utifrån försvinner.",
         krav: [{ del: "elnat", gor() { S.elnat = false; S.reserv = "pa"; } }],
         fel: "Vad förstörde jordbävningen?",
@@ -725,7 +730,11 @@ function rita(t) {
   $("reservLada").setAttribute("fill", S.reserv === "trasig" ? "#55634a" : "#7c9a5a");
   kl("elnatBrott", "dold", S.elnat); kl("turbinAv", "dold", S.turbin);
   $("ventilSymbol").setAttribute("fill", S.ventil === "oppen" ? "#d63c45" : "#2f9e57");
-  kl("ventilAnga", "dold", !(S.ventil === "oppen" && c.temp > .3));
+  const angaUt = S.ventil === "oppen" && c.temp > .3;
+  kl("ventilAnga", "dold", !angaUt); kl("ventilAnga", "ute", S.inn === "saknas");
+  $("ventilAngaPuffar").setAttribute("clip-path", S.inn === "saknas" ? "" : "url(#cInne)");
+  if (angaUt && S.inn !== "saknas") S.innAnga = Math.min(.55, (S.innAnga || 0) + dt * .05);
+  $("innAnga").setAttribute("opacity", (S.innAnga || 0).toFixed(3));
   const oppen = S.lampa === "oppen";
   $("ventilLampa").setAttribute("fill", oppen ? "#ef4444" : "#22c55e");
   $("ventilText").textContent = oppen ? "ÖPPEN" : "STÄNGD"; $("ventilText").setAttribute("fill", oppen ? "#fca5a5" : "#86efac");
@@ -745,7 +754,8 @@ function rita(t) {
   const eh = Math.min(160, c.effekt / 1.5 * 160);
   $("effektStapel").setAttribute("y", 244 - eh); $("effektStapel").setAttribute("height", eh); $("effektStapel").setAttribute("fill", c.effekt > 1.4 ? "#ef4444" : "#a78bfa");
   const th = c.temp * 160; $("tempStapel").setAttribute("y", 244 - th); $("tempStapel").setAttribute("height", th); $("tempStapel").setAttribute("fill", c.temp > .85 ? "#ef4444" : "#f59e0b");
-  const nh = c.niva * 160; $("nivaStapel").setAttribute("y", 244 - nh); $("nivaStapel").setAttribute("height", nh);
+  const nh = S.nivaFel ? 160 : c.niva * 160; $("nivaStapel").setAttribute("y", 244 - nh); $("nivaStapel").setAttribute("height", nh);
+  $("nivaStapel").setAttribute("fill", S.nivaFel ? "#ef4444" : "#60a5fa"); kl("nivaFel", "dold", !S.nivaFel);
   kl("inneslutning", "dold", S.inn === "saknas"); kl("innEtikett", "dold", S.inn === "saknas"); kl("innSaknas", "dold", S.inn !== "saknas");
   kl("innSkadad", "dold", S.inn !== "skadad"); kl("innHoll", "dold", S.inn !== "holl");
   $("innRam").setAttribute("stroke", S.inn === "holl" ? "#2f9e57" : "#9aa1ab");
