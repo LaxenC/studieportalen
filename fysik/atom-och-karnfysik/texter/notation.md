@@ -2,7 +2,7 @@
 kapitel: notation
 ---
 
-# Atomnotation
+## Atomnotation {#notation}
 
 Atomnotation är ett kort sätt att skriva vilka partiklar en atom är uppbyggd av.<br>
 
