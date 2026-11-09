@@ -123,6 +123,7 @@ Portal.uppgifter([
       ] },
 
     { id: "str-partikel-bast", kapitel: "stralning", avsnitt: ["partikel"], titel: "Partikelstrålning – bästa beskrivningen",
+      punkter: ["pstral"],
       typ: "flerval", nivaerPerArskurs: {7:3, 8:[1,2], 9:[1]},
       varianter: [
         { fraga: "Vilken är den bästa beskrivningen av partikelstrålning?",
@@ -133,6 +134,7 @@ Portal.uppgifter([
       ] },
 
     { id: "str-beta-vad", kapitel: "stralning", avsnitt: ["partikel"], titel: "Betastrålning – vad strålar ut?",
+      punkter: ["pstral-beta"],
       typ: "flerval", nivaerPerArskurs: {7:3, 8:[1,2], 9:[1]},
       varianter: [
         { fraga: "Vad beskriver bäst det som strålar ut vid betastrålning?",
@@ -143,6 +145,7 @@ Portal.uppgifter([
       ] },
 
     { id: "str-beta-text", kapitel: "stralning", avsnitt: ["partikel"], titel: "Betastrålning – fyll i begrepp",
+      punkter: ["pstral-beta"],
       typ: "lucktext", nivaerPerArskurs: {7:3, 8:[1,2], 9:[1]}, rullista: [1],
       ordlista: ["neutron", "proton", "elektron", "elektronen", "foton", "heliumkärna"],
       varianter: [
@@ -394,5 +397,71 @@ Portal.uppgifter([
       typ: "santfalskt", nivaerPerArskurs: {7: [1], 8: [1], 9: [1]}, punkter: ["emstral", "emstral-foton", "emstral-energi", "emstral-ljus", "emstral-rönt"],
       varianter: [
         { pst: [["Fotoner överför energin i elektromagnetisk strålning.", true], ["En foton har ingen massa och ingen laddning.", true], ["Radiovågor har högre frekvens än gammastrålning.", false], ["Synligt ljus bildas när en elektron hoppar från ett yttre skal till ett inre.", true], ["Skelettet syns svart på en röntgenbild.", false]] }
+      ] },
+    { id: "pstral-lar-kalla", kapitel: "stralning", avsnitt: ["partikel"], titel: "Partikelstrålning – varifrån?",
+      typ: "flerval", nivaerPerArskurs: {8: [1, 2], 9: [1]},
+      varianter: [
+        { fraga: "Varifrån kommer partiklarna vid partikelstrålning?", punkter: ["pstral"],
+          alt: [ { t: "Från atomkärnan", s: "ratt", f: "partiklar från kärnan strålar ut." },
+                 { t: "Från elektronskalen", s: "fel", f: "partiklarna kommer från atomkärnan." },
+                 { t: "Från luften runt atomen", s: "fel", f: "partiklarna kommer från atomkärnan." },
+                 { t: "Från fotoner", s: "fel", f: "fotoner hör till elektromagnetisk strålning." } ] },
+        { fraga: "Vad händer med atomkärnan vid partikelstrålning?", punkter: ["pstral"],
+          alt: [ { t: "Den ser annorlunda ut efteråt, eftersom partiklar har lämnat den", s: "ratt", f: "antalet partiklar i kärnan ändras." },
+                 { t: "Den skickar ut energi", s: "delvis", f: "stämmer – men det viktiga är att partiklar lämnar kärnan, så den ändras." },
+                 { t: "Den ser likadan ut som före strålningen", s: "fel", f: "partiklar har lämnat kärnan, så den har ändrats." },
+                 { t: "Den blir större", s: "fel", f: "partiklar lämnar kärnan." } ] }
+      ] },
+    { id: "pstral-lar-alfa", kapitel: "stralning", avsnitt: ["partikel"], titel: "Alfastrålning – välj rätt",
+      typ: "flerval", nivaerPerArskurs: {8: [1, 2], 9: [1]},
+      varianter: [
+        { fraga: "Vad är en alfapartikel?", punkter: ["pstral-alfa"],
+          alt: [ { t: "En heliumkärna – 2 protoner och 2 neutroner", s: "ratt", f: "den skickas ut från atomkärnan med mycket energi." },
+                 { t: "Partiklar från atomkärnan", s: "delvis", f: "stämmer – men vilka? En alfapartikel är en heliumkärna." },
+                 { t: "En elektron", s: "fel", f: "en elektron är en betapartikel." },
+                 { t: "En foton", s: "fel", f: "fotoner hör till elektromagnetisk strålning." } ] },
+        { fraga: "Vilken strålning består av heliumkärnor?", punkter: ["pstral-alfa"],
+          alt: [ { t: "Alfastrålning", s: "ratt", f: "en alfapartikel är en heliumkärna." },
+                 { t: "Betastrålning", s: "fel", f: "betastrålning består av elektroner." },
+                 { t: "Gammastrålning", s: "fel", f: "gammastrålning består av fotoner." },
+                 { t: "Röntgenstrålning", s: "fel", f: "röntgenstrålning består av fotoner." } ] }
+      ] },
+    { id: "pstral-lar-beta", kapitel: "stralning", avsnitt: ["partikel"], titel: "Betastrålning – välj rätt",
+      typ: "flerval", nivaerPerArskurs: {8: [1, 2], 9: [1]},
+      varianter: [
+        { fraga: "Vad är en betapartikel?", punkter: ["pstral-beta"],
+          alt: [ { t: "En elektron med mycket energi från atomkärnan", s: "ratt", f: "den bildas när en neutron omvandlas." },
+                 { t: "En elektron", s: "delvis", f: "stämmer – och den kommer från atomkärnan." },
+                 { t: "En heliumkärna", s: "fel", f: "en heliumkärna är en alfapartikel." },
+                 { t: "En proton", s: "fel", f: "protonen stannar kvar i kärnan." } ] },
+        { fraga: "Hur kan atomkärnan skicka ut en elektron?", punkter: ["pstral-beta"],
+          alt: [ { t: "En neutron omvandlas till en proton och en elektron", s: "ratt", f: "protonen stannar kvar och elektronen skickas ut." },
+                 { t: "Det bildas en elektron i kärnan", s: "delvis", f: "stämmer – men hur? En neutron omvandlas till en proton och en elektron." },
+                 { t: "En proton omvandlas till en neutron och en elektron", s: "fel", f: "det är en neutron som omvandlas." },
+                 { t: "En elektron hoppar in i kärnan från ett skal", s: "fel", f: "elektronen bildas i kärnan när en neutron omvandlas." } ] }
+      ] },
+    { id: "pstral-lar-para", kapitel: "stralning", avsnitt: ["partikel"], titel: "Alfa och beta – para ihop",
+      typ: "para", nivaerPerArskurs: {8: [1, 2], 9: [1]}, punkter: ["pstral-alfa", "pstral-beta"],
+      varianter: [
+        { rubrik: "Para ihop.",
+          par: [["Alfastrålning", "En alfapartikel strålar ut"], ["Betastrålning", "En betapartikel strålar ut"], ["Alfapartikel", "En heliumkärna: 2 protoner + 2 neutroner"], ["Betapartikel", "En elektron från atomkärnan"]] }
+      ] },
+    { id: "pstral-lar-text", kapitel: "stralning", avsnitt: ["partikel"], titel: "Alfa och beta – fyll i",
+      typ: "lucktext", nivaerPerArskurs: {8: [1, 2], 9: [1]}, rullista: [1],
+      ordlista: ["alfapartikel", "betapartikel", "heliumkärna", "elektron", "proton", "foton"],
+      varianter: [
+        { text: "Vid alfastrålning strålar en [alfapartikel] ut. Den är en [heliumkärna|helium kärna|heliumkärnan].", punkter: ["pstral-alfa"] },
+        { text: "Vid betastrålning strålar en [betapartikel] ut. Den är en [elektron|elektronen].", punkter: ["pstral-beta"] }
+      ] },
+    { id: "pstral-lar-kedja", kapitel: "stralning", avsnitt: ["partikel"], titel: "Så uppstår betastrålning – kedja",
+      typ: "kedja", nivaerPerArskurs: {8: [1, 2], 9: [1, 2]}, punkter: ["pstral-beta"],
+      varianter: [
+        { rubrik: "Fyll i de tomma stegen.",
+          steg: ["En neutron i atomkärnan omvandlas",
+                 "Det bildas en proton och en elektron",
+                 "Protonen stannar kvar i kärnan",
+                 "Elektronen skickas ut – det är betastrålningen"],
+          luckor: { 1: [1], 2: [1, 2] },
+          fel: ["En proton lämnar kärnan", "En heliumkärna skickas ut"] }
       ] }
 ]);
