@@ -205,7 +205,7 @@ Efter en halveringstid är hälften kvar. Efter två halveringstider är *hälft
 | 120 år | 4 | 6,25 % | 93,75 % |
 
 > **Exempel:**
-> Kol-15 har halveringstiden 5 730 år. Vi börjar med 800 radioaktiva kärnor.<br>
+> Kol-14 har halveringstiden 5 730 år. Vi börjar med 800 radioaktiva kärnor.<br>
 > Efter 1 halveringstid: 1*5730 = 5 730 år: 800 / 2 = **400** kvar<br>
 > Efter 2 halveringstider: 2*5730 = 11 460 år: 400 / 2 = **200** kvar<br>
 > Efter 3 halveringstider: 3*5730 = 17 190 år: 200 / 2 = **100** kvar
