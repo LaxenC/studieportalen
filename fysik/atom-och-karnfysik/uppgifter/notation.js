@@ -24,7 +24,7 @@ Portal.uppgifter([
 
     { id: "not-delar-bild", kapitel: "notation", titel: "Atomnotationens delar – bild",
       typ: "markera", bild: "notation", nivaerPerArskurs: { 7: [2], 8: [1], 9: [1] }, rullista: [0], grupp: "not-delar",
-      delar: ["masstal", "atomnummer", "kemisk beteckning"],
+      delar: ["masstal", "atomnummer", "kemisk beteckning"], punkter:["not-masstal", "not-atomnr"],
       svar: {
         masstal: ["masstal", "masstalet"],
         atomnummer: ["atomnummer", "atomnumret", "atomnummret"],
@@ -35,7 +35,7 @@ Portal.uppgifter([
 
     { id: "not-delar-skriv", kapitel: "notation", titel: "Atomnotationens delar – skriv namnen",
       typ: "markera", bild: "notation", nivaerPerArskurs: { 7: [2], 8: [1], 9: [1] }, grupp: "not-delar",
-      delar: ["masstal", "atomnummer", "kemisk beteckning"],
+      delar: ["masstal", "atomnummer", "kemisk beteckning"], punkter:["not-masstal", "not-atomnr"],
       svar: {
         masstal: ["masstal", "masstalet"],
         atomnummer: ["atomnummer", "atomnumret", "atomnummret"],
@@ -45,7 +45,7 @@ Portal.uppgifter([
                    // ingen rullista – eleven skriver alltid själv
 
     { id: "not-para", kapitel: "notation", titel: "Atomnotation – para ihop begrepp",
-      typ: "para", nivaerPerArskurs: { 7: [2], 8: [1], 9: [1] },
+      typ: "para", nivaerPerArskurs: { 7: [2], 8: [1], 9: [1] },punkter:["not-masstal", "not-atomnr"],
       varianter: [
         { rubrik: "Para ihop begreppet med rätt förklaring.",
           par: [["Masstal", "Antalet protoner + neutroner"], ["Atomnummer", "Antalet protoner"], ["Kemisk beteckning", "En eller två bokstäver som visar grundämnet"]] },
@@ -55,7 +55,7 @@ Portal.uppgifter([
           par: [["Atomnummer", "Vilket grundämne det är"], ["Masstal", "Hur många partiklar som finns i kärnan"], ["Masstal − atomnummer", "Antalet neutroner"]] }
       ] },
 
-    { id: "not-bygg", kapitel: "notation", titel: "Bygg atomen",
+    { id: "not-bygg", kapitel: "notation", titel: "Bygg atomen", punkter:["not-masstal", "not-atomnr"],
       typ: "reglage", nivaerPerArskurs: {7:[3],8:[1,2],9:[1]},
       varianter: [
         { namn: "väte", X: "H", A: 1, Z: 1 },     { namn: "helium", X: "He", A: 4, Z: 2 },
@@ -64,7 +64,7 @@ Portal.uppgifter([
         { namn: "kväve", X: "N", A: 14, Z: 7 },   { namn: "syre", X: "O", A: 16, Z: 8 }
       ] },
 
-    { id: "not-skriv-1", kapitel: "notation", titel: "Bygg atom – skriva atomnotation",
+    { id: "not-skriv-1", kapitel: "notation", titel: "Bygg atom – skriva atomnotation", punkter:["not-masstal", "not-atomnr"],
       typ: "skrivnotation", nivaerPerArskurs: {7:[3],8:[1,2],9:[1]}, visaReglage: true,   // reglagen visar antalet partiklar
       varianter: [
         { namn: "väte", X: "H", A: 2, Z: 1 },     { namn: "helium", X: "He", A: 3, Z: 2 },
@@ -73,7 +73,7 @@ Portal.uppgifter([
         { namn: "kväve", X: "N", A: 15, Z: 7 },   { namn: "syre", X: "O", A: 18, Z: 8 }
       ] },
 
-    { id: "not-skriv-2", kapitel: "notation", titel: "Räkna partiklarna – skriva atomnotation",
+    { id: "not-skriv-2", kapitel: "notation", titel: "Räkna partiklarna – skriva atomnotation",punkter:["not-masstal", "not-atomnr"],
       typ: "skrivnotation", nivaerPerArskurs: {7:[3],8:[1,2],9:[1]}, visaReglage: false,  // bara bilden – eleven räknar själv
       varianter: [
         { namn: "väte", X: "H", A: 3, Z: 1 },     { namn: "helium", X: "He", A: 6, Z: 2 },
@@ -82,7 +82,7 @@ Portal.uppgifter([
         { namn: "syre", X: "O", A: 17, Z: 8 }
       ] },
 
-    { id: "not-jon", kapitel: "notation", titel: "Bygg jonen",
+    { id: "not-jon", kapitel: "notation", titel: "Bygg jonen",punkter:["not-masstal", "not-jon"],
       typ: "reglage", nivaerPerArskurs: {7:[3],8:[2,3],9:[2]},
       varianter: [
         { X: "H", A: 1, Z: 1, ch: "+" },   { X: "H", A: 1, Z: 1, ch: "-" },
