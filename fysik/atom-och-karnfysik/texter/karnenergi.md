@@ -134,7 +134,7 @@ Problemet är att det är väldigt svårt att få fusion att producera mer energ
 > 2. *Gravitationen* drar ihop molnet.
 > 3. När gasen trycks ihop ökar *trycket* och *temperaturen* i mitten.
 > 4. Vid ungefär 10 miljoner grader börjar vätekärnor slås ihop till helium – *fusion*. Stjärnan har tänts.
-> 5. Energin från fusionen trycker utåt och håller emot gravitationen – **därför** kan stjärnan lysa i miljarder år.
+> 5. *Gravitationen* drar stjärnan inåt, och energin från fusionen trycker utåt. Krafterna är lika stora och tar ut varandra – **därför** håller stjärnan sin form och kan lysa i miljarder år, så länge det finns väte kvar.
 > 6. När vätet tar slut slås tyngre kärnor ihop, och ämnen som kol och syre bildas.
 > 7. De största stjärnorna slutar med en enorm explosion – en *supernova* – som sprider ämnena ut i rymden.
 >
