@@ -44,7 +44,7 @@ Protoner och neutroner är ungefär **2000 gånger tyngre** än en elektron. Nä
 > **Viktigt att komma ihåg**
 > - {#atom-par} Protoner (+) och neutroner finns i atomkärnan. Elektroner (-) finns i skal runt kärnan.
 > - {#atom-tom} Atomen består nästan bara av tomrum (liten kärna i mitten och elektroner runt), om atomen var stor som Globen skulle kärnan vara stor som ett blåbär.
-> - {#atom-vikt}Protoner och neutroner väger cirka 2000 gånger mer än elektroner. 
+> - {#atom-vikt} Protoner och neutroner väger cirka 2000 gånger mer än elektroner. 
 
 
 
@@ -108,11 +108,10 @@ Kärnan är positivt laddad och elektronerna är negativt laddade, därför dras
 > Alla elektroner har samma *negativa laddning*. Lika laddningar *stöter bort* varandra, **därför** får det bara plats ett visst antal elektroner i varje *skal*. När ett skal är fullt hamnar nästa elektron i ett skal längre ut.
 
 > **Viktigt att komma ihåg**
-> - Elektronskalen fylls inifrån och ut.
-> - Elektronskalen heter: K, L, M osv
-> - K-skalet rymmer 2 elektroner, L-skalet 8 – det får inte plats fler **eftersom** elektronerna stöter bort varandra.
-> - Elektroner i ytterska skalet heter **valenselektroner**
-> - (åk8,9) Elektroner längre ut har högre energi, **eftersom** det krävs energi för att flytta dem bort från den positiva kärnan.
+> - {#skal-namn} Elektronskalen fylls inifrån och ut, de heter: K, L, M osv
+> - {#skal-antal} K-skalet rymmer 2 elektroner, L-skalet 8 – det får inte plats fler **eftersom** elektronerna stöter bort varandra.
+> - {#skal-valens} Elektroner i ytterska skalet heter **valenselektroner**
+> - (åk8,9) {#skal-energi} Elektroner längre ut har högre energi, **eftersom** det krävs energi för att flytta dem bort från den positiva kärnan.
 > - (åk 9) Det yttersta skalet har aldrig mer än 8 elektroner.
 
 ## Kvarkar {#kvarkar åk=9}
