@@ -4,8 +4,6 @@ kapitel: notation
 
 ## Atomnotation {#notation}
 
-## Så läser du atomnotation {#notation}
-
 Atomnotation är ett kort sätt att skriva vilka partiklar en atom är uppbyggd av.<br>
 
 Notationen består av:
