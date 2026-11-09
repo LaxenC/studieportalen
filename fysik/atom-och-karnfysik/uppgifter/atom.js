@@ -22,7 +22,7 @@
 Portal.uppgifter([
 
     { id: "atom-bild", kapitel: "atom", avsnitt: ["delar"], titel: "Atomens delar – bild",
-      typ: "markera", nivaerPerArskurs: { 7: [1], 8: [0,1], 9: [0]}, rullista: [0],
+      typ: "markera", nivaerPerArskurs: { 7: [1], 8: [0,1], 9: [0]}, rullista: [0],punkter: ["atom-par"],
       delar: ["proton", "neutron", "elektron", "atomkärna", "elektronskal"],
       svar: {
         proton: ["proton", "protoner", "protonen"],
@@ -34,14 +34,14 @@ Portal.uppgifter([
       varianter: [{}] },   // numreringen i bilden blandas varje gång
 
     { id: "atom-bygg", kapitel: "atom", avsnitt: ["delar"], titel: "Atomens delar – skapa bild",
-      typ: "bygg", nivaerPerArskurs: { 7: [1], 8: [0,1], 9: [0]},
+      typ: "bygg", nivaerPerArskurs: { 7: [1], 8: [0,1], 9: [0]},punkter: ["atom-par"],
       varianter: [
         { namn: "väte",      p: 1, n: 0, e: 1 },
         { namn: "helium",    p: 2, n: 2, e: 2 }
       ] },
 
     { id: "atom-text", kapitel: "atom", avsnitt: ["delar"], titel: "Atomens delar – text",
-      typ: "lucktext", nivaerPerArskurs: { 7: [1], 8: [0,1], 9: [0]}, rullista: [0],
+      typ: "lucktext", nivaerPerArskurs: { 7: [1], 8: [0,1], 9: [0]}, rullista: [0],punkter: ["atom-par"],
       ordlista: ["protoner", "neutroner", "elektroner", "proton", "neutron", "elektron",
                  "atomkärnan", "kärna", "skal", "positiv", "negativ", "ingen"],
       varianter: [
@@ -60,7 +60,7 @@ Portal.uppgifter([
       ] },
 
     { id: "atom-para", kapitel: "atom", avsnitt: ["delar"], titel: "Atomens delar – para ihop",
-      typ: "para",  nivaerPerArskurs: { 7: [1], 8: [0,1], 9: [0]},
+      typ: "para",  nivaerPerArskurs: { 7: [1], 8: [0,1], 9: [0]},punkter: ["atom-par"],
       varianter: [
         { rubrik: "Para ihop partikeln med dess laddning.",
           par: [["Proton", "Positiv laddning (+1)"], ["Neutron", "Ingen laddning (0)"], ["Elektron", "Negativ laddning (−1)"]] },
@@ -73,7 +73,7 @@ Portal.uppgifter([
       ] },
 
     { id: "atom-para-bild", kapitel: "atom", avsnitt: ["delar"], titel: "Atomens delar – bild och namn",
-      typ: "para",  nivaerPerArskurs: { 7: [1], 8: [0,1], 9: [0]},
+      typ: "para",  nivaerPerArskurs: { 7: [1], 8: [0,1], 9: [0]},punkter: ["atom-par"],
       varianter: [
         { rubrik: "Para ihop bilden med rätt namn.",
           par: [["bild:proton", "Proton"], ["bild:neutron", "Neutron"], ["bild:elektron", "Elektron"],
@@ -122,7 +122,7 @@ Portal.uppgifter([
       ] },
 
     { id: "atom-tomrum-text", kapitel: "atom", avsnitt: ["delar"], titel: "Atomen är mest tomrum – fyll i begrepp",
-      typ: "lucktext", nivaerPerArskurs:{ 7: [1], 8: [0,1], 9:[1]}, rullista: [0],
+      typ: "lucktext", nivaerPerArskurs:{ 7: [1], 8: [0,1], 9:[1]}, rullista: [0],punkter: { 0: ["atom-vikt"], 1: ["atom-tom"] },
       ordlista: ["tomrum", "luft", "vatten", "blåbär", "fotboll", "massa", "kärnan", "elektronerna", "elektroner"],
       varianter: [
         { text: "Atomen består nästan bara av [tomrum]. Om atomen var lika stor som Globen skulle kärnan vara stor som ett [blåbär]." },
@@ -130,7 +130,7 @@ Portal.uppgifter([
       ] },
 
     { id: "atom-tomrum-mc", kapitel: "atom", avsnitt: ["delar"], titel: "Atomen är mest tomrum – välj rätt",
-      typ: "flerval", nivaerPerArskurs:{ 7: [1], 8: [0,1], 9: [1]},
+      typ: "flerval", nivaerPerArskurs:{ 7: [1], 8: [0,1], 9: [1]},punkter: { 0: ["atom-tom"], 1: ["atom-vikt"] },
       varianter: [
         { fraga: "Om en atom var lika stor som Globen – hur stor skulle kärnan i mitten vara?",
           alt: [ { t: "Ett blåbär", s: "ratt", f: "kärnan är pytteliten jämfört med hela atomen. Resten är nästan bara tomrum." },
@@ -145,7 +145,7 @@ Portal.uppgifter([
       ] },
 
     { id: "atom-tomrum-sf", kapitel: "atom", avsnitt: ["delar"], titel: "Atomen är mest tomrum – sant eller falskt",
-      typ: "santfalskt",nivaerPerArskurs: { 7: [1], 8: [0,1], 9: [1]},
+      typ: "santfalskt",nivaerPerArskurs: { 7: [1], 8: [0,1], 9: [1]}, 
       varianter: [
         { pst: [["Atomen består mest av tomrum.", true], ["Nästan hela atomens massa finns i kärnan.", true],
                 ["Atomkärnan är ungefär lika stor som hela atomen.", false], ["Elektronerna fyller upp hela atomen.", false],
@@ -160,7 +160,7 @@ Portal.uppgifter([
       varianter: [{ skal: 1 }, { skal: 2 }, { skal: 3 }, { skal: 4 }, { skal: 5 }, { skal: 6 }] },
 
     { id: "skal-varfor", kapitel: "atom", avsnitt: ["skal"], titel: "Varför finns det flera elektronskal?",
-      typ: "flerval", nivaerPerArskurs: { 7: [3], 8: [2], 9: [1] },
+      typ: "flerval", nivaerPerArskurs: { 7: [3], 8: [2], 9: [1] }, punkter: {1:["skal-antal"]},
       varianter: [
         { fraga: "Varför ligger inte alla elektroner i samma skal?",
           alt: [ { t: "Elektronerna har samma laddning och stöter bort varandra", s: "ratt", f: "lika laddningar stöter bort varandra, så det får bara plats ett visst antal elektroner i varje skal." },
@@ -175,7 +175,7 @@ Portal.uppgifter([
       ] },
 
     { id: "skal-energi", kapitel: "atom", avsnitt: ["skal"], titel: "Elektronskal och energinivåer",
-      typ: "flerval", nivaerPerArskurs: { 7: [3], 8: [2], 9: [1] },
+      typ: "flerval", nivaerPerArskurs: { 7: [3], 8: [2], 9: [1] }, punkter:["skal-energi"],
       varianter: [
         { fraga: "Vilka elektroner har högst energi?",
           alt: [ { t: "Elektronerna i skalen längst ut", s: "ratt", f: "ju längre ut från kärnan, desto högre energinivå har elektronen." },
@@ -195,7 +195,7 @@ Portal.uppgifter([
       ] },
 
     { id: "skal-valens", kapitel: "atom", avsnitt: ["skal"], titel: "Valenselektroner",
-      typ: "flerval", nivaerPerArskurs: { 7: [2], 8: [1,2], 9: [1] },
+      typ: "flerval", nivaerPerArskurs: { 7: [2], 8: [1,2], 9: [1] },punkter:["skal-valens"],
       varianter: [
         { fraga: "Vad är valenselektroner?",
           alt: [ { t: "Elektronerna i det yttersta skalet", s: "ratt", f: "valenselektronerna finns i atomens yttersta skal." },
