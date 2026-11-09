@@ -54,12 +54,12 @@ Den används inom sjukvården för att ta bilder av kroppens inre. På röntgenb
 > Röntgenstrålning är *energirik* och tar sig igenom mjukdelar som muskler. Skelettet är tätare och absorberar mer av strålningen. **Därför** når mindre strålning bilden bakom skelettet, och skelettet syns vitt medan mjukdelarna blir mörka.
 
 > **Viktigt att komma ihåg**
-> - **Elektromagnetisk strålning:** fotoner (elektromagnetiska vågor i partikelform) överför energin.
-> - En **foton** är en elektromagnetisk våg i partikelform.
-> - Hög frekvens (hur tätt vågorna är) innebär hög energi – **därför** har gammastrålning mer energi än synligt ljus.
-> - **Synligt ljus** bildas när elektroner hoppar från ett yttre skal till ett inre och frigör energi **eftersom** det yttre skalet har högre energinivå.
-> - **Röntgenstrålning** används för att ta bild på skelett, **eftersom** strålningen stoppas av skelett men går igenom mjukdelar.
->  - (åk8,9)**Gamma** strålning med mycket högre energi, bildas ofta i samband med partikelstrålning
+> -{#emstral} **Elektromagnetisk strålning:** fotoner (elektromagnetiska vågor i partikelform) överför energin.
+> - {#emstral-foton} En **foton** är en elektromagnetisk våg i partikelform.
+> - {#emstral-energi} Hög frekvens (hur tätt vågorna är) innebär hög energi – **därför** har gammastrålning mer energi än synligt ljus.
+> - {#emstral-ljus} **Synligt ljus** bildas när elektroner hoppar från ett yttre skal till ett inre och frigör energi **eftersom** det yttre skalet har högre energinivå.
+> - {#emstral-rönt} **Röntgenstrålning** används för att ta bild på skelett, **eftersom** strålningen stoppas av skelett men går igenom mjukdelar.
+>  - {#emstral-gam} (åk8,9)**Gamma** strålning med mycket högre energi, bildas ofta i samband med partikelstrålning
 
 ## Partikelstrålning {#partikel}
 
