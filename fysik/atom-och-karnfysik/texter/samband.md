@@ -69,8 +69,8 @@ En jon är en atom som har fått ett annat antal **elektroner** än protoner och
 
 > **Viktigt att komma ihåg**
 > - Protoner → ämne. Neutroner → isotop. Elektroner → jon.
-> - Antalet protoner bestämmer vilket ämne det är. 
-> - Isotoper har samma antal protoner men olika antal neutroner – **därför** har de olika masstal.
-> - En jon är en atom med laddning, **eftersom** den har ett annat antal elektroner än protoner.
+> - {#atom-ämne} Antalet protoner bestämmer vilket ämne det är. 
+> - {#atom-iso} Isotoper har samma antal protoner men olika antal neutroner – **därför** har de olika masstal.
+> - {#atom-jon} En jon är en atom med laddning, **eftersom** den har ett annat antal elektroner än protoner.
 
 
