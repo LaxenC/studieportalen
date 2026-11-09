@@ -130,8 +130,15 @@ Därför anses en fusionsreaktor ha vissa säkerhetsfördelar jämfört med vanl
 Problemet är att det är väldigt svårt att få fusion att producera mer energi än vad anläggningen förbrukar.
 
 > **Fördjupning: Så bildas stjärnor**
-> I rymden finns enorma moln av gas – mest väte – och stoft. **Gravitationen** drar långsamt ihop molnet. När gasen trycks ihop ökar **trycket** och **temperaturen** i mitten. När det har blivit omkring 10 miljoner grader börjar vätekärnor slås ihop till helium – **fusion** – och en stjärna har tänts.
-> Energin från fusionen trycker utåt och håller emot gravitationen. Därför kan en stjärna lysa stadigt i miljarder år. När vätet tar slut börjar stjärnan slå ihop tyngre kärnor, och ämnen som kol och syre bildas. De största stjärnorna slutar med en enorm explosion – en **supernova** – som sprider ämnena ut i rymden. Kolet i din kropp har alltså en gång bildats i en stjärna.
+> 1. I rymden finns stora moln av gas – mest väte – och stoft.
+> 2. *Gravitationen* drar ihop molnet.
+> 3. När gasen trycks ihop ökar *trycket* och *temperaturen* i mitten.
+> 4. Vid ungefär 10 miljoner grader börjar vätekärnor slås ihop till helium – *fusion*. Stjärnan har tänts.
+> 5. Energin från fusionen trycker utåt och håller emot gravitationen – **därför** kan stjärnan lysa i miljarder år.
+> 6. När vätet tar slut slås tyngre kärnor ihop, och ämnen som kol och syre bildas.
+> 7. De största stjärnorna slutar med en enorm explosion – en *supernova* – som sprider ämnena ut i rymden.
+>
+> Kolet i din kropp har alltså en gång bildats i en stjärna.
 
 > **Fördjupning: Vätebomben**
 > En **vätebomb** (fusionsbomb) är en ännu kraftigare kärnvapenbomb än atombomben. Den behöver så hög temperatur för att starta fusionen att en atombomb (fission) används som "tändning". Värmen från fissionen får vätekärnor att slå ihop sig – samma process som i solen, men okontrollerad. En vätebomb kan vara hundratals gånger kraftigare än bomberna över Hiroshima och Nagasaki. Vätebomber har provsprängts, men aldrig använts i krig.
