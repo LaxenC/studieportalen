@@ -84,10 +84,10 @@ Portal.uppgifter([
         { rubrik: "Para ihop delen med dess uppgift.",
           par: [["Kärnbränsle", "Uran som klyvs och ger värme"], ["Styrstavar", "Fångar neutroner och styr kedjereaktionen"],
                 ["Vatten", "Kyler bränslet och blir till ånga"], ["Turbin och generator", "Gör om ångans rörelse till el"],
-                ["Kondensor", "Kyler ångan så att den blir vatten igen"]] },
+                ["Värmeväxlare", "Kyler ångan så att den blir vatten igen"]] },
         { rubrik: "Para ihop delen med vad som händer om den saknas.",
           par: [["Kärnbränsle", "Ingen fission och ingen värme"], ["Styrstavar", "Kedjereaktionen kan inte kontrolleras"],
-                ["Turbin och generator", "Värmen kan inte göras om till el"], ["Kondensor", "Ångan blir inte vatten igen"]] }
+                ["Turbin och generator", "Värmen kan inte göras om till el"], ["Värmeväxlare", "Ångan blir inte vatten igen"]] }
       ] },
 
     { id: "ke-styrstavar", kapitel: "karnenergi", avsnitt: ["karnkraft"], titel: "Kärnkraftverk – välj rätt",
