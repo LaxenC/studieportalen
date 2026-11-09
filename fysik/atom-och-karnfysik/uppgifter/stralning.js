@@ -104,6 +104,7 @@ Portal.uppgifter([
       ] },
 
     { id: "str-em-bast", kapitel: "stralning", avsnitt: ["em"], titel: "Elektromagnetisk strålning – bästa beskrivningen",
+      punkter: ["emstral"],
       typ: "flerval", nivaerPerArskurs: {7:3, 8:[1,2], 9:[1]},
       varianter: [
         { fraga: "Vilken är den bästa beskrivningen av elektromagnetisk strålning?",
@@ -302,5 +303,96 @@ Portal.uppgifter([
         { fraga: "Ge ett exempel på hur strålning används i sjukvården. Förklara en möjlighet och en risk.",
           begrepp: ["röntgen|strålbehandling|datortomografi|spårämne", "möjlighet|kan se|bota|upptäcka", "risk|skada", "cell|celler|DNA", "dos"],
           modell: "**Strålbehandling** används mot cancer. **Möjligheten** är att strålningen skadar cancercellernas **DNA** så att de dör, och många kan **botas**. **Risken** är att strålningen också kan **skada** friska **celler** och ge en ökad risk för cancer senare. Därför används så låg **dos** som möjligt och man strålar från flera håll." }
+      ] },
+    { id: "em-lar-foton", kapitel: "stralning", avsnitt: ["em"], titel: "Fotoner – välj rätt",
+      typ: "flerval", nivaerPerArskurs: {7: [1], 8: [1], 9: [0, 1]},
+      varianter: [
+        { fraga: "Vad överför energin i elektromagnetisk strålning?", punkter: ["emstral"],
+          alt: [ { t: "Fotoner", s: "ratt", f: "fotonerna är små energipaket som för energin vidare." },
+                 { t: "Atomkärnor", s: "fel", f: "det är fotoner som överför energin." },
+                 { t: "Protoner", s: "fel", f: "det är fotoner som överför energin." },
+                 { t: "Ljud", s: "fel", f: "det är fotoner som överför energin." } ] },
+        { fraga: "Vad är en foton?", punkter: ["emstral-foton"],
+          alt: [ { t: "En elektromagnetisk våg i partikelform", s: "ratt", f: "man kan tänka på den som ett litet energipaket." },
+                 { t: "Ett litet energipaket", s: "delvis", f: "man kan tänka så – men en foton är en elektromagnetisk våg i partikelform." },
+                 { t: "En partikel i atomkärnan", s: "fel", f: "atomkärnan består av protoner och neutroner." },
+                 { t: "En elektron med hög energi", s: "fel", f: "en foton är en elektromagnetisk våg i partikelform." } ] },
+        { fraga: "Vilken massa och laddning har en foton?", punkter: ["emstral-foton"],
+          alt: [ { t: "Ingen massa och ingen laddning", s: "ratt", f: "fotonen är ett energipaket utan massa och laddning." },
+                 { t: "Ingen laddning men massa", s: "delvis", f: "stämmer med laddningen – men en foton har heller ingen massa." },
+                 { t: "Positiv laddning", s: "fel", f: "en foton har ingen laddning." },
+                 { t: "Negativ laddning", s: "fel", f: "en foton har ingen laddning." } ] }
+      ] },
+    { id: "em-lar-energi", kapitel: "stralning", avsnitt: ["em"], titel: "Frekvens och energi – välj rätt",
+      typ: "flerval", nivaerPerArskurs: {7: [1], 8: [1], 9: [0, 1]},
+      varianter: [
+        { fraga: "Vilken strålning har mest energi?", punkter: ["emstral-energi"],
+          alt: [ { t: "Gammastrålning", s: "ratt", f: "den har högst frekvens i spektrumet." },
+                 { t: "Synligt ljus", s: "fel", f: "gammastrålning har högre frekvens och mer energi." },
+                 { t: "Radiovågor", s: "fel", f: "radiovågor har lägst frekvens och minst energi." },
+                 { t: "Infrarött", s: "fel", f: "gammastrålning har högre frekvens och mer energi." } ] },
+        { fraga: "Varför har gammastrålning mer energi än synligt ljus?", punkter: ["emstral-energi"],
+          alt: [ { t: "Den har högre frekvens", s: "ratt", f: "hög frekvens innebär hög energi." },
+                 { t: "Den ligger längre åt höger i spektrumet", s: "delvis", f: "stämmer – men förklaringen är att den har högre frekvens." },
+                 { t: "Den har längre våglängd", s: "fel", f: "gammastrålning har kortare våglängd." },
+                 { t: "Den består av partiklar från atomkärnan", s: "fel", f: "gammastrålning består av fotoner." } ] }
+      ] },
+    { id: "em-lar-ljus", kapitel: "stralning", avsnitt: ["em"], titel: "Synligt ljus – välj rätt",
+      typ: "flerval", nivaerPerArskurs: {7: [1], 8: [1], 9: [0, 1]},
+      varianter: [
+        { fraga: "Hur bildas synligt ljus?", punkter: ["emstral-ljus"],
+          alt: [ { t: "En elektron hoppar från ett yttre skal till ett inre och frigör energi", s: "ratt", f: "det yttre skalet har högre energinivå, så energi frigörs som en foton." },
+                 { t: "En elektron hoppar mellan elektronskal", s: "delvis", f: "stämmer – men ljuset bildas när den hoppar inåt och frigör energi." },
+                 { t: "En elektron tar upp energi och hoppar utåt", s: "fel", f: "då tar elektronen upp energi – ljuset bildas när den faller tillbaka." },
+                 { t: "Atomkärnan skickar ut partiklar", s: "fel", f: "synligt ljus bildas i elektronskalen." } ] },
+        { fraga: "Vilken färg får ljuset när mycket energi frigörs?", punkter: ["emstral-ljus"],
+          alt: [ { t: "Blått", s: "ratt", f: "mycket energi ger hög frekvens och blått ljus." },
+                 { t: "Rött", s: "fel", f: "rött ljus kommer från mindre energi." },
+                 { t: "Vitt", s: "fel", f: "mycket energi ger blått ljus." },
+                 { t: "Svart", s: "fel", f: "mycket energi ger blått ljus." } ] }
+      ] },
+    { id: "em-lar-kedja", kapitel: "stralning", avsnitt: ["em"], titel: "Så bildas synligt ljus – kedja",
+      typ: "kedja", nivaerPerArskurs: {7: [1, 2], 8: [1, 2], 9: [1, 2]}, punkter: ["emstral-ljus"],
+      varianter: [
+        { rubrik: "Fyll i de tomma stegen.",
+          steg: ["Elektronen tar upp energi, till exempel från värme",
+                 "Elektronen hoppar ut till ett skal med högre energinivå",
+                 "Elektronen faller tillbaka till ett skal med lägre energinivå",
+                 "Energin frigörs som en foton – synligt ljus"],
+          luckor: { 1: [1], 2: [1, 2] },
+          fel: ["Atomkärnan klyvs", "Elektronen lämnar atomen"] }
+      ] },
+    { id: "em-lar-rontgen", kapitel: "stralning", avsnitt: ["em"], titel: "Röntgenstrålning – välj rätt",
+      typ: "flerval", nivaerPerArskurs: {7: [1], 8: [1], 9: [0, 1]},
+      varianter: [
+        { fraga: "Varför syns skelettet vitt på en röntgenbild?", punkter: ["emstral-rönt"],
+          alt: [ { t: "Skelettet stoppar mer strålning än mjukdelarna", s: "ratt", f: "mindre strålning når bilden bakom skelettet." },
+                 { t: "Skelettet är tätare", s: "delvis", f: "stämmer – och därför stoppar det mer av strålningen." },
+                 { t: "Skelettet lyser när strålningen träffar", s: "fel", f: "skelettet stoppar strålningen." },
+                 { t: "Strålningen går lättare igenom skelettet", s: "fel", f: "den går lättare igenom mjukdelarna." } ] },
+        { fraga: "Vad används röntgenstrålning till i sjukvården?", punkter: ["emstral-rönt"],
+          alt: [ { t: "Att ta bilder av kroppens inre", s: "ratt", f: "till exempel bilder av skelettet." },
+                 { t: "Att värma upp kroppen", s: "fel", f: "röntgen används för att ta bilder." },
+                 { t: "Att döda bakterier", s: "fel", f: "röntgen används för att ta bilder." },
+                 { t: "Att mäta blodtrycket", s: "fel", f: "röntgen används för att ta bilder." } ] }
+      ] },
+    { id: "em-lar-gamma", kapitel: "stralning", avsnitt: ["em"], titel: "Gammastrålning – välj rätt",
+      typ: "flerval", nivaerPerArskurs: {8: [1], 9: [0, 1]},
+      varianter: [
+        { fraga: "Var kommer gammastrålning ifrån?", punkter: ["emstral-gam"],
+          alt: [ { t: "Från atomkärnan", s: "ratt", f: "den bildas ofta i samband med partikelstrålning." },
+                 { t: "Från elektroner som hoppar mellan skal", s: "fel", f: "så bildas synligt ljus." },
+                 { t: "Från radiosändare", s: "fel", f: "gammastrålning kommer från atomkärnan." },
+                 { t: "Från skelettet", s: "fel", f: "gammastrålning kommer från atomkärnan." } ] },
+        { fraga: "Vad används gammastrålning till inom sjukvården?", punkter: ["emstral-gam"],
+          alt: [ { t: "Cancerbehandling", s: "ratt", f: "den mycket energirika strålningen kan döda cancerceller." },
+                 { t: "Att ta bilder av skelettet", s: "fel", f: "det används röntgenstrålning till." },
+                 { t: "Att värma upp mat", s: "fel", f: "gammastrålning används vid cancerbehandling." },
+                 { t: "Att se i mörker", s: "fel", f: "gammastrålning används vid cancerbehandling." } ] }
+      ] },
+    { id: "em-lar-sf", kapitel: "stralning", avsnitt: ["em"], titel: "Elektromagnetisk strålning – sant eller falskt",
+      typ: "santfalskt", nivaerPerArskurs: {7: [1], 8: [1], 9: [1]}, punkter: ["emstral", "emstral-foton", "emstral-energi", "emstral-ljus", "emstral-rönt"],
+      varianter: [
+        { pst: [["Fotoner överför energin i elektromagnetisk strålning.", true], ["En foton har ingen massa och ingen laddning.", true], ["Radiovågor har högre frekvens än gammastrålning.", false], ["Synligt ljus bildas när en elektron hoppar från ett yttre skal till ett inre.", true], ["Skelettet syns svart på en röntgenbild.", false]] }
       ] }
 ]);

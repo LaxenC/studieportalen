@@ -86,11 +86,11 @@ const MD = (() => {
     // Årskurs kan stå före eller efter id:t: "- (åk8,9) {#id} text" eller "- {#id} (åk 8-9) text"
     if (tl.startsWith("viktigt")) inre = inre.map(l => {
       const AK = "\\((?:åk|ak)\\s*[\\d,\\såk–-]+\\)";
-      const k = l.match(new RegExp(`^(\\s*[-*]\\s+)(${AK}\\s*)?\\{#([\\w-]+)\\}\\s*(${AK}\\s*)?(.*)$`, "i"));
+      const k = l.match(new RegExp(`^(\\s*[-*])\\s*(${AK}\\s*)?\\{#([\\w\u00C0-\u017F-]+)\\}\\s*(${AK}\\s*)?(.*)$`, "i"));
       if (!k) return l;
       const akDel = (k[2] || k[4] || "").trim(), ak = akDel ? parseAk(akDel.replace(/åk|ak/gi, "")) : null;
       ctx.punkter && ctx.punkter.push({ id: k[3], html: inline(k[5]), ...(ak && ak.length ? { ak } : {}) });
-      return k[1] + (akDel ? akDel + " " : "") + k[5];
+      return k[1] + " " + (akDel ? akDel + " " : "") + k[5];
     });
     const innehall = block(inre, ctx).map(b => b.html).join("");
     if (tl.startsWith("exempel")) return { html: `<div class="exempel"><p class="et">${inline(titel)}</p>${innehall}</div>` };
