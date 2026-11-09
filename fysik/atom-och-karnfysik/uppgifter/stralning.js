@@ -150,7 +150,7 @@ Portal.uppgifter([
       ] },
 
     { id: "str-jon-text", kapitel: "stralning", avsnitt: ["jonis"], titel: "Joniserande strålning – fyll i begrepp",
-      typ: "lucktext", nivaerPerArskurs: {7:3, 8:[1,2], 9:[1]}, rullista: [0],
+      typ: "lucktext", nivaerPerArskurs: {7:3, 8:[1,2], 9:[1]}, rullista: [0], punkter:["jonstr-str"],
       ordlista: ["energi", "elektroner", "protoner", "jon", "isotop", "gammastrålning", "röntgenstrålning", "synligt ljus", "radiovågor"],
       varianter: [
         { text: "Joniserande strålning har tillräckligt hög [energi] för att slå loss [elektroner|elektron] från atomer." },
@@ -160,7 +160,7 @@ Portal.uppgifter([
       ] },
 
     { id: "str-jon-sortera", kapitel: "stralning", avsnitt: ["jonis"], titel: "Joniserande eller inte? – sortera",
-      typ: "sortera", nivaerPerArskurs: {7:3, 8:[1,2], 9:[1]},
+      typ: "sortera", nivaerPerArskurs: {7:3, 8:[1,2], 9:[1]},punkter:["jonstr-str"],
       varianter: [
         { grupper: ["Joniserande", "Inte joniserande"],
           saker: [["Alfastrålning", 0], ["Gammastrålning", 0], ["Röntgenstrålning", 0], ["Synligt ljus", 1], ["Radiovågor", 1], ["Mikrovågor", 1]] },
@@ -169,7 +169,7 @@ Portal.uppgifter([
       ] },
 
     { id: "str-jon-bast", kapitel: "stralning", avsnitt: ["jonis"], titel: "Joniserande strålning – bästa beskrivningen",
-      typ: "flerval", nivaerPerArskurs: {7:3, 8:[1,2], 9:[1]},
+      typ: "flerval", nivaerPerArskurs: {7:3, 8:[1,2], 9:[1]},punkter:["jonstr"],
       varianter: [
         { fraga: "Vilken är den bästa beskrivningen av joniserande strålning?",
           alt: [ { t: "Strålning med tillräckligt hög energi för att slå loss elektroner från atomer", s: "ratt", f: "då bildas joner – därav namnet." },
@@ -179,7 +179,7 @@ Portal.uppgifter([
       ] },
 
     { id: "str-jon-atom", kapitel: "stralning", avsnitt: ["jonis"], titel: "Joniserande strålning – vad händer med atomen?",
-      typ: "flerval", nivaerPerArskurs: {7:3, 8:[3], 9:[2]},
+      typ: "flerval", nivaerPerArskurs: {7:3, 8:[3], 9:[2]}, punkter:["jonstr"],
       varianter: [
         { fraga: "Joniserande strålning träffar en neutral atom och slår loss en elektron. Vad blir atomen då?",
           alt: [ { t: "En positiv jon", s: "ratt", f: "atomen har nu fler protoner än elektroner, och får därför positiv laddning." },
@@ -189,7 +189,7 @@ Portal.uppgifter([
       ] },
 
     { id: "str-jon-text2", kapitel: "stralning", avsnitt: ["jonis"], titel: "Joniserande strålning – vad händer med atomen? (fyll i)",
-      typ: "lucktext", nivaerPerArskurs: {7:3, 8:[3], 9:[2]},
+      typ: "lucktext", nivaerPerArskurs: {7:3, 8:[3], 9:[2]},punkter:["jonstr-str"],
       varianter: [
         { text: "När joniserande strålning slår loss en [elektron] från en neutral atom får atomen fler [protoner|proton] än elektroner. Då blir atomen en [positiv|positivt laddad] jon." }
       ] },
