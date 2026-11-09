@@ -59,7 +59,7 @@ Den används inom sjukvården för att ta bilder av kroppens inre. På röntgenb
 > - {#emstral-energi} Hög frekvens (hur tätt vågorna är) innebär hög energi – **därför** har gammastrålning mer energi än synligt ljus.
 > - {#emstral-ljus} **Synligt ljus** bildas när elektroner hoppar från ett yttre skal till ett inre och frigör energi **eftersom** det yttre skalet har högre energinivå.
 > - {#emstral-rönt} **Röntgenstrålning** används för att ta bild på skelett, **eftersom** strålningen stoppas av skelett men går igenom mjukdelar.
->  - {#emstral-gam} (åk8,9)**Gamma** strålning med mycket högre energi, bildas ofta i samband med partikelstrålning
+>    {#emstral-gam} (åk8,9)**Gamma** strålning med mycket högre energi, bildas ofta i samband med partikelstrålning
 
 ## Partikelstrålning {#partikel}
 
@@ -119,12 +119,10 @@ Kärnan får en proton mer och en neutron mindre. Atomnumret ökar med 1, så de
 > Vilket ämne det är bestäms av antalet protoner. Vid *alfastrålning* lämnar 2 protoner kärnan, och vid *betastrålning* blir en neutron till en proton. I båda fallen ändras antalet protoner – **därför** blir det ett annat ämne.
 
 > **Viktigt att komma ihåg**
-> - (åk8,9)Vid partikelstrålning så är det partiklar från atomkärnan som strålar ut, så atomkärnan ser annorlunda ut efter strålningen
+> - {#pstral}(åk8,9)Vid partikelstrålning så är det partiklar från atomkärnan som strålar ut, så atomkärnan ser annorlunda ut efter strålningen
 > - Alfastrålning och Betastrålning är typer av partikelstrålning.
-> - (åk8,9)**Alfastrålning** är partikelstrålning och det är en alfapartikel som strålar ut
-> - (åk8,9)**Alfapartikel** är en heliumkärna med mycket energi.
-> - (åk8,9)**Betastrålning** är partikelstrålning och det är en betapartikel som strålar ut
-> - (åk8,9)**Betapartikel** är en elektron med mycket energi
+> - {#pstral-alfa} (åk8,9)**Alfastrålning** är partikelstrålning och det är en alfapartikel som strålar ut. **Alfapartikel** är en heliumkärna med mycket energi.
+> - {#pstral-beta} (åk8,9) **Betastrålning** är partikelstrålning och det är en betapartikel som strålar ut. **Betapartikel** är en elektron med mycket energi
 
 ## Joniserande strålning {#jonis åk=8,9}
 
@@ -150,12 +148,12 @@ Joniserande strålning
 > *Joniserande strålning* har så mycket *energi* att den kan slå loss elektroner från atomer så att det bildas *joner*. **Därför** kan celler och DNA skadas, vilket kan leda till mutationer och cancer. Bly är ett tungt och tätt ämne som absorberar strålningen innan den når kroppen.
 
 > **Viktigt att komma ihåg**
-> - Joniserande strålning kan slå loss elektroner och bilda joner – **därför** kan den skada celler och DNA.
-> - Alfa, beta, gamma och röntgen är joniserande.
-> - Alfastrålning stoppas av papper
-> - Betastrålning av aluminiumfolie
-> - Röntgenstrålning av tunnare bly
-> - Gammastrålning av tjock blyvägg
+> - {#jonstr} Joniserande strålning kan slå loss elektroner och bilda joner – **därför** kan den skada celler och DNA.
+> - {#jonstr-str} Alfa, beta, gamma och röntgen är joniserande.
+> - {#jonstr-stoppas} Alfastrålning stoppas av papper
+> - {#jonstr-stoppas} Betastrålning av aluminiumfolie
+> - {#jonstr-stoppas} Röntgenstrålning av tunnare bly
+> - {#jonstr-stoppas} Gammastrålning av tjock blyvägg
 > - Ju mer energi och ju mindre partiklar, desto svårare är strålningen att stoppa.
 
 ## Strålning i sjukvården {#sjukvard}
