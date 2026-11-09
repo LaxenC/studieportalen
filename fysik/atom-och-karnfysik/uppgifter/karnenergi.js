@@ -209,7 +209,7 @@ Portal.uppgifter([
                  { t: "I ett kärnkraftverk", s: "fel", f: "kärnkraftverk klyver uran – de bildar inte kol." },
                  { t: "Det har alltid funnits", s: "fel", f: "efter big bang fanns nästan bara väte och helium. Tyngre ämnen bildades i stjärnor." } ] }
       ] },
-    { id: "kedja-fission", kapitel: "karnenergi", avsnitt: ["fission", "kedja", "karnkraft"], titel: "Kedja: från fission till el",
+    { id: "kedja-fission", kapitel: "karnenergi", avsnitt: ["karnkraft"], titel: "Kedja: från fission till el",
       typ: "kedja", nivaer: [1, 2, 3],
       varianter: [
         { rubrik: "Fyll i de tomma stegen i kedjan – från fission till el i ett kärnkraftverk.",
