@@ -41,7 +41,7 @@ Portal.uppgifter([
       ] },
 
     { id: "atom-text", kapitel: "atom", avsnitt: ["delar"], titel: "Atomens delar – text",
-      typ: "lucktext", nivaerPerArskurs: { 7: [1], 8: [0,1], 9: [0]}, rullista: [0],punkter: ["atom-par"],
+      typ: "lucktext", nivaerPerArskurs: { 7: [1], 8: [0,1], 9: [0]}, rullista: [0],
       ordlista: ["protoner", "neutroner", "elektroner", "proton", "neutron", "elektron",
                  "atomkärnan", "kärna", "skal", "positiv", "negativ", "ingen"],
       varianter: [
@@ -60,7 +60,7 @@ Portal.uppgifter([
       ] },
 
     { id: "atom-para", kapitel: "atom", avsnitt: ["delar"], titel: "Atomens delar – para ihop",
-      typ: "para",  nivaerPerArskurs: { 7: [1], 8: [0,1], 9: [0]},punkter: ["atom-par"],
+      typ: "para",  nivaerPerArskurs: { 7: [1], 8: [0,1], 9: [0]},
       varianter: [
         { rubrik: "Para ihop partikeln med dess laddning.",
           par: [["Proton", "Positiv laddning (+1)"], ["Neutron", "Ingen laddning (0)"], ["Elektron", "Negativ laddning (−1)"]] },
@@ -73,7 +73,7 @@ Portal.uppgifter([
       ] },
 
     { id: "atom-para-bild", kapitel: "atom", avsnitt: ["delar"], titel: "Atomens delar – bild och namn",
-      typ: "para",  nivaerPerArskurs: { 7: [1], 8: [0,1], 9: [0]},punkter: ["atom-par"],
+      typ: "para",  nivaerPerArskurs: { 7: [1], 8: [0,1], 9: [0]},
       varianter: [
         { rubrik: "Para ihop bilden med rätt namn.",
           par: [["bild:proton", "Proton"], ["bild:neutron", "Neutron"], ["bild:elektron", "Elektron"],
