@@ -228,6 +228,8 @@ Olika ämnen har mycket olika halveringstid:
 > - Efter varje halveringstid halveras det som är kvar: 100 % → 50 % → 25 % → 12,5 %.
 > - Man kan inte veta när en enskild kärna sönderfaller, **eftersom** det styrs av slumpen.
 
+[Prova själv: Halveringstid och aktivitet](#/fysik/atom-och-karnfysik/aktiviteter/halveringstid-aktivitet)
+
 ## Kol-14-metoden {#kol14 åk=8-9}
 
 Kol-14 är en radioaktiv isotop av kol med 6 protoner och 8 neutroner. [note, 14,8,C] Den har halveringstiden 5 730 år. Med hjälp av kol-14 kan man ta reda på hur gammalt något är som en gång har levt, till exempel trä, ben eller tyg.

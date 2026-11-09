@@ -1,0 +1,349 @@
+<!doctype html>
+<html lang="sv">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Halveringstid och aktivitet</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@500;700;800;900&display=swap">
+<style>
+  :root{--bg:#eef3fb; --card:#ffffff; --text:#152238; --muted:#4f5d75; --line:#d5deeb; --accent:#2563eb; --accent-ink:#ffffff; --accent-soft:#dbe7ff; --ok:#2f9e57; --ok-soft:#e8f7ec; --bad:#d63c45; --bad-soft:#fdeaec; --info:#2b78c9; --info-soft:#e6f1fc; --rem:#b7850c; --rem-soft:#fff6dd;}
+  @media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--bg:#0f1626; --card:#18223a; --text:#e8edf7; --muted:#a6b1c6; --line:#2c3a58; --accent:#5b8cff; --accent-ink:#0f1626; --accent-soft:#233a6b; --ok:#5fd38a; --ok-soft:#16301f; --bad:#ff7a82; --bad-soft:#3a1a20; --info:#6fb0f2; --info-soft:#152a44; --rem:#f0c44a; --rem-soft:#33290f; color-scheme:dark;}}
+  :root[data-theme="dark"]{--bg:#0f1626; --card:#18223a; --text:#e8edf7; --muted:#a6b1c6; --line:#2c3a58; --accent:#5b8cff; --accent-ink:#0f1626; --accent-soft:#233a6b; --ok:#5fd38a; --ok-soft:#16301f; --bad:#ff7a82; --bad-soft:#3a1a20; --info:#6fb0f2; --info-soft:#152a44; --rem:#f0c44a; --rem-soft:#33290f; color-scheme:dark;}
+  [hidden]{display:none!important}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--text);
+    font:16px/1.55 "Nunito",system-ui,sans-serif}
+  main{max-width:760px;margin:0 auto;padding:24px 16px 80px}
+  h1{font-size:1.7rem;margin:0 0 4px}
+  .lead{color:var(--muted);margin:0 0 16px}
+  .progress{position:sticky;top:0;z-index:5;background:var(--bg);padding:10px 0;margin-bottom:8px}
+  .bar{height:8px;border-radius:99px;background:var(--line);overflow:hidden}
+  .bar>div{height:100%;width:0;background:var(--accent);transition:width .4s}
+  .progress small{color:var(--muted)}
+  .step{background:var(--card);border:1px solid var(--line);border-radius:14px;
+    padding:18px 18px 8px;margin:16px 0;animation:fade .4s ease}
+  @keyframes fade{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+  .step h2{font-size:1.15rem;margin:0 0 8px;display:flex;gap:10px;align-items:center}
+  .num-badge{background:var(--accent);color:var(--accent-ink);border-radius:99px;
+    min-width:28px;height:28px;display:inline-flex;align-items:center;justify-content:center;font-size:.9rem}
+  .done-badge{margin-left:auto;font-size:.85rem;color:var(--ok);display:none}
+  .step.complete .done-badge{display:inline}
+  .task{border-top:1px dashed var(--line);padding:12px 0}
+  .task:first-of-type{border-top:none}
+  .q{font-weight:600;margin:0 0 8px}
+  .row{display:flex;align-items:center;gap:10px;margin:6px 0;flex-wrap:wrap}
+  .row label{min-width:240px}
+  input[type=text]{width:110px;padding:8px 10px;border:1px solid var(--line);border-radius:8px;
+    background:var(--bg);color:var(--text);font:inherit}
+  input.ok{border-color:var(--ok);background:var(--ok-soft)}
+  input.bad{border-color:var(--bad);background:var(--bad-soft)}
+  textarea{width:100%;min-height:80px;padding:10px;border:1px solid var(--line);border-radius:8px;
+    background:var(--bg);color:var(--text);font:inherit;resize:vertical}
+  button{font:inherit;cursor:pointer;border-radius:8px;padding:8px 14px;border:1px solid var(--accent);
+    background:var(--accent);color:var(--accent-ink);font-weight:700}
+  button.ghost{background:transparent;color:var(--accent)}
+  button:disabled{opacity:.45;cursor:not-allowed}
+  .btns{display:flex;gap:8px;flex-wrap:wrap;margin-top:8px}
+  .opts{display:grid;gap:8px}
+  .opts button{text-align:left;background:var(--bg);color:var(--text);border:1px solid var(--line)}
+  .opts button.ok{border-color:var(--ok);background:var(--ok-soft)}
+  .opts button.bad{border-color:var(--bad);background:var(--bad-soft)}
+  .fb{margin-top:8px;padding:8px 12px;border-radius:8px;display:none}
+  .fb.ok{display:block;background:var(--ok-soft);color:var(--ok)}
+  .fb.bad{display:block;background:var(--bad-soft);color:var(--bad)}
+  .hint{display:none;margin-top:8px;padding:8px 12px;border-radius:8px;background:var(--rem-soft)}
+  .model{display:none;margin-top:8px;padding:10px 12px;border-radius:8px;background:var(--info-soft);
+    border-left:4px solid var(--info)}
+  .model b{color:var(--info)}
+  .info{padding:12px 14px;border-radius:10px;background:var(--info-soft);border-left:4px solid var(--info);margin:8px 0 12px}
+  .remember{padding:14px 16px;border-radius:10px;background:var(--rem-soft);border-left:4px solid var(--rem);margin:12px 0}
+  .remember h3{margin:0 0 6px;font-size:1rem}
+  .remember ul{margin:0;padding-left:20px}
+  .context{font-style:italic;color:var(--muted);margin:0 0 6px}
+  @media (max-width:520px){ .row label{min-width:100%} }
+</style>
+</head>
+<body>
+<main>
+  <h1>Halveringstid och aktivitet</h1>
+  <p class="lead">Du vet redan vad halveringstid är. Nu ska du upptäcka vad som händer med <em>strålningen</em> från ett radioaktivt ämne över tid. Gör stegen i ordning – nästa steg låses upp när du är klar.</p>
+
+  <div class="progress">
+    <div class="bar"><div id="barfill"></div></div>
+    <small id="progtext">Steg 0 av 8 klara</small>
+  </div>
+
+  <!-- STEG 1 -->
+  <section class="step" data-step="1">
+    <h2><span class="num-badge">1</span>Det du redan kan <span class="done-badge">✓ Klart</span></h2>
+    <p>Ett prov innehåller <b>9&nbsp;600 radioaktiva kärnor</b>. Halveringstiden är <b>1 minut</b>.</p>
+    <div class="task num">
+      <p class="q">Hur många kärnor finns kvar efter…</p>
+      <div class="row"><label>1 minut</label><input type="text" inputmode="decimal" data-answer="4800"></div>
+      <div class="row"><label>2 minuter</label><input type="text" inputmode="decimal" data-answer="2400"></div>
+      <div class="row"><label>3 minuter</label><input type="text" inputmode="decimal" data-answer="1200"></div>
+      <div class="btns"><button class="check">Kontrollera</button><button class="ghost showhint">Ledtråd</button></div>
+      <div class="hint">Efter varje halveringstid finns hälften av det som <em>fanns kvar</em> – inte hälften av det ursprungliga.</div>
+      <div class="fb"></div>
+    </div>
+  </section>
+
+  <!-- STEG 2 -->
+  <section class="step" data-step="2" hidden>
+    <h2><span class="num-badge">2</span>Vänd på frågan <span class="done-badge">✓ Klart</span></h2>
+    <p>Nu räknar vi inte hur många som är <em>kvar</em>, utan hur många som <em>sönderföll</em>.</p>
+    <div class="task num">
+      <p class="q">Hur många kärnor sönderföll under…</p>
+      <div class="row"><label>första minuten</label><input type="text" inputmode="decimal" data-answer="4800"></div>
+      <div class="row"><label>andra minuten</label><input type="text" inputmode="decimal" data-answer="2400"></div>
+      <div class="row"><label>tredje minuten</label><input type="text" inputmode="decimal" data-answer="1200"></div>
+      <div class="btns"><button class="check">Kontrollera</button><button class="ghost showhint">Ledtråd</button></div>
+      <div class="hint">Jämför hur många som fanns i början av minuten med hur många som fanns kvar i slutet.</div>
+      <div class="fb"></div>
+    </div>
+    <div class="task free">
+      <p class="q">Vad märker du om antalet sönderfall per minut? Skriv med egna ord.</p>
+      <textarea placeholder="Jag märker att…"></textarea>
+      <div class="btns"><button class="reveal" disabled>Jämför med ett exempelsvar</button></div>
+      <div class="model"><b>Exempelsvar:</b> Antalet sönderfall per minut halveras också – från 4&nbsp;800 till 2&nbsp;400 till 1&nbsp;200. Det följer samma mönster som antalet kärnor som är kvar.</div>
+    </div>
+  </section>
+
+  <!-- STEG 3 -->
+  <section class="step" data-step="3" hidden>
+    <h2><span class="num-badge">3</span>Förutsäg <span class="done-badge">✓ Klart</span></h2>
+    <div class="task num">
+      <p class="q">Hur många sönderfall tror du sker under <b>fjärde</b> minuten? Använd mönstret du hittade.</p>
+      <div class="row"><label>fjärde minuten</label><input type="text" inputmode="decimal" data-answer="600"></div>
+      <div class="btns"><button class="check">Kontrollera</button><button class="ghost showhint">Ledtråd</button></div>
+      <div class="hint">Efter 3 minuter finns 1&nbsp;200 kärnor kvar. Hur många finns kvar efter 4 minuter?</div>
+      <div class="fb"></div>
+    </div>
+  </section>
+
+
+  <!-- STEG 4 -->
+  <section class="step" data-step="4" hidden>
+    <h2><span class="num-badge">4</span>Sätt namn på det <span class="done-badge">✓ Klart</span></h2>
+    <div class="info">Antalet sönderfall per tidsenhet kallas <b>aktivitet</b>. Det är alltså precis det du räknade ut i steg 2 och 3 – provets aktivitet var 4&nbsp;800, 2&nbsp;400, 1&nbsp;200 och 600 sönderfall per minut.<br><br>Oftast anges aktiviteten per <em>sekund</em>. Då används enheten <b>becquerel (Bq)</b>: 1 Bq = 1 sönderfall per sekund.</div>
+    <div class="task mc">
+      <p class="q">Titta på dina svar i steg 2 och 3. Vad händer med provets aktivitet för varje halveringstid?</p>
+      <div class="opts">
+        <button data-ok="0" data-fb="Titta på dina svar igen: 4 800, 2 400, 1 200, 600 – är de lika stora?">Den är densamma.</button>
+        <button data-ok="1" data-fb="Rätt! Aktiviteten halveras för varje halveringstid – eftersom det finns hälften så många kärnor kvar som kan sönderfalla.">Den halveras.</button>
+        <button data-ok="0" data-fb="Titta på minskningen: från 4 800 till 2 400 är 2 400 färre, men från 1 200 till 600 bara 600 färre. Minskningen blir mindre och mindre – aktiviteten halveras.">Den minskar med lika mycket varje gång.</button>
+      </div>
+      <div class="fb"></div>
+    </div>
+    <div class="task num">
+      <p class="q">Använd mönstret: hur stor är provets aktivitet under <b>femte</b> minuten?</p>
+      <div class="row"><label>femte minuten</label><input type="text" inputmode="decimal" data-answer="300"><span>sönderfall per minut</span></div>
+      <div class="btns"><button class="check">Kontrollera</button><button class="ghost showhint">Ledtråd</button></div>
+      <div class="hint">Under fjärde minuten var aktiviteten 600 sönderfall per minut. Vad händer efter ytterligare en halveringstid?</div>
+      <div class="fb"></div>
+    </div>
+    <div class="task num">
+      <p class="q">Räkna om till becquerel. Under första minuten skedde 4&nbsp;800 sönderfall. Hur många sönderfall blir det i genomsnitt per sekund? Gör likadant för de andra raderna.</p>
+      <div class="row"><label>4&nbsp;800 sönderfall på en minut</label><input type="text" inputmode="decimal" data-answer="80"><span>Bq</span></div>
+      <div class="row"><label>2&nbsp;400 sönderfall på en minut</label><input type="text" inputmode="decimal" data-answer="40"><span>Bq</span></div>
+      <div class="row"><label>300 sönderfall på en minut</label><input type="text" inputmode="decimal" data-answer="5"><span>Bq</span></div>
+      <div class="btns"><button class="check">Kontrollera</button><button class="ghost showhint">Ledtråd</button></div>
+      <div class="hint">En minut är 60 sekunder. Om det sker 4&nbsp;800 sönderfall på 60 sekunder – hur många blir det på en sekund?</div>
+      <div class="fb"></div>
+    </div>
+  </section>
+
+  <!-- STEG 5 -->
+  <section class="step" data-step="5" hidden>
+    <h2><span class="num-badge">5</span>Vad skulle du höra? <span class="done-badge">✓ Klart</span></h2>
+    <p>En Geiger–Müller-mätare ”tickar” en gång för varje sönderfall den registrerar.</p>
+    <div class="task mc">
+      <p class="q">Du håller mätaren mot provet under lång tid. Vad händer med tickandet?</p>
+      <div class="opts">
+        <button data-ok="0" data-fb="Nej – tickandet visar antalet sönderfall, och de blir färre.">Det tickar lika snabbt hela tiden.</button>
+        <button data-ok="1" data-fb="Rätt! Tickandet blir långsammare och långsammare, eftersom aktiviteten halveras för varje halveringstid.">Det tickar långsammare och långsammare.</button>
+        <button data-ok="0" data-fb="Nej – efter två halveringstider finns en fjärdedel kvar, så det tickar fortfarande.">Det tystnar helt efter två halveringstider.</button>
+        <button data-ok="0" data-fb="Nej – det finns färre kärnor kvar, så det blir färre sönderfall.">Det tickar snabbare och snabbare.</button>
+      </div>
+      <div class="fb"></div>
+    </div>
+  </section>
+
+
+  <!-- STEG 6 -->
+  <section class="step" data-step="6" hidden>
+    <h2><span class="num-badge">6</span>Använd det du upptäckt <span class="done-badge">✓ Klart</span></h2>
+
+    <div class="task num">
+      <p class="context">Jod-131 används i sjukvården. Halveringstiden är 8 dygn.</p>
+      <p class="q">En patient får en dos med aktiviteten 1&nbsp;600 Bq. Vad är aktiviteten efter…</p>
+      <div class="row"><label>8 dygn</label><input type="text" inputmode="decimal" data-answer="800"><span>Bq</span></div>
+      <div class="row"><label>16 dygn</label><input type="text" inputmode="decimal" data-answer="400"><span>Bq</span></div>
+      <div class="row"><label>24 dygn</label><input type="text" inputmode="decimal" data-answer="200"><span>Bq</span></div>
+      <div class="row"><label>32 dygn</label><input type="text" inputmode="decimal" data-answer="100"><span>Bq</span></div>
+      <div class="btns"><button class="check">Kontrollera</button><button class="ghost showhint">Ledtråd</button></div>
+      <div class="hint">Hur många halveringstider är 8, 16, 24 och 32 dygn?</div>
+      <div class="fb"></div>
+    </div>
+
+    <div class="task num">
+      <p class="q">Baklänges: En mätning visar att aktiviteten sjönk från 800 Bq till 200 Bq på 12 timmar. Vad är halveringstiden?</p>
+      <div class="row"><label>halveringstid</label><input type="text" inputmode="decimal" data-answer="6"><span>timmar</span></div>
+      <div class="btns"><button class="check">Kontrollera</button><button class="ghost showhint">Ledtråd</button></div>
+      <div class="hint">Hur många gånger har aktiviteten halverats från 800 till 200? Hur lång tid tog varje halvering?</div>
+      <div class="fb"></div>
+    </div>
+
+    <div class="task free">
+      <p class="q">Två prover har lika många radioaktiva kärnor. Det ena har halveringstiden 1 timme, det andra 1&nbsp;000 år. Vilket prov har högst aktivitet just nu? Vilket är farligast på kort sikt – och på lång sikt? Motivera.</p>
+      <textarea placeholder="Jag tror att…"></textarea>
+      <div class="btns"><button class="reveal" disabled>Jämför med ett exempelsvar</button></div>
+      <div class="model"><b>Exempelsvar:</b> Provet med halveringstiden 1 timme har högst aktivitet, eftersom hälften av kärnorna sönderfaller på bara en timme – många sönderfall per sekund. Det är farligast på kort sikt. Men efter några dygn är nästan inget kvar. Provet med 1&nbsp;000 års halveringstid strålar mindre åt gången, men fortsätter stråla i tusentals år – det är problemet på lång sikt.<br><b>Kort halveringstid = hög aktivitet under kort tid.</b></div>
+    </div>
+
+  </section>
+
+  <!-- STEG 7 -->
+  <section class="step" data-step="7" hidden>
+    <h2><span class="num-badge">7</span>Förklara med egna ord <span class="done-badge">✓ Klart</span></h2>
+    <div class="task free">
+      <p class="q">Varför avtar aktiviteten från ett radioaktivt ämne – och varför avtar den långsammare och långsammare?</p>
+      <textarea placeholder="Aktiviteten avtar eftersom…"></textarea>
+      <div class="btns"><button class="reveal" disabled>Jämför med ett exempelsvar</button></div>
+      <div class="model"><b>Exempelsvar:</b> Varje kärna har samma chans att sönderfalla, men ju fler kärnor som sönderfallit, desto färre finns kvar som kan sönderfalla. Därför blir det färre sönderfall per sekund – aktiviteten minskar. Eftersom aktiviteten halveras för varje halveringstid blir minskningen mindre och mindre: från 80 Bq till 40 Bq är en minskning på 40 Bq, men från 10 Bq till 5 Bq bara 5 Bq.</div>
+    </div>
+  </section>
+
+  <!-- STEG 8 -->
+  <section class="step" data-step="8" hidden>
+    <h2><span class="num-badge">8</span>Tjernobyl: vad är farligast? <span class="done-badge">✓ Klart</span></h2>
+    <p class="context">Vid kärnkraftsolyckan i Tjernobyl 1986 spreds radioaktiva ämnen med vinden ända till Sverige. Två av dem var jod-131 (halveringstid 8 dygn) och cesium-137 (halveringstid 30 år).</p>
+    <div class="task mc">
+      <p class="q">Vilket ämne var farligast de första veckorna efter olyckan?</p>
+      <div class="opts">
+        <button data-ok="1" data-fb="Rätt! Den korta halveringstiden gav jod-131 mycket hög aktivitet – många sönderfall per sekund.">Jod-131</button>
+        <button data-ok="0" data-fb="Tänk på aktiviteten: vilket ämne har flest sönderfall per sekund när det finns lika mycket av båda?">Cesium-137</button>
+      </div>
+      <div class="fb"></div>
+    </div>
+    <div class="task mc">
+      <p class="q">Vilket ämne kan man fortfarande mäta i till exempel svamp och renkött i Sverige i dag?</p>
+      <div class="opts">
+        <button data-ok="0" data-fb="Hur många halveringstider på 8 dygn har gått sedan 1986? Hur mycket finns kvar då?">Jod-131</button>
+        <button data-ok="1" data-fb="Rätt! Med 30 års halveringstid har cesium-137 bara hunnit halveras drygt en gång sedan 1986.">Cesium-137</button>
+      </div>
+      <div class="fb"></div>
+    </div>
+    <div class="task free">
+      <p class="q">Så – vilket ämne var egentligen farligast? Förklara med hjälp av halveringstid och aktivitet.</p>
+      <textarea placeholder="Det beror på… eftersom…"></textarea>
+      <div class="btns"><button class="reveal" disabled>Jämför med ett exempelsvar</button></div>
+      <div class="model"><b>Exempelsvar:</b> Det beror på tidsperspektivet. Jod-131 var farligast på kort sikt: den korta halveringstiden ger hög aktivitet, alltså mycket strålning på kort tid. Men efter några månader hade jod-131 halverats så många gånger att nästan inget fanns kvar. Cesium-137 strålar mindre åt gången, men med 30 års halveringstid finns det kvar i naturen i många decennier och kan tas upp av svamp, lavar och renar. Det är farligast på lång sikt.</div>
+    </div>
+    <div class="remember">
+      <h3>Viktigt att komma ihåg</h3>
+      <ul>
+        <li><b>Aktivitet</b> = antal sönderfall per sekund. Mäts i becquerel (Bq).</li>
+        <li>Aktiviteten beror på hur många radioaktiva kärnor som finns kvar.</li>
+        <li>För varje halveringstid halveras både antalet kärnor och aktiviteten.</li>
+        <li>Kort halveringstid ger hög aktivitet under kort tid. Lång halveringstid ger lägre aktivitet under lång tid.</li>
+      </ul>
+    </div>
+  </section>
+</main>
+
+<script>
+(function(){
+  const steps = Array.from(document.querySelectorAll('.step'));
+  const total = steps.length;
+
+  function parseNum(v){
+    v = String(v).trim().replace(/\s/g,'').replace(',', '.');
+    if (v === '') return NaN;
+    return Number(v);
+  }
+
+  function updateProgress(){
+    const done = steps.filter(s => s.classList.contains('complete')).length;
+    document.getElementById('barfill').style.width = (done/total*100) + '%';
+    document.getElementById('progtext').textContent = 'Steg ' + done + ' av ' + total + ' klara';
+  }
+
+  function markTaskDone(task){
+    if (task.dataset.done === '1') return;
+    task.dataset.done = '1';
+    const step = task.closest('.step');
+    const tasks = Array.from(step.querySelectorAll('.task'));
+    if (tasks.every(t => t.dataset.done === '1')) {
+      step.classList.add('complete');
+      const idx = steps.indexOf(step);
+      const next = steps[idx + 1];
+      if (next && next.hidden) {
+        next.hidden = false;
+        setTimeout(() => next.scrollIntoView({behavior:'smooth', block:'start'}), 250);
+      }
+      updateProgress();
+    }
+  }
+
+  // Number tasks
+  document.querySelectorAll('.task.num').forEach(task => {
+    const fb = task.querySelector('.fb');
+    task.querySelector('.check').addEventListener('click', () => {
+      let allOk = true;
+      task.querySelectorAll('input').forEach(inp => {
+        const val = parseNum(inp.value);
+        let ok;
+        if (inp.dataset.answer !== undefined) {
+          ok = Math.abs(val - Number(inp.dataset.answer)) < 1e-9;
+        } else {
+          ok = val >= Number(inp.dataset.min) && val <= Number(inp.dataset.max);
+        }
+        inp.classList.toggle('ok', ok);
+        inp.classList.toggle('bad', !ok);
+        if (!ok) allOk = false;
+      });
+      fb.className = 'fb ' + (allOk ? 'ok' : 'bad');
+      fb.textContent = allOk ? 'Rätt! Bra jobbat.' : 'Inte riktigt – titta på de röda rutorna och försök igen. Ta hjälp av ledtråden om du vill.';
+      if (allOk) markTaskDone(task);
+    });
+    const hb = task.querySelector('.showhint');
+    if (hb) hb.addEventListener('click', () => {
+      task.querySelector('.hint').style.display = 'block';
+    });
+  });
+
+  // Multiple choice tasks
+  document.querySelectorAll('.task.mc').forEach(task => {
+    const fb = task.querySelector('.fb');
+    task.querySelectorAll('.opts button').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const ok = btn.dataset.ok === '1';
+        btn.classList.add(ok ? 'ok' : 'bad');
+        fb.className = 'fb ' + (ok ? 'ok' : 'bad');
+        fb.textContent = btn.dataset.fb;
+        if (ok) {
+          task.querySelectorAll('.opts button').forEach(b => b.disabled = (b !== btn));
+          markTaskDone(task);
+        }
+      });
+    });
+  });
+
+  // Free text tasks
+  document.querySelectorAll('.task.free').forEach(task => {
+    const ta = task.querySelector('textarea');
+    const btn = task.querySelector('.reveal');
+    ta.addEventListener('input', () => { btn.disabled = ta.value.trim().length < 15; });
+    btn.addEventListener('click', () => {
+      task.querySelector('.model').style.display = 'block';
+      btn.disabled = true;
+      markTaskDone(task);
+    });
+  });
+
+  updateProgress();
+})();
+</script>
+</body>
+</html>
