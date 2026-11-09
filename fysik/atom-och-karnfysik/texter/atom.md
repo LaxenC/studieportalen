@@ -43,7 +43,8 @@ Protoner och neutroner är ungefär **2000 gånger tyngre** än en elektron. Nä
 
 > **Viktigt att komma ihåg**
 > - Protoner (+) och neutroner finns i atomkärnan. Elektroner (-) finns i skal runt kärnan.
-> - Atomen består nästan bara av tomrum, om atomen var stor som Globen skulle kärnan vara stor som ett blåbär.
+> - Atomen består nästan bara av tomrum (liten kärna i mitten och elektroner runt), om atomen var stor som Globen skulle kärnan vara stor som ett blåbär.
+> - Protoner och neutroner väger cirka 2000 gånger mer än elektroner. 
 > - Nästan hela atomens vikt finns i kärnan, **eftersom** protoner och neutroner är ungefär 2000 gånger tyngre än elektroner.
 
 
