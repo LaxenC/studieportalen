@@ -21,8 +21,8 @@
    ===================================================================== */
 Portal.uppgifter([
 
-    { id: "sam-andra", kapitel: "samband", titel: "Ändra atomen",
-      typ: "andra", nivaerPerArskurs : {7:[3], 8:[2,3], 9:[1,2]}, punkter:{0:["atom-isotop"],1:["atom-jon"],2:["atom-jon"], 3:["atom-ämne"]},
+    { id: "sam-andra", kapitel: "samband", avsnitt: ["sammanfattning"], titel: "Ändra atomen",
+      typ: "andra", nivaerPerArskurs : {7:[3], 8:[2,3], 9:[1,2]}, punkter:{0:["atom-isotop"],1:["atom-jon"],2:["atom-jon"], 3:["atom-amne"]},
       // atomer som eleven kan få börja med (slumpas)
       start: [ { namn: "litium", X: "Li", A: 7, Z: 3 }, { namn: "beryllium", X: "Be", A: 9, Z: 4 },
                { namn: "bor", X: "B", A: 11, Z: 5 },    { namn: "kol", X: "C", A: 12, Z: 6 },
@@ -47,21 +47,21 @@ Portal.uppgifter([
           par: [["atom:1,0,1", "Protium"], ["atom:1,1,1", "Deuterium"], ["atom:1,2,1", "Tritium"]] }
       ] },
 
-    { id: "sam-begrepp", kapitel: "samband", titel: "Isotop, ämne, jon – fyll i begrepp",
-      typ: "lucktext", nivaerPerArskurs : {7:[3], 8:[2], 9:[1,2]}, punkter:{0:["atom-isotop"],1:["atom-jon"],2:["atom-ämne"]},
+    { id: "sam-begrepp", kapitel: "samband", avsnitt: ["sammanfattning"], titel: "Isotop, ämne, jon – fyll i begrepp",
+      typ: "lucktext", nivaerPerArskurs : {7:[3], 8:[2], 9:[1,2]}, punkter:{0:["atom-isotop"],1:["atom-jon"],2:["atom-amne"]},
       varianter: [
         { text: "Antalet [*protoner/proton] och [*elektroner/elektron] är lika mellan isotoper av samma ämne. Antalet [neutroner/neutron] är olika mellan isotoper." },
         { text: "Antalet [*protoner/proton] och [*neutroner/neutron] är lika mellan en atom och en jon av samma ämne. Antalet [elektroner/elektron] är olika." },
         { text: "Antalet [protoner/proton] är alltid olika mellan två olika ämnen. Det är antalet protoner, alltså [atomnumret/atomnummer], som bestämmer vilket ämne det är." }
       ] },
-       { id: "sam-begrepp-para", kapitel: "samband", titel: "Isotop, ämne, jon – para begrepp",
+       { id: "sam-begrepp-para", kapitel: "samband", avsnitt: ["sammanfattning"], titel: "Isotop, ämne, jon – para begrepp",
       typ: "para", nivaerPerArskurs : {7:[2], 8:[1], 9:[1]},
       varianter: [
-        { rubrik: "Para ihop atomnotationen med rätt namn.", punkter:{0:["atom-ämne"],1:["atom-isotop"],2:["atom-jon"]},
+        { rubrik: "Para ihop atomnotationen med rätt namn.", punkter: ["atom-amne", "atom-isotop", "atom-jon"],
           par: [["ämne", "bestäms av antal protoner"], ["isotop", "bestäms av antalet neutroner"], ["jon", "bestäms av antalet elektroner"]] }
       ] },
-       { id: "sam-begrepp-fyll i", kapitel: "samband", titel: "Isotop, ämne, jon – fyll i begrepp",
-      typ: "lucktext", nivaerPerArskurs : {7:[2], 8:[1], 9:[1]}, punkter:{0:["atom-ämne"],1:["atom-isotop"],2:["atom-jon"]},
+       { id: "sam-begrepp-fyll-i", kapitel: "samband", avsnitt: ["sammanfattning"], titel: "Isotop, ämne, jon – fyll i begrepp",
+      typ: "lucktext", nivaerPerArskurs : {7:[2], 8:[1], 9:[1]}, punkter:{0:["atom-amne"],1:["atom-isotop"],2:["atom-jon"]},
       varianter: [
         { text: "Ämne bestäms av antalet [*protoner/proton]." },
         { text: "Isotop bestäms av antalet [*neutroner/neutron]. " },
