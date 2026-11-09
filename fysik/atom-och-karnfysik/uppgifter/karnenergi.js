@@ -68,7 +68,7 @@ Portal.uppgifter([
                  { t: "Kärnorna sönderfaller av sig själva", s: "fel", f: "i en kedjereaktion är det neutronerna som orsakar klyvningarna." } ] }
       ] },
 
-    { id: "ke-bomb-kraft-sortera", kapitel: "karnenergi", avsnitt: ["kedja", "karnkraft"], titel: "Atombomb eller kärnkraftverk? – sortera",
+    { id: "ke-bomb-kraft-sortera", kapitel: "karnenergi", titel: "Atombomb eller kärnkraftverk? – sortera",
       typ: "sortera", nivaerPerArskurs: { 7: [3], 8: [1], 9: [1] },
       varianter: [
         { grupper: ["Atombomb", "Kärnkraftverk"],
