@@ -80,7 +80,7 @@ Bild: Ett kärnkraftverk. Värmen från kärnbränslet gör vattnet till ånga s
 | **Styrstavar** | Fångar upp neutroner så att kedjereaktionen hålls jämn. Skjuts in helt för att stoppa reaktorn. | Kedjereaktionen kan inte kontrolleras – energi som släpps blir okontrollerad och reaktorn kan överhetta. |
 | **Vatten** | Har flera uppgifter: Kyler bränslet, bromsar neutronerna så att de klyver uran lättare och det värms till ånga. . | Bildas ingen ånga som driver turbinen |
 | **Turbin och generator** | Ångan snurrar turbinen. Generatorn gör om rörelsen till el. | Ångan görs inte om till rörelse och då kan inte generatorn göra el. |
-| **Kondensor (värmeväxlare)** | Kyler ångan med kallt vatten från havet så att den blir vatten igen och kan användas på nytt. | Ångan blir inte till vatten igen och reaktorn kommer få slut på vatten. |
+| **Värmeväxlare** | Kyler ångan med kallt vatten från havet så att den blir vatten igen och kan användas på nytt. | Ångan blir inte till vatten igen och reaktorn kommer få slut på vatten. |
 
 Energin omvandlas i flera steg: **kärnenergi → värme → rörelseenergi → elenergi**.
 
