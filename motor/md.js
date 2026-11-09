@@ -43,7 +43,7 @@ const MD = (() => {
     const items = [];
     rader.forEach(l => { const m = l.match(/^\s*(?:[-*]|\d+\.)\s+(.*)$/); if (m) items.push(m[1]); else if (items.length) items[items.length - 1] += " " + l.trim(); });
     const li = items.map(t => {
-      const m = t.match(/^\((?:åk|ak)\s*([\d,\s–-]+)\)\s*(.*)$/i);
+      const m = t.match(/^\((?:åk|ak)\s*([\d,\såk–-]+)\)\s*(.*)$/i);
       return m ? `<li data-ak="${parseAk(m[1])}">${inline(m[2])}</li>` : `<li>${inline(t)}</li>`;
     }).join("");
     return ord ? `<ol>${li}</ol>` : `<ul>${li}</ul>`;
@@ -83,7 +83,15 @@ const MD = (() => {
     }
     let inre = (rest ? [rest, ...resten] : resten);
     // Kunskapspunkter i Viktigt-rutan: "- {#id} text"
-    if (tl.startsWith("viktigt")) inre = inre.map(l => { const k = l.match(/^(\s*[-*]\s+)\{#([\w-]+)\}\s*(.*)$/); if (!k) return l; ctx.punkter && ctx.punkter.push({ id: k[2], html: inline(k[3]) }); return k[1] + k[3]; });
+    // Årskurs kan stå före eller efter id:t: "- (åk8,9) {#id} text" eller "- {#id} (åk 8-9) text"
+    if (tl.startsWith("viktigt")) inre = inre.map(l => {
+      const AK = "\\((?:åk|ak)\\s*[\\d,\\såk–-]+\\)";
+      const k = l.match(new RegExp(`^(\\s*[-*]\\s+)(${AK}\\s*)?\\{#([\\w-]+)\\}\\s*(${AK}\\s*)?(.*)$`, "i"));
+      if (!k) return l;
+      const akDel = (k[2] || k[4] || "").trim(), ak = akDel ? parseAk(akDel.replace(/åk|ak/gi, "")) : null;
+      ctx.punkter && ctx.punkter.push({ id: k[3], html: inline(k[5]), ...(ak && ak.length ? { ak } : {}) });
+      return k[1] + (akDel ? akDel + " " : "") + k[5];
+    });
     const innehall = block(inre, ctx).map(b => b.html).join("");
     if (tl.startsWith("exempel")) return { html: `<div class="exempel"><p class="et">${inline(titel)}</p>${innehall}</div>` };
     if (tl.startsWith("viktigt")) {

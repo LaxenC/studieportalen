@@ -643,6 +643,8 @@ Varje rad i en Viktigt-ruta kan bli en **kunskapspunkt** genom att få ett id:
 > - {#virus-ingen-cell} Virus består inte av celler och kan inte föröka sig utan en värdcell.
 ```
 
+En punkt kan gälla vissa årskurser – skriv årskursen före eller efter id:t: `> - (åk 8-9) {#skal-energi} text` eller `> - {#skal-energi} (åk 8,9) text`. Raden visas då bara för de årskurserna och punkten övas bara där.
+
 Id:t syns inte för eleven. I uppgifterna skriver du vilka punkter de tränar:
 
 ```js

@@ -130,7 +130,7 @@ function mixFor(stjarnor, ak) {
 // Kunskapspunkter (från Viktigt-rutornas "- {#id} …") för ett kapitel, valfritt ett avsnitt
 function punkterFor(o, kapId, avId, ak) {
   const t = o.texter[kapId]; if (!t) return [];
-  return t.avsnitt.filter(a => passar(a.ak, ak) && (!avId || a.id === avId)).flatMap(a => (a.punkter || []).map(p => ({ ...p, av: a.id, rubrik: a.rubrik })));
+  return t.avsnitt.filter(a => passar(a.ak, ak) && (!avId || a.id === avId)).flatMap(a => (a.punkter || []).filter(p => !p.ak || ak === "alla" || ak == null || p.ak.includes(+ak)).map(p => ({ ...p, av: a.id, rubrik: a.rubrik })));
 }
 // Vilka punkter en variant tränar: variantens egna, uppgiftens lista eller uppgiftens { variantnr: [...] }
 function uppgiftPunkter(t, vi) {
