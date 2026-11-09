@@ -345,7 +345,7 @@ Portal.uppgifter([
                  { t: "En elektron hoppar mellan elektronskal", s: "delvis", f: "stämmer – men ljuset bildas när den hoppar inåt och frigör energi." },
                  { t: "En elektron tar upp energi och hoppar utåt", s: "fel", f: "då tar elektronen upp energi – ljuset bildas när den faller tillbaka." },
                  { t: "Atomkärnan skickar ut partiklar", s: "fel", f: "synligt ljus bildas i elektronskalen." } ] },
-        { fraga: "Vilken färg får ljuset när mycket energi frigörs?", punkter: ["emstral-ljus"],
+        { fraga: "Vilken färg får ljuset när mycket energi frigörs?",
           alt: [ { t: "Blått", s: "ratt", f: "mycket energi ger hög frekvens och blått ljus." },
                  { t: "Rött", s: "fel", f: "rött ljus kommer från mindre energi." },
                  { t: "Vitt", s: "fel", f: "mycket energi ger blått ljus." },
