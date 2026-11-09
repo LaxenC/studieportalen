@@ -55,8 +55,8 @@ Om antalet protoner, som är positivt laddade, är lika många som antalet elekt
 > **Viktigt att komma ihåg**
 > [[nota 14 6 C stor farg]]
 > Bild: Kemisk beteckning= C, Atomnummer=6 och Masstal=14
-> - Masstalet står överst: protoner + neutroner.
-> - Atomnumret står nederst: antalet protoner – **därför** visar atomnumret vilket ämne det är.
+> - {#not-masstal} Masstalet står överst: protoner + neutroner.
+> - {#not-atomnr} Atomnumret står nederst: antalet protoner – **därför** visar atomnumret vilket ämne det är.
 > - (åk8,åk9) I en neutral atom är det lika många elektroner som protoner, **eftersom** laddningarna då tar ut varandra.
-> - (åk8,åk9) Fördjupning: Antalet elektroner kan räknas ut genom laddningen på atomen
+> - {#not-jon} (åk8,åk9) Fördjupning: Antalet elektroner kan räknas ut genom laddningen på atomen
 
