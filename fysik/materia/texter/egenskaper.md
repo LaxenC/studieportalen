@@ -28,6 +28,8 @@ All materia har *massa* och *volym*.
 
 Tänk dig två kuber som är exakt lika stora – en av trä och en av järn. Järnkuben är mycket tyngre. De har samma volym men olika massa. Det beror på att järnets partiklar är tyngre och tätare packade.
 
+![Två lika stora kuber av trä och järn på en våg – järnkuben är tyngre](bilder/tra-jarn.svg)
+
 *Densitet* talar om hur tätt massan är packad i ett material. Man kan också säga att densiteten är hur mycket en bit på 1 cm³ av materialet väger.
 
 | Material | Densitet (g/cm³) |
