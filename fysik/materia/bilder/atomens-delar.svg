@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 280" width="520" font-family="Arial, sans-serif" role="img" aria-label="En atom: kärnan med protoner och neutroner, elektroner runt kärnan">
+  <circle cx="200" cy="140" r="70" fill="none" stroke="#9ca3af" stroke-width="1.5"/>
+  <circle cx="200" cy="140" r="120" fill="none" stroke="#9ca3af" stroke-width="1.5"/>
+  <circle cx="200" cy="140" r="36" fill="#fff7ed" stroke="#1f2937" stroke-dasharray="4 3"/>
+  <g stroke="#1f2937" stroke-width="1">
+    <circle cx="181" cy="140" r="10" fill="#f87171"/><circle cx="209.5" cy="156.5" r="10" fill="#f87171"/><circle cx="209.5" cy="123.5" r="10" fill="#f87171"/>
+    <circle cx="200" cy="140" r="10" fill="#d1d5db"/><circle cx="219" cy="140" r="10" fill="#d1d5db"/><circle cx="190.5" cy="156.5" r="10" fill="#d1d5db"/><circle cx="190.5" cy="123.5" r="10" fill="#d1d5db"/>
+  </g>
+  <g font-size="11" font-weight="bold" text-anchor="middle"><text x="181" y="144">+</text><text x="209.5" y="160.5">+</text><text x="209.5" y="127.5">+</text></g>
+  <g stroke="#1f2937"><circle cx="134.2" cy="116" r="8" fill="#60a5fa"/><circle cx="265.8" cy="164" r="8" fill="#60a5fa"/><circle cx="260" cy="36" r="8" fill="#60a5fa"/></g>
+  <g font-size="13" font-weight="bold" fill="#fff" text-anchor="middle"><text x="134.2" y="120.5">−</text><text x="265.8" y="168.5">−</text><text x="260" y="40.5">−</text></g>
+  <g stroke="#1f2937" stroke-width="1"><line x1="219" y1="123" x2="350" y2="60"/><line x1="226" y1="140" x2="350" y2="122"/><line x1="274" y1="166" x2="350" y2="180"/><line x1="230" y1="160" x2="350" y2="234"/></g>
+  <g font-size="15" fill="#1f2937">
+    <text x="356" y="58"><tspan font-weight="bold" fill="#dc2626">proton</tspan> (+)</text>
+    <text x="356" y="120"><tspan font-weight="bold" fill="#4b5563">neutron</tspan> (0)</text>
+    <text x="356" y="182"><tspan font-weight="bold" fill="#2563eb">elektron</tspan> (−)</text>
+    <text x="356" y="238"><tspan font-weight="bold">atomkärna</tspan></text>
+  </g>
+  <text x="356" y="76" font-size="12" fill="#6b7280">i kärnan</text>
+  <text x="356" y="138" font-size="12" fill="#6b7280">i kärnan</text>
+  <text x="356" y="200" font-size="12" fill="#6b7280">runt kärnan</text>
+  <text x="356" y="256" font-size="12" fill="#6b7280">protoner + neutroner</text>
+</svg>
