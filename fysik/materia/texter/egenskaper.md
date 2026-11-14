@@ -71,6 +71,8 @@ Om en kropp flyter eller sjunker beror på densiteten:
 
 Is har densiteten 0,9 g/cm³ och vatten 1,0 g/cm³. Isen har lägre densitet än vattnet, **därför** flyter isen. En järnspik har densiteten 7,9 g/cm³ – den är mycket högre än vattnets, **därför** sjunker spiken.
 
+![Isen flyter och järnspiken sjunker i vatten](bilder/flyta-sjunka.svg)
+
 ::: fördjupning Sötvatten, bräckt vatten och saltvatten
 Vatten i sjöar och älvar kallas *sötvatten*. I haven finns salt löst i vattnet – det är *saltvatten*. Saltet gör att vattnet får högre densitet. **Därför** är det lättare att flyta i havet än i en sjö.
 
