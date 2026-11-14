@@ -140,26 +140,26 @@ Portal.uppgifter([
     typ: "flerval", nivaer: [0, 1], punkter: ["prefix-enhet"],
     varianter: [
       { fraga: "”Jag köpte 2 hekto godis.” Vad är hekto?",
-        alt: [ { t: "Ett prefix som betyder hundra", s: "ratt", f: "egentligen är det 2 hektogram. Enheten gram har fallit bort." },
-               { t: "En enhet för massa", s: "fel", f: "enheten är gram. Hekto är ett prefix som betyder hundra." },
+        alt: [ { t: "Ett prefix som betyder hundra (100)", s: "ratt", f: "egentligen är det 2 hektogram. Enheten gram har fallit bort." },
+               { t: "En enhet för massa", s: "fel", f: "enheten är gram. Hekto är ett prefix som betyder hundra (100)." },
                { t: "En storhet", s: "fel", f: "storheten är massa. Hekto är ett prefix." } ] },
       { fraga: "I 5 km – vad är k?",
-        alt: [ { t: "Ett prefix som betyder tusen", s: "ratt", f: "k (kilo) står framför enheten meter och betyder tusen." },
+        alt: [ { t: "Ett prefix som betyder tusen (1 000)", s: "ratt", f: "k (kilo) står framför enheten meter och betyder tusen (1 000)." },
                { t: "En enhet", s: "fel", f: "enheten är m (meter). k är ett prefix." },
                { t: "En storhet", s: "fel", f: "storheten är längd. k är ett prefix." } ] },
       { fraga: "Vad är skillnaden mellan 5,7 m och 5,7 km?",
         alt: [ { t: "Båda är i meter, men k (kilo) gör att 5,7 km är tusen gånger längre.", s: "ratt", f: "5,7 km = 5,7 · 1 000 m = 5 700 m." },
                { t: "km är en annan enhet än m, så de går inte att jämföra.", s: "fel", f: "enheten är meter i båda – k är bara ett prefix." },
-               { t: "5,7 km är tio gånger längre.", s: "fel", f: "kilo betyder tusen, inte tio." } ] }
+               { t: "5,7 km är tio gånger längre.", s: "fel", f: "kilo betyder tusen (1 000), inte tio." } ] }
     ] },
 
   { id: "prefix-sf", kapitel: "fysik-vetenskap", avsnitt: ["prefix"], titel: "Prefix – sant eller falskt",
     typ: "santfalskt", nivaer: [1], punkter: ["prefix-enhet"],
     varianter: [
-      { pst: [["Kilo betyder tusen både i kilometer och i kilogram.", true], ["Hekto är en enhet för massa.", false],
+      { pst: [["Kilo betyder tusen (1 000) både i kilometer och i kilogram.", true], ["Hekto är en enhet för massa.", false],
               ["Ett prefix står framför enheten.", true], ["km är en egen enhet som inte har med meter att göra.", false],
               ["Ett prefix är en förkortning för ett tal.", true]] },
-      { pst: [["I 3 cm är c ett prefix och m en enhet.", true], ["Milli betyder tusen.", false],
+      { pst: [["I 3 cm är c ett prefix och m en enhet.", true], ["Milli betyder tusen (1 000).", false],
               ["Tar man bort prefixet måste man sätta tillbaka talet: 3 km = 3 000 m.", true], ["Prefix används bara för meter.", false],
               ["dl betyder deciliter.", true]] }
     ] },
@@ -227,7 +227,7 @@ Portal.uppgifter([
     typ: "para", nivaer: [2],
     varianter: [
       { rubrik: "Para ihop prefixet med vad det betyder.",
-        par: [["giga (G)", "miljard"], ["mega (M)", "miljon"], ["kilo (k)", "tusen"], ["milli (m)", "tusendel (0,001)"], ["mikro (µ)", "miljondel (0,000 001)"], ["nano (n)", "miljarddel (0,000 000 001)"]] }
+        par: [["giga (G)", "miljard (1 000 000 000)"], ["mega (M)", "miljon (1 000 000)"], ["kilo (k)", "tusen (1 000)"], ["milli (m)", "tusendel (0,001)"], ["mikro (µ)", "miljondel (0,000 001)"], ["nano (n)", "miljarddel (0,000 000 001)"]] }
     ] },
 
   { id: "prefix-forklara", kapitel: "fysik-vetenskap", avsnitt: ["prefix"], titel: "Förklara: 5,7 m och 5,7 km",
@@ -235,7 +235,7 @@ Portal.uppgifter([
     varianter: [
       { fraga: "Förklara skillnaden mellan 5,7 m och 5,7 km. Använd orden prefix och enhet.",
         begrepp: ["prefix", "enhet", "kilo", "tusen|1000|1 000"],
-        modell: "Båda har samma **enhet**, meter. I 5,7 km står **prefixet** k (**kilo**) framför enheten. Kilo betyder **tusen**, **därför** är 5,7 km = 5 700 m – tusen gånger längre än 5,7 m." }
+        modell: "Båda har samma **enhet**, meter. I 5,7 km står **prefixet** k (**kilo**) framför enheten. Kilo betyder **tusen (1 000)**, **därför** är 5,7 km = 5 700 m – tusen gånger längre än 5,7 m." }
     ] }
 
 ]);

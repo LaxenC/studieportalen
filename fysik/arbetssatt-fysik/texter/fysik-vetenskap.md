@@ -73,20 +73,20 @@ När metern bestämdes kunde man bygga andra enheter utifrån den. En kub som ä
 
 ### Ett prefix är en förkortning
 
-Har du köpt "2 hekto godis"? Då har du redan använt ett *prefix*. Egentligen är det 2 hekto**gram**. *Hekto* är inte en enhet – det är ett prefix som betyder **hundra**. Enheten är gram.
+Har du köpt "2 hekto godis"? Då har du redan använt ett *prefix*. Egentligen är det 2 hekto**gram**. *Hekto* är inte en enhet – det är ett prefix som betyder **hundra (100)**. Enheten är gram.
 
 Ett prefix är en förkortning. Det står i stället för ett tal, så att vi slipper skriva alla nollor. Prefixet sätts framför enheten:
 
-**k**m = **kilo** + **meter** = tusen meter
+**k**m = **kilo** + **meter** = tusen (1 000) meter
 
 Tar man bort prefixet sätter man tillbaka talet:
 
 3 km = 3 · 1 000 m = 3 000 m
 
-Ett prefix betyder alltid samma sak, oavsett vilken enhet det sitter på. Kilo betyder tusen både i kilometer och i kilogram.
+Ett prefix betyder alltid samma sak, oavsett vilken enhet det sitter på. Kilo betyder tusen (1 000) både i kilometer och i kilogram.
 
 > **Begrepp**
-> **prefix** – en förkortning framför enheten som står för ett tal, till exempel k (kilo) = tusen
+> **prefix** – en förkortning framför enheten som står för ett tal, till exempel k (kilo) = tusen (1 000)
 
 ### Prefix i vardagen
 
@@ -117,13 +117,13 @@ Avstånden i rymden är så stora att man har egna enheter. Ett *ljusår* är st
 
 > **💬 Förklara så här** {.green}
 > *Vad är skillnaden mellan 5,7 m och 5,7 km?*<br>
-> Båda har samma enhet, meter. I 5,7 km står prefixet *k* (kilo) framför, och kilo betyder tusen.<br>
+> Båda har samma enhet, meter. I 5,7 km står prefixet *k* (kilo) framför, och kilo betyder tusen (1 000).<br>
 > **Därför** är 5,7 km = 5,7 · 1 000 m = 5 700 m – tusen gånger längre än 5,7 m.
 
 > **Viktigt att komma ihåg**
 > - {#prefix-enhet} Ett *prefix* är inte en enhet. Det är en förkortning för ett tal som står framför enheten, till exempel **k**m.
-> - {#prefix-vanliga} kilo (k) = tusen, centi (c) = hundradel (0,01), milli (m) = tusendel (0,001).
-> - Fler prefix: hekto (h) = hundra och deci (d) = tiondel (0,1). Mega (M), giga (G), mikro (µ) och nano (n) används för mycket stora och mycket små tal.
+> - {#prefix-vanliga} kilo (k) = tusen (1 000), centi (c) = hundradel (0,01), milli (m) = tusendel (0,001).
+> - Fler prefix: hekto (h) = hundra (100) och deci (d) = tiondel (0,1). Mega (M), giga (G), mikro (µ) och nano (n) används för mycket stora och mycket små tal.
 
 ## Modeller {#modeller}
 
