@@ -10,11 +10,9 @@ Allt omkring dig – luften du andas, vattnet du dricker och bänken du sitter v
 
 ## Kroppar och partiklar {#kroppar}
 
-### Materia har massa och volym
+### Materia och kropp
 
 Allt som har *massa* (väger något) och *volym* (tar plats) är materia. En sten, ett glas vatten och till och med luften är materia.
-
-### Materia och kropp
 
 *Materia* och *kropp* betyder samma sak: något som har massa och volym. Vilket ord man väljer beror på sammanhanget:
 
@@ -22,8 +20,6 @@ Allt som har *massa* (väger något) och *volym* (tar plats) är materia. En ste
 - När vi pratar om en bestämd sak säger vi oftast **kropp**: *"Kroppen har massan 2 kg."*
 
 I vardagen betyder *kropp* oftast människokroppen, men i fysiken är en sko, en boll, en björn och en hel planet också kroppar. Ordet *materia* ska inte blandas ihop med *material* (till exempel trä eller plast).
-
-### Partiklar
 
 Om man delar en kropp i mindre och mindre bitar kommer man till slut till delar som är för små för att se. Sådana små delar kallas *partiklar*. Molekyler, atomer och atomens delar är partiklar.
 
