@@ -115,10 +115,6 @@ Det är lättare att skriva *0,1 nm* än *0,000 000 000 1 m*.
 Avstånden i rymden är så stora att man har egna enheter. Ett *ljusår* är sträckan som ljuset färdas på ett år – nästan 10 000 miljarder kilometer. Den närmaste stjärnan efter solen ligger drygt 4 ljusår bort. Inom solsystemet används *astronomisk enhet* (au). 1 au är avståndet mellan jorden och solen, ungefär 150 miljoner kilometer.
 :::
 
-::: fördjupning Namn på stora tal
-En *miljon* har 6 nollor, en *miljard* har 9 och en *biljon* har 12. På engelska är det annorlunda: "one billion" betyder en miljard, inte en biljon. Det är bra att veta när man läser engelska texter!
-:::
-
 > **💬 Förklara så här** {.green}
 > *Vad är skillnaden mellan 5,7 m och 5,7 km?*<br>
 > Båda har samma enhet, meter. I 5,7 km står prefixet *k* (kilo) framför, och kilo betyder tusen.<br>
