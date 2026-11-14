@@ -6,7 +6,9 @@ kapitel: egenskaper
 
 Olika material är olika tunga, tar olika mycket plats och flyter eller sjunker. Här lär vi oss vad densitet betyder och använder det för att förklara varför vissa saker flyter.
 
-## Massa och volym {#massa-volym}
+## Densitet {#densitet}
+
+### Massa och volym
 
 All materia har *massa* och *volym*.
 
@@ -21,8 +23,6 @@ All materia har *massa* och *volym*.
 > **Begrepp**
 > **massa** – hur mycket materia det finns i en kropp
 > **volym** – hur mycket plats en kropp tar
-
-## Densitet {#densitet}
 
 ### Lika stora men olika tunga
 

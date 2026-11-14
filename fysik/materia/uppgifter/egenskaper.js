@@ -2,14 +2,14 @@
    UPPGIFTER – Materiens egenskaper
    ---------------------------------------------------------------------
    Mallar för varje uppgiftstyp finns i mallar.md.
-   Avsnitt: massa-volym, densitet, flyta
+   Avsnitt: densitet, flyta
    Öva tills du kan: densitet-vad, flyta
    ===================================================================== */
 Portal.uppgifter([
 
   /* ---------------- Massa och volym ---------------- */
 
-  { id: "egn-massa-volym", kapitel: "egenskaper", avsnitt: ["massa-volym"], titel: "Massa eller volym?",
+  { id: "egn-massa-volym", kapitel: "egenskaper", avsnitt: ["densitet"], titel: "Massa eller volym?",
     typ: "sortera", nivaer: [0, 1],
     varianter: [
       { grupper: ["Massa", "Volym"],
