@@ -4,7 +4,7 @@ kapitel: fysik-vetenskap
 
 # Fysik som vetenskap
 
-Mycket i fysiken handlar om att *mäta*. Hur långt är det till skolan? Hur tung är din ryggsäck? Hur varmt är det ute? Fysiken använder också *formler* för att beskriva hur saker hänger ihop, till exempel hur snabbt något rör sig. I formlerna står bokstäver – *beteckningar* – för det man mäter. För att alla ska förstå varandra behöver vi mäta, skriva våra resultat och använda beteckningarna på samma sätt.
+Mycket i fysiken handlar om att *mäta*. Hur långt är det till skolan? Hur tung är din ryggsäck? Hur varmt är det ute? Fysiken använder också *formler* för att beskriva hur saker hänger ihop, till exempel hur snabbt något rör sig. I formlerna används förkortningar – *beteckningar* – i stället för hela ord. För att alla ska förstå varandra behöver vi mäta, skriva våra resultat och använda beteckningarna på samma sätt.
 
 ## Storhet och enhet {#storhet}
 
@@ -33,7 +33,7 @@ Ett mätetal utan enhet säger ingenting. "Bordet är 2" – är det 2 meter, 2 
 
 ### Beteckningar
 
-I fysiken skriver vi ofta storheten och enheten med en eller två bokstäver. Bokstaven för storheten kallas *beteckning*.
+I fysiken skriver vi ofta förkortningar i stället för hela ord. En sådan förkortning kallas *beteckning*. Det finns beteckningar för storheter (l för längd), för enheter (m för meter) och för mycket annat i fysiken.
 
 | Storhet | Beteckning | Enhet |
 |---|---|---|
@@ -45,10 +45,10 @@ I fysiken skriver vi ofta storheten och enheten med en eller två bokstäver. Bo
 
 Meningen *"Längden på rummet är 5,7 meter"* kan då skrivas kort: **l = 5,7 m**.
 
-Samma bokstav kan betyda olika saker. *m* är beteckningen för massa men också förkortningen för meter. Hur vet man vilket? Beteckningen står **före** likhetstecknet och enheten står **efter** mätetalet: **m = 3 kg** betyder att massan är 3 kilogram.
+Samma bokstav kan betyda olika saker. *m* är beteckningen både för storheten massa och för enheten meter. Hur vet man vilket? Storheten står **före** likhetstecknet och enheten står **efter** mätetalet: **m = 3 kg** betyder att massan är 3 kilogram.
 
 > **Begrepp**
-> **beteckning** – bokstaven som står för en storhet, till exempel l för längd
+> **beteckning** – en förkortning, till exempel l för längd eller m för meter
 
 ### SI-systemet
 
@@ -67,7 +67,7 @@ När metern bestämdes kunde man bygga andra enheter utifrån den. En kub som ä
 > - {#sme-delar} Ett mätresultat har en *storhet* (det man mäter), ett *mätetal* (siffran) och en *enhet* (det man mäter i).
 > - {#sme-enheter} Längd mäts i meter (m), massa i kilogram (kg), tid i sekunder (s) och volym i liter (l).
 > - {#sme-gemensamma} Vi behöver gemensamma enheter **eftersom** alla måste mäta på samma sätt för att förstå varandra.
-> - En storhet kan skrivas med en *beteckning*, till exempel l = 5,7 m.
+> - Storheter och enheter kan skrivas med *beteckningar* (förkortningar), till exempel l = 5,7 m.
 
 ## Prefix – stora och små tal {#prefix}
 
