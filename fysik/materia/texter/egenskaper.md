@@ -73,6 +73,17 @@ Is har densiteten 0,9 g/cm³ och vatten 1,0 g/cm³. Isen har lägre densitet än
 
 ![Isen flyter och järnspiken sjunker i vatten](bilder/flyta-sjunka.svg)
 
+### Lika tunga men olika stora
+
+Två saker kan väga exakt lika mycket men ändå bete sig olika i vatten. En träbit och en järnbit väger båda 100 g. Träbiten är mycket större än järnbiten.
+
+- I träbiten är massan utspridd på en stor volym. **Därför** blir densiteten låg (0,6 g/cm³) – lägre än vattnets – och träbiten flyter.
+- I järnbiten är samma massa samlad i en liten volym. **Därför** blir densiteten hög (7,9 g/cm³) – högre än vattnets – och järnbiten sjunker.
+
+Det är alltså inte massan som avgör om något flyter, utan densiteten.
+
+![En stor träbit och en liten järnbit väger lika mycket – träbiten flyter och järnbiten sjunker](bilder/lika-massa.svg)
+
 ::: fördjupning Sötvatten, bräckt vatten och saltvatten
 Vatten i sjöar och älvar kallas *sötvatten*. I haven finns salt löst i vattnet – det är *saltvatten*. Saltet gör att vattnet får högre densitet. **Därför** är det lättare att flyta i havet än i en sjö.
 
