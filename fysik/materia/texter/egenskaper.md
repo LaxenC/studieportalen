@@ -26,7 +26,7 @@ All materia har *massa* och *volym*.
 > **massa** – hur mycket materia det finns i en kropp
 > **volym** – hur mycket plats en kropp tar
 
-### Lika stora men olika tunga
+### Densitet – lika stora men olika tunga
 
 Tänk dig två kuber som är exakt lika stora – en av trä och en av järn. Järnkuben är mycket tyngre. De har samma volym men olika massa. Det beror på att järnets partiklar är tyngre och tätare packade.
 
