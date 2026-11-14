@@ -227,7 +227,7 @@ Portal.uppgifter([
     typ: "para", nivaer: [2],
     varianter: [
       { rubrik: "Para ihop prefixet med vad det betyder.",
-        par: [["giga (G)", "miljard"], ["mega (M)", "miljon"], ["kilo (k)", "tusen"], ["milli (m)", "tusendel"], ["mikro (µ)", "miljondel"], ["nano (n)", "miljarddel"]] }
+        par: [["giga (G)", "miljard"], ["mega (M)", "miljon"], ["kilo (k)", "tusen"], ["milli (m)", "tusendel (0,001)"], ["mikro (µ)", "miljondel (0,000 001)"], ["nano (n)", "miljarddel (0,000 000 001)"]] }
     ] },
 
   { id: "prefix-forklara", kapitel: "fysik-vetenskap", avsnitt: ["prefix"], titel: "Förklara: 5,7 m och 5,7 km",

@@ -122,8 +122,8 @@ Avstånden i rymden är så stora att man har egna enheter. Ett *ljusår* är st
 
 > **Viktigt att komma ihåg**
 > - {#prefix-enhet} Ett *prefix* är inte en enhet. Det är en förkortning för ett tal som står framför enheten, till exempel **k**m.
-> - {#prefix-vanliga} kilo (k) = tusen, centi (c) = hundradel, milli (m) = tusendel.
-> - Fler prefix: hekto (h) = hundra och deci (d) = tiondel. Mega (M), giga (G), mikro (µ) och nano (n) används för mycket stora och mycket små tal.
+> - {#prefix-vanliga} kilo (k) = tusen, centi (c) = hundradel (0,01), milli (m) = tusendel (0,001).
+> - Fler prefix: hekto (h) = hundra och deci (d) = tiondel (0,1). Mega (M), giga (G), mikro (µ) och nano (n) används för mycket stora och mycket små tal.
 
 ## Modeller {#modeller}
 
