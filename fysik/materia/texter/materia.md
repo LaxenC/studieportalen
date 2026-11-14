@@ -79,7 +79,7 @@ En vattenmolekyl består av en syreatom och två väteatomer. Därför skrivs va
 
 Om vi zoomar in på ett glas vatten ser vi hur det är uppbyggt:
 
-![Zooma in: ett glas vatten, vattenmolekyler och en väteatom](bilder/zoom-vatten.svg)
+![Zooma in: ett glas vatten och vattenmolekyler](bilder/zoom-molekyler.svg)
 
 1. Vattnet i glaset är en *kropp*.
 2. Vattnet består av massor av *vattenmolekyler*.
