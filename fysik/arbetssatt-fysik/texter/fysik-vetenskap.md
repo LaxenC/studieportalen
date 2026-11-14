@@ -4,7 +4,7 @@ kapitel: fysik-vetenskap
 
 # Fysik som vetenskap
 
-Mycket i fysiken handlar om att *mäta*. Hur långt är det till skolan? Hur tung är din ryggsäck? Hur varmt är det ute? För att alla ska förstå varandra behöver vi mäta och skriva våra resultat på samma sätt.
+Mycket i fysiken handlar om att *mäta*. Hur långt är det till skolan? Hur tung är din ryggsäck? Hur varmt är det ute? Fysiken använder också *formler* för att beskriva hur saker hänger ihop, till exempel hur snabbt något rör sig. I formlerna står bokstäver – *beteckningar* – för det man mäter. För att alla ska förstå varandra behöver vi mäta, skriva våra resultat och använda beteckningarna på samma sätt.
 
 ## Storhet och enhet {#storhet}
 
