@@ -8,7 +8,7 @@ En atom är den minsta byggstenen i ett grundämne. Den består av en kärna med
 
 ## Atomkärnan {#karna}
 
-Atomens delar – protoner, neutroner och elektroner – har du lärt dig om i [Materia](#/fysik/materia/las/materia/atomen). Här tittar vi närmare på atomkärnan.
+Atomens delar – protoner, neutroner och elektroner – har du lärt dig om i [Materia](#/fysik/materia/las/materia/partiklar). Här tittar vi närmare på atomkärnan.
 
 [[atom p=6 n=5 e=6]]
 Bild: En kolatom har 6 protoner, 5 neutroner och 6 elektroner.
