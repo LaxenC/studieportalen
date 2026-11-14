@@ -2,7 +2,7 @@
 kapitel: egenskaper
 ---
 
-# Materiens egenskaper
+# Densitet
 
 Olika material är olika tunga, tar olika mycket plats och flyter eller sjunker. Här lär vi oss vad densitet betyder och använder det för att förklara varför vissa saker flyter.
 

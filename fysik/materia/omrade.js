@@ -14,12 +14,12 @@
 Portal.omrade({
   id: "materia",
   namn: "Materia",
-  text: "Kroppar, partiklar, atomer och molekyler – och materiens egenskaper.",
+  text: "Kroppar, partiklar, atomer och molekyler – och densitet.",
   arskurs: [7],
   kapitel: [
     { id: "materia", namn: "Materia", farg: "green",
       text: "Kroppar och partiklar, atomen och molekyler." },
-    { id: "egenskaper", namn: "Materiens egenskaper", farg: "blue",
-      text: "Massa, volym, densitet – och varför saker flyter eller sjunker." }
+    { id: "egenskaper", namn: "Densitet", farg: "blue",
+      text: "Massa, volym och densitet – och varför saker flyter eller sjunker." }
   ]
 });
