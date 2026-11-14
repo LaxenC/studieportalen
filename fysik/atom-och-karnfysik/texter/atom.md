@@ -6,16 +6,9 @@ kapitel: atom
 
 En atom är den minsta byggstenen i ett grundämne. Den består av en kärna med protoner och neutroner, omgiven av elektroner.
 
-## Atomens delar {#delar}
+## Atomkärnan {#karna}
 
-Atomen består av 3st partiklar
-- protoner som är positivt(+) laddade
-- neutroner som är oladdade, dom är neutrala
-- elektroner som är negativt (-) laddade
-
-Atomen är uppdelad i 2 olika delar: atomkärna och elektronskal. Kärnan är i mitten och elektronskalen ligger utanför atomkärnan. 
- - Atomkärnan: protoner och neutroner
- - Elektronskal: elektroner
+Atomens delar – protoner, neutroner och elektroner – har du lärt dig om i [Materia](#/fysik/materia/las/materia/atomen). Här tittar vi närmare på atomkärnan.
 
 [[atom p=6 n=5 e=6]]
 Bild: En kolatom har 6 protoner, 5 neutroner och 6 elektroner.
@@ -23,12 +16,7 @@ Bild: En kolatom har 6 protoner, 5 neutroner och 6 elektroner.
 Protoner och neutroner kallas tillsammans för **nukleoner**. Kärna på engelska heter nukleus, det är därifrån namnet nukleoner kommer.
 
 > **Begrepp**
-> **atomkärna** – mitten av atomen, där protonerna och neutronerna finns
-> **elektronskal** - skal utanför atomkärnan där elektronerna finns
 > **nukleon** – samlingsnamn för protoner och neutroner
-> **proton** - positivt (+) laddad partikel
-> **neutron** - oladdad partikel
-> **elektron** - negativt (-) laddad partikel
 
 Atomkärnan är mycket liten jämfört med hela atomen. Resten av atomen är nästan bara tomrum.
 Om elektronskalen var taket på Globen skulle kärnan i mitten vara stor som ett **blåbär**.
@@ -42,7 +30,6 @@ Protoner och neutroner är ungefär **2000 gånger tyngre** än en elektron. Nä
 > I kärnan finns *protonerna* och *neutronerna*. De är ungefär 2000 gånger tyngre än *elektronerna*. **Därför** påverkar elektronerna nästan inte massan, och nästan all massa finns i *atomkärnan*.
 
 > **Viktigt att komma ihåg**
-> - {#atom-par} Protoner (+) och neutroner finns i atomkärnan. Elektroner (-) finns i skal runt kärnan.
 > - {#atom-tom} Atomen består nästan bara av tomrum (liten kärna i mitten och elektroner runt), om atomen var stor som Globen skulle kärnan vara stor som ett blåbär.
 > - {#atom-vikt} Protoner och neutroner väger cirka 2000 gånger mer än elektroner. 
 
@@ -79,6 +66,7 @@ Elektronerna finns i skal runt atomkärnan, fördelar sig i olika elektronskal r
 Elektronskalen har namn de heter: K, L, M osv i alfabetet. Anledningen att man inte började med bokstaven A när man döpte skalen var för man inte var säker på om man hittat det innersta skalet.
 Elektroner i det yttersta skalet kallas för **valenselektroner**
 > **Begrepp**
+> **elektronskal** – skal runt atomkärnan där elektronerna finns
 > **valenselektroner** – elektroner i det yttersta skalet
 
 [[atom p=6 n=5 e=6 skalnamn valens]]

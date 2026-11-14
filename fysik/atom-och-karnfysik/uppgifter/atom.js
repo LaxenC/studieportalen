@@ -21,65 +21,6 @@
    ===================================================================== */
 Portal.uppgifter([
 
-    { id: "atom-bild", kapitel: "atom", avsnitt: ["delar"], titel: "Atomens delar – bild",
-      typ: "markera", nivaerPerArskurs: { 7: [1], 8: [0,1], 9: [0]}, rullista: [0],punkter: ["atom-par"],
-      delar: ["proton", "neutron", "elektron", "atomkärna", "elektronskal"],
-      svar: {
-        proton: ["proton", "protoner", "protonen"],
-        neutron: ["neutron", "neutroner", "neutronen"],
-        elektron: ["elektron", "elektroner", "elektronen"],
-        atomkärna: ["atomkärna", "atomkärnan", "kärna", "kärnan"],
-        elektronskal: ["elektronskal", "elektronskalet", "skal", "skalet"]
-      },
-      varianter: [{}] },   // numreringen i bilden blandas varje gång
-
-    { id: "atom-bygg", kapitel: "atom", avsnitt: ["delar"], titel: "Atomens delar – skapa bild",
-      typ: "bygg", nivaerPerArskurs: { 7: [1], 8: [0,1], 9: [0]},punkter: ["atom-par"],
-      varianter: [
-        { namn: "väte",      p: 1, n: 0, e: 1 },
-        { namn: "helium",    p: 2, n: 2, e: 2 }
-      ] },
-
-    { id: "atom-text", kapitel: "atom", avsnitt: ["delar"], titel: "Atomens delar – text",
-      typ: "lucktext", nivaerPerArskurs: { 7: [1], 8: [0,1], 9: [0]}, rullista: [0],
-      ordlista: ["protoner", "neutroner", "elektroner", "proton", "neutron", "elektron",
-                 "atomkärnan", "kärna", "skal", "positiv", "negativ", "ingen"],
-      varianter: [
-        { text: "Atomkärnan består av [*protoner] och [*neutroner]. Utanför kärnan finns [elektroner] i olika skal." },
-        { text: "[Atomkärnan/kärnan] består av protoner och neutroner. Utanför kärnan finns elektroner i olika [skal/elektronskal]." },
-        { text: "En proton har [positiv/positivt/plus] laddning." },
-        { text: "En neutron har [ingen/neutral] laddning." },
-        { text: "En elektron har [negativ/negativt/minus] laddning." },
-        { text: "Protoner och neutroner finns i atomens [kärna/atomkärna]." },
-        { text: "Elektronerna finns i [skal/elektronskal] runt atomkärnan." },
-        { text: "En [proton] är positivt laddad." },
-        { text: "En [neutron] har ingen laddning." },
-        { text: "En [elektron] är negativt laddad." },
-        { text: "[*Protoner/proton] och [*neutroner/neutron] finns i atomkärnan." },
-        { text: "[Elektroner/elektronerna] finns i skal runt atomkärnan." }
-      ] },
-
-    { id: "atom-para", kapitel: "atom", avsnitt: ["delar"], titel: "Atomens delar – para ihop",
-      typ: "para",  nivaerPerArskurs: { 7: [1], 8: [0,1], 9: [0]},
-      varianter: [
-        { rubrik: "Para ihop partikeln med dess laddning.",
-          par: [["Proton", "Positiv laddning (+1)"], ["Neutron", "Ingen laddning (0)"], ["Elektron", "Negativ laddning (−1)"]] },
-        { rubrik: "Para ihop partikeln med var den finns.",
-          par: [["Proton", "I atomkärnan"], ["Neutron", "I atomkärnan"], ["Elektron", "I skal runt atomkärnan"]] },
-        { rubrik: "Para ihop begreppet med rätt förklaring.",
-          par: [["Atomkärna", "Mitten av atomen, med protoner och neutroner"],
-                ["Elektronskal", "Där elektronerna finns runt kärnan"],
-                ["Nukleon", "Samlingsnamn för protoner och neutroner"]] }
-      ] },
-
-    { id: "atom-para-bild", kapitel: "atom", avsnitt: ["delar"], titel: "Atomens delar – bild och namn",
-      typ: "para",  nivaerPerArskurs: { 7: [1], 8: [0,1], 9: [0]},
-      varianter: [
-        { rubrik: "Para ihop bilden med rätt namn.",
-          par: [["bild:proton", "Proton"], ["bild:neutron", "Neutron"], ["bild:elektron", "Elektron"],
-                ["bild:karna", "Atomkärna"], ["bild:skal", "Elektronskal"]] }
-      ] },
-
     { id: "atom-modeller", kapitel: "atom", avsnitt: ["modeller"], titel: "Atommodeller – para ihop",
       typ: "dratabell",  nivaerPerArskurs: { 7: [3], 8: [2,3], 9: [2]},
       varianter: [
@@ -121,7 +62,16 @@ Portal.uppgifter([
                  { t: "En riktig atom har fler elektroner än protoner", s: "fel", f: "nej, en atom har lika många elektroner som protoner." } ] }
       ] },
 
-    { id: "atom-tomrum-text", kapitel: "atom", avsnitt: ["delar"], titel: "Atomen är mest tomrum – fyll i begrepp",
+    { id: "atom-karna-para", kapitel: "atom", avsnitt: ["karna"], titel: "Atomkärnan – para ihop begrepp",
+      typ: "para", nivaerPerArskurs: { 7: [1], 8: [0,1], 9: [0]},
+      varianter: [
+        { rubrik: "Para ihop begreppet med rätt förklaring.",
+          par: [["Atomkärna", "Mitten av atomen, med protoner och neutroner"],
+                ["Elektronskal", "Där elektronerna finns runt kärnan"],
+                ["Nukleon", "Samlingsnamn för protoner och neutroner"]] }
+      ] },
+
+    { id: "atom-tomrum-text", kapitel: "atom", avsnitt: ["karna"], titel: "Atomen är mest tomrum – fyll i begrepp",
       typ: "lucktext", nivaerPerArskurs:{ 7: [1], 8: [0,1], 9:[1]}, rullista: [0],punkter: { 0: ["atom-vikt"], 1: ["atom-tom"] },
       ordlista: ["tomrum", "luft", "vatten", "blåbär", "fotboll", "massa", "kärnan", "elektronerna", "elektroner"],
       varianter: [
@@ -129,7 +79,7 @@ Portal.uppgifter([
         { text: "Nästan hela atomens [massa|vikt] finns i [kärnan|atomkärnan], eftersom protoner och neutroner är ungefär 2000 gånger tyngre än [elektroner|elektronerna|elektron]." }
       ] },
 
-    { id: "atom-tomrum-mc", kapitel: "atom", avsnitt: ["delar"], titel: "Atomen är mest tomrum – välj rätt",
+    { id: "atom-tomrum-mc", kapitel: "atom", avsnitt: ["karna"], titel: "Atomen är mest tomrum – välj rätt",
       typ: "flerval", nivaerPerArskurs:{ 7: [1], 8: [0,1], 9: [1]},punkter: { 0: ["atom-tom"], 1: ["atom-vikt"] },
       varianter: [
         { fraga: "Om en atom var lika stor som Globen – hur stor skulle kärnan i mitten vara?",
@@ -144,7 +94,7 @@ Portal.uppgifter([
                  { t: "I tomrummet mellan kärnan och elektronerna", s: "fel", f: "tomrum har ingen massa." } ] }
       ] },
 
-    { id: "atom-tomrum-sf", kapitel: "atom", avsnitt: ["delar"], titel: "Atomen är mest tomrum – sant eller falskt",
+    { id: "atom-tomrum-sf", kapitel: "atom", avsnitt: ["karna"], titel: "Atomen är mest tomrum – sant eller falskt",
       typ: "santfalskt",nivaerPerArskurs: { 7: [1], 8: [0,1], 9: [1]}, 
       varianter: [
         { pst: [["Atomen består mest av tomrum.", true], ["Nästan hela atomens massa finns i kärnan.", true],
@@ -224,7 +174,7 @@ Portal.uppgifter([
 
     /* ---------- Förklara med begrepp ---------- */
 
-    { id: "fk-atom-massa", kapitel: "atom", avsnitt: ["delar"], titel: "Förklara: var finns atomens massa?",
+    { id: "fk-atom-massa", kapitel: "atom", avsnitt: ["karna"], titel: "Förklara: var finns atomens massa?",
       typ: "forklara", nivaerPerArskurs: { 7: [3], 8: [2], 9: [1, 2] }, rullista: [1],
       varianter: [
         { fraga: "Förklara varför nästan hela atomens massa finns i atomkärnan.",

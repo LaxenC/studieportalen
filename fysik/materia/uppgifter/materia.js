@@ -3,7 +3,7 @@
    ---------------------------------------------------------------------
    Mallar för varje uppgiftstyp finns i mallar.md.
    Avsnitt: kroppar, atomen, molekyler
-   Öva tills du kan: atom-delar, kropp-niva
+   Öva tills du kan: atom-par, kropp-niva
    ===================================================================== */
 Portal.uppgifter([
 
@@ -29,8 +29,8 @@ Portal.uppgifter([
 
   /* ---------------- Atomen ---------------- */
 
-  { id: "mat-atom-markera", kapitel: "materia", avsnitt: ["atomen"], titel: "Atomens delar – bild",
-    typ: "markera", nivaer: [0, 1], rullista: [0], punkter: ["atom-delar"],
+  { id: "atom-bild", kapitel: "materia", avsnitt: ["atomen"], titel: "Atomens delar – bild",
+    typ: "markera", nivaer: [0, 1], rullista: [0], punkter: ["atom-par"],
     delar: ["proton", "neutron", "elektron", "atomkärna"],
     svar: {
       proton: ["proton", "protoner", "protonen"],
@@ -38,31 +38,64 @@ Portal.uppgifter([
       elektron: ["elektron", "elektroner", "elektronen"],
       atomkärna: ["atomkärna", "atomkärnan", "kärna", "kärnan"]
     },
-    varianter: [{}] },
+    varianter: [{}] },   // numreringen i bilden blandas varje gång
 
-  { id: "mat-atom-para", kapitel: "materia", avsnitt: ["atomen"], titel: "Atomens delar – bild och namn",
-    typ: "para", nivaer: [0], punkter: ["atom-delar"],
+  { id: "atom-bygg", kapitel: "materia", avsnitt: ["atomen"], titel: "Atomens delar – skapa bild",
+    typ: "bygg", nivaer: [1], punkter: ["atom-par"],
+    varianter: [
+      { namn: "väte",      p: 1, n: 0, e: 1 },
+      { namn: "helium",    p: 2, n: 2, e: 2 }
+    ] },
+
+  { id: "atom-text", kapitel: "materia", avsnitt: ["atomen"], titel: "Atomens delar – text",
+    typ: "lucktext", nivaer: [0, 1], rullista: [0],
+    ordlista: ["protoner", "neutroner", "elektroner", "proton", "neutron", "elektron",
+               "atomkärnan", "kärna", "positiv", "negativ", "ingen"],
+    varianter: [
+      { text: "Atomkärnan består av [*protoner] och [*neutroner]. Runt kärnan finns [elektroner]." },
+      { text: "[Atomkärnan/kärnan] består av protoner och neutroner. Runt kärnan finns [elektroner|elektronerna]." },
+      { text: "En proton har [positiv/positivt/plus] laddning." },
+      { text: "En neutron har [ingen/neutral] laddning." },
+      { text: "En elektron har [negativ/negativt/minus] laddning." },
+      { text: "Protoner och neutroner finns i atomens [kärna/atomkärna]." },
+      { text: "En [proton] är positivt laddad." },
+      { text: "En [neutron] har ingen laddning." },
+      { text: "En [elektron] är negativt laddad." },
+      { text: "[*Protoner/proton] och [*neutroner/neutron] finns i atomkärnan." }
+    ] },
+
+  { id: "atom-para", kapitel: "materia", avsnitt: ["atomen"], titel: "Atomens delar – para ihop",
+    typ: "para", nivaer: [0, 1],
+    varianter: [
+      { rubrik: "Para ihop partikeln med dess laddning.",
+        par: [["Proton", "Positiv laddning (+)"], ["Neutron", "Ingen laddning (0)"], ["Elektron", "Negativ laddning (−)"]] },
+      { rubrik: "Para ihop partikeln med var den finns.",
+        par: [["Proton", "I atomkärnan"], ["Neutron", "I atomkärnan"], ["Elektron", "Runt atomkärnan"]] }
+    ] },
+
+  { id: "atom-para-bild", kapitel: "materia", avsnitt: ["atomen"], titel: "Atomens delar – bild och namn",
+    typ: "para", nivaer: [0], punkter: ["atom-par"],
     varianter: [
       { rubrik: "Para ihop bilden med rätt namn.",
         par: [["bild:proton", "Proton"], ["bild:neutron", "Neutron"], ["bild:elektron", "Elektron"], ["bild:karna", "Atomkärna"]] }
     ] },
 
   { id: "mat-atom-laddning", kapitel: "materia", avsnitt: ["atomen"], titel: "Var finns den och vilken laddning?",
-    typ: "dra", nivaer: [1], punkter: ["atom-delar"],
+    typ: "dra", nivaer: [1], punkter: ["atom-par"],
     varianter: [
       { rubrik: "Dra varje partikel till rätt beskrivning.",
         par: [["Proton", "Finns i kärnan och är positiv (+)"], ["Neutron", "Finns i kärnan och har ingen laddning (0)"], ["Elektron", "Finns runt kärnan och är negativ (−)"]] }
     ] },
 
   { id: "mat-atom-sortera", kapitel: "materia", avsnitt: ["atomen"], titel: "I kärnan eller runt kärnan? – sortera",
-    typ: "sortera", nivaer: [0, 1], punkter: ["atom-delar"],
+    typ: "sortera", nivaer: [0, 1], punkter: ["atom-par"],
     varianter: [
       { grupper: ["I atomkärnan", "Runt atomkärnan"],
         saker: [["proton", 0], ["neutron", 0], ["elektron", 1], ["positiv laddning", 0], ["negativ laddning", 1]] }
     ] },
 
   { id: "mat-atom-flerval", kapitel: "materia", avsnitt: ["atomen"], titel: "Vilken partikel?",
-    typ: "flerval", nivaer: [1], punkter: ["atom-delar"],
+    typ: "flerval", nivaer: [1], punkter: ["atom-par"],
     varianter: [
       { fraga: "Vilken partikel finns runt kärnan och har negativ laddning?",
         alt: [ { t: "Elektron", s: "ratt", f: "elektronerna rör sig runt kärnan och är negativa (−)." },
@@ -92,7 +125,7 @@ Portal.uppgifter([
     ] },
 
   { id: "mat-atom-forklara", kapitel: "materia", avsnitt: ["atomen"], titel: "Förklara: atomens byggstenar",
-    typ: "forklara", nivaer: [1, 2], rullista: [1], punkter: ["atom-delar"],
+    typ: "forklara", nivaer: [1, 2], rullista: [1], punkter: ["atom-par"],
     varianter: [
       { fraga: "Beskriv vad en atom består av. Berätta var de olika partiklarna finns och vilken laddning de har.",
         begrepp: ["kärna|kärnan|atomkärna", "proton", "neutron", "elektron", "positiv|+", "negativ|−|-"],

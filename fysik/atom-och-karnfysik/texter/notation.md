@@ -4,6 +4,9 @@ kapitel: notation
 
 ## Atomnotation {#notation}
 
+> **Repetition: atomens delar**
+> En atom består av en *atomkärna* med *protoner* (+) och *neutroner* (0). Runt kärnan finns *elektroner* (−). En atom har lika många elektroner som protoner. Vill du läsa mer? Se [Atomen i Materia](#/fysik/materia/las/materia/atomen).
+
 Atomnotation är ett kort sätt att skriva vilka partiklar en atom är uppbyggd av.<br>
 
 Notationen består av:

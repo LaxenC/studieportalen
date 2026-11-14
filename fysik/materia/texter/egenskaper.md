@@ -4,7 +4,7 @@ kapitel: egenskaper
 
 # Materiens egenskaper
 
-Olika material är olika tunga, tar olika mycket plats och flyter eller sjunker. I kemin har du redan mött begreppet densitet. Här repeterar vi vad det betyder och använder det för att förklara varför vissa saker flyter.
+Olika material är olika tunga, tar olika mycket plats och flyter eller sjunker. Här lär vi oss vad densitet betyder och använder det för att förklara varför vissa saker flyter.
 
 ## Massa och volym {#massa-volym}
 

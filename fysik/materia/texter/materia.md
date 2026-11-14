@@ -4,7 +4,7 @@ kapitel: materia
 
 # Materia
 
-Allt omkring dig – luften du andas, vattnet du dricker och bänken du sitter vid – är *materia*. I kemin har du redan lärt dig om atomer. Här repeterar vi hur allt är uppbyggt, och lär oss vad atomen själv består av.
+Allt omkring dig – luften du andas, vattnet du dricker och bänken du sitter vid – är *materia*.
 
 ## Kroppar och partiklar {#kroppar}
 
@@ -59,7 +59,7 @@ För ungefär 2 400 år sedan funderade den grekiske filosofen *Demokritos* öve
 :::
 
 > **Viktigt att komma ihåg**
-> - {#atom-delar} I atomkärnan finns protoner (+) och neutroner (0). Runt kärnan finns elektroner (−).
+> - {#atom-par} I atomkärnan finns protoner (+) och neutroner (0). Runt kärnan finns elektroner (−).
 > - En atom har lika många protoner som elektroner, **därför** är den elektriskt neutral.
 
 ## Molekyler {#molekyler}
