@@ -66,10 +66,10 @@ Den grekiska bokstaven ρ (uttalas *rå*) är beteckningen för densitet.
 
 ## Flyta eller sjunka {#flyta}
 
-Om en kropp flyter eller sjunker beror på densiteten:
+Om en kropp flyter eller sjunker beror på densiteten. Det gäller både i vätskor, som vatten, och i gaser, som luft:
 
-- Har kroppen **lägre** densitet än vätskan **flyter** den.
-- Har kroppen **högre** densitet än vätskan **sjunker** den.
+- Har kroppen **lägre** densitet än vätskan eller gasen runt omkring **flyter** den – i luft stiger den.
+- Har kroppen **högre** densitet än vätskan eller gasen runt omkring **sjunker** den.
 
 Is har densiteten 0,9 g/cm³ och vatten 1,0 g/cm³. Isen har lägre densitet än vattnet, **därför** flyter isen. En järnspik har densiteten 7,9 g/cm³ – den är mycket högre än vattnets, **därför** sjunker spiken.
 
@@ -92,10 +92,16 @@ Vatten i sjöar och älvar kallas *sötvatten*. I haven finns salt löst i vattn
 Östersjön har bara lite salt. Vattnet där kallas *bräckt vatten*. I *Döda havet* är vattnet så salt att man flyter utan att röra sig och kan ligga och läsa en tidning på vattenytan.
 :::
 
+### Flyta i luft
+
+Samma regel gäller i luft. Helium har densiteten 0,00018 g/cm³ och luft 0,0012 g/cm³. En heliumballong har lägre densitet än luften omkring, **därför** stiger den. En ballong som du blåser upp själv är fylld med vanlig luft och väger dessutom gummit – **därför** sjunker den.
+
+![En heliumballong stiger och en ballong med vanlig luft sjunker](bilder/heliumballong.svg)
+
 > **💬 Förklara så här** {.green}
 > *Varför flyter isen?*<br>
 > Is har densiteten 0,9 g/cm³ och vatten har densiteten 1,0 g/cm³.<br>
 > Isen har lägre densitet än vattnet, **därför** flyter den.
 
 > **Viktigt att komma ihåg**
-> - {#flyta} En kropp med **lägre** densitet än vätskan flyter. En kropp med **högre** densitet sjunker.
+> - {#flyta} En kropp med **lägre** densitet än vätskan eller gasen runt omkring flyter. En kropp med **högre** densitet sjunker.

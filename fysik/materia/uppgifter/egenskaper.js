@@ -82,9 +82,12 @@ Portal.uppgifter([
       { fraga: "Vatten har densiteten 1,0 g/cm³. En sten har densiteten 2,5 g/cm³. Vad händer om du lägger den i vatten?",
         alt: [ { t: "Den sjunker", s: "ratt", f: "2,5 är högre än vattnets 1,0, därför sjunker stenen." },
                { t: "Den flyter", s: "fel", f: "saker flyter bara om densiteten är lägre än vattnets." } ] },
-      { fraga: "När flyter en kropp i en vätska?",
-        alt: [ { t: "När kroppen har lägre densitet än vätskan", s: "ratt", f: "lägre densitet än vätskan – då flyter kroppen." },
-               { t: "När kroppen har högre densitet än vätskan", s: "fel", f: "då sjunker kroppen." },
+      { fraga: "Helium har densiteten 0,00018 g/cm³ och luft 0,0012 g/cm³. Vad händer med en heliumballong?",
+        alt: [ { t: "Den stiger", s: "ratt", f: "heliumballongen har lägre densitet än luften, därför stiger den." },
+               { t: "Den sjunker", s: "fel", f: "den skulle sjunka om densiteten var högre än luftens." } ] },
+      { fraga: "När flyter en kropp i en vätska eller en gas?",
+        alt: [ { t: "När kroppen har lägre densitet än vätskan eller gasen", s: "ratt", f: "lägre densitet än det som finns runt omkring – då flyter kroppen." },
+               { t: "När kroppen har högre densitet än vätskan eller gasen", s: "fel", f: "då sjunker kroppen." },
                { t: "När kroppen är liten", s: "fel", f: "storleken avgör inte – en liten spik sjunker och en stor stock flyter." } ] }
     ] },
 
