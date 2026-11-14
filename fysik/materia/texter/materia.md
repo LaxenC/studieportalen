@@ -23,10 +23,28 @@ I vardagen betyder *kropp* oftast människokroppen, men i fysiken är en sko, en
 
 Om man delar en kropp i mindre och mindre bitar kommer man till slut till delar som är för små för att se. Sådana små delar kallas *partiklar*. Molekyler, atomer och atomens delar är partiklar.
 
+### Från kropp till atom
+
+Om vi zoomar in på ett glas vatten (bilden överst) ser vi hur det är uppbyggt:
+
+1. Vattnet i glaset är en *kropp*.
+2. Vattnet består av massor av *vattenmolekyler*.
+3. Varje vattenmolekyl består av *atomer* – en syreatom och två väteatomer.
+
+Och varje atom består i sin tur av protoner, neutroner och elektroner.
+
 > **Begrepp**
 > **materia** – allt som har massa och volym
 > **kropp** – samma sak som materia, men används om en bestämd sak, till exempel en sko eller en planet
 > **partikel** – en mycket liten del av materia, till exempel en molekyl eller en atom
+
+> **💬 Förklara så här** {.green}
+> *Hur är vattnet i ett glas uppbyggt?*<br>
+> Vattnet i glaset är en *kropp*. Det består av väldigt många *vattenmolekyler*.<br>
+> Varje vattenmolekyl består av tre *atomer*: en syreatom och två väteatomer.
+
+> **Viktigt att komma ihåg**
+> - {#kropp-niva} En kropp består av molekyler, och molekylerna består av atomer: kropp → molekyl → atom.
 
 ## Atomen {#atomen}
 
@@ -71,25 +89,10 @@ Atomer kan sitta ihop med varandra. En grupp av två eller flera atomer som sitt
 
 En vattenmolekyl består av en syreatom och två väteatomer. Därför skrivs vatten H₂O.
 
-### Från kropp till atom
-
-Om vi zoomar in på ett glas vatten ser vi hur det är uppbyggt:
-
-![Zooma in: ett glas vatten och vattenmolekyler](bilder/zoom-molekyler.svg)
-
-1. Vattnet i glaset är en *kropp*.
-2. Vattnet består av massor av *vattenmolekyler*.
-3. Varje vattenmolekyl består av *atomer* – en syreatom och två väteatomer.
-
-Och varje atom består i sin tur av protoner, neutroner och elektroner.
+![Ett glas vatten består av vattenmolekyler](bilder/zoom-molekyler.svg)
 
 > **Begrepp**
 > **molekyl** – två eller flera atomer som sitter ihop
 
-> **💬 Förklara så här** {.green}
-> *Hur är vattnet i ett glas uppbyggt?*<br>
-> Vattnet i glaset är en *kropp*. Det består av väldigt många *vattenmolekyler*.<br>
-> Varje vattenmolekyl består av tre *atomer*: en syreatom och två väteatomer.
-
 > **Viktigt att komma ihåg**
-> - {#kropp-niva} En kropp består av molekyler, och molekylerna består av atomer: kropp → molekyl → atom.
+> - En *molekyl* är två eller flera atomer som sitter ihop, till exempel vatten (H₂O).

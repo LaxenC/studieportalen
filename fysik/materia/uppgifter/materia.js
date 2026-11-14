@@ -143,7 +143,7 @@ Portal.uppgifter([
 
   /* ---------------- Molekyler ---------------- */
 
-  { id: "mat-niva-kedja", kapitel: "materia", avsnitt: ["molekyler"], titel: "Kedja: från kropp till atom",
+  { id: "mat-niva-kedja", kapitel: "materia", avsnitt: ["kroppar"], titel: "Kedja: från kropp till atom",
     typ: "kedja", nivaer: [0, 1, 2], punkter: ["kropp-niva"],
     varianter: [
       { rubrik: "Fyll i de tomma stegen. Vi zoomar in på ett glas vatten.",
@@ -152,7 +152,7 @@ Portal.uppgifter([
         fel: ["Glasbitar", "Vattendroppar"] }
     ] },
 
-  { id: "mat-niva-flerval", kapitel: "materia", avsnitt: ["molekyler"], titel: "Kropp, molekyl eller atom?",
+  { id: "mat-niva-flerval", kapitel: "materia", avsnitt: ["kroppar"], titel: "Kropp, molekyl eller atom?",
     typ: "flerval", nivaer: [0, 1], punkter: ["kropp-niva"],
     varianter: [
       { fraga: "Vad består en vattenmolekyl av?",
@@ -173,7 +173,7 @@ Portal.uppgifter([
                { t: "En stor kropp", s: "fel", f: "en molekyl är en partikel – den är för liten för att se." } ] }
     ] },
 
-  { id: "mat-niva-ordna", kapitel: "materia", avsnitt: ["molekyler"], titel: "Från störst till minst",
+  { id: "mat-niva-ordna", kapitel: "materia", avsnitt: ["kroppar"], titel: "Från störst till minst",
     typ: "dratabell", nivaer: [1], tidslinje: true, punkter: ["kropp-niva"],
     varianter: [
       { rubrik: "Dra delarna i ordning – från störst till minst.", tidslinje: true,
@@ -181,7 +181,7 @@ Portal.uppgifter([
         rader: [["1 – störst", "Kropp"], ["2", "Molekyl"], ["3", "Atom"], ["4 – minst", "Elektron"]] }
     ] },
 
-  { id: "mat-niva-forklara", kapitel: "materia", avsnitt: ["molekyler"], titel: "Förklara: hur är vattnet uppbyggt?",
+  { id: "mat-niva-forklara", kapitel: "materia", avsnitt: ["kroppar"], titel: "Förklara: hur är vattnet uppbyggt?",
     typ: "forklara", nivaer: [1, 2], rullista: [1], punkter: ["kropp-niva"],
     varianter: [
       { fraga: "Beskriv hur vattnet i ett glas är uppbyggt. Använd orden kropp, molekyl och atom.",
