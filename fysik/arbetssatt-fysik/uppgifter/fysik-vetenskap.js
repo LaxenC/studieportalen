@@ -33,15 +33,15 @@ Portal.uppgifter([
   { id: "sme-plocka-isar", kapitel: "fysik-vetenskap", avsnitt: ["storhet"], titel: "Plocka isär meningen",
     typ: "lucktext", nivaer: [0, 1], rullista: [0], punkter: ["sme-delar"],
     varianter: [
-      { text: "”Loppet var 5 km långt.” Storhet: [längd|längden] · Mätetal: [5] · Prefix: [k|kilo] · Enhet: [m|meter]",
+      { text: "”Loppet var 5 km långt.”\nStorhet: [längd|längden]\nMätetal: [5]\nPrefix: [k|kilo]\nEnhet: [m|meter]",
         ordlista: ["längd", "massa", "tid", "volym", "5", "k", "c", "m", "g", "l", "s"] },
-      { text: "”Paketet vägde 2 kg.” Storhet: [massa|massan] · Mätetal: [2] · Prefix: [k|kilo] · Enhet: [g|gram]",
+      { text: "”Paketet vägde 2 kg.”\nStorhet: [massa|massan]\nMätetal: [2]\nPrefix: [k|kilo]\nEnhet: [g|gram]",
         ordlista: ["längd", "massa", "tid", "volym", "2", "k", "c", "m", "g", "l", "s"] },
-      { text: "”Glaset rymmer 2 dl.” Storhet: [volym|volymen] · Mätetal: [2] · Prefix: [d|deci] · Enhet: [l|liter]",
+      { text: "”Glaset rymmer 2 dl.”\nStorhet: [volym|volymen]\nMätetal: [2]\nPrefix: [d|deci]\nEnhet: [l|liter]",
         ordlista: ["längd", "massa", "tid", "volym", "2", "k", "d", "m", "g", "l", "s"] },
-      { text: "”Myran är 6 mm lång.” Storhet: [längd|längden] · Mätetal: [6] · Prefix: [m|milli] · Enhet: [m|meter]",
+      { text: "”Myran är 6 mm lång.”\nStorhet: [längd|längden]\nMätetal: [6]\nPrefix: [m|milli]\nEnhet: [m|meter]",
         ordlista: ["längd", "massa", "tid", "volym", "6", "k", "c", "m", "g", "l", "s"] },
-      { text: "”Lisa köpte 3,5 hg godis.” Storhet: [massa|massan] · Mätetal: [3,5|3.5] · Prefix: [h|hekto] · Enhet: [g|gram]",
+      { text: "”Lisa köpte 3,5 hg godis.”\nStorhet: [massa|massan]\nMätetal: [3,5|3.5]\nPrefix: [h|hekto]\nEnhet: [g|gram]",
         ordlista: ["längd", "massa", "tid", "volym", "3,5", "k", "h", "m", "g", "l", "s"] }
     ] },
 

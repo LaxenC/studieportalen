@@ -179,7 +179,7 @@ Glöm inte kommatecken mellan uppgifterna.
 
 ### Lucktext – `lucktext`
 
-Text med luckor. Svaret skrivs inom hakparentes. Med `rullista` väljer eleven ord ur `ordlista` i stället för att skriva.
+Text med luckor. Svaret skrivs inom hakparentes. Med `rullista` väljer eleven ord ur `ordlista` i stället för att skriva. `ordlista` kan stå på uppgiften eller i varje variant. `\n` i texten ger en ny rad.
 
 - `[proton]` = rätt svar
 - `[protoner/proton]` = flera svar godkänns (olika svar)

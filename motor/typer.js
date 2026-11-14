@@ -53,11 +53,11 @@ TYPER.lucktext = {
     parts.push({ t: text.slice(last) });
     return parts;
   },
-  setup(q) { q.parts = this.parse(q.v.text); q.opts = shuffle(q.task.ordlista || []); },
+  setup(q) { q.parts = this.parse(q.v.text); q.opts = shuffle(q.v.ordlista || q.task.ordlista || []); },
   html(q) {
     let i = 0;
     return `<p class="cloze">${q.parts.map(p => {
-      if (!p.blank) return esc(p.t);
+      if (!p.blank) return esc(p.t).replace(/\n/g, "<br>");
       const id = `b${i++}`;
       if (q.rull) return `<select class="blank" id="${q.uid}-${id}" aria-label="Lucka ${i}"><option value="">Välj …</option>${q.opts.map(o => `<option>${esc(o)}</option>`).join("")}</select>`;
       return `<input class="blank" id="${q.uid}-${id}" autocomplete="off" autocapitalize="off" spellcheck="false" aria-label="Lucka ${i}" size="${Math.max(8, p.raw.length + 2)}">`;
@@ -82,7 +82,7 @@ TYPER.lucktext = {
       const fri = b.rawItems.find(x => !visade.has(norm(x)) && !inte.includes(norm(x))) || b.raw; visade.add(norm(fri)); b.visa = fri;
     });
     blanks.forEach(b => delete b.match);
-    const facit = q.v.facit ? `<p>${q.v.facit}</p>` : `<p class="cloze">${q.parts.map(p => p.blank ? `<b class="ans">${esc(p.visa)}</b>` : esc(p.t)).join("")}</p>`;
+    const facit = q.v.facit ? `<p>${q.v.facit}</p>` : `<p class="cloze">${q.parts.map(p => p.blank ? `<b class="ans">${esc(p.visa)}</b>` : esc(p.t).replace(/\n/g, "<br>")).join("")}</p>`;
     return { ok: right === blanks.length, right, total: blanks.length, facit };
   }
 };
