@@ -98,7 +98,7 @@ Portal.uppgifter([
               ["Med gemensamma enheter kan forskare i olika länder jämföra sina mätningar.", true], ["I SI mäts massa i kilogram.", true],
               ["En kaffekopp var ett bra mått eftersom alla koppar var lika stora.", false]] },
       { pst: [["Gamla mått som fot och aln byggde ofta på kroppen.", true], ["I SI mäts tid i minuter.", false],
-              ["I Sverige finns en lag om vilka enheter som ska användas.", true], ["Grader Celsius är tillåtet enligt SI.", true],
+              ["I Sverige finns en lag om vilka enheter som ska användas.", true], ["I SI mäts temperatur i kelvin.", true],
               ["Det spelar ingen roll vilken enhet man använder, bara man skriver mätetalet.", false]] }
     ] },
 

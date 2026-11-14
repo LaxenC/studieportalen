@@ -54,7 +54,7 @@ Samma bokstav kan betyda olika saker. *m* är beteckningen för massa men också
 
 I dag använder nästan alla länder samma enheter. De kallas *SI-systemet* (det internationella måttenhetssystemet). I Sverige finns det till och med en lag om vilka enheter som ska användas – och den bygger på SI.
 
-I SI mäts längd i meter, massa i kilogram och tid i sekunder. Grader Celsius ingår också i SI, och liter är godkänt som ett annat namn för en kubikdecimeter.
+I SI mäts längd i meter, massa i kilogram och tid i sekunder. Temperatur mäts i *kelvin* (K). I vardagen använder vi ändå grader Celsius (°C), eftersom vi är så vana vid det. En grad Celsius är lika stor som en kelvin – det är bara nollpunkten som skiljer. Liter är godkänt som ett annat namn för en kubikdecimeter.
 
 > **Begrepp**
 > **SI-systemet** – de gemensamma enheter som används i hela världen
