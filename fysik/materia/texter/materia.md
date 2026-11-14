@@ -4,7 +4,9 @@ kapitel: materia
 
 # Materia
 
-Allt omkring dig – luften du andas, vattnet du dricker och bänken du sitter vid – är *materia*.
+Allt omkring dig – luften du andas, vattnet du dricker och bänken du sitter vid – är *materia*. Men vad består materia av? Om vi zoomar in på ett glas vatten ser vi att det är uppbyggt av mindre och mindre delar.
+
+![Zooma in: ett glas vatten, vattenmolekyler och en väteatom](bilder/zoom-vatten.svg)
 
 ## Kroppar och partiklar {#kroppar}
 
@@ -12,11 +14,14 @@ Allt omkring dig – luften du andas, vattnet du dricker och bänken du sitter v
 
 Allt som har *massa* (väger något) och *volym* (tar plats) är materia. En sten, ett glas vatten och till och med luften är materia.
 
-### Kropp
+### Materia och kropp
 
-I vardagen betyder *kropp* oftast människokroppen. I fysiken betyder ordet något större: en *kropp* är en bit materia som hänger ihop. En sko, en boll, en björn och en hel planet är alla kroppar.
+*Materia* och *kropp* betyder samma sak: något som har massa och volym. Vilket ord man väljer beror på sammanhanget:
 
-Vi säger hellre *kropp* än *materia* när vi pratar om en sak, **eftersom** materia lätt blandas ihop med ordet *material* (till exempel trä eller plast).
+- När vi pratar om vad saker är uppbyggda av säger vi oftast **materia**: *"All materia består av atomer."*
+- När vi pratar om en bestämd sak säger vi oftast **kropp**: *"Kroppen har massan 2 kg."*
+
+I vardagen betyder *kropp* oftast människokroppen, men i fysiken är en sko, en boll, en björn och en hel planet också kroppar. Ordet *materia* ska inte blandas ihop med *material* (till exempel trä eller plast).
 
 ### Partiklar
 
@@ -24,7 +29,7 @@ Om man delar en kropp i mindre och mindre bitar kommer man till slut till delar 
 
 > **Begrepp**
 > **materia** – allt som har massa och volym
-> **kropp** – en bit materia som hänger ihop, till exempel en sko eller en planet
+> **kropp** – samma sak som materia, men används om en bestämd sak, till exempel en sko eller en planet
 > **partikel** – en mycket liten del av materia, till exempel en molekyl eller en atom
 
 ## Atomen {#atomen}
