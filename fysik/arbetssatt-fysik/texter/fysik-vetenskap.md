@@ -98,8 +98,6 @@ Ett prefix betyder alltid samma sak, oavsett vilken enhet det sitter på. Kilo b
 | centi | c | hundradel (0,01) | en penna är ca 15 cm |
 | milli | m | tusendel (0,001) | en myra är ca 5 mm |
 
-Med prefixen kan du avgöra vad som är rimligt. En penna är 15 **c**m – inte 15 **k**m, för då skulle den vara 15 000 meter lång!
-
 ### Mycket stora och mycket små tal
 
 Inom fysiken mäter man både jättestora och jättesmå saker. Då blir talen jobbiga att skriva och läsa. Därför finns det prefix även för dem:
