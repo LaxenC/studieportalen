@@ -83,6 +83,8 @@ Atomer kan sitta ihop med varandra. En grupp av två eller flera atomer som sitt
 
 En vattenmolekyl består av en syreatom och två väteatomer. Därför skrivs vatten H₂O.
 
+![En vattenmolekyl: en syreatom och två väteatomer](bilder/vattenmolekyl.svg)
+
 ![Ett glas vatten består av vattenmolekyler](bilder/zoom-molekyler.svg)
 
 > **Begrepp**
