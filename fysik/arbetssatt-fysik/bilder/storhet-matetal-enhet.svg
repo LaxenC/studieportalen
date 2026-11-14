@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 230" width="560" font-family="Arial, sans-serif" role="img" aria-label="Meningen Längden på rummet är 5,7 m uppdelad i storhet, mätetal och enhet">
+  <style>.t{font-size:24px;fill:#1f2937}.l{font-size:15px;font-weight:bold}.s{font-size:13px;fill:#4b5563}</style>
+  <rect x="40" y="94" width="122" height="40" rx="8" fill="#fef2f2" stroke="#dc2626" stroke-width="2.5"/>
+  <text x="101" y="122" text-anchor="middle" class="t">Längden</text>
+  <text x="258" y="122" text-anchor="middle" class="t">på rummet är</text>
+  <rect x="356" y="94" width="62" height="40" rx="8" fill="#eff6ff" stroke="#2563eb" stroke-width="2.5"/>
+  <text x="387" y="122" text-anchor="middle" class="t">5,7</text>
+  <rect x="428" y="94" width="44" height="40" rx="8" fill="#f0fdf4" stroke="#16a34a" stroke-width="2.5"/>
+  <text x="450" y="122" text-anchor="middle" class="t">m</text>
+  <line x1="101" y1="94" x2="101" y2="58" stroke="#dc2626" stroke-width="2"/>
+  <text x="101" y="30" text-anchor="middle" class="l" fill="#dc2626">STORHET</text>
+  <text x="101" y="48" text-anchor="middle" class="s">det man mäter</text>
+  <line x1="387" y1="134" x2="387" y2="170" stroke="#2563eb" stroke-width="2"/>
+  <text x="387" y="190" text-anchor="middle" class="l" fill="#2563eb">MÄTETAL</text>
+  <text x="387" y="208" text-anchor="middle" class="s">siffran man får</text>
+  <line x1="450" y1="94" x2="490" y2="58" stroke="#16a34a" stroke-width="2"/>
+  <text x="500" y="30" text-anchor="middle" class="l" fill="#16a34a">ENHET</text>
+  <text x="500" y="48" text-anchor="middle" class="s">det man mäter i</text>
+</svg>
