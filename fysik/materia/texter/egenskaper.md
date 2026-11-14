@@ -34,6 +34,8 @@ Tänk dig två kuber som är exakt lika stora – en av trä och en av järn. J�
 
 *Densitet* talar om hur tätt massan är packad i ett material. Man kan också säga att densiteten är hur mycket en bit på 1 cm³ av materialet väger.
 
+1 cm³ vatten väger 1 g, medan 1 cm³ järn väger 7,9 g.
+
 | Material | Densitet (g/cm³) |
 |---|---|
 | kork | 0,2 |
@@ -43,8 +45,6 @@ Tänk dig två kuber som är exakt lika stora – en av trä och en av järn. J�
 | aluminium | 2,7 |
 | järn | 7,9 |
 | guld | 19,3 |
-
-1 cm³ vatten väger alltså 1 g, medan 1 cm³ järn väger 7,9 g.
 
 ### Räkna ut densiteten
 
