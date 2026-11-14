@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 230" width="360" font-family="Arial, sans-serif" role="img" aria-label="En kub där varje sida är 1 cm. Volymen är 1 kubikcentimeter, lika mycket som 1 milliliter.">
+  <!-- kub -->
+  <polygon points="90,80 190,80 190,180 90,180" fill="#bfdbfe" stroke="#1f2937" stroke-width="2.5"/>
+  <polygon points="90,80 130,45 230,45 190,80" fill="#dbeafe" stroke="#1f2937" stroke-width="2.5"/>
+  <polygon points="190,80 230,45 230,145 190,180" fill="#93c5fd" stroke="#1f2937" stroke-width="2.5"/>
+  <!-- mått -->
+  <g stroke="#dc2626" stroke-width="1.8">
+    <line x1="90" y1="196" x2="190" y2="196"/><line x1="90" y1="190" x2="90" y2="202"/><line x1="190" y1="190" x2="190" y2="202"/>
+    <line x1="74" y1="80" x2="74" y2="180"/><line x1="68" y1="80" x2="80" y2="80"/><line x1="68" y1="180" x2="80" y2="180"/>
+    <line x1="203" y1="188" x2="243" y2="153"/><line x1="199" y1="183" x2="207" y2="193"/><line x1="239" y1="148" x2="247" y2="158"/>
+  </g>
+  <g font-size="15" font-weight="bold" fill="#dc2626">
+    <text x="140" y="218" text-anchor="middle">1 cm</text>
+    <text x="64" y="135" text-anchor="end">1 cm</text>
+    <text x="250" y="182">1 cm</text>
+  </g>
+  <text x="140" y="136" text-anchor="middle" font-size="16" font-weight="bold" fill="#1f2937">1 cm³</text>
+  <text x="290" y="70" text-anchor="middle" font-size="13" fill="#1f2937">rymmer</text>
+  <text x="290" y="88" text-anchor="middle" font-size="15" font-weight="bold" fill="#2563eb">1 ml</text>
+</svg>

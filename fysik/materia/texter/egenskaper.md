@@ -15,6 +15,8 @@ All materia har *massa* och *volym*.
 - *Massa* talar om hur mycket materia det finns i en kropp. Massa mäts i kilogram (kg) eller gram (g).
 - *Volym* talar om hur mycket plats kroppen tar. Volym mäts i liter (l) eller kubikcentimeter (cm³). En kubikcentimeter är en liten kub som är 1 cm på varje sida – den rymmer lika mycket som 1 milliliter.
 
+![En kub med sidan 1 cm har volymen 1 cm³ och rymmer 1 ml](bilder/kubikcentimeter.svg)
+
 | Storhet | Beteckning | Enhet |
 |---|---|---|
 | massa | m | kilogram (kg) eller gram (g) |
