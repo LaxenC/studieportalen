@@ -71,7 +71,7 @@ Om en kropp flyter eller sjunker beror på densiteten. Det gäller både i väts
 - Har kroppen **lägre** densitet än vätskan eller gasen runt omkring **flyter** den – i luft stiger den.
 - Har kroppen **högre** densitet än vätskan eller gasen runt omkring **sjunker** den.
 
-Man kan också säga så här: det som har **högst** densitet hamnar **underst**, och det som har **lägre** densitet hamnar **ovanpå**. Isen hamnar ovanpå vattnet, olja hamnar ovanpå vatten – och spiken hamnar på botten.
+Man kan också säga så här: **det som inte blandas lägger sig i lager efter densitet** – det som har **högst** densitet hamnar **underst**, och det som har **lägre** densitet hamnar **ovanpå**. Isen hamnar ovanpå vattnet, olja hamnar ovanpå vatten – och spiken hamnar på botten.
 
 Is har densiteten 0,9 g/cm³ och vatten 1,0 g/cm³. Isen har lägre densitet än vattnet, **därför** flyter isen. En järnspik har densiteten 7,9 g/cm³ – den är mycket högre än vattnets, **därför** sjunker spiken.
 
@@ -99,6 +99,12 @@ Vatten i sjöar och älvar kallas *sötvatten*. I haven finns salt löst i vattn
 Samma regel gäller i luft. Helium har densiteten 0,00018 g/cm³ och luft 0,0012 g/cm³. En heliumballong har lägre densitet än luften omkring, **därför** stiger den. En ballong som du blåser upp själv är fylld med vanlig luft och väger dessutom gummit – **därför** sjunker den.
 
 ![En heliumballong stiger och en ballong med vanlig luft sjunker](bilder/heliumballong.svg)
+
+::: fördjupning Varför blir det inga lager i luften?
+Luften består mest av kvävgas och syrgas. Syrgas har lite högre densitet än kvävgas – ändå ligger inte syret i ett lager närmast marken. I en gas sitter partiklarna långt ifrån varandra och rör sig snabbt åt alla håll. **Därför** blandas gaser hela tiden, och det blir svårt för lager att bildas.
+
+I en vätska rör sig partiklarna långsammare och tätt intill varandra – där kan lager ligga kvar länge. I Östersjön ligger till exempel saltare och tyngre vatten under sötare ytvatten. I ett fast ämne sitter partiklarna på plats och blandas inte alls.
+:::
 
 > **💬 Förklara så här** {.green}
 > *Varför flyter isen?*<br>
