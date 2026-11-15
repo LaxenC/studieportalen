@@ -71,7 +71,7 @@ Om en kropp flyter eller sjunker beror på densiteten. Det gäller både i väts
 - Har kroppen **lägre** densitet än vätskan eller gasen runt omkring **flyter** den – i luft stiger den.
 - Har kroppen **högre** densitet än vätskan eller gasen runt omkring **sjunker** den.
 
-Man kan också säga så här: **det som inte blandas lägger sig i lager efter densitet** – det som har **högst** densitet hamnar **underst**, och det som har **lägre** densitet hamnar **ovanpå**. Isen hamnar ovanpå vattnet, olja hamnar ovanpå vatten – och spiken hamnar på botten.
+Man kan också säga så här: det som har **högst** densitet hamnar **underst**, och det som har **lägre** densitet hamnar **ovanpå**. Isen hamnar ovanpå vattnet, olja hamnar ovanpå vatten – och spiken hamnar på botten. I gaser blir lagren inte lika tydliga, **eftersom** gasens partiklar rör sig hela tiden och blandas.
 
 Is har densiteten 0,9 g/cm³ och vatten 1,0 g/cm³. Isen har lägre densitet än vattnet, **därför** flyter isen. En järnspik har densiteten 7,9 g/cm³ – den är mycket högre än vattnets, **därför** sjunker spiken.
 
