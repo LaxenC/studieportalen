@@ -247,6 +247,8 @@ Steg i ordning med pilar emellan. Några steg är tomma och eleven väljer rätt
 
 En fråga med alternativ. `s: "ratt"`, `s: "fel"` eller `s: "delvis"` (delvis rätt). `f` är förklaringen eleven ser efter rättning.
 
+`bild` (valfritt, i varianten eller på uppgiften) visar en bild ovanför alternativen, t.ex. `bild: "![Låda med en pil](bilder/pil-tryck-hoger.svg)"`. Sökvägen utgår från arbetsområdets mapp. Fungerar också för `forklara`.
+
 ```js
 { id: "str-beta-vad", kapitel: "stralning", avsnitt: ["partikel"], titel: "Betastrålning – vad strålar ut?",
   typ: "flerval", nivaer: [1],

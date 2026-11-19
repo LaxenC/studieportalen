@@ -18,9 +18,9 @@ Portal.omrade({
   arskurs: [7],
   kapitel: [
     { id: "kraft", namn: "Kraft, massa och tyngd", farg: "yellow",
-      text: "Vad en kraft gör, kraftpilar, tyngdkraft och balans." },
+      text: "Vad en kraft är, kraftpilar, tyngdkraft, massa och tyngd, tyngdpunkt." },
     { id: "rorelse", namn: "Kraft skapar rörelse", farg: "orange",
-      text: "Olika rörelser, medelhastighet, friktion, luftmotstånd och tröghet." },
+      text: "Vad en kraft gör, kraft och motkraft, olika rörelser, friktion, luftmotstånd och tröghet." },
     { id: "centripetal", namn: "Centripetalkraft och fritt fall", farg: "purple",
       text: "Cirkelrörelse, centrifugalkraft och fritt fall." },
     { id: "arbete", namn: "Arbete och effekt", farg: "red",

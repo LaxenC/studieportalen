@@ -37,6 +37,8 @@ function delBild(k, size = 56) {
      grade(root, q)    -> { ok, right, total, facit }  och markerar fälten
 */
 const TYPER = {};
+// Mappen som relativa bildlänkar i en uppgift utgår från (arbetsområdets mapp)
+const uppgiftBas = t => { const o = t && t._omrade && Portal.omraden[t._omrade]; return o ? sokvag(o, "") : undefined; };
 
 /* LUCKTEXT */
 TYPER.lucktext = {
@@ -560,7 +562,7 @@ TYPER.isotoptabell = {
 TYPER.flerval = {
   instr: q => esc(q.v.fraga),
   setup(q) { q.alt = shuffle(q.v.alt); q.val = null; },
-  html(q) { const bild = q.v.bild || q.task.bild; return `${bild ? `<div class="mcbild">${MD.inline(bild)}</div>` : ""}<div class="mc" role="radiogroup">${q.alt.map((a, i) => `<button type="button" class="mcopt" role="radio" aria-checked="false" data-mc="${i}"><span class="mcl">${"ABCD"[i]}</span><span>${esc(a.t)}</span></button>`).join("")}</div>`; },
+  html(q) { const bild = q.v.bild || q.task.bild; return `${bild ? `<div class="mcbild">${MD.inline(bild, uppgiftBas(q.task))}</div>` : ""}<div class="mc" role="radiogroup">${q.alt.map((a, i) => `<button type="button" class="mcopt" role="radio" aria-checked="false" data-mc="${i}"><span class="mcl">${"ABCD"[i]}</span><span>${esc(a.t)}</span></button>`).join("")}</div>`; },
   mount(root, q) { root.addEventListener("click", e => { const b = e.target.closest("[data-mc]"); if (!b || q.locked) return; q.val = +b.dataset.mc; root.querySelectorAll("[data-mc]").forEach(x => x.setAttribute("aria-checked", x === b)); }); },
   grade(root, q) {
     q.locked = true; const a = q.val == null ? null : q.alt[q.val], r = q.alt.find(x => x.s === "ratt");
@@ -789,7 +791,7 @@ TYPER.forklara = {
   instr: q => esc(q.v.fraga),
   html(q) {
     const bild = q.v.bild || q.task.bild;
-    return `${bild ? `<div class="mcbild">${MD.inline(bild)}</div>` : ""}
+    return `${bild ? `<div class="mcbild">${MD.inline(bild, uppgiftBas(q.task))}</div>` : ""}
       ${q.rull ? `<p class="fk-bank"><span>Använd orden:</span> ${shuffle(q.v.begrepp).map(b => `<b>${esc(begreppVisa(b))}</b>`).join("")}</p>` : ""}
       <textarea class="fk-text" rows="5" placeholder="Skriv din förklaring här …" aria-label="Din förklaring"></textarea>
       <p class="fk-tips">Förklara med hela meningar. Använd naturvetenskapliga begrepp och förklara <i>varför</i>, inte bara <i>vad</i>.</p>`;

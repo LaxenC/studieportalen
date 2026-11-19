@@ -18,6 +18,12 @@ const MD = (() => {
   const slug = s => s.toLowerCase().replace(/[åä]/g, "a").replace(/ö/g, "o").replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
 
   /* ---------- text i en rad ---------- */
+  // bas (valfri) = mapp som relativa bildlänkar utgår från, t.ex. för bilder i uppgifter
+  function inlineMedBas(s, bas) {
+    if (bas === undefined) return inline(s);
+    const gammal = BAS; BAS = bas;
+    try { return inline(s); } finally { BAS = gammal; }
+  }
   function inline(s) {
     const spar = [];
     const hall = h => `\u0000${spar.push(h) - 1}\u0000`;
@@ -253,5 +259,5 @@ const MD = (() => {
   }
   const akText = l => { l = [...l].sort((a, b) => a - b); return l.length > 1 && l[l.length - 1] - l[0] === l.length - 1 ? `${l[0]}–${l[l.length - 1]}` : l.join(", "); };
 
-  return { parse, inline, filtreraAk, akText, parseAk, slug };
+  return { parse, inline: inlineMedBas, filtreraAk, akText, parseAk, slug };
 })();
