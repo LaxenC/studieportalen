@@ -247,7 +247,7 @@ I allt som snurrar – cykelhjul, fläktar och motorer – finns ofta *kullager*
 
 När Kalle cyklar känner han luften mot ansiktet, även om det inte blåser. Han krockar med luftens molekyler, och de håller emot hans rörelse. Den kraften kallas *luftmotstånd*.
 
-Luftmotstånd är en sorts friktion – friktion från luften. Det uppstår bara när kroppen rör sig genom luften, eller när luften rör sig mot kroppen.
+Luftmotstånd uppstår bara när kroppen rör sig genom luften, eller när luften rör sig mot kroppen.
 
 - Ju större yta som krockar med luften, desto större luftmotstånd.
 - Ju fortare kroppen rör sig, desto större luftmotstånd.
@@ -257,7 +257,7 @@ En fallskärm har en mycket stor yta. **Därför** får den ett stort luftmotst�
 Även vatten håller emot en kropp som rör sig. Fiskar har en smal, spetsig kropp som gör att vattnet håller emot så lite som möjligt.
 
 > **Begrepp**
-> **luftmotstånd** – friktion från luften som håller emot en kropp som rör sig
+> **luftmotstånd** – en kraft från luften som håller emot en kropp som rör sig
 
 > **💬 Förklara så här** {.green}
 > *Varför faller en fallskärmshoppare långsamt?*<br>
@@ -271,7 +271,7 @@ En fallskärm har en mycket stor yta. **Därför** får den ett stort luftmotst�
 > **Därför** bromsas åkaren mindre och åker fortare.
 
 > **Viktigt att komma ihåg**
-> - {#luftmotstand} *Luftmotstånd* är friktion från luften. Det håller emot när en kropp rör sig genom luften. Ju större yta, desto större luftmotstånd.
+> - {#luftmotstand} *Luftmotstånd* är en kraft från luften. Det håller emot när en kropp rör sig genom luften. Ju större yta, desto större luftmotstånd.
 
 ## Tröghet {#troghet}
 

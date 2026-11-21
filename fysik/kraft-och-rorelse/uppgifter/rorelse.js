@@ -305,7 +305,7 @@ Portal.uppgifter([
     typ: "flerval", nivaer: [1], punkter: ["luftmotstand"],
     varianter: [
       { fraga: "Vad är luftmotstånd?",
-        alt: [ { t: "Friktion från luften som håller emot en kropp som rör sig", s: "ratt", f: "kroppen krockar med luftens molekyler, och de håller emot." },
+        alt: [ { t: "En kraft från luften som håller emot en kropp som rör sig", s: "ratt", f: "kroppen krockar med luftens molekyler, och de håller emot." },
                { t: "En kraft från luften som drar kroppen nedåt", s: "fel", f: "det är tyngdkraften som drar nedåt. Luftmotståndet håller emot rörelsen." },
                { t: "En kraft som bara finns när det blåser", s: "fel", f: "luftmotstånd finns så fort kroppen rör sig genom luften, även när det inte blåser." } ] },
       { fraga: "Vilken fallskärm ger störst luftmotstånd?",
@@ -314,14 +314,14 @@ Portal.uppgifter([
                { t: "Alla fallskärmar ger lika stort luftmotstånd", s: "fel", f: "ytan spelar roll. Ju större yta, desto större luftmotstånd." } ] },
       { fraga: "Varför böjer sig tävlingscyklister framåt när de cyklar?",
         alt: [ { t: "För att få mindre luftmotstånd", s: "ratt", f: "när de böjer sig blir ytan mot luften mindre, och då blir luftmotståndet mindre." },
-               { t: "För att få större friktion mot vägen", s: "fel", f: "de böjer sig för att ytan mot luften ska bli mindre. Då minskar luftmotståndet." },
+               { t: "För att få bättre balans", s: "fel", f: "de böjer sig för att ytan mot luften ska bli mindre. Då minskar luftmotståndet." },
                { t: "För att bli tyngre", s: "fel", f: "massan ändras inte. Det som ändras är ytan mot luften." } ] }
     ] },
 
   { id: "ro-luft-sf", kapitel: "rorelse", avsnitt: ["luftmotstand"], titel: "Luftmotstånd – sant eller falskt",
     typ: "santfalskt", nivaer: [1], punkter: ["luftmotstand"],
     varianter: [
-      { pst: [["Luftmotstånd är en sorts friktion.", true],
+      { pst: [["Luftmotstånd håller emot en kropp som rör sig.", true],
               ["Luftmotstånd finns bara när det blåser.", false],
               ["Ju större yta, desto större luftmotstånd.", true],
               ["En boll som ligger still på marken har luftmotstånd.", false],
