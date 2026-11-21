@@ -177,10 +177,10 @@ Medelhastigheten räknar man ut på samma sätt som hastighet – man delar str�
 > **Exempel:** Kalle cyklar 60 km på 4 timmar. Medelhastighet = 60 / 4 = 15 km/h.
 
 ![Kalle cyklar 15 km varje timme. Efter 4 timmar har han cyklat 60 km.](bilder/medel-lika.svg)
-Bild: Kalle cyklar lika långt varje timme. Medelhastigheten är 15 km/h.
+Bild: Kalle cyklar 15 km varje timme. Efter 4 timmar har han cyklat 60 km. Medelhastighet = 60 km / 4 h = 15 km/h.
 
 ![Kalle cyklar ibland 10 km och ibland 20 km på en timme. Efter 4 timmar har han ändå cyklat 60 km.](bilder/medel-olika.svg)
-Bild: Kalle cyklar olika långt varje timme, men kommer ändå 60 km på 4 timmar. Medelhastigheten är också 15 km/h.
+Bild: Kalle cyklar 10 km, 20 km, 20 km och 10 km de fyra timmarna. Hela sträckan blir ändå 60 km på 4 timmar. Medelhastighet = 60 km / 4 h = 15 km/h.
 
 > **💬 Förklara så här** {.green}
 > *Hur kan Kalles medelhastighet vara 15 km/h när han ibland cyklar 20 km/h?*<br>
