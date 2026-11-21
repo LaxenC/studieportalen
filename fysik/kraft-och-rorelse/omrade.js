@@ -15,6 +15,7 @@ Portal.omrade({
   id: "kraft-och-rorelse",
   namn: "Kraft och rörelse",
   text: "Krafter, tyngd, rörelse, friktion, tröghet, fritt fall, arbete och effekt.",
+  bild: '<img src="fysik/kraft-och-rorelse/bilder/kort.svg?v=1" alt="" style="width:120px;height:auto">',
   arskurs: [7],
   kapitel: [
     { id: "kraft", namn: "Kraft, massa och tyngd", farg: "yellow",

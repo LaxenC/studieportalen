@@ -15,6 +15,7 @@ Portal.omrade({
   id: "materia",
   namn: "Materia",
   text: "Kroppar, partiklar, atomer och molekyler – och densitet.",
+  bild: '<img src="fysik/materia/bilder/kort.svg?v=1" alt="" style="width:120px;height:auto">',
   arskurs: [7],
   kapitel: [
     { id: "materia", namn: "Materia", farg: "green",

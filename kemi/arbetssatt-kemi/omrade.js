@@ -15,6 +15,7 @@ Portal.omrade({
   id: "arbetssatt-kemi",
   namn: "Naturvetenskapligt arbetssätt",
   text: "Hur naturvetenskap arbetar, hur man gör en undersökning och vad som gör kemin speciell.",
+  bild: '<img src="kemi/arbetssatt-kemi/bilder/kort.svg?v=1" alt="" style="width:120px;height:auto">',
   arskurs: [7, 8, 9],
   kapitel: [
     { id: "naturvetenskap", namn: "Vad är naturvetenskap?", farg: "green",
