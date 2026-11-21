@@ -177,9 +177,12 @@ Från tyngdpunkten drar man en linje rakt ner. Den kallas *lodlinje*. Den yta so
 > Klossen lutar så mycket att *lodlinjen* från *tyngdpunkten* hamnar utanför *stödytan*.<br>
 > **Därför** välter klossen.
 
-::: fördjupning Låg tyngdpunkt och stor stödyta
+### Låg tyngdpunkt och stor stödyta
+
 En kropp med låg tyngdpunkt och stor stödyta står stadigt. Den kan luta mycket innan lodlinjen hamnar utanför stödytan. En hög och smal kropp välter mycket lättare. **Därför** står man stadigare med benen isär, och **därför** lastar man tunga saker längst ner i en lastbil.
-:::
+
+![Två klossar lutar lika mycket. Den låga och breda faller tillbaka. Den höga och smala välter.](bilder/stadig.svg)
+Bild: Klossarna lutar lika mycket. Bara den höga och smala välter.
 
 > **Viktigt att komma ihåg**
 > - {#tp-begrepp} *Tyngdpunkten* är mitten av kroppens massa – i en jämn kropp ligger den mitt i. *Lodlinjen* är en linje rakt ner från tyngdpunkten. *Stödytan* är ytan som kroppen står på.
