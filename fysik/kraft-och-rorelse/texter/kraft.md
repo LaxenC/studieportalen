@@ -51,8 +51,8 @@ Om flera krafter verkar på samma kropp ritar man en pil för varje kraft. Pilar
 > Jorden drar i lådan, så det verkar också en *tyngdkraft* rakt ner.
 
 > **Viktigt att komma ihåg**
-> - {#kraft-vad} En *kraft* trycker eller drar i en kropp. Kraft mäts i newton (N) med en dynamometer.
-> - {#krafter-kropp} Kunna avgöra vilka krafter som verkar på en kropp (tyngdkraft, tryckkraft, dragkraft), åt vilket håll de verkar och vilken som är störst.
+> - {#kraft-vad} En *kraft* trycker eller drar i en kropp. En kraft kommer alltid från något.
+> - {#krafter-kropp} Det finns *dragkraft*, *tryckkraft* och *tyngdkraft*. En kraft ritas som en pil. Pilen visar åt vilket håll kraften verkar, och pilens längd visar hur stor kraften är.
 
 ## Tyngdkraft och newton {#tyngdkraft}
 
@@ -86,6 +86,7 @@ Newton förstod att alla kroppar drar i varandra. Det kallas *gravitation*. Ju s
 
 > **Viktigt att komma ihåg**
 > - {#tyngdkraft-ner} *Tyngdkraften* drar alla kroppar rakt ner mot jordens mitt.
+> - {#kraft-matt} Kraft mäts i *newton* (N) med en *dynamometer*.
 
 ## Massa och tyngd {#massa-tyngd}
 

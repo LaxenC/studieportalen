@@ -3,7 +3,7 @@
    ---------------------------------------------------------------------
    Mallar för varje uppgiftstyp finns i mallar.md.
    Avsnitt: vad-kraft, tyngdkraft, massa-tyngd, tyngdpunkt
-   Öva tills du kan: kraft-vad, krafter-kropp, tyngdkraft-ner, tyngd-rakna, valta
+   Öva tills du kan: kraft-vad, krafter-kropp, tyngdkraft-ner, kraft-matt, tyngd-rakna, valta
    ===================================================================== */
 Portal.uppgifter([
 
@@ -17,6 +17,19 @@ Portal.uppgifter([
                { t: "Hur mycket ork man har", s: "fel", f: "så använder vi ordet i vardagen, men i fysiken betyder kraft något som trycker eller drar." },
                { t: "Hur mycket en kropp väger", s: "fel", f: "det är massan. En kraft trycker eller drar." },
                { t: "Hur snabbt en kropp rör sig", s: "fel", f: "det är farten. En kraft trycker eller drar." } ] },
+      { fraga: "Varifrån kommer en kraft?",
+        alt: [ { t: "Alltid från något – till exempel en hand, ett rep eller jorden", s: "ratt", f: "en kraft kommer alltid från något som trycker eller drar." },
+               { t: "Den kan komma från ingenting", s: "fel", f: "en kraft kommer alltid från något – en hand, ett rep eller jorden." },
+               { t: "Bara från människor", s: "fel", f: "jorden drar också i allt – det är tyngdkraften." } ] },
+      { fraga: "En låda glider ner för en backe fast ingen puttar på den. Vad drar i lådan?",
+        alt: [ { t: "Jorden", s: "ratt", f: "jorden drar i lådan – det är tyngdkraften." },
+               { t: "Ingenting", s: "fel", f: "något måste dra i lådan, annars skulle den inte röra sig. Det är jorden." },
+               { t: "Backen", s: "fel", f: "backen drar inte. Det är jorden som drar lådan nedåt." } ] }
+    ] },
+
+  { id: "kr-matt", kapitel: "kraft", avsnitt: ["tyngdkraft"], titel: "Mäta kraft",
+    typ: "flerval", nivaer: [0, 1], punkter: ["kraft-matt"],
+    varianter: [
       { fraga: "Vilken enhet har kraft?",
         alt: [ { t: "newton (N)", s: "ratt", f: "kraft mäts i newton." },
                { t: "kilogram (kg)", s: "fel", f: "kilogram är enheten för massa." },
@@ -26,11 +39,16 @@ Portal.uppgifter([
         alt: [ { t: "En dynamometer", s: "ratt", f: "i dynamometern sträcks en fjäder ut – ju större kraft, desto mer." },
                { t: "En termometer", s: "fel", f: "en termometer mäter temperatur." },
                { t: "Ett måttband", s: "fel", f: "ett måttband mäter längd." },
-               { t: "Ett tidtagarur", s: "fel", f: "ett tidtagarur mäter tid." } ] }
+               { t: "Ett tidtagarur", s: "fel", f: "ett tidtagarur mäter tid." } ] },
+      { bild: "![Lisa drar lådan med en dynamometer som visar 30 N](bilder/lada-dynamometer.svg)",
+        fraga: "Hur stor kraft visar dynamometern?",
+        alt: [ { t: "30 N", s: "ratt", f: "den röda markeringen står vid 30 N." },
+               { t: "30 kg", s: "fel", f: "kraft mäts i newton, inte i kilogram." },
+               { t: "20 N", s: "fel", f: "titta var den röda markeringen står – vid 30." } ] }
     ] },
 
   { id: "kr-vad-lucka", kapitel: "kraft", avsnitt: ["vad-kraft", "tyngdkraft"], titel: "Kraft – fyll i",
-    typ: "lucktext", nivaer: [1], rullista: [1], punkter: ["kraft-vad"],
+    typ: "lucktext", nivaer: [1], rullista: [1], punkter: ["kraft-vad", "kraft-matt"],
     ordlista: ["trycker", "drar", "newton", "dynamometer", "kilogram", "termometer"],
     varianter: [
       { text: "En kraft [*trycker] eller [*drar] i en kropp.\nKraft mäts i enheten [newton|N].\nMan mäter kraft med en [dynamometer]." }
@@ -130,7 +148,7 @@ Portal.uppgifter([
     ] },
 
   { id: "kr-tyngd-sf", kapitel: "kraft", avsnitt: ["tyngdkraft"], titel: "Tyngdkraft – sant eller falskt",
-    typ: "santfalskt", nivaer: [1], punkter: ["tyngdkraft-ner", "kraft-vad"],
+    typ: "santfalskt", nivaer: [1], punkter: ["tyngdkraft-ner", "kraft-matt"],
     varianter: [
       { pst: [["Tyngdkraften drar i en låda även när lådan står still.", true], ["Tyngdkraften drar alltid rakt ner, mot jordens mitt.", true],
               ["I en backe drar tyngdkraften snett längs backen.", false], ["Kraft mäts i kilogram.", false],
