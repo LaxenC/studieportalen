@@ -236,3 +236,9 @@ section.avsnitt.ak-extra>.aktag{justify-self:start}
 .plan-knappar small{color:var(--muted);font-weight:700}
 .plan-saknas{margin:0;padding:8px 12px;border-radius:10px;background:var(--orange-bg, #fff4e6);color:var(--ink);font-size:.92rem}
 .plan-fel{color:var(--proton, #c92a2a);font-weight:700;font-size:.9rem}
+
+/* Förklara så här: frågan skild från svaret */
+.callout.fk .fk-fraga{font-weight:700;padding-bottom:8px;border-bottom:1px dashed currentColor;margin-bottom:2px}
+.callout.fk .fk-fraga::before{content:"Fråga: ";font-weight:900}
+.callout.fk .fk-svar{border-left:3px solid #7bc47f;padding-left:10px}
+.callout.fk .fk-svar>p:first-child::before{content:"Svar: ";font-weight:900}

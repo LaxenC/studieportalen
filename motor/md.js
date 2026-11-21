@@ -105,7 +105,13 @@ const MD = (() => {
       ctx.viktigt.push(h); return { html: h };
     }
     if (tl.startsWith("fördjupning") || tl.startsWith("extra")) return { html: `<details class="fordjup"><summary>${inline(titel)}</summary><div class="fd-inne">${innehall}</div></details>` };
-    const h = `<div class="callout ${FARGKLASS[farg] || "c-blue"}"><h4>${inline(titel)}</h4>${innehall}</div>`;
+    let h = `<div class="callout ${FARGKLASS[farg] || "c-blue"}"><h4>${inline(titel)}</h4>${innehall}</div>`;
+    // Förklara så här: första raden i kursiv är frågan – visa den skild från svaret
+    const fq = /förklara så här/.test(tl) && inre.length > 1 && inre[0].trim().match(/^\*([^*].*?)\*\s*(?:<br>)?\s*$/);
+    if (fq) {
+      const svar = block(inre.slice(1), ctx).map(b => b.html).join("");
+      h = `<div class="callout ${FARGKLASS[farg] || "c-blue"} fk"><h4>${inline(titel)}</h4><p class="fk-fraga">${inline(fq[1])}</p><div class="fk-svar">${svar}</div></div>`;
+    }
     if (/förklara så här/.test(tl) && ctx.forklara) ctx.forklara.push(h);   // visas också i Plugga
     return { html: h };
   }
