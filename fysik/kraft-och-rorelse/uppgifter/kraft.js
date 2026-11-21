@@ -3,7 +3,7 @@
    ---------------------------------------------------------------------
    Mallar för varje uppgiftstyp finns i mallar.md.
    Avsnitt: vad-kraft, tyngdkraft, massa-tyngd, tyngdpunkt
-   Öva tills du kan: kraft-vad, krafter-kropp, kraftpil, tyngdkraft-ner, kraft-matt, tyngd-rakna, valta
+   Öva tills du kan: kraft-vad, krafter-kropp, kraftpil, tyngdkraft-ner, kraft-matt, tyngd-rakna, tp-begrepp, valta
    ===================================================================== */
 Portal.uppgifter([
 
@@ -216,7 +216,7 @@ Portal.uppgifter([
   /* ---------------- Tyngdpunkt, lodlinje och stödyta ---------------- */
 
   { id: "kr-begrepp-dra", kapitel: "kraft", avsnitt: ["tyngdpunkt"], titel: "Tyngdpunkt, lodlinje och stödyta",
-    typ: "dra", nivaer: [0, 1], punkter: ["valta"],
+    typ: "dra", nivaer: [0, 1], punkter: ["tp-begrepp"],
     varianter: [
       { rubrik: "Dra varje begrepp till rätt beskrivning.",
         par: [["Tyngdpunkt", "Mitten av en kropps massa"], ["Lodlinje", "En linje rakt ner från tyngdpunkten"], ["Stödyta", "Ytan som en kropp står på"]] }
@@ -244,7 +244,7 @@ Portal.uppgifter([
     ] },
 
   { id: "kr-valta-lucka", kapitel: "kraft", avsnitt: ["tyngdpunkt"], titel: "När välter en kropp?",
-    typ: "lucktext", nivaer: [1, 2], rullista: [1], punkter: ["valta"],
+    typ: "lucktext", nivaer: [1, 2], rullista: [1], punkter: ["tp-begrepp", "valta"],
     ordlista: ["inom", "utanför", "tyngdpunkten", "stödytan", "lodlinjen"],
     varianter: [
       { text: "Från [tyngdpunkten] drar man en linje rakt ner. Den kallas [lodlinjen|lodlinje].\nHamnar lodlinjen [inom] stödytan står kroppen kvar.\nHamnar lodlinjen [utanför] stödytan välter kroppen." }

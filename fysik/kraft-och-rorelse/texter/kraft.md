@@ -180,4 +180,5 @@ I en kropp som inte är jämn ligger tyngdpunkten inte mitt i. I en pyramid finn
 :::
 
 > **Viktigt att komma ihåg**
+> - {#tp-begrepp} *Tyngdpunkten* är mitten av kroppens massa – i en jämn kropp ligger den mitt i. *Lodlinjen* är en linje rakt ner från tyngdpunkten. *Stödytan* är ytan som kroppen står på.
 > - {#valta} Hamnar *lodlinjen* från *tyngdpunkten* inom *stödytan* står kroppen kvar. Hamnar den utanför välter kroppen.
