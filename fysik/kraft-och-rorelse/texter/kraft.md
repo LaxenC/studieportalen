@@ -104,8 +104,8 @@ På jorden drar tyngdkraften med ungefär 10 N för varje kilogram. Därför kan
 
 Talet 10 kallas *tyngdfaktor* (g). Mer exakt är det 9,82 N/kg på jorden.
 
-> **Exempel:** En låda har massan 10 kg.<br>
-> tyngd = 10 · 10 = 100 N
+> **Exempel:** En låda har massan 8 kg.<br>
+> tyngd = 8 · 10 = 80 N
 
 ### Massa och tyngd på månen
 
