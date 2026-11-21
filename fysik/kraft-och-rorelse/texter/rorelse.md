@@ -170,9 +170,9 @@ När man cyklar ändras hastigheten hela tiden. Det går fortare i nedförsbacka
 > **hastighet** – hur snabbt något rör sig, till exempel i km/h
 > **medelhastighet** – hastigheten i genomsnitt under hela sträckan
 
-Man räknar ut medelhastigheten genom att dela sträckan med tiden:
+Medelhastigheten räknar man ut på samma sätt som hastighet – man delar sträckan med tiden. Skillnaden är att man tittar på *hela* sträckan och *hela* tiden:
 
-**medelhastighet = sträcka / tid**
+**medelhastighet = hela sträckan / hela tiden**
 
 > **Exempel:** Kalle cyklar 60 km på 4 timmar. Medelhastighet = 60 / 4 = 15 km/h.
 
