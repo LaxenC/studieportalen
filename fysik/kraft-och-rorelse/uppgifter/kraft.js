@@ -260,12 +260,34 @@ Portal.uppgifter([
     ] },
 
   { id: "kr-stadig", kapitel: "kraft", avsnitt: ["tyngdpunkt"], titel: "Vilken står stadigast?",
-    typ: "flerval", nivaer: [3],
+    typ: "flerval", nivaer: [1, 2], punkter: ["stadig"],
     varianter: [
       { fraga: "Två klossar lutar lika mycket. Den ena är hög och smal, den andra är låg och bred. Vilken välter lättast?",
         alt: [ { t: "Den höga och smala", s: "ratt", f: "den har hög tyngdpunkt och liten stödyta, så lodlinjen hamnar snabbt utanför stödytan." },
                { t: "Den låga och breda", s: "fel", f: "låg tyngdpunkt och stor stödyta gör att den står stadigt." },
                { t: "De välter lika lätt", s: "fel", f: "formen spelar roll – låg tyngdpunkt och stor stödyta gör en kropp stadigare." } ] },
+      { fraga: "Varför står man stadigare med benen isär?",
+        alt: [ { t: "Stödytan blir större", s: "ratt", f: "med benen isär hamnar lodlinjen inte lika lätt utanför stödytan." },
+               { t: "Tyngden blir mindre", s: "fel", f: "tyngden är densamma. Det är stödytan som blir större." },
+               { t: "Tyngdpunkten hamnar högre upp", s: "fel", f: "en hög tyngdpunkt gör att man välter lättare. Det som hjälper är att stödytan blir större." } ] },
+      { fraga: "En lastbil ska lastas med tunga lådor och lätta lådor. Var ska de tunga lådorna stå för att lastbilen ska stå stadigast?",
+        alt: [ { t: "Längst ner", s: "ratt", f: "då hamnar tyngdpunkten lågt, och lastbilen står stadigare." },
+               { t: "Högst upp", s: "fel", f: "då hamnar tyngdpunkten högt, och lastbilen välter lättare." },
+               { t: "Det spelar ingen roll", s: "fel", f: "var tyngdpunkten hamnar spelar roll – låg tyngdpunkt gör lastbilen stadigare." } ] }
+    ] },
+
+  { id: "kr-stadig-forklara", kapitel: "kraft", avsnitt: ["tyngdpunkt"], titel: "Förklara: vilken står stadigt?",
+    typ: "forklara", nivaer: [2], rullista: [2], punkter: ["stadig"],
+    varianter: [
+      { bild: "![Två klossar lutar lika mycket. Den låga och breda faller tillbaka. Den höga och smala välter.](bilder/stadig.svg)",
+        fraga: "Klossarna lutar lika mycket. Förklara varför den låga och breda klossen faller tillbaka, men den höga och smala välter.",
+        begrepp: ["tyngdpunkt", "stödyta", "lodlinje", "inom", "utanför"],
+        modell: "Den låga klossen har låg **tyngdpunkt** och stor **stödyta**. **Därför** hamnar **lodlinjen** **inom** stödytan och klossen faller tillbaka. Den höga klossen har hög tyngdpunkt och liten stödyta. **Därför** hamnar lodlinjen **utanför** stödytan och klossen välter." }
+    ] },
+
+  { id: "kr-badring", kapitel: "kraft", avsnitt: ["tyngdpunkt"], titel: "Tyngdpunkten i en badring",
+    typ: "flerval", nivaer: [3],
+    varianter: [
       { fraga: "Var ligger tyngdpunkten i en badring?",
         alt: [ { t: "Mitt i hålet", s: "ratt", f: "ringen är likadan runt om, så mitten av massan hamnar i hålet – där det inte finns någon massa." },
                { t: "Inne i gummit", s: "fel", f: "ringen är likadan runt om, så tyngdpunkten hamnar mitt i hålet." },

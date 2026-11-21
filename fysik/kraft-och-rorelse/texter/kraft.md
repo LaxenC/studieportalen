@@ -187,3 +187,4 @@ Bild: Klossarna lutar lika mycket. Bara den höga och smala välter.
 > **Viktigt att komma ihåg**
 > - {#tp-begrepp} *Tyngdpunkten* är mitten av kroppens massa – i en jämn kropp ligger den mitt i. *Lodlinjen* är en linje rakt ner från tyngdpunkten. *Stödytan* är ytan som kroppen står på.
 > - {#valta} Hamnar *lodlinjen* från *tyngdpunkten* inom *stödytan* står kroppen kvar. Hamnar den utanför välter kroppen.
+> - {#stadig} En kropp med låg *tyngdpunkt* och stor *stödyta* står stadigt. En hög och smal kropp välter lättare.
