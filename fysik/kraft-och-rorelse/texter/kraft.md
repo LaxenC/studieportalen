@@ -30,7 +30,7 @@ I vardagen kan ordet kraft betyda ork eller styrka – "jag har ingen kraft kvar
 En kraft kan man inte se. Därför ritar man den som en pil, en *kraftpil*.
 
 - Pilen visar åt vilket håll kraften verkar.
-- En längre pil betyder en större kraft.
+- Pilens längd visar hur stor kraften är. En lång pil betyder en stor kraft.
 - Tyngdkraften ritas från kroppens mitt (tyngdpunkten) och rakt ner.
 - Dragkraft och tryckkraft ritas från där repet eller handen sitter. En tryckkraft pekar **in i** kroppen och en dragkraft pekar **ut från** kroppen.
 
@@ -40,7 +40,7 @@ En kraft kan man inte se. Därför ritar man den som en pil, en *kraftpil*.
 ![Repet drar i lådan: dragkraften pekar ut från lådan och tyngdkraften rakt ner](bilder/kraftpil-drag.svg)
 :::
 
-Om flera krafter verkar på samma kropp ritar man en pil för varje kraft. Den längsta pilen visar den största kraften.
+Om flera krafter verkar på samma kropp ritar man en pil för varje kraft. Pilarnas längd visar hur stora krafterna är.
 
 > **Begrepp**
 > **kraftpil** – en pil som visar en krafts riktning och storlek
