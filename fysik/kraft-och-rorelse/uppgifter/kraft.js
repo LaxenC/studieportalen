@@ -3,7 +3,7 @@
    ---------------------------------------------------------------------
    Mallar för varje uppgiftstyp finns i mallar.md.
    Avsnitt: vad-kraft, tyngdkraft, massa-tyngd, tyngdpunkt
-   Öva tills du kan: kraft-vad, krafter-kropp, tyngdkraft-ner, kraft-matt, tyngd-rakna, valta
+   Öva tills du kan: kraft-vad, krafter-kropp, kraftpil, tyngdkraft-ner, kraft-matt, tyngd-rakna, valta
    ===================================================================== */
 Portal.uppgifter([
 
@@ -66,7 +66,7 @@ Portal.uppgifter([
     ] },
 
   { id: "kr-pil-vilken", kapitel: "kraft", avsnitt: ["vad-kraft"], titel: "Vilken kraft visar pilen?",
-    typ: "flerval", nivaer: [0, 1], punkter: ["krafter-kropp"],
+    typ: "flerval", nivaer: [0, 1], punkter: ["krafter-kropp", "kraftpil"],
     varianter: [
       { bild: "![Låda med en pil som börjar vid vänster sida och pekar in i lådan](bilder/pil-tryck-hoger.svg)",
         fraga: "Pilen börjar vid lådans vänstra sida och pekar in i lådan. Vilken kraft är det?",
@@ -91,7 +91,7 @@ Portal.uppgifter([
     ] },
 
   { id: "kr-pil-storst", kapitel: "kraft", avsnitt: ["vad-kraft"], titel: "Vilken kraft är störst?",
-    typ: "flerval", nivaer: [1], punkter: ["krafter-kropp"],
+    typ: "flerval", nivaer: [1], punkter: ["kraftpil"],
     varianter: [
       { bild: "![Två tryckkrafter på en låda. Pil A är lång och pil B är kort](bilder/pil-tva-tryck.svg)",
         fraga: "Två tryckkrafter verkar på lådan. Vilken kraft är störst?",

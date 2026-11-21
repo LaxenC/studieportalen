@@ -52,7 +52,8 @@ Om flera krafter verkar på samma kropp ritar man en pil för varje kraft. Pilar
 
 > **Viktigt att komma ihåg**
 > - {#kraft-vad} En *kraft* trycker eller drar i en kropp. En kraft kommer alltid från något.
-> - {#krafter-kropp} Det finns *dragkraft*, *tryckkraft* och *tyngdkraft*. En kraft ritas som en pil. Pilen visar åt vilket håll kraften verkar, och pilens längd visar hur stor kraften är.
+> - {#krafter-kropp} *Dragkraft* är när något drar i kroppen, till exempel ett rep. *Tryckkraft* är när något trycker på kroppen, till exempel en hand. *Tyngdkraft* är när jorden drar kroppen rakt ner.
+> - {#kraftpil} En kraft ritas som en *kraftpil*. Pilen visar åt vilket håll kraften verkar, och pilens längd visar hur stor kraften är.
 
 ## Tyngdkraft och newton {#tyngdkraft}
 
