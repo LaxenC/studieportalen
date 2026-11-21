@@ -94,6 +94,9 @@ På samma sätt fungerar det när du simmar. Handen trycker vattnet bakåt, och 
 ::: fördjupning Boken på bordet – fyra krafter
 En bok ligger på ett bord. Det verkar fyra krafter, i två par:
 
+![En bok ligger på ett bord. Orange pilar: jorden drar boken nedåt och boken drar jorden uppåt. Blå pil: boken trycker på bordet. Röd pil: bordet trycker på boken.](bilder/bok-bord-krafter.svg)
+Bild: Fyra krafter i två par. Krafterna i ett par verkar på olika kroppar.
+
 - Jorden drar boken nedåt med tyngdkraften. Samtidigt drar boken jorden uppåt lika mycket.
 - Boken trycker nedåt på bordet. Samtidigt trycker bordet uppåt på boken lika mycket.
 
