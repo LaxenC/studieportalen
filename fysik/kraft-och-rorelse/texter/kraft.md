@@ -137,6 +137,7 @@ Månen drar inte bara i saker på månen – den drar också i jorden. Haven är
 
 > **Viktigt att komma ihåg**
 > - {#tyngd-rakna} *Massan* mäts i kg och är lika stor överallt. *Tyngden* mäts i N, och på jorden är den ungefär massan · 10.
+> - På månen är tyngden mindre än på jorden, **eftersom** månens tyngdkraft är mindre. Massan är densamma.
 
 ## Tyngdpunkt, lodlinje och stödyta {#tyngdpunkt}
 
