@@ -50,6 +50,12 @@ Om flera krafter verkar på samma kropp ritar man en pil för varje kraft. Pilar
 > Handen trycker på lådan, så det verkar en *tryckkraft* åt höger.<br>
 > Jorden drar i lådan, så det verkar också en *tyngdkraft* rakt ner.
 
+> **💬 Förklara så här** {.green}
+> *Varför åker pulkan nerför backen fast ingen puttar den?*<br>
+> Jorden drar i pulkan med *tyngdkraften*.<br>
+> Pulkan kan inte åka rakt ner genom marken, men den kan glida längs backen.<br>
+> **Därför** åker pulkan nerför backen.
+
 > **Viktigt att komma ihåg**
 > - {#kraft-vad} En *kraft* trycker eller drar i en kropp. En kraft kommer alltid från något.
 > - {#krafter-kropp} *Dragkraft* är när något drar i kroppen, till exempel ett rep. *Tryckkraft* är när något trycker på kroppen, till exempel en hand. *Tyngdkraft* är när jorden drar kroppen rakt ner.
@@ -78,6 +84,12 @@ Bild: Dynamometern visar att Lisa drar lådan med kraften 30 N.
 > **tyngdkraft** – kraften som jorden drar i alla kroppar med, rakt ner mot jordens mitt
 > **newton (N)** – enheten för kraft
 > **dynamometer** – ett mätverktyg för kraft
+
+> **💬 Förklara så här** {.green}
+> *Varför landar du alltid på marken igen när du hoppar?*<br>
+> Jorden drar i dig med *tyngdkraften* hela tiden – även när du är i luften.<br>
+> Tyngdkraften drar dig rakt ner mot jordens mitt.<br>
+> **Därför** landar du på marken igen.
 
 ::: fördjupning Isaac Newton och gravitationen
 Enheten newton har fått sitt namn efter den engelske fysikern *Isaac Newton* (1643–1727). Det berättas att han såg ett äpple falla från ett träd och började fundera på varför det föll rakt ner. Han kom fram till att samma kraft som får äpplet att falla också håller kvar månen i sin bana runt jorden.
@@ -131,6 +143,12 @@ Samma sak gäller en astronaut. En astronaut med rymddräkt har massan ungefär 
 > Nej. *Massan* är lika stor överallt, **eftersom** kroppen innehåller lika mycket materia.<br>
 > Det som ändras är *tyngden*. Månen drar svagare än jorden, **därför** blir tyngden mindre.
 
+> **💬 Förklara så här** {.green}
+> *Varför är det tyngre att lyfta en full resväska än en tom?*<br>
+> Den fulla väskan har större *massa*, **eftersom** den innehåller mer.<br>
+> Ju större massa, desto större *tyngd* – jorden drar hårdare i väskan.<br>
+> **Därför** behöver du en större kraft för att lyfta den.
+
 ::: fördjupning Ebb och flod
 Månen drar inte bara i saker på månen – den drar också i jorden. Haven är flytande och kan röra sig. Den sida av jorden som är vänd mot månen dras lite mot månen, och vattnet buktar ut. Samtidigt buktar vattnet ut på andra sidan jorden också. När jorden snurrar ett varv per dygn passerar vi de här utbuktningarna. Då stiger och sjunker vattnet. När vattnet stiger kallas det *flod* och när det sjunker kallas det *ebb*.
 :::
@@ -183,6 +201,12 @@ En kropp med låg tyngdpunkt och stor stödyta står stadigt. Den kan luta mycke
 
 ![Två klossar lutar lika mycket. Den låga och breda faller tillbaka. Den höga och smala välter.](bilder/stadig.svg)
 Bild: Klossarna lutar lika mycket. Bara den höga och smala välter.
+
+> **💬 Förklara så här** {.green}
+> *Varför är sportbilar breda och låga?*<br>
+> En låg bil har låg *tyngdpunkt*. En bred bil har stor *stödyta*.<br>
+> Då kan bilen luta mycket innan *lodlinjen* hamnar utanför stödytan.<br>
+> **Därför** välter en sportbil inte lätt, inte ens när den svänger fort.
 
 > **Viktigt att komma ihåg**
 > - {#tp-begrepp} *Tyngdpunkten* är mitten av kroppens massa – i en jämn kropp ligger den mitt i. *Lodlinjen* är en linje rakt ner från tyngdpunkten. *Stödytan* är ytan som kroppen står på.

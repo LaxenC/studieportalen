@@ -54,6 +54,12 @@ Kalle cyklar rakt fram med jämn hastighet, 15 km/h. Han trampar inte. Plötslig
 - Blåser det **framifrån** (motvind) verkar kraften mot rörelsen. **Därför** minskar hastigheten.
 - Verkar en kraft från sidan, ändras rörelsens riktning.
 
+> **💬 Förklara så här** {.green}
+> *Två lag drar åt var sitt håll i en dragkamp. Varför står repet still?*<br>
+> Båda lagen drar lika hårt, men åt olika håll.<br>
+> Krafterna är lika stora och tar ut varandra. **Därför** ändras inte rörelsen – repet står kvar.<br>
+> Drar det ena laget hårdare, vinner den största kraften. Då rör sig repet åt det hållet.
+
 > **Viktigt att komma ihåg**
 > - {#kraft-gor} En kraft kan starta en rörelse, bromsa en rörelse, ändra rörelsens riktning och ändra formen på en kropp.
 > - {#krafter-tillsammans} Lika stora krafter åt olika håll tar ut varandra – rörelsen ändras inte. Olika stora krafter åt olika håll – den största vinner. Krafter åt samma håll samarbetar.
@@ -137,6 +143,13 @@ En kraft behövs för att ändra en rörelse. Verkar kraften i samma riktning so
 > En rörelse är *likformig* bara om både hastigheten och riktningen är desamma hela tiden.<br>
 > När Kalle svänger ändras riktningen. **Därför** är rörelsen *olikformig*.
 
+> **💬 Förklara så här** {.green}
+> *Bussen kör från en hållplats till nästa. Vilka rörelser har den?*<br>
+> När bussen åker iväg ökar hastigheten. Den har en *accelererad rörelse*.<br>
+> På en rak väg med jämn fart har den en *likformig rörelse*.<br>
+> När den bromsar in vid nästa hållplats minskar hastigheten. Den har en *retarderad rörelse*.<br>
+> Svänger bussen runt ett hörn ändras riktningen. Då är rörelsen *olikformig*, även om farten är densamma.
+
 > **Viktigt att komma ihåg**
 > - {#rorelsetyper} *Likformig rörelse*: samma hastighet och samma riktning hela tiden. *Olikformig rörelse*: hastigheten eller riktningen ändras. *Accelererad rörelse*: hastigheten ökar. *Retarderad rörelse*: hastigheten minskar.
 > - En kraft i samma riktning som rörelsen ökar hastigheten. En kraft mot rörelsen minskar hastigheten.
@@ -168,6 +181,12 @@ Bild: Kalle cyklar olika långt varje timme, men kommer ändå 60 km på 4 timma
 > *Medelhastigheten* är hastigheten i genomsnitt under hela sträckan.<br>
 > Kalle cyklar ibland fortare och ibland långsammare, men han kommer 60 km på 4 timmar.<br>
 > **Därför** blir medelhastigheten 60 / 4 = 15 km/h.
+
+> **💬 Förklara så här** {.green}
+> *Det är ungefär 60 km från Borås till Göteborg, och bilresan tar en timme. Hur kan medelhastigheten vara 60 km/h när bilen kör 100 km/h på motorvägen?*<br>
+> Bilen kör ibland 100 km/h, men den kör också sakta i stan och står still vid rödljus.<br>
+> *Medelhastigheten* är hastigheten i genomsnitt under hela resan: 60 km / 1 h = 60 km/h.<br>
+> **Därför** kan medelhastigheten vara lägre än den högsta hastigheten.
 
 > **Viktigt att komma ihåg**
 > - {#medel} *Medelhastigheten* är hastigheten i genomsnitt under hela sträckan. Medelhastighet = sträcka / tid.
@@ -205,6 +224,12 @@ Ibland vill vi ha så liten friktion som möjligt. Ett dörrlås som kärvar sm�
 > Mellan bollen och gräset finns *friktion*.<br>
 > Friktionen håller emot rörelsen. **Därför** minskar bollens hastighet tills den stannar.
 
+> **💬 Förklara så här** {.green}
+> *Varför har vinterdäck dubbar eller djupa mönster?*<br>
+> Is är mycket slät, **därför** är *friktionen* mellan ett vanligt däck och isen liten. Då slirar bilen.<br>
+> Dubbarna och de djupa mönstren griper tag i isen och snön.<br>
+> **Därför** blir friktionen större, och bilen kan bromsa och svänga.
+
 ::: fördjupning Kullagret
 I allt som snurrar – cykelhjul, fläktar och motorer – finns ofta *kullager*. Ett kullager består av två metallringar med små metallkulor emellan. När hjulet snurrar rullar kulorna i stället för att ytorna glider mot varandra. Kullagret smörjs dessutom med fett. **Därför** blir friktionen mycket liten och hjulet snurrar länge.
 :::
@@ -232,6 +257,12 @@ En fallskärm har en mycket stor yta. **Därför** får den ett stort luftmotst�
 > *Varför faller en fallskärmshoppare långsamt?*<br>
 > Fallskärmen har en stor yta som krockar med luftens molekyler.<br>
 > **Därför** blir *luftmotståndet* stort, och det håller emot fallet.
+
+> **💬 Förklara så här** {.green}
+> *Varför böjer sig utförsåkare ihop i backen?*<br>
+> När åkaren böjer sig ihop blir ytan som krockar med luften mindre.<br>
+> Ju mindre yta, desto mindre *luftmotstånd*.<br>
+> **Därför** bromsas åkaren mindre och åker fortare.
 
 > **Viktigt att komma ihåg**
 > - {#luftmotstand} *Luftmotstånd* är friktion från luften. Det håller emot när en kropp rör sig genom luften. Ju större yta, desto större luftmotstånd.
