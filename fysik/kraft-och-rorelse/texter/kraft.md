@@ -83,6 +83,8 @@ Ett äpple som hänger i en dynamometer visar ungefär 1–2 N. En liter mjölk 
 Enheten newton har fått sitt namn efter den engelske fysikern *Isaac Newton* (1643–1727). Det berättas att han såg ett äpple falla från ett träd och började fundera på varför det föll rakt ner. Han kom fram till att samma kraft som får äpplet att falla också håller kvar månen i sin bana runt jorden.
 
 Newton förstod att alla kroppar drar i varandra. Det kallas *gravitation*. Ju större massa en kropp har, desto mer drar den. Jorden har så stor massa att vi märker dess dragning hela tiden – det är tyngdkraften.
+
+Även du har gravitation. Du drar i bänken, i pennan och i din bänkkompis – och de drar i dig. Men eftersom din massa är så liten jämfört med jordens blir den kraften försumbart liten. Två personer som sitter en meter från varandra drar i varandra med en kraft som är ungefär hundra gånger mindre än tyngden av ett sandkorn. Därför märker vi den inte.
 :::
 
 > **Viktigt att komma ihåg**
