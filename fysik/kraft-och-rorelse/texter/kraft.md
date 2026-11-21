@@ -118,7 +118,9 @@ Månen har mycket mindre massa än jorden. **Därför** drar månen mycket svaga
 | massa | 10 kg | 10 kg |
 | tyngd | ≈ 100 N | ≈ 16 N |
 
-Lådan har alltså samma massa på månen, men tyngden blir mycket mindre. **Därför** kan astronauter hoppa högt på månen.
+Lådan har alltså samma massa på månen, men tyngden blir mycket mindre.
+
+Samma sak gäller en astronaut. En astronaut med rymddräkt har massan ungefär 120 kg. På jorden är tyngden ungefär 1 200 N, men på månen bara ungefär 190 N. När astronauten hoppar trycker benen ifrån lika hårt som de skulle göra på jorden. Men månen drar bara ner astronauten med en sjättedel så stor kraft som jorden skulle göra. **Därför** kommer astronauten mycket högre upp och faller långsammare ner igen – ett hopp som är en halv meter högt på jorden kan bli flera meter högt på månen.
 
 > **Begrepp**
 > **massa** – hur mycket materia en kropp innehåller, mäts i kilogram (kg)
