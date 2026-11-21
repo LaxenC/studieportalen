@@ -59,6 +59,8 @@ Om flera krafter verkar på samma kropp ritar man en pil för varje kraft. Pilar
 
 Jorden drar i allt som finns på och runt jorden – i dig, i lådan och i luften. Kraften kallas *tyngdkraft*. Tyngdkraften drar alltid rakt ner, mot jordens mitt. Det gäller även i en backe: tyngdkraften pekar rakt ner och inte snett längs backen.
 
+Tyngdkraften drar i hela kroppen – i varje liten del av den. När vi ritar tyngdkraften som en kraftpil behöver vi ändå välja en punkt att rita från. Då ritar vi pilen från mitten av kroppen.
+
 Eftersom jorden är ett klot är "ner" åt olika håll på olika ställen. För någon i Australien drar tyngdkraften också mot jordens mitt – alltså åt motsatt håll mot för oss i Sverige.
 
 ### Mäta kraft
@@ -67,8 +69,6 @@ Kraft är en storhet. Den mäts i enheten *newton* (N). Ett mätverktyg för kra
 
 ![Lisa drar lådan med en dynamometer som visar 30 N](bilder/lada-dynamometer.svg)
 Bild: Dynamometern visar att Lisa drar lådan med kraften 30 N.
-
-Ett äpple som hänger i en dynamometer visar ungefär 1–2 N. En liter mjölk visar ungefär 10 N.
 
 | Storhet | Mätetal | Enhet |
 |---|---|---|
