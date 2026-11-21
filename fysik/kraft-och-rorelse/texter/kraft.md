@@ -153,6 +153,10 @@ Bild: I ett rätblock och ett klot ligger tyngdpunkten mitt i kroppen.
 ![En badring som står på kanten. Den lodräta och den vågräta linjen korsas mitt i hålet](bilder/ring-tyngdpunkt.png)
 Bild: I en badring ligger tyngdpunkten mitt i hålet – där det inte finns någon massa alls.
 
+::: fördjupning Tyngdpunkt i ojämna kroppar
+I en kropp som inte är jämn ligger tyngdpunkten inte mitt i. I en pyramid finns mest massa längst ner, och tyngdpunkten ligger bara en fjärdedel av höjden upp. På en gungbräda kan ett litet barn som sitter långt ut balansera en vuxen som sitter nära mitten – massa som är långt bort räknas mer.
+:::
+
 ### Står den eller välter den?
 
 Från tyngdpunkten drar man en linje rakt ner. Den kallas *lodlinje*. Den yta som kroppen står på kallas *stödyta*.
@@ -175,8 +179,6 @@ Från tyngdpunkten drar man en linje rakt ner. Den kallas *lodlinje*. Den yta so
 
 ::: fördjupning Låg tyngdpunkt och stor stödyta
 En kropp med låg tyngdpunkt och stor stödyta står stadigt. Den kan luta mycket innan lodlinjen hamnar utanför stödytan. En hög och smal kropp välter mycket lättare. **Därför** står man stadigare med benen isär, och **därför** lastar man tunga saker längst ner i en lastbil.
-
-I en kropp som inte är jämn ligger tyngdpunkten inte mitt i. I en pyramid finns mest massa längst ner, och tyngdpunkten ligger bara en fjärdedel av höjden upp. På en gungbräda kan ett litet barn som sitter långt ut balansera en vuxen som sitter nära mitten – massa som är långt bort räknas mer.
 :::
 
 > **Viktigt att komma ihåg**
