@@ -4,7 +4,7 @@ kapitel: rorelse
 
 # Kraft skapar rörelse
 
-En kraft kan sätta något i rörelse, få det att stanna eller ändra riktning. Här lär vi oss vad som händer när flera krafter verkar på en kropp, vilka olika slags rörelser det finns och vad friktion, luftmotstånd och tröghet är.
+En kropp som står still fortsätter att stå still. En kropp som rör sig fortsätter att röra sig med samma hastighet och i samma riktning – om ingen kraft ändrar rörelsen. Det kom Isaac Newton fram till för mer än 300 år sedan. Det behövs alltså en kraft för att starta, stoppa eller ändra en rörelse. Här lär vi oss hur krafter ändrar rörelser – och varför saker ändå stannar till slut.
 
 ## Vad en kraft gör {#kraft-gor}
 
