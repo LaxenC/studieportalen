@@ -47,11 +47,18 @@ Portal.uppgifter([
                { t: "20 N", s: "fel", f: "titta var den röda markeringen står – vid 30." } ] }
     ] },
 
-  { id: "kr-vad-lucka", kapitel: "kraft", avsnitt: ["vad-kraft", "tyngdkraft"], titel: "Kraft – fyll i",
-    typ: "lucktext", nivaer: [1], rullista: [1], punkter: ["kraft-vad", "kraft-matt"],
-    ordlista: ["trycker", "drar", "newton", "dynamometer", "kilogram", "termometer"],
+  { id: "kr-vad-lucka", kapitel: "kraft", avsnitt: ["vad-kraft"], titel: "Kraft – fyll i",
+    typ: "lucktext", nivaer: [1], rullista: [1], punkter: ["kraft-vad"],
+    ordlista: ["trycker", "drar", "något", "ingenting", "väger"],
     varianter: [
-      { text: "En kraft [*trycker] eller [*drar] i en kropp.\nKraft mäts i enheten [newton|N].\nMan mäter kraft med en [dynamometer]." }
+      { text: "En kraft [*trycker] eller [*drar] i en kropp.\nEn kraft kommer alltid från [något]." }
+    ] },
+
+  { id: "kr-matt-lucka", kapitel: "kraft", avsnitt: ["tyngdkraft"], titel: "Mäta kraft – fyll i",
+    typ: "lucktext", nivaer: [1], rullista: [1], punkter: ["kraft-matt"],
+    ordlista: ["newton", "dynamometer", "kilogram", "termometer"],
+    varianter: [
+      { text: "Kraft mäts i enheten [newton|N].\nMan mäter kraft med en [dynamometer]." }
     ] },
 
   { id: "kr-sortera", kapitel: "kraft", avsnitt: ["vad-kraft"], titel: "Dragkraft, tryckkraft eller tyngdkraft?",
