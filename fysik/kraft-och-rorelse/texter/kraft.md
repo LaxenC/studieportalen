@@ -147,6 +147,9 @@ Tyngdkraften drar i varje liten del av en kropp. Ändå ritar man bara en pil, f
 
 I en jämn kropp som är likadan på båda sidor, till exempel ett rätblock, en cylinder eller ett klot, ligger tyngdpunkten mitt i. Den kan man hitta genom att dra en lodrät och en vågrät linje genom mitten av kroppen. Där linjerna korsas ligger tyngdpunkten. För ett rätblock kan man också dra de två diagonalerna – det fungerar även när rätblocket lutar.
 
+![Ett rätblock och ett klot. Den lodräta och den vågräta linjen korsas mitt i kroppen – där ligger tyngdpunkten](bilder/tyngdpunkt-enkel.svg)
+Bild: I ett rätblock och ett klot ligger tyngdpunkten mitt i kroppen.
+
 ![En badring som står på kanten. Den lodräta och den vågräta linjen korsas mitt i hålet](bilder/ring-tyngdpunkt.png)
 Bild: I en badring ligger tyngdpunkten mitt i hålet – där det inte finns någon massa alls.
 
