@@ -110,7 +110,7 @@ I varje par verkar de två krafterna på *olika* kroppar. **Därför** tar de in
 
 ### Likformig rörelse
 
-Kalle cyklar på en rak väg. Han har samma hastighet hela tiden, 15 km/h. Varje minut kommer han lika långt. Varken hastigheten eller riktningen ändras. En rörelse där varken hastigheten eller riktningen ändras kallas *likformig rörelse*.
+Kalle cyklar på en rak väg. Han har samma hastighet hela tiden, 15 km/h. Varje minut kommer han lika långt. En rörelse där varken hastigheten eller riktningen ändras kallas *likformig rörelse*.
 
 ![Kalle cyklar 15 km/h hela tiden och kommer lika långt varje minut](bilder/cykel-likformig.svg)
 Bild: Likformig rörelse – samma hastighet och samma riktning hela tiden.
