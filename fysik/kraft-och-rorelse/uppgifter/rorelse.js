@@ -130,7 +130,7 @@ Portal.uppgifter([
   /* ---------- Olika slags rörelser ---------- */
 
   { id: "ro-rorelse-dra", kapitel: "rorelse", avsnitt: ["rorelser"], titel: "Olika slags rörelser – para ihop",
-    typ: "dra", nivaer: [0, 1], punkter: ["rorelsetyper"],
+    typ: "dra", nivaer: [0, 1], punkter: ["likformig", "olikformig", "accelererad", "retarderad"],
     varianter: [
       { rubrik: "Dra varje begrepp till rätt beskrivning.",
         par: [["Likformig rörelse", "Samma hastighet och samma riktning hela tiden"],
@@ -140,7 +140,7 @@ Portal.uppgifter([
     ] },
 
   { id: "ro-rorelse-bild", kapitel: "rorelse", avsnitt: ["rorelser"], titel: "Vilken rörelse visar bilden?",
-    typ: "flerval", nivaer: [1], punkter: ["rorelsetyper"],
+    typ: "flerval", nivaer: [1], punkter: ["likformig", "accelererad", "retarderad"],
     varianter: [
       { bild: "![Kalle cyklar 15 km/h hela tiden](bilder/cykel-likformig.svg)",
         fraga: "Vilken sorts rörelse har Kalle?",
@@ -160,7 +160,7 @@ Portal.uppgifter([
     ] },
 
   { id: "ro-cykeltur", kapitel: "rorelse", avsnitt: ["rorelser"], titel: "Kalles cykeltur",
-    typ: "flerval", nivaer: [1, 2], punkter: ["rorelsetyper"],
+    typ: "flerval", nivaer: [1, 2], punkter: ["likformig", "olikformig", "accelererad", "retarderad"],
     bild: "![Kalles cykeltur från A till H. Hastigheten står vid varje punkt.](bilder/cykeltur.jpg)",
     varianter: [
       { fraga: "Kalle cyklar rakt fram från A till B. Vilken rörelse har han?",
@@ -191,7 +191,7 @@ Portal.uppgifter([
     ] },
 
   { id: "ro-vind-forklara", kapitel: "rorelse", avsnitt: ["kraft-gor", "rorelser"], titel: "Förklara: vad gör vinden?",
-    typ: "forklara", nivaer: [2], rullista: [2], punkter: ["rorelsetyper"],
+    typ: "forklara", nivaer: [2], rullista: [2], punkter: ["accelererad", "retarderad"],
     varianter: [
       { bild: "![Kalle cyklar i medvind. Kraften från vinden pekar framåt.](bilder/cykel-medvind.svg)",
         fraga: "Kalle trampar inte och har jämn hastighet. Det börjar blåsa bakifrån. Förklara vad som händer med hastigheten och vilken rörelse Kalle får.",

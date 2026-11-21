@@ -154,7 +154,10 @@ En kraft behövs för att ändra en rörelse. Verkar kraften i samma riktning so
 > Svänger bussen runt ett hörn ändras riktningen. Då är rörelsen *olikformig*, även om farten är densamma.
 
 > **Viktigt att komma ihåg**
-> - {#rorelsetyper} *Likformig rörelse*: samma hastighet och samma riktning hela tiden. *Olikformig rörelse*: hastigheten eller riktningen ändras. *Accelererad rörelse*: hastigheten ökar. *Retarderad rörelse*: hastigheten minskar.
+> - {#likformig} *Likformig rörelse*: varken hastigheten eller riktningen ändras.
+> - {#olikformig} *Olikformig rörelse*: hastigheten eller riktningen ändras.
+> - {#accelererad} *Accelererad rörelse*: hastigheten ökar.
+> - {#retarderad} *Retarderad rörelse*: hastigheten minskar.
 > - En kraft i samma riktning som rörelsen ökar hastigheten. En kraft mot rörelsen minskar hastigheten.
 
 ## Medelhastighet {#medelhastighet}
