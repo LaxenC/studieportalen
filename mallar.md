@@ -187,6 +187,7 @@ Text med luckor. Svaret skrivs inom hakparentes. Med `rullista` väljer eleven o
 - `[*protoner] och [*neutroner]` = valfri ordning, men olika svar
 - `inte: ["..."]` i en variant = svar som inte godkänns
 - `facit: "..."` i en variant = det som visas som rätt svar
+- `rubrik: "..."` i en variant = egen instruktion i stället för "Skriv rätt ord i varje lucka."
 
 ```js
 { id: "str-jon-text2", kapitel: "stralning", avsnitt: ["jonis"], titel: "Joniserande strålning – vad händer med atomen? (fyll i)",

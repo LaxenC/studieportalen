@@ -178,11 +178,11 @@ Portal.uppgifter([
   { id: "kr-tyngd-rakna", kapitel: "kraft", avsnitt: ["massa-tyngd"], titel: "Räkna ut tyngden",
     typ: "lucktext", nivaer: [1, 2], punkter: ["tyngd-rakna"],
     varianter: [
-      { text: "En vattenmelon har massan 5 kg.\nTyngd = 5 · 10 = [50] N" },
-      { text: "En cykel har massan 15 kg.\nTyngd = 15 · 10 = [150] N" },
-      { text: "En hund har massan 20 kg.\nTyngd = 20 · 10 = [200] N" },
-      { text: "En elev har massan 50 kg.\nTyngd = 50 · 10 = [500] N" },
-      { text: "En liter mjölk har massan 1 kg.\nTyngd = 1 · 10 = [10] N" }
+      { rubrik: "Räkna ut tyngden på jorden. Fyll i massan, tyngdfaktorn, svaret och enheten.", text: "En vattenmelon har massan 5 kg.\nTyngd = [5] · [10] = [50] [N|newton]" },
+      { rubrik: "Räkna ut tyngden på jorden. Fyll i massan, tyngdfaktorn, svaret och enheten.", text: "En cykel har massan 15 kg.\nTyngd = [15] · [10] = [150] [N|newton]" },
+      { rubrik: "Räkna ut tyngden på jorden. Fyll i massan, tyngdfaktorn, svaret och enheten.", text: "En hund har massan 20 kg.\nTyngd = [20] · [10] = [200] [N|newton]" },
+      { rubrik: "Räkna ut tyngden på jorden. Fyll i massan, tyngdfaktorn, svaret och enheten.", text: "En elev har massan 50 kg.\nTyngd = [50] · [10] = [500] [N|newton]" },
+      { rubrik: "Räkna ut tyngden på jorden. Fyll i massan, tyngdfaktorn, svaret och enheten.", text: "En liter mjölk har massan 1 kg.\nTyngd = [1] · [10] = [10] [N|newton]" }
     ] },
 
   { id: "kr-manen-tabell", kapitel: "kraft", avsnitt: ["massa-tyngd"], titel: "Massa och tyngd på jorden och månen",

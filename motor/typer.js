@@ -42,7 +42,7 @@ const uppgiftBas = t => { const o = t && t._omrade && Portal.omraden[t._omrade];
 
 /* LUCKTEXT */
 TYPER.lucktext = {
-  instr: q => q.rull ? "Välj rätt ord i varje lucka." : "Skriv rätt ord i varje lucka.",
+  instr: q => q.v.rubrik ? esc(q.v.rubrik) : q.rull ? "Välj rätt ord i varje lucka." : "Skriv rätt ord i varje lucka.",
   parse(text) {
     const parts = []; let last = 0; const re = /\[([^\]]+)\]/g; let m;
     while ((m = re.exec(text))) {
