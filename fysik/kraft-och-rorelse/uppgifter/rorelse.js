@@ -335,7 +335,7 @@ Portal.uppgifter([
       { pst: [["Luftmotstånd håller emot en kropp som rör sig.", true],
               ["Luftmotstånd finns bara när det blåser.", false],
               ["Ju större yta, desto större luftmotstånd.", true],
-              ["En boll som ligger still på marken har luftmotstånd.", false],
+              ["En boll ligger still på marken. Det blåser inte. Bollen har luftmotstånd.", false],
               ["Ju fortare du cyklar, desto större luftmotstånd.", true]] }
     ] },
 
