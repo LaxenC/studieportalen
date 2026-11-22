@@ -54,14 +54,25 @@ Portal.uppgifter([
         forklaring: "en kraft kan starta, bromsa, ändra riktning och ändra form." }
     ] },
 
-  { id: "ro-kraft-gor-sortera", kapitel: "rorelse", avsnitt: ["kraft-gor"], titel: "Vad gör kraften?",
-    typ: "sortera", nivaer: [1], punkter: ["kraft-gor"],
+  { id: "ro-kraft-gor-flerval", kapitel: "rorelse", avsnitt: ["kraft-gor"], titel: "Vad gör kraften?",
+    typ: "flerval", nivaer: [1], punkter: ["kraft-gor"],
     varianter: [
-      { grupper: ["Startar en rörelse", "Bromsar en rörelse", "Ändrar riktning", "Ändrar form"],
-        saker: [["Du sparkar iväg en boll som ligger still", 0], ["Du knuffar igång en kundvagn", 0],
-                ["Målvakten fångar bollen", 1], ["Cyklisten bromsar", 1],
-                ["Bollen studsar mot väggen och byter håll", 2], ["Du styr cykeln runt ett hörn", 2],
-                ["Du trycker ihop en svamp", 3], ["Du kramar ihop en snöboll", 3]] }
+      { fraga: "Du sparkar på en boll som ligger still. Vad gör kraften?",
+        alt: [ { t: "Startar en rörelse", s: "ratt", f: "bollen låg still och börjar röra sig." },
+               { t: "Bromsar en rörelse", s: "fel", f: "bollen låg still, så det fanns ingen rörelse att bromsa. Kraften startar en rörelse." },
+               { t: "Ändrar formen", s: "fel", f: "det viktiga här är att bollen börjar röra sig. Kraften startar en rörelse." } ] },
+      { fraga: "Målvakten fångar bollen. Vad gör kraften?",
+        alt: [ { t: "Bromsar en rörelse", s: "ratt", f: "bollen rörde sig och stannar." },
+               { t: "Startar en rörelse", s: "fel", f: "bollen rörde sig redan. Målvakten får den att stanna – kraften bromsar." },
+               { t: "Ändrar riktning", s: "fel", f: "bollen fortsätter inte åt ett annat håll – den stannar. Kraften bromsar." } ] },
+      { fraga: "Bollen studsar mot väggen och åker tillbaka. Vad gör kraften från väggen?",
+        alt: [ { t: "Ändrar riktning", s: "ratt", f: "bollen åker åt ett annat håll efter studsen." },
+               { t: "Startar en rörelse", s: "fel", f: "bollen rörde sig redan. Väggen får den att byta håll." },
+               { t: "Ändrar formen", s: "fel", f: "det som syns är att bollen byter håll. Kraften ändrar riktning." } ] },
+      { fraga: "Du trycker ihop en svamp. Vad gör kraften?",
+        alt: [ { t: "Ändrar formen", s: "ratt", f: "svampen får en annan form när du trycker på den." },
+               { t: "Startar en rörelse", s: "fel", f: "svampen åker inte iväg. Den trycks ihop – kraften ändrar formen." },
+               { t: "Ändrar riktning", s: "fel", f: "svampen trycks ihop och får en annan form." } ] }
     ] },
 
   /* ---------- Krafter tillsammans ---------- */
