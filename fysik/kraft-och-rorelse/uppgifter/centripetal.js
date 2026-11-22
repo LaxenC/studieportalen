@@ -92,12 +92,12 @@ Portal.uppgifter([
         modell: "Snöret drar bollen **inåt**, mot **mitten**. Det är **centripetalkraften**. Den gör att bollen hela tiden ändrar riktning och åker i en cirkel. När snöret går av försvinner kraften. Bollen har **tröghet**, **därför** fortsätter den **rakt fram**." }
     ] },
 
-  { id: "ce-is-forklara", kapitel: "centripetal", avsnitt: ["centripetal"], titel: "Förklara: bilen på blank is",
+  { id: "ce-is-forklara", kapitel: "centripetal", avsnitt: ["centripetal"], titel: "Förklara: bilen i rondellen",
     typ: "forklara", nivaer: [3], punkter: ["centripetal"],
     varianter: [
-      { fraga: "Förklara varför det inte går att svänga med en bil på blank is.",
+      { fraga: "Förklara vad som gör att en bil kan svänga i en rondell. Vad händer om vägen är blank is?",
         begrepp: ["friktion", "centripetalkraft", "tröghet", "rakt fram"],
-        modell: "När bilen svänger är **friktionen** mellan däcken och vägen **centripetalkraften**. På blank is är friktionen nästan borta. Bilen har **tröghet** och vill fortsätta **rakt fram**. **Därför** fortsätter bilen rakt fram, även om man vrider på ratten." }
+        modell: "Vägen trycker däcken in mot mitten av rondellen. Den kraften är **friktionen** mellan däcken och vägen, och den är **centripetalkraften**. **Därför** kan bilen svänga. På blank is är friktionen nästan borta. Bilen har **tröghet** och fortsätter **rakt fram**." }
     ] },
 
   /* ---------- Centrifugalkraft ---------- */

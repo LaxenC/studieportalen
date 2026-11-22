@@ -55,10 +55,10 @@ Centripetalkraften kan komma från olika saker:
 > **centripetalkraft** – en kraft som drar in mot mitten och gör att en kropp rör sig i en cirkel
 
 > **💬 Förklara så här** {.green}
-> *Varför går det inte att svänga med en bil på blank is?*<br>
-> När bilen svänger är det friktionen mellan däcken och vägen som är *centripetalkraften*.<br>
-> På blank is är friktionen nästan borta. Bilen har *tröghet* och vill fortsätta rakt fram.<br>
-> **Därför** fortsätter bilen rakt fram, även om man vrider på ratten.
+> *Vad gör att en bil kan svänga i en rondell?*<br>
+> Däcken trycker på vägen, och vägen trycker tillbaka på däcken in mot mitten av rondellen.<br>
+> Den kraften är *friktionen* mellan däcken och vägen. Den är *centripetalkraften*.<br>
+> **Därför** kan bilen svänga. På blank is är friktionen nästan borta – då fortsätter bilen rakt fram, **eftersom** den har *tröghet*.
 
 ::: fördjupning Satelliter
 En satellit åker runt jorden utan motor. Hur går det till?
