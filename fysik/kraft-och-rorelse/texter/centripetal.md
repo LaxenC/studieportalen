@@ -65,6 +65,8 @@ En satellit åker runt jorden utan motor. Hur går det till?
 Tänk dig att du skjuter en kanonkula rakt fram från ett mycket högt berg. Den faller ner en bit bort. Skjuter du hårdare landar den längre bort. Skjuter du *riktigt* hårt, kröker sig jorden bort under kulan lika fort som kulan faller. Då landar den aldrig – den faller runt jorden hela tiden.
 
 Det är så en satellit fungerar. Jordens tyngdkraft är centripetalkraften. Uppe i rymden finns nästan ingen luft, så satelliten bromsas inte. Rymdstationen ISS åker ungefär 28 000 km/h och tar ungefär en och en halv timme för ett varv runt jorden.
+
+För att en satellit ska hamna i rätt bana behövs precis rätt hastighet och rätt vinkel. Raketen som skjuter upp satelliten måste därför styra den åt rätt håll och ge den rätt fart. Åker satelliten för långsamt faller den ner mot jorden. Åker den för fort försvinner den ut i rymden. Är vinkeln fel hamnar den i en annan bana än den skulle.
 :::
 
 ::: fördjupning Geostationära satelliter
