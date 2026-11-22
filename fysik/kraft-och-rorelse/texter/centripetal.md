@@ -47,7 +47,6 @@ Bild: När snöret går av fortsätter bollen rakt fram – inte rakt ut.
 Centripetalkraften kan komma från olika saker:
 
 - **Bollen i snöret** – snöret drar bollen in mot handen.
-- **Bilen i rondellen** – friktionen mellan däcken och vägen trycker bilen in i svängen.
 - **Månen runt jorden** – jordens tyngdkraft drar månen in mot jorden.
 - **Planeterna runt solen** – solens tyngdkraft.
 
