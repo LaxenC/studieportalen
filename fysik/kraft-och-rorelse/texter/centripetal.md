@@ -54,10 +54,10 @@ Centripetalkraften kan komma från olika saker:
 > **centripetalkraft** – en kraft som drar in mot mitten och gör att en kropp rör sig i en cirkel
 
 > **💬 Förklara så här** {.green}
-> *Vad gör att en bil kan svänga i en rondell?*<br>
-> Däcken trycker på vägen, och vägen trycker tillbaka på däcken in mot mitten av rondellen.<br>
-> Den kraften är *friktionen* mellan däcken och vägen. Den är *centripetalkraften*.<br>
-> **Därför** kan bilen svänga. På blank is är friktionen nästan borta – då fortsätter bilen rakt fram, **eftersom** den har *tröghet*.
+> *Hur kan månen röra sig runt jorden utan något snöre?*<br>
+> Jordens *tyngdkraft* drar hela tiden månen in mot jorden. Det är *centripetalkraften*.<br>
+> Månen har *tröghet* och vill fortsätta rakt fram.<br>
+> **Därför** rör sig månen i en cirkel runt jorden.
 
 ::: fördjupning Satelliter
 En satellit åker runt jorden utan motor. Hur går det till?
