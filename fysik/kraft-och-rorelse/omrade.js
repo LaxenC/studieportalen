@@ -23,7 +23,7 @@ Portal.omrade({
     { id: "rorelse", namn: "Kraft skapar rörelse", farg: "orange", bild: '<div class="art"><img src="fysik/kraft-och-rorelse/bilder/kort-rorelse.svg?v=1" alt="" style="height:96px;width:auto"></div>',
       text: "Vad en kraft gör, kraft och motkraft, olika rörelser, friktion, luftmotstånd och tröghet." },
     { id: "centripetal", namn: "Centripetalkraft och fritt fall", farg: "purple", bild: '<div class="art"><img src="fysik/kraft-och-rorelse/bilder/kort-centripetal.svg?v=1" alt="" style="height:96px;width:auto"></div>',
-      text: "Cirkelrörelse, centrifugalkraft och fritt fall." },
+      text: "Rotation och centralrörelse, centripetal- och centrifugalkraft, fritt fall och kast rakt fram." },
     { id: "arbete", namn: "Arbete och effekt", farg: "red", bild: '<div class="art"><img src="fysik/kraft-och-rorelse/bilder/kort-arbete.svg?v=1" alt="" style="height:96px;width:auto"></div>',
       text: "Fysikaliskt arbete, mekanikens gyllene regel, energi och effekt." }
   ]
