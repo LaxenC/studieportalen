@@ -220,13 +220,13 @@ Portal.uppgifter([
     typ: "lucktext", nivaer: [1, 2], punkter: ["medel"],
     varianter: [
       { rubrik: "Räkna ut medelhastigheten. Fyll i sträckan, tiden, svaret och enheten.",
-        text: "Moa cyklar 30 km på 2 h.\nMedelhastighet = [30] / [2] = [15] [km/h]" },
+        text: "Moa cyklar 30 km på 2 h.\nMedelhastighet = [30] / [2] = [15] [km\\/h]" },
       { rubrik: "Räkna ut medelhastigheten. Fyll i sträckan, tiden, svaret och enheten.",
-        text: "En bil kör 180 km på 3 h.\nMedelhastighet = [180] / [3] = [60] [km/h]" },
+        text: "En bil kör 180 km på 3 h.\nMedelhastighet = [180] / [3] = [60] [km\\/h]" },
       { rubrik: "Räkna ut medelhastigheten. Fyll i sträckan, tiden, svaret och enheten.",
-        text: "Elsa springer 400 m på 80 s.\nMedelhastighet = [400] / [80] = [5] [m/s]" },
+        text: "Elsa springer 400 m på 80 s.\nMedelhastighet = [400] / [80] = [5] [m\\/s]" },
       { rubrik: "Räkna ut medelhastigheten. Fyll i sträckan, tiden, svaret och enheten.",
-        text: "Linnea cyklar 16 km på 4 h.\nMedelhastighet = [16] / [4] = [4] [km/h]" }
+        text: "Linnea cyklar 16 km på 4 h.\nMedelhastighet = [16] / [4] = [4] [km\\/h]" }
     ] },
 
   { id: "ro-medel-flerval", kapitel: "rorelse", avsnitt: ["medelhastighet"], titel: "Vad är medelhastighet?",

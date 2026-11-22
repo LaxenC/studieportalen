@@ -7,6 +7,8 @@ const shuffle = a => { a = a.slice(); for (let i = a.length - 1; i > 0; i--) { c
 const esc = s => String(s).replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
 const norm = s => String(s || "").toLowerCase().replace(/[.,!?:;"']/g, "").replace(/\s+/g, " ").trim();
 const alts = s => s.split("/").map(norm);
+// Delar luckans svar på "/" (alternativ). "\\/" i texten betyder ett riktigt snedstreck, t.ex. [km\\/h].
+const delaLucka = a => a.replace(/\\\//g, "\u0001").split("/").map(x => x.replace(/\u0001/g, "/"));
 const cap = s => s.charAt(0).toUpperCase() + s.slice(1);
 
 /* ---- Små bilder av atomens delar ---- */
@@ -48,8 +50,8 @@ TYPER.lucktext = {
     while ((m = re.exec(text))) {
       parts.push({ t: text.slice(last, m.index) });
       let a = m[1], group = false; if (a.startsWith("*")) { group = true; a = a.slice(1); }
-      const items = a.split("/").map(it => it.split("|").map(norm));
-      parts.push({ blank: true, raw: a.split("/")[0].split("|")[0], rawItems: a.split("/").map(x => x.split("|")[0]), alts: items.flat(), key: v => { const it = items.find(x => x.includes(v)); return it ? it[0] : v; }, group });
+      const items = delaLucka(a).map(it => it.split("|").map(norm));
+      parts.push({ blank: true, raw: delaLucka(a)[0].split("|")[0], rawItems: delaLucka(a).map(x => x.split("|")[0]), alts: items.flat(), key: v => { const it = items.find(x => x.includes(v)); return it ? it[0] : v; }, group });
       last = re.lastIndex;
     }
     parts.push({ t: text.slice(last) });
@@ -812,7 +814,7 @@ TYPER.forklara = {
 /* ---------- Namn på typerna och text för granskning ---------- */
 const TYPNAMN = { dratabell: "Dra i tabell", dra: "Dra till beskrivning", flerval: "Flerval", santfalskt: "Sant eller falskt", udda: "Vilket passar inte in?", sortera: "Sortera", isotoptabell: "Fyll i tabell", andra: "Ändra med reglage", reglage: "Reglage", skrivnotation: "Skriva atomnotation", lucktext: "Lucktext", markera: "Märk ut i bild", para: "Para ihop", bygg: "Bygg atom", skal: "Elektronskal", kvark: "Bygg med kvarkar", kvarktabell: "Pussel", forklara: "Förklara med begrepp", kedja: "Kedja", valjflera: "Välj flera" };
 function variantText(t, v) {
-  if (t.typ === "lucktext") return v.facit ? v.facit : esc(v.text).replace(/\[\*?([^\]]+)\]/g, (m, a) => `<b class="ans">${esc(a.split("/").map(x => x.split("|")[0]).join(" / "))}</b>`);
+  if (t.typ === "lucktext") return v.facit ? v.facit : esc(v.text).replace(/\[\*?([^\]]+)\]/g, (m, a) => `<b class="ans">${esc(delaLucka(a).map(x => x.split("|")[0]).join(" / "))}</b>`);
   if (t.typ === "para") return `${esc(v.rubrik || "")} ${v.par.map(([l, r]) => `${l.startsWith("bild:") ? "[bild: " + l.slice(5) + "]" : esc(l)} → <b>${esc(r)}</b>`).join(" · ")}`;
   if (t.typ === "valjflera") return `${esc(v.fraga)} <b>${v.ratt.map(esc).join(", ")}</b> <i>(fel: ${v.fel.map(esc).join(", ")})</i>`;
   if (t.typ === "kedja") { const l = v.luckor || {}; const tom = new Set(Array.isArray(l) ? l : Object.values(l).flat()); return `${esc(v.rubrik || "")} ${v.steg.map((x, i) => tom.has(i) ? `<b>${i + 1}. ${esc(x)}</b>` : `${i + 1}. ${esc(x)}`).join(" → ")}${v.fel ? ` <i>(fel alternativ: ${v.fel.map(esc).join(" · ")})</i>` : ""}`; }
