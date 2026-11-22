@@ -69,10 +69,6 @@ Det är så en satellit fungerar. Jordens tyngdkraft är centripetalkraften. Upp
 För att en satellit ska hamna i rätt bana behövs precis rätt hastighet och rätt vinkel. Raketen som skjuter upp satelliten måste därför styra den åt rätt håll och ge den rätt fart. Åker satelliten för långsamt faller den ner mot jorden. Åker den för fort försvinner den ut i rymden. Är vinkeln fel hamnar den i en annan bana än den skulle.
 :::
 
-::: fördjupning Geostationära satelliter
-En *geostationär* satellit tar precis ett dygn för ett varv runt jorden – lika lång tid som jorden tar att snurra ett varv. **Därför** står den hela tiden över samma plats på jorden. Det är praktiskt för satelliter som skickar tv-signaler eller tar bilder av vädret.
-:::
-
 > **Viktigt att komma ihåg**
 > - {#centripetal} För att en kropp ska röra sig i en cirkel behövs en *centripetalkraft* som drar in mot mitten. Försvinner kraften fortsätter kroppen rakt fram, **eftersom** den har *tröghet*.
 
