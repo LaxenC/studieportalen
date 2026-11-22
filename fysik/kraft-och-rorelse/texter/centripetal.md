@@ -125,6 +125,7 @@ Jorden drar hårdare i en tung kropp än i en lätt. Men en tung kropp har ocks�
 :::
 
 > **Viktigt att komma ihåg**
+> - {#massa-fall} Massan spelar ingen roll för hur snabbt en kropp faller. Det är formen och *luftmotståndet* som gör att vissa kroppar faller långsammare.
 > - {#fritt-fall} I ett *fritt fall* verkar bara tyngdkraften, och hastigheten ökar. I *vakuum* finns inget luftmotstånd. **Därför** faller allt lika snabbt.
 
 ## Kast rakt fram {#kast}

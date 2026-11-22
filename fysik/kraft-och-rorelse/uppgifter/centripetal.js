@@ -137,7 +137,7 @@ Portal.uppgifter([
   /* ---------- Fritt fall ---------- */
 
   { id: "ce-fall-flerval", kapitel: "centripetal", avsnitt: ["fritt-fall"], titel: "Vilken landar först?",
-    typ: "flerval", nivaer: [1], punkter: ["fritt-fall"],
+    typ: "flerval", nivaer: [1], punkter: ["massa-fall", "fritt-fall"],
     varianter: [
       { fraga: "En cylinder av mässing och en av trä har samma form. Mässingen har mycket större massa. De släpps samtidigt. Vilken landar först?",
         alt: [ { t: "De landar samtidigt", s: "ratt", f: "massan spelar ingen roll för hur snabbt något faller. Formen är densamma, så luftmotståndet blir ungefär lika." },
@@ -155,7 +155,7 @@ Portal.uppgifter([
     ] },
 
   { id: "ce-fall-sf", kapitel: "centripetal", avsnitt: ["fritt-fall"], titel: "Fritt fall – sant eller falskt",
-    typ: "santfalskt", nivaer: [0, 1], punkter: ["fritt-fall"],
+    typ: "santfalskt", nivaer: [0, 1], punkter: ["massa-fall", "fritt-fall"],
     varianter: [
       { pst: [["I vakuum finns ingen luft.", true],
               ["En tung kropp faller alltid fortare än en lätt.", false],
