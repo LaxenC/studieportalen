@@ -294,6 +294,21 @@ Portal.uppgifter([
                 ["Skidorna mot snön", 1], ["Delarna i ett dörrlås", 1], ["Hjulet mot axeln på en cykel", 1], ["Pulkan mot backen", 1]] }
     ] },
 
+  { id: "ro-friktion-hur", kapitel: "rorelse", avsnitt: ["friktion"], titel: "Hur ändrar man friktionen?",
+    typ: "dra", nivaer: [1, 2], punkter: ["friktion"],
+    varianter: [
+      { rubrik: "Dra varje sak till hur man ändrar friktionen.",
+        par: [["Vinterdäck på isig väg", "Dubbar gör ytan skrovligare – större friktion"],
+              ["Isig trottoar", "Sand gör ytan skrovligare – större friktion"],
+              ["Cykelkedjan gnisslar", "Olja gör att delarna glider lättare – mindre friktion"],
+              ["Skidor i spåret", "Valla gör undersidan slätare – mindre friktion"]] },
+      { rubrik: "Dra varje sak till hur man ändrar friktionen.",
+        par: [["Skor på isen", "Broddar griper tag i isen – större friktion"],
+              ["Ett dörrlås som kärvar", "Fett gör att delarna glider lättare – mindre friktion"],
+              ["Hjulet på en cykel", "Kullager gör att delarna rullar i stället för att glida – mindre friktion"],
+              ["Bildäck på vägen", "Mönster i däcken griper tag i vägen – större friktion"]] }
+    ] },
+
   { id: "ro-friktion-forklara", kapitel: "rorelse", avsnitt: ["friktion"], titel: "Förklara: varför stannar bollen?",
     typ: "forklara", nivaer: [2], rullista: [2], punkter: ["friktion"],
     varianter: [

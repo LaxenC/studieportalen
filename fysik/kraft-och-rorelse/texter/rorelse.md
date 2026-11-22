@@ -225,6 +225,15 @@ Ibland vill vi ha stor friktion. Däcken på en bil behöver greppa i vägen, an
 
 Ibland vill vi ha så liten friktion som möjligt. Ett dörrlås som kärvar smörjer man med olja eller fett. Då glider delarna på ett tunt lager fett i stället för mot varandra, och friktionen blir mindre.
 
+**Så får man större friktion**
+- Gör ytan skrovligare: mönster i bildäck, dubbar i vinterdäck, broddar under skorna, sand på isen.
+- Tryck ihop ytorna mer: en tyngre låda har större friktion.
+
+**Så får man mindre friktion**
+- Gör ytan slätare: slipa eller polera ytan.
+- Smörj: olja på cykelkedjan, fett i låset, valla under skidorna.
+- Låt något rulla i stället för att glida: hjul och kullager.
+
 > **💬 Förklara så här** {.green}
 > *Varför stannar bollen till slut när den rullar på gräset?*<br>
 > Mellan bollen och gräset finns *friktion*.<br>
