@@ -18,9 +18,9 @@ Portal.omrade({
   bild: '<img src="fysik/materia/bilder/kort.svg?v=1" alt="" style="width:120px;height:auto">',
   arskurs: [7],
   kapitel: [
-    { id: "materia", namn: "Materia", farg: "green",
+    { id: "materia", namn: "Materia", farg: "green", bild: '<div class="art"><img src="fysik/materia/bilder/kort-materia.svg?v=1" alt="" style="height:96px;width:auto"></div>',
       text: "Kroppar och partiklar, atomen och molekyler." },
-    { id: "egenskaper", namn: "Densitet", farg: "blue",
+    { id: "egenskaper", namn: "Densitet", farg: "blue", bild: '<div class="art"><img src="fysik/materia/bilder/kort-densitet.svg?v=1" alt="" style="height:96px;width:auto"></div>',
       text: "Massa, volym och densitet – och varför saker flyter eller sjunker." }
   ]
 });

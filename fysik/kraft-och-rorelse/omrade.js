@@ -18,13 +18,13 @@ Portal.omrade({
   bild: '<img src="fysik/kraft-och-rorelse/bilder/kort.svg?v=1" alt="" style="width:120px;height:auto">',
   arskurs: [7],
   kapitel: [
-    { id: "kraft", namn: "Kraft, massa och tyngd", farg: "yellow",
+    { id: "kraft", namn: "Kraft, massa och tyngd", farg: "yellow", bild: '<div class="art"><img src="fysik/kraft-och-rorelse/bilder/kort-kraft.svg?v=1" alt="" style="height:96px;width:auto"></div>',
       text: "Vad en kraft är, kraftpilar, tyngdkraft, massa och tyngd, tyngdpunkt." },
-    { id: "rorelse", namn: "Kraft skapar rörelse", farg: "orange",
+    { id: "rorelse", namn: "Kraft skapar rörelse", farg: "orange", bild: '<div class="art"><img src="fysik/kraft-och-rorelse/bilder/kort-rorelse.svg?v=1" alt="" style="height:96px;width:auto"></div>',
       text: "Vad en kraft gör, kraft och motkraft, olika rörelser, friktion, luftmotstånd och tröghet." },
-    { id: "centripetal", namn: "Centripetalkraft och fritt fall", farg: "purple",
+    { id: "centripetal", namn: "Centripetalkraft och fritt fall", farg: "purple", bild: '<div class="art"><img src="fysik/kraft-och-rorelse/bilder/kort-centripetal.svg?v=1" alt="" style="height:96px;width:auto"></div>',
       text: "Cirkelrörelse, centrifugalkraft och fritt fall." },
-    { id: "arbete", namn: "Arbete och effekt", farg: "red",
+    { id: "arbete", namn: "Arbete och effekt", farg: "red", bild: '<div class="art"><img src="fysik/kraft-och-rorelse/bilder/kort-arbete.svg?v=1" alt="" style="height:96px;width:auto"></div>',
       text: "Fysikaliskt arbete, mekanikens gyllene regel, energi och effekt." }
   ]
 });
