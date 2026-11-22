@@ -247,7 +247,7 @@ I allt som snurrar – cykelhjul, fläktar och motorer – finns ofta *kullager*
 
 När Kalle cyklar känner han luften mot ansiktet, även om det inte blåser. Han krockar med luftens molekyler, och de håller emot hans rörelse. Den kraften kallas *luftmotstånd*.
 
-Luftmotstånd uppstår bara när kroppen rör sig genom luften, eller när luften rör sig mot kroppen.
+Luftmotstånd uppstår bara när kroppen rör sig genom luften, eller när luften rör sig mot kroppen. Blåser det bakifrån och vinden är snabbare än kroppen, knuffar luften i stället kroppen framåt. Det kallas medvind.
 
 - Ju större yta som krockar med luften, desto större luftmotstånd.
 - Ju fortare kroppen rör sig, desto större luftmotstånd.

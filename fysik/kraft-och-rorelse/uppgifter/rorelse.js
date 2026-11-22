@@ -316,7 +316,7 @@ Portal.uppgifter([
     typ: "flerval", nivaer: [1], punkter: ["luftmotstand"],
     varianter: [
       { fraga: "Vad är luftmotstånd?",
-        alt: [ { t: "En kraft från luften som håller emot en kropp som rör sig", s: "ratt", f: "kroppen krockar med luftens molekyler, och de håller emot." },
+        alt: [ { t: "En kraft från luften som håller emot en kropp som rör sig genom luften", s: "ratt", f: "kroppen krockar med luftens molekyler, och de håller emot." },
                { t: "En kraft från luften som drar kroppen nedåt", s: "fel", f: "det är tyngdkraften som drar nedåt. Luftmotståndet håller emot rörelsen." },
                { t: "En kraft som bara finns när det blåser", s: "fel", f: "luftmotstånd finns så fort kroppen rör sig genom luften, även när det inte blåser." } ] },
       { fraga: "Vilken fallskärm ger störst luftmotstånd?",
@@ -332,7 +332,7 @@ Portal.uppgifter([
   { id: "ro-luft-sf", kapitel: "rorelse", avsnitt: ["luftmotstand"], titel: "Luftmotstånd – sant eller falskt",
     typ: "santfalskt", nivaer: [1], punkter: ["luftmotstand"],
     varianter: [
-      { pst: [["Luftmotstånd håller emot en kropp som rör sig.", true],
+      { pst: [["Det blåser inte. Luftmotståndet håller emot en kropp som rör sig.", true],
               ["Luftmotstånd finns bara när det blåser.", false],
               ["Ju större yta, desto större luftmotstånd.", true],
               ["En boll ligger still på marken. Det blåser inte. Bollen har luftmotstånd.", false],
