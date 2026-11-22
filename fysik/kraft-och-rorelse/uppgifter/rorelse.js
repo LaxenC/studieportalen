@@ -351,7 +351,7 @@ Portal.uppgifter([
 
   { id: "ro-troghet-flerval", kapitel: "rorelse", avsnitt: ["troghet"], titel: "Tröghet i bussen",
     typ: "flerval", nivaer: [1], punkter: ["troghet"],
-    bild: "![Två bilder av en buss. När bussen startar faller personen bakåt. När bussen bromsar faller personen framåt.](bilder/buss-troghet.svg)",
+    bild: "![Två bilder av en buss med en person som står upp. Den ena bussen startar och den andra bromsar.](bilder/buss-fraga.svg)",
     varianter: [
       { fraga: "Du står i en buss som kör. Bussen bromsar plötsligt. Åt vilket håll faller du?",
         alt: [ { t: "Framåt", s: "ratt", f: "din kropp har tröghet och vill fortsätta framåt med samma hastighet." },
