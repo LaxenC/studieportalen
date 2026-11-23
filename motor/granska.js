@@ -141,7 +141,24 @@ document.addEventListener("click", e => {
   }
   else if (b.id === "prNy") { const p = PROVA; const t = Portal.omraden[p.oid].uppgifter.find(x => x.id === p.tid); prova(p.oid, p.tid, p.L, (p.vi + 1) % t.varianter.length); }
   else if (b.id === "prStang" || b.id === "prX") $("provaDlg").close();
+  else if (b.id === "prQuiz") { const p = PROVA; QUIZKORG.push(`${p.tid}#${p.vi + 1}`); sparaKorg(); visaKorg(); b.textContent = "✓ Tillagd"; setTimeout(() => b.textContent = "➕ Lägg till i quiz", 1200); }
+  else if (b.id === "qkVisa") { $("qkLista").hidden = !$("qkLista").hidden; b.textContent = $("qkLista").hidden ? "Visa" : "Dölj"; }
+  else if (b.id === "qkKopiera") { const t = $("qkText"); t.select(); try { navigator.clipboard.writeText(t.value); } catch (e) { document.execCommand("copy"); } b.textContent = "✓ Kopierad"; setTimeout(() => b.textContent = "Kopiera listan", 1200); }
+  else if (b.id === "qkTom") { QUIZKORG = []; sparaKorg(); visaKorg(); }
+  else if (b.dataset.qkBort) { QUIZKORG.splice(+b.dataset.qkBort, 1); sparaKorg(); visaKorg(); }
 });
+
+/* ---------- Sätt ihop ett quiz ----------
+   "Lägg till i quiz" i prova-rutan samlar uppgifter (id#variant) i en lista
+   som kopieras in i en fil i mappen quiz/. */
+let QUIZKORG = (() => { try { return JSON.parse(localStorage.getItem("quizkorg")) || []; } catch (e) { return []; } })();
+function sparaKorg() { try { localStorage.setItem("quizkorg", JSON.stringify(QUIZKORG)); } catch (e) { } }
+function visaKorg() {
+  $("quizKorg").hidden = !QUIZKORG.length;
+  $("qkAntal").textContent = `${QUIZKORG.length} uppgift${QUIZKORG.length === 1 ? "" : "er"}`;
+  $("qkOl").innerHTML = QUIZKORG.map((x, i) => `<li><code>${esc(x)}</code><button type="button" class="ghostbtn" data-qk-bort="${i}" aria-label="Ta bort">✕</button></li>`).join("");
+  $("qkText").value = QUIZKORG.map(x => `    "${x}",`).join("\n").replace(/,$/, "");
+}
 
 async function startaGranska() {
   laggTillSvgDefs();
@@ -156,7 +173,7 @@ async function startaGranska() {
   }));
   $("akval").innerHTML = ["alla", ...ARSKURSER].map(v => `<button type="button" role="radio" data-ak="${v}" aria-checked="${v === "alla"}">${v === "alla" ? "Alla" : "Åk " + v}</button>`).join("");
   $("fel").innerHTML = Portal._fel.map(f => `<p class="err">${esc(f)}</p>`).join("");
-  visa();
+  visa(); visaKorg();
 }
 
 /* ---------- Ändra på GitHub ---------- */

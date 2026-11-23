@@ -634,6 +634,31 @@ Portal.plan({
 
 Stavas ett område, kapitel eller avsnitt fel visas en röd varning på plansidan. Avsnittens id står i rubrikerna i texterna, `{#id}`, och i rullistorna på granska-sidan.
 
+## Quiz – utvalda uppgifter
+
+Ett quiz är uppgifter som läraren har valt ut. Alla elever får samma uppgifter, i samma ordning och med samma varianter. Eleven ser vad som blev rätt först när hela quizet är klart. Vid fel svar finns en länk till avsnittet. Resultatet sparas inte och skickas ingenstans.
+
+1. Öppna `granska.html`, tryck **Prova** på en uppgift, välj variant med **Nästa variant** och tryck **➕ Lägg till i quiz**. Listan samlas i rutan nere till höger.
+2. Skapa en fil i mappen `quiz/`, till exempel `quiz/kraft-del3-5.js`. Kopiera gärna en befintlig.
+3. Tryck **Kopiera listan** och klistra in den under `uppgifter:`.
+4. Dela adressen `…/studieportalen/#/quiz/kraft-del3-5`. Quizet visas inte på startsidan.
+
+```js
+Portal.quiz({
+  id: "kraft-del3-5",                 // samma som filnamnet
+  titel: "Quiz: Kraft och rörelse",
+  text: "Del 3–5",                    // (valfritt)
+  omrade: "kraft-och-rorelse",        // alla uppgifter ska finnas i det här området
+  uppgifter: [
+    "kr-pil-storst",                  // utan # = första varianten
+    "ro-lada-ror#2",                  // andra varianten
+    { id: "ce-fall-flerval", variant: 3, niva: 2 }   // (valfritt) välj nivå, t.ex. för rullista
+  ]
+});
+```
+
+Stavas ett id fel eller finns inte varianten visas en röd varning på quizets startsida.
+
 ## Öva tills du kan – kunskapspunkter
 
 Varje rad i en Viktigt-ruta kan bli en **kunskapspunkt** genom att få ett id:

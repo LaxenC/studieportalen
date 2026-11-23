@@ -201,6 +201,7 @@ function visaFraga() {
   $("qBar").parentElement.hidden = OV.loop && !OV.lar;
   $("qArea").textContent = (kapitelAv(OVA.o, q.omrade) || {}).namn || q.omrade;
   $("qLevel").textContent = arFk(q.task) ? "Förklara" : q.niva >= 3 ? "Utmaning" : `Nivå ${q.niva}`; $("qLevel").dataset.n = arFk(q.task) ? "fk" : q.niva;
+  $("qLevel").hidden = !!OV.quiz && !arFk(q.task);
   $("qTitle").textContent = q.task.titel;
   $("qInstr").innerHTML = typeof T.instr === "function" ? T.instr(q) : "";
   const nya = OV.lar && q.larItem ? (q.nya || (q.nya = q.larItem.punkter.map(id => OV.lar.pk.get(id)).filter(p => p && !p.sett))) : [];
@@ -251,7 +252,8 @@ function visaResultat() {
   $("rScore").textContent = res.length ? `${ok} av ${res.length}` : "0";
   $("rText").textContent = !res.length ? "Du avslutade innan du hann rätta någon uppgift." : ok === res.length ? "Alla rätt – snyggt jobbat!" : ok / res.length >= .7 ? "Bra jobbat! Titta på det du missade nedan." : "Titta på rätt svar nedan och öva gärna igen.";
   if (OV.slut && res.length) $("rText").textContent += " Du har gjort alla uppgifter som finns för dina val.";
-  $("rList").innerHTML = res.map((r, i) => `<details class="ritem ${r.ok ? "ok" : "no"}" ${r.ok ? "" : "open"}><summary><span class="mark">${r.ok ? "✓" : "✗"}</span><span>${i + 1}. ${esc(r.q.task.titel)}</span><span class="lv">${r.q.niva >= 3 ? "Utmaning" : "Nivå " + r.q.niva}</span></summary><div class="facit">${r.facit}</div></details>`).join("");
+  $("rList").innerHTML = res.map((r, i) => `<details class="ritem ${r.ok ? "ok" : "no"}" ${r.ok ? "" : "open"}><summary><span class="mark">${r.ok ? "✓" : "✗"}</span><span>${i + 1}. ${esc(r.q.task.titel)}</span><span class="lv">${OV.quiz ? "" : r.q.niva >= 3 ? "Utmaning" : "Nivå " + r.q.niva}</span></summary><div class="facit">${r.facit}</div>${OV.quiz && !r.ok ? quizLasLank(r.q) : ""}</details>`).join("");
+  if (OV.quiz) { $("rHome").textContent = "Till början"; $("rAgain").textContent = "Gör quizet igen"; return; }
   sparaResultat(res.length, ok);
 }
 function sparaResultat(n, ok) {
@@ -300,11 +302,11 @@ function ovaKlick(e) {
   else if (b.id === "start") { OV.lar = null; startQuiz(); return; }
   else if (b.id === "quick") { OV.lar = null; OVA.level = 2; OVA.count = "loop"; OVA.feedback = "each"; renderOva(); startQuiz(); return; }
   else if (b.id === "qNext") { nasta(); return; }
-  else if (b.id === "qQuit") { if (OV.loop || OV.results.filter(Boolean).length) visaResultat(); else tillStart(); return; }
+  else if (b.id === "qQuit") { if (OV.loop || OV.results.filter(Boolean).length) visaResultat(); else if (OV.quiz) quizIntro(); else tillStart(); return; }
   else if (b.id === "qInfo") { const q = OV.list[OV.idx]; oppnaPlugga(q.omrade, q.task.avsnitt, true); return; }
-  else if (b.id === "rAgain") { OV.lar ? startLar() : startQuiz(); return; }
+  else if (b.id === "rAgain") { OV.quiz ? startLararQuiz() : OV.lar ? startLar() : startQuiz(); return; }
   else if (b.id === "lar") { startLar(); return; }
-  else if (b.id === "rHome") { tillStart(); return; }
+  else if (b.id === "rHome") { OV.quiz ? quizIntro() : tillStart(); return; }
   else return;
   renderOva();
 }
@@ -315,6 +317,7 @@ document.addEventListener("keydown", e => {
 
 // Visar Öva-vyn. p = { kapitel, avsnitt, stjarnor, kor }
 function visaOva(o, p, el) {
+  OV.quiz = null;
   OVA.o = o; OVA.fran = p.fran && /^#\//.test(p.fran) ? p.fran : null;
   if (p.kapitel && kapitelAv(o, p.kapitel)) { OVA.kapitel = p.kapitel; OVA.avsnitt = p.avsnitt || null; }
   else if (OVA.kapitel !== "mix" && !kapitelAv(o, OVA.kapitel)) { OVA.kapitel = "mix"; OVA.avsnitt = null; }

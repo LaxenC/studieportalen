@@ -6,8 +6,8 @@
 <meta name="robots" content="noindex">
 <title>Granska uppgifter</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@500;700;800;900&family=Noto+Serif:wght@700&display=swap">
-<link rel="stylesheet" href="motor/ova.css?v=2026-11-22a">
-<link rel="stylesheet" href="motor/portal.css?v=2026-11-22a">
+<link rel="stylesheet" href="motor/ova.css?v=2026-11-23a">
+<link rel="stylesheet" href="motor/portal.css?v=2026-11-23a">
 <style>
 .gr-filter{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
 .gr-filter select{font:inherit;font-weight:700;padding:8px 12px;border-radius:10px;border:1px solid var(--line);background:var(--panel);color:var(--ink)}
@@ -15,6 +15,9 @@
 .gr-knappar .ghostbtn{padding:5px 14px;font-size:.9rem}
 .ovmeta code{font-size:.8rem;background:var(--bg);padding:0 4px;border-radius:4px}
 #provaDlg .dlg-body{display:grid;gap:12px}
+#quizKorg{position:fixed;right:16px;bottom:16px;z-index:50;max-width:min(420px,calc(100vw - 32px));box-shadow:0 6px 24px rgba(0,0,0,.18);padding:12px 16px}
+#quizKorg p{margin:4px 0}#quizKorg ol{margin:6px 0;padding-left:22px;font-size:.9em;max-height:30vh;overflow:auto}#quizKorg textarea{width:100%;font-family:monospace;font-size:.85em}
+#quizKorg li button{margin-left:6px}
 .gr-val{display:flex;gap:12px;align-items:center;flex-wrap:wrap;position:sticky;top:0;z-index:15;background:var(--bg);padding:10px 0;margin:-10px 0;border-bottom:1px solid var(--line)}
 .gr-val select{font:inherit;font-weight:700;padding:8px 12px;border-radius:10px;border:1px solid var(--line);background:var(--panel);color:var(--ink)}
 .gr-val .akval{margin:0}
@@ -61,20 +64,26 @@
   <div id="fel"></div>
   <div id="ovBody"><p class="laddar">Laddar …</p></div>
 </main>
+<div id="quizKorg" class="panel" hidden>
+  <p><b>Quiz</b> · <span id="qkAntal"></span> <button type="button" class="ghostbtn" id="qkVisa">Visa</button></p>
+  <div id="qkLista" hidden><ol id="qkOl"></ol><textarea id="qkText" rows="6" readonly></textarea>
+  <p><button type="button" class="ghostbtn" id="qkKopiera">Kopiera listan</button> <button type="button" class="ghostbtn" id="qkTom">Töm</button></p>
+  <p class="gr-dim">Klistra in listan under <code>uppgifter:</code> i quizfilen. Se HOWTO.md.</p></div>
+</div>
 <dialog id="provaDlg" aria-labelledby="prTitle">
   <div class="dlg-head"><span class="ic" aria-hidden="true">✎</span><div><h2 id="prTitle"></h2><p id="prLead"></p></div>
     <button type="button" class="x" id="prX" aria-label="Stäng">×</button></div>
   <div class="dlg-body" id="prBody"></div>
-  <div class="dlg-foot"><button type="button" class="sec" id="prStang">Stäng</button><button type="button" class="sec" id="prNy">Nästa variant</button><button type="button" class="pri" id="prRatta">Rätta</button></div>
+  <div class="dlg-foot"><button type="button" class="sec" id="prStang">Stäng</button><button type="button" class="sec" id="prNy">Nästa variant</button><button type="button" class="sec" id="prQuiz">➕ Lägg till i quiz</button><button type="button" class="pri" id="prRatta">Rätta</button></div>
 </dialog>
-<script src="motor/typer.js?v=2026-11-22a"></script>
-<script src="motor/ritningar-bas.js?v=2026-11-22a"></script>
-<script src="motor/ritningar.js?v=2026-11-22a"></script>
-<script src="motor/md.js?v=2026-11-22a"></script>
-<script src="motor/data.js?v=2026-11-22a"></script>
-<script src="konfig/amnen.js?v=2026-11-22a"></script>
-<script src="konfig/elevnivaer.js?v=2026-11-22a"></script>
-<script src="motor/granska.js?v=2026-11-22a"></script>
+<script src="motor/typer.js?v=2026-11-23a"></script>
+<script src="motor/ritningar-bas.js?v=2026-11-23a"></script>
+<script src="motor/ritningar.js?v=2026-11-23a"></script>
+<script src="motor/md.js?v=2026-11-23a"></script>
+<script src="motor/data.js?v=2026-11-23a"></script>
+<script src="konfig/amnen.js?v=2026-11-23a"></script>
+<script src="konfig/elevnivaer.js?v=2026-11-23a"></script>
+<script src="motor/granska.js?v=2026-11-23a"></script>
 <script>startaGranska();</script>
 </body>
 </html>
