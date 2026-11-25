@@ -10,14 +10,14 @@ När du lyfter en väska, lyfter böcker upp på ett bord eller springer uppför
 
 I vardagen betyder arbete ofta något jobbigt. I fysiken betyder det något annat. Ett *arbete* uträttas när en kropp rör sig i samma riktning som kraften.
 
-När du lyfter en väska drar handen uppåt, och väskan rör sig uppåt. Kraften och rörelsen har samma riktning. Då uträttar du ett arbete.
+När du lyfter en väska drar handen väskan uppåt. Det är *kraften*. Väskan rör sig uppåt. Det är *rörelsen*. Kraften och rörelsen har samma riktning. Då uträttar du ett arbete.
 
 ![En tjej lyfter en väska. En rosa pil visar dragkraften uppåt, en orange pil visar tyngdkraften nedåt och en svart pil visar att väskan rör sig uppåt.](bilder/lyfta-vaska.svg)
 Bild: Dragkraften och rörelsen går åt samma håll – uppåt. Då uträttas ett arbete.
 
 ### När uträttas inget arbete?
 
-Om du bär väskan rakt fram drar handen fortfarande uppåt, så att väskan stannar på samma höjd. Men väskan rör sig framåt. Kraften och rörelsen har olika riktning. **Därför** uträttar du inget arbete på väskan.
+Om du bär väskan rakt fram drar handen fortfarande väskan uppåt, så att den stannar på samma höjd. Kraften är alltså uppåt. Men väskan rör sig framåt. Rörelsen är alltså framåt. Kraften och rörelsen har olika riktning. **Därför** uträttar du inget arbete på väskan.
 
 ![En tjej går framåt och bär en väska. Dragkraften pekar uppåt och rörelsen åt höger.](bilder/bara-vaska.svg)
 Bild: Kraften är uppåt, rörelsen framåt. Inget arbete uträttas på väskan.
