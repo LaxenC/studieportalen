@@ -21,7 +21,6 @@ Portal.quiz({
     "rad-historia-flerval",           // Radioaktivitet upptäcks
     "rad-begrepp-para",               // Radioaktivitet – para ihop begrepp
     "rad-sonderfall-sf",              // Sönderfall – sant eller falskt
-    "kedja-sonderfall",               // Sönderfall – bygg resonemanget
     "rad-skydd-sortera",              // Vad stoppar strålningen? – sortera
     "rad-mata-sortera",               // Dosimeter eller GM-mätare? – sortera
     "rad-bakgrund-flerval",           // Bakgrundsstrålning
@@ -29,7 +28,7 @@ Portal.quiz({
     "rad-kol14-flerval#2",            // Kol-14-metoden – välj rätt
     "ke-fission-fusion-sortera",      // Fission eller fusion? – sortera
     "ke-kedja-rakna",                 // Kedjereaktion – räkna
-    "kedja-fission",                  // Kedjereaktion – bygg resonemanget
+    "ke-styrstavar",                  // Styrstavar – varför?
     "ke-delar-para#1",                // Kärnkraftverkets delar – para ihop
     "ke-emc2"                         // Massa blir energi
   ]
