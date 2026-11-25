@@ -8,7 +8,7 @@ När du lyfter en väska, lyfter böcker upp på ett bord eller springer uppför
 
 ## Fysikaliskt arbete {#arbete}
 
-I vardagen betyder arbete ofta något jobbigt. I fysiken betyder det något annat. Ett *arbete* uträttas när en kraft verkar i samma riktning som rörelsen.
+I vardagen betyder arbete ofta något jobbigt. I fysiken betyder det något annat. Ett *arbete* uträttas när en kropp rör sig i samma riktning som kraften.
 
 När du lyfter en väska drar handen uppåt, och väskan rör sig uppåt. Kraften och rörelsen har samma riktning. Då uträttar du ett arbete.
 
@@ -44,7 +44,7 @@ Bild: Väskan väger 10 kg. Tyngdkraften är 100 N, och väskan lyfts 0,5 m.
 | Arbete | 100 N · 0,5 m = **50 J** |
 
 > **Begrepp**
-> **arbete** – uträttas när en kraft verkar i samma riktning som rörelsen. Arbete = kraft · sträcka
+> **arbete** – uträttas när en kropp rör sig i samma riktning som kraften. Arbete = kraft · sträcka
 > **joule (J)** – enheten för arbete. 1 J = 1 N · 1 m
 
 > **💬 Förklara så här** {.green}
@@ -58,7 +58,7 @@ När du håller en väska still spänner du musklerna hela tiden. Musklerna gör
 :::
 
 > **Viktigt att komma ihåg**
-> - {#arbete-def} Ett *arbete* uträttas när en kraft verkar i samma riktning som rörelsen. Bär du något rakt fram eller håller det still uträttas inget arbete.
+> - {#arbete-def} Ett *arbete* uträttas när en kropp rör sig i samma riktning som kraften. Bär du något rakt fram eller håller det still uträttas inget arbete.
 > - {#arbete-rakna} Arbete = kraft · sträcka (W = F · s). Arbete mäts i *joule* (J).
 
 ## Mekanikens gyllene regel {#gyllene-regel}

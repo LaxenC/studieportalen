@@ -38,7 +38,7 @@ Portal.uppgifter([
   { id: "ar-arbete-sf", kapitel: "arbete", avsnitt: ["arbete"], titel: "Arbete – sant eller falskt",
     typ: "santfalskt", nivaer: [0, 1], punkter: ["arbete-def", "arbete-rakna"],
     varianter: [
-      { pst: [["Ett arbete uträttas när en kraft verkar i samma riktning som rörelsen.", true],
+      { pst: [["Ett arbete uträttas när en kropp rör sig i samma riktning som kraften.", true],
               ["Bär du en väska rakt fram uträttar du ett arbete på väskan.", false],
               ["Arbete = kraft · sträcka", true],
               ["Arbete mäts i newton.", false],
@@ -49,7 +49,7 @@ Portal.uppgifter([
     typ: "lucktext", nivaer: [0, 1], rullista: [0, 1], punkter: ["arbete-def", "arbete-rakna"],
     ordlista: ["samma", "kraft", "sträcka", "joule", "newton", "olika", "tid"],
     varianter: [
-      { text: "Ett arbete uträttas när en kraft verkar i [samma] riktning som rörelsen.\nArbete = [kraft] · [sträcka]\nArbete mäts i [joule]." }
+      { text: "Ett arbete uträttas när en kropp rör sig i [samma] riktning som kraften.\nArbete = [kraft] · [sträcka]\nArbete mäts i [joule]." }
     ] },
 
   { id: "ar-arbete-rakna", kapitel: "arbete", avsnitt: ["arbete"], titel: "Räkna ut arbetet",
