@@ -19,12 +19,12 @@ Portal.omrade({
   arskurs: [7],
   kapitel: [
     { id: "kraft", namn: "Kraft, massa och tyngd", farg: "yellow", bild: '<div class="art"><img src="fysik/kraft-och-rorelse/bilder/kort-kraft.svg?v=1" alt="" style="height:96px;width:auto"></div>',
-      text: "Vad en kraft är, kraftpilar, tyngdkraft, massa och tyngd, tyngdpunkt." },
+      text: "Vad är en kraft – och varför välter vissa saker?" },
     { id: "rorelse", namn: "Kraft skapar rörelse", farg: "orange", bild: '<div class="art"><img src="fysik/kraft-och-rorelse/bilder/kort-rorelse.svg?v=1" alt="" style="height:96px;width:auto"></div>',
-      text: "Vad en kraft gör, kraft och motkraft, olika rörelser, friktion, luftmotstånd och tröghet." },
+      text: "Varför rullar saker vidare – och varför stannar de till slut?" },
     { id: "centripetal", namn: "Centripetalkraft och fritt fall", farg: "purple", bild: '<div class="art"><img src="fysik/kraft-och-rorelse/bilder/kort-centripetal.svg?v=1" alt="" style="height:96px;width:auto"></div>',
-      text: "Rotation och centralrörelse, centripetal- och centrifugalkraft, fritt fall och kast rakt fram." },
+      text: "Vad håller månen kvar runt jorden – och vad faller fortast?" },
     { id: "arbete", namn: "Arbete och effekt", farg: "red", bild: '<div class="art"><img src="fysik/kraft-och-rorelse/bilder/kort-arbete.svg?v=1" alt="" style="height:96px;width:auto"></div>',
-      text: "Fysikaliskt arbete, mekanikens gyllene regel, hävstång och effekt." }
+      text: "Hur kan en hävstång göra det lättare att lyfta något tungt?" }
   ]
 });
