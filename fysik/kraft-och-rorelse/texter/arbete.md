@@ -4,7 +4,7 @@ kapitel: arbete
 
 # Arbete och effekt
 
-När du lyfter en väska, bär böcker upp på ett bord eller springer uppför en trappa uträttar du ett arbete. Här lär vi oss vad arbete betyder i fysiken, hur en hävstång gör det lättare att lyfta tunga saker och vad effekt är.
+När du lyfter en väska, lyfter böcker upp på ett bord eller springer uppför en trappa uträttar du ett arbete. Här lär vi oss vad arbete betyder i fysiken, hur en hävstång gör det lättare att lyfta tunga saker och vad effekt är.
 
 ## Fysikaliskt arbete {#arbete}
 
