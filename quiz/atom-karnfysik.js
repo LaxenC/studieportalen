@@ -28,6 +28,6 @@ Portal.quiz({
     "ke-kedja-rakna",                 // Kedjereaktion – räkna
     "ke-styrstavar",                  // Styrstavar – varför?
     "ke-delar-para#1",                // Kärnkraftverkets delar – para ihop
-    "ke-emc2"                         // Massa blir energi
+    "ke-emc2"                         // Vart tar massan vägen?
   ]
 });

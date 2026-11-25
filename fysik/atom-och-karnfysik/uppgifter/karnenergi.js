@@ -141,7 +141,7 @@ Portal.uppgifter([
 
     /* ---------- E = mc² ---------- */
 
-    { id: "ke-emc2", kapitel: "karnenergi", avsnitt: ["emc2"], titel: "Massa blir energi – välj rätt",
+    { id: "ke-emc2", kapitel: "karnenergi", avsnitt: ["emc2"], titel: "Vart tar massan vägen?",
       typ: "flerval", nivaerPerArskurs: { 7: [3], 8: [2], 9: [2] },
       varianter: [
         { fraga: "Efter en fission väger delarna lite mindre än innan. Vart tog massan vägen?",
